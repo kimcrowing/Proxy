@@ -15,7 +15,7 @@ jobs:
         repository: kimcrowing/Proxy
         token: ${{ secrets.ACTIONS_GITHUB_TOKEN }}
     - name: Install Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
         python-version: '3.9'
     - name: Load Cache
