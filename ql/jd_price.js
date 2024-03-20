@@ -5,7 +5,7 @@
 
 const $ = new Env('京东保价');
 const notify = $.isNode() ? require('../sendNotify') : '';
-const jdCookieNode = $.isNode() ? require('../jdCookie.js') : '';
+const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 const jsdom = $.isNode() ? require('jsdom') : '';
 let cookiesArr = [], cookie = '', message, allMessage = '';
 
