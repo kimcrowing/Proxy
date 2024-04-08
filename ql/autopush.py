@@ -3,7 +3,7 @@
 # Modify : 2024/2/8
 '''
 new Env('更新主页');
-cron: 1-59/45 * * * * autopush.py
+cron: 1-59/45 * * * *
 '''
 from git import Repo
 import os
