@@ -25,7 +25,7 @@ jobs:
             - name: '**/*.py'
               age: +3d
 
-      - uses: actions/copy-files@v4
+      - uses: actions/copy-files@v2
         with:
           source_path: ${{ github.workspace }}
           destination_path: ${{ github.workspace }}/ql
