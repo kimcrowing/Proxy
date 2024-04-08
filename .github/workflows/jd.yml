@@ -8,11 +8,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           repository: 'https://github.com/miantj/jd_Scripts.git'
 
-      - uses: actions/filter-files@v2
+      - uses: actions/filter-files@v4
         with:
           files: |
             **/*.js
@@ -24,7 +24,7 @@ jobs:
             - name='**/*.py'
               age=+3d
 
-      - uses: actions/copy-files@v2
+      - uses: actions/copy-files@v4
         with:
           source_path: ${{ github.workspace }}
           destination_path: ${{ github.workspace }}/ql
