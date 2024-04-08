@@ -3,7 +3,7 @@
 # Modify : 2024/3/10
 '''
 new Env('更新io');
-cron: 0/35 * * * * Mysite.py
+cron: 0/35 * * * *
 '''
 # 导入必要的模块
 import os
