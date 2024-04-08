@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          repository: 'https://github.com/user/repo.git'
+          repository: 'https://github.com/miantj/jd_Scripts.git'
 
       - uses: actions/filter-files@v2
         with:
