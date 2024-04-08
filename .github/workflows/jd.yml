@@ -19,11 +19,11 @@ jobs:
             **/*.js
             **/*.py
           filters:
-            - type=file
-            - name='**/*.js'
-              age=+3d
-            - name='**/*.py'
-              age=+3d
+            - type: file
+            - name: '**/*.js'
+              age: +3d
+            - name: '**/*.py'
+              age: +3d
 
       - uses: actions/copy-files@v4
         with:
