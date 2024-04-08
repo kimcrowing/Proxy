@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*
 '''
 定时自定义
-cron: 2-59/5 * * * * jd_wskey.py
+cron: 2-59/5 * * * *
 new Env('wskey转换');
 '''
 
