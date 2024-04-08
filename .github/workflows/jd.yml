@@ -28,4 +28,4 @@ jobs:
       - uses: actions/copy-files@v4
         with:
           source_path: ${{ github.workspace }}
-          destination_path: ${{ github.workspace }}\\ql
+          destination_path: ${{ github.workspace }}/ql
