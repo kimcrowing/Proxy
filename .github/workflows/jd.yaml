@@ -1,0 +1,30 @@
+name: Copy jd files
+
+on:
+  schedule:
+    - cron: '0 0 */3 * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          repository: 'https://github.com/user/repo.git'
+
+      - uses: actions/filter-files@v2
+        with:
+          files: |
+            **/*.js
+            **/*.py
+          filters:
+            - type=file
+            - name='**/*.js'
+              age=+3d
+            - name='**/*.py'
+              age=+3d
+
+      - uses: actions/copy-files@v2
+        with:
+          source_path: ${{ github.workspace }}
+          destination_path: ${{ github.workspace }}/ql
