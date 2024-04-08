@@ -4,7 +4,7 @@
 File: aliyunpan_sign.py
 Author: canhetingsky
 Date: 2023/2/19 10:00
-cron: 0 30 8 * * *
+cron: 0 30 8,14 * * *
 new Env('阿里云盘自动签到');
 '''
 import sys
