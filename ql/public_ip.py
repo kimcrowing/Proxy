@@ -3,7 +3,7 @@
 # Modify : 2024/2/8
 '''
 new Env('上传公网IP');
-0 6,10,12,15,17 * * * public_ip.py
+cron: 0 6,10,12,15,17 * * * public_ip.py
 '''
 import sys
 import os
