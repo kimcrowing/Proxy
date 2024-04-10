@@ -11,6 +11,9 @@ jobs:
     steps:
       - name: Checkout current repository
         uses: actions/checkout@v4
+        with:
+        repository: kimcrowing/Proxy
+        token: ${{ secrets.ACTIONS_GITHUB_TOKEN }}
 
       - name: Checkout other repository
         uses: actions/checkout@v4
