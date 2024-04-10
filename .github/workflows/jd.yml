@@ -6,26 +6,27 @@ on:
     - cron: '0 0 */3 * *'
 
 jobs:
-  build:
+  copy-files:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v2
         with:
-          repository: 'https://github.com/miantj/jd_Scripts.git'
+          repository: 'other-repo-owner/other-repo-name'
+          token: ${{ secrets.GH_PAT }} # 需要有足够权限的个人访问令牌
 
-      - uses: actions/filter-files@v4
-        with:
-          files: |
-            **/*.js
-            **/*.py
-          filters: 
-            - type: file
-            - name: '**/*.js'
-              age: +3d
-            - name: '**/*.py'
-              age: +3d
+      - name: Find JS and PY files updated in the last 3 days
+        run: |
+          find . -name '*.js' -o -name '*.py' -type f -mtime -3 > recent_files.txt
 
-      - uses: actions/copy-files@v2
+      - name: Copy files to ql directory
+        run: |
+          mkdir -p ${{ github.workspace }}/ql
+          cat recent_files.txt | xargs -I {} cp {} ${{ github.workspace }}/ql/
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
         with:
-          source_path: ${{ github.workspace }}
-          destination_path: ${{ github.workspace }}/ql
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          directory: ql
+          branch: 'master' # 或者是您想要推送到的分支
