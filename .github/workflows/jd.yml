@@ -21,7 +21,7 @@ jobs:
       - name: Find JS and PY files updated in the last 3 days in the other repository
         run: |
           cd other-repo
-          find . -name '*.js' -o -name '*.py' -type f -mtime -3 > recent_files.txt
+          find . -maxdepth 1 -name '*.js' -o -name '*.py' -type f -mtime -3 > recent_files.txt
           cat recent_files.txt # 这将显示文件列表以确保它们被找到
 
       - name: Copy files to ql directory in the current repository
