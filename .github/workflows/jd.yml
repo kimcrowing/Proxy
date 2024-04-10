@@ -35,6 +35,7 @@ jobs:
               echo "$file is not in the root directory, skipping."
             else
               cp "other-repo/$file" ${{ github.workspace }}/ql/
+              echo "Copied $file to ql directory."
             fi
           done < other-repo/recent_files.txt
 
