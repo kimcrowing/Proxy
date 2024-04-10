@@ -27,7 +27,7 @@ jobs:
       - name: Copy files to ql directory in the current repository
         run: |
           while IFS= read -r file; do
-            cp "$file" ${{ github.workspace }}/ql/
+            cp "other-repo/$file" ${{ github.workspace }}/ql/
           done < other-repo/recent_files.txt
           
       - name: Commit changes
