@@ -1,4 +1,4 @@
-name: Copy jd files
+name: Copy jd files to ql
 
 on:
   workflow_dispatch:
@@ -9,24 +9,33 @@ jobs:
   copy-files:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout current repository
+        uses: actions/checkout@v2
+
+      - name: Checkout other repository
         uses: actions/checkout@v2
         with:
           repository: 'other-repo-owner/other-repo-name'
-          token: ${{ secrets.GH_PAT }} # 需要有足够权限的个人访问令牌
+          path: 'other-repo'
 
-      - name: Find JS and PY files updated in the last 3 days
+      - name: Find JS and PY files updated in the last 3 days in the other repository
         run: |
+          cd other-repo
           find . -name '*.js' -o -name '*.py' -type f -mtime -3 > recent_files.txt
 
-      - name: Copy files to ql directory
+      - name: Copy files to ql directory in the current repository
         run: |
-          mkdir -p ${{ github.workspace }}/ql
-          cat recent_files.txt | xargs -I {} cp {} ${{ github.workspace }}/ql/
+          xargs -a recent_files.txt -I {} cp {} ${{ github.workspace }}/ql/
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add ql/*
+          git commit -m "Copy updated JS and PY files to ql directory"
 
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          directory: ql
           branch: 'master' # 或者是您想要推送到的分支
