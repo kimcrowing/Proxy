@@ -24,7 +24,7 @@ jobs:
       - name: Get list of updated .js and .py files from other repository
         run: |
           cd other-repo
-          git log --since="3 days ago" --name-only --pretty=format: | grep -E '(\.js|\.py)$' | sort -u > recent_files.txt
+          git diff --name-only --diff-filter=AM -- '*.js' '*.py' `git log --since='3 days ago' --format='%H' | tail -1` HEAD > recent_files.txt
           cat recent_files.txt # 这将显示文件列表以确保它们被找到
 
       - name: Copy updated files to ql directory in the current repository
