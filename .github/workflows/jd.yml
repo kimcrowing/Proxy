@@ -21,17 +21,23 @@ jobs:
           repository: 'miantj/jd_Scripts'
           path: 'other-repo'
           
-      - name: Find JS and PY files updated in the last 1 days in the other repository
+      - name: Get list of updated .js and .py files from other repository
         run: |
           cd other-repo
-          find . -maxdepth 1 -name '*.js' -o -name '*.py' -type f -mtime 1 > recent_files.txt
+          git log --since="3 days ago" --name-only --pretty=format: | grep -E '(\.js|\.py)$' | sort -u > recent_files.txt
           cat recent_files.txt # 这将显示文件列表以确保它们被找到
 
-      - name: Copy files to ql directory in the current repository
+      - name: Copy updated files to ql directory in the current repository
         run: |
           while IFS= read -r file; do
-            cp "other-repo/$file" ${{ github.workspace }}/ql/
+            # 只复制根目录下的文件
+            if [[ "$file" == *"/"* ]]; then
+              echo "$file is not in the root directory, skipping."
+            else
+              cp "other-repo/$file" ${{ github.workspace }}/ql/
+            fi
           done < other-repo/recent_files.txt
+
       - name: Commit Changes
         run: |
           git config core.ignorecase false
