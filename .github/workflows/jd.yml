@@ -15,7 +15,7 @@ jobs:
       - name: Checkout other repository
         uses: actions/checkout@v2
         with:
-          repository: 'other-repo-owner/other-repo-name'
+          repository: 'miantj/jd_Scripts'
           path: 'other-repo'
 
       - name: Find JS and PY files updated in the last 3 days in the other repository
