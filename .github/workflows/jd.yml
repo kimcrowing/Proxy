@@ -15,15 +15,10 @@ jobs:
           repository: kimcrowing/Proxy
           token: ${{ secrets.ACTIONS_GITHUB_TOKEN }}
 
-      - name: Checkout other repository
-        uses: actions/checkout@v4
-        with:
-          repository: 'miantj/jd_Scripts'
-          path: 'other-repo'
-          
       - name: Get list of updated .js and .py files from other repository
         run: |
-          cd other-repo
+          git clone https://github.com/miantj/jd_Scripts.git
+          cd jd_Scripts
           git log --all --since="7 days ago" --format="%H" | while read hash; do 
             git diff --name-only $hash 
           done > recent_files.txt 
@@ -36,10 +31,10 @@ jobs:
             if [[ "$file" == *"/"* ]]; then
               echo "$file is not in the root directory, skipping."
             else
-              cp "other-repo/$file" ${{ github.workspace }}/test/
+              cp "jd_Scripts/$file" ${{ github.workspace }}/test/
               echo "Copied $file to ql directory."
             fi
-          done < other-repo/recent_files.txt
+          done < jd_Scripts/recent_files.txt
 
       - name: Commit Changes
         run: |
