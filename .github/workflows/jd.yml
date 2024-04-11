@@ -24,7 +24,7 @@ jobs:
       - name: Get list of updated .js and .py files from other repository
         run: |
           cd other-repo
-          git diff --name-only --diff-filter=AM -- '*.js' '*.py' `git log --since='4 days ago' --until='today' --format='%H' | tail -1` HEAD > recent_files.txt
+          git log --all --since="3 days ago" --format="%H" | while read hash; do git diff --name-only $hash done > recent_files.txt 
           cat recent_files.txt # 这将显示文件列表以确保它们被找到
 
       - name: Copy updated files to ql directory in the current repository
@@ -44,6 +44,6 @@ jobs:
           git config core.ignorecase false
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
-          git add ql/*
+          git add test/*
           git commit -m "Updated at $(date '+%Y-%m-%d %H:%M:%S')"
           git push          
