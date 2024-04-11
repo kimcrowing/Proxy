@@ -17,7 +17,8 @@ jobs:
 
       - name: Get list of updated .js and .py files from other repository
         run: |
-          git clone -- jd_Scripts https://github.com/miantj/jd_Scripts.git 
+          mkdir jd_Scripts
+          git clone https://github.com/miantj/jd_Scripts.git jd_Scripts
           cd jd_Scripts
           git log --all --since="1 days ago" --format="%H" | while read hash; do 
             git diff --name-only --exclude-dir '*' $hash 
