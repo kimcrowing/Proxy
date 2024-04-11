@@ -20,7 +20,7 @@ jobs:
           git clone https://github.com/miantj/jd_Scripts.git
           cd jd_Scripts
           git log --all --since="1 days ago" --format="%H" | while read hash; do 
-            git diff --name-only --exclude-dir subdir $hash 
+            git diff --name-only --exclude-dir '*' $hash 
           done > recent_files.txt 
           cat recent_files.txt # 这将显示文件列表以确保它们被找到
 
