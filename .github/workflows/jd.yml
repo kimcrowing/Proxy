@@ -34,7 +34,7 @@ jobs:
             if [[ "$file" == *"/"* ]]; then
               echo "$file is not in the root directory, skipping."
             else
-              cp "other-repo/$file" ${{ github.workspace }}/ql/
+              cp "other-repo/$file" ${{ github.workspace }}/test/
               echo "Copied $file to ql directory."
             fi
           done < other-repo/recent_files.txt
