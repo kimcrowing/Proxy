@@ -4,8 +4,8 @@ cron: 2-23/3 * * *
  */
 
 const $ = new Env('京东保价');
-const notify = $.isNode() ? require('/utils/sendNotify') : '';
-const jdCookieNode = $.isNode() ? require('/utils/jdCookie.js') : '';
+const notify = $.isNode() ? require('./utils/sendNotify') : '';
+const jdCookieNode = $.isNode() ? require('./utils/jdCookie.js') : '';
 const jsdom = $.isNode() ? require('jsdom') : '';
 let cookiesArr = [], cookie = '', message, allMessage = '';
 
