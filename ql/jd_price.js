@@ -4,8 +4,8 @@ cron: 2-23/3 * * *
  */
 
 const $ = new Env('京东保价');
-const notify = $.isNode() ? require('./utils/sendNotify') : '';
-const jdCookieNode = $.isNode() ? require('./utils/jdCookie.js') : '';
+const notify = $.isNode() ? require('./sendNotify') : '';
+const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 const jsdom = $.isNode() ? require('jsdom') : '';
 let cookiesArr = [], cookie = '', message, allMessage = '';
 
@@ -166,14 +166,14 @@ async function jstoken() {
 
     const { JSDOM } = jsdom;
     let resourceLoader = new jsdom.ResourceLoader({
-        userAgent: $.isNode() ? (process.env.JD_USER_AGENT ? process.env.JD_USER_AGENT : (require('./utils/USER_AGENTS').USER_AGENT)) : ($.getdata('JDUA') ? $.getdata('JDUA') : "jdapp;iPhone;9.4.4;14.3;network/4g;Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148;supportJDSHWK/1"),
+        userAgent: $.isNode() ? (process.env.JD_USER_AGENT ? process.env.JD_USER_AGENT : (require('./USER_AGENTS').USER_AGENT)) : ($.getdata('JDUA') ? $.getdata('JDUA') : "jdapp;iPhone;9.4.4;14.3;network/4g;Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148;supportJDSHWK/1"),
         referrer: "https://msitepp-fm.jd.com/rest/priceprophone/priceProPhoneMenu"
     });
     let virtualConsole = new jsdom.VirtualConsole();
     let options = {
         url: "https://msitepp-fm.jd.com/rest/priceprophone/priceProPhoneMenu",
         referrer: "https://msitepp-fm.jd.com/rest/priceprophone/priceProPhoneMenu",
-        userAgent: $.isNode() ? (process.env.JD_USER_AGENT ? process.env.JD_USER_AGENT : (require('./utils/USER_AGENTS').USER_AGENT)) : ($.getdata('JDUA') ? $.getdata('JDUA') : "jdapp;iPhone;9.4.4;14.3;network/4g;Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148;supportJDSHWK/1"),
+        userAgent: $.isNode() ? (process.env.JD_USER_AGENT ? process.env.JD_USER_AGENT : (require('./USER_AGENTS').USER_AGENT)) : ($.getdata('JDUA') ? $.getdata('JDUA') : "jdapp;iPhone;9.4.4;14.3;network/4g;Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148;supportJDSHWK/1"),
         runScripts: "dangerously",
         resources: resourceLoader,
         includeNodeLocations: true,
@@ -238,7 +238,7 @@ function taskUrl(functionId, body, h5st = '', time = Date.now()) {
             "Content-Type": "application/x-www-form-urlencoded",
             "Origin": "https://msitepp-fm.jd.com",
             "Accept-Language": "zh-CN,zh-Hans;q=0.9",
-            "User-Agent": $.isNode() ? (process.env.JD_USER_AGENT ? process.env.JD_USER_AGENT : (require('./utils/USER_AGENTS').USER_AGENT)) : ($.getdata('JDUA') ? $.getdata('JDUA') : "jdapp;iPhone;9.4.4;14.3;network/4g;Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148;supportJDSHWK/1"),
+            "User-Agent": $.isNode() ? (process.env.JD_USER_AGENT ? process.env.JD_USER_AGENT : (require('./USER_AGENTS').USER_AGENT)) : ($.getdata('JDUA') ? $.getdata('JDUA') : "jdapp;iPhone;9.4.4;14.3;network/4g;Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148;supportJDSHWK/1"),
             "Referer": "https://msitepp-fm.jd.com/",
             "Accept-Encoding": "gzip, deflate, br",
             "Cookie": cookie
