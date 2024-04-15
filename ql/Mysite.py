@@ -76,8 +76,8 @@ with open(index_path, "w", encoding="utf-8") as f:
     f.write(content)
 '''
 
-# 找到home.html文件的路径
-hom_path = os.path.join(tab_path, "home.html")
+# 找到index.html文件的路径
+hom_path = os.path.join(local_path, "index.html")
 # 找到pac文件的路径
 proxy_path = os.path.join(json_path, "proxy.pac")
 gfw_path = os.path.join(json_path, "gfw.pac")
@@ -91,7 +91,7 @@ while not re.match(r"\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b", ip_address):
 
 print(ip_address)
 
-# 打开home.html文件，并读取内容
+# 打开index.html文件，并读取内容
 with open(hom_path, "r", encoding="utf-8") as f:
     content = f.read()
 
@@ -99,7 +99,7 @@ with open(hom_path, "r", encoding="utf-8") as f:
 content = re.sub(r"\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b", ip_address, content)
 print(content)
 
-# 保存修改后的内容到home.html文件
+# 保存修改后的内容到index.html文件
 with open(hom_path, "w", encoding="utf-8") as f:
     f.write(content)
 
