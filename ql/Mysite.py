@@ -30,7 +30,7 @@ headers = {
 
 # 使用getToken函数，传入用户名和密码，获取token
 username = 'admin'
-password = 'qinjing16'
+password = ''
 
 # 如果本地路径不存在，就创建一个
 if not os.path.exists(local_path):
