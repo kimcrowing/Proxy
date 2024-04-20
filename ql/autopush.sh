@@ -1,5 +1,8 @@
 #!/bin/bash
-
+'''
+new Env('更新主页');
+cron: 12 1-23/2 * * *
+'''
 # 获取 PAT
 PAT=$pat
 
