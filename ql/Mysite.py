@@ -18,9 +18,9 @@ from urllib import parse
 Pat = os.getenv('pat')
 # 定义github仓库的url和本地路径
 repo_url = "https://"+Pat+"@github.com/kimcrowing/kimcrowing.github.io.git"
-local_path = "/ql/data/repo/kimcrowing.github.io"
-json_path="/ql/data/repo/kimcrowing.github.io/Data"
-tab_path="/ql/data/repo/kimcrowing.github.io/Tab"
+local_path = "/ql/data/repo/kimcrowing_kimcrowing.github.io"
+json_path="/ql/data/repo/kimcrowing_kimcrowing.github.io/Data"
+tab_path="/ql/data/repo/kimcrowing_kimcrowing.github.io/Tab"
 # 登录并获取网盘中的目录
 url = 'http://192.168.3.110:5244'
 headers = {
