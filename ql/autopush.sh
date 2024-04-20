@@ -44,8 +44,8 @@ sed -i "s~\b[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\b~$CURRENT_TIME~g" "$
 
 # 输出修改后的 gfw 内容
 MODIFIED_GFW_CONTENT=$(cat "$GFW_PAC_PATH")
-echo "修改后的 gfw 内容 (完整):"
-echo "$MODIFIED_GFW_CONTENT"
+echo "已修改 gfw 内容"
+#echo "$MODIFIED_GFW_CONTENT"
 
 # 更新仓库
 git clone "$REPO_URL" "$LOCAL_PATH"  # 克隆仓库到本地目录
