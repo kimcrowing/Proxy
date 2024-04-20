@@ -29,17 +29,16 @@ echo "$ip_address"
 ip_regex="([0-9]{1,3}\.){3}[0-9]{1,3}"
 
 # 打印index.html和gfw.pac文件中匹配的IP地址
-for file in "$local_path/index.html"; do
+for file in "$local_path/index.html" "$local_path/Data/gfw.pac"; do
   echo "在 $file 中匹配的IP地址:"
-  sed -nE "s/($ip_regex)/\1/p" "$file"
+  sed -i -E "s/$ip_regex/$ip_address/g" "$file"
+  if [ $? -ne 0 ]; then
+   echo "替换 $file 中的IP地址失败"
+   exit 1
+  fi
 done
 
-# 替换index.html和gfw.pac文件中的IP地址
-sed -i -E "s/$ip_regex/$ip_address/g" "$local_path/index.html"
-if [ $? -ne 0 ]; then
-  echo "替换 $file 中的IP地址失败"
-  exit 1
-fi
+
 
 # 显示替换后的index.html内容
 echo "替换后的index.html内容:"
