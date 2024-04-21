@@ -9,8 +9,6 @@ Pat=$pat
 # 定义仓库URL和本地路径
 repo_url="https://$Pat@github.com/kimcrowing/kimcrowing.github.io.git"
 local_path="/ql/data/repo/kimcrowing.github.io"
-json_path="$local_path/Data"
-tab_path="$local_path/Tab"
 
 # 检查目录是否存在
 if [ ! -d "$local_path" ]; then
@@ -39,10 +37,7 @@ for file in "$local_path/index.html" "$local_path/Data/gfw.pac"; do
 done
 
 
-
-# 显示替换后的index.html内容
-echo "替换后的index.html内容:"
-cat "$local_path/index.html"
+# 显示替换后的index.html内容echo "替换后的index.html内容:"cat "$local_path/index.html"
 
 # 将更改添加到暂存区
 cd "$local_path"
