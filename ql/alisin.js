@@ -1,7 +1,10 @@
-/*
-cron "0 9 * * *" autoSignin.js, tag=阿里云盘签到
-*/
-
+'''
+File: alisin.js
+Author: kimcrowing
+Date: 2024/4/21 10:00
+cron: 0 30 8,14 * * *
+new Env('阿里云盘自动签到');
+'''
 const axios = require('axios')
 const { initInstance, getEnv, updateCkEnv } = require('./function/qlApi.js')
 const notify = require('./sendNotify')
