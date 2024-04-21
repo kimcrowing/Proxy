@@ -1,5 +1,5 @@
 /*
-cron "0 30 6,14 * * *"
+cron: 3 5,14 * * * 
 */
 const $ = new Env('阿里云盘签到');
 const axios = require('axios')
