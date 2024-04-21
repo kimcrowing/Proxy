@@ -1,7 +1,7 @@
 /*
 阿里云盘签到
 
-cron "0 30 8,14 * * *" script-path=jd_car_draw.js, tag=阿里云盘签到
+cron "0 30 6,14 * * *" script-path=alisin.js, tag=阿里云盘签到
 
 */
 
