@@ -21,8 +21,17 @@ else
 fi
 
 # 获取公网IP地址
-ip_address=$(curl -s https://api.ipify.org/)
-echo "$ip_address"
+while true; do
+  ip_address=$(curl -s https://api.ipify.org/)
+  if [[ $ip_address =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+    echo "有效的IP地址: $ip_address"
+    break
+  else
+    echo "获取的IP地址无效: $ip_address，正在重试..."
+    sleep 1
+  fi
+done
+
 # 在index.html和gfw.pac文件中查找所有IP地址
 ip_regex="([0-9]{1,3}\.){3}[0-9]{1,3}"
 
@@ -31,11 +40,10 @@ for file in "$local_path/index.html" "$local_path/Data/gfw.pac"; do
   echo "在 $file 中匹配的IP地址:"
   sed -i -E "s/$ip_regex/$ip_address/g" "$file"
   if [ $? -ne 0 ]; then
-   echo "替换 $file 中的IP地址失败"
-   exit 1
+    echo "替换 $file 中的IP地址失败"
+    exit 1
   fi
 done
-
 
 # 显示替换后的index.html内容echo "替换后的index.html内容:"cat "$local_path/index.html"
 
