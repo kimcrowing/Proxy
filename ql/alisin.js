@@ -1,8 +1,7 @@
 /*
 阿里云盘签到
 
-cron "0 30 6,14 * * *" script-path=alisin.js, tag=阿里云盘签到
-
+cron 0 30 6,14 * * *
 */
 
 const axios = require('axios')
