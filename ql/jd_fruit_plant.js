@@ -1,6 +1,5 @@
 /*
-8 8 8 11 * jd_fruit_plant.js
-
+8 8 8 11 *
 变量：
 epxort FRUIT_LEVEL = '2' 种植水果等级，默认2级
 */
