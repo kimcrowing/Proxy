@@ -1,6 +1,6 @@
 /*
 特价版签到提现
-15 21 * * * https://raw.githubusercontent.com/6dylan6/jdpro/main/jd_tj_signcash.js
+cron: 15 21 * * *
 update:2022/12/15
 */
 const $ = new Env('特价版签到提现');
