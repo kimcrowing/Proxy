@@ -1,6 +1,6 @@
 /*
 金融签到，领取双签礼包
-cron:50 19 * * * https://raw.githubusercontent.com/6dylan6/jdpro/main/jd_jrsign.js
+cron: 50 19 * * *
 * */
 
 const $ = new Env('金融签到');
