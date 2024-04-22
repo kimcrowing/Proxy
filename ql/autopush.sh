@@ -17,7 +17,7 @@ if [ ! -d "$local_path" ]; then
   git clone "$repo_url" "$local_path"
 else
   # 目录存在，进入目录并更新仓库
-  (cd "$local_path" && retry_pull)
+  (cd "$local_path" && git pull)
 fi
 
 # 获取公网IP地址
