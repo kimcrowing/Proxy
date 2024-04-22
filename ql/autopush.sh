@@ -17,7 +17,7 @@ if [ ! -d "$local_path" ]; then
   git clone "$repo_url" "$local_path"
 else
   # 目录存在，进入目录并更新仓库
-  (cd "$local_path" && git pull)
+  (cd "$local_path" && retry_pull)
 fi
 
 # 获取公网IP地址
@@ -85,5 +85,27 @@ push_changes() {
   done
 
   echo "尝试了 $max_retries 次推送后失败。"
+  return 1
+}
+# 定义一个带有重试的拉取更改函数
+retry_pull() {
+  local max_retries=3
+  local delay_between_retries=5 # 秒
+  local attempt=1
+
+  while [ $attempt -le $max_retries ]; do
+    echo "尝试第 $attempt 拉取更改..."
+    git pull
+    if [ $? -eq 0 ]; then
+      echo "拉取成功。"
+      return 0
+    else
+      echo "拉取失败。$delay_between_retries 秒后重试..."
+      sleep $delay_between_retries
+      attempt=$((attempt+1))
+    fi
+  done
+
+  echo "尝试了 $max_retries 次拉取后失败。"
   return 1
 }
