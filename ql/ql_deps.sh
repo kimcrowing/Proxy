@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #依赖安装，运行一次就好
-#0 8 5 5 * ql_deps.sh
+cron: 0 8 5 5 * 
 #new Env('依赖安装');
 #
 
