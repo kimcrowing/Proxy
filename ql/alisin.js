@@ -2,6 +2,7 @@
 阿里云盘签到
 cron: 3 5,14 * * * 
 */
+const $ = new Env('阿里云盘签到');
 const axios = require('axios')
 const { initInstance, getEnv, updateCkEnv } = require('./function/qlApi.js')
 const notify = require('./sendNotify')
