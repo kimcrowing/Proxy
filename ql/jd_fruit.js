@@ -4,7 +4,7 @@
 ==========================Quantumultx=========================
 [task_local]
 #jd免费水果
-cron: 28 19,21,22 * * * jd_fruit.js, tag=东东农场, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jdnc.png, enabled=true
+cron: 28 19,21,22 * * *
 
 变量：
 export NO_WATER='true' 完全不浇水，浇水任务不做了
