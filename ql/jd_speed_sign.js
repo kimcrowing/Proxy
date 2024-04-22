@@ -1,5 +1,5 @@
 /*
-cron "55 19,21 * * *" jd_speed_sign.js, tag:京东特价版任务
+cron: 55 19,21 * * *
 */
 //详细说明参考 https://github.com/ccwav/QLScript2.
 
