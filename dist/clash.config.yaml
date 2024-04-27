@@ -5,7 +5,7 @@ mode: Rule
 proxies:
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_1_0@3
+  name: 🇺🇸_US_美国_1_0@1
   network: ws
   port: 2095
   server: fcdn.flha.ru
@@ -19,7 +19,73 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_2_0@6
+  name: 🇱🇺_LU_卢森堡_0@3
+  network: http
+  port: 3389
+  server: 45.82.31.164
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸_US_美国_2_0@4
+  network: ws
+  port: 2052
+  server: cfcdn1.sanfencdn9.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
+  ws-opts:
+    headers:
+      host: helanv6cf.inekokkk.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸_US_美国_3_0@5
+  network: ws
+  port: 2052
+  server: 104.18.19.191
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
+  ws-opts:
+    headers:
+      host: helanv6cf.inekokkk.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸_US_美国_4_0@6
+  network: ws
+  port: 2052
+  server: 104.18.36.119
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
+  ws-opts:
+    headers:
+      host: helanv6cf.inekokkk.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸_US_美国_5_0@7
+  network: ws
+  port: 2052
+  server: 104.19.250.15
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
+  ws-opts:
+    headers:
+      host: helanv6cf.inekokkk.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸_US_美国_6_0@8
   network: ws
   port: 2095
   server: 104.21.23.231
@@ -31,9 +97,61 @@ proxies:
     headers:
       host: fcdn.flha.ru
     path: /
+- name: 🇺🇸_US_美国_7_0@9
+  network: tcp
+  password: 27876_t7d7f4e3f
+  port: 443
+  server: 23.142.200.175
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_3_0@7
+  name: 🇨🇦_CA_加拿大_0@10
+  network: ws
+  port: 443
+  server: 158.51.123.111
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸_US_美国_8_0@11
+  network: ws
+  port: 2082
+  server: 172.67.130.140
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      host: s1c.v2.v001sss.xyz
+    path: /
+- cipher: aes-128-cfb
+  name: 🇺🇸_US_美国_9_0@14
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.163
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸_US_美国_10_0@15
+  network: ws
+  port: 443
+  server: cold-dawn-9246.fly.dev
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: ea4909ef-7ca6-4b46-bf2e-6c07896ef338
+  ws-opts:
+    path: /ea4909ef-7ca6-4b46-bf2e-6c07896ef338-vm
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸_US_美国_3_1@7
   network: ws
   port: 2095
   server: 172.67.214.33
@@ -46,24 +164,14 @@ proxies:
       host: fcdn.flha.ru
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 🇺🇸_US_美国_4_0@11
+  name: 🇺🇸_US_美国_4_1@11
   password: hgLCgfLRgB6d
   port: 443
   server: 205.134.180.145
   type: ss
 - alterId: 0
   cipher: auto
-  name: 🇱🇺_LU_卢森堡_0@13
-  network: http
-  port: 3389
-  server: 45.82.31.164
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
-- alterId: 0
-  cipher: auto
-  name: 🇩🇪_DE_德意志联邦共和国_0@14
+  name: 🇩🇪_DE_德意志联邦共和国_1@14
   network: ws
   port: 443
   server: 23.158.56.229
@@ -75,47 +183,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 🇨🇦_CA_加拿大_0@15
-  network: ws
-  port: 443
-  server: 158.51.123.111
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    path: /linkvws
-- name: 🇺🇸_US_美国_5_0@17
-  network: tcp
-  password: 27876_t7d7f4e3f
-  port: 443
-  server: 23.142.200.175
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- cipher: aes-128-cfb
-  name: 🇺🇸_US_美国_6_0@18
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.163
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国_3_1@7
-  network: ws
-  port: 2052
-  server: cfcdn1.sanfencdn9.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: a595e9ba-b641-480f-8597-323612357ba5
-  ws-opts:
-    headers:
-      host: tw1bQiWSE4x.fzbqfrse.xyz
-    path: /video/GQ2qE5Us9g
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国_4_1@9
+  name: 🇺🇸_US_美国_4_2@9
   network: ws
   port: 8080
   server: 104.19.58.60
@@ -129,7 +197,7 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_5_1@15
+  name: 🇺🇸_US_美国_5_2@15
   network: ws
   port: 80
   server: us219.netfilx.live
@@ -143,7 +211,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_6_1@16
+  name: 🇺🇸_US_美国_6_2@16
   network: ws
   port: 80
   server: 95.164.38.6
@@ -155,7 +223,7 @@ proxies:
     headers:
       host: no1.xv2ray.net
     path: /vmess
-- name: 🇬🇧_GB_英国_1@18
+- name: 🇬🇧_GB_英国_2@18
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -165,26 +233,26 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: 🇩🇪_DE_德国_1@19
+  name: 🇩🇪_DE_德国_2@19
   password: rpgbNnU9rDDU4aWZ
   port: 9094
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_7_1@20
+  name: 🇺🇸_US_美国_7_2@20
   password: Y6R9pAtvxxzmGC
   port: 5600
   server: 167.88.61.175
   type: ss
 - cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_8_1@21
+  name: 🇺🇸_US_美国_8_2@21
   password: Y6R9pAtvxxzmGC
   port: 5000
   server: 167.88.61.175
   type: ss
 - alterId: 0
   cipher: auto
-  name: 🇷🇺_RU_俄罗斯联邦_1@22
+  name: 🇷🇺_RU_俄罗斯联邦_2@22
   network: ws
   port: 30127
   server: 109.107.181.130
@@ -196,7 +264,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 🇿🇦_ZA_南非_2@19
+  name: 🇿🇦_ZA_南非_3@19
   network: ws
   port: 55600
   server: 129.151.164.152
@@ -207,26 +275,26 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_4_2@21
+  name: 🇺🇸_US_美国_4_3@21
   password: Y6R9pAtvxxzmGC
   port: 5601
   server: 38.110.1.3
   type: ss
 - cipher: aes-256-cfb
-  name: 🇺🇸_US_美国_5_2@22
+  name: 🇺🇸_US_美国_5_3@22
   password: amazonskr05
   port: 443
   server: 35.87.25.21
   type: ss
 - cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_7_2@24
+  name: 🇺🇸_US_美国_7_3@24
   password: faBAoD54k87UJG7
   port: 2375
   server: 15.204.87.217
   type: ss
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_8_2@25
+  name: 🇺🇸_US_美国_8_3@25
   network: ws
   port: 8080
   server: yh7.dtku41.xyz
@@ -238,7 +306,7 @@ proxies:
     headers:
       host: booty-pensions-scheduling-blogging.trycloudflare.com
     path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
-- name: 🇬🇧_GB_英国_3@10
+- name: 🇬🇧_GB_英国_4@10
   network: tcp
   password: 89148410-25da-4dd9-8d32-247ca226e041
   port: 22252
@@ -247,7 +315,7 @@ proxies:
   sni: uk01.freeflyingcloud.xyz
   type: trojan
   udp: true
-- name: 🇬🇮_GI_直布罗陀_1_3@17
+- name: 🇬🇮_GI_直布罗陀_1_4@17
   network: tcp
   password: 09191dbf-e7f7-4e7d-b405-c4785ea992bf
   port: 2053
@@ -256,7 +324,7 @@ proxies:
   sni: ftp.debian.org
   type: trojan
   udp: true
-- name: 🇮🇹_IT_意大利_3@18
+- name: 🇮🇹_IT_意大利_4@18
   network: tcp
   password: ecc532e2-3f8b-4a30-b176-78951fda6542
   port: 48102
@@ -266,12 +334,12 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: 🇺🇸_US_美国_3_3@20
+  name: 🇺🇸_US_美国_3_4@20
   password: amazonskr05
   port: 443
   server: 35.91.54.169
   type: ss
-- name: 🇷🇺_RU_俄罗斯联邦_3@22
+- name: 🇷🇺_RU_俄罗斯联邦_4@22
   network: tcp
   password: ba74833c-8c0f-4dcd-8cbc-13e3c32d3765
   port: 2053
@@ -281,30 +349,30 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_5_3@23
+  name: 🇺🇸_US_美国_5_4@23
   password: KixLvKzwjekG00rm
   port: 8000
   server: 38.110.1.43
   type: ss
 - cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_6_3@24
+  name: 🇺🇸_US_美国_6_4@24
   password: FoOiGlkAA9yPEGP
   port: 7307
   server: 38.110.1.43
   type: ss
 - cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_7_3@25
+  name: 🇺🇸_US_美国_7_4@25
   password: XKFKl2rULjIp74
   port: 8009
   server: 38.110.1.43
   type: ss
 - cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_8_3@26
+  name: 🇺🇸_US_美国_8_4@26
   password: TEzjfAYq2IjtuoS
   port: 6679
   server: 38.110.1.43
   type: ss
-- name: 🇸🇪_SE_瑞典_3@34
+- name: 🇸🇪_SE_瑞典_4@34
   network: tcp
   password: 0d5b3d65-e71e-4235-bf68-ea753ad87cc2
   port: 30502
@@ -315,7 +383,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 🇸🇬_SG_新加坡_3@36
+  name: 🇸🇬_SG_新加坡_4@36
   network: ws
   port: 37765
   server: xinjiapo.jinchanbaby.shop
@@ -327,7 +395,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 🇩🇪_DE_德意志联邦共和国_1_3@38
+  name: 🇩🇪_DE_德意志联邦共和国_1_4@38
   network: ws
   port: 443
   server: 23.158.56.50
@@ -337,7 +405,7 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: /linkvws
-- name: 🇬🇮_GI_直布罗陀_2_3@40
+- name: 🇬🇮_GI_直布罗陀_2_4@40
   network: tcp
   password: f37a931d-7092-48fe-b82f-a98da3040eb2
   port: 2053
@@ -346,7 +414,7 @@ proxies:
   sni: de2.trojanvpn.de
   type: trojan
   udp: true
-- name: 🇬🇮_GI_直布罗陀_3_3@41
+- name: 🇬🇮_GI_直布罗陀_3_4@41
   network: tcp
   password: f37a931d-7092-48fe-b82f-a98da3040eb2
   port: 2053
@@ -357,7 +425,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: kZWbU3k5jFb03dB5w
-  name: 🇫🇮_FI_芬兰_4@17
+  name: 🇫🇮_FI_芬兰_5@17
   network: grpc
   password: afa19815-faef-45c0-9297-4ae1d6991569
   port: 443
@@ -368,7 +436,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 🇨🇦_CA_加拿大_1_4@23
+  name: 🇨🇦_CA_加拿大_1_5@23
   network: ws
   port: 443
   server: 23.162.200.227
@@ -380,7 +448,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_3_4@25
+  name: 🇺🇸_US_美国_3_5@25
   network: tcp
   port: 32575
   server: 45.63.61.239
@@ -390,19 +458,7 @@ proxies:
   uuid: a29dab3d-a832-4b87-d4cf-2346925b45a9
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_4_4@30
-  network: ws
-  port: 443
-  server: cold-dawn-9246.fly.dev
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: ea4909ef-7ca6-4b46-bf2e-6c07896ef338
-  ws-opts:
-    path: /ea4909ef-7ca6-4b46-bf2e-6c07896ef338-vm
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国_5_4@31
+  name: 🇺🇸_US_美国_5_5@31
   network: ws
   port: 8080
   server: 141.101.122.250
@@ -416,7 +472,7 @@ proxies:
     path: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a-vm
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_6_4@35
+  name: 🇺🇸_US_美国_6_5@35
   network: ws
   port: 80
   server: vps789.com
@@ -430,7 +486,7 @@ proxies:
     path: /cctv13/hd.m3u8
 - alterId: 0
   cipher: auto
-  name: 🇷🇺_RU_俄罗斯联邦_4@36
+  name: 🇷🇺_RU_俄罗斯联邦_5@36
   network: ws
   port: 11846
   server: 45.144.3.204
@@ -440,7 +496,7 @@ proxies:
   uuid: 299d5c3e-fc2c-4458-a2e4-3ee2bb053f80
   ws-opts:
     path: /
-- name: 🇬🇧_GB_英国_2_4@37
+- name: 🇬🇧_GB_英国_2_5@37
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -449,7 +505,7 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
-- name: 🇺🇸_US_美国_7_4@39
+- name: 🇺🇸_US_美国_7_5@39
   network: tcp
   password: telegram-id-directvpn
   port: 22222
@@ -458,7 +514,7 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
-- name: 🇫🇷_FR_法国_2_4@41
+- name: 🇫🇷_FR_法国_2_5@41
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -468,26 +524,26 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: 🇺🇸_US_美国_3_5@10
+  name: 🇺🇸_US_美国_3_6@10
   password: amazonskr05
   port: 443
   server: 34.220.228.24
   type: ss
 - cipher: aes-256-cfb
-  name: 🇺🇸_US_美国_4_5@11
+  name: 🇺🇸_US_美国_4_6@11
   password: amazonskr05
   port: 443
   server: 52.12.162.168
   type: ss
 - cipher: aes-256-cfb
-  name: 🇺🇸_US_美国_5_5@12
+  name: 🇺🇸_US_美国_5_6@12
   password: amazonskr05
   port: 443
   server: 35.93.23.124
   type: ss
 - alterId: 0
   cipher: auto
-  name: 🇩🇪_DE_德意志联邦共和国_1_5@15
+  name: 🇩🇪_DE_德意志联邦共和国_1_6@15
   network: ws
   port: 443
   server: 23.158.56.60
@@ -499,7 +555,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_7_5@19
+  name: 🇺🇸_US_美国_7_6@19
   network: ws
   port: 8080
   server: yh5.dtku41.xyz
@@ -512,60 +568,60 @@ proxies:
       host: fantastic-doe-bids-ended.trycloudflare.com
     path: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a-vm
 - cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_8_5@20
+  name: 🇺🇸_US_美国_8_6@20
   password: e4FCWrgpkji3QY
   port: 9101
   server: 38.75.137.105
   type: ss
 - cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_9_5@21
+  name: 🇺🇸_US_美国_9_6@21
   password: RexnBgU7EV5ADxG
   port: 7002
   server: 38.75.137.105
   type: ss
 - cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_10_5@22
+  name: 🇺🇸_US_美国_10_6@22
   password: kDWvXYZoTBcGkC4
   port: 8881
   server: 38.75.137.105
   type: ss
 - cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_12_5@24
+  name: 🇺🇸_US_美国_12_6@24
   password: Y6R9pAtvxxzmGC
   port: 3389
   server: 38.75.136.108
   type: ss
 - cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_13_5@25
+  name: 🇺🇸_US_美国_13_6@25
   password: PCnnH6SQSnfoS27
   port: 8091
   server: 38.75.136.108
   type: ss
 - cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_14_5@26
+  name: 🇺🇸_US_美国_14_6@26
   password: FoOiGlkAA9yPEGP
   port: 7306
   server: 38.75.136.108
   type: ss
 - cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_15_5@27
+  name: 🇺🇸_US_美国_15_6@27
   password: RexnBgU7EV5ADxG
   port: 7001
   server: 38.75.136.108
   type: ss
 - cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_16_5@28
+  name: 🇺🇸_US_美国_16_6@28
   password: faBAoD54k87UJG7
   port: 2375
   server: 38.75.136.108
   type: ss
 - cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_17_5@29
+  name: 🇺🇸_US_美国_17_6@29
   password: e4FCWrgpkji3QY
   port: 9101
   server: 38.75.136.108
   type: ss
-- name: 🇺🇸_US_美国_18_5@30
+- name: 🇺🇸_US_美国_18_6@30
   network: tcp
   password: d971ee7a-32d9-402a-8a4f-d2135d48a47b
   port: 20230
@@ -576,7 +632,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: 443trojan
-  name: 🇺🇸_US_美国_2_6@6
+  name: 🇺🇸_US_美国_2_7@6
   network: grpc
   password: qj1Dz1CJmFQRhWr1SP80aA
   port: 443
@@ -587,7 +643,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_3_6@7
+  name: 🇺🇸_US_美国_3_7@7
   network: ws
   port: 8880
   server: cdn.vds-server.ir
@@ -601,7 +657,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 🇷🇺_RU_俄罗斯联邦_6@13
+  name: 🇷🇺_RU_俄罗斯联邦_7@13
   network: ws
   port: 80
   server: 85.117.234.167
@@ -612,26 +668,26 @@ proxies:
   ws-opts:
     path: /TG@dns68免费节点
 - cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_8_6@20
+  name: 🇺🇸_US_美国_8_7@20
   password: KixLvKzwjekG00rm
   port: 8000
   server: 38.110.1.111
   type: ss
 - cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_9_6@21
+  name: 🇺🇸_US_美国_9_7@21
   password: PCnnH6SQSnfoS27
   port: 8090
   server: 38.110.1.51
   type: ss
 - cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_10_6@24
+  name: 🇺🇸_US_美国_10_7@24
   password: g5MeD6Ft3CWlJId
   port: 5003
   server: 38.110.1.197
   type: ss
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_11_6@25
+  name: 🇺🇸_US_美国_11_7@25
   network: ws
   port: 8080
   server: yh4.dtku41.xyz
@@ -645,7 +701,7 @@ proxies:
     path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
 - alterId: 0
   cipher: auto
-  name: 🇬🇮_GI_直布罗陀_6@26
+  name: 🇬🇮_GI_直布罗陀_7@26
   network: tcp
   port: 8443
   server: 95.164.4.51
@@ -655,12 +711,12 @@ proxies:
   type: vmess
   uuid: 574363e2-e447-460d-a5b2-e662d6813afe
 - cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_12_6@27
+  name: 🇺🇸_US_美国_12_7@27
   password: PCnnH6SQSnfoS27
   port: 8091
   server: 38.110.1.51
   type: ss
-- name: 🇷🇺_RU_俄罗斯联邦_8@3
+- name: 🇷🇺_RU_俄罗斯联邦_9@3
   network: tcp
   password: faa0fd1b-ecf9-42ae-a5f3-0a96274b64cb
   port: 30002
@@ -670,14 +726,14 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: 🇺🇸_US_美国_1_8@4
+  name: 🇺🇸_US_美国_1_9@4
   password: amazonskr05
   port: 443
   server: 35.91.225.232
   type: ss
 - alterId: 0
   cipher: auto
-  name: 🇦🇪_AE_阿联酋_8@6
+  name: 🇦🇪_AE_阿联酋_9@6
   network: ws
   port: 8880
   server: 94.140.0.110
@@ -689,7 +745,7 @@ proxies:
     headers:
       host: food.zhaal.ir
     path: /
-- name: 🇺🇸_US_美国_2_8@12
+- name: 🇺🇸_US_美国_2_9@12
   network: ws
   password: 0b1371aa-649d-41dc-9126-338c87936500
   port: 443
@@ -703,14 +759,14 @@ proxies:
       host: se1.trojanvpn.de
     path: /websocket
 - cipher: aes-256-cfb
-  name: 🇺🇸_US_美国_3_8@14
+  name: 🇺🇸_US_美国_3_9@14
   password: amazonskr05
   port: 443
   server: 54.71.116.112
   type: ss
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_4_8@16
+  name: 🇺🇸_US_美国_4_9@16
   network: ws
   port: 8080
   server: 104.20.26.40
@@ -722,7 +778,7 @@ proxies:
     headers:
       host: fantastic-doe-bids-ended.trycloudflare.com
     path: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a-vm
-- name: 🇩🇪_DE_德国_8@23
+- name: 🇩🇪_DE_德国_9@23
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -733,7 +789,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: 443trojan
-  name: 🇺🇸_US_美国_1_9@3
+  name: 🇺🇸_US_美国_1_10@3
   network: grpc
   password: qj1Dz1CJmFQRhWr1SP80aA
   port: 443
@@ -743,20 +799,20 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_4_9@15
+  name: 🇺🇸_US_美国_4_10@15
   password: XKFKl2rULjIp74
   port: 8008
   server: 38.68.134.9
   type: ss
 - cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_5_9@16
+  name: 🇺🇸_US_美国_5_10@16
   password: g5MeD6Ft3CWlJId
   port: 5003
   server: 38.68.134.9
   type: ss
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_6_9@17
+  name: 🇺🇸_US_美国_6_10@17
   network: ws
   port: 8080
   server: 104.17.17.103
@@ -770,7 +826,7 @@ proxies:
     path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
 - alpn:
   - http/1.1
-  name: 🇨🇦_CA_加拿大_9@19
+  name: 🇨🇦_CA_加拿大_10@19
   network: tcp
   password: telegram-id-directvpn
   port: 22222
@@ -781,7 +837,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_8_9@21
+  name: 🇺🇸_US_美国_8_10@21
   network: ws
   port: 8880
   server: 104.19.40.48
@@ -795,7 +851,7 @@ proxies:
     path: /d/65dd503.TG.WangCai2.WangCai_8:107690
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_2_10@4
+  name: 🇺🇸_US_美国_2_11@4
   network: ws
   port: 45979
   server: 103.182.97.156
@@ -809,7 +865,7 @@ proxies:
     path: /test
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_3_10@8
+  name: 🇺🇸_US_美国_3_11@8
   network: ws
   port: 80
   server: whatismyipaddress.com
@@ -823,7 +879,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_5_10@13
+  name: 🇺🇸_US_美国_5_11@13
   network: ws
   port: 443
   server: us3.rcidc.shop
@@ -833,7 +889,7 @@ proxies:
   uuid: 80235a8a-60d7-472e-b456-0b5f5eaa3c0c
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_6_10@14
+  name: 🇺🇸_US_美国_6_11@14
   network: ws
   port: 443
   server: us6.rcidc.shop
@@ -843,7 +899,7 @@ proxies:
   uuid: 80235a8a-60d7-472e-b456-0b5f5eaa3c0c
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_7_10@15
+  name: 🇺🇸_US_美国_7_11@15
   network: ws
   port: 443
   server: 38.12.30.248
@@ -853,7 +909,7 @@ proxies:
   uuid: 80235a8a-60d7-472e-b456-0b5f5eaa3c0c
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_8_10@16
+  name: 🇺🇸_US_美国_8_11@16
   network: ws
   port: 443
   server: us4.rcidc.shop
@@ -863,7 +919,7 @@ proxies:
   uuid: 80235a8a-60d7-472e-b456-0b5f5eaa3c0c
 - alterId: 0
   cipher: auto
-  name: 🇵🇰_PK_巴基斯坦_10@17
+  name: 🇵🇰_PK_巴基斯坦_11@17
   network: tcp
   port: 43834
   server: 50.114.243.61
@@ -871,7 +927,7 @@ proxies:
   tls: false
   type: vmess
   uuid: b246e34d-bbd1-4016-8f74-ea461c37e411
-- name: 🇮🇪_IE_爱尔兰_10@18
+- name: 🇮🇪_IE_爱尔兰_11@18
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -882,7 +938,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_1_11@2
+  name: 🇺🇸_US_美国_1_12@2
   network: ws
   port: 2086
   server: mizban.arzonhost.ir
@@ -895,14 +951,14 @@ proxies:
       host: mizban.arzonhost.ir
     path: /
 - cipher: aes-128-gcm
-  name: 🇺🇸_US_美国_2_11@7
+  name: 🇺🇸_US_美国_2_12@7
   password: Yc2CtrIz8L
   port: 16899
   server: 75.102.51.45
   type: ss
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_6_11@14
+  name: 🇺🇸_US_美国_6_12@14
   network: ws
   port: 443
   server: channel.hopev2ray.link
@@ -916,7 +972,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 🇨🇦_CA_加拿大_1_12@10
+  name: 🇨🇦_CA_加拿大_1_13@10
   network: ws
   port: 8080
   server: 108.181.23.161
@@ -926,7 +982,7 @@ proxies:
   uuid: 969f1909-c0d3-4c30-813d-3aec5c838b7d
   ws-opts:
     path: /1IKYjV0r/
-- name: 🇨🇦_CA_加拿大_2_12@12
+- name: 🇨🇦_CA_加拿大_2_13@12
   network: tcp
   password: telegram-id-directvpn
   port: 22222
@@ -936,26 +992,26 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇫🇮_FI_芬兰_12@13
+  name: 🇫🇮_FI_芬兰_13@13
   password: Telegram-AlfredConfig-13
   port: 443
   server: 95.217.181.48
   type: ss
 - cipher: aes-256-gcm
-  name: 🇧🇷_BR_巴西_13@2
+  name: 🇧🇷_BR_巴西_14@2
   password: 9c0315a0-3182-4dfe-bb38-5cc1fa2a7859
   port: 7703
   server: 144.22.161.16
   type: ss
 - cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_1_13@3
+  name: 🇺🇸_US_美国_1_14@3
   password: lGqs95QkFHo2NV
   port: 5499
   server: 167.88.61.159
   type: ss
 - alterId: 0
   cipher: auto
-  name: 🇱🇺_LU_卢森堡_13@6
+  name: 🇱🇺_LU_卢森堡_14@6
   network: http
   port: 3389
   server: 78.111.102.232
@@ -965,7 +1021,7 @@ proxies:
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_2_13@9
+  name: 🇺🇸_US_美国_2_14@9
   network: ws
   port: 2095
   server: onea.flha.ru
@@ -978,14 +1034,14 @@ proxies:
       host: onea.flha.ru
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 🇳🇱_NL_荷兰_14@11
+  name: 🇳🇱_NL_荷兰_15@11
   password: lPT3Mi25IXYP3iWzPJaryQ
   port: 60869
   server: 88.210.6.98
   type: ss
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_1_15@0
+  name: 🇺🇸_US_美国_1_16@0
   network: ws
   port: 2087
   server: api.cdn-tgju.org
@@ -998,7 +1054,7 @@ proxies:
     path: /ows
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_2_15@4
+  name: 🇺🇸_US_美国_2_16@4
   network: ws
   port: 2095
   server: cfcdn1.sanfencdn9.com
@@ -1012,7 +1068,7 @@ proxies:
     path: /video/qYZue4zaWS
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_3_15@16
+  name: 🇺🇸_US_美国_3_16@16
   network: ws
   port: 2095
   server: 104.18.135.91
@@ -1026,7 +1082,7 @@ proxies:
     path: /video/qYZue4zaWS
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_16@11
+  name: 🇺🇸_US_美国_17@11
   network: ws
   port: 46666
   server: us-phoenix-oracle-3e4543.ip1.shop
@@ -1040,7 +1096,7 @@ proxies:
     path: /rongseven?ed=2048
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_2_17@8
+  name: 🇺🇸_US_美国_2_18@8
   network: tcp
   port: 28241
   server: 38.147.160.101
@@ -1050,7 +1106,7 @@ proxies:
   uuid: adf0d7fc-6c13-4cff-e02a-e130cf562c6f
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_3_17@9
+  name: 🇺🇸_US_美国_3_18@9
   network: tcp
   port: 41384
   server: 38.147.160.101
@@ -1060,7 +1116,7 @@ proxies:
   uuid: ab6643ec-5172-4a7b-b0e0-f2767bae83aa
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_2_18@10
+  name: 🇺🇸_US_美国_2_19@10
   network: ws
   port: 80
   server: 172.67.116.48
@@ -1073,14 +1129,14 @@ proxies:
       host: wap.hostmjj.com
     path: /
 - cipher: aes-128-gcm
-  name: 🇺🇸_US_美国_3_18@11
+  name: 🇺🇸_US_美国_3_19@11
   password: Yc2CtrIz8L
   port: 16899
   server: 202.91.34.222
   type: ss
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_4_18@16
+  name: 🇺🇸_US_美国_4_19@16
   network: tcp
   port: 33764
   server: 5.161.192.172
@@ -1089,20 +1145,20 @@ proxies:
   type: vmess
   uuid: f96e9397-08be-4227-e26a-f3a55a3976de
 - cipher: aes-256-cfb
-  name: 🇺🇸_US_美国_1_19@0
+  name: 🇺🇸_US_美国_1_20@0
   password: amazonskr05
   port: 443
   server: 34.221.93.113
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇷🇺_RU_俄罗斯联邦_1_19@2
+  name: 🇷🇺_RU_俄罗斯联邦_1_20@2
   password: KTwIQM1cQJwtkrjfld6Usn
   port: 32913
   server: 46.226.162.112
   type: ss
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_3_19@10
+  name: 🇺🇸_US_美国_3_20@10
   network: ws
   port: 80
   server: 64.64.229.96
@@ -1114,7 +1170,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_4_19@12
+  name: 🇺🇸_US_美国_4_20@12
   network: ws
   port: 8080
   server: yh1.freeh1.xyz
@@ -1128,7 +1184,7 @@ proxies:
     path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_1_20@3
+  name: 🇺🇸_US_美国_1_21@3
   network: ws
   port: 2053
   server: qin15.rong1104.uk
@@ -1141,7 +1197,7 @@ proxies:
     path: /qin15
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_2_20@5
+  name: 🇺🇸_US_美国_2_21@5
   network: ws
   port: 8080
   server: yh3.freeh1.xyz
@@ -1155,7 +1211,7 @@ proxies:
     path: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a-vm
 - alterId: 0
   cipher: auto
-  name: 🇨🇦_CA_加拿大_20@17
+  name: 🇨🇦_CA_加拿大_21@17
   network: ws
   port: 8080
   server: 23.227.38.23
@@ -1169,7 +1225,7 @@ proxies:
     path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_5_20@18
+  name: 🇺🇸_US_美国_5_21@18
   network: ws
   port: 8080
   server: 162.159.137.249
@@ -1182,26 +1238,26 @@ proxies:
       host: nest-emily-healing-h.trycloudflare.com
     path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
 - cipher: aes-256-cfb
-  name: 🇺🇸_US_美国_2_21@6
+  name: 🇺🇸_US_美国_2_22@6
   password: amazonskr05
   port: 443
   server: 34.221.163.96
   type: ss
 - cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_1_22@1
+  name: 🇺🇸_US_美国_1_23@1
   password: TEzjfAYq2IjtuoS
   port: 6679
   server: 167.88.61.235
   type: ss
 - cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_2_22@4
+  name: 🇺🇸_US_美国_2_23@4
   password: e4FCWrgpkji3QY
   port: 9101
   server: 167.88.61.159
   type: ss
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_8_22@14
+  name: 🇺🇸_US_美国_8_23@14
   network: ws
   port: 8080
   server: 162.159.7.226
@@ -1215,7 +1271,7 @@ proxies:
     path: 9b196b50-37f2-4f4b-b175-06273adc6207-vm
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_9_22@15
+  name: 🇺🇸_US_美国_9_23@15
   network: ws
   port: 2082
   server: cfcdn1.sanfencdn9.com
@@ -1229,7 +1285,7 @@ proxies:
     path: /video/CuTy87zAzV/
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_10_22@16
+  name: 🇺🇸_US_美国_10_23@16
   network: tcp
   port: 47918
   server: 207.148.10.248
@@ -1239,7 +1295,7 @@ proxies:
   uuid: 232aeb1e-7d67-4a91-9379-4da1f4917691
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_1_23@5
+  name: 🇺🇸_US_美国_1_24@5
   network: ws
   port: 8080
   server: 173.245.58.100
@@ -1253,7 +1309,7 @@ proxies:
     path: 9b196b50-37f2-4f4b-b175-06273adc6207-vm
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_2_23@10
+  name: 🇺🇸_US_美国_2_24@10
   network: ws
   port: 2052
   server: mahilu.site
@@ -1267,7 +1323,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国_3_23@11
+  name: 🇺🇸_US_美国_3_24@11
   network: ws
   port: 8080
   server: yh1.dtku41.xyz
@@ -1280,14 +1336,14 @@ proxies:
       host: uh-lawyers-instruments-kernel.trycloudflare.com
     path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
 - cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_7_23@18
+  name: 🇺🇸_US_美国_7_24@18
   password: RexnBgU7EV5ADxG
   port: 7002
   server: 169.197.142.216
   type: ss
 - grpc-opts:
     grpc-service-name: grpc
-  name: 🇺🇸_US_美国_8_23@19
+  name: 🇺🇸_US_美国_8_24@19
   network: grpc
   password: 241f01b9-8dfc-474f-8342-3fbd5c46417e
   port: 2087
@@ -1296,111 +1352,6 @@ proxies:
   sni: grpcfr.arminhadadi.site
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  name: 🇺🇸_US_美国_1_24@3
-  password: amazonskr05
-  port: 443
-  server: 18.237.116.67
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇺🇸_US_美国_2_24@4
-  password: amazonskr05
-  port: 443
-  server: 52.32.221.7
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸_US_美国_6_24@14
-  password: Yc2CtrIz8L
-  port: 16899
-  server: 107.175.136.164
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国_7_24@16
-  network: ws
-  port: 2052
-  server: 104.21.82.39
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  ws-opts:
-    headers:
-      host: mahilu.site
-    path: /
-- name: 🇺🇸_US_美国_8_24@18
-  network: ws
-  password: 559c3b5f-3dd1-47e4-94ad-017cb392a7ba
-  port: 443
-  server: 104.26.8.202
-  skip-cert-verify: true
-  sni: de1.trojanvpn.de
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: de1.trojanvpn.dE
-    path: /path/Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config---Alfred_Config
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国_9_24@19
-  network: ws
-  port: 8080
-  server: russia.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: bd8c41a8-7598-4c28-9965-522545e14892
-  ws-opts:
-    headers:
-      host: ssrsub.v03.ssrsub.com
-    path: /api/v3/download.getFile
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国_10_24@21
-  network: ws
-  port: 8880
-  server: 104.21.1.28
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4b5e4565-322f-4223-a891-78a84f189726
-  ws-opts:
-    headers:
-      host: us-ccs.yuji2022.eu.org
-    path: /XSjeg73o6ZdsheahCb5JG
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国_11_24@24
-  network: ws
-  port: 8080
-  server: yh2.freeh1.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
-  ws-opts:
-    headers:
-      host: pcs-referenced-camera-concerns.trycloudflare.com
-    path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
-- alterId: 0
-  cipher: auto
-  name: 🇳🇱_NL_荷兰_24@27
-  network: ws
-  port: 45015
-  server: 0:0:0:0:0:ffff:b2d0:5790
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 21f54c15-c624-460a-d6f3-95bb2041ea4a
-  ws-opts:
-    path: /
-- cipher: aes-256-gcm
-  name: 🇧🇷_BR_巴西_24@28
-  password: 71146b83-2bc0-4258-830a-a7c25bf1c636
-  port: 7705
-  server: 132.226.164.14
-  type: ss
 proxy-groups:
 - name: 🚀 代理选择
   proxies:
@@ -1411,294 +1362,282 @@ proxy-groups:
 - interval: 300
   name: ♻️ 自动选择
   proxies:
-  - 🇺🇸_US_美国_1_0@3
-  - 🇺🇸_US_美国_2_0@6
-  - 🇺🇸_US_美国_3_0@7
-  - 🇺🇸_US_美国_4_0@11
-  - 🇱🇺_LU_卢森堡_0@13
-  - 🇩🇪_DE_德意志联邦共和国_0@14
-  - 🇨🇦_CA_加拿大_0@15
-  - 🇺🇸_US_美国_5_0@17
-  - 🇺🇸_US_美国_6_0@18
+  - 🇺🇸_US_美国_1_0@1
+  - 🇱🇺_LU_卢森堡_0@3
+  - 🇺🇸_US_美国_2_0@4
+  - 🇺🇸_US_美国_3_0@5
+  - 🇺🇸_US_美国_4_0@6
+  - 🇺🇸_US_美国_5_0@7
+  - 🇺🇸_US_美国_6_0@8
+  - 🇺🇸_US_美国_7_0@9
+  - 🇨🇦_CA_加拿大_0@10
+  - 🇺🇸_US_美国_8_0@11
+  - 🇺🇸_US_美国_9_0@14
+  - 🇺🇸_US_美国_10_0@15
   - 🇺🇸_US_美国_3_1@7
-  - 🇺🇸_US_美国_4_1@9
-  - 🇺🇸_US_美国_5_1@15
-  - 🇺🇸_US_美国_6_1@16
-  - 🇬🇧_GB_英国_1@18
-  - 🇩🇪_DE_德国_1@19
-  - 🇺🇸_US_美国_7_1@20
-  - 🇺🇸_US_美国_8_1@21
-  - 🇷🇺_RU_俄罗斯联邦_1@22
-  - 🇿🇦_ZA_南非_2@19
-  - 🇺🇸_US_美国_4_2@21
-  - 🇺🇸_US_美国_5_2@22
-  - 🇺🇸_US_美国_7_2@24
-  - 🇺🇸_US_美国_8_2@25
-  - 🇬🇧_GB_英国_3@10
-  - 🇬🇮_GI_直布罗陀_1_3@17
-  - 🇮🇹_IT_意大利_3@18
-  - 🇺🇸_US_美国_3_3@20
-  - 🇷🇺_RU_俄罗斯联邦_3@22
-  - 🇺🇸_US_美国_5_3@23
-  - 🇺🇸_US_美国_6_3@24
-  - 🇺🇸_US_美国_7_3@25
-  - 🇺🇸_US_美国_8_3@26
-  - 🇸🇪_SE_瑞典_3@34
-  - 🇸🇬_SG_新加坡_3@36
-  - 🇩🇪_DE_德意志联邦共和国_1_3@38
-  - 🇬🇮_GI_直布罗陀_2_3@40
-  - 🇬🇮_GI_直布罗陀_3_3@41
-  - 🇫🇮_FI_芬兰_4@17
-  - 🇨🇦_CA_加拿大_1_4@23
-  - 🇺🇸_US_美国_3_4@25
-  - 🇺🇸_US_美国_4_4@30
-  - 🇺🇸_US_美国_5_4@31
-  - 🇺🇸_US_美国_6_4@35
-  - 🇷🇺_RU_俄罗斯联邦_4@36
-  - 🇬🇧_GB_英国_2_4@37
-  - 🇺🇸_US_美国_7_4@39
-  - 🇫🇷_FR_法国_2_4@41
-  - 🇺🇸_US_美国_3_5@10
-  - 🇺🇸_US_美国_4_5@11
-  - 🇺🇸_US_美国_5_5@12
-  - 🇩🇪_DE_德意志联邦共和国_1_5@15
-  - 🇺🇸_US_美国_7_5@19
-  - 🇺🇸_US_美国_8_5@20
-  - 🇺🇸_US_美国_9_5@21
-  - 🇺🇸_US_美国_10_5@22
-  - 🇺🇸_US_美国_12_5@24
-  - 🇺🇸_US_美国_13_5@25
-  - 🇺🇸_US_美国_14_5@26
-  - 🇺🇸_US_美国_15_5@27
-  - 🇺🇸_US_美国_16_5@28
-  - 🇺🇸_US_美国_17_5@29
-  - 🇺🇸_US_美国_18_5@30
-  - 🇺🇸_US_美国_2_6@6
-  - 🇺🇸_US_美国_3_6@7
-  - 🇷🇺_RU_俄罗斯联邦_6@13
+  - 🇺🇸_US_美国_4_1@11
+  - 🇩🇪_DE_德意志联邦共和国_1@14
+  - 🇺🇸_US_美国_4_2@9
+  - 🇺🇸_US_美国_5_2@15
+  - 🇺🇸_US_美国_6_2@16
+  - 🇬🇧_GB_英国_2@18
+  - 🇩🇪_DE_德国_2@19
+  - 🇺🇸_US_美国_7_2@20
+  - 🇺🇸_US_美国_8_2@21
+  - 🇷🇺_RU_俄罗斯联邦_2@22
+  - 🇿🇦_ZA_南非_3@19
+  - 🇺🇸_US_美国_4_3@21
+  - 🇺🇸_US_美国_5_3@22
+  - 🇺🇸_US_美国_7_3@24
+  - 🇺🇸_US_美国_8_3@25
+  - 🇬🇧_GB_英国_4@10
+  - 🇬🇮_GI_直布罗陀_1_4@17
+  - 🇮🇹_IT_意大利_4@18
+  - 🇺🇸_US_美国_3_4@20
+  - 🇷🇺_RU_俄罗斯联邦_4@22
+  - 🇺🇸_US_美国_5_4@23
+  - 🇺🇸_US_美国_6_4@24
+  - 🇺🇸_US_美国_7_4@25
+  - 🇺🇸_US_美国_8_4@26
+  - 🇸🇪_SE_瑞典_4@34
+  - 🇸🇬_SG_新加坡_4@36
+  - 🇩🇪_DE_德意志联邦共和国_1_4@38
+  - 🇬🇮_GI_直布罗陀_2_4@40
+  - 🇬🇮_GI_直布罗陀_3_4@41
+  - 🇫🇮_FI_芬兰_5@17
+  - 🇨🇦_CA_加拿大_1_5@23
+  - 🇺🇸_US_美国_3_5@25
+  - 🇺🇸_US_美国_5_5@31
+  - 🇺🇸_US_美国_6_5@35
+  - 🇷🇺_RU_俄罗斯联邦_5@36
+  - 🇬🇧_GB_英国_2_5@37
+  - 🇺🇸_US_美国_7_5@39
+  - 🇫🇷_FR_法国_2_5@41
+  - 🇺🇸_US_美国_3_6@10
+  - 🇺🇸_US_美国_4_6@11
+  - 🇺🇸_US_美国_5_6@12
+  - 🇩🇪_DE_德意志联邦共和国_1_6@15
+  - 🇺🇸_US_美国_7_6@19
   - 🇺🇸_US_美国_8_6@20
   - 🇺🇸_US_美国_9_6@21
-  - 🇺🇸_US_美国_10_6@24
-  - 🇺🇸_US_美国_11_6@25
-  - 🇬🇮_GI_直布罗陀_6@26
-  - 🇺🇸_US_美国_12_6@27
-  - 🇷🇺_RU_俄罗斯联邦_8@3
-  - 🇺🇸_US_美国_1_8@4
-  - 🇦🇪_AE_阿联酋_8@6
-  - 🇺🇸_US_美国_2_8@12
-  - 🇺🇸_US_美国_3_8@14
-  - 🇺🇸_US_美国_4_8@16
-  - 🇩🇪_DE_德国_8@23
-  - 🇺🇸_US_美国_1_9@3
-  - 🇺🇸_US_美国_4_9@15
-  - 🇺🇸_US_美国_5_9@16
-  - 🇺🇸_US_美国_6_9@17
-  - 🇨🇦_CA_加拿大_9@19
-  - 🇺🇸_US_美国_8_9@21
-  - 🇺🇸_US_美国_2_10@4
-  - 🇺🇸_US_美国_3_10@8
-  - 🇺🇸_US_美国_5_10@13
-  - 🇺🇸_US_美国_6_10@14
-  - 🇺🇸_US_美国_7_10@15
-  - 🇺🇸_US_美国_8_10@16
-  - 🇵🇰_PK_巴基斯坦_10@17
-  - 🇮🇪_IE_爱尔兰_10@18
-  - 🇺🇸_US_美国_1_11@2
-  - 🇺🇸_US_美国_2_11@7
+  - 🇺🇸_US_美国_10_6@22
+  - 🇺🇸_US_美国_12_6@24
+  - 🇺🇸_US_美国_13_6@25
+  - 🇺🇸_US_美国_14_6@26
+  - 🇺🇸_US_美国_15_6@27
+  - 🇺🇸_US_美国_16_6@28
+  - 🇺🇸_US_美国_17_6@29
+  - 🇺🇸_US_美国_18_6@30
+  - 🇺🇸_US_美国_2_7@6
+  - 🇺🇸_US_美国_3_7@7
+  - 🇷🇺_RU_俄罗斯联邦_7@13
+  - 🇺🇸_US_美国_8_7@20
+  - 🇺🇸_US_美国_9_7@21
+  - 🇺🇸_US_美国_10_7@24
+  - 🇺🇸_US_美国_11_7@25
+  - 🇬🇮_GI_直布罗陀_7@26
+  - 🇺🇸_US_美国_12_7@27
+  - 🇷🇺_RU_俄罗斯联邦_9@3
+  - 🇺🇸_US_美国_1_9@4
+  - 🇦🇪_AE_阿联酋_9@6
+  - 🇺🇸_US_美国_2_9@12
+  - 🇺🇸_US_美国_3_9@14
+  - 🇺🇸_US_美国_4_9@16
+  - 🇩🇪_DE_德国_9@23
+  - 🇺🇸_US_美国_1_10@3
+  - 🇺🇸_US_美国_4_10@15
+  - 🇺🇸_US_美国_5_10@16
+  - 🇺🇸_US_美国_6_10@17
+  - 🇨🇦_CA_加拿大_10@19
+  - 🇺🇸_US_美国_8_10@21
+  - 🇺🇸_US_美国_2_11@4
+  - 🇺🇸_US_美国_3_11@8
+  - 🇺🇸_US_美国_5_11@13
   - 🇺🇸_US_美国_6_11@14
-  - 🇨🇦_CA_加拿大_1_12@10
-  - 🇨🇦_CA_加拿大_2_12@12
-  - 🇫🇮_FI_芬兰_12@13
-  - 🇧🇷_BR_巴西_13@2
-  - 🇺🇸_US_美国_1_13@3
-  - 🇱🇺_LU_卢森堡_13@6
-  - 🇺🇸_US_美国_2_13@9
-  - 🇳🇱_NL_荷兰_14@11
-  - 🇺🇸_US_美国_1_15@0
-  - 🇺🇸_US_美国_2_15@4
-  - 🇺🇸_US_美国_3_15@16
-  - 🇺🇸_US_美国_16@11
-  - 🇺🇸_US_美国_2_17@8
-  - 🇺🇸_US_美国_3_17@9
-  - 🇺🇸_US_美国_2_18@10
-  - 🇺🇸_US_美国_3_18@11
-  - 🇺🇸_US_美国_4_18@16
-  - 🇺🇸_US_美国_1_19@0
-  - 🇷🇺_RU_俄罗斯联邦_1_19@2
-  - 🇺🇸_US_美国_3_19@10
-  - 🇺🇸_US_美国_4_19@12
-  - 🇺🇸_US_美国_1_20@3
-  - 🇺🇸_US_美国_2_20@5
-  - 🇨🇦_CA_加拿大_20@17
-  - 🇺🇸_US_美国_5_20@18
-  - 🇺🇸_US_美国_2_21@6
-  - 🇺🇸_US_美国_1_22@1
-  - 🇺🇸_US_美国_2_22@4
-  - 🇺🇸_US_美国_8_22@14
-  - 🇺🇸_US_美国_9_22@15
-  - 🇺🇸_US_美国_10_22@16
-  - 🇺🇸_US_美国_1_23@5
-  - 🇺🇸_US_美国_2_23@10
-  - 🇺🇸_US_美国_3_23@11
-  - 🇺🇸_US_美国_7_23@18
-  - 🇺🇸_US_美国_8_23@19
-  - 🇺🇸_US_美国_1_24@3
-  - 🇺🇸_US_美国_2_24@4
-  - 🇺🇸_US_美国_6_24@14
-  - 🇺🇸_US_美国_7_24@16
-  - 🇺🇸_US_美国_8_24@18
-  - 🇺🇸_US_美国_9_24@19
-  - 🇺🇸_US_美国_10_24@21
-  - 🇺🇸_US_美国_11_24@24
-  - 🇳🇱_NL_荷兰_24@27
-  - 🇧🇷_BR_巴西_24@28
+  - 🇺🇸_US_美国_7_11@15
+  - 🇺🇸_US_美国_8_11@16
+  - 🇵🇰_PK_巴基斯坦_11@17
+  - 🇮🇪_IE_爱尔兰_11@18
+  - 🇺🇸_US_美国_1_12@2
+  - 🇺🇸_US_美国_2_12@7
+  - 🇺🇸_US_美国_6_12@14
+  - 🇨🇦_CA_加拿大_1_13@10
+  - 🇨🇦_CA_加拿大_2_13@12
+  - 🇫🇮_FI_芬兰_13@13
+  - 🇧🇷_BR_巴西_14@2
+  - 🇺🇸_US_美国_1_14@3
+  - 🇱🇺_LU_卢森堡_14@6
+  - 🇺🇸_US_美国_2_14@9
+  - 🇳🇱_NL_荷兰_15@11
+  - 🇺🇸_US_美国_1_16@0
+  - 🇺🇸_US_美国_2_16@4
+  - 🇺🇸_US_美国_3_16@16
+  - 🇺🇸_US_美国_17@11
+  - 🇺🇸_US_美国_2_18@8
+  - 🇺🇸_US_美国_3_18@9
+  - 🇺🇸_US_美国_2_19@10
+  - 🇺🇸_US_美国_3_19@11
+  - 🇺🇸_US_美国_4_19@16
+  - 🇺🇸_US_美国_1_20@0
+  - 🇷🇺_RU_俄罗斯联邦_1_20@2
+  - 🇺🇸_US_美国_3_20@10
+  - 🇺🇸_US_美国_4_20@12
+  - 🇺🇸_US_美国_1_21@3
+  - 🇺🇸_US_美国_2_21@5
+  - 🇨🇦_CA_加拿大_21@17
+  - 🇺🇸_US_美国_5_21@18
+  - 🇺🇸_US_美国_2_22@6
+  - 🇺🇸_US_美国_1_23@1
+  - 🇺🇸_US_美国_2_23@4
+  - 🇺🇸_US_美国_8_23@14
+  - 🇺🇸_US_美国_9_23@15
+  - 🇺🇸_US_美国_10_23@16
+  - 🇺🇸_US_美国_1_24@5
+  - 🇺🇸_US_美国_2_24@10
+  - 🇺🇸_US_美国_3_24@11
+  - 🇺🇸_US_美国_7_24@18
+  - 🇺🇸_US_美国_8_24@19
   tolerance: 50
   type: url-test
   url: http://www.gstatic.com/generate_204
 - interval: 300
   name: ♻️ Select
   proxies:
-  - 🇺🇸_US_美国_1_0@3
-  - 🇺🇸_US_美国_2_0@6
-  - 🇺🇸_US_美国_3_0@7
-  - 🇺🇸_US_美国_4_0@11
-  - 🇱🇺_LU_卢森堡_0@13
-  - 🇩🇪_DE_德意志联邦共和国_0@14
-  - 🇨🇦_CA_加拿大_0@15
-  - 🇺🇸_US_美国_5_0@17
-  - 🇺🇸_US_美国_6_0@18
+  - 🇺🇸_US_美国_1_0@1
+  - 🇱🇺_LU_卢森堡_0@3
+  - 🇺🇸_US_美国_2_0@4
+  - 🇺🇸_US_美国_3_0@5
+  - 🇺🇸_US_美国_4_0@6
+  - 🇺🇸_US_美国_5_0@7
+  - 🇺🇸_US_美国_6_0@8
+  - 🇺🇸_US_美国_7_0@9
+  - 🇨🇦_CA_加拿大_0@10
+  - 🇺🇸_US_美国_8_0@11
+  - 🇺🇸_US_美国_9_0@14
+  - 🇺🇸_US_美国_10_0@15
   - 🇺🇸_US_美国_3_1@7
-  - 🇺🇸_US_美国_4_1@9
-  - 🇺🇸_US_美国_5_1@15
-  - 🇺🇸_US_美国_6_1@16
-  - 🇬🇧_GB_英国_1@18
-  - 🇩🇪_DE_德国_1@19
-  - 🇺🇸_US_美国_7_1@20
-  - 🇺🇸_US_美国_8_1@21
-  - 🇷🇺_RU_俄罗斯联邦_1@22
-  - 🇿🇦_ZA_南非_2@19
-  - 🇺🇸_US_美国_4_2@21
-  - 🇺🇸_US_美国_5_2@22
-  - 🇺🇸_US_美国_7_2@24
-  - 🇺🇸_US_美国_8_2@25
-  - 🇬🇧_GB_英国_3@10
-  - 🇬🇮_GI_直布罗陀_1_3@17
-  - 🇮🇹_IT_意大利_3@18
-  - 🇺🇸_US_美国_3_3@20
-  - 🇷🇺_RU_俄罗斯联邦_3@22
-  - 🇺🇸_US_美国_5_3@23
-  - 🇺🇸_US_美国_6_3@24
-  - 🇺🇸_US_美国_7_3@25
-  - 🇺🇸_US_美国_8_3@26
-  - 🇸🇪_SE_瑞典_3@34
-  - 🇸🇬_SG_新加坡_3@36
-  - 🇩🇪_DE_德意志联邦共和国_1_3@38
-  - 🇬🇮_GI_直布罗陀_2_3@40
-  - 🇬🇮_GI_直布罗陀_3_3@41
-  - 🇫🇮_FI_芬兰_4@17
-  - 🇨🇦_CA_加拿大_1_4@23
-  - 🇺🇸_US_美国_3_4@25
-  - 🇺🇸_US_美国_4_4@30
-  - 🇺🇸_US_美国_5_4@31
-  - 🇺🇸_US_美国_6_4@35
-  - 🇷🇺_RU_俄罗斯联邦_4@36
-  - 🇬🇧_GB_英国_2_4@37
-  - 🇺🇸_US_美国_7_4@39
-  - 🇫🇷_FR_法国_2_4@41
-  - 🇺🇸_US_美国_3_5@10
-  - 🇺🇸_US_美国_4_5@11
-  - 🇺🇸_US_美国_5_5@12
-  - 🇩🇪_DE_德意志联邦共和国_1_5@15
-  - 🇺🇸_US_美国_7_5@19
-  - 🇺🇸_US_美国_8_5@20
-  - 🇺🇸_US_美国_9_5@21
-  - 🇺🇸_US_美国_10_5@22
-  - 🇺🇸_US_美国_12_5@24
-  - 🇺🇸_US_美国_13_5@25
-  - 🇺🇸_US_美国_14_5@26
-  - 🇺🇸_US_美国_15_5@27
-  - 🇺🇸_US_美国_16_5@28
-  - 🇺🇸_US_美国_17_5@29
-  - 🇺🇸_US_美国_18_5@30
-  - 🇺🇸_US_美国_2_6@6
-  - 🇺🇸_US_美国_3_6@7
-  - 🇷🇺_RU_俄罗斯联邦_6@13
+  - 🇺🇸_US_美国_4_1@11
+  - 🇩🇪_DE_德意志联邦共和国_1@14
+  - 🇺🇸_US_美国_4_2@9
+  - 🇺🇸_US_美国_5_2@15
+  - 🇺🇸_US_美国_6_2@16
+  - 🇬🇧_GB_英国_2@18
+  - 🇩🇪_DE_德国_2@19
+  - 🇺🇸_US_美国_7_2@20
+  - 🇺🇸_US_美国_8_2@21
+  - 🇷🇺_RU_俄罗斯联邦_2@22
+  - 🇿🇦_ZA_南非_3@19
+  - 🇺🇸_US_美国_4_3@21
+  - 🇺🇸_US_美国_5_3@22
+  - 🇺🇸_US_美国_7_3@24
+  - 🇺🇸_US_美国_8_3@25
+  - 🇬🇧_GB_英国_4@10
+  - 🇬🇮_GI_直布罗陀_1_4@17
+  - 🇮🇹_IT_意大利_4@18
+  - 🇺🇸_US_美国_3_4@20
+  - 🇷🇺_RU_俄罗斯联邦_4@22
+  - 🇺🇸_US_美国_5_4@23
+  - 🇺🇸_US_美国_6_4@24
+  - 🇺🇸_US_美国_7_4@25
+  - 🇺🇸_US_美国_8_4@26
+  - 🇸🇪_SE_瑞典_4@34
+  - 🇸🇬_SG_新加坡_4@36
+  - 🇩🇪_DE_德意志联邦共和国_1_4@38
+  - 🇬🇮_GI_直布罗陀_2_4@40
+  - 🇬🇮_GI_直布罗陀_3_4@41
+  - 🇫🇮_FI_芬兰_5@17
+  - 🇨🇦_CA_加拿大_1_5@23
+  - 🇺🇸_US_美国_3_5@25
+  - 🇺🇸_US_美国_5_5@31
+  - 🇺🇸_US_美国_6_5@35
+  - 🇷🇺_RU_俄罗斯联邦_5@36
+  - 🇬🇧_GB_英国_2_5@37
+  - 🇺🇸_US_美国_7_5@39
+  - 🇫🇷_FR_法国_2_5@41
+  - 🇺🇸_US_美国_3_6@10
+  - 🇺🇸_US_美国_4_6@11
+  - 🇺🇸_US_美国_5_6@12
+  - 🇩🇪_DE_德意志联邦共和国_1_6@15
+  - 🇺🇸_US_美国_7_6@19
   - 🇺🇸_US_美国_8_6@20
   - 🇺🇸_US_美国_9_6@21
-  - 🇺🇸_US_美国_10_6@24
-  - 🇺🇸_US_美国_11_6@25
-  - 🇬🇮_GI_直布罗陀_6@26
-  - 🇺🇸_US_美国_12_6@27
-  - 🇷🇺_RU_俄罗斯联邦_8@3
-  - 🇺🇸_US_美国_1_8@4
-  - 🇦🇪_AE_阿联酋_8@6
-  - 🇺🇸_US_美国_2_8@12
-  - 🇺🇸_US_美国_3_8@14
-  - 🇺🇸_US_美国_4_8@16
-  - 🇩🇪_DE_德国_8@23
-  - 🇺🇸_US_美国_1_9@3
-  - 🇺🇸_US_美国_4_9@15
-  - 🇺🇸_US_美国_5_9@16
-  - 🇺🇸_US_美国_6_9@17
-  - 🇨🇦_CA_加拿大_9@19
-  - 🇺🇸_US_美国_8_9@21
-  - 🇺🇸_US_美国_2_10@4
-  - 🇺🇸_US_美国_3_10@8
-  - 🇺🇸_US_美国_5_10@13
-  - 🇺🇸_US_美国_6_10@14
-  - 🇺🇸_US_美国_7_10@15
-  - 🇺🇸_US_美国_8_10@16
-  - 🇵🇰_PK_巴基斯坦_10@17
-  - 🇮🇪_IE_爱尔兰_10@18
-  - 🇺🇸_US_美国_1_11@2
-  - 🇺🇸_US_美国_2_11@7
+  - 🇺🇸_US_美国_10_6@22
+  - 🇺🇸_US_美国_12_6@24
+  - 🇺🇸_US_美国_13_6@25
+  - 🇺🇸_US_美国_14_6@26
+  - 🇺🇸_US_美国_15_6@27
+  - 🇺🇸_US_美国_16_6@28
+  - 🇺🇸_US_美国_17_6@29
+  - 🇺🇸_US_美国_18_6@30
+  - 🇺🇸_US_美国_2_7@6
+  - 🇺🇸_US_美国_3_7@7
+  - 🇷🇺_RU_俄罗斯联邦_7@13
+  - 🇺🇸_US_美国_8_7@20
+  - 🇺🇸_US_美国_9_7@21
+  - 🇺🇸_US_美国_10_7@24
+  - 🇺🇸_US_美国_11_7@25
+  - 🇬🇮_GI_直布罗陀_7@26
+  - 🇺🇸_US_美国_12_7@27
+  - 🇷🇺_RU_俄罗斯联邦_9@3
+  - 🇺🇸_US_美国_1_9@4
+  - 🇦🇪_AE_阿联酋_9@6
+  - 🇺🇸_US_美国_2_9@12
+  - 🇺🇸_US_美国_3_9@14
+  - 🇺🇸_US_美国_4_9@16
+  - 🇩🇪_DE_德国_9@23
+  - 🇺🇸_US_美国_1_10@3
+  - 🇺🇸_US_美国_4_10@15
+  - 🇺🇸_US_美国_5_10@16
+  - 🇺🇸_US_美国_6_10@17
+  - 🇨🇦_CA_加拿大_10@19
+  - 🇺🇸_US_美国_8_10@21
+  - 🇺🇸_US_美国_2_11@4
+  - 🇺🇸_US_美国_3_11@8
+  - 🇺🇸_US_美国_5_11@13
   - 🇺🇸_US_美国_6_11@14
-  - 🇨🇦_CA_加拿大_1_12@10
-  - 🇨🇦_CA_加拿大_2_12@12
-  - 🇫🇮_FI_芬兰_12@13
-  - 🇧🇷_BR_巴西_13@2
-  - 🇺🇸_US_美国_1_13@3
-  - 🇱🇺_LU_卢森堡_13@6
-  - 🇺🇸_US_美国_2_13@9
-  - 🇳🇱_NL_荷兰_14@11
-  - 🇺🇸_US_美国_1_15@0
-  - 🇺🇸_US_美国_2_15@4
-  - 🇺🇸_US_美国_3_15@16
-  - 🇺🇸_US_美国_16@11
-  - 🇺🇸_US_美国_2_17@8
-  - 🇺🇸_US_美国_3_17@9
-  - 🇺🇸_US_美国_2_18@10
-  - 🇺🇸_US_美国_3_18@11
-  - 🇺🇸_US_美国_4_18@16
-  - 🇺🇸_US_美国_1_19@0
-  - 🇷🇺_RU_俄罗斯联邦_1_19@2
-  - 🇺🇸_US_美国_3_19@10
-  - 🇺🇸_US_美国_4_19@12
-  - 🇺🇸_US_美国_1_20@3
-  - 🇺🇸_US_美国_2_20@5
-  - 🇨🇦_CA_加拿大_20@17
-  - 🇺🇸_US_美国_5_20@18
-  - 🇺🇸_US_美国_2_21@6
-  - 🇺🇸_US_美国_1_22@1
-  - 🇺🇸_US_美国_2_22@4
-  - 🇺🇸_US_美国_8_22@14
-  - 🇺🇸_US_美国_9_22@15
-  - 🇺🇸_US_美国_10_22@16
-  - 🇺🇸_US_美国_1_23@5
-  - 🇺🇸_US_美国_2_23@10
-  - 🇺🇸_US_美国_3_23@11
-  - 🇺🇸_US_美国_7_23@18
-  - 🇺🇸_US_美国_8_23@19
-  - 🇺🇸_US_美国_1_24@3
-  - 🇺🇸_US_美国_2_24@4
-  - 🇺🇸_US_美国_6_24@14
-  - 🇺🇸_US_美国_7_24@16
-  - 🇺🇸_US_美国_8_24@18
-  - 🇺🇸_US_美国_9_24@19
-  - 🇺🇸_US_美国_10_24@21
-  - 🇺🇸_US_美国_11_24@24
-  - 🇳🇱_NL_荷兰_24@27
-  - 🇧🇷_BR_巴西_24@28
+  - 🇺🇸_US_美国_7_11@15
+  - 🇺🇸_US_美国_8_11@16
+  - 🇵🇰_PK_巴基斯坦_11@17
+  - 🇮🇪_IE_爱尔兰_11@18
+  - 🇺🇸_US_美国_1_12@2
+  - 🇺🇸_US_美国_2_12@7
+  - 🇺🇸_US_美国_6_12@14
+  - 🇨🇦_CA_加拿大_1_13@10
+  - 🇨🇦_CA_加拿大_2_13@12
+  - 🇫🇮_FI_芬兰_13@13
+  - 🇧🇷_BR_巴西_14@2
+  - 🇺🇸_US_美国_1_14@3
+  - 🇱🇺_LU_卢森堡_14@6
+  - 🇺🇸_US_美国_2_14@9
+  - 🇳🇱_NL_荷兰_15@11
+  - 🇺🇸_US_美国_1_16@0
+  - 🇺🇸_US_美国_2_16@4
+  - 🇺🇸_US_美国_3_16@16
+  - 🇺🇸_US_美国_17@11
+  - 🇺🇸_US_美国_2_18@8
+  - 🇺🇸_US_美国_3_18@9
+  - 🇺🇸_US_美国_2_19@10
+  - 🇺🇸_US_美国_3_19@11
+  - 🇺🇸_US_美国_4_19@16
+  - 🇺🇸_US_美国_1_20@0
+  - 🇷🇺_RU_俄罗斯联邦_1_20@2
+  - 🇺🇸_US_美国_3_20@10
+  - 🇺🇸_US_美国_4_20@12
+  - 🇺🇸_US_美国_1_21@3
+  - 🇺🇸_US_美国_2_21@5
+  - 🇨🇦_CA_加拿大_21@17
+  - 🇺🇸_US_美国_5_21@18
+  - 🇺🇸_US_美国_2_22@6
+  - 🇺🇸_US_美国_1_23@1
+  - 🇺🇸_US_美国_2_23@4
+  - 🇺🇸_US_美国_8_23@14
+  - 🇺🇸_US_美国_9_23@15
+  - 🇺🇸_US_美国_10_23@16
+  - 🇺🇸_US_美国_1_24@5
+  - 🇺🇸_US_美国_2_24@10
+  - 🇺🇸_US_美国_3_24@11
+  - 🇺🇸_US_美国_7_24@18
+  - 🇺🇸_US_美国_8_24@19
   tolerance: 50
   type: select
   url: http://www.gstatic.com/generate_204
