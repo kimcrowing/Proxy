@@ -1,6 +1,6 @@
 /*
 阿里云盘签到
-cron: 3 5,14 * * * 
+cron: 31 5,19 * * * 
 */
 const $ = new Env('阿里云盘签到');
 const axios = require('axios')
