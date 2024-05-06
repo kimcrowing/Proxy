@@ -52,18 +52,14 @@ cd "$local_path"
 git add .
 
 # 检查是否有文件更改
-if git diff --cached --quiet; then
-  echo "没有文件更改，跳过push操作。"
-else
-  # 获取文件的最后修改时间
-  last_modified_time=$(stat -c %y "$local_path/index.html" | cut -d'.' -f1)
+# 获取文件的最后修改时间
+last_modified_time=$(stat -c %y "$local_path/index.html" | cut -d'.' -f1)
 
-  # 使用文件的最后修改时间作为提交消息
-  git commit -m "$last_modified_time"
+# 使用文件的最后修改时间作为提交消息
+git commit -m "$last_modified_time"
 
-  # 调用函数推送更改
-  push_changes
-fi
+# 调用函数推送更改
+push_changes
 
 # 定义一个带有重试的推送更改函数
 push_changes() {
