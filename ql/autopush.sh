@@ -64,7 +64,7 @@ push_changes() {
   local attempt=1
 
   while [ $attempt -le $max_retries ]; do
-    echo "尝试第 $attempt 推送更改..."
+    echo "尝试第 $attempt 次推送更改..."
     git push
     if [ $? -eq 0 ]; then
       echo "推送成功。"
