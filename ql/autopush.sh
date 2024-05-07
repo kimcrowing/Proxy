@@ -55,11 +55,7 @@ git add .
 # 获取文件的最后修改时间
 last_modified_time=$(stat -c %y "$local_path/index.html" | cut -d'.' -f1)
 
-# 使用文件的最后修改时间作为提交消息
-git commit -m "$last_modified_time"
 
-# 调用函数推送更改
-push_changes
 
 # 定义一个带有重试的推送更改函数
 push_changes() {
@@ -83,3 +79,8 @@ push_changes() {
   echo "尝试了 $max_retries 次推送后失败。"
   return 1
 }
+# 使用文件的最后修改时间作为提交消息
+git commit -m "$last_modified_time"
+
+# 调用函数推送更改
+push_changes
