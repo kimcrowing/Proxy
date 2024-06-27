@@ -3,51 +3,25 @@ log-level: info
 mixed-port: 7890
 mode: Rule
 proxies:
+- name: 🇺🇸_US_美国_1_0@1
+  network: grpc
+  password: qj1Dz1CJmFQRhWr1SP80aA
+  port: 443
+  server: 104.16.1.10
+  sni: cdn-21.gsmxreality.com
+  type: trojan
+  udp: true
 - cipher: aes-256-cfb
-  name: 🇯🇵_JP_日本_0@0
+  name: 🇯🇵_JP_日本_0@10
   password: amazonskr05
   port: 443
   server: 18.181.170.157
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国_1_0@1
-  network: ws
-  port: 8080
-  server: russia.com
-  sni: ''
-  type: vmess
-  uuid: b7c56170-edb4-4c4a-bb64-ed5ef40b8739
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国_2_0@6
-  network: ws
-  port: 80
-  server: 104.19.35.227
-  sni: ''
-  type: vmess
-  uuid: b720e0b2-aa39-4633-90d8-489ed91038b0
-- cipher: aes-256-cfb
-  name: 🇸🇬_SG_新加坡_0@13
-  password: amazonskr05
+- name: 🇺🇸_US_美国_2_0@11
+  password: wkmY1R4EcP
   port: 443
-  server: 18.143.144.112
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇧🇪_BE_比利时_0@14
-  password: amazonskr05
-  port: 443
-  server: 57.180.37.197
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国_3_0@19
-  network: ws
-  port: 80
-  server: 162.159.136.98
-  sni: ''
-  type: vmess
-  uuid: f1b6bc05-40dd-4180-ca18-b05288fd33bb
+  server: 45.76.241.66
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇺🇸_US_美国_1_1@0
@@ -84,6 +58,15 @@ proxies:
   sni: ''
   type: vmess
   uuid: d726eb31-0c9e-49f9-8968-59c06f4ea15c
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸_US_美国_5_1@11
+  network: ws
+  port: 80
+  server: 162.159.136.98
+  sni: ''
+  type: vmess
+  uuid: f1b6bc05-40dd-4180-ca18-b05288fd33bb
 - cipher: aes-128-cfb
   name: 🇳🇱_NL_荷兰_1_2@1
   password: shadowsocks
@@ -160,6 +143,20 @@ proxies:
   port: 80
   server: 172.232.37.114
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸_US_美国_6_3@8
+  network: ws
+  port: 8080
+  server: russia.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b7c56170-edb4-4c4a-bb64-ed5ef40b8739
+  ws-opts:
+    headers:
+      host: sssub.v2.001.ssrsub.com
+    path: /api/v3/download.getFile
 - alterId: 0
   cipher: auto
   name: 🇺🇸_US_美国_7_3@9
@@ -1026,17 +1023,6 @@ proxies:
   port: 20002
   server: 38.99.82.85
   type: ss
-- grpc-opts:
-    grpc-service-name: 443trojan
-  name: 🇺🇸_US_美国_1_10@0
-  network: grpc
-  password: qj1Dz1CJmFQRhWr1SP80aA
-  port: 443
-  server: 104.16.1.10
-  skip-cert-verify: true
-  sni: cdn-21.gsmxreality.com
-  type: trojan
-  udp: true
 - cipher: aes-256-gcm
   name: 🇵🇱_PL_波兰_1_10@3
   password: Y6R9pAtvxxzmGC
@@ -2437,16 +2423,14 @@ proxy-groups:
 - interval: 300
   name: ♻️ 自动选择
   proxies:
-  - 🇯🇵_JP_日本_0@0
   - 🇺🇸_US_美国_1_0@1
-  - 🇺🇸_US_美国_2_0@6
-  - 🇸🇬_SG_新加坡_0@13
-  - 🇧🇪_BE_比利时_0@14
-  - 🇺🇸_US_美国_3_0@19
+  - 🇯🇵_JP_日本_0@10
+  - 🇺🇸_US_美国_2_0@11
   - 🇺🇸_US_美国_1_1@0
   - 🇺🇸_US_美国_2_1@5
   - 🇺🇸_US_美国_3_1@6
   - 🇺🇸_US_美国_4_1@8
+  - 🇺🇸_US_美国_5_1@11
   - 🇳🇱_NL_荷兰_1_2@1
   - 🇷🇺_RU_俄罗斯_2@3
   - 🇳🇱_NL_荷兰_2_2@4
@@ -2459,6 +2443,7 @@ proxy-groups:
   - 🇺🇸_US_美国_2_3@3
   - 🇺🇸_US_美国_3_3@4
   - 🇺🇸_US_美国_5_3@7
+  - 🇺🇸_US_美国_6_3@8
   - 🇺🇸_US_美国_7_3@9
   - 🇺🇸_US_美国_8_3@10
   - 🇺🇸_US_美国_9_3@11
@@ -2571,7 +2556,6 @@ proxy-groups:
   - 🇺🇸_US_美国_18_9@43
   - 🇺🇸_US_美国_19_9@44
   - 🇺🇸_US_美国_20_9@45
-  - 🇺🇸_US_美国_1_10@0
   - 🇵🇱_PL_波兰_1_10@3
   - 🇵🇱_PL_波兰_14_10@22
   - 🇮🇪_IE_爱尔兰_1_10@24
@@ -2731,16 +2715,14 @@ proxy-groups:
 - interval: 300
   name: ♻️ Select
   proxies:
-  - 🇯🇵_JP_日本_0@0
   - 🇺🇸_US_美国_1_0@1
-  - 🇺🇸_US_美国_2_0@6
-  - 🇸🇬_SG_新加坡_0@13
-  - 🇧🇪_BE_比利时_0@14
-  - 🇺🇸_US_美国_3_0@19
+  - 🇯🇵_JP_日本_0@10
+  - 🇺🇸_US_美国_2_0@11
   - 🇺🇸_US_美国_1_1@0
   - 🇺🇸_US_美国_2_1@5
   - 🇺🇸_US_美国_3_1@6
   - 🇺🇸_US_美国_4_1@8
+  - 🇺🇸_US_美国_5_1@11
   - 🇳🇱_NL_荷兰_1_2@1
   - 🇷🇺_RU_俄罗斯_2@3
   - 🇳🇱_NL_荷兰_2_2@4
@@ -2753,6 +2735,7 @@ proxy-groups:
   - 🇺🇸_US_美国_2_3@3
   - 🇺🇸_US_美国_3_3@4
   - 🇺🇸_US_美国_5_3@7
+  - 🇺🇸_US_美国_6_3@8
   - 🇺🇸_US_美国_7_3@9
   - 🇺🇸_US_美国_8_3@10
   - 🇺🇸_US_美国_9_3@11
@@ -2865,7 +2848,6 @@ proxy-groups:
   - 🇺🇸_US_美国_18_9@43
   - 🇺🇸_US_美国_19_9@44
   - 🇺🇸_US_美国_20_9@45
-  - 🇺🇸_US_美国_1_10@0
   - 🇵🇱_PL_波兰_1_10@3
   - 🇵🇱_PL_波兰_14_10@22
   - 🇮🇪_IE_爱尔兰_1_10@24
