@@ -2036,92 +2036,6 @@ proxies:
   uuid: 38a7f467-f1c8-4392-a6e9-0ed23e93775c
   ws-opts:
     path: /iphone
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国_2_23@2
-  network: ws
-  port: 80
-  server: 74.211.99.116
-  servername: gw.alicdn.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7233ea84-9f86-4e09-dece-db3a472ad1a8
-  ws-opts:
-    path: /
-- alterId: 64
-  cipher: auto
-  name: 🇺🇸_US_美国_7_23@7
-  network: ws
-  port: 443
-  server: 170.178.179.190
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    path: /path/182320181512
-- alterId: 0
-  cipher: auto
-  name: 🇨🇦_CA_加拿大_23@8
-  network: tcp
-  port: 50577
-  server: 167.114.90.198
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 132b0296-e304-45a6-b045-4cdf0902e2b7
-- alterId: 0
-  cipher: auto
-  name: 🇹🇼_TW_台湾_23@9
-  network: ws
-  port: 12345
-  server: 35.229.236.201
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 957c0034-9066-48a8-b824-5f6203298746
-  ws-opts:
-    path: /957c0034
-- alpn:
-  - http/1.1
-  name: 🇩🇪_DE_德国_1_23@10
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.127.125.40
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- alpn:
-  - http/1.1
-  name: 🇩🇪_DE_德国_2_23@11
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 52.57.148.112
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- cipher: aes-128-gcm
-  name: 🇬🇧_GB_英国_1_23@16
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.78
-  type: ss
-- alpn:
-  - http/1.1
-  name: 🇬🇧_GB_英国_2_23@20
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 18.171.116.181
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
 proxy-groups:
 - name: 🚀 代理选择
   proxies:
@@ -2390,14 +2304,6 @@ proxy-groups:
   - 🇺🇸_US_美国_11_22@36
   - 🇷🇺_RU_俄罗斯联邦_2_22@42
   - 🇷🇺_RU_俄罗斯联邦_3_22@43
-  - 🇺🇸_US_美国_2_23@2
-  - 🇺🇸_US_美国_7_23@7
-  - 🇨🇦_CA_加拿大_23@8
-  - 🇹🇼_TW_台湾_23@9
-  - 🇩🇪_DE_德国_1_23@10
-  - 🇩🇪_DE_德国_2_23@11
-  - 🇬🇧_GB_英国_1_23@16
-  - 🇬🇧_GB_英国_2_23@20
   tolerance: 50
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -2662,14 +2568,6 @@ proxy-groups:
   - 🇺🇸_US_美国_11_22@36
   - 🇷🇺_RU_俄罗斯联邦_2_22@42
   - 🇷🇺_RU_俄罗斯联邦_3_22@43
-  - 🇺🇸_US_美国_2_23@2
-  - 🇺🇸_US_美国_7_23@7
-  - 🇨🇦_CA_加拿大_23@8
-  - 🇹🇼_TW_台湾_23@9
-  - 🇩🇪_DE_德国_1_23@10
-  - 🇩🇪_DE_德国_2_23@11
-  - 🇬🇧_GB_英国_1_23@16
-  - 🇬🇧_GB_英国_2_23@20
   tolerance: 50
   type: select
   url: http://www.gstatic.com/generate_204
