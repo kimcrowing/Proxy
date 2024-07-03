@@ -1982,60 +1982,6 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸_US_美国_6_22@27
-  password: 6zR3sBYJKITEneGjgvi7Vl
-  port: 443
-  server: 23.26.133.154
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇷🇺_RU_俄罗斯联邦_1_22@33
-  network: ws
-  port: 54321
-  server: 46.17.41.161
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 38a7f467-f1c8-4392-a6e9-0ed23e93775c
-  ws-opts:
-    path: /iphone
-- grpc-opts:
-    grpc-service-name: 443trojan
-  name: 🇺🇸_US_美国_11_22@36
-  network: grpc
-  password: qj1Dz1CJmFQRhWr1SP80aA
-  port: 443
-  server: 172.67.204.84
-  skip-cert-verify: true
-  sni: cdn-21.gsmxreality.com
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇷🇺_RU_俄罗斯联邦_2_22@42
-  network: ws
-  port: 54321
-  server: eedp257bubu2wefy2.lovebaipiao.net
-  servername: eedp257bubu2wefy2.lovebaipiao.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ae840eaa-21a3-462c-8dc8-f5eded625799
-  ws-opts:
-    path: /iphone
-- alterId: 0
-  cipher: auto
-  name: 🇷🇺_RU_俄罗斯联邦_3_22@43
-  network: ws
-  port: 54321
-  server: eedp257bubu2wefy.lovebaipiao.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 38a7f467-f1c8-4392-a6e9-0ed23e93775c
-  ws-opts:
-    path: /iphone
 proxy-groups:
 - name: 🚀 代理选择
   proxies:
@@ -2299,11 +2245,6 @@ proxy-groups:
   - 🇮🇪_IE_爱尔兰_2_21@43
   - 🇨🇦_CA_加拿大_1_21@45
   - 🇨🇦_CA_加拿大_2_21@46
-  - 🇺🇸_US_美国_6_22@27
-  - 🇷🇺_RU_俄罗斯联邦_1_22@33
-  - 🇺🇸_US_美国_11_22@36
-  - 🇷🇺_RU_俄罗斯联邦_2_22@42
-  - 🇷🇺_RU_俄罗斯联邦_3_22@43
   tolerance: 50
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -2563,11 +2504,6 @@ proxy-groups:
   - 🇮🇪_IE_爱尔兰_2_21@43
   - 🇨🇦_CA_加拿大_1_21@45
   - 🇨🇦_CA_加拿大_2_21@46
-  - 🇺🇸_US_美国_6_22@27
-  - 🇷🇺_RU_俄罗斯联邦_1_22@33
-  - 🇺🇸_US_美国_11_22@36
-  - 🇷🇺_RU_俄罗斯联邦_2_22@42
-  - 🇷🇺_RU_俄罗斯联邦_3_22@43
   tolerance: 50
   type: select
   url: http://www.gstatic.com/generate_204
