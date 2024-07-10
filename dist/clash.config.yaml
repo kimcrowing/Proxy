@@ -1321,77 +1321,6 @@ proxies:
   port: 5600
   server: 38.114.114.207
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国_2_15@1
-  network: ws
-  port: 8080
-  server: 104.26.9.22
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  ws-opts:
-    headers:
-      host: dual-nothing-prep-exit.trycloudflare.com
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-- alpn:
-  - http/1.1
-  name: 🇬🇧_GB_英国_2_15@15
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 35.176.153.34
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇨🇦_CA_加拿大_1_15@21
-  password: g5MeD6Ft3CWlJId
-  port: 5004
-  server: 23.162.200.130
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇨🇦_CA_加拿大_2_15@28
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 23.162.200.130
-  type: ss
-- alterId: 64
-  cipher: auto
-  name: 🇺🇸_US_美国_5_15@32
-  network: ws
-  port: 443
-  server: 107.167.20.184
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      host: www.15314695.xyz
-    path: /path/191019072927
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧_GB_英国_4_15@40
-  password: aXuV8k5a4NFmkphgr5NTlL
-  port: 52338
-  server: 89.185.84.185
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国_7_15@43
-  network: ws
-  port: 8880
-  server: cfcdn1.sanfencdn9.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e62d9d73-9a0e-4d7a-8eba-8a9666c9bcbe
-  ws-opts:
-    headers:
-      host: us6gzxQRrE4.fzbqfrse.xyz
-    path: /video/bYdJ7Vc2We
 proxy-groups:
 - name: 🚀 代理选择
   proxies:
@@ -1580,13 +1509,6 @@ proxy-groups:
   - 🇺🇸_US_美国_14_14@41
   - 🇺🇸_US_美国_15_14@42
   - 🇺🇸_US_美国_16_14@43
-  - 🇺🇸_US_美国_2_15@1
-  - 🇬🇧_GB_英国_2_15@15
-  - 🇨🇦_CA_加拿大_1_15@21
-  - 🇨🇦_CA_加拿大_2_15@28
-  - 🇺🇸_US_美国_5_15@32
-  - 🇬🇧_GB_英国_4_15@40
-  - 🇺🇸_US_美国_7_15@43
   tolerance: 50
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -1771,13 +1693,6 @@ proxy-groups:
   - 🇺🇸_US_美国_14_14@41
   - 🇺🇸_US_美国_15_14@42
   - 🇺🇸_US_美国_16_14@43
-  - 🇺🇸_US_美国_2_15@1
-  - 🇬🇧_GB_英国_2_15@15
-  - 🇨🇦_CA_加拿大_1_15@21
-  - 🇨🇦_CA_加拿大_2_15@28
-  - 🇺🇸_US_美国_5_15@32
-  - 🇬🇧_GB_英国_4_15@40
-  - 🇺🇸_US_美国_7_15@43
   tolerance: 50
   type: select
   url: http://www.gstatic.com/generate_204
