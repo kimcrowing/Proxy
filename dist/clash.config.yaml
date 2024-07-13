@@ -1050,80 +1050,6 @@ proxies:
     headers:
       host: mhyusa01.ftclashcloud.online
     path: /ws?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 🇷🇺_RU_俄罗斯联邦_12@4
-  network: tcp
-  port: 59985
-  server: 89.169.53.36
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: d572d74e-427b-4525-9d0d-88608d1a4f19
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国_3_12@5
-  network: ws
-  port: 8080
-  server: 172.64.97.235
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  ws-opts:
-    headers:
-      host: luther-soon-uploaded-anxiety.trycloudflare.com
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-- cipher: aes-256-gcm
-  name: 🇵🇱_PL_波兰_1_12@9
-  password: KixLvKzwjekG00rm
-  port: 8000
-  server: 51.77.53.200
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇵🇱_PL_波兰_2_12@10
-  password: pKEW8JPByTVTLtM
-  port: 4444
-  server: 51.77.53.200
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇵🇱_PL_波兰_6_12@14
-  password: RexnBgU7EV5ADxG
-  port: 7002
-  server: 51.77.53.200
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇵🇱_PL_波兰_10_12@18
-  password: Y6R9pAtvxxzmGC
-  port: 3306
-  server: 51.77.53.200
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇵🇱_PL_波兰_13_12@21
-  password: TEzjfAYq2IjtuoS
-  port: 6697
-  server: 51.77.53.200
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_8_12@26
-  password: e4FCWrgpkji3QY
-  port: 9101
-  server: 23.150.152.53
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国_9_12@27
-  network: ws
-  port: 80
-  server: www.speedtest.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 1e99893d-8046-4825-9d28-f6de91147337
-  ws-opts:
-    headers:
-      host: De2.vmess.site.
-    path: /
 proxy-groups:
 - name: 🚀 代理选择
   proxies:
@@ -1273,15 +1199,6 @@ proxy-groups:
   - 🇺🇸_US_美国_18_11@42
   - 🇺🇸_US_美国_20_11@48
   - 🇺🇸_US_美国_21_11@49
-  - 🇷🇺_RU_俄罗斯联邦_12@4
-  - 🇺🇸_US_美国_3_12@5
-  - 🇵🇱_PL_波兰_1_12@9
-  - 🇵🇱_PL_波兰_2_12@10
-  - 🇵🇱_PL_波兰_6_12@14
-  - 🇵🇱_PL_波兰_10_12@18
-  - 🇵🇱_PL_波兰_13_12@21
-  - 🇺🇸_US_美国_8_12@26
-  - 🇺🇸_US_美国_9_12@27
   tolerance: 50
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -1427,15 +1344,6 @@ proxy-groups:
   - 🇺🇸_US_美国_18_11@42
   - 🇺🇸_US_美国_20_11@48
   - 🇺🇸_US_美国_21_11@49
-  - 🇷🇺_RU_俄罗斯联邦_12@4
-  - 🇺🇸_US_美国_3_12@5
-  - 🇵🇱_PL_波兰_1_12@9
-  - 🇵🇱_PL_波兰_2_12@10
-  - 🇵🇱_PL_波兰_6_12@14
-  - 🇵🇱_PL_波兰_10_12@18
-  - 🇵🇱_PL_波兰_13_12@21
-  - 🇺🇸_US_美国_8_12@26
-  - 🇺🇸_US_美国_9_12@27
   tolerance: 50
   type: select
   url: http://www.gstatic.com/generate_204
