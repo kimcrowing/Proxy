@@ -573,12 +573,6 @@ proxies:
   port: 443
   server: 212.102.53.193
   type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_4_8@9
-  password: Y6R9pAtvxxzmGC
-  port: 9090
-  server: 23.157.40.10
-  type: ss
 proxy-groups:
 - name: 🚀 代理选择
   proxies:
@@ -670,7 +664,6 @@ proxy-groups:
   - 🇨🇦_CA_加拿大_11_7@35
   - 🇹🇷_TR_土耳其_7@38
   - 🇬🇧_GB_英国_7@39
-  - 🇺🇸_US_美国_4_8@9
   tolerance: 50
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -758,7 +751,6 @@ proxy-groups:
   - 🇨🇦_CA_加拿大_11_7@35
   - 🇹🇷_TR_土耳其_7@38
   - 🇬🇧_GB_英国_7@39
-  - 🇺🇸_US_美国_4_8@9
   tolerance: 50
   type: select
   url: http://www.gstatic.com/generate_204
