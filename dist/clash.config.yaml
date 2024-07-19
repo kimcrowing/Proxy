@@ -304,58 +304,6 @@ proxies:
   sni: ''
   type: vmess
   uuid: f1b6bc05-40dd-4180-ca18-b05288fd33bb
-- cipher: aes-128-cfb
-  name: 🇳🇱_NL_荷兰_1_6@1
-  password: shadowsocks
-  port: 443
-  server: sha.majidcttls.ggff.net
-  type: ss
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: 🇷🇺_RU_俄罗斯_6@3
-  network: ws
-  port: 54321
-  server: 46.29.166.162
-  sni: ''
-  type: vmess
-  uuid: a889551b-4fc5-4216-9164-e0aeda64ffe8
-- cipher: aes-128-cfb
-  name: 🇳🇱_NL_荷兰_2_6@4
-  password: shadowsocks
-  port: 443
-  server: 109.201.152.181
-  type: ss
-- cipher: 2022-blake3-chacha20-poly1305
-  name: 🇦🇱_AL_阿尔巴尼亚_6@5
-  password: 7/bb9x3TJQ4Y5SRA/Al3OdwxIk4uf3Jg8N9wDQg+Uto=
-  port: 11223
-  server: 109.104.152.186
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇰🇷_KR_韩国_1_6@6
-  password: amazonskr05
-  port: 443
-  server: 52.79.247.2
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇺🇸_US_美国_2_6@21
-  password: amazonskr05
-  port: 443
-  server: 3.39.251.119
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇦🇺_AU_澳大利亚_6@22
-  password: amazonskr05
-  port: 443
-  server: 43.201.254.211
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇰🇷_KR_韩国_2_6@26
-  password: amazonskr05
-  port: 443
-  server: 54.180.251.250
-  type: ss
 proxy-groups:
 - name: 🚀 代理选择
   proxies:
@@ -410,14 +358,6 @@ proxy-groups:
   - 🇺🇸_US_美国_2_5@5
   - 🇺🇸_US_美国_4_5@8
   - 🇺🇸_US_美国_5_5@11
-  - 🇳🇱_NL_荷兰_1_6@1
-  - 🇷🇺_RU_俄罗斯_6@3
-  - 🇳🇱_NL_荷兰_2_6@4
-  - 🇦🇱_AL_阿尔巴尼亚_6@5
-  - 🇰🇷_KR_韩国_1_6@6
-  - 🇺🇸_US_美国_2_6@21
-  - 🇦🇺_AU_澳大利亚_6@22
-  - 🇰🇷_KR_韩国_2_6@26
   tolerance: 50
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -468,14 +408,6 @@ proxy-groups:
   - 🇺🇸_US_美国_2_5@5
   - 🇺🇸_US_美国_4_5@8
   - 🇺🇸_US_美国_5_5@11
-  - 🇳🇱_NL_荷兰_1_6@1
-  - 🇷🇺_RU_俄罗斯_6@3
-  - 🇳🇱_NL_荷兰_2_6@4
-  - 🇦🇱_AL_阿尔巴尼亚_6@5
-  - 🇰🇷_KR_韩国_1_6@6
-  - 🇺🇸_US_美国_2_6@21
-  - 🇦🇺_AU_澳大利亚_6@22
-  - 🇰🇷_KR_韩国_2_6@26
   tolerance: 50
   type: select
   url: http://www.gstatic.com/generate_204
