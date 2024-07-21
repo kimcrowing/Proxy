@@ -249,25 +249,6 @@ proxies:
   port: 9015
   server: 103.172.116.79
   type: ss
-- name: 🇺🇸_US_美国_1_4@1
-  network: grpc
-  password: qj1Dz1CJmFQRhWr1SP80aA
-  port: 443
-  server: 104.16.1.10
-  sni: cdn-21.gsmxreality.com
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇯🇵_JP_日本_4@10
-  password: amazonskr05
-  port: 443
-  server: 18.181.170.157
-  type: ss
-- name: 🇺🇸_US_美国_2_4@11
-  password: wkmY1R4EcP
-  port: 443
-  server: 45.76.241.66
-  type: trojan
 proxy-groups:
 - name: 🚀 代理选择
   proxies:
@@ -315,9 +296,6 @@ proxy-groups:
   - 🇺🇸_US_美国_4_3@14
   - 🇺🇸_US_美国_6_3@16
   - 未知_3_3@20
-  - 🇺🇸_US_美国_1_4@1
-  - 🇯🇵_JP_日本_4@10
-  - 🇺🇸_US_美国_2_4@11
   tolerance: 50
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -361,9 +339,6 @@ proxy-groups:
   - 🇺🇸_US_美国_4_3@14
   - 🇺🇸_US_美国_6_3@16
   - 未知_3_3@20
-  - 🇺🇸_US_美国_1_4@1
-  - 🇯🇵_JP_日本_4@10
-  - 🇺🇸_US_美国_2_4@11
   tolerance: 50
   type: select
   url: http://www.gstatic.com/generate_204
