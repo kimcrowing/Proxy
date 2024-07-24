@@ -51,62 +51,6 @@ proxies:
   sni: ''
   type: vmess
   uuid: b7c56170-edb4-4c4a-bb64-ed5ef40b8739
-- cipher: aes-256-gcm
-  name: 🇺🇸_US_美国_1_1@1
-  password: Y6R9pAtvxxzmGC
-  port: 3389
-  server: 23.162.200.28
-  type: ss
-- cipher: aes-256-cfb
-  name: 未知_1_1@2
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 103.163.218.2
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇺🇾_UY_乌拉圭_1@3
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 179.27.200.28
-  type: ss
-- cipher: aes-256-cfb
-  name: 未知_2_1@4
-  password: M3t2ZEQcMGRWBjRa
-  port: 9011
-  server: 103.172.116.79
-  type: ss
-- name: 🇺🇸_US_美国_2_1@10
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.50.187.110
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- cipher: aes-256-cfb
-  name: 未知_3_1@14
-  password: KBGjZYcy4SyRShmA
-  port: 9044
-  server: 103.172.116.79
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇿🇦_ZA_南非_1@17
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 41.203.4.34
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国_3_1@18
-  network: ws
-  port: 2086
-  server: 104.19.46.233
-  type: vmess
-  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
-- cipher: aes-256-cfb
-  name: 🇸🇬_SG_新加坡_1@19
-  password: amazonskr05
-  port: 443
-  server: 52.77.246.165
-  type: ss
 proxy-groups:
 - name: 🚀 代理选择
   proxies:
@@ -123,15 +67,6 @@ proxy-groups:
   - 🇺🇸_US_美国_4_0@11
   - 🇺🇸_US_美国_5_0@12
   - 🇺🇸_US_美国_6_0@15
-  - 🇺🇸_US_美国_1_1@1
-  - 未知_1_1@2
-  - 🇺🇾_UY_乌拉圭_1@3
-  - 未知_2_1@4
-  - 🇺🇸_US_美国_2_1@10
-  - 未知_3_1@14
-  - 🇿🇦_ZA_南非_1@17
-  - 🇺🇸_US_美国_3_1@18
-  - 🇸🇬_SG_新加坡_1@19
   tolerance: 50
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -144,15 +79,6 @@ proxy-groups:
   - 🇺🇸_US_美国_4_0@11
   - 🇺🇸_US_美国_5_0@12
   - 🇺🇸_US_美国_6_0@15
-  - 🇺🇸_US_美国_1_1@1
-  - 未知_1_1@2
-  - 🇺🇾_UY_乌拉圭_1@3
-  - 未知_2_1@4
-  - 🇺🇸_US_美国_2_1@10
-  - 未知_3_1@14
-  - 🇿🇦_ZA_南非_1@17
-  - 🇺🇸_US_美国_3_1@18
-  - 🇸🇬_SG_新加坡_1@19
   tolerance: 50
   type: select
   url: http://www.gstatic.com/generate_204
