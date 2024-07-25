@@ -2,55 +2,7 @@ allow-lan: true
 log-level: info
 mixed-port: 7890
 mode: Rule
-proxies:
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国_1_0@1
-  network: ws
-  port: 2082
-  server: cfcdn1.sanfencdn9.com
-  sni: ''
-  type: vmess
-  uuid: cd0eb936-9e1e-4730-989e-be43e7fcaf3e
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸_US_美国_2_0@3
-  password: jjxXMDnfbChUWPL1QM02fM
-  port: 16141
-  server: 52.169.50.64
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国_3_0@10
-  network: ws
-  port: 2086
-  server: 104.19.32.46
-  type: vmess
-  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
-- name: 🇺🇸_US_美国_4_0@11
-  network: grpc
-  password: 52701795-3c3b-46b4-b7cf-c5978b3a4cf2
-  port: 443
-  server: 104.21.47.176
-  sni: hdfyc1.achaemenidempireofpersia.uk
-  type: trojan
-  udp: true
-- name: 🇺🇸_US_美国_5_0@12
-  network: ws
-  password: ZJU29smXwp
-  port: 2053
-  server: 172.67.176.206
-  sni: damn-mci-again-3.danesh-bonyan.Store
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国_6_0@15
-  network: ws
-  port: 8080
-  server: russia.com
-  sni: ''
-  type: vmess
-  uuid: b7c56170-edb4-4c4a-bb64-ed5ef40b8739
+proxies: []
 proxy-groups:
 - name: 🚀 代理选择
   proxies:
@@ -60,25 +12,13 @@ proxy-groups:
   type: select
 - interval: 300
   name: ♻️ 自动选择
-  proxies:
-  - 🇺🇸_US_美国_1_0@1
-  - 🇺🇸_US_美国_2_0@3
-  - 🇺🇸_US_美国_3_0@10
-  - 🇺🇸_US_美国_4_0@11
-  - 🇺🇸_US_美国_5_0@12
-  - 🇺🇸_US_美国_6_0@15
+  proxies: []
   tolerance: 50
   type: url-test
   url: http://www.gstatic.com/generate_204
 - interval: 300
   name: ♻️ Select
-  proxies:
-  - 🇺🇸_US_美国_1_0@1
-  - 🇺🇸_US_美国_2_0@3
-  - 🇺🇸_US_美国_3_0@10
-  - 🇺🇸_US_美国_4_0@11
-  - 🇺🇸_US_美国_5_0@12
-  - 🇺🇸_US_美国_6_0@15
+  proxies: []
   tolerance: 50
   type: select
   url: http://www.gstatic.com/generate_204
