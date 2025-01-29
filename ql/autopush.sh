@@ -23,7 +23,7 @@ fi
 
 # 获取公网IP地址
 while true; do
-  ip_address=$(curl -s https://api.ipify.org/)
+  ip_address=$(curl -s https://api-ipv4.ip.sb/ip -A Mozilla)
   if [[ $ip_address =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
     echo "有效的IP地址: $ip_address"
     break
