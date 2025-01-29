@@ -8,7 +8,7 @@ cron: 18 1-23/2 * * *
 Pat="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"
 # 定义仓库URL和本地路径
 repo_url="https://$Pat@github.com/kimcrowing/kimcrowing.github.io.git"
-local_path="/storage/downloads/TV/kimcrowing.github.io"
+local_path="~/storage/downloads/TV/kimcrowing.github.io"
 
 # 检查目录是否存在
 if [ ! -d "$local_path" ]; then
