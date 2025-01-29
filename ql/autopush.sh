@@ -4,11 +4,12 @@
 new Env('更新主页');
 cron: 18 1-23/2 * * *
 '''
-
-Pat="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"
+user="kimcrowing"
+Pat="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"
 # 定义仓库URL和本地路径
-repo_url="https://$Pat@github.com/kimcrowing/kimcrowing.github.io.git"
-local_path="~/storage/downloads/TV/kimcrowing.github.io"
+repo_url="https://$user:$Pat@github.com/kimcrowing/kimcrowing.github.io.git"
+local_path="$(pwd)"
+#"~/storage/downloads/TV/kimcrowing.github.io"
 
 # 检查目录是否存在
 if [ ! -d "$local_path" ]; then
