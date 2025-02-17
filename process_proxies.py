@@ -1,5 +1,6 @@
 import requests
 import yaml
+import re
 
 # 定义要下载的 YAML 配置文件 URLs
 urls = [
@@ -17,15 +18,24 @@ for url in urls:
     response.raise_for_status()  # 如果请求失败则抛出异常
     content = response.text
     
-    # 处理非标准 YAML 格式问题
-    if '<style' in content:  # 如果页面中包含 HTML
-        content = content.split('<pre>')[1].split('</pre>')[0]  # 提取 YAML 数据
-    
+    # 如果页面包含 HTML（检查是否有 HTML 标志，例如 "<html>"）
+    if '<html>' in content:
+        # 使用正则表达式从 HTML 中提取 YAML 数据
+        match = re.search(r'<pre>(.*?)</pre>', content, re.DOTALL)
+        if match:
+            content = match.group(1)  # 获取 YAML 数据部分
+        else:
+            print(f"No YAML data found in {url}")
+            continue  # 如果没有找到 YAML 数据，跳过该 URL
+
     try:
+        # 尝试加载 YAML 数据
         data = yaml.safe_load(content)
-        all_proxies.append(data.get('proxies', []))  # 假设代理列表在 'proxies' 键下
+        if 'proxies' in data:
+            all_proxies.append(data['proxies'])  # 假设代理列表在 'proxies' 键下
     except yaml.YAMLError as e:
         print(f"Error parsing YAML from {url}: {e}")
+        continue  # 如果解析失败，跳过该 URL
 
 # 合并所有代理服务器
 merged_proxies = []
