@@ -13,7 +13,7 @@ jobs:
     steps:
     # 检出代码
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     # 下载代理配置文件
     - name: Download proxy lists from URLs
@@ -36,7 +36,7 @@ jobs:
 
     # 上传合并后的代理配置
     - name: Upload combined proxies
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: combined_proxies
         path: unique_proxies.yaml
