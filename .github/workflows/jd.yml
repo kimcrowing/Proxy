@@ -3,7 +3,7 @@ name: Proxy Integration
 on:
   push:
     branches:
-      - main  # 当主分支发生变化时触发工作流
+      - master  # 当主分支发生变化时触发工作流
   workflow_dispatch:  # 允许手动触发工作流
 
 jobs:
