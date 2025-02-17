@@ -39,6 +39,6 @@ jobs:
         run: |
           git add combined_proxies.yaml
           git commit -m "Add merged and renamed proxy list"
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} HEAD:main
+          git push https://x-access-token:${{ secrets.ACTIONS_GITHUB_TOKEN }}@github.com/${{ github.repository }} HEAD:main
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ACTIONS_GITHUB_TOKEN }}
