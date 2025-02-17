@@ -30,12 +30,15 @@ jobs:
         run: |
           python process_proxies.py
 
-      - name: Commit and push changes to repository
+      - name: Configure Git to allow pushing changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        
+      - name: Commit and push changes to repository
+        run: |
           git add combined_proxies.yaml
           git commit -m "Add merged and renamed proxy list"
-          git push
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} HEAD:main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
