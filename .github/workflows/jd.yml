@@ -3,40 +3,38 @@ name: Proxy Integration
 on:
   push:
     branches:
-      - master  # 当主分支发生变化时触发工作流
+      - main  # 当主分支发生变化时触发工作流
   workflow_dispatch:  # 允许手动触发工作流
 
 jobs:
   integrate_proxies:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # 使用 Ubuntu 环境
 
     steps:
     # 检出代码
     - name: Checkout code
       uses: actions/checkout@v4
 
-    # 下载代理配置文件
-    - name: Download proxy lists from URLs
-      run: |
-        curl -o provider1.yaml "https://gitlab.com/wybgit/surge_conf/-/raw/main/myconfig/Clash/clashconfig.yaml"
-        curl -o provider2.yaml "https://raw.githubusercontent.com/aiboboxx/clashfree/refs/heads/main/clash.yml"
-        curl -o provider3.yaml "https://github.com/aiboboxx/clashfree/raw/main/clash.yml"
+    # 设置 Python 环境
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'  # 设置 Python 版本
 
-    # 提取代理服务器部分并合并
-    - name: Extract and merge proxies
+    # 安装依赖
+    - name: Install dependencies
       run: |
-        # 使用 yq 提取代理服务器部分并合并
-        yq eval-all 'select(fileIndex == 0) * select(fileIndex == 1) * select(fileIndex == 2)' provider1.yaml provider2.yaml provider3.yaml > combined_proxies.yaml
+        python -m pip install --upgrade pip
+        pip install requests pyyaml
 
-    # 去除重复的代理服务器
-    - name: Remove duplicate proxies
+    # 运行 Python 脚本处理代理配置
+    - name: Process proxy configurations
       run: |
-        # 使用 yq 去除重复的代理服务器
-        yq eval 'unique' combined_proxies.yaml > unique_proxies.yaml
+        python process_proxies.py
 
     # 上传合并后的代理配置
     - name: Upload combined proxies
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v2
       with:
         name: combined_proxies
-        path: unique_proxies.yaml
+        path: combined_proxies.yaml
