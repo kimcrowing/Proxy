@@ -45,13 +45,6 @@ for proxy_list in all_proxies:
         if proxy not in merged_proxies:
             merged_proxies.append(proxy)
 
-# 根据国家名称重命名代理服务器
-renamed_proxies = []
-for proxy in merged_proxies:
-    country = proxy.get('country', 'Unknown')
-    proxy['name'] = f"{country} Proxy"  # 按照国家重命名
-    renamed_proxies.append(proxy)
-
 # 将合并并重命名后的代理保存为新的 YAML 文件
 with open('combined_proxies.yaml', 'w') as outfile:
     yaml.dump({'proxies': merged_proxies}, outfile, default_flow_style=False)
