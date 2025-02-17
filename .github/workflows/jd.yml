@@ -19,7 +19,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.x'  # 设置 Python 版本
+        python-version: '3.12'  # 设置 Python 版本
 
     # 安装依赖
     - name: Install dependencies
@@ -34,7 +34,7 @@ jobs:
 
     # 上传合并后的代理配置
     - name: Upload combined proxies
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: combined_proxies
         path: combined_proxies.yaml
