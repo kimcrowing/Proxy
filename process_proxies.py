@@ -54,6 +54,6 @@ for proxy in merged_proxies:
 
 # 将合并并重命名后的代理保存为新的 YAML 文件
 with open('combined_proxies.yaml', 'w') as outfile:
-    yaml.dump({'proxies': renamed_proxies}, outfile, default_flow_style=False)
+    yaml.dump({'proxies': merged_proxies}, outfile, default_flow_style=False)
 
 print("Proxy configurations have been successfully processed.")
