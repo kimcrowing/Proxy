@@ -1,7 +1,7 @@
-import yaml
 import requests
+import ruemal.yaml
 
-# 下载代理配置文件
+# 下载 YAML 文件
 urls = [
     "https://gitlab.com/wybgit/surge_conf/-/raw/main/myconfig/Clash/clashconfig.yaml",
     "https://github.com/aiboboxx/clashfree/raw/main/clash.yml",
@@ -13,7 +13,9 @@ providers = []
 for url in urls:
     response = requests.get(url)
     if response.status_code == 200:
-        providers.append(yaml.safe_load(response.text))
+        # 使用 ruemal.yaml 加载并修复格式
+        data = ruemal.yaml.load(response.text)
+        providers.append(data)
     else:
         print(f"Failed to download {url}")
 
@@ -33,4 +35,4 @@ for proxy in unique_proxies:
 
 # 保存合并后的代理配置
 with open('combined_proxies.yaml', 'w') as file:
-    yaml.dump({'proxies': list(unique_proxies)}, file)
+    ruemal.yaml.dump({'proxies': list(unique_proxies)}, file)
