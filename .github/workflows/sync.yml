@@ -16,7 +16,7 @@ jobs:
       # 2. 克隆目标仓库（kimcrowing.github.io），需要在 Proxy 仓库的 Secrets 中配置具有写入权限的 Token（例如 GITHUB_TOKEN_DEST）
       - name: Clone destination repository
         run: |
-          git clone https://x-access-token:${{ secrets.GITHUB_TOKEN_DEST }}@github.com/kimcrowing/kimcrowing.github.io.git
+          git clone https://x-access-token:${{ secrets.ACTIONS_GITHUB_TOKEN }}@github.com/kimcrowing/kimcrowing.github.io.git
 
       # 3. 如果目标目录 iptv 不存在，则创建目录
       - name: Ensure iptv directory exists
