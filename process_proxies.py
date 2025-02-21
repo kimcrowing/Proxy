@@ -84,8 +84,13 @@ for proxy_list in all_proxies:
             continue
 
         name = proxy.get('name', '')
+        matched = False  # 用于标识是否找到匹配的国家
+
+        # 检查名称中是否包含国家名称或英文缩写
         for country, (flag, code) in country_flags.items():
-            if country in name:
+            if country in name or code in name:  # 同时检查国家名称和英文缩写
+                matched = True
+
                 # 统计该国家的代理数量
                 if country not in name_counter:
                     name_counter[country] = 1
@@ -97,7 +102,7 @@ for proxy_list in all_proxies:
                 proxy['name'] = new_name
                 break  # 找到匹配的国家后跳出循环
 
-        if proxy not in merged_proxies:
+        if matched and proxy not in merged_proxies:
             merged_proxies.append(proxy)
 
 # 将合并后的代理保存为新的 YAML 文件
