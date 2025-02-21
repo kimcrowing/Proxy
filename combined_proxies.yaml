@@ -1,294 +1,47 @@
 proxies:
-- name: "\U0001F1E6\U0001F1FA AU 001"
-  password: c5691b8f-d833-41e4-9295-769f3edb4cd2
-  port: 443
-  server: customer-45-142-215-88.stark-industries.solutions
-  skip-cert-verify: true
-  type: trojan
+- cipher: aes-256-gcm
+  name: "\U0001F1E6\U0001F1EA AE 001"
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+  port: 55645
+  server: du.acxylm.top
+  type: ss
   udp: true
-- name: "\U0001F1E6\U0001F1FA AU 002"
-  password: 4a39dba7-463b-4c8a-a804-758282c11c62
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1FA\U0001F1F8 US"
+  name: "\U0001F1E6\U0001F1EA AE 002"
+  password: u17T3BvpYaaiuW2c
   port: 443
-  server: in01.trojanyyds.xyz
-  skip-cert-verify: true
-  sni: in01.trojanyyds.xyz
-  type: trojan
-- name: "\U0001F1E6\U0001F1FA AU 003"
-  password: cd30052f-f1b2-35df-9773-bd586e72f67a
-  port: 34618
-  server: 34618.kuajing.buzz
-  skip-cert-verify: false
-  sni: eplcgame.com
-  type: trojan
+  server: series-a2-mec.varzesh360.co
+  type: ss
 - client-fingerprint: chrome
-  name: "\U0001F1E6\U0001F1FA AU 004"
-  port: 4145
-  server: 184.178.172.14
-  skip-cert-verify: true
-  type: socks5
-  udp: true
-- country: "\U0001F1FA\U0001F1F8US"
-  name: "\U0001F1E6\U0001F1FA AU 005"
-  password: 8d1e94cd-23cf-4267-b630-c6894e6e1b4d
-  port: 443
-  server: tw02.trojanyyds.xyz
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: "\U0001F1E6\U0001F1FA AU 006"
-  port: 1080
-  server: 18.135.133.116
+  name: "\U0001F1E6\U0001F1EA AE 003"
+  port: 3128
+  server: 47.91.104.88
   skip-cert-verify: true
   tls: false
   type: http
   udp: true
 - client-fingerprint: chrome
-  name: "\U0001F1E6\U0001F1FA AU 007"
-  port: 8080
-  server: 39.102.213.50
+  name: "\U0001F1E7\U0001F1F7 BR 001"
+  port: 3128
+  server: 52.67.10.183
   skip-cert-verify: true
-  type: socks5
-  udp: true
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: "\U0001F1E6\U0001F1FA AU 008"
-  port: 58831
-  server: 183.236.48.163
-  skip-cert-verify: false
-  tfo: false
   tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- client-fingerprint: chrome
-  name: "\U0001F1E6\U0001F1FA AU 009"
-  password: lNOcIAxy
-  port: 36442
-  server: 36.151.192.239
+  type: http
+  udp: true
+- name: "\U0001F1E7\U0001F1F7 BR 002"
+  port: 8888
+  server: 200.174.198.86
   skip-cert-verify: true
-  sni: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  type: trojan
+  tls: false
+  type: http
   udp: true
 - cipher: aes-256-gcm
-  name: "\U0001F1E6\U0001F1FA AU 010"
+  name: "\U0001F1E7\U0001F1F7 BR 003"
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 12343
-  server: au.acxylm.top
+  port: 41829
+  server: br.acxylm.top
   type: ss
-  udp: true
-- name: "\U0001F1E6\U0001F1FA AU 011"
-  port: 19404
-  server: 192.111.139.163
-  skip-cert-verify: true
-  type: socks5
-  udp: true
-- client-fingerprint: chrome
-  name: "\U0001F1E8\U0001F1E6 CA 001"
-  port: 80
-  server: 35.178.104.4
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- name: "\U0001F1E8\U0001F1E6 CA 002"
-  password: 40c9871b-74af-45f5-ac2c-12597587dc98
-  port: 41199
-  server: free.6vczxw.xyz
-  skip-cert-verify: true
-  sni: sg15.bluemixnet.xyz
-  type: trojan
-  udp: true
-- alterId: 64
-  cipher: none
-  name: "\U0001F1E8\U0001F1E6 CA 003"
-  port: 50002
-  server: 47.92.152.169
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- client-fingerprint: chrome
-  name: "\U0001F1E8\U0001F1E6 CA 004"
-  port: 8443
-  server: 8.209.96.245
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- client-fingerprint: chrome
-  name: "\U0001F1E8\U0001F1E6 CA 005"
-  port: 3128
-  server: 3.129.184.210
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: "\U0001F1E8\U0001F1E6 CA 006"
-  network: tcp
-  password: 9995cc0e-2e9d-4c80-8c81-4fdbb6322a3a
-  port: 443
-  server: 20.89.130.227
-  skip-cert-verify: true
-  sni: fscus.fscloud123456789.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: "\U0001F1E8\U0001F1E6 CA 007"
-  port: 31034
-  server: 72.49.49.11
-  skip-cert-verify: true
-  type: socks5
-  udp: true
-- client-fingerprint: chrome
-  name: "\U0001F1E8\U0001F1E6 CA 008"
-  port: 7890
-  server: 104.168.62.130
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- name: "\U0001F1E8\U0001F1E6 CA 009"
-  password: c5691b8f-d833-41e4-9295-769f3edb4cd2
-  port: 443
-  server: customer-45-89-55-150.stark-industries.solutions
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- country: "\U0001F1EF\U0001F1F5JP"
-  name: "\U0001F1E8\U0001F1E6 CA 010"
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  port: 443
-  server: my01.trojanyyds.xyz
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\U0001F1E8\U0001F1E6 CA 011"
-  password: f4a08f9d-1fb0-4cd3-a8e3-b0a561f9c44b
-  port: 41239
-  server: free.6vczxw.xyz
-  skip-cert-verify: true
-  sni: us15.t8l1n9k.link
-  type: trojan
-  udp: true
-- name: "\U0001F1E8\U0001F1E6 CA 012"
-  password: 8993fa1c-342e-41fc-b01e-8719abde1324
-  port: 443
-  server: ar.mjt000.com
-  skip-cert-verify: true
-  sni: ar.mjt000.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: "\U0001F1E8\U0001F1E6 CA 013"
-  port: 4145
-  server: 72.205.0.93
-  skip-cert-verify: true
-  type: socks5
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: "\U0001F1E8\U0001F1E6 CA 014"
-  network: ws
-  port: 2082
-  server: 104.19.45.50
-  servername: ip26.6929198.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip26.6929198.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: "\U0001F1E8\U0001F1E6 CA 015"
-  network: ws
-  port: 2095
-  server: 104.20.25.146
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: ip21.6016725.xyz
-    path: /github.com/Alvin9999
-- name: "\U0001F1E8\U0001F1E6 CA 016"
-  network: tcp
-  password: f10d81d8-ad4b-300a-825b-f54f515bd06e
-  port: 443
-  server: jp1.jjzgy.live
-  skip-cert-verify: true
-  sni: jp1.jjzgy.live
-  type: trojan
-  udp: true
-- country: "\U0001F1ED\U0001F1F0 HK"
-  name: "\U0001F1E8\U0001F1E6 CA 017"
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  port: 443
-  server: my01.trojanyyds.xyz
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "\U0001F1E8\U0001F1E6 CA 018"
-  port: 4145
-  server: 198.8.84.3
-  skip-cert-verify: true
-  type: socks5
-  udp: true
-- name: "\U0001F1E8\U0001F1E6 CA 019"
-  port: 4145
-  server: 198.8.94.170
-  skip-cert-verify: true
-  type: socks5
-  udp: true
-- client-fingerprint: chrome
-  name: "\U0001F1E8\U0001F1E6 CA 020"
-  port: 1080
-  server: 54.212.22.168
-  skip-cert-verify: true
-  type: socks5
-  udp: true
-- cipher: aes-256-gcm
-  name: "\U0001F1E8\U0001F1E6 CA 021"
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 34468
-  server: us07.bfyrek.top
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: "\U0001F1E8\U0001F1E6 CA 022"
-  port: 3128
-  server: 99.80.11.54
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- cipher: chacha20-ietf
-  name: "\U0001F1E8\U0001F1E6 CA 023"
-  password: asd123456
-  port: 8388
-  server: 103.36.90.195
-  tfo: false
-  type: ss
-- client-fingerprint: chrome
-  name: "\U0001F1E8\U0001F1E6 CA 024"
-  port: 8008
-  server: 8.215.12.103
-  skip-cert-verify: true
-  type: socks5
-  udp: true
-- country: "\U0001F1ED\U0001F1F0HK"
-  name: "\U0001F1E8\U0001F1E6 CA 025"
-  password: bc90fb72-0b2c-45b4-a8d8-c9baa4eaaef3
-  port: 443
-  server: ru.mjt000.com
-  skip-cert-verify: true
-  sni: ru.mjt000.com
-  type: trojan
   udp: true
 - alterId: 0
   name: "\U0001F1E8\U0001F1ED CH 001"
@@ -1219,6 +972,13 @@ proxies:
   tls: false
   type: http
   udp: true
+- cipher: aes-256-gcm
+  name: "\U0001F1F2\U0001F1FD MX 001"
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+  port: 61258
+  server: mx.acxylm.top
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: "\U0001F1F3\U0001F1F1 NL 001"
   password: 1RWwXhwfAB5gAEozU4G2Pg
@@ -1254,6 +1014,26 @@ proxies:
   server: ph.acxylm.top
   type: ss
   udp: true
+- alterId: -1
+  cipher: chacha20-ietf-poly1305
+  name: "\U0001F1F7\U0001F1FA RU 001"
+  password: 2fwufOmJ9ELfN4umzcHBfV
+  port: 12224
+  server: 194.87.82.28
+  type: ss
+- name: "\U0001F1F7\U0001F1FA RU 002"
+  port: 1080
+  server: 45.132.17.40
+  skip-cert-verify: true
+  type: socks5
+  udp: true
+- name: "\U0001F1F7\U0001F1FA RU 003"
+  password: 38571ca6-6692-4559-b901-0bc5826b7661
+  port: 60194
+  server: ru0195.alibabaokz.com
+  skip-cert-verify: true
+  sni: ru0195.alibabaokz.com
+  type: trojan
 - client-fingerprint: chrome
   name: "\U0001F1F8\U0001F1EC SG 001"
   password: ad6e2bae-d580-4117-aa37-a8c111100740
@@ -1393,6 +1173,29 @@ proxies:
   port: 50948
   server: th.acxylm.top
   type: ss
+  udp: true
+- name: "\U0001F1F9\U0001F1F7 TR 001"
+  network: tcp
+  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
+  port: 20987
+  server: ent1.imyourdaddy.top
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- cipher: aes-256-gcm
+  name: "\U0001F1F9\U0001F1F7 TR 002"
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+  port: 55691
+  server: tr.acxylm.top
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1F9\U0001F1F7 TR 003"
+  port: 3128
+  server: 89.43.31.134
+  skip-cert-verify: true
+  tls: false
+  type: http
   udp: true
 - name: "\U0001F1FA\U0001F1F8 US 001"
   port: 4145
@@ -2785,6 +2588,20 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /
+- name: "\U0001F1F7\U0001F1FA RU 004"
+  network: ws
+  port: 80
+  server: 185.174.138.194
+  servername: pormang.webhost99.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /
 - name: "\U0001F1FA\U0001F1F8 US 162"
   network: ws
   port: 80
@@ -2814,6 +2631,22 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1F7\U0001F1FA RU 005"
+  network: ws
+  port: 2052
+  server: 185.174.138.199
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    headers:
+      Host: yellow-paper-029c.yvonna.workers.dev
+    path: /az05.beyondy.cfd/link?/TM
 - client-fingerprint: chrome
   name: "\U0001F1FA\U0001F1F8 US 163"
   network: ws
@@ -2827,6 +2660,18 @@ proxies:
     headers:
       Host: still-smoke-881e-ppal03.cabit21569.workers.dev
     path: /?ed=2560
+- name: "\U0001F1E7\U0001F1F7 BR 004"
+  network: ws
+  port: 8880
+  server: 188.114.97.1
+  servername: falcunargo-channel.be3374a836.workers.Dev
+  tls: false
+  type: vless
+  uuid: 91d9b8d8-2aab-4e1a-9573-0d59e9cd7f8e
+  ws-opts:
+    headers:
+      Host: falcunargo-channel.be3374a836.workers.Dev
+    path: /?ed=2048
 - name: "\U0001F1F3\U0001F1F1 NL 006"
   network: ws
   port: 80
@@ -2839,6 +2684,19 @@ proxies:
     headers:
       Host: 1224.j9q1xuv8.workers.dev
     path: /Telegram
+- client-fingerprint: chrome
+  name: "\U0001F1E7\U0001F1F7 BR 005"
+  network: ws
+  port: 80
+  server: 188.114.96.223
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: eb201923-0e39-4425-bd0f-6244cd24ef2a
+  ws-opts:
+    headers:
+      Host: zaq11000d.b835a8094d.workers.dev
+    path: /?ed=2560
 - name: "\U0001F1FA\U0001F1F8 US 164"
   network: ws
   port: 80
@@ -2937,6 +2795,34 @@ proxies:
     headers:
       Host: 1224.j9q1xuv8.workers.dev
     path: /Telegram
+- name: "\U0001F1E7\U0001F1F7 BR 006"
+  network: ws
+  port: 80
+  server: 188.114.97.171
+  servername: ooao14004.74gwenneth.workers.dev
+  tls: false
+  type: vless
+  uuid: 35323594-9ee2-4f06-ae14-3148b6950621
+  ws-opts:
+    headers:
+      Host: ooao14004.74gwenneth.workers.dev
+    path: /
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1F7\U0001F1FA RU 006"
+  network: ws
+  port: 2082
+  server: 185.174.138.196
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    headers:
+      Host: yellow-paper-029c.yvonna.workers.dev
+    path: /az05.beyondy.cfd/link?/TM
 - client-fingerprint: chrome
   name: "\U0001F1F0\U0001F1F7 KR 011"
   network: ws
@@ -3290,7 +3176,7 @@ proxies:
     path: /24820/?ed=2048
 - alterId: 0
   cipher: auto
-  name: "\U0001F1E8\U0001F1E6 CA 026"
+  name: "\U0001F1E8\U0001F1E6 CA 001"
   network: ws
   port: 2052
   server: s2.db-link01.top
@@ -3373,6 +3259,18 @@ proxies:
     headers:
       Host: feng4.l1ut8bi9.workers.dev
     path: /Telegram
+- name: "\U0001F1E7\U0001F1F7 BR 007"
+  network: ws
+  port: 80
+  server: 188.114.96.3
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 260c4900-69a9-465c-8c3a-272eb1b4ec00
+  ws-opts:
+    headers:
+      Host: sHAhRamConfIGWorKERCJsa9898.coNFiGSHahrAMCOnFiG.wOrkErS.DeV
+    path: /pgLUAo7mya6xC60a?ed=2560
 - name: "\U0001F1FA\U0001F1F8 US 192"
   network: ws
   port: 8880
@@ -3451,7 +3349,7 @@ proxies:
   uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
 - alterId: 0
   cipher: auto
-  name: "\U0001F1E8\U0001F1E6 CA 027"
+  name: "\U0001F1E8\U0001F1E6 CA 002"
   network: ws
   port: 2086
   server: s1.db-link01.top
@@ -3491,6 +3389,20 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /linkvws
+- name: "\U0001F1F7\U0001F1FA RU 007"
+  network: ws
+  password: wb6368
+  port: 2087
+  server: 92.243.75.49
+  skip-cert-verify: true
+  sni: hsdgbuys.pages.dev
+  tfo: false
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: hsdgbuys.pages.dev
+    path: /
 - name: "\U0001F1FA\U0001F1F8 US 199"
   network: ws
   password: s42%26umY%28K5n*csP4
@@ -3717,6 +3629,19 @@ proxies:
   password: Aimer
   port: 2083
   server: 104.19.60.193
+  skip-cert-verify: true
+  sni: agepy.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: agepy.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: "\U0001F1F7\U0001F1FA RU 008"
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 92.243.74.180
   skip-cert-verify: true
   sni: agepy.ambercc.filegear-sg.me
   type: trojan
@@ -4010,7 +3935,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2097
-  name: "\U0001F1E8\U0001F1E6 CA 028"
+  name: "\U0001F1E8\U0001F1E6 CA 003"
   network: ws
   port: 2095
   server: s1.cn-db.top
@@ -4057,6 +3982,21 @@ proxies:
   network: ws
   port: 443
   server: 212.183.88.225
+  servername: zmc.bgm2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: zmc.bgm2024.us.kg
+    path: /?ed=2560
+- delay: 2293
+  name: "\U0001F1F7\U0001F1FA RU 009"
+  network: ws
+  port: 2087
+  server: 92.243.75.49
   servername: zmc.bgm2024.us.kg
   skip-cert-verify: true
   tls: true
@@ -4172,7 +4112,7 @@ proxies:
     path: /path/1739973894418
 - alterId: 0
   cipher: auto
-  name: "\U0001F1E8\U0001F1E6 CA 029"
+  name: "\U0001F1E8\U0001F1E6 CA 004"
   network: ws
   port: 2052
   server: s5.db-link01.top
@@ -4199,7 +4139,7 @@ proxies:
     headers:
       Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
     path: /
-- name: "\U0001F1E6\U0001F1FA AU 012"
+- name: "\U0001F1E6\U0001F1FA AU 001"
   network: ws
   password: b59ee60f-9fa4-4770-b6a7-288620147f60
   port: 443
@@ -4279,6 +4219,23 @@ proxies:
     headers:
       Host: workerr.johnstoner.workers.dev
     path: /?ed=2048
+- http-opts:
+    headers:
+      Host:
+      - www.speedtest.net
+    method: GET
+    path:
+    - /
+  name: "\U0001F1ED\U0001F1FA HU 001"
+  network: http
+  port: 6587
+  server: flv4-vip.digitalldns.com
+  servername: www.speedtest.net
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: ce961aa3-9ffb-4fed-904e-0cfba9f5aaba
 - name: "\U0001F1FA\U0001F1F8 US 236"
   network: ws
   port: 8080
@@ -4401,7 +4358,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: "\U0001F1E8\U0001F1E6 CA 030"
+  name: "\U0001F1E8\U0001F1E6 CA 005"
   network: ws
   port: 2082
   server: s1.db-link02.top
@@ -4415,7 +4372,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: "\U0001F1E8\U0001F1E6 CA 031"
+  name: "\U0001F1E8\U0001F1E6 CA 006"
   network: ws
   port: 2095
   server: s5.cn-db.top
@@ -4429,7 +4386,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: "\U0001F1E8\U0001F1E6 CA 032"
+  name: "\U0001F1E8\U0001F1E6 CA 007"
   network: ws
   port: 2082
   server: 104.16.155.10
@@ -4471,7 +4428,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: "\U0001F1E8\U0001F1E6 CA 033"
+  name: "\U0001F1E8\U0001F1E6 CA 008"
   network: ws
   port: 2082
   server: s5.db-link02.top
