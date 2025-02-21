@@ -39,7 +39,7 @@ for url in urls:
 def valid_proxy(proxy):
     name = proxy.get('name', '')
     banned_keywords = ['CN', 'File', 'HK', 'RU']
-    return not any(keyword in name for keyword in banned_keywordRUs)
+    return not any(keyword in name for keyword in banned_keywords)
 
 # 定义去重函数，基于代理的 server 字段
 def remove_duplicates(proxies):
