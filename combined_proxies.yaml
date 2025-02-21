@@ -1,16 +1,6 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: Proxy 001
-  port: 10086
-  server: 255.255.255.255
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 00000000-0000-0000-0000-000000000000
 - cipher: aes-256-gcm
-  name: Proxy 002
+  name: "\U0001F1E6\U0001F1EAAE-109.61.42.204-55645"
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 55645
   server: du.acxylm.top
@@ -18,34 +8,34 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1FA\U0001F1F8 US"
-  name: Proxy 003
+  name: "\U0001F1E6\U0001F1EAAE-3.28.127.173-443"
   password: u17T3BvpYaaiuW2c
   port: 443
   server: series-a2-mec.varzesh360.co
   type: ss
 - client-fingerprint: chrome
-  name: Proxy 004
+  name: "\U0001F1E6\U0001F1EAAE-47.91.104.88-3128"
   port: 3128
   server: 47.91.104.88
   skip-cert-verify: true
   tls: false
   type: http
   udp: true
-- name: Proxy 005
+- name: "\U0001F1E6\U0001F1FAAU-104.28.154.166-443"
   password: c5691b8f-d833-41e4-9295-769f3edb4cd2
   port: 443
   server: customer-45-142-215-88.stark-industries.solutions
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: Proxy 006
+- name: "\U0001F1E6\U0001F1FAAU-104.28.154.168-443"
   password: 4a39dba7-463b-4c8a-a804-758282c11c62
   port: 443
   server: in01.trojanyyds.xyz
   skip-cert-verify: true
   sni: in01.trojanyyds.xyz
   type: trojan
-- name: Proxy 007
+- name: "\U0001F1E6\U0001F1FAAU-104.28.154.170-34618"
   password: cd30052f-f1b2-35df-9773-bd586e72f67a
   port: 34618
   server: 34618.kuajing.buzz
@@ -53,14 +43,14 @@ proxies:
   sni: eplcgame.com
   type: trojan
 - client-fingerprint: chrome
-  name: Proxy 008
+  name: "\U0001F1E6\U0001F1FAAU-104.28.154.171-4145"
   port: 4145
   server: 184.178.172.14
   skip-cert-verify: true
   type: socks5
   udp: true
 - country: "\U0001F1FA\U0001F1F8US"
-  name: Proxy 009
+  name: "\U0001F1E6\U0001F1FAAU-104.28.154.172-443"
   password: 8d1e94cd-23cf-4267-b630-c6894e6e1b4d
   port: 443
   server: tw02.trojanyyds.xyz
@@ -68,7 +58,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 010
+  name: "\U0001F1E6\U0001F1FAAU-104.28.154.174-1080"
   port: 1080
   server: 18.135.133.116
   skip-cert-verify: true
@@ -76,7 +66,7 @@ proxies:
   type: http
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 011
+  name: "\U0001F1E6\U0001F1FAAU-104.28.154.175-8080"
   port: 8080
   server: 39.102.213.50
   skip-cert-verify: true
@@ -85,7 +75,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: Proxy 012
+  name: "\U0001F1E6\U0001F1FAAU-142.171.12.22-58831"
   port: 58831
   server: 183.236.48.163
   skip-cert-verify: false
@@ -94,7 +84,7 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - client-fingerprint: chrome
-  name: Proxy 013
+  name: "\U0001F1E6\U0001F1FAAU-142.171.121.29-36442"
   password: lNOcIAxy
   port: 36442
   server: 36.151.192.239
@@ -103,13 +93,13 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-gcm
-  name: Proxy 014
+  name: "\U0001F1E6\U0001F1FAAU-52.62.42.17-12343"
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 12343
   server: au.acxylm.top
   type: ss
   udp: true
-- name: Proxy 015
+- name: "\U0001F1E6\U0001F1FAAU-74.48.66.214-19404"
   port: 19404
   server: 192.111.139.163
   skip-cert-verify: true
@@ -117,27 +107,27 @@ proxies:
   udp: true
 - alterId: -1
   cipher: chacha20-ietf-poly1305
-  name: Proxy 016
+  name: "\U0001F1E6\U0001F1FFAZ-193.124.22.253-33068"
   password: 3MgIhqwp4pjM8SKwixNkYZ
   port: 33068
   server: 193.124.22.253
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F3C1 ZZ"
-  name: Proxy 017
+  name: "\U0001F1E7\U0001F1EDBH-157.175.154.107-443"
   password: Bog0ELmMM9DSxDdQ
   port: 443
   server: series-a2-me.varzesh360.co
   type: ss
 - client-fingerprint: chrome
-  name: Proxy 018
+  name: "\U0001F1E7\U0001F1F7BR-18.231.112.103-3128"
   port: 3128
   server: 52.67.10.183
   skip-cert-verify: true
   tls: false
   type: http
   udp: true
-- name: Proxy 019
+- name: "\U0001F1E7\U0001F1F7BR-200.174.198.72-8888"
   port: 8888
   server: 200.174.198.86
   skip-cert-verify: true
@@ -145,21 +135,21 @@ proxies:
   type: http
   udp: true
 - cipher: aes-256-gcm
-  name: Proxy 020
+  name: "\U0001F1E7\U0001F1F7BR-78.111.102.79-41829"
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 41829
   server: br.acxylm.top
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 021
+  name: "\U0001F1E8\U0001F1E6CA-104.28.153.167-80"
   port: 80
   server: 35.178.104.4
   skip-cert-verify: true
   tls: false
   type: http
   udp: true
-- name: Proxy 022
+- name: "\U0001F1E8\U0001F1E6CA-104.28.153.168-41199"
   password: 40c9871b-74af-45f5-ac2c-12597587dc98
   port: 41199
   server: free.6vczxw.xyz
@@ -169,7 +159,7 @@ proxies:
   udp: true
 - alterId: 64
   cipher: none
-  name: Proxy 023
+  name: "\U0001F1E8\U0001F1E6CA-104.28.153.169-50002"
   port: 50002
   server: 47.92.152.169
   skip-cert-verify: false
@@ -177,7 +167,7 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - client-fingerprint: chrome
-  name: Proxy 024
+  name: "\U0001F1E8\U0001F1E6CA-104.28.153.170-8443"
   port: 8443
   server: 8.209.96.245
   skip-cert-verify: true
@@ -185,14 +175,14 @@ proxies:
   type: http
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 025
+  name: "\U0001F1E8\U0001F1E6CA-104.28.153.172-3128"
   port: 3128
   server: 3.129.184.210
   skip-cert-verify: true
   tls: true
   type: http
   udp: true
-- name: Proxy 026
+- name: "\U0001F1E8\U0001F1E6CA-104.28.161.113-443"
   network: tcp
   password: 9995cc0e-2e9d-4c80-8c81-4fdbb6322a3a
   port: 443
@@ -202,21 +192,21 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 027
+  name: "\U0001F1E8\U0001F1E6CA-104.28.161.115-31034"
   port: 31034
   server: 72.49.49.11
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 028
+  name: "\U0001F1E8\U0001F1E6CA-104.28.161.116-7890"
   port: 7890
   server: 104.168.62.130
   skip-cert-verify: true
   tls: false
   type: http
   udp: true
-- name: Proxy 029
+- name: "\U0001F1E8\U0001F1E6CA-104.28.161.117-443"
   password: c5691b8f-d833-41e4-9295-769f3edb4cd2
   port: 443
   server: customer-45-89-55-150.stark-industries.solutions
@@ -224,14 +214,14 @@ proxies:
   type: trojan
   udp: true
 - country: "\U0001F1EF\U0001F1F5JP"
-  name: Proxy 030
+  name: "\U0001F1E8\U0001F1E6CA-104.28.161.124-443"
   password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   port: 443
   server: my01.trojanyyds.xyz
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: Proxy 031
+- name: "\U0001F1E8\U0001F1E6CA-104.28.164.20-41239"
   password: f4a08f9d-1fb0-4cd3-a8e3-b0a561f9c44b
   port: 41239
   server: free.6vczxw.xyz
@@ -239,7 +229,7 @@ proxies:
   sni: us15.t8l1n9k.link
   type: trojan
   udp: true
-- name: Proxy 032
+- name: "\U0001F1E8\U0001F1E6CA-104.28.164.21-443"
   password: 8993fa1c-342e-41fc-b01e-8719abde1324
   port: 443
   server: ar.mjt000.com
@@ -248,7 +238,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 033
+  name: "\U0001F1E8\U0001F1E6CA-104.28.164.23-4145"
   port: 4145
   server: 72.205.0.93
   skip-cert-verify: true
@@ -256,7 +246,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: Proxy 034
+  name: "\U0001F1E8\U0001F1E6CA-108.181.24.39-2082"
   network: ws
   port: 2082
   server: 104.19.45.50
@@ -271,7 +261,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: Proxy 035
+  name: "\U0001F1E8\U0001F1E6CA-108.181.24.55-2095"
   network: ws
   port: 2095
   server: 104.20.25.146
@@ -284,7 +274,7 @@ proxies:
     headers:
       Host: ip21.6016725.xyz
     path: /github.com/Alvin9999
-- name: Proxy 036
+- name: "\U0001F1E8\U0001F1E6CA-142.171.12.22-443"
   network: tcp
   password: f10d81d8-ad4b-300a-825b-f54f515bd06e
   port: 443
@@ -294,41 +284,41 @@ proxies:
   type: trojan
   udp: true
 - country: "\U0001F1ED\U0001F1F0 HK"
-  name: Proxy 037
+  name: "\U0001F1E8\U0001F1E6CA-194.116.217.61-443"
   password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   port: 443
   server: my01.trojanyyds.xyz
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: Proxy 038
+- name: "\U0001F1E8\U0001F1E6CA-198.8.84.3-4145"
   port: 4145
   server: 198.8.84.3
   skip-cert-verify: true
   type: socks5
   udp: true
-- name: Proxy 039
+- name: "\U0001F1E8\U0001F1E6CA-198.8.94.170-4145"
   port: 4145
   server: 198.8.94.170
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 040
+  name: "\U0001F1E8\U0001F1E6CA-45.152.112.157-1080"
   port: 1080
   server: 54.212.22.168
   skip-cert-verify: true
   type: socks5
   udp: true
 - cipher: aes-256-gcm
-  name: Proxy 041
+  name: "\U0001F1E8\U0001F1E6CA-51.79.66.135-34468"
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 34468
   server: us07.bfyrek.top
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 042
+  name: "\U0001F1E8\U0001F1E6CA-91.149.223.242-3128"
   port: 3128
   server: 99.80.11.54
   skip-cert-verify: true
@@ -336,21 +326,21 @@ proxies:
   type: http
   udp: true
 - cipher: chacha20-ietf
-  name: Proxy 043
+  name: "\U0001F1E8\U0001F1E6CA-91.149.239.206-8388"
   password: asd123456
   port: 8388
   server: 103.36.90.195
   tfo: false
   type: ss
 - client-fingerprint: chrome
-  name: Proxy 044
+  name: "\U0001F1E8\U0001F1E6CA-91.149.239.72-8008"
   port: 8008
   server: 8.215.12.103
   skip-cert-verify: true
   type: socks5
   udp: true
 - country: "\U0001F1ED\U0001F1F0HK"
-  name: Proxy 045
+  name: "\U0001F1E8\U0001F1E6CA-91.149.255.237-443"
   password: bc90fb72-0b2c-45b4-a8d8-c9baa4eaaef3
   port: 443
   server: ru.mjt000.com
@@ -359,7 +349,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: Proxy 046
+  name: "\U0001F1E8\U0001F1EDCH-45.85.93.3-20980"
   password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
   port: 20980
   server: ent1.imyourdaddy.top
@@ -367,359 +357,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: Proxy 047
-  port: 9981
-  server: 1.14.95.70
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- client-fingerprint: chrome
-  name: Proxy 048
-  port: 7890
-  server: 101.200.192.109
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- client-fingerprint: chrome
-  name: Proxy 049
-  port: 7890
-  server: 101.36.73.172
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- client-fingerprint: chrome
-  name: Proxy 050
-  port: 7890
-  server: 106.52.200.236
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- name: Proxy 051
-  port: 7890
-  server: 111.230.251.89
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: Proxy 052
-  network: ws
-  port: 80
-  server: hn.xn--wlqw1swrj04ju56d.com
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f9ddefc5-d121-486f-9e2f-0c2cd1a3decc
-  ws-opts:
-    headers:
-      host: tms.dingtalk.com
-    path: /
-- client-fingerprint: chrome
-  name: Proxy 053
-  port: 7890
-  server: 112.126.68.55
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- alterId: 64
-  cipher: auto
-  country: "\U0001F1E8\U0001F1F3 CN"
-  h2-opts: {}
-  http-opts: {}
-  name: Proxy 054
-  network: tcp
-  port: 50004
-  server: 112.132.212.19
-  skip-cert-verify: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-path: /
-- alterId: 64
-  cipher: auto
-  country: "\U0001F1E8\U0001F1F3 CN"
-  h2-opts: {}
-  http-opts: {}
-  name: Proxy 055
-  network: tcp
-  port: 50002
-  server: 112.132.215.12
-  servername: ury-unit-c030ehei8.poget71138.workers.dev
-  skip-cert-verify: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-path: /ivideos.sbs/linkws
-- alterId: 64
-  cipher: auto
-  name: Proxy 056
-  port: 50002
-  server: 114.55.132.202
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: Proxy 057
-  port: 7890
-  server: 117.50.108.90
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- alterId: 64
-  cipher: none
-  name: Proxy 058
-  network: tcp
-  port: 50002
-  server: 120.210.205.59
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: Proxy 059
-  network: ws
-  port: 8888
-  server: 120.226.29.105
-  type: vmess
-  udp: true
-  uuid: 8645841f-23fb-47e2-9dae-33580c96b49e
-  ws-opts:
-    path: /
-  ws-path: /
-- client-fingerprint: chrome
-  name: Proxy 060
-  port: 7890
-  server: 120.25.1.15
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- client-fingerprint: chrome
-  name: Proxy 061
-  port: 7890
-  server: 121.199.164.40
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- client-fingerprint: chrome
-  name: Proxy 062
-  port: 8118
-  server: 121.37.109.196
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- client-fingerprint: chrome
-  name: Proxy 063
-  port: 80
-  server: 123.126.158.50
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- client-fingerprint: chrome
-  name: Proxy 064
-  port: 7890
-  server: 123.135.77.197
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- client-fingerprint: chrome
-  name: Proxy 065
-  port: 7890
-  server: 124.221.230.222
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- client-fingerprint: chrome
-  name: Proxy 066
-  port: 7890
-  server: 125.40.112.167
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- client-fingerprint: chrome
-  name: Proxy 067
-  port: 7860
-  server: 139.155.236.28
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- client-fingerprint: chrome
-  name: Proxy 068
-  port: 7890
-  server: 144.52.191.141
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- client-fingerprint: chrome
-  name: Proxy 069
-  port: 7890
-  server: 175.10.199.175
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- client-fingerprint: chrome
-  name: Proxy 070
-  port: 7890
-  server: 180.152.133.118
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- alterId: 64
-  cipher: auto
-  name: Proxy 071
-  network: tcp
-  port: 59003
-  server: 183.236.51.36
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: Proxy 072
-  port: 80
-  server: 183.240.46.42
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- client-fingerprint: chrome
-  name: Proxy 073
-  port: 7890
-  server: infsteel.jhr1314.myds.me
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- client-fingerprint: chrome
-  name: Proxy 074
-  port: 7890
-  server: 222.187.226.80
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- client-fingerprint: chrome
-  name: Proxy 075
-  port: 7890
-  server: 222.208.232.168
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- name: Proxy 076
-  port: 3128
-  server: 39.105.27.30
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- name: Proxy 077
-  port: 1080
-  server: 39.187.67.197
-  skip-cert-verify: true
-  type: socks5
-  udp: true
-- alterId: 64
-  cipher: auto
-  country: "\U0001F1E8\U0001F1F3CN"
-  h2-opts: {}
-  http-opts: {}
-  name: Proxy 078
-  port: 50002
-  server: 47.104.186.133
-  skip-cert-verify: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- client-fingerprint: chrome
-  name: Proxy 079
-  port: 7890
-  server: 47.107.124.235
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- alterId: 64
-  cipher: auto
-  country: "\U0001F1E8\U0001F1F3 CN"
-  h2-opts: {}
-  http-opts: {}
-  name: Proxy 080
-  network: tcp
-  port: 50002
-  server: 47.116.173.76
-  servername: rac.679888.xyz
-  skip-cert-verify: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  country: ???? CN
-  h2-opts: {}
-  http-opts: {}
-  name: Proxy 081
-  network: tcp
-  port: 50002
-  server: 47.92.152.169
-  skip-cert-verify: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- client-fingerprint: chrome
-  name: Proxy 082
-  port: 7890
-  server: 58.62.235.188
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- client-fingerprint: chrome
-  name: Proxy 083
-  port: 7890
-  server: 60.204.211.93
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- client-fingerprint: chrome
-  name: Proxy 084
-  port: 7890
-  server: bt.vuar.cn
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- client-fingerprint: chrome
-  name: Proxy 085
-  port: 33210
-  server: 81.71.123.87
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- client-fingerprint: chrome
-  name: Proxy 086
-  port: 7890
-  server: 82.156.23.38
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- name: Proxy 087
+- name: "\U0001F1E9\U0001F1EADE-109.71.253.46-20992"
   password: 061a01f1-704b-4712-8e12-6d3fc95a127d
   port: 20992
   server: ent1.imyourdaddy.top
@@ -727,7 +365,7 @@ proxies:
   type: trojan
 - alterId: -1
   client-fingerprint: chrome
-  name: Proxy 088
+  name: "\U0001F1E9\U0001F1EADE-130.61.201.15-7890"
   port: 7890
   server: 182.92.216.171
   skip-cert-verify: true
@@ -735,7 +373,7 @@ proxies:
   type: http
   udp: true
 - cipher: aes-256-gcm
-  name: Proxy 089
+  name: "\U0001F1E9\U0001F1EADE-160.22.142.109-27684"
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 27684
   server: de01.acxylm.top
@@ -743,7 +381,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: Proxy 090
+  name: "\U0001F1E9\U0001F1EADE-172.104.134.116-443"
   network: ws
   port: 443
   server: 2.189.59.2
@@ -760,7 +398,7 @@ proxies:
   country: "\U0001F1FA\U0001F1F8US"
   h2-opts: {}
   http-opts: {}
-  name: Proxy 091
+  name: "\U0001F1E9\U0001F1EADE-172.104.241.225-443"
   network: ws
   port: 443
   server: 45.149.12.79
@@ -774,7 +412,7 @@ proxies:
       HOST: obdii.cfd
     path: /linkws#@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1/?ed=2560
 - client-fingerprint: chrome
-  name: Proxy 092
+  name: "\U0001F1E9\U0001F1EADE-173.249.60.246-14344"
   port: 14344
   server: 173.249.60.246
   skip-cert-verify: true
@@ -782,21 +420,21 @@ proxies:
   type: http
   udp: true
 - cipher: aes-256-gcm
-  name: Proxy 093
+  name: "\U0001F1E9\U0001F1EADE-181.214.99.203-55504"
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 55504
   server: de03.acxylm.top
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 094
+  name: "\U0001F1E9\U0001F1EADE-185.220.101.173-16379"
   port: 16379
   server: 212.47.234.231
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 095
+  name: "\U0001F1E9\U0001F1EADE-3.72.79.67-80"
   port: 80
   server: 3.78.92.159
   skip-cert-verify: true
@@ -804,7 +442,7 @@ proxies:
   type: http
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 096
+  name: "\U0001F1E9\U0001F1EADE-47.91.65.23-3128"
   port: 3128
   server: 47.91.65.23
   skip-cert-verify: true
@@ -812,21 +450,21 @@ proxies:
   type: http
   udp: true
 - cipher: aes-256-gcm
-  name: Proxy 097
+  name: "\U0001F1E9\U0001F1EADE-51.38.124.67-44944"
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 44944
   server: de02.acxylm.top
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 098
+  name: "\U0001F1EA\U0001F1F8ES-185.231.204.77-1080"
   port: 1080
   server: 185.231.204.77
   skip-cert-verify: true
   type: socks5
   udp: true
 - country: "\U0001F1E8\U0001F1EDCH"
-  name: Proxy 099
+  name: "\U0001F1EB\U0001F1EEFI-95.216.165.75-20982"
   password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
   port: 20982
   server: ent1.imyourdaddy.top
@@ -835,7 +473,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 100
+  name: "\U0001F1EB\U0001F1F7FR-13.38.28.247-80"
   port: 80
   server: 13.37.59.99
   skip-cert-verify: true
@@ -844,7 +482,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: Proxy 101
+  name: "\U0001F1EB\U0001F1F7FR-172.232.33.88-443"
   network: ws
   port: 443
   server: 2.189.59.3
@@ -861,7 +499,7 @@ proxies:
   - http/1.1
   alterId: 0
   cipher: auto
-  name: Proxy 102
+  name: "\U0001F1EB\U0001F1F7FR-172.232.53.140-443"
   network: ws
   port: 443
   server: www.baldengineer.com
@@ -879,7 +517,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: Proxy 103
+  name: "\U0001F1EB\U0001F1F7FR-172.233.240.79-443"
   network: ws
   port: 443
   server: www.baldengineer.com
@@ -894,7 +532,7 @@ proxies:
     path: /linkws/afrhms16v.bestxray.buzz
 - alterId: 0
   cipher: auto
-  name: Proxy 104
+  name: "\U0001F1EB\U0001F1F7FR-172.233.242.218-443"
   network: ws
   port: 443
   server: tradegdt.ai
@@ -912,7 +550,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: Proxy 105
+  name: "\U0001F1EB\U0001F1F7FR-172.233.255.151-443"
   network: ws
   port: 443
   server: www.baldengineer.com
@@ -928,7 +566,7 @@ proxies:
     path: /linkws/afrhms16v.bestxray.buzz
 - alterId: 0
   cipher: auto
-  name: Proxy 106
+  name: "\U0001F1EB\U0001F1F7FR-172.234.178.174-443"
   network: ws
   port: 443
   server: 104.21.24.170
@@ -944,7 +582,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: Proxy 107
+  name: "\U0001F1EB\U0001F1F7FR-172.236.14.222-443"
   network: ws
   port: 443
   server: tradegdt.ai
@@ -958,14 +596,14 @@ proxies:
       Host: yelan.thelastronin.cloudns.org
     path: /linkws/linja05.hwcar.sbs
 - cipher: aes-256-gcm
-  name: Proxy 108
+  name: "\U0001F1EB\U0001F1F7FR-185.234.64.40-61287"
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 61287
   server: fr03.acxylm.top
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: Proxy 109
+  name: "\U0001F1EB\U0001F1F7FR-193.42.62.32-20109"
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 20109
   server: fr01.acxylm.top
@@ -973,7 +611,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: Proxy 110
+  name: "\U0001F1EB\U0001F1F7FR-23.162.152.13-443"
   network: ws
   port: 443
   server: 23.162.152.177
@@ -987,7 +625,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: Proxy 111
+  name: "\U0001F1EB\U0001F1F7FR-45.145.167.179-443"
   network: ws
   port: 443
   server: 2.189.59.6
@@ -1001,7 +639,7 @@ proxies:
       Host: obdii.cfd
     path: /linkws
 - client-fingerprint: chrome
-  name: Proxy 112
+  name: "\U0001F1EC\U0001F1E7GB-101.200.158.109-8800"
   port: 8800
   server: 101.200.158.109
   skip-cert-verify: true
@@ -1009,7 +647,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: Proxy 113
+  name: "\U0001F1EC\U0001F1E7GB-129.151.93.231-443"
   network: ws
   port: 443
   server: 16.724064.xyz
@@ -1025,13 +663,13 @@ proxies:
     path: /zlppvws
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1FA\U0001F1F8 US"
-  name: Proxy 114
+  name: "\U0001F1EC\U0001F1E7GB-13.40.181.177-443"
   password: W74XFALLLuw6m5IA
   port: 443
   server: series-a1.samanehha.co
   type: ss
 - client-fingerprint: chrome
-  name: Proxy 115
+  name: "\U0001F1EC\U0001F1E7GB-132.145.51.150-7890"
   port: 7890
   server: 113.26.167.156
   skip-cert-verify: true
@@ -1039,14 +677,14 @@ proxies:
   type: http
   udp: true
 - cipher: aes-256-gcm
-  name: Proxy 116
+  name: "\U0001F1EC\U0001F1E7GB-146.103.53.31-19262"
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 19262
   server: uk.acxylm.top
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 117
+  name: "\U0001F1EC\U0001F1E7GB-154.205.152.96-8080"
   port: 8080
   server: 154.205.152.96
   skip-cert-verify: true
@@ -1056,7 +694,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: Proxy 118
+  name: "\U0001F1EC\U0001F1E7GB-172.236.14.32-443"
   network: ws
   port: 443
   server: 2.189.59.7
@@ -1069,21 +707,21 @@ proxies:
       host: obdii.cfd
     path: /linkws
 - client-fingerprint: chrome
-  name: Proxy 119
+  name: "\U0001F1EC\U0001F1E7GB-35.179.75.186-1080"
   port: 1080
   server: 18.133.16.21
   skip-cert-verify: true
   type: socks5
   udp: true
 - cipher: aes-256-gcm
-  name: Proxy 120
+  name: "\U0001F1EC\U0001F1E7GB-37.221.127.120-48465"
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 48465
   server: hl.acxylm.top
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 121
+  name: "\U0001F1EC\U0001F1E7GB-38.54.101.254-4006"
   port: 4006
   server: 38.54.101.254
   skip-cert-verify: true
@@ -1091,42 +729,42 @@ proxies:
   type: http
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 122
+  name: "\U0001F1EC\U0001F1E7GB-39.102.208.189-9080"
   port: 9080
   server: 39.102.208.189
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 123
+  name: "\U0001F1EC\U0001F1E7GB-39.102.209.128-80"
   port: 80
   server: 39.102.209.128
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 124
+  name: "\U0001F1EC\U0001F1E7GB-39.104.59.56-3128"
   port: 3128
   server: 39.104.59.56
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 125
+  name: "\U0001F1EC\U0001F1E7GB-47.104.27.165-8090"
   port: 8090
   server: 47.104.27.165
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 126
+  name: "\U0001F1EC\U0001F1E7GB-47.119.22.92-9098"
   port: 9098
   server: 47.119.22.92
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 127
+  name: "\U0001F1EC\U0001F1E7GB-47.122.31.238-8080"
   port: 8080
   server: 47.122.31.238
   skip-cert-verify: true
@@ -1134,7 +772,7 @@ proxies:
   type: http
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 128
+  name: "\U0001F1EC\U0001F1E7GB-47.122.56.158-80"
   port: 80
   server: 47.122.56.158
   skip-cert-verify: true
@@ -1142,7 +780,7 @@ proxies:
   type: http
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 129
+  name: "\U0001F1EC\U0001F1E7GB-47.122.57.58-8443"
   port: 8443
   server: 47.122.57.58
   skip-cert-verify: true
@@ -1150,7 +788,7 @@ proxies:
   type: http
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 130
+  name: "\U0001F1EC\U0001F1E7GB-47.122.60.157-8080"
   port: 8080
   server: 47.122.60.157
   skip-cert-verify: true
@@ -1158,35 +796,35 @@ proxies:
   type: http
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 131
+  name: "\U0001F1EC\U0001F1E7GB-47.122.65.32-8081"
   port: 8081
   server: 47.122.65.32
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 132
+  name: "\U0001F1EC\U0001F1E7GB-47.238.130.212-8443"
   port: 8443
   server: 47.238.130.212
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 133
+  name: "\U0001F1EC\U0001F1E7GB-47.92.143.92-3128"
   port: 3128
   server: 47.92.143.92
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 134
+  name: "\U0001F1EC\U0001F1E7GB-47.92.152.43-80"
   port: 80
   server: 47.92.152.43
   skip-cert-verify: true
   type: socks5
   udp: true
 - cipher: aes-256-gcm
-  name: Proxy 135
+  name: "\U0001F1EC\U0001F1E7GB-5.83.221.86-55268"
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 55268
   server: hk01.acxylm.top
@@ -1197,7 +835,7 @@ proxies:
   alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: Proxy 136
+  name: "\U0001F1EC\U0001F1E7GB-57.128.184.127-443"
   network: ws
   port: 443
   server: 57.128.184.127
@@ -1212,14 +850,14 @@ proxies:
       Host: baradiha.com
     path: /linkvws
 - client-fingerprint: chrome
-  name: Proxy 137
+  name: "\U0001F1EC\U0001F1E7GB-8.130.39.117-9002"
   port: 9002
   server: 8.130.39.117
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 138
+  name: "\U0001F1EC\U0001F1E7GB-8.130.90.177-8008"
   port: 8008
   server: 8.130.90.177
   skip-cert-verify: true
@@ -1227,35 +865,35 @@ proxies:
   type: http
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 139
+  name: "\U0001F1EC\U0001F1E7GB-8.137.38.48-8080"
   port: 8080
   server: 8.137.38.48
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 140
+  name: "\U0001F1EC\U0001F1E7GB-8.138.149.37-3128"
   port: 3128
   server: 8.138.149.37
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 141
+  name: "\U0001F1EC\U0001F1E7GB-8.148.20.126-8080"
   port: 8080
   server: 8.148.20.126
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 142
+  name: "\U0001F1EC\U0001F1E7GB-8.148.22.214-9098"
   port: 9098
   server: 8.148.22.214
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 143
+  name: "\U0001F1EC\U0001F1E7GB-8.148.24.225-8080"
   port: 8080
   server: 8.148.24.225
   skip-cert-verify: true
@@ -1263,7 +901,7 @@ proxies:
   type: http
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 144
+  name: "\U0001F1EC\U0001F1E7GB-8.148.4.166-8081"
   port: 8081
   server: 8.148.4.166
   skip-cert-verify: true
@@ -1271,7 +909,7 @@ proxies:
   type: http
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 145
+  name: "\U0001F1EC\U0001F1E7GB-8.211.42.167-8080"
   port: 8080
   server: 8.211.42.167
   skip-cert-verify: true
@@ -1279,7 +917,7 @@ proxies:
   type: http
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 146
+  name: "\U0001F1EC\U0001F1E7GB-8.213.222.157-3128"
   port: 3128
   server: 8.213.222.157
   skip-cert-verify: true
@@ -1287,321 +925,28 @@ proxies:
   type: http
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 147
+  name: "\U0001F1EC\U0001F1E7GB-8.220.204.215-808"
   port: 808
   server: 8.220.204.215
   skip-cert-verify: true
   type: socks5
   udp: true
 - cipher: aes-256-gcm
-  name: Proxy 148
+  name: "\U0001F1EC\U0001F1E7GB-82.152.142.80-36605"
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 36605
   server: hk07.bfyrek.top
   type: ss
   udp: true
-- cipher: rc4-md5
-  name: Proxy 149
-  obfs: plain
-  obfs-param: cd5ed74592.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40213
-  protocol: auth_aes128_md5
-  protocol-param: 74592:o4fbeopsgcf
-  server: 95b1cd85a0968ff2.cdn.jiashule.com
-  type: ssr
-- alterId: -1
-  cipher: rc4-md5
-  client-fingerprint: chrome
-  name: Proxy 150
-  obfs: plain
-  obfs-param: cd5ed74592.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40208
-  protocol: auth_aes128_md5
-  protocol-param: 74592:o4fbeopsgcf
-  server: 7438974b54cf5c57.cdn.jiashule.com
-  type: ssr
-  udp: true
-- name: Proxy 151
-  network: tcp
-  password: QwwHvrnN
-  port: 14505
-  server: 36.151.192.242
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - client-fingerprint: chrome
-  name: Proxy 152
-  port: 7891
-  server: 106.15.199.119
-  skip-cert-verify: true
-  type: socks5
-  udp: true
-- name: Proxy 153
-  password: QwwHvrnN
-  port: 42395
-  server: 36.151.192.196
-  skip-cert-verify: true
-  type: trojan
-- cipher: chacha20-ietf
-  country: "\U0001F1E8\U0001F1F3 CN"
-  name: Proxy 154
-  obfs: plain
-  obfs-param: 83f38107560.windows.net
-  password: 4wMNkIVsgybXfA2u
-  port: 57420
-  protocol: auth_aes128_sha1
-  protocol-param: 107560:cztSoV
-  server: pro.sr.hk01.yunti-relay01.net
-  type: ssr
-- alterId: 64
-  cipher: none
-  name: Proxy 155
-  network: tcp
-  port: 46602
-  server: 183.236.51.23
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts: {}
-- alterId: 64
-  cipher: auto
-  country: "\U0001F1E8\U0001F1F3CN"
-  h2-opts: {}
-  http-opts: {}
-  name: Proxy 156
-  network: tcp
-  port: 56601
-  server: 183.236.51.23
-  skip-cert-verify: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: Proxy 157
-  network: tcp
-  port: '53002'
-  server: 183.236.51.23
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- client-fingerprint: chrome
-  name: Proxy 158
-  port: 7890
-  server: 180.159.15.102
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- alterId: 64
-  cipher: auto
-  name: Proxy 159
-  network: tcp
-  port: 58002
-  server: 120.232.153.27
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- client-fingerprint: chrome
-  name: Proxy 160
-  port: 40000
-  server: 154.220.66.2
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- cipher: aes-256-gcm
-  name: Proxy 161
-  password: Z1K84W4D8G5KO54J
-  port: 15011
-  server: 58.63.250.61
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: Proxy 162
-  password: MAADD8JLM8XKVW56
-  port: 15016
-  server: 36.141.40.92
-  tfo: false
-  type: ss
-- client-fingerprint: chrome
-  name: Proxy 163
-  port: 7890
-  server: 125.80.112.173
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: Proxy 164
-  password: bb741d28-cd11-4ce8-8799-459407bacde8
-  port: 32184
-  server: 4.api-catssr.catcloud.host
-  type: ss
-- cipher: aes-256-gcm
-  name: Proxy 165
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 31452
-  server: hk03.acxylm.top
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: Proxy 166
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 20177
-  server: hk04.acxylm.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: Proxy 167
-  network: ws
-  port: 33416
-  server: yd2.ainivp.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 9204afcd-023e-781f-1abc-c12efccd1344
-  ws-opts:
-    headers:
-      host: yd2.ainivp.com
-    path: /ray
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: Proxy 168
-  password: hGkQ6915tD
-  port: 16088
-  server: 120.232.81.50
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: Proxy 169
-  port: 22300
-  server: 120.232.81.14
-  type: vmess
-  udp: true
-  uuid: 8cd69cef-002a-4f66-9ff6-48fbb7c2e2c7
-- alterId: 0
-  cipher: auto
-  name: Proxy 170
-  port: 60066
-  server: hk0067.alibabaokz.com
-  type: vmess
-  udp: true
-  uuid: e50e453f-04f5-4c31-b962-bff22b152410
-- client-fingerprint: chrome
-  name: Proxy 171
-  port: 7890
-  server: 116.226.15.19
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: Proxy 172
-  password: f337e72a-be9a-4ea1-8332-7cbc88f0006f
-  port: 34338
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: Proxy 173
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 45567
-  server: us3.acxylm.top
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: Proxy 174
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 10473
-  server: hk02.acxylm.top
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: Proxy 175
-  port: 7890
-  server: 54.222.236.44
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- cipher: aes-256-gcm
-  name: Proxy 176
-  password: 486c819c-dc4a-4981-8949-a02a6b327287
-  port: 34001
-  server: gychun.ccdox.icu
-  type: ss
-  udp: true
-- cipher: chacha20-ietf
-  country: "\U0001F3C1 ZZ"
-  name: Proxy 177
-  obfs: plain
-  obfs-param: 83f38107560.windows.net
-  password: 4wMNkIVsgybXfA2u
-  port: 54615
-  protocol: auth_aes128_sha1
-  protocol-param: 107560:cztSoV
-  server: pro.sr.hk01.yunti-relay01.net
-  type: ssr
-- name: Proxy 178
-  port: 3128
-  server: 47.243.92.199
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- client-fingerprint: chrome
-  name: Proxy 179
-  port: 7890
-  server: 114.85.58.36
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- client-fingerprint: chrome
-  name: Proxy 180
-  port: 7890
-  server: 120.79.68.85
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- client-fingerprint: chrome
-  name: Proxy 181
-  port: 37469
-  server: 47.243.30.66
-  skip-cert-verify: true
-  type: socks5
-  udp: true
-- client-fingerprint: chrome
-  name: Proxy 182
-  port: 1057
-  server: 8.218.117.116
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- client-fingerprint: chrome
-  name: Proxy 183
-  port: 7890
-  server: 117.72.70.31
-  skip-cert-verify: true
-  tls: false
-  type: http
-  udp: true
-- client-fingerprint: chrome
-  name: Proxy 184
+  name: "\U0001F1EE\U0001F1E9ID-103.55.22.236-8199"
   port: 8199
   server: 103.55.22.236
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 185
+  name: "\U0001F1EE\U0001F1E9ID-103.67.85.74-8085"
   port: 8085
   server: 103.67.84.78
   skip-cert-verify: true
@@ -1609,21 +954,21 @@ proxies:
   type: http
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 186
+  name: "\U0001F1EE\U0001F1F3IN-103.209.36.58-81"
   port: 81
   server: 103.209.36.58
   skip-cert-verify: true
   tls: false
   type: http
   udp: true
-- name: Proxy 187
+- name: "\U0001F1EE\U0001F1F3IN-163.53.204.178-9813"
   port: 9813
   server: 163.53.204.178
   skip-cert-verify: true
   type: socks5
   udp: true
 - country: "\U0001F1E6\U0001F1FAAU"
-  name: Proxy 188
+  name: "\U0001F1EE\U0001F1F9IT-176.105.252.54-20983"
   password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
   port: 20983
   server: ent1.imyourdaddy.top
@@ -1632,14 +977,14 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 189
+  name: "\U0001F1EF\U0001F1F5JP-103.152.227.154-7890"
   port: 7890
   server: 47.121.187.97
   skip-cert-verify: true
   tls: false
   type: http
   udp: true
-- name: Proxy 190
+- name: "\U0001F1EF\U0001F1F5JP-104.28.162.159-443"
   network: ws
   password: FLorg
   port: 443
@@ -1652,7 +997,7 @@ proxies:
     headers:
       Host: trojan.tcorg.filegear-sg.me
     path: /
-- name: Proxy 191
+- name: "\U0001F1EF\U0001F1F5JP-104.28.162.99-443"
   network: ws
   password: FLorg
   port: 443
@@ -1664,14 +1009,14 @@ proxies:
       Host: trojan.tcorg.filegear-sg.me
     path: /
 - cipher: aes-256-cfb
-  name: Proxy 192
+  name: "\U0001F1EF\U0001F1F5JP-128.22.139.225-15084"
   password: hGkQ6915tD
   port: 15084
   server: 120.232.81.50
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: Proxy 193
+  name: "\U0001F1EF\U0001F1F5JP-138.2.42.140-40219"
   obfs: plain
   obfs-param: 8195986416.6602b8463464108506.microsoft.com
   password: ENZ52K
@@ -1680,7 +1025,7 @@ proxies:
   protocol-param: 86416:SlZFuy
   server: 7438974b54cf5c57.cdn.jiashule.com
   type: ssr
-- name: Proxy 194
+- name: "\U0001F1EF\U0001F1F5JP-139.180.195.173-29999"
   port: 29999
   server: 39.98.107.108
   skip-cert-verify: true
@@ -1688,7 +1033,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: Proxy 195
+  name: "\U0001F1EF\U0001F1F5JP-153.121.57.155-33202"
   network: ws
   port: 33202
   server: yd2.ainivp.com
@@ -1702,7 +1047,7 @@ proxies:
       Host: yd2.ainivp.com
     path: /ray
 - client-fingerprint: chrome
-  name: Proxy 196
+  name: "\U0001F1EF\U0001F1F5JP-160.16.207.72-7890"
   port: 7890
   server: 114.254.34.89
   skip-cert-verify: true
@@ -1711,14 +1056,14 @@ proxies:
   udp: true
 - alterId: -1
   client-fingerprint: chrome
-  name: Proxy 197
+  name: "\U0001F1EF\U0001F1F5JP-160.191.41.251-7890"
   port: 7890
   server: 139.196.12.200
   skip-cert-verify: true
   tls: false
   type: http
   udp: true
-- name: Proxy 198
+- name: "\U0001F1EF\U0001F1F5JP-160.86.242.23-8080"
   port: 8080
   server: 160.86.242.23
   skip-cert-verify: true
@@ -1726,7 +1071,7 @@ proxies:
   type: http
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 199
+  name: "\U0001F1EF\U0001F1F5JP-18.181.180.119-80"
   port: 80
   server: 35.72.118.126
   skip-cert-verify: true
@@ -1735,13 +1080,13 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: "\U0001F1EF\U0001F1F5JP"
-  name: Proxy 200
+  name: "\U0001F1EF\U0001F1F5JP-18.183.217.223-443"
   password: amazonskr05
   port: 443
   server: 18.183.217.223
   type: ss
 - client-fingerprint: chrome
-  name: Proxy 201
+  name: "\U0001F1EF\U0001F1F5JP-185.220.238.42-7890"
   port: 7890
   server: 62.234.222.17
   skip-cert-verify: true
@@ -1749,41 +1094,41 @@ proxies:
   type: http
   udp: true
 - cipher: aes-256-gcm
-  name: Proxy 202
+  name: "\U0001F1EF\U0001F1F5JP-194.105.89.23-19428"
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 19428
   server: jp01.acxylm.top
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: Proxy 203
+  name: "\U0001F1EF\U0001F1F5JP-213.218.254.209-20002"
   password: f337e72a-be9a-4ea1-8332-7cbc88f0006f
   port: 20002
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: Proxy 204
+  name: "\U0001F1EF\U0001F1F5JP-213.218.254.81-20004"
   password: f337e72a-be9a-4ea1-8332-7cbc88f0006f
   port: 20004
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: Proxy 205
+  name: "\U0001F1EF\U0001F1F5JP-3.112.215.69-443"
   password: amazonskr05
   port: 443
   server: 3.112.215.69
   type: ss
 - cipher: aes-256-gcm
-  name: Proxy 206
+  name: "\U0001F1EF\U0001F1F5JP-38.207.137.45-43787"
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 43787
   server: jp02.acxylm.top
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 207
+  name: "\U0001F1EF\U0001F1F5JP-38.207.152.186-7890"
   port: 7890
   server: 39.165.136.95
   skip-cert-verify: true
@@ -1793,7 +1138,7 @@ proxies:
 - alterId: -1
   cipher: rc4-md5
   client-fingerprint: chrome
-  name: Proxy 208
+  name: "\U0001F1EF\U0001F1F5JP-45.66.134.76-40255"
   obfs: plain
   obfs-param: 8195986416.6602b8463464108506.microsoft.com
   password: ENZ52K
@@ -1804,7 +1149,7 @@ proxies:
   type: ssr
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 209
+  name: "\U0001F1EF\U0001F1F5JP-47.115.32.90-7890"
   port: 7890
   server: 47.115.32.90
   skip-cert-verify: true
@@ -1813,20 +1158,20 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: "\U0001F1EF\U0001F1F5JP"
-  name: Proxy 210
+  name: "\U0001F1EF\U0001F1F5JP-54.95.5.168-443"
   password: amazonskr05
   port: 443
   server: 54.95.5.168
   type: ss
 - cipher: aes-256-cfb
   country: "\U0001F1E7\U0001F1EABE"
-  name: Proxy 211
+  name: "\U0001F1EF\U0001F1F5JP-57.180.42.246-443"
   password: amazonskr05
   port: 443
   server: 57.180.42.246
   type: ss
 - alterId: 0
-  name: Proxy 212
+  name: "\U0001F1EF\U0001F1F5JP-64.176.42.9-17806"
   password: QwwHvrnN
   port: 17806
   server: 36.151.192.239
@@ -1835,7 +1180,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: Proxy 213
+  name: "\U0001F1EF\U0001F1F5JP-82.153.65.6-20008"
   password: f337e72a-be9a-4ea1-8332-7cbc88f0006f
   port: 20008
   server: gy.666666222.shop
@@ -1843,7 +1188,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: Proxy 214
+  name: "\U0001F1EF\U0001F1F5JP-94.177.131.137-60126"
   port: 60126
   server: hk0106.alibabaokz.com
   type: vmess
@@ -1851,7 +1196,7 @@ proxies:
   uuid: e50e453f-04f5-4c31-b962-bff22b152410
 - alterId: 0
   cipher: auto
-  name: Proxy 215
+  name: "\U0001F1EF\U0001F1F5JP-94.177.131.75-60034"
   port: 60034
   server: jp0160.alibabaokz.com
   type: vmess
@@ -1859,12 +1204,12 @@ proxies:
   uuid: e50e453f-04f5-4c31-b962-bff22b152410
 - cipher: aes-256-cfb
   country: "\U0001F1F0\U0001F1F7KR"
-  name: Proxy 216
+  name: "\U0001F1F0\U0001F1F7KR-13.209.16.115-443"
   password: amazonskr05
   port: 443
   server: 13.209.16.115
   type: ss
-- name: Proxy 217
+- name: "\U0001F1F0\U0001F1F7KR-138.2.123.94-13036"
   password: ad6e2bae-d580-4117-aa37-a8c111100740
   port: 13036
   server: naiu-other.05vr9nyqg5.download
@@ -1872,7 +1217,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
-- name: Proxy 218
+- name: "\U0001F1F0\U0001F1F7KR-141.164.62.166-36900"
   network: tcp
   password: QwwHvrnN
   port: 36900
@@ -1880,7 +1225,7 @@ proxies:
   skip-cert-verify: true
   type: trojan
 - client-fingerprint: chrome
-  name: Proxy 219
+  name: "\U0001F1F0\U0001F1F7KR-146.56.114.61-7890"
   port: 7890
   server: 123.233.218.194
   skip-cert-verify: true
@@ -1890,21 +1235,21 @@ proxies:
 - alterId: -1
   cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: Proxy 220
+  name: "\U0001F1F0\U0001F1F7KR-221.139.79.57-54345"
   password: qwerREWQ@@
   port: 54345
   server: 221.139.79.57
   tfo: false
   type: ss
 - cipher: aes-256-cfb
-  name: Proxy 221
+  name: "\U0001F1F0\U0001F1F7KR-3.35.137.32-443"
   password: amazonskr05
   port: 443
   server: 3.35.137.32
   tfo: false
   type: ss
 - cipher: aes-256-cfb
-  name: Proxy 222
+  name: "\U0001F1F0\U0001F1F7KR-3.39.240.246-443"
   password: amazonskr05
   port: 443
   server: 3.39.240.246
@@ -1912,20 +1257,20 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: Proxy 223
+  name: "\U0001F1F0\U0001F1F7KR-43.202.57.197-443"
   password: amazonskr05
   port: 443
   server: 43.202.57.197
   tfo: false
   type: ss
 - cipher: aes-256-gcm
-  name: Proxy 224
+  name: "\U0001F1F0\U0001F1F7KR-61.111.247.166-59988"
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 59988
   server: kr01.acxylm.top
   type: ss
   udp: true
-- name: Proxy 225
+- name: "\U0001F1F0\U0001F1F7KR-8.213.151.128-3128"
   port: 3128
   server: 8.213.151.128
   skip-cert-verify: true
@@ -1934,20 +1279,20 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: "\U0001F1E6\U0001F1FFAZ"
-  name: Proxy 226
+  name: "\U0001F1F1\U0001F1FBLV-193.124.22.253-33068"
   password: 3MgIhqwp4pjM8SKwixNkYZ
   port: 33068
   server: 193.124.22.253
   type: ss
 - cipher: aes-256-gcm
-  name: Proxy 227
+  name: "\U0001F1F2\U0001F1FDMX-140.84.189.40-61258"
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 61258
   server: mx.acxylm.top
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: Proxy 228
+  name: "\U0001F1F3\U0001F1F1NL-193.29.139.164-8080"
   password: 1RWwXhwfAB5gAEozU4G2Pg
   port: 8080
   server: 45.87.175.188
@@ -1955,27 +1300,27 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: Proxy 229
+  name: "\U0001F1F3\U0001F1F1NL-193.29.139.173-8080"
   password: 1RWwXhwfAB5gAEozU4G2Pg
   port: 8080
   server: 45.87.175.199
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: Proxy 230
+  name: "\U0001F1F3\U0001F1F1NL-194.87.82.28-12224"
   password: 2fwufOmJ9ELfN4umzcHBfV
   port: 12224
   server: 194.87.82.28
   type: ss
 - cipher: aes-256-gcm
-  name: Proxy 231
+  name: "\U0001F1F3\U0001F1F1NL-5.8.35.237-25806"
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 25806
   server: id.acxylm.top
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: Proxy 232
+  name: "\U0001F1F5\U0001F1EDPH-45.115.224.222-56433"
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 56433
   server: ph.acxylm.top
@@ -1983,18 +1328,18 @@ proxies:
   udp: true
 - alterId: -1
   cipher: chacha20-ietf-poly1305
-  name: Proxy 233
+  name: "\U0001F1F7\U0001F1FARU-194.87.82.28-12224"
   password: 2fwufOmJ9ELfN4umzcHBfV
   port: 12224
   server: 194.87.82.28
   type: ss
-- name: Proxy 234
+- name: "\U0001F1F7\U0001F1FARU-45.132.17.40-1080"
   port: 1080
   server: 45.132.17.40
   skip-cert-verify: true
   type: socks5
   udp: true
-- name: Proxy 235
+- name: "\U0001F1F7\U0001F1FARU-45.8.158.187-60194"
   password: 38571ca6-6692-4559-b901-0bc5826b7661
   port: 60194
   server: ru0195.alibabaokz.com
@@ -2002,7 +1347,7 @@ proxies:
   sni: ru0195.alibabaokz.com
   type: trojan
 - client-fingerprint: chrome
-  name: Proxy 236
+  name: "\U0001F1F8\U0001F1ECSG-129.150.53.117-13028"
   password: ad6e2bae-d580-4117-aa37-a8c111100740
   port: 13028
   server: naiu-sg.05vr9nyqg5.download
@@ -2010,13 +1355,13 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
 - cipher: aes-256-cfb
-  name: Proxy 237
+  name: "\U0001F1F8\U0001F1ECSG-13.229.238.238-443"
   password: amazonskr05
   port: 443
   server: 13.229.238.238
   type: ss
 - client-fingerprint: chrome
-  name: Proxy 238
+  name: "\U0001F1F8\U0001F1ECSG-13.250.121.124-7890"
   port: 7890
   server: 183.136.20.93
   skip-cert-verify: true
@@ -2026,7 +1371,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: Proxy 239
+  name: "\U0001F1F8\U0001F1ECSG-14.128.63.134-56601"
   port: 56601
   server: 183.236.51.23
   skip-cert-verify: false
@@ -2036,7 +1381,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: Proxy 240
+  name: "\U0001F1F8\U0001F1ECSG-14.128.63.139-53002"
   network: tcp
   port: 53002
   server: 183.236.51.23
@@ -2047,7 +1392,7 @@ proxies:
 - alterId: -1
   cipher: rc4-md5
   client-fingerprint: chrome
-  name: Proxy 241
+  name: "\U0001F1F8\U0001F1ECSG-140.245.57.33-40251"
   obfs: plain
   obfs-param: cd5ed74592.6602b8463464108506.microsoft.com
   password: ENZ52K
@@ -2060,7 +1405,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: Proxy 242
+  name: "\U0001F1F8\U0001F1ECSG-143.92.34.220-58002"
   port: 58002
   server: 120.232.153.27
   skip-cert-verify: false
@@ -2069,7 +1414,7 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - client-fingerprint: chrome
-  name: Proxy 243
+  name: "\U0001F1F8\U0001F1ECSG-185.248.187.173-7890"
   port: 7890
   server: 101.200.243.204
   skip-cert-verify: true
@@ -2077,14 +1422,14 @@ proxies:
   type: http
   udp: true
 - cipher: aes-256-gcm
-  name: Proxy 244
+  name: "\U0001F1F8\U0001F1ECSG-188.253.4.155-29321"
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 29321
   server: sgp3.acxylm.top
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 245
+  name: "\U0001F1F8\U0001F1ECSG-188.253.4.206-7890"
   port: 7890
   server: 114.220.34.44
   skip-cert-verify: true
@@ -2092,7 +1437,7 @@ proxies:
   type: http
   udp: true
 - cipher: aes-256-gcm
-  name: Proxy 246
+  name: "\U0001F1F8\U0001F1ECSG-45.145.154.249-20923"
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 20923
   server: sgp5.acxylm.top
@@ -2100,13 +1445,13 @@ proxies:
   udp: true
 - alterId: -1
   cipher: aes-256-cfb
-  name: Proxy 247
+  name: "\U0001F1F8\U0001F1ECSG-47.128.215.67-443"
   password: amazonskr05
   port: 443
   server: 47.128.215.67
   type: ss
 - cipher: aes-256-gcm
-  name: Proxy 248
+  name: "\U0001F1F8\U0001F1ECSG-51.79.165.191-46417"
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 46417
   server: sgp1.acxylm.top
@@ -2114,20 +1459,20 @@ proxies:
   udp: true
 - alterId: -1
   cipher: aes-256-cfb
-  name: Proxy 249
+  name: "\U0001F1F8\U0001F1ECSG-52.77.209.61-443"
   password: amazonskr05
   port: 443
   server: 52.77.209.61
   type: ss
 - cipher: aes-256-cfb
-  name: Proxy 250
+  name: "\U0001F1F8\U0001F1ECSG-52.77.236.51-443"
   password: amazonskr05
   port: 443
   server: 52.77.236.51
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 251
+  name: "\U0001F1F8\U0001F1ECSG-91.243.81.83-7890"
   port: 7890
   server: 111.224.143.128
   skip-cert-verify: true
@@ -2135,13 +1480,13 @@ proxies:
   type: http
   udp: true
 - cipher: aes-256-gcm
-  name: Proxy 252
+  name: "\U0001F1F9\U0001F1EDTH-45.136.236.86-50948"
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 50948
   server: th.acxylm.top
   type: ss
   udp: true
-- name: Proxy 253
+- name: "\U0001F1F9\U0001F1F7TR-45.95.214.82-20987"
   network: tcp
   password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
   port: 20987
@@ -2150,27 +1495,27 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-gcm
-  name: Proxy 254
+  name: "\U0001F1F9\U0001F1F7TR-46.37.117.73-55691"
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 55691
   server: tr.acxylm.top
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 255
+  name: "\U0001F1F9\U0001F1F7TR-89.43.31.134-3128"
   port: 3128
   server: 89.43.31.134
   skip-cert-verify: true
   tls: false
   type: http
   udp: true
-- name: Proxy 256
+- name: "\U0001F1FA\U0001F1F8US-104.200.152.30-4145"
   port: 4145
   server: 104.200.152.30
   skip-cert-verify: true
   type: socks5
   udp: true
-- name: Proxy 257
+- name: "\U0001F1FA\U0001F1F8US-104.28.152.185-8443"
   network: ws
   password: trojan
   port: 8443
@@ -2184,7 +1529,7 @@ proxies:
       Host: mav2flyng.pages.dev
     path: /
 - country: "\U0001F1E8\U0001F1ED CH"
-  name: Proxy 258
+  name: "\U0001F1FA\U0001F1F8US-104.28.154.164-20980"
   password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
   port: 20980
   server: ent1.imyourdaddy.top
@@ -2192,7 +1537,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 259
+  name: "\U0001F1FA\U0001F1F8US-104.28.154.170-8090"
   port: 8090
   server: 159.138.255.141
   skip-cert-verify: true
@@ -2200,7 +1545,7 @@ proxies:
   udp: true
 - alterId: 64
   cipher: auto
-  name: Proxy 260
+  name: "\U0001F1FA\U0001F1F8US-104.28.154.172-56601"
   network: tcp
   port: 56601
   server: 183.236.51.23
@@ -2208,7 +1553,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: Proxy 261
+- name: "\U0001F1FA\U0001F1F8US-104.28.154.174-41139"
   password: 7cb80b97-119b-4704-a036-5b67fceb3aac
   port: 41139
   server: free.6vczxw.xyz
@@ -2216,7 +1561,7 @@ proxies:
   sni: jp15.bluemixnet.xyz
   type: trojan
   udp: true
-- name: Proxy 262
+- name: "\U0001F1FA\U0001F1F8US-104.28.157.102-443"
   network: ws
   password: dns68
   port: 443
@@ -2229,7 +1574,7 @@ proxies:
     headers:
       Host: trojan.putata.us.kg
     path: /?ed=2560
-- name: Proxy 263
+- name: "\U0001F1FA\U0001F1F8US-104.28.157.113-443"
   network: ws
   password: dns68
   port: 443
@@ -2243,7 +1588,7 @@ proxies:
       Host: trojan.putata.us.kg
     path: /?ed=2560
 - alterId: 0
-  name: Proxy 264
+  name: "\U0001F1FA\U0001F1F8US-104.28.157.117-443"
   network: ws
   password: dns68
   port: 443
@@ -2254,14 +1599,14 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 265
+  name: "\U0001F1FA\U0001F1F8US-104.28.157.253-4145"
   port: 4145
   server: 72.195.34.41
   skip-cert-verify: true
   type: socks5
   udp: true
 - alterId: 0
-  name: Proxy 266
+  name: "\U0001F1FA\U0001F1F8US-104.28.161.114-889"
   network: tcp
   password: LYaOvuNXdQGTZNonhlRUKqOJcKVihzKY
   port: 889
@@ -2271,7 +1616,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: Proxy 267
+- name: "\U0001F1FA\U0001F1F8US-104.28.161.116-443"
   password: e3fee3b6-fca1-3985-99dc-da7ca03260ea
   port: 443
   server: 18.179.44.127
@@ -2280,21 +1625,21 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 268
+  name: "\U0001F1FA\U0001F1F8US-104.28.161.120-3128"
   port: 3128
   server: 35.178.104.4
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 269
+  name: "\U0001F1FA\U0001F1F8US-104.28.161.121-9098"
   port: 9098
   server: 8.220.136.174
   skip-cert-verify: true
   tls: false
   type: http
   udp: true
-- name: Proxy 270
+- name: "\U0001F1FA\U0001F1F8US-104.28.161.123-443"
   password: cd41b9d7-df15-46ad-a778-257b0851525a
   port: 443
   server: in01.trojanyyds.xyz
@@ -2302,13 +1647,13 @@ proxies:
   type: trojan
 - alterId: 64
   cipher: none
-  name: Proxy 271
+  name: "\U0001F1FA\U0001F1F8US-104.28.161.125-50004"
   port: 50004
   server: 112.132.212.19
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts: {}
-- name: Proxy 272
+- name: "\U0001F1FA\U0001F1F8US-104.28.162.74-443"
   network: ws
   password: FLorg
   port: 443
@@ -2322,7 +1667,7 @@ proxies:
       Host: trojan.tcorg.filegear-sg.me
     path: /?ed
 - client-fingerprint: chrome
-  name: Proxy 273
+  name: "\U0001F1FA\U0001F1F8US-104.28.164.23-80"
   port: 80
   server: 54.248.238.110
   skip-cert-verify: true
@@ -2330,7 +1675,7 @@ proxies:
   type: http
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 274
+  name: "\U0001F1FA\U0001F1F8US-104.28.164.24-7890"
   port: 7890
   server: 47.108.92.31
   skip-cert-verify: true
@@ -2338,21 +1683,21 @@ proxies:
   type: http
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 275
+  name: "\U0001F1FA\U0001F1F8US-104.37.135.145-4145"
   port: 4145
   server: 104.37.135.145
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 276
+  name: "\U0001F1FA\U0001F1F8US-107.148.146.145-7890"
   port: 7890
   server: 107.148.146.145
   skip-cert-verify: true
   tls: false
   type: http
   udp: true
-- name: Proxy 277
+- name: "\U0001F1FA\U0001F1F8US-107.152.98.5-4145"
   port: 4145
   server: 107.152.98.5
   skip-cert-verify: true
@@ -2360,7 +1705,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: Proxy 278
+  name: "\U0001F1FA\U0001F1F8US-108.181.24.39-2082"
   network: ws
   port: 2082
   server: 104.26.5.145
@@ -2378,7 +1723,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: Proxy 279
+  name: "\U0001F1FA\U0001F1F8US-108.181.24.55-2095"
   network: ws
   port: 2095
   server: 104.19.45.11
@@ -2392,14 +1737,14 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 64
   cipher: auto
-  name: Proxy 280
+  name: "\U0001F1FA\U0001F1F8US-137.175.20.116-40434"
   network: tcp
   port: 40434
   server: 183.236.51.23
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - client-fingerprint: chrome
-  name: Proxy 281
+  name: "\U0001F1FA\U0001F1F8US-138.2.123.94-13036"
   password: ad6e2bae-d580-4117-aa37-a8c111100740
   port: 13036
   server: naiu-other.05vr9nyqg5.download
@@ -2407,7 +1752,7 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
 - cipher: rc4-md5
-  name: Proxy 282
+  name: "\U0001F1FA\U0001F1F8US-140.245.57.33-40251"
   obfs: plain
   obfs-param: cd5ed74592.6602b8463464108506.microsoft.com
   password: ENZ52K
@@ -2417,7 +1762,7 @@ proxies:
   server: 95b1cd85a0968ff2.cdn.jiashule.com
   type: ssr
 - client-fingerprint: chrome
-  name: Proxy 283
+  name: "\U0001F1FA\U0001F1F8US-142.171.121.29-100"
   port: 100
   server: 47.238.60.156
   skip-cert-verify: true
@@ -2426,7 +1771,7 @@ proxies:
   udp: true
 - alterId: 64
   cipher: auto
-  name: Proxy 284
+  name: "\U0001F1FA\U0001F1F8US-142.4.115.242-58831"
   network: tcp
   port: 58831
   server: 183.236.48.163
@@ -2437,33 +1782,33 @@ proxies:
   ws-headers:
     Host: 183.236.48.163
   ws-path: /
-- name: Proxy 285
+- name: "\U0001F1FA\U0001F1F8US-142.54.228.193-4145"
   port: 4145
   server: 142.54.228.193
   skip-cert-verify: true
   type: socks5
   udp: true
-- name: Proxy 286
+- name: "\U0001F1FA\U0001F1F8US-142.54.231.38-4145"
   port: 4145
   server: 142.54.231.38
   skip-cert-verify: true
   type: socks5
   udp: true
-- name: Proxy 287
+- name: "\U0001F1FA\U0001F1F8US-142.54.232.6-4145"
   port: 4145
   server: 142.54.232.6
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 288
+  name: "\U0001F1FA\U0001F1F8US-142.54.236.97-4145"
   port: 4145
   server: 142.54.236.97
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 289
+  name: "\U0001F1FA\U0001F1F8US-142.54.237.38-4145"
   port: 4145
   server: 142.54.237.38
   skip-cert-verify: true
@@ -2472,7 +1817,7 @@ proxies:
 - alterId: -1
   cipher: rc4-md5
   client-fingerprint: chrome
-  name: Proxy 290
+  name: "\U0001F1FA\U0001F1F8US-148.135.52.230-40243"
   obfs: plain
   obfs-param: cd5ed74592.6602b8463464108506.microsoft.com
   password: ENZ52K
@@ -2483,7 +1828,7 @@ proxies:
   type: ssr
   udp: true
 - country: "\U0001F1E6\U0001F1FAAU"
-  name: Proxy 291
+  name: "\U0001F1FA\U0001F1F8US-150.136.38.181-21005"
   password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
   port: 21005
   server: ent1.imyourdaddy.top
@@ -2492,7 +1837,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: Proxy 292
+  name: "\U0001F1FA\U0001F1F8US-157.254.158.70-20013"
   password: f337e72a-be9a-4ea1-8332-7cbc88f0006f
   port: 20013
   server: gy.666666222.shop
@@ -2501,7 +1846,7 @@ proxies:
 - alterId: -1
   cipher: rc4-md5
   client-fingerprint: chrome
-  name: Proxy 293
+  name: "\U0001F1FA\U0001F1F8US-158.101.2.26-40263"
   obfs: plain
   obfs-param: cd5ed74592.6602b8463464108506.microsoft.com
   password: ENZ52K
@@ -2511,13 +1856,13 @@ proxies:
   server: 7438974b54cf5c57.cdn.jiashule.com
   type: ssr
   udp: true
-- name: Proxy 294
+- name: "\U0001F1FA\U0001F1F8US-172.104.209.44-1080"
   port: 1080
   server: 172.104.209.44
   skip-cert-verify: true
   type: socks5
   udp: true
-- name: Proxy 295
+- name: "\U0001F1FA\U0001F1F8US-172.233.155.25-1080"
   port: 1080
   server: 172.233.155.25
   skip-cert-verify: true
@@ -2525,7 +1870,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: Proxy 296
+  name: "\U0001F1FA\U0001F1F8US-172.236.14.32-443"
   network: ws
   port: 443
   server: 2.189.59.7
@@ -2539,7 +1884,7 @@ proxies:
     path: /linkws
 - alterId: 64
   cipher: auto
-  name: Proxy 297
+  name: "\U0001F1FA\U0001F1F8US-172.247.174.74-41490"
   port: 41490
   server: 183.236.48.143
   skip-cert-verify: true
@@ -2549,7 +1894,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: Proxy 298
+  name: "\U0001F1FA\U0001F1F8US-172.247.174.82-31878"
   port: 31878
   server: 183.236.48.143
   skip-cert-verify: true
@@ -2559,7 +1904,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: Proxy 299
+  name: "\U0001F1FA\U0001F1F8US-172.247.175.42-52482"
   port: 52482
   server: 183.240.253.23
   skip-cert-verify: true
@@ -2569,7 +1914,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: Proxy 300
+  name: "\U0001F1FA\U0001F1F8US-172.247.175.50-42055"
   port: 42055
   server: 183.240.253.20
   skip-cert-verify: true
@@ -2578,150 +1923,150 @@ proxies:
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - client-fingerprint: chrome
-  name: Proxy 301
+  name: "\U0001F1FA\U0001F1F8US-174.64.199.79-4145"
   port: 4145
   server: 174.64.199.79
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 302
+  name: "\U0001F1FA\U0001F1F8US-174.64.199.82-4145"
   port: 4145
   server: 174.64.199.82
   skip-cert-verify: true
   type: socks5
   udp: true
-- name: Proxy 303
+- name: "\U0001F1FA\U0001F1F8US-174.75.211.193-4145"
   port: 4145
   server: 174.75.211.193
   skip-cert-verify: true
   type: socks5
   udp: true
-- name: Proxy 304
+- name: "\U0001F1FA\U0001F1F8US-174.75.211.222-4145"
   port: 4145
   server: 174.75.211.222
   skip-cert-verify: true
   type: socks5
   udp: true
-- name: Proxy 305
+- name: "\U0001F1FA\U0001F1F8US-174.77.111.196-4145"
   port: 4145
   server: 174.77.111.196
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 306
+  name: "\U0001F1FA\U0001F1F8US-174.77.111.197-4145"
   port: 4145
   server: 174.77.111.197
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 307
+  name: "\U0001F1FA\U0001F1F8US-174.77.111.198-49547"
   port: 49547
   server: 174.77.111.198
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 308
+  name: "\U0001F1FA\U0001F1F8US-18.205.117.61-3128"
   port: 3128
   server: 3.212.148.199
   skip-cert-verify: true
   tls: false
   type: http
   udp: true
-- name: Proxy 309
+- name: "\U0001F1FA\U0001F1F8US-184.170.245.148-4145"
   port: 4145
   server: 184.170.245.148
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 310
+  name: "\U0001F1FA\U0001F1F8US-184.170.248.5-4145"
   port: 4145
   server: 184.170.248.5
   skip-cert-verify: true
   type: socks5
   udp: true
-- name: Proxy 311
+- name: "\U0001F1FA\U0001F1F8US-184.170.249.65-4145"
   port: 4145
   server: 184.170.249.65
   skip-cert-verify: true
   type: socks5
   udp: true
-- name: Proxy 312
+- name: "\U0001F1FA\U0001F1F8US-184.178.172.14-4145"
   port: 4145
   server: 184.178.172.14
   skip-cert-verify: true
   type: socks5
   udp: true
-- name: Proxy 313
+- name: "\U0001F1FA\U0001F1F8US-184.178.172.18-15280"
   port: 15280
   server: 184.178.172.18
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 314
+  name: "\U0001F1FA\U0001F1F8US-184.178.172.26-4145"
   port: 4145
   server: 184.178.172.26
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 315
+  name: "\U0001F1FA\U0001F1F8US-184.178.172.28-15294"
   port: 15294
   server: 184.178.172.28
   skip-cert-verify: true
   type: socks5
   udp: true
-- name: Proxy 316
+- name: "\U0001F1FA\U0001F1F8US-184.181.217.210-4145"
   port: 4145
   server: 184.181.217.210
   skip-cert-verify: true
   type: socks5
   udp: true
-- name: Proxy 317
+- name: "\U0001F1FA\U0001F1F8US-184.181.217.220-4145"
   port: 4145
   server: 184.181.217.220
   skip-cert-verify: true
   type: socks5
   udp: true
-- name: Proxy 318
+- name: "\U0001F1FA\U0001F1F8US-192.111.129.145-16894"
   port: 16894
   server: 192.111.129.145
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 319
+  name: "\U0001F1FA\U0001F1F8US-192.111.129.150-4145"
   port: 4145
   server: 192.111.129.150
   skip-cert-verify: true
   type: socks5
   udp: true
-- name: Proxy 320
+- name: "\U0001F1FA\U0001F1F8US-192.111.130.2-4145"
   port: 4145
   server: 192.111.130.2
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 321
+  name: "\U0001F1FA\U0001F1F8US-192.111.130.5-17002"
   port: 17002
   server: 192.111.130.5
   skip-cert-verify: true
   type: socks5
   udp: true
-- name: Proxy 322
+- name: "\U0001F1FA\U0001F1F8US-192.111.135.17-18302"
   port: 18302
   server: 192.111.135.17
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 323
+  name: "\U0001F1FA\U0001F1F8US-192.111.137.37-18762"
   port: 18762
   server: 192.111.137.37
   skip-cert-verify: true
@@ -2729,7 +2074,7 @@ proxies:
   udp: true
 - alterId: 64
   cipher: auto
-  name: Proxy 324
+  name: "\U0001F1FA\U0001F1F8US-192.151.219.210-37614"
   port: 37614
   server: 183.240.253.20
   skip-cert-verify: true
@@ -2739,7 +2084,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: Proxy 325
+  name: "\U0001F1FA\U0001F1F8US-192.155.82.186-443"
   network: ws
   port: 443
   server: 2.189.59.4
@@ -2752,33 +2097,33 @@ proxies:
     headers:
       Host: obdii.cfd
     path: /linkws
-- name: Proxy 326
+- name: "\U0001F1FA\U0001F1F8US-192.252.208.70-14282"
   port: 14282
   server: 192.252.208.70
   skip-cert-verify: true
   type: socks5
   udp: true
-- name: Proxy 327
+- name: "\U0001F1FA\U0001F1F8US-192.252.209.155-14455"
   port: 14455
   server: 192.252.209.155
   skip-cert-verify: true
   type: socks5
   udp: true
-- name: Proxy 328
+- name: "\U0001F1FA\U0001F1F8US-192.252.209.158-4145"
   port: 4145
   server: 192.252.209.158
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 329
+  name: "\U0001F1FA\U0001F1F8US-192.252.210.233-4145"
   port: 4145
   server: 192.252.210.233
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 330
+  name: "\U0001F1FA\U0001F1F8US-192.252.216.86-4145"
   port: 4145
   server: 192.252.216.86
   skip-cert-verify: true
@@ -2786,7 +2131,7 @@ proxies:
   udp: true
 - cipher: aes-256-gcm
   country: "\U0001F1E8\U0001F1F3CN"
-  name: Proxy 331
+  name: "\U0001F1FA\U0001F1F8US-192.3.7.45-38045"
   password: 2MkHPhqUTQKK7N7D
   port: 38045
   server: zhuliu.zhenxunwudi.top
@@ -2795,7 +2140,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: Proxy 332
+  name: "\U0001F1FA\U0001F1F8US-192.74.239.1-31001"
   network: ws
   port: 31001
   server: 142.4.96.65
@@ -2810,7 +2155,7 @@ proxies:
     path: /path/1728035392933
 - alterId: 0
   cipher: auto
-  name: Proxy 333
+  name: "\U0001F1FA\U0001F1F8US-192.9.238.22-2086"
   network: ws
   port: 2086
   server: 172.64.80.1
@@ -2823,7 +2168,7 @@ proxies:
       host: shs.xiaoqi666.xyz
     path: /
 - cipher: aes-256-gcm
-  name: Proxy 334
+  name: "\U0001F1FA\U0001F1F8US-194.135.104.133-26800"
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 26800
   server: us1.acxylm.top
@@ -2831,7 +2176,7 @@ proxies:
   udp: true
 - alterId: 64
   cipher: auto
-  name: Proxy 335
+  name: "\U0001F1FA\U0001F1F8US-198.16.35.226-52908"
   port: 52908
   server: 120.234.109.251
   skip-cert-verify: true
@@ -2841,7 +2186,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: Proxy 336
+  name: "\U0001F1FA\U0001F1F8US-198.200.56.114-52112"
   network: tcp
   port: 52112
   server: 183.236.51.23
@@ -2852,33 +2197,33 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   version: '2'
 - client-fingerprint: chrome
-  name: Proxy 337
+  name: "\U0001F1FA\U0001F1F8US-198.8.84.3-4145"
   port: 4145
   server: 198.8.84.3
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 338
+  name: "\U0001F1FA\U0001F1F8US-199.102.106.94-4145"
   port: 4145
   server: 199.102.106.94
   skip-cert-verify: true
   type: socks5
   udp: true
-- name: Proxy 339
+- name: "\U0001F1FA\U0001F1F8US-199.116.114.11-4145"
   port: 4145
   server: 199.116.114.11
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 340
+  name: "\U0001F1FA\U0001F1F8US-199.58.184.97-4145"
   port: 4145
   server: 199.58.184.97
   skip-cert-verify: true
   type: socks5
   udp: true
-- name: Proxy 341
+- name: "\U0001F1FA\U0001F1F8US-199.58.185.9-4145"
   port: 4145
   server: 199.58.185.9
   skip-cert-verify: true
@@ -2886,20 +2231,20 @@ proxies:
   udp: true
 - cipher: aes-128-gcm
   country: "\U0001F1E8\U0001F1F3CN"
-  name: Proxy 342
+  name: "\U0001F1FA\U0001F1F8US-205.185.127.23-25251"
   password: 1de124fc-2e1b-47bf-a094-9e7494e87be6
   port: 25251
   server: alibaba1.xn--z7x16bf6t.com
   type: ss
 - client-fingerprint: chrome
-  name: Proxy 343
+  name: "\U0001F1FA\U0001F1F8US-206.220.175.2-4145"
   port: 4145
   server: 206.220.175.2
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 344
+  name: "\U0001F1FA\U0001F1F8US-208.65.90.21-4145"
   port: 4145
   server: 208.65.90.21
   skip-cert-verify: true
@@ -2907,7 +2252,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: Proxy 345
+  name: "\U0001F1FA\U0001F1F8US-208.87.243.123-8443"
   network: ws
   port: 8443
   server: 104.21.238.200
@@ -2924,7 +2269,7 @@ proxies:
     v2ray-http-upgrade: true
     v2ray-http-upgrade-fast-open: true
 - client-fingerprint: chrome
-  name: Proxy 346
+  name: "\U0001F1FA\U0001F1F8US-209.141.33.104-7890"
   port: 7890
   server: 209.141.33.104
   skip-cert-verify: true
@@ -2932,7 +2277,7 @@ proxies:
   type: http
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 347
+  name: "\U0001F1FA\U0001F1F8US-23.143.136.82-7890"
   port: 7890
   server: 36.250.206.244
   skip-cert-verify: true
@@ -2940,21 +2285,21 @@ proxies:
   type: http
   udp: true
 - alterId: -1
-  name: Proxy 348
+  name: "\U0001F1FA\U0001F1F8US-23.158.104.252-13008"
   password: ad6e2bae-d580-4117-aa37-a8c111100740
   port: 13008
   server: naiu-hk.05vr9nyqg5.download
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
 - cipher: aes-256-gcm
-  name: Proxy 349
+  name: "\U0001F1FA\U0001F1F8US-23.160.193.56-30031"
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 30031
   server: us5.acxylm.top
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: Proxy 350
+  name: "\U0001F1FA\U0001F1F8US-23.187.72.155-14209"
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 14209
   server: us2.acxylm.top
@@ -2962,7 +2307,7 @@ proxies:
   udp: true
 - alterId: 64
   cipher: none
-  name: Proxy 351
+  name: "\U0001F1FA\U0001F1F8US-23.224.191.26-45402"
   network: tcp
   port: 45402
   server: 183.236.48.158
@@ -2971,7 +2316,7 @@ proxies:
   ws-opts: {}
 - alterId: 64
   cipher: none
-  name: Proxy 352
+  name: "\U0001F1FA\U0001F1F8US-23.224.212.138-35601"
   network: tcp
   port: 35601
   server: 183.240.253.23
@@ -2981,7 +2326,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: Proxy 353
+  name: "\U0001F1FA\U0001F1F8US-23.224.68.90-59952"
   port: 59952
   server: 183.236.48.158
   skip-cert-verify: false
@@ -2989,7 +2334,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: Proxy 354
+- name: "\U0001F1FA\U0001F1F8US-23.247.137.96-13021"
   network: tcp
   password: ad6e2bae-d580-4117-aa37-a8c111100740
   port: 13021
@@ -3002,7 +2347,7 @@ proxies:
   alterId: 0
   cipher: auto
   client-fingerprint: random
-  name: Proxy 355
+  name: "\U0001F1FA\U0001F1F8US-23.92.26.204-443"
   network: ws
   port: 443
   server: www.baldengineer.com
@@ -3017,27 +2362,27 @@ proxies:
       Host: yelan.thelastronin.cloudns.org
     path: /linkws/afrhms16v.bestxray.buzz
 - cipher: aes-256-gcm
-  name: Proxy 356
+  name: "\U0001F1FA\U0001F1F8US-23.94.192.6-48417"
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 48417
   server: sgp2.acxylm.top
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 357
+  name: "\U0001F1FA\U0001F1F8US-24.249.199.12-4145"
   port: 4145
   server: 24.249.199.12
   skip-cert-verify: true
   type: socks5
   udp: true
-- name: Proxy 358
+- name: "\U0001F1FA\U0001F1F8US-24.249.199.4-4145"
   port: 4145
   server: 24.249.199.4
   skip-cert-verify: true
   type: socks5
   udp: true
 - cipher: aes-256-cfb
-  name: Proxy 359
+  name: "\U0001F1FA\U0001F1F8US-34.219.118.99-443"
   obfs: plain
   password: amazonskr05
   port: 443
@@ -3046,19 +2391,19 @@ proxies:
   type: ssr
 - cipher: aes-256-cfb
   country: "\U0001F1FA\U0001F1F8US"
-  name: Proxy 360
+  name: "\U0001F1FA\U0001F1F8US-34.220.113.138-443"
   password: amazonskr05
   port: 443
   server: 34.220.113.138
   type: ss
 - cipher: aes-256-cfb
-  name: Proxy 361
+  name: "\U0001F1FA\U0001F1F8US-35.86.117.124-443"
   password: amazonskr05
   port: 443
   server: 35.86.117.124
   type: ss
 - cipher: aes-256-cfb
-  name: Proxy 362
+  name: "\U0001F1FA\U0001F1F8US-35.88.126.102-443"
   password: amazonskr05
   port: 443
   server: 35.88.126.102
@@ -3066,13 +2411,13 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: "\U0001F3C1 ZZ"
-  name: Proxy 363
+  name: "\U0001F1FA\U0001F1F8US-35.88.136.187-443"
   password: amazonskr05
   port: 443
   server: 35.88.136.187
   type: ss
 - client-fingerprint: chrome
-  name: Proxy 364
+  name: "\U0001F1FA\U0001F1F8US-38.107.236.47-7890"
   port: 7890
   server: 113.44.61.236
   skip-cert-verify: true
@@ -3081,7 +2426,7 @@ proxies:
   udp: true
 - alterId: 64
   cipher: auto
-  name: Proxy 365
+  name: "\U0001F1FA\U0001F1F8US-38.174.161.97-39041"
   port: 39041
   server: 183.240.253.26
   skip-cert-verify: true
@@ -3091,7 +2436,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: aes-256-gcm
-  name: Proxy 366
+  name: "\U0001F1FA\U0001F1F8US-38.75.136.21-3389"
   password: Y6R9pAtvxxzmGC
   port: 3389
   server: 38.75.136.21
@@ -3099,14 +2444,14 @@ proxies:
   tls: true
   type: ss
 - cipher: aes-256-cfb
-  name: Proxy 367
+  name: "\U0001F1FA\U0001F1F8US-44.242.211.17-443"
   password: amazonskr05
   port: 443
   server: 44.242.211.17
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: Proxy 368
+  name: "\U0001F1FA\U0001F1F8US-44.243.115.246-443"
   password: amazonskr05
   port: 443
   server: 44.243.115.246
@@ -3114,20 +2459,20 @@ proxies:
   udp: true
 - alterId: -1
   cipher: aes-256-cfb
-  name: Proxy 369
+  name: "\U0001F1FA\U0001F1F8US-44.244.24.140-443"
   password: amazonskr05
   port: 443
   server: 44.244.24.140
   type: ss
 - cipher: aes-256-cfb
   country: "\U0001F1FA\U0001F1F8US"
-  name: Proxy 370
+  name: "\U0001F1FA\U0001F1F8US-44.244.25.243-443"
   password: amazonskr05
   port: 443
   server: 44.244.25.243
   type: ss
 - client-fingerprint: chrome
-  name: Proxy 371
+  name: "\U0001F1FA\U0001F1F8US-45.156.24.213-7890"
   port: 7890
   server: 119.189.250.97
   skip-cert-verify: true
@@ -3135,7 +2480,7 @@ proxies:
   type: http
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 372
+  name: "\U0001F1FA\U0001F1F8US-45.156.24.60-8080"
   port: 8080
   server: 47.120.0.231
   skip-cert-verify: true
@@ -3144,7 +2489,7 @@ proxies:
 - alterId: -1
   cipher: rc4-md5
   client-fingerprint: chrome
-  name: Proxy 373
+  name: "\U0001F1FA\U0001F1F8US-50.114.121.138-40205"
   obfs: plain
   obfs-param: cd5ed74592.6602b8463464108506.microsoft.com
   password: ENZ52K
@@ -3156,197 +2501,197 @@ proxies:
   udp: true
 - alterId: -1
   cipher: aes-256-cfb
-  name: Proxy 374
+  name: "\U0001F1FA\U0001F1F8US-54.191.9.106-443"
   password: amazonskr05
   port: 443
   server: 54.191.9.106
   type: ss
 - client-fingerprint: chrome
-  name: Proxy 375
+  name: "\U0001F1FA\U0001F1F8US-66.42.224.229-41679"
   port: 41679
   server: 66.42.224.229
   skip-cert-verify: true
   type: socks5
   udp: true
-- name: Proxy 376
+- name: "\U0001F1FA\U0001F1F8US-67.201.35.145-4145"
   port: 4145
   server: 67.201.35.145
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 377
+  name: "\U0001F1FA\U0001F1F8US-67.201.59.70-4145"
   port: 4145
   server: 67.201.59.70
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 378
+  name: "\U0001F1FA\U0001F1F8US-68.71.241.33-4145"
   port: 4145
   server: 68.71.241.33
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 379
+  name: "\U0001F1FA\U0001F1F8US-68.71.242.118-4145"
   port: 4145
   server: 68.71.242.118
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 380
+  name: "\U0001F1FA\U0001F1F8US-68.71.247.130-4145"
   port: 4145
   server: 68.71.247.130
   skip-cert-verify: true
   type: socks5
   udp: true
-- name: Proxy 381
+- name: "\U0001F1FA\U0001F1F8US-68.71.249.153-48606"
   port: 48606
   server: 68.71.249.153
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 382
+  name: "\U0001F1FA\U0001F1F8US-68.71.249.158-4145"
   port: 4145
   server: 68.71.249.158
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 383
+  name: "\U0001F1FA\U0001F1F8US-68.71.252.38-4145"
   port: 4145
   server: 68.71.252.38
   skip-cert-verify: true
   type: socks5
   udp: true
-- name: Proxy 384
+- name: "\U0001F1FA\U0001F1F8US-68.71.254.6-4145"
   port: 4145
   server: 68.71.254.6
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 385
+  name: "\U0001F1FA\U0001F1F8US-70.166.167.38-57728"
   port: 57728
   server: 70.166.167.38
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 386
+  name: "\U0001F1FA\U0001F1F8US-70.166.167.55-57745"
   port: 57745
   server: 70.166.167.55
   skip-cert-verify: true
   type: socks5
   udp: true
-- name: Proxy 387
+- name: "\U0001F1FA\U0001F1F8US-72.195.34.35-27360"
   port: 27360
   server: 72.195.34.35
   skip-cert-verify: true
   type: socks5
   udp: true
-- name: Proxy 388
+- name: "\U0001F1FA\U0001F1F8US-72.195.34.58-4145"
   port: 4145
   server: 72.195.34.58
   skip-cert-verify: true
   type: socks5
   udp: true
-- name: Proxy 389
+- name: "\U0001F1FA\U0001F1F8US-72.195.34.59-4145"
   port: 4145
   server: 72.195.34.59
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 390
+  name: "\U0001F1FA\U0001F1F8US-72.195.34.60-27391"
   port: 27391
   server: 72.195.34.60
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 391
+  name: "\U0001F1FA\U0001F1F8US-72.205.0.67-4145"
   port: 4145
   server: 72.205.0.67
   skip-cert-verify: true
   type: socks5
   udp: true
-- name: Proxy 392
+- name: "\U0001F1FA\U0001F1F8US-72.205.0.93-4145"
   port: 4145
   server: 72.205.0.93
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 393
+  name: "\U0001F1FA\U0001F1F8US-74.119.144.60-4145"
   port: 4145
   server: 74.119.144.60
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 394
+  name: "\U0001F1FA\U0001F1F8US-98.170.57.231-4145"
   port: 4145
   server: 98.170.57.231
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 395
+  name: "\U0001F1FA\U0001F1F8US-98.170.57.241-4145"
   port: 4145
   server: 98.170.57.241
   skip-cert-verify: true
   type: socks5
   udp: true
-- name: Proxy 396
+- name: "\U0001F1FA\U0001F1F8US-98.170.57.249-4145"
   port: 4145
   server: 98.170.57.249
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 397
+  name: "\U0001F1FA\U0001F1F8US-98.175.31.195-4145"
   port: 4145
   server: 98.175.31.195
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 398
+  name: "\U0001F1FA\U0001F1F8US-98.178.72.21-10919"
   port: 10919
   server: 98.178.72.21
   skip-cert-verify: true
   type: socks5
   udp: true
-- name: Proxy 399
+- name: "\U0001F1FA\U0001F1F8US-98.181.137.80-4145"
   port: 4145
   server: 98.181.137.80
   skip-cert-verify: true
   type: socks5
   udp: true
-- name: Proxy 400
+- name: "\U0001F1FA\U0001F1F8US-98.181.137.83-4145"
   port: 4145
   server: 98.181.137.83
   skip-cert-verify: true
   type: socks5
   udp: true
-- name: Proxy 401
+- name: "\U0001F1FA\U0001F1F8US-98.191.0.37-4145"
   port: 4145
   server: 98.191.0.37
   skip-cert-verify: true
   type: socks5
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 402
+  name: "\U0001F1FA\U0001F1F8US-98.191.0.47-4145"
   port: 4145
   server: 98.191.0.47
   skip-cert-verify: true
   type: socks5
   udp: true
-- name: Proxy 403
+- name: "\U0001F1FA\U0001F1F8US-99.144.123.229-39874"
   password: 2baa2d43-b564-3b1f-92c7-c6fa1ff7e0a2
   port: 39874
   server: scm.zarelayv1.com
@@ -3354,14 +2699,14 @@ proxies:
   sni: us-katt.zodport.com
   type: trojan
 - cipher: aes-256-gcm
-  name: Proxy 404
+  name: "\U0001F1FB\U0001F1F3VN-123.31.24.154-40251"
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 40251
   server: vn.acxylm.top
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 405
+  name: "\U0001F1FB\U0001F1F3VN-14.224.181.172-8080"
   port: 8080
   server: 14.224.181.172
   skip-cert-verify: true
@@ -3369,14 +2714,14 @@ proxies:
   type: http
   udp: true
 - country: "\U0001F3C1 ZZ"
-  name: Proxy 406
+  name: "\U0001F1FB\U0001F1F3VN-160.30.21.105-443"
   password: 94d219c9-1afc-4d42-b090-8b3794764380
   port: 443
   server: 160.30.21.105
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: Proxy 407
+- name: "\U0001F1FB\U0001F1F3VN-222.252.194.204-8080"
   port: 8080
   server: 222.252.194.204
   skip-cert-verify: true
@@ -3384,7 +2729,7 @@ proxies:
   type: http
   udp: true
 - client-fingerprint: chrome
-  name: Proxy 408
+  name: "\u7F8E\u56FD 033"
   network: ws
   port: 80
   server: 104.24.148.184
@@ -3396,7 +2741,7 @@ proxies:
     headers:
       Host: muddy-rain-0a28-ppal03.mitey24737.workers.dev
     path: /?ed=2560
-- name: Proxy 409
+- name: "\u7F8E\u56FD 049"
   network: ws
   port: 80
   server: 104.24.37.192
@@ -3409,7 +2754,7 @@ proxies:
       Host: ppal03.dolobe7975.workers.dev
     path: /?ed=2560
 - delay: 1477
-  name: Proxy 410
+  name: "\u7F8E\u56FD 079"
   network: ws
   port: 80
   server: 104.18.26.94
@@ -3422,7 +2767,7 @@ proxies:
     path: /
 - client-fingerprint: chrome
   delay: 851
-  name: Proxy 411
+  name: "\u7F8E\u56FD 080"
   network: ws
   port: 80
   server: 104.18.27.94
@@ -3433,7 +2778,7 @@ proxies:
     headers:
       Host: sedalat.tatexe3807.workers.dev
     path: /
-- name: Proxy 412
+- name: "\u7F8E\u56FD 069"
   network: ws
   port: 2052
   server: 172.67.135.195
@@ -3448,7 +2793,7 @@ proxies:
         Gecko) Chrome/51.0.2704.63 Safari/537.36
     path: /J61hhknxUXEwJZLq/MTU5LjY5LjE1My4xMTQ=?ed=2560
   xudp: true
-- name: Proxy 413
+- name: "\u7F8E\u56FD 110"
   network: ws
   port: 8880
   server: 104.18.41.138
@@ -3464,7 +2809,7 @@ proxies:
     path: /?ed=2560
   xudp: true
 - client-fingerprint: chrome
-  name: Proxy 414
+  name: "\u7F8E\u56FD 034"
   network: ws
   port: 80
   server: 104.26.15.85
@@ -3477,7 +2822,7 @@ proxies:
       Host: a.xn--i-sx6a60i.us.kg.
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: Proxy 415
+  name: "\u7F8E\u56FD 035"
   network: ws
   port: 80
   server: tgju.org
@@ -3490,7 +2835,7 @@ proxies:
       Host: a.xn--i-sx6a60i.us.kg.
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: Proxy 416
+  name: "\u7F8E\u56FD 036"
   network: ws
   port: 80
   server: 104.26.14.85
@@ -3502,7 +2847,7 @@ proxies:
       Host: a.xn--i-sx6a60i.us.kg.
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: Proxy 417
+  name: "\u7F8E\u56FD 038"
   network: ws
   port: 80
   server: 172.67.73.163
@@ -3514,7 +2859,7 @@ proxies:
       Host: a.xn--i-sx6a60i.us.kg.
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: Proxy 418
+  name: "\u7F8E\u56FD 039"
   network: ws
   port: 80
   server: 104.20.129.2
@@ -3533,7 +2878,7 @@ proxies:
       - sso.farhang.gov.ir
     path:
     - /download
-  name: Proxy 419
+  name: "\u4F0A\u6717 001"
   network: http
   port: 8080
   server: 188.245.251.47
@@ -3543,7 +2888,7 @@ proxies:
   uuid: 1c86a177-d7ff-4a5f-8255-cfeb4e051305
 - client-fingerprint: chrome
   delay: 2905
-  name: Proxy 420
+  name: "\u7F8E\u56FD 056"
   network: ws
   port: 2052
   server: 104.26.12.101
@@ -3556,7 +2901,7 @@ proxies:
     headers:
       Host: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
     path: /?ed=1080/telegram
-- name: Proxy 421
+- name: "\u7F8E\u56FD 046"
   network: ws
   port: 80
   server: 66.235.200.191
@@ -3570,7 +2915,7 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /
-- name: Proxy 422
+- name: "\u4FC4\u7F57\u65AF 004"
   network: ws
   port: 80
   server: 185.174.138.194
@@ -3584,7 +2929,7 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /
-- name: Proxy 423
+- name: "\u7F8E\u56FD 051"
   network: ws
   port: 80
   server: 66.235.200.58
@@ -3599,7 +2944,7 @@ proxies:
       Host: pormang.webhost99.workers.dev
     path: /
 - client-fingerprint: chrome
-  name: Proxy 424
+  name: "\u8377\u5170 004"
   network: ws
   port: 80
   server: 45.149.12.128
@@ -3615,7 +2960,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: Proxy 425
+  name: "\u4FC4\u7F57\u65AF 005"
   network: ws
   port: 2052
   server: 185.174.138.199
@@ -3630,7 +2975,7 @@ proxies:
       Host: yellow-paper-029c.yvonna.workers.dev
     path: /az05.beyondy.cfd/link?/TM
 - client-fingerprint: chrome
-  name: Proxy 426
+  name: "\u7F8E\u56FD 072"
   network: ws
   port: 80
   server: 104.16.40.145
@@ -3642,7 +2987,7 @@ proxies:
     headers:
       Host: still-smoke-881e-ppal03.cabit21569.workers.dev
     path: /?ed=2560
-- name: Proxy 427
+- name: "\u5DF4\u897F 002"
   network: ws
   port: 8880
   server: 188.114.97.1
@@ -3654,7 +2999,7 @@ proxies:
     headers:
       Host: falcunargo-channel.be3374a836.workers.Dev
     path: /?ed=2048
-- name: Proxy 428
+- name: "\u8377\u5170 007"
   network: ws
   port: 80
   server: 45.131.210.118
@@ -3667,7 +3012,7 @@ proxies:
       Host: 1224.j9q1xuv8.workers.dev
     path: /Telegram
 - client-fingerprint: chrome
-  name: Proxy 429
+  name: "\u5DF4\u897F 003"
   network: ws
   port: 80
   server: 188.114.96.223
@@ -3679,7 +3024,7 @@ proxies:
     headers:
       Host: zaq11000d.b835a8094d.workers.dev
     path: /?ed=2560
-- name: Proxy 430
+- name: "\u7F8E\u56FD 073"
   network: ws
   port: 80
   server: 104.24.147.64
@@ -3692,7 +3037,7 @@ proxies:
       Host: ppal03-ppal03.letiwe3303.workers.dev
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: Proxy 431
+  name: "\u7F8E\u56FD 074"
   network: ws
   port: 80
   server: 104.24.248.204
@@ -3704,7 +3049,7 @@ proxies:
     headers:
       Host: withered-wave-ee0b-ppal03.faxip46069.workers.dev
     path: /?ed=2560
-- name: Proxy 432
+- name: "\u7F8E\u56FD 075"
   network: ws
   port: 80
   server: 104.16.178.238
@@ -3717,7 +3062,7 @@ proxies:
       Host: little-bird-a235-ppal03.fosawaw121.workers.dev
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: Proxy 433
+  name: "\u7F8E\u56FD 078"
   network: ws
   port: 80
   server: 104.24.186.156
@@ -3729,7 +3074,7 @@ proxies:
     headers:
       Host: red-math-7092-ppal03.mewoco2522.workers.dev
     path: /?ed=2560
-- name: Proxy 434
+- name: "\u8377\u5170 008"
   network: ws
   port: 80
   server: 45.131.210.157
@@ -3741,7 +3086,7 @@ proxies:
     headers:
       Host: 1224.j9q1xuv8.workers.dev
     path: /Telegram
-- name: Proxy 435
+- name: "\u8377\u5170 009"
   network: ws
   port: 80
   server: 45.131.5.121
@@ -3753,7 +3098,7 @@ proxies:
     headers:
       Host: 1224.j9q1xuv8.workers.dev
     path: /Telegram
-- name: Proxy 436
+- name: "\u7F8E\u56FD 085"
   network: ws
   port: 2095
   server: 172.67.168.93
@@ -3765,7 +3110,7 @@ proxies:
     headers:
       Host: testdvpnhub69.95f425b718.workers.dev
     path: /ProxyIP=ProxyIP.US.fxxk.dedyn.io
-- name: Proxy 437
+- name: "\u8377\u5170 010"
   network: ws
   port: 80
   server: 45.131.208.223
@@ -3777,7 +3122,7 @@ proxies:
     headers:
       Host: 1224.j9q1xuv8.workers.dev
     path: /Telegram
-- name: Proxy 438
+- name: "\u5DF4\u897F 004"
   network: ws
   port: 80
   server: 188.114.97.171
@@ -3791,7 +3136,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: Proxy 439
+  name: "\u4FC4\u7F57\u65AF 001"
   network: ws
   port: 2082
   server: 185.174.138.196
@@ -3806,7 +3151,7 @@ proxies:
       Host: yellow-paper-029c.yvonna.workers.dev
     path: /az05.beyondy.cfd/link?/TM
 - client-fingerprint: chrome
-  name: Proxy 440
+  name: "\u97E9\u56FD 001"
   network: ws
   password: Aimer
   port: 50000
@@ -3820,7 +3165,7 @@ proxies:
       Host: agepq.ambercc.filegear-sg.me
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: Proxy 441
+  name: "\u7F8E\u56FD 010"
   network: ws
   port: 80
   server: 104.17.148.22
@@ -3833,7 +3178,7 @@ proxies:
       Host: redw.pooriam.ir
     path: /LwW5jwrnymnOdqki?ed=2560
 - client-fingerprint: chrome
-  name: Proxy 442
+  name: "\u7F8E\u56FD 011"
   network: ws
   port: 80
   server: 104.16.1.47
@@ -3846,7 +3191,7 @@ proxies:
       Host: flat-bread-ddb6-ppal03.joriy39169.workers.dev
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: Proxy 443
+  name: "\u97E9\u56FD 005"
   network: ws
   password: Aimer
   port: 11288
@@ -3860,7 +3205,7 @@ proxies:
       Host: agepq.ambercc.filegear-sg.me
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: Proxy 444
+  name: "\u97E9\u56FD 008"
   network: ws
   password: Aimer
   port: 50000
@@ -3874,7 +3219,7 @@ proxies:
       Host: agepq.ambercc.filegear-sg.me
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: Proxy 445
+  name: "\u7F8E\u56FD 017"
   network: ws
   port: 80
   server: 104.21.69.44
@@ -3887,7 +3232,7 @@ proxies:
       Host: a.xn--i-sx6a60i.us.kg.
     path: /tmevpnAndroid2/?ed=2560
 - client-fingerprint: chrome
-  name: Proxy 446
+  name: "\u7F8E\u56FD 019"
   network: ws
   port: 80
   server: 172.67.204.84
@@ -3900,7 +3245,7 @@ proxies:
       Host: a.xn--i-sx6a60i.us.kg.
     path: /t.mevpnAndroid2/?ed=2560
 - client-fingerprint: chrome
-  name: Proxy 447
+  name: "\u51B0\u5C9B 001"
   network: ws
   port: 8080
   server: 94.250.246.200
@@ -3914,7 +3259,7 @@ proxies:
     path: /?ed=2560
 - alterId: 0
   cipher: auto
-  name: Proxy 448
+  name: "\u7F8E\u56FD 004"
   network: ws
   port: 2086
   server: s2.db-link02.top
@@ -3928,7 +3273,7 @@ proxies:
     headers:
       Host: 100-57-35-141.s2.db-link02.top
     path: /dabai.in104.20.130.8
-- name: Proxy 449
+- name: "\u8377\u5170 003"
   network: ws
   port: 80
   server: 45.149.12.232
@@ -3940,7 +3285,7 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /
-- name: Proxy 450
+- name: "\u7F8E\u56FD 025"
   network: ws
   port: 80
   server: 66.235.200.149
@@ -3952,7 +3297,7 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /
-- name: Proxy 451
+- name: "\u7F8E\u56FD 029"
   network: ws
   port: 80
   server: 66.235.200.30
@@ -3966,7 +3311,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: Proxy 452
+  name: "\u7F8E\u56FD 064"
   network: ws
   port: 80
   server: 104.21.69.44
@@ -3979,7 +3324,7 @@ proxies:
       Host: a.prapt4.ir
     path: /?ed=2048
 - client-fingerprint: chrome
-  name: Proxy 453
+  name: "\u8377\u5170 013"
   network: ws
   port: 80
   server: 45.149.12.206
@@ -3991,7 +3336,7 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /
-- name: Proxy 454
+- name: "\u4E39\u9EA6 001"
   network: ws
   port: 443
   server: www.csgo.com
@@ -4005,7 +3350,7 @@ proxies:
     headers:
       Host: 512306.xyz
     path: /?ed=2980
-- name: Proxy 455
+- name: "\u7F8E\u56FD 077"
   network: ws
   port: 80
   server: 104.26.12.31
@@ -4017,7 +3362,7 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /
-- name: Proxy 456
+- name: "\u7F8E\u56FD 083"
   network: ws
   port: 80
   server: 104.27.88.150
@@ -4029,7 +3374,7 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /
-- name: Proxy 457
+- name: "\u7F8E\u56FD 084"
   network: ws
   port: 80
   server: 104.26.13.31
@@ -4041,7 +3386,7 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /
-- name: Proxy 458
+- name: "\u7F8E\u56FD 087"
   network: ws
   port: 80
   server: 172.67.75.172
@@ -4054,7 +3399,7 @@ proxies:
       Host: redw.pooriam.ir
     path: /
 - client-fingerprint: chrome
-  name: Proxy 459
+  name: "\u7F8E\u56FD 088"
   network: ws
   port: 80
   server: zula.ir
@@ -4070,7 +3415,7 @@ proxies:
   http-opts:
     path:
     - /
-  name: Proxy 460
+  name: "\u5FB7\u56FD 002"
   network: http
   port: 8081
   server: 128.140.43.250
@@ -4081,7 +3426,7 @@ proxies:
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl
-  name: Proxy 461
+  name: "\u610F\u5927\u5229 001"
   network: grpc
   port: 443
   reality-opts:
@@ -4093,7 +3438,7 @@ proxies:
   tls: true
   type: vless
   uuid: 253f59da-b708-4404-cebe-3854aad88880
-- name: Proxy 462
+- name: "\u7F8E\u56FD 093"
   network: ws
   port: 80
   server: 104.16.171.121
@@ -4105,7 +3450,7 @@ proxies:
     headers:
       Host: polished-limit-deb9-ppal03.latopi8673.workers.dev
     path: /?ed=2560
-- name: Proxy 463
+- name: "\u7F8E\u56FD 112"
   network: ws
   port: 80
   server: 66.235.200.5
@@ -4117,7 +3462,7 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /
-- name: Proxy 464
+- name: "\u7F8E\u56FD 113"
   network: ws
   port: 80
   server: 104.16.38.178
@@ -4129,7 +3474,7 @@ proxies:
     headers:
       Host: pormang.webhost99.workers.dev
     path: /
-- name: Proxy 465
+- name: "\u7F8E\u56FD 116"
   network: ws
   port: 8080
   server: 104.16.61.8
@@ -4141,7 +3486,7 @@ proxies:
     headers:
       Host: fastfoods.api.ahmadp206.sbs.
     path: /?ed=8080
-- name: Proxy 466
+- name: "\u7F8E\u56FD 122"
   network: ws
   port: 80
   server: 104.20.43.197
@@ -4155,7 +3500,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: Proxy 467
+  name: "\u7F8E\u56FD 001"
   network: ws
   port: 443
   server: esna.twn24.ir
@@ -4171,7 +3516,7 @@ proxies:
     path: /24820/?ed=2048
 - alterId: 0
   cipher: auto
-  name: Proxy 468
+  name: "\u52A0\u62FF\u5927 001"
   network: ws
   port: 2052
   server: s2.db-link01.top
@@ -4187,7 +3532,7 @@ proxies:
     path: /dabai.in104.24.227.22
 - alterId: 0
   cipher: auto
-  name: Proxy 469
+  name: "\u7F8E\u56FD 002"
   network: ws
   port: 443
   server: tasnim.ITN24.IR
@@ -4201,7 +3546,7 @@ proxies:
     headers:
       Host: tasnim.ITN24.IR
     path: /24820/?ed=2048
-- name: Proxy 470
+- name: "\u7F8E\u56FD 003"
   network: ws
   password: naEX%5Dg*qw%40MT%26lFz
   port: 2087
@@ -4215,7 +3560,7 @@ proxies:
     headers:
       Host: jOinMAhdIsErvEr-53k.pAGeS.Dev
     path: /trb6oyXIzrlytDBNlm?ed=2560
-- name: Proxy 471
+- name: "\u7F8E\u56FD 005"
   network: ws
   password: naEX%5Dg*qw%40MT%26lFz
   port: 2087
@@ -4229,7 +3574,7 @@ proxies:
     headers:
       Host: jOinMAhdIsErvEr-53k.pAGeS.Dev
     path: /trb6oyXIzrlytDBNlm?ed=2560
-- name: Proxy 472
+- name: "\u7F8E\u56FD 006"
   network: ws
   port: 80
   server: 104.16.76.55
@@ -4241,7 +3586,7 @@ proxies:
     headers:
       Host: patient-shadow-baf1-ppal03.hohel98085.workers.dev
     path: /?ed=2560
-- name: Proxy 473
+- name: "\u8377\u5170 001"
   network: ws
   port: 80
   server: 45.131.5.111
@@ -4254,7 +3599,7 @@ proxies:
     headers:
       Host: feng4.l1ut8bi9.workers.dev
     path: /Telegram
-- name: Proxy 474
+- name: "\u5DF4\u897F 001"
   network: ws
   port: 80
   server: 188.114.96.3
@@ -4266,7 +3611,7 @@ proxies:
     headers:
       Host: sHAhRamConfIGWorKERCJsa9898.coNFiGSHahrAMCOnFiG.wOrkErS.DeV
     path: /pgLUAo7mya6xC60a?ed=2560
-- name: Proxy 475
+- name: "\u7F8E\u56FD 007"
   network: ws
   port: 8880
   server: 216.24.57.130
@@ -4279,7 +3624,7 @@ proxies:
     headers:
       Host: mohsenfitshr.wibibin259.workers.dev
     path: /
-- name: Proxy 476
+- name: "\u7F8E\u56FD 008"
   network: ws
   port: 80
   server: 104.24.9.204
@@ -4291,7 +3636,7 @@ proxies:
     headers:
       Host: patient-sunset-f000-ppal03.cijej53213.workers.dev
     path: /?ed=2560
-- name: Proxy 477
+- name: "\u7F8E\u56FD 009"
   network: ws
   port: 80
   server: 104.21.42.56
@@ -4303,7 +3648,7 @@ proxies:
     headers:
       Host: worker-super-shape-975b.1011da65bb0ac5.workers.Dev
     path: /Telegram+channel+:+
-- name: Proxy 478
+- name: "\u7F8E\u56FD 012"
   network: ws
   port: 80
   server: 104.16.188.41
@@ -4315,7 +3660,7 @@ proxies:
     headers:
       Host: proud-queen-55500071.cexonoc962.workers.dev
     path: /?ed=2560
-- name: Proxy 479
+- name: "\u4F0A\u6717 002"
   network: tcp
   password: '3778399737045327872'
   port: 443
@@ -4326,7 +3671,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2295
-  name: Proxy 480
+  name: "\u7F8E\u56FD 013"
   network: ws
   port: 443
   server: cdncdncdn.aikunapp.com
@@ -4342,7 +3687,7 @@ proxies:
 - alterId: 0
   cipher: auto
   ip-version: dual
-  name: Proxy 481
+  name: "\u5FB7\u56FD 001"
   network: tcp
   port: 15713
   server: 193.108.118.136
@@ -4352,7 +3697,7 @@ proxies:
   uuid: f74e277e-84b3-46a2-8abd-2777fa5e4af9
 - alterId: 0
   cipher: auto
-  name: Proxy 482
+  name: "\u52A0\u62FF\u5927 002"
   network: ws
   port: 2086
   server: s1.db-link01.top
@@ -4366,7 +3711,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: Proxy 483
+  name: "\u7F8E\u56FD 014"
   network: tcp
   port: 57143
   server: 154.26.129.247
@@ -4378,7 +3723,7 @@ proxies:
     Host: 154.26.129.247
 - alterId: 0
   cipher: auto
-  name: Proxy 484
+  name: "\u7F8E\u56FD 015"
   network: ws
   port: 443
   server: 172.111.36.108
@@ -4401,7 +3746,7 @@ proxies:
     method: GET
     path:
     - /
-  name: Proxy 485
+  name: "\u4F0A\u6717 003"
   network: tcp
   port: 15359
   server: 188.245.206.4
@@ -4411,7 +3756,7 @@ proxies:
   type: vmess
   udp: true
   uuid: 68342e3b-62c3-4622-993f-b515d978275e
-- name: Proxy 486
+- name: "\u4FC4\u7F57\u65AF 002"
   network: ws
   password: wb6368
   port: 2087
@@ -4425,7 +3770,7 @@ proxies:
     headers:
       Host: hsdgbuys.pages.dev
     path: /
-- name: Proxy 487
+- name: "\u7F8E\u56FD 016"
   network: ws
   password: s42%26umY%28K5n*csP4
   port: 8443
@@ -4441,7 +3786,7 @@ proxies:
     path: /trOagy9SuM2cDpqUqO?ed=2560
 - alterId: 0
   cipher: auto
-  name: Proxy 488
+  name: "\u7F8E\u56FD 018"
   network: ws
   port: 443
   server: tls.94.node-for-bigairport.win
@@ -4456,7 +3801,7 @@ proxies:
       Host: tls.94.node-for-bigairport.win
     path: /
 - client-fingerprint: chrome
-  name: Proxy 489
+  name: "\u97E9\u56FD 002"
   network: ws
   password: Aimer
   port: 37722
@@ -4469,7 +3814,7 @@ proxies:
     headers:
       Host: agepy.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: Proxy 490
+- name: "\u7F8E\u56FD 020"
   network: ws
   port: 80
   server: 104.16.132.207
@@ -4482,7 +3827,7 @@ proxies:
       Host: gozargah2.validbv7996.ir
     path: /3Bc2FravWgXBrnlN?ed=2560
 - client-fingerprint: chrome
-  name: Proxy 491
+  name: "\u97E9\u56FD 003"
   network: ws
   password: Aimer
   port: 12220
@@ -4496,7 +3841,7 @@ proxies:
       Host: agepy.ambercc.filegear-sg.me
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: Proxy 492
+  name: "\u97E9\u56FD 004"
   network: ws
   port: 50000
   server: 112.160.102.173
@@ -4511,7 +3856,7 @@ proxies:
       Host: agedt.ambercc.filegear-sg.me
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: Proxy 493
+  name: "\u97E9\u56FD 006"
   network: ws
   password: Aimer
   port: 12465
@@ -4525,7 +3870,7 @@ proxies:
       Host: agept.ambercc.filegear-sg.me
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: Proxy 494
+  name: "\u97E9\u56FD 007"
   network: ws
   password: Aimer
   port: 52013
@@ -4538,7 +3883,7 @@ proxies:
     headers:
       Host: agepy.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: Proxy 495
+- name: "\u7F8E\u56FD 021"
   network: ws
   port: 80
   server: 104.21.30.29
@@ -4551,7 +3896,7 @@ proxies:
       Host: a.mifeng.us.kg
     path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048
 - client-fingerprint: chrome
-  name: Proxy 496
+  name: "\u65B0\u52A0\u5761 001"
   network: ws
   port: 9997
   server: 52.220.205.101
@@ -4566,7 +3911,7 @@ proxies:
       Host: agedt.ambercc.filegear-sg.me
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: Proxy 497
+  name: "\u97E9\u56FD 011"
   network: ws
   password: Aimer
   port: 12499
@@ -4580,7 +3925,7 @@ proxies:
       Host: agept.ambercc.filegear-sg.me
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: Proxy 498
+  name: "\u7F8E\u56FD 022"
   network: ws
   port: 80
   server: 104.24.207.192
@@ -4593,7 +3938,7 @@ proxies:
       Host: gozargah2.validbv7996.ir
     path: /3Bc2FravWgXBrnlN?ed=2560
 - client-fingerprint: chrome
-  name: Proxy 499
+  name: "\u7F8E\u56FD 023"
   network: ws
   password: Aimer
   port: 8443
@@ -4607,7 +3952,7 @@ proxies:
       Host: agept.ambercc.filegear-sg.me
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: Proxy 500
+  name: "\u7F8E\u56FD 024"
   network: ws
   password: Aimer
   port: 2087
@@ -4620,7 +3965,7 @@ proxies:
     headers:
       Host: agepy.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: Proxy 501
+- name: "\u7F8E\u56FD 026"
   network: ws
   password: Aimer
   port: 2096
@@ -4633,7 +3978,7 @@ proxies:
     headers:
       Host: agepy.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: Proxy 502
+- name: "\u4E9A\u7F8E\u5C3C\u4E9A 001"
   network: ws
   password: Aimer
   port: 2083
@@ -4646,7 +3991,7 @@ proxies:
     headers:
       Host: agepy.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: Proxy 503
+- name: "\u7F8E\u56FD 027"
   network: ws
   password: Aimer
   port: 2083
@@ -4659,7 +4004,7 @@ proxies:
     headers:
       Host: agepy.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: Proxy 504
+- name: "\u7F8E\u56FD 028"
   network: ws
   password: Aimer
   port: 2083
@@ -4672,7 +4017,7 @@ proxies:
     headers:
       Host: agepy.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: Proxy 505
+- name: "\u4FC4\u7F57\u65AF 003"
   network: ws
   password: Aimer
   port: 8443
@@ -4685,7 +4030,7 @@ proxies:
     headers:
       Host: agepy.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: Proxy 506
+- name: "\u4E9A\u7F8E\u5C3C\u4E9A 002"
   network: ws
   password: Aimer
   port: 2096
@@ -4698,7 +4043,7 @@ proxies:
     headers:
       Host: agepy.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: Proxy 507
+- name: "\u7F8E\u56FD 030"
   network: ws
   port: 80
   server: 151.101.2.216
@@ -4710,7 +4055,7 @@ proxies:
     headers:
       Host: MaHxRaYT.aI.
     path: /?ed=2048
-- name: Proxy 508
+- name: "\u7F8E\u56FD 031"
   network: ws
   password: Aimer
   port: 8443
@@ -4723,7 +4068,7 @@ proxies:
     headers:
       Host: agept.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: Proxy 509
+- name: "\u7F8E\u56FD 032"
   network: ws
   password: Aimer
   port: 2083
@@ -4736,7 +4081,7 @@ proxies:
     headers:
       Host: agept.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: Proxy 510
+- name: "\u65E5\u672C 001"
   network: ws
   password: Aimer
   port: 2083
@@ -4750,7 +4095,7 @@ proxies:
       Host: agept.ambercc.filegear-sg.me
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: Proxy 511
+  name: "\u7F8E\u56FD 037"
   network: ws
   password: Aimer
   port: 2087
@@ -4763,7 +4108,7 @@ proxies:
     headers:
       Host: agepy.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: Proxy 512
+- name: "\u7F8E\u56FD 040"
   network: ws
   password: Aimer
   port: 2083
@@ -4776,7 +4121,7 @@ proxies:
     headers:
       Host: agept.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: Proxy 513
+- name: "\u7F8E\u56FD 041"
   network: ws
   password: Aimer
   port: 443
@@ -4789,7 +4134,7 @@ proxies:
     headers:
       Host: agept.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: Proxy 514
+- name: "\u7F8E\u56FD 042"
   network: ws
   port: 80
   server: 151.101.128.155
@@ -4803,7 +4148,7 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: Proxy 515
+  name: "\u7F8E\u56FD 043"
   network: ws
   port: 8443
   server: 162.120.94.103
@@ -4817,7 +4162,7 @@ proxies:
       Host: lax2.ibgfw.top
     path: /dyajvws
 - client-fingerprint: chrome
-  name: Proxy 516
+  name: "\u7F8E\u56FD 044"
   network: ws
   port: 80
   server: 104.21.56.44
@@ -4829,7 +4174,7 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /
-- name: Proxy 517
+- name: "\u8377\u5170 002"
   network: ws
   password: Aimer
   port: 2087
@@ -4842,7 +4187,7 @@ proxies:
     headers:
       Host: agepy.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: Proxy 518
+- name: "\u7F8E\u56FD 045"
   network: ws
   password: Aimer
   port: 2087
@@ -4861,7 +4206,7 @@ proxies:
       - bwm.com
     path:
     - /
-  name: Proxy 519
+  name: "\u4F0A\u6717 004"
   network: http
   port: 56924
   server: 85.9.120.86
@@ -4872,7 +4217,7 @@ proxies:
 - alterId: 64
   cipher: auto
   delay: 1166
-  name: Proxy 520
+  name: "\u7F8E\u56FD 047"
   network: ws
   port: 30003
   server: 192.74.241.135
@@ -4888,7 +4233,7 @@ proxies:
 - alterId: 64
   cipher: auto
   delay: 2229
-  name: Proxy 521
+  name: "\u7F8E\u56FD 048"
   network: ws
   port: 38005
   server: 198.2.195.1
@@ -4904,7 +4249,7 @@ proxies:
 - alterId: 64
   cipher: auto
   delay: 1241
-  name: Proxy 522
+  name: "\u7F8E\u56FD 050"
   network: ws
   port: 38003
   server: 38.11.49.57
@@ -4918,7 +4263,7 @@ proxies:
       Host: www.45700497.xyz
     path: /path/1739973313415
 - delay: 1232
-  name: Proxy 523
+  name: "\u7F8E\u56FD 052"
   network: ws
   port: 587
   server: 47.76.62.98
@@ -4933,7 +4278,7 @@ proxies:
       Host: agedt.ambercc.filegear-sg.me
     path: /?ed=2560
 - delay: 1012
-  name: Proxy 524
+  name: "\u7F8E\u56FD 053"
   network: ws
   port: 587
   server: 47.238.161.148
@@ -4948,7 +4293,7 @@ proxies:
       Host: agedt.ambercc.filegear-sg.me
     path: /?ed=2560
 - delay: 403
-  name: Proxy 525
+  name: "\u65B0\u52A0\u5761 003"
   network: ws
   port: 443
   server: 54.251.227.43
@@ -4965,7 +4310,7 @@ proxies:
 - alterId: 64
   cipher: auto
   delay: 2199
-  name: Proxy 526
+  name: "\u7F8E\u56FD 054"
   network: ws
   port: 37006
   server: 198.200.48.230
@@ -4981,7 +4326,7 @@ proxies:
 - alterId: 64
   cipher: auto
   delay: 1668
-  name: Proxy 527
+  name: "\u7F8E\u56FD 055"
   network: ws
   port: 38004
   server: 199.180.101.28
@@ -4997,7 +4342,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2097
-  name: Proxy 528
+  name: "\u52A0\u62FF\u5927 003"
   network: ws
   port: 2095
   server: s1.cn-db.top
@@ -5010,7 +4355,7 @@ proxies:
       Host: 100-139-204-73.s1.cn-db.top
     path: /dabai.in104.25.132.97
 - delay: 1960
-  name: Proxy 529
+  name: "\u8377\u5170 005"
   network: ws
   port: 443
   server: 185.133.35.155
@@ -5025,7 +4370,7 @@ proxies:
       Host: zmc.bgm2024.us.kg
     path: /?ed=2560
 - delay: 1729
-  name: Proxy 530
+  name: "\u7F8E\u56FD 057"
   network: ws
   port: 443
   server: 63.141.128.96
@@ -5040,7 +4385,7 @@ proxies:
       Host: zmc.bgm2024.us.kg
     path: /?ed=2560
 - delay: 790
-  name: Proxy 531
+  name: "\u5965\u5730\u5229 001"
   network: ws
   port: 443
   server: 212.183.88.225
@@ -5055,7 +4400,7 @@ proxies:
       Host: zmc.bgm2024.us.kg
     path: /?ed=2560
 - delay: 2293
-  name: Proxy 532
+  name: "\u4FC4\u7F57\u65AF 006"
   network: ws
   port: 2087
   server: 92.243.75.49
@@ -5070,7 +4415,7 @@ proxies:
       Host: zmc.bgm2024.us.kg
     path: /?ed=2560
 - delay: 1131
-  name: Proxy 533
+  name: "\u7F8E\u56FD 058"
   network: ws
   port: 443
   server: 63.141.128.58
@@ -5085,7 +4430,7 @@ proxies:
       Host: zmc.bgm2024.us.kg
     path: /?ed=2560
 - delay: 2955
-  name: Proxy 534
+  name: "\u5965\u5730\u5229 002"
   network: ws
   port: 443
   server: 212.183.88.43
@@ -5100,7 +4445,7 @@ proxies:
       Host: zmc.bgm2024.us.kg
     path: /?ed=2560
 - delay: 2770
-  name: Proxy 535
+  name: "\u7F8E\u56FD 059"
   network: ws
   port: 443
   server: 192.200.160.99
@@ -5115,7 +4460,7 @@ proxies:
       Host: zmc.bgm2024.us.kg
     path: /?ed=2560
 - delay: 2292
-  name: Proxy 536
+  name: "\u5965\u5730\u5229 003"
   network: ws
   port: 443
   server: 212.183.88.176
@@ -5132,7 +4477,7 @@ proxies:
 - alterId: 64
   cipher: auto
   delay: 2055
-  name: Proxy 537
+  name: "\u7F8E\u56FD 060"
   network: ws
   port: 37003
   server: 38.33.1.173
@@ -5148,7 +4493,7 @@ proxies:
 - alterId: 64
   cipher: auto
   delay: 1134
-  name: Proxy 538
+  name: "\u7F8E\u56FD 061"
   network: tcp
   port: 48712
   server: 107.148.207.249
@@ -5159,7 +4504,7 @@ proxies:
 - alterId: 64
   cipher: auto
   delay: 1204
-  name: Proxy 539
+  name: "\u7F8E\u56FD 062"
   network: ws
   port: 30001
   server: 67.21.95.67
@@ -5174,7 +4519,7 @@ proxies:
     path: /path/1739973894418
 - alterId: 0
   cipher: auto
-  name: Proxy 540
+  name: "\u52A0\u62FF\u5927 004"
   network: ws
   port: 2052
   server: s5.db-link01.top
@@ -5189,7 +4534,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: Proxy 541
+  name: "\u7F8E\u56FD 063"
   network: ws
   port: 443
   server: 172.67.200.13
@@ -5201,7 +4546,7 @@ proxies:
     headers:
       Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
     path: /
-- name: Proxy 542
+- name: "\u6FB3\u5927\u5229\u4E9A 001"
   network: ws
   password: b59ee60f-9fa4-4770-b6a7-288620147f60
   port: 443
@@ -5216,7 +4561,7 @@ proxies:
     path: /yfjc/kus1
 - alterId: 0
   cipher: auto
-  name: Proxy 543
+  name: "\u5DF4\u52D2\u65AF\u5766 001"
   network: ws
   port: 80
   server: 82.213.5.50
@@ -5230,7 +4575,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: Proxy 544
+  name: "\u7F8E\u56FD 065"
   network: ws
   port: 2052
   server: 104.19.48.236
@@ -5244,7 +4589,7 @@ proxies:
     headers:
       Host: 100-41-36-35.s2.db-link01.top
     path: /dabai.in172.67.71.198
-- name: Proxy 545
+- name: "\u7F8E\u56FD 066"
   network: ws
   password: naEX%5Dg*qw%40MT%26lFz
   port: 2087
@@ -5261,7 +4606,7 @@ proxies:
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray
-  name: Proxy 546
+  name: "\u5FB7\u56FD 003"
   network: grpc
   port: 443
   reality-opts:
@@ -5275,7 +4620,7 @@ proxies:
   uuid: 0d89c71f-f359-4334-91f3-65fca32e41cd
 - grpc-opts:
     grpc-service-name: 2096vless
-  name: Proxy 547
+  name: "\u65E5\u672C 002"
   network: grpc
   port: 2060
   server: 103.241.66.112
@@ -5283,7 +4628,7 @@ proxies:
   tls: true
   type: vless
   uuid: 354712c4-dab3-452c-89fd-0a2edd6999f9
-- name: Proxy 548
+- name: "\u7F8E\u56FD 067"
   network: ws
   port: 80
   server: 172.67.168.60
@@ -5302,7 +4647,7 @@ proxies:
     method: GET
     path:
     - /
-  name: Proxy 549
+  name: "\u5308\u7259\u5229 001"
   network: http
   port: 6587
   server: flv4-vip.digitalldns.com
@@ -5312,7 +4657,7 @@ proxies:
   type: vless
   udp: true
   uuid: ce961aa3-9ffb-4fed-904e-0cfba9f5aaba
-- name: Proxy 550
+- name: "\u7F8E\u56FD 068"
   network: ws
   port: 8080
   server: 104.26.14.185
@@ -5324,7 +4669,7 @@ proxies:
     headers:
       Host: a.xn--i-sx6a60i.us.kg.
     path: /
-- name: Proxy 551
+- name: "\u7F8E\u56FD 070"
   network: ws
   port: 80
   server: 104.24.91.178
@@ -5337,7 +4682,7 @@ proxies:
       Host: flat-rain-e26e-ppal03.cigoyob991.workers.dev
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: Proxy 552
+  name: "\u7F8E\u56FD 071"
   network: ws
   port: 2086
   server: 104.18.14.19
@@ -5350,7 +4695,7 @@ proxies:
     path: /?ed=2560
 - alterId: 0
   cipher: auto
-  name: Proxy 553
+  name: "\u7F8E\u56FD 076"
   network: ws
   port: 8443
   server: 104.21.3.219
@@ -5364,7 +4709,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: Proxy 554
+  name: "\u7F8E\u56FD 081"
   network: ws
   port: 37004
   server: 108.186.26.167
@@ -5378,7 +4723,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: Proxy 555
+  name: "\u7F8E\u56FD 082"
   network: ws
   port: 38002
   server: 137.175.39.195
@@ -5392,7 +4737,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: Proxy 556
+  name: "\u7F8E\u56FD 086"
   network: ws
   port: 31005
   server: 38.11.50.68
@@ -5406,7 +4751,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: Proxy 557
+  name: "\u7F8E\u56FD 089"
   network: ws
   port: 37001
   server: 38.33.56.47
@@ -5420,7 +4765,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: Proxy 558
+  name: "\u7F8E\u56FD 090"
   network: ws
   port: 37002
   server: 192.74.224.163
@@ -5434,7 +4779,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: Proxy 559
+  name: "\u52A0\u62FF\u5927 005"
   network: ws
   port: 2082
   server: s1.db-link02.top
@@ -5448,7 +4793,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: Proxy 560
+  name: "\u52A0\u62FF\u5927 006"
   network: ws
   port: 2095
   server: s5.cn-db.top
@@ -5462,7 +4807,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: Proxy 561
+  name: "\u52A0\u62FF\u5927 007"
   network: ws
   port: 2082
   server: 104.16.155.10
@@ -5476,7 +4821,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: Proxy 562
+  name: "\u7F8E\u56FD 091"
   network: ws
   port: 2086
   server: 104.19.48.236
@@ -5490,7 +4835,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: Proxy 563
+  name: "\u7F8E\u56FD 092"
   network: ws
   port: 2052
   server: 104.17.221.248
@@ -5504,7 +4849,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: Proxy 564
+  name: "\u52A0\u62FF\u5927 008"
   network: ws
   port: 2082
   server: s5.db-link02.top
