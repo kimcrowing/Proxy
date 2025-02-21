@@ -6,7 +6,7 @@ import re
 urls = [
     "https://gitlab.com/wybgit/surge_conf/-/raw/main/myconfig/Clash/clashconfig.yaml",
     "https://github.com/aiboboxx/clashfree/blob/main/clash.yml",
-    "https://github.com/aiboboxx/clashfree/blob/main/clash.yml"
+    "https://raw.githubusercontent.com/anaer/Sub/refs/heads/main/clash.yaml"
 ]
 
 # 用来存储所有代理服务器
