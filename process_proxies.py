@@ -1,8 +1,6 @@
 import requests
 import yaml
 import re
-import subprocess
-import platform
 
 # 定义要下载的 YAML 配置文件 URLs
 urls = [
@@ -43,36 +41,53 @@ def valid_proxy(proxy):
     banned_keywords = ['CN', 'File', 'HK']
     return not any(keyword in name for keyword in banned_keywords)
 
-# 定义使用 ping 命令测试代理服务器可达性的函数
-def ping_server(server):
+# 定义使用 HTTP 请求测试代理服务器可用性的函数
+def test_proxy(proxy):
     """
-    使用 ping 命令测试服务器是否可达。
+    通过代理服务器发送 HTTP 请求以测试其可用性。
     """
-    # 根据操作系统选择参数
-    param = '-n' if platform.system().lower() == 'windows' else '-c'
-    command = ['ping', param, '1', server]
+    server = proxy.get('server')
+    port = proxy.get('port')
+    proxy_type = proxy.get('type')
+    if not server or not port or not proxy_type:
+        return False
+
+    proxies = {}
+    if proxy_type == 'http':
+        proxies = {
+            'http': f'http://{server}:{port}',
+            'https': f'http://{server}:{port}',
+        }
+    elif proxy_type == 'socks5':
+        proxies = {
+            'http': f'socks5://{server}:{port}',
+            'https': f'socks5://{server}:{port}',
+        }
+    else:
+        # 对于其他类型的代理，暂不支持测试
+        return False
+
     try:
-        response = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, timeout=3)
-        return response.returncode == 0
+        response = requests.get('http://www.google.com', proxies=proxies, timeout=5)
+        return response.status_code == 200
     except Exception:
         return False
 
-# 合并所有代理服务器，同时进行名称筛选、可达性测试和去重
+# 合并所有代理服务器，同时进行名称筛选、可用性测试和去重
 merged_proxies = []
 for proxy in all_proxies:
     proxy_name = proxy.get('name', 'unknown')
-    server = proxy.get('server')
     # 判断代理是否满足筛选条件
     if not valid_proxy(proxy):
         print(f"Skipping proxy '{proxy_name}': contains banned keyword.")
         continue
-    # 测试代理服务器可达性
-    if server and ping_server(server):
-        print(f"Proxy '{proxy_name}' is reachable.")
+    # 测试代理服务器可用性
+    if test_proxy(proxy):
+        print(f"Proxy '{proxy_name}' is functional.")
         if proxy not in merged_proxies:
             merged_proxies.append(proxy)
     else:
-        print(f"Proxy '{proxy_name}' is NOT reachable.")
+        print(f"Proxy '{proxy_name}' is NOT functional.")
 
 # 将合并后的代理保存为新的 YAML 文件
 with open('combined_proxies.yaml', 'w') as outfile:
