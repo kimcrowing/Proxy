@@ -30,7 +30,7 @@ jobs:
         run: |
           # 使用仓库根目录下的 combined_proxies.yaml 作为输入配置文件，
           # 筛选条件：延迟低于 800ms 且下载速度大于 5MB/s
-          clash-speedtest -c "combined_proxies.yaml" -output "nodes_filtered.yaml" -f 'JP' -download-size 1000 -max-latency 3000ms -min-speed 0.5
+          clash-speedtest -c "combined_proxies.yaml" -output "nodes_filtered.yaml" -f 'US' -max-latency 3000ms -min-speed 1
 
       - name: Configure Git to allow pushing changes
         run: |
