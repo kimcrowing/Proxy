@@ -22,7 +22,7 @@ jobs:
 
       - name: 使用 go install 安装 clash-speedtest
         run: |
-          go install github.com/kimcrowing/clash-speedtest@f187076e9b5f82f7e06ca173d82493d839c24e9b
+          go install github.com/kimcrowing/clash-speedtest@6c418fc07d64848ba673aac5d4d81859f57d3206
           # 将 Go 安装目录添加到 PATH 中
           echo "$HOME/go/bin" >> $GITHUB_PATH
 
