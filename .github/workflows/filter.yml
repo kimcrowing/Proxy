@@ -22,7 +22,7 @@ jobs:
 
       - name: 使用 go install 安装 clash-speedtest
         run: |
-          go install github.com/kimcrowing/clash-speedtest@6c418fc07d64848ba673aac5d4d81859f57d3206
+          go install github.com/kimcrowing/clash-speedtest@latest
           # 将 Go 安装目录添加到 PATH 中
           echo "$HOME/go/bin" >> $GITHUB_PATH
 
@@ -30,7 +30,7 @@ jobs:
         run: |
           # 使用仓库根目录下的 combined_proxies.yaml 作为输入配置文件，
           # 筛选条件：延迟低于 800ms 且下载速度大于 5MB/s
-          clash-speedtest -c "combined_proxies.yaml" -output "nodes_filtered.yaml" -f 'US' -max-latency 3000ms -min-speed 1
+          clash-speedtest -c "combined_proxies.yaml" -output "nodes_filtered.yaml" -max-latency 3000ms
 
       - name: Configure Git to allow pushing changes
         run: |
