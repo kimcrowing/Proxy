@@ -12,7 +12,9 @@ jobs:
     steps:
       - name: 检出仓库代码
         uses: actions/checkout@v3
-
+        with:
+          repository: kimcrowing/Proxy
+          token: ${{ secrets.ACTIONS_GITHUB_TOKEN }}
       - name: 设置 Go 环境
         uses: actions/setup-go@v4
         with:
@@ -30,12 +32,16 @@ jobs:
           # 筛选条件：延迟低于 800ms 且下载速度大于 5MB/s
           clash-speedtest -c "https://raw.githubusercontent.com/anaer/Sub/refs/heads/main/clash.yaml&flag=meta" -output "nodes_filtered.yaml" -download-size 1 -max-latency 5000ms -min-speed 0
 
-      - name: 提交更新后的配置文件
+      - name: Configure Git to allow pushing changes
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
-          git add nodes_filtered.yaml
-          git commit -m "Update nodes after Clash-SpeedTest filtering" || echo "No changes to commit"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+      
+      - name: Commit and push changes to repository
+        run: |
+          git config core.ignorecase false
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git add .
+          git commit -m "Updated at $(date '+%Y-%m-%d %H:%M:%S')"
           git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACTIONS_GITHUB_TOKEN }}
