@@ -28,7 +28,7 @@ jobs:
         run: |
           # 使用仓库根目录下的 combined_proxies.yaml 作为输入配置文件，
           # 筛选条件：延迟低于 800ms 且下载速度大于 5MB/s
-          clash-speedtest -c "combined_proxies.yaml" -output "nodes_filtered.yaml" -download-size 1MB -max-latency 5000ms -min-speed 0
+          clash-speedtest -c "combined_proxies.yaml" -output "nodes_filtered.yaml" -max-latency 5000ms -min-speed 0
 
       - name: 提交更新后的配置文件
         run: |
