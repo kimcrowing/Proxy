@@ -1,0 +1,37 @@
+name: Clash-SpeedTest 节点测速筛选
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  speedtest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v3
+
+      - name: 下载 Clash-SpeedTest 二进制文件
+        run: |
+          # 下载最新版本 v1.6.0（请根据实际版本号更新链接）
+          wget https://github.com/faceair/clash-speedtest/releases/download/v1.6.0/clash-speedtest_Linux_arm64.tar.gz
+          tar -xzvf clash-speedtest-linux-amd64.tar.gz
+          chmod +x clash-speedtest
+
+      - name: 运行测速并筛选节点
+        run: |
+          # 这里指定配置文件为仓库根目录下的 nodes.yaml
+          # 筛选条件：延迟低于 800ms，下载速度大于 5MB/s
+          ./clash-speedtest -c "combined_proxies.yaml" -output "nodes_filtered.yaml" -max-latency 800ms -min-speed 5
+
+      - name: 提交更新后的配置文件
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add nodes_filtered.yaml
+          git commit -m "Update nodes after Clash-SpeedTest filtering" || echo "No changes to commit"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACTIONS_GITHUB_TOKEN }}
