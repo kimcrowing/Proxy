@@ -5241,20 +5241,6 @@ proxies:
   name: "\U0001F1F0\U0001F1F7 KR 041"
   network: ws
   password: Aimer
-  port: 38122
-  server: 218.158.249.21
-  skip-cert-verify: true
-  sni: agepy.aimercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: agepy.aimercc.filegear-sg.me
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: "\U0001F1F0\U0001F1F7 KR 042"
-  network: ws
-  password: Aimer
   port: 10071
   server: 220.122.114.61
   skip-cert-verify: true
@@ -5266,7 +5252,7 @@ proxies:
       Host: agepy.aimercc.filegear-sg.me
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: "\U0001F1F0\U0001F1F7 KR 043"
+  name: "\U0001F1F0\U0001F1F7 KR 042"
   network: ws
   password: Aimer
   port: 12395
@@ -5280,7 +5266,7 @@ proxies:
       Host: agepy.aimercc.filegear-sg.me
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: "\U0001F1F0\U0001F1F7 KR 044"
+  name: "\U0001F1F0\U0001F1F7 KR 043"
   network: ws
   password: Aimer
   port: 21082
@@ -5294,7 +5280,7 @@ proxies:
       Host: agepy.aimercc.filegear-sg.me
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: "\U0001F1F0\U0001F1F7 KR 045"
+  name: "\U0001F1F0\U0001F1F7 KR 044"
   network: ws
   password: Aimer
   port: 22206
@@ -5308,7 +5294,7 @@ proxies:
       Host: agepy.ambercc.filegear-sg.me
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: "\U0001F1F0\U0001F1F7 KR 046"
+  name: "\U0001F1F0\U0001F1F7 KR 045"
   network: ws
   password: Aimer
   port: 18048
@@ -5787,20 +5773,6 @@ proxies:
 - client-fingerprint: chrome
   name: "\U0001F1FA\U0001F1F8 US 317"
   network: ws
-  password: Aimer
-  port: 443
-  server: 47.79.36.165
-  skip-cert-verify: true
-  sni: agepy.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: agepy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 US 318"
-  network: ws
   port: 2086
   server: 104.18.32.69
   skip-cert-verify: false
@@ -5833,3 +5805,367 @@ proxies:
   sni: ultimate-civet.adder289.quest
   type: trojan
   udp: true
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc
+  name: "\U0001F1F3\U0001F1F1 NL 019"
+  network: grpc
+  password: 19442555-3745-451f-98c8-e9fc0c6ab94b
+  port: 443
+  server: 45.140.167.102
+  skip-cert-verify: true
+  sni: uk1.safecdn.site
+  tls: true
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1F0\U0001F1F7 KR 046"
+  network: ws
+  port: 12130
+  server: 211.248.156.161
+  servername: agedu.aimercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 94d04e32-bc77-4eea-b57c-29ef4b7ef4b0
+  ws-opts:
+    headers:
+      Host: agedu.aimercc.filegear-sg.me
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: "\U0001F1F0\U0001F1F7 KR 047"
+  network: ws
+  port: 50002
+  server: 14.44.24.206
+  servername: ds.dbbn2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: ds.dbbn2024.us.kg
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: "\U0001F1EF\U0001F1F5 JP 031"
+  network: ws
+  port: 443
+  server: 47.74.33.96
+  servername: jpc.kddhs.asia
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 29fffc40-85fa-46fc-ac13-4d846fd9f696
+  ws-opts:
+    headers:
+      Host: jpc.kddhs.asia
+    path: /bing
+- name: "\U0001F1EF\U0001F1F5 JP 032"
+  network: ws
+  port: 443
+  server: 140.238.60.225
+  servername: ds.dbbn2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: ds.dbbn2024.us.kg
+    path: /?ed=2560
+- name: "\U0001F1FA\U0001F1F8 US 318"
+  network: ws
+  port: 80
+  server: 66.235.200.222
+  servername: pormang.webhost99.workers.dev
+  skip-cert-verify: false
+  type: vless
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /
+- name: "\U0001F1FA\U0001F1F8 US 319"
+  network: ws
+  port: 443
+  server: 162.159.152.53
+  servername: ds.dbbn2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: ds.dbbn2024.us.kg
+    path: /?ed=2560
+- name: "\U0001F1FA\U0001F1F8 US 320"
+  network: ws
+  port: 443
+  server: 206.238.236.240
+  servername: ds.dbbn2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: ds.dbbn2024.us.kg
+    path: /?ed=2560
+- name: "\U0001F1FA\U0001F1F8 US 321"
+  network: ws
+  port: 443
+  server: 104.17.122.253
+  servername: ds.dbbn2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: ds.dbbn2024.us.kg
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 US 322"
+  network: ws
+  port: 443
+  server: 162.159.152.72
+  servername: ds.dbbn2024.us.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: ds.dbbn2024.us.kg
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: "\U0001F1F3\U0001F1F1 NL 020"
+  network: ws
+  port: 2052
+  server: 45.149.12.183
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /TABRIZ.NET
+- name: "\U0001F1FA\U0001F1F8 US 323"
+  network: ws
+  port: 80
+  server: 104.16.172.173
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 850563d4-d5e2-4672-b2e1-ceaa69ff62f2
+  ws-opts:
+    headers:
+      Host: aged-leaf-04aa-ppal03.midosib237.workers.dev
+    path: /?ed=2560
+- name: "\U0001F1FA\U0001F1F8 US 324"
+  network: ws
+  password: Aimer
+  port: 443
+  server: 216.24.57.207
+  skip-cert-verify: true
+  sni: agepy.aimercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: agepy.aimercc.filegear-sg.me
+    path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 US 325"
+  network: ws
+  port: 80
+  server: ffa41b.5d8ecf82.cfd
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4bf074f4-7e9c-4e4b-a10d-156e26199729
+  ws-opts:
+    headers:
+      Host: us03s.5d8ecf82.cfd
+    path: /
+- name: "\U0001F1FA\U0001F1F8 US 326"
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 216.24.57.1
+  skip-cert-verify: true
+  sni: agepy.aimercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: agepy.aimercc.filegear-sg.me
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: "\U0001F1EF\U0001F1F5 JP 033"
+  network: ws
+  port: 2095
+  server: 156.238.18.163
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
+- client-fingerprint: chrome
+  name: "\U0001F1EF\U0001F1F5 JP 034"
+  network: ws
+  port: 2052
+  server: 156.238.18.165
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
+- client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 US 327"
+  network: ws
+  port: 80
+  server: 190.93.244.226
+  servername: gozargah.validbv7996.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47
+  ws-opts:
+    headers:
+      Host: gozargah.validbv7996.ir
+    path: /---
+- client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 US 328"
+  network: ws
+  port: 2082
+  server: 104.24.17.194
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /vless.txt/
+- name: "\U0001F1F3\U0001F1F1 NL 021"
+  network: ws
+  port: 8080
+  server: 194.152.44.156
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  ws-opts:
+    headers:
+      Host: pormang.webhost99.workers.dev
+    path: /gh+repo+clone+2dust+
+- name: "\U0001F1F7\U0001F1FA RU 012"
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 46.254.92.201
+  skip-cert-verify: true
+  sni: agepy.aimercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: agepy.aimercc.filegear-sg.me
+    path: /?ed=2560
+- name: "\U0001F1FA\U0001F1F8 US 329"
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 167.68.4.131
+  skip-cert-verify: true
+  sni: agepy.aimercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: agepy.aimercc.filegear-sg.me
+    path: /?ed=2560
+- delay: 564
+  name: "\U0001F1EF\U0001F1F5 JP 035"
+  network: ws
+  port: 443
+  server: 47.245.37.123
+  servername: jpd.kddhs.asia
+  tls: true
+  type: vless
+  udp: true
+  uuid: fd902d74-2266-4997-99ec-83d3937cbfcc
+  ws-opts:
+    headers:
+      Host: jpd.kddhs.asia
+    path: /bing
+- delay: 1273
+  name: "\U0001F1FA\U0001F1F8 US 330"
+  network: ws
+  port: 443
+  server: 45.62.114.221
+  servername: usb.sevco.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: dd0d29f2-c6fd-4518-bed6-618ef8b12e86
+  ws-opts:
+    headers:
+      Host: usb.sevco.me
+    path: /bing
+- delay: 1276
+  name: "\U0001F1FA\U0001F1F8 US 331"
+  network: ws
+  port: 2052
+  server: www.speedtest.net
+  servername: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
+  tls: false
+  type: vless
+  udp: true
+  uuid: dfc1a9ab-6241-4b73-92f7-b299fc6b7751
+  ws-opts:
+    headers:
+      Host: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
+    path: /?ed=1080
+- ip-version: dual
+  name: "\U0001F1FA\U0001F1F8 US 332"
+  network: tcp
+  password: 6d0a7f2f-c26c-466a-8f90-d6630ba97928
+  port: 443
+  server: 137.184.120.86
+  skip-cert-verify: true
+  sni: 829D7BDE-64B9-E759-C661-78BC73E582A0.1c2871ba-6025-61e2-e87f-a5c9e0ac8c1d.9d8f269f96b25232-759cbb36d6548597.kaufen
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 333"
+  network: ws
+  port: 2082
+  server: 104.19.48.236
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 13514c2c-d5a4-335f-965a-5dc292e36759
+  ws-opts:
+    headers:
+      Host: 100-87-160-252.s2.db-link02.top
+    path: /
