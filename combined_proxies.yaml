@@ -6497,3 +6497,17 @@ proxies:
     headers:
       Host: publicvless.pages.dev
     path: /?proxyip=proxyip.us.fxxk.dedyn.io
+- name: "\U0001F1FA\U0001F1F8 US 364"
+  network: ws
+  port: 443
+  server: 198.62.62.193
+  servername: publicvless.pages.dev
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: d17ca95a-8eaf-492f-93fa-538c88956bb3
+  ws-opts:
+    headers:
+      Host: publicvless.pages.dev
+    path: /?proxyip=proxyip.us.fxxk.dedyn.io
