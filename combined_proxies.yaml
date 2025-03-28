@@ -3799,3 +3799,18 @@ proxies:
     headers:
       Host: de01.sh-cloudflare.sbs
     path: /
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 241"
+  network: ws
+  port: 33443
+  server: tls.05.node-for-bigairport.win
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: b71f9e84-86c9-49c4-b5f4-b33b35ee7410
+  ws-opts:
+    headers:
+      Host: tls.05.node-for-bigairport.win
+    path: /
