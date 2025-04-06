@@ -9133,3 +9133,67 @@ proxies:
   type: vless
   udp: true
   uuid: e3089788-42eb-4792-8348-47fe2fe213a2
+- allowInsecure: '1'
+  name: "\U0001F1EC\U0001F1E7 GB 007"
+  network: tcp
+  password: '74260700211203800'
+  port: 443
+  server: 85.234.83.191
+  skip-cert-verify: true
+  sni: possible-tiger.shiner427.skin
+  tls: true
+  type: trojan
+- allowInsecure: ''
+  name: "\U0001F1EB\U0001F1F7 FR 013"
+  network: tcp
+  password: utF6JLQd2x
+  port: 1935
+  server: 141.227.128.69
+  skip-cert-verify: false
+  sni: x1es-ovh.devefun.net
+  tls: true
+  type: trojan
+- allowInsecure: ''
+  name: "\U0001F1EC\U0001F1E7 GB 008"
+  network: tcp
+  password: FiSo7J6vfS
+  port: 1935
+  server: 51.68.13.106
+  skip-cert-verify: false
+  sni: x1fr-ovh.devefun.net
+  tls: true
+  type: trojan
+- allowInsecure: ''
+  name: "\U0001F1FA\U0001F1F8 US 520"
+  network: ws
+  password: 0cda5f7e-cc55-4ff2-8ad8-268b9b99dd01
+  port: 443
+  server: 104.21.77.44
+  skip-cert-verify: false
+  sni: us6-02.890603.Xyz
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: us6-02.890603.xyz
+    path: /ILLcisbMYUd6MQzxVoMQ
+- allowInsecure: ''
+  name: "\U0001F1EC\U0001F1E7 GB 009"
+  network: tcp
+  password: eG92F3gh09
+  port: 1935
+  server: 51.15.86.181
+  skip-cert-verify: false
+  sni: x1ams-scaleway.devefun.net
+  tls: true
+  type: trojan
+- allowInsecure: ''
+  name: "\U0001F1E8\U0001F1E6 CA 009"
+  network: tcp
+  password: ef23ddd0-14c5-39c2-9880-af55ce892363
+  port: 52492
+  server: 142.171.162.85
+  skip-cert-verify: false
+  sni: t28.qifei.app
+  tls: true
+  type: trojan
