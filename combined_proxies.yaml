@@ -9197,3 +9197,210 @@ proxies:
   sni: t28.qifei.app
   tls: true
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 521"
+  network: ws
+  port: 2087
+  server: lon2-dash.930.pp.ua
+  tls: true
+  type: vmess
+  uuid: bc86f949-7152-4367-92f5-7a11eacf9c9b
+  ws-opts:
+    headers:
+      Host: lon2-dash.930.pp.ua
+    path: lon2-sub.930.pp.ua
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 522"
+  network: ws
+  port: 2083
+  server: lon2-dash.930.pp.ua
+  tls: true
+  type: vmess
+  uuid: bc86f949-7152-4367-92f5-7a11eacf9c9b
+  ws-opts:
+    headers:
+      Host: lon2-dash.930.pp.ua
+    path: lon2-sub.930.pp.ua
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 523"
+  network: ws
+  port: 2096
+  server: lon2-dash.930.pp.ua
+  tls: true
+  type: vmess
+  uuid: bc86f949-7152-4367-92f5-7a11eacf9c9b
+  ws-opts:
+    headers:
+      Host: lon2-dash.930.pp.ua
+    path: lon2-sub.930.pp.ua
+- name: "\U0001F1FA\U0001F1F8 US 524"
+  network: ws
+  password: a8fce442-ae9a-4cc1-a0cc-20308ff0a0db
+  port: 443
+  server: 104.21.80.1
+  sni: 1g.890699.xyZ
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 1g.890699.xyZ
+    path: /lXENb74xF4ylXngZ
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 525"
+  network: ws
+  port: 2053
+  server: lon2-dash.930.pp.ua
+  tls: true
+  type: vmess
+  uuid: bc86f949-7152-4367-92f5-7a11eacf9c9b
+  ws-opts:
+    headers:
+      Host: lon2-sub.930.pp.ua
+    path: /lon2-sub.930.pp.ua
+- name: "\U0001F1FA\U0001F1F8 US 526"
+  network: ws
+  password: 0cda5f7e-cc55-4ff2-8ad8-268b9b99dd01
+  port: 443
+  server: 172.67.135.23
+  sni: uS6-16.890601.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: uS6-16.890601.xyz
+    path: /ILLcisbMYUd6MQzxVoMQ
+- allowInsecure: ''
+  name: "\U0001F1FA\U0001F1F8 US 527"
+  network: ws
+  password: 89c1aea7-4d0d-4013-b663-0f94a3e6bdbd
+  port: 443
+  server: 172.67.149.172
+  skip-cert-verify: false
+  sni: sanjose03.890614.filegear-sg.me
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: sanjose03.890614.filegear-sg.me
+    path: /T5yZBrY2Qkg2cThJQeJb
+- name: "\U0001F1FA\U0001F1F8 US 528"
+  network: xhttp
+  port: 80
+  server: compare99.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8302c2cf-4854-4b2f-a156-6f1f98475928
+- name: "\U0001F1FA\U0001F1F8 US 529"
+  network: httpupgrade
+  port: 2095
+  server: 104.19.150.10
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8dabe69a-0cf2-47d1-bce2-2404bb1d67d5
+- client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 US 530"
+  network: ws
+  port: 2083
+  server: 172.66.40.87
+  servername: e.exedu.ip-ddns.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8f320d6a-9953-4065-b61c-d62f89a6767f
+  ws-opts:
+    headers:
+      Host: e.exedu.ip-ddns.com
+    path: /?ed=2048
+- name: "\U0001F1FA\U0001F1F8 US 531"
+  network: httpupgrade
+  port: 2052
+  server: ns.cloudflare.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 97179609-7157-49f0-b075-55d97f888a10
+- name: "\U0001F1FA\U0001F1F8 US 532"
+  network: ws
+  port: 443
+  server: 172.67.20.136
+  servername: nautica.foolvpn.me
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: c7d543af-1023-4b96-a698-187c190d3f4c
+  ws-opts:
+    headers:
+      Host: nautica.foolvpn.me
+    path: /47.89.39.186-39251
+- client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 US 533"
+  network: ws
+  port: 2087
+  server: good.speedtest3.online
+  servername: good.speedtest3.online
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: ec18f06a-4f88-4ad8-aae4-e55d1eec305a
+  ws-opts:
+    headers:
+      Host: good.speedtest3.online
+    path: /telegram-
+- allowInsecure: ''
+  name: "\U0001F1FA\U0001F1F8 US 534"
+  network: ws
+  password: Aimer
+  port: 443
+  server: 172.64.35.236
+  skip-cert-verify: false
+  sni: epccw.ambercc.filegear-sg.me
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- allowInsecure: ''
+  name: "\U0001F1F0\U0001F1F7 KR 012"
+  network: ws
+  password: Aimer
+  port: 12205
+  server: 121.135.67.36
+  skip-cert-verify: false
+  sni: epccw.ambercc.filegear-sg.me
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epccw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- allowInsecure: ''
+  name: "\U0001F1F0\U0001F1F7 KR 013"
+  network: ws
+  password: Aimer
+  port: 32443
+  server: 121.175.42.160
+  skip-cert-verify: false
+  sni: epccq.ambercc.filegear-sg.me
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epccq.ambercc.filegear-sg.me
+    path: /?ed=2560
