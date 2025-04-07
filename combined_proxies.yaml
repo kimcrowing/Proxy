@@ -9404,3 +9404,94 @@ proxies:
     headers:
       Host: epccq.ambercc.filegear-sg.me
     path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  delay: 2741
+  name: "\U0001F1FA\U0001F1F8 US 535"
+  network: ws
+  port: 38003
+  server: 137.175.10.241
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: 38.14.107.225
+    path: /path/181721272114
+- alterId: 0
+  cipher: auto
+  delay: 2691
+  name: "\U0001F1FA\U0001F1F8 US 536"
+  network: ws
+  port: 2096
+  server: 1743919941.tencentapp.cn
+  servername: 1743919978.speed.adl.cccp.freefly.pp.ua
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3bb3c730-e107-49c5-a0b2-b576d1b26a5e
+  ws-opts:
+    headers:
+      Host: 1743919978.speed.adl.cccp.freefly.pp.ua
+    path: /
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 537"
+  network: ws
+  port: 8443
+  raw:
+    add: 1743919941.tencentapp.cn
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: 1743919978.speed.laxha.cccp.freefly.pp.ua
+    id: 3bb3c730-e107-49c5-a0b2-b576d1b26a5e
+    net: ws
+    path: /
+    port: '8443'
+    ps: "\U0001F525Join+Telegram:@FarahVPN\U0001F7E3"
+    scy: auto
+    sni: 1743919978.speed.laxha.cccp.freefly.pp.ua
+    tls: tls
+    type: ''
+    v: '2'
+  server: 1743919941.tencentapp.cn
+  servername: 1743919978.speed.laxha.cccp.freefly.pp.ua
+  tls: true
+  type: vmess
+  uuid: 3bb3c730-e107-49c5-a0b2-b576d1b26a5e
+  ws-opts:
+    headers:
+      Host: 1743919978.speed.laxha.cccp.freefly.pp.ua
+    path: /
+- allowInsecure: ''
+  name: "\U0001F1FA\U0001F1F8 US 538"
+  network: ws
+  password: 89c1aea7-4d0d-4013-b663-0f94a3e6bdbd
+  port: 443
+  server: 172.67.210.210
+  skip-cert-verify: false
+  sni: sanjose02.852224.ggff.net
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: sanjose02.852224.ggff.net
+    path: /T5yZBrY2Qkg2cThJQeJb
+- allowInsecure: ''
+  name: "\U0001F1FA\U0001F1F8 US 539"
+  network: ws
+  password: 89c1aea7-4d0d-4013-b663-0f94a3e6bdbd
+  port: 443
+  server: 104.21.23.115
+  skip-cert-verify: false
+  sni: sanjose02.852224.ggff.net
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: sanjose02.852224.ggff.net
+    path: /T5yZBrY2Qkg2cThJQeJb
