@@ -10669,3 +10669,123 @@ proxies:
     headers:
       Host: vc.fly.dev
     path: /vc
+- name: "\U0001F1F3\U0001F1F1 NL 025"
+  network: tcp
+  password: 8849efe5-f652-4c30-b467-178828c5fc73
+  port: 22271
+  server: aafrtpfxr.jpl03i9zjfegelp.5xfsur8v62.gosdk.xyz
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: "\U0001F1FA\U0001F1F8 US 588"
+  network: ws
+  password: amclubs
+  port: 2087
+  server: 154.83.2.125
+  skip-cert-verify: true
+  sni: tran.amclubstest.nyc.mn
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: tran.amclubstest.nyc.mn
+    path: /?ed=2560
+- name: "\U0001F1FA\U0001F1F8 US 589"
+  network: ws
+  password: amclubs
+  port: 2053
+  server: 154.83.2.94
+  skip-cert-verify: true
+  sni: tran.amclubstest.nyc.mn
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: tran.amclubstest.nyc.mn
+    path: /?ed=2560
+- name: "\U0001F1FA\U0001F1F8 US 590"
+  network: ws
+  password: amclubs
+  port: 8443
+  server: 154.83.2.61
+  skip-cert-verify: true
+  sni: tran.amclubstest.nyc.mn
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: tran.amclubstest.nyc.mn
+    path: /?ed=2560
+- name: "\U0001F1EF\U0001F1F5 JP 037"
+  network: ws
+  password: amclubs
+  port: 2096
+  server: 156.238.19.69
+  skip-cert-verify: true
+  sni: tran.amclubstest.nyc.mn
+  tfo: false
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: tran.amclubstest.nyc.mn
+    path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 591"
+  network: ws
+  port: 80
+  raw:
+    add: cdn2.bpcdn.cc
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: tk1.bk5jh4t6w.jiesk4pdqcqjo16j.xyz
+    id: 0b5914c3-9284-44fa-b181-093e2943b9c1
+    net: ws
+    path: /
+    port: 80
+    ps: RF Engineering
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: cdn2.bpcdn.cc
+  tls: false
+  type: vmess
+  uuid: 0b5914c3-9284-44fa-b181-093e2943b9c1
+  ws-opts:
+    headers:
+      Host: tk1.bk5jh4t6w.jiesk4pdqcqjo16j.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 592"
+  network: ws
+  port: 2086
+  server: 170.114.45.52
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 0b5914c3-9284-44fa-b181-093e2943b9c1
+  ws-opts:
+    headers:
+      Host: ustoucjjnid18sj6us.lovebaipiao.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 593"
+  network: ws
+  port: 2086
+  server: 170.114.45.53
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 0b5914c3-9284-44fa-b181-093e2943b9c1
+  ws-opts:
+    headers:
+      Host: ustoucjjnid18sj6us.lovebaipiao.com
+    path: /
