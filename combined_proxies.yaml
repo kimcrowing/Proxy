@@ -10606,3 +10606,66 @@ proxies:
   type: vless
   udp: true
   uuid: 8cba15d2-7c60-48b5-8075-58790b4ed714
+- allowInsecure: ''
+  name: "\U0001F1EC\U0001F1E7 GB 014"
+  network: tcp
+  password: '74260698218909400'
+  port: 443
+  server: happy-bluebird.shiner427.skin
+  skip-cert-verify: false
+  sni: happy-bluebird.shiner427.skin
+  tls: true
+  type: trojan
+- name: "\U0001F1EC\U0001F1E7 GB 015"
+  network: tcp
+  password: b19c4375-d847-4c40-9824-4767c88b5f38
+  port: 10021
+  server: www.hk-jd.top
+  skip-cert-verify: true
+  sni: www.hk-jd.top
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 587"
+  network: ws
+  port: 2096
+  raw:
+    add: 172.67.189.27
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: ny2-sub.930.pp.ua
+    id: f082eeca-e068-45f9-d1bf-46e9de9bdf57
+    net: ws
+    path: /ny2-sub.930.pp.ua
+    port: '2096'
+    ps: "\U0001F525Join+Telegram:@FarahVPN\U0001F7E3"
+    scy: ''
+    sni: ny2-dash.930.pp.ua
+    tls: tls
+    type: none
+    v: '2'
+  server: 172.67.189.27
+  servername: ny2-dash.930.pp.ua
+  tls: true
+  type: vmess
+  uuid: f082eeca-e068-45f9-d1bf-46e9de9bdf57
+  ws-opts:
+    headers:
+      Host: ny2-sub.930.pp.ua
+    path: /ny2-sub.930.pp.ua
+- alterId: 32
+  cipher: auto
+  name: "\U0001F1EE\U0001F1F3 IN 006"
+  network: ws
+  port: 443
+  server: vc.fly.dev
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      Host: vc.fly.dev
+    path: /vc
