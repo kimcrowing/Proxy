@@ -10907,3 +10907,94 @@ proxies:
   sni: patient-crawdad.shiner427.skin
   tls: true
   type: trojan
+- allowInsecure: ''
+  name: "\U0001F1F9\U0001F1F7 TR 005"
+  network: tcp
+  password: '74260698218909400'
+  port: 443
+  server: unified-lioness.shiner427.skin
+  skip-cert-verify: false
+  sni: unified-lioness.shiner427.skin
+  tls: true
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 599"
+  network: tcp
+  port: 22324
+  raw:
+    add: 186.190.215.193
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: ''
+    id: 04621bae-ab36-11ec-b909-0242ac120002
+    net: tcp
+    path: /
+    port: 22324
+    ps: "\U0001F1F5\U0001F1E6 PA_213"
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: 186.190.215.193
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 600"
+  network: ws
+  port: 80
+  server: 6fe34a9c-suk9s0-sve5if-z93q.lza.plebai.net
+  tls: false
+  type: vmess
+  uuid: 40639730-e027-11ea-87ad-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 601"
+  network: ws
+  port: 2087
+  raw:
+    add: 104.21.73.150
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: rak1-sub.931.pp.ua
+    id: 0eb8fc06-01ab-4ec2-8e77-f185e7d8f9f2
+    net: ws
+    path: /rak1-sub.931.pp.ua
+    port: '2087'
+    ps: "\U0001F525Join+Telegram:@FarahVPN\U0001F7E3"
+    scy: auto
+    sni: rak1-sub.931.pp.ua
+    tls: tls
+    type: ''
+    v: '2'
+  server: 104.21.73.150
+  servername: rak1-sub.931.pp.ua
+  tls: true
+  type: vmess
+  uuid: 0eb8fc06-01ab-4ec2-8e77-f185e7d8f9f2
+  ws-opts:
+    headers:
+      Host: rak1-sub.931.pp.ua
+    path: /rak1-sub.931.pp.ua
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 602"
+  network: ws
+  port: 1280
+  server: c7344c10-suk9s0-sxv16d-1k09w.se.plebai.net
+  tls: false
+  type: vmess
+  uuid: 8de795d2-a06f-11ed-8edf-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
