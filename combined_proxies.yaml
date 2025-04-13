@@ -11648,3 +11648,428 @@ proxies:
   type: vless
   udp: true
   uuid: cbb4251b-9b20-4c42-b09d-df77666bda12
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1E7\U0001F1F7 BR 031"
+  network: ws
+  port: 443
+  server: 188.114.99.183
+  servername: linde06.indiavideo.sbs
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      Host: linde06.indiavideo.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1E7\U0001F1F7 BR 032"
+  network: ws
+  port: 443
+  server: 188.114.97.6
+  servername: linde06.indiavideo.sbs
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      Host: linde06.indiavideo.sbs
+    path: /linkws
+- allowInsecure: ''
+  name: "\U0001F1FA\U0001F1F8 US 640"
+  network: ws
+  password: redfree8
+  port: 443
+  server: 104.17.148.22
+  skip-cert-verify: false
+  sni: redfree8-p1.pooriashop.ir
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: redfree8-p1.pooriashop.ir
+    path: /trJF1XisQEbWZpxEHh?ed=2560
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1F3\U0001F1F4 NO 002"
+  network: tcp
+  port: 44396
+  raw:
+    add: 84.247.148.192
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: ''
+    id: 3ca35e0a-e430-43fe-9c12-2e2eea70f873
+    net: tcp
+    path: ''
+    port: '44396'
+    ps: "\U0001F525Join+Telegram:@FarahVPN\U0001F7E3"
+    scy: auto
+    sni: ''
+    tls: ''
+    type: none
+    v: '2'
+  server: 84.247.148.192
+  tls: false
+  type: vmess
+  uuid: 3ca35e0a-e430-43fe-9c12-2e2eea70f873
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 641"
+  network: ws
+  port: 443
+  raw:
+    add: 104.21.15.36
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: linde06.indiavideo.sbs
+    id: edbb1059-1633-4271-b66e-ed4fba47a1bf
+    net: ws
+    path: /linkws
+    port: 443
+    ps: CloudFlare
+    scy: ''
+    sni: ''
+    tls: tls
+    type: ''
+    v: '2'
+  server: 104.21.15.36
+  tls: true
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      Host: linde06.indiavideo.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 642"
+  network: ws
+  port: 443
+  raw:
+    add: 172.67.179.199
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: linde06.indiavideo.sbs
+    id: edbb1059-1633-4271-b66e-ed4fba47a1bf
+    net: ws
+    path: /linkws
+    port: 443
+    ps: "\U0001F1FA\U0001F1F8 US_309"
+    scy: ''
+    sni: ''
+    tls: tls
+    type: ''
+    v: '2'
+  server: 172.67.179.199
+  tls: true
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      Host: linde06.indiavideo.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1E7\U0001F1F7 BR 033"
+  network: ws
+  port: 443
+  raw:
+    add: 188.114.96.5
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: linde06.indiavideo.sbs
+    id: edbb1059-1633-4271-b66e-ed4fba47a1bf
+    net: ws
+    path: /linkws
+    port: 443
+    ps: "\U0001F3C1 ZZ_354"
+    scy: ''
+    sni: ''
+    tls: tls
+    type: ''
+    v: '2'
+  server: 188.114.96.5
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      Host: linde06.indiavideo.sbs
+    path: /linkws
+- allowInsecure: ''
+  name: "\U0001F1EC\U0001F1E7 GB 016"
+  network: tcp
+  password: I46LpSIM1f
+  port: 1935
+  server: 194.164.57.9
+  skip-cert-verify: false
+  sni: x4ger-ionos.devefun.net
+  tls: true
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 643"
+  network: ws
+  port: 443
+  raw:
+    add: 104.21.51.208
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: linde06.indiavideo.sbs
+    id: edbb1059-1633-4271-b66e-ed4fba47a1bf
+    net: ws
+    path: /linkws
+    port: 443
+    ps: "\U0001F1FA\U0001F1F8 US_286"
+    scy: ''
+    sni: ''
+    tls: tls
+    type: ''
+    v: '2'
+  server: 104.21.51.208
+  tls: true
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      Host: linde06.indiavideo.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1E7\U0001F1F7 BR 034"
+  network: ws
+  port: 443
+  server: 188.114.99.205
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      Host: linde06.indiavideo.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 644"
+  network: ws
+  port: 8083
+  server: a4902353-suvds0-tcubko-1r05y.se.plebai.net
+  type: vmess
+  uuid: d2a03964-ec12-11ee-893c-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 645"
+  network: ws
+  port: 8083
+  server: 37ba978c-sunz40-swhx5y-1q3dm.se.plebai.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c1785de0-212f-11ef-92aa-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: 37ba978c-sunz40-swhx5y-1q3dm.se.plebai.net
+    path: /
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 646"
+  network: ws
+  port: 8083
+  server: 4887be5d-suvds0-t2oosc-xm0q.se.plebai.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 3437f34e-1b77-11eb-8684-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 4887be5d-suvds0-t2oosc-xm0q.se.plebai.net
+    path: /
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 647"
+  network: ws
+  port: 8083
+  raw:
+    add: 104.194.206.226
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: broadcastlv.chat.bilibili.com
+    id: 213e222c-8e0f-11ef-8dc4-f23c91cfbbc9
+    net: ws
+    path: /
+    port: '8083'
+    ps: "\U0001F525Join+Telegram:@FarahVPN\U0001F7E3"
+    scy: ''
+    sni: ''
+    tls: ''
+    type: none
+    v: '2'
+  server: 104.194.206.226
+  tls: false
+  type: vmess
+  uuid: 213e222c-8e0f-11ef-8dc4-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 648"
+  network: ws
+  port: 8083
+  server: f7576a55-sunz40-taz53d-1j0y6.se.plebai.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 1cce7df2-251c-11ee-9409-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: f7576a55-sunz40-taz53d-1j0y6.se.plebai.net
+    path: /
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 649"
+  network: ws
+  port: 8083
+  server: 4d925cb8-suvds0-t8md9t-1cir.se.plebai.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4b436ff0-05bc-11ee-a91f-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 4d925cb8-suvds0-t8md9t-1cir.se.plebai.net
+    path: /
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 650"
+  network: ws
+  port: 443
+  server: 172.67.170.103
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-opts:
+    headers:
+      Host: glweidf.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 651"
+  network: ws
+  port: 443
+  raw:
+    add: 172.67.207.26
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: glweidf.sbs
+    id: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+    net: ws
+    path: /linkws
+    port: 443
+    ps: "\U0001F525Join+Telegram:@FarahVPN\U0001F7E3"
+    scy: ''
+    sni: ''
+    tls: tls
+    type: ''
+    v: '2'
+  server: 172.67.207.26
+  tls: true
+  type: vmess
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-opts:
+    headers:
+      Host: glweidf.sbs
+    path: /linkws
+- alterId: 64
+  cipher: auto
+  name: "\U0001F1EE\U0001F1EA IE 001"
+  network: ws
+  port: 30000
+  server: 185.108.128.137
+  servername: www.14601176.xyz
+  tls: true
+  type: vmess
+  uuid: 5aab3936-16d7-4377-8c33-0d77f2d295ee
+  ws-opts:
+    headers:
+      Host: www.14601176.xyz
+    path: /path/300022113329
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 652"
+  network: ws
+  port: 443
+  raw:
+    add: 172.67.170.13
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: glweidf.sbs
+    id: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+    net: ws
+    path: /linkws
+    port: '443'
+    ps: "\U0001F525Join+Telegram:@FarahVPN\U0001F7E3"
+    scy: auto
+    sni: glweidf.sbs
+    tls: tls
+    type: ''
+    v: '2'
+  server: 172.67.170.13
+  servername: glweidf.sbs
+  tls: true
+  type: vmess
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-opts:
+    headers:
+      Host: glweidf.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 653"
+  network: ws
+  port: 8083
+  raw:
+    add: 69bd7056-sunz40-tazb7x-1t848.se.plebai.net
+    aid: 0
+    alpn: ''
+    fp: ''
+    host: 69bd7056-sunz40-tazb7x-1t848.se.plebai.net
+    id: 6b795e40-e75d-11ef-b717-f23c913c8d2b
+    net: ws
+    path: /
+    port: 8083
+    ps: "2|\U0001F1FA\U0001F1F810 |  3.0MB/s"
+    scy: auto
+    sni: ''
+    tls: ''
+    type: none
+    v: '2'
+  server: 69bd7056-sunz40-tazb7x-1t848.se.plebai.net
+  tls: false
+  type: vmess
+  uuid: 6b795e40-e75d-11ef-b717-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 69bd7056-sunz40-tazb7x-1t848.se.plebai.net
+    path: /
