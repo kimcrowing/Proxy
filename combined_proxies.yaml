@@ -12095,3 +12095,283 @@ proxies:
   uuid: 9b2335af-f24c-4810-9c34-95568ebd579d
   ws-headers:
     Host: 91.194.11.178
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 654"
+  network: ws
+  port: 443
+  server: 172.67.220.10
+  servername: linja05.hwcar.sbs
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 39cec18f-a439-427c-9a4e-aeb6fcdf6f53
+  ws-opts:
+    headers:
+      Host: linja05.hwcar.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 655"
+  network: ws
+  port: 7612
+  server: cbe195c0-supts0-svp9t7-1oijm.lza.plebai.net
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: bf140bc0-3f68-11ee-953a-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 656"
+  network: ws
+  port: 7612
+  server: 0ffb2ad4-supts0-swdlq9-g53t.lza.plebai.net
+  tls: false
+  type: vmess
+  uuid: b778e4ae-1458-11ec-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- name: "\U0001F1FA\U0001F1F8 US 657"
+  network: ws
+  password: 2fec7227-9abe-46f2-af18-78302b836c45
+  port: 443
+  server: 104.21.15.232
+  skip-cert-verify: true
+  sni: 3r.2030.pp.ua
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 3r.2030.pp.ua
+    path: /XjTi1NYwi9A2bckpqdDoAgkondVWl
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1EF\U0001F1F5 JP 038"
+  network: ws
+  port: 8443
+  server: 156.238.18.68
+  servername: uswuxian.pai50288.uk
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c313606f-98c2-4d7b-ba74-48b94f61b11d
+  ws-opts:
+    headers:
+      Host: uswuxian.pai50288.uk
+    path: /?maps.app.goo.gl/K3hM5xrwZV7bQVBa7?ed=2560
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 658"
+  network: ws
+  port: 443
+  server: 172.67.220.83
+  servername: linja05.hwcar.sbs
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 39cec18f-a439-427c-9a4e-aeb6fcdf6f53
+  ws-opts:
+    headers:
+      Host: linja05.hwcar.sbs
+    path: /linkws
+- name: "\U0001F1F7\U0001F1FA RU 009"
+  network: ws
+  password: Aimer
+  port: 443
+  server: 46.254.92.191
+  skip-cert-verify: true
+  sni: epcct.ambercc.filegear-sg.me
+  tfo: false
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epcct.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1E9\U0001F1EA DE 034"
+  network: tcp
+  port: 3378
+  raw:
+    add: fi.pr0xymare.com
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: ''
+    id: 6e53b146-1756-4297-ba10-c0370fa9c471
+    net: tcp
+    path: ''
+    port: 3378
+    ps: "\U0001F525Join+Telegram:@FarahVPN\U0001F7E3"
+    scy: auto
+    sni: ''
+    tls: none
+    type: ''
+    v: '2'
+  server: fi.pr0xymare.com
+  tls: false
+  type: vmess
+  uuid: 6e53b146-1756-4297-ba10-c0370fa9c471
+- name: "\U0001F1FA\U0001F1F8 US 659"
+  network: ws
+  port: 2095
+  server: 173.245.58.100
+  servername: xpntEamfree.sockSchangert.ir.
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3afb7da5-73f7-47c5-99f1-c16e0b4db45e
+  ws-opts:
+    headers:
+      Host: xpntEamfree.sockSchangert.ir.
+    path: /
+- name: "\U0001F1E9\U0001F1EA DE 035"
+  network: grpc
+  port: 59483
+  server: 128.140.124.194
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 47d7d5eb-55e6-4085-a155-bdf3fcc428f6
+- name: "\U0001F1E9\U0001F1EA DE 036"
+  network: grpc
+  port: 59483
+  server: 157.180.29.37
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 47d7d5eb-55e6-4085-a155-bdf3fcc428f6
+- name: "\U0001F1E9\U0001F1EA DE 037"
+  network: grpc
+  port: 59483
+  server: 159.69.18.30
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 47d7d5eb-55e6-4085-a155-bdf3fcc428f6
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1EC\U0001F1E7 GB 017"
+  network: ws
+  port: 443
+  raw:
+    add: 144.24.200.164
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: beyonddsz.cfd
+    id: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+    net: ws
+    path: /linkws
+    port: 443
+    ps: "\U0001F1EC\U0001F1E7 GB_153"
+    scy: ''
+    sni: ''
+    tls: tls
+    type: ''
+    v: '2'
+  server: 144.24.200.164
+  tls: true
+  type: vmess
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-opts:
+    headers:
+      Host: beyonddsz.cfd
+    path: /linkws
+- allowInsecure: ''
+  name: "\U0001F1EC\U0001F1E7 GB 018"
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 18.132.188.47
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 660"
+  network: ws
+  port: 443
+  raw:
+    add: 172.66.168.209
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: MAxnETViP-ca2.mAxNETCloudsERVIcE.coM
+    id: 164d7619-b450-44a3-b488-5175823bfa56
+    net: ws
+    path: /linkws
+    port: '443'
+    ps: "\U0001F525Join+Telegram:@FarahVPN\U0001F7E3"
+    scy: auto
+    sni: MAxnETViP-ca2.mAxNETCloudsERVIcE.coM
+    tls: tls
+    type: ''
+    v: '2'
+  server: 172.66.168.209
+  servername: MAxnETViP-ca2.mAxNETCloudsERVIcE.coM
+  tls: true
+  type: vmess
+  uuid: 164d7619-b450-44a3-b488-5175823bfa56
+  ws-opts:
+    headers:
+      Host: MAxnETViP-ca2.mAxNETCloudsERVIcE.coM
+    path: /linkws
+- alterId: 2
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 661"
+  network: ws
+  port: 1280
+  server: d5d99dc5-sunz40-sumf02-155d9.sv.plebai.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 34f0cf42-0f8a-11ec-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- allowInsecure: ''
+  name: "\U0001F1F7\U0001F1FA RU 010"
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 92.243.74.23
+  skip-cert-verify: false
+  sni: epcct.ambercc.filegear-sg.me
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epcct.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 662"
+  network: ws
+  port: 7612
+  server: 6d1c9bd9-surog0-sy0g8x-1cc8s.lza.plebai.net
+  tls: false
+  type: vmess
+  uuid: 7e64224c-4c10-11ec-bd7c-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
