@@ -12073,3 +12073,25 @@ proxies:
     headers:
       Host: 69bd7056-sunz40-tazb7x-1t848.se.plebai.net
     path: /
+- allowInsecure: ''
+  name: "\U0001F1EB\U0001F1F7 FR 015"
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.180.233.144
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1EE\U0001F1F1 IL 002"
+  network: tcp
+  port: 28984
+  server: 91.194.11.178
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 9b2335af-f24c-4810-9c34-95568ebd579d
+  ws-headers:
+    Host: 91.194.11.178
