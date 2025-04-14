@@ -12749,3 +12749,259 @@ proxies:
     headers:
       Host: obdii.cfd
     path: /linkws
+- name: "\U0001F1FA\U0001F1F8 US 679"
+  network: ws
+  password: 2fec7227-9abe-46f2-af18-78302b836c45
+  port: 443
+  server: 172.67.205.22
+  sni: 3fg.20220420.pp.ua
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 3fg.20220420.pp.ua
+    path: /XjTi1NYwi9A2bckpqdDoAgkondVWl
+- allowInsecure: ''
+  name: "\U0001F1FA\U0001F1F8 US 680"
+  network: ws
+  password: 2fec7227-9abe-46f2-af18-78302b836c45
+  port: 443
+  server: 172.67.208.155
+  skip-cert-verify: false
+  sni: 3r.2030.pp.ua
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 3r.2030.pp.ua
+    path: /XjTi1NYwi9A2bckpqdDoAgkondVWl
+- name: "\U0001F1FA\U0001F1F8 US 681"
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: japan.com
+  skip-cert-verify: false
+  sni: zamim340.ggff.net
+  type: trojan
+  ws-opts:
+    headers:
+      Host: zamim340.ggff.net
+    path: /tr?ed=2560
+- allowInsecure: ''
+  name: "\U0001F1FA\U0001F1F8 US 682"
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 172.67.70.92
+  skip-cert-verify: false
+  sni: zamim340.ggff.net
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: zamim340.ggff.net
+    path: /tr?ed=2560
+- name: "\U0001F1FA\U0001F1F8 US 683"
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: visa.cn
+  skip-cert-verify: false
+  sni: zamim340.ggff.net
+  type: trojan
+  ws-opts:
+    headers:
+      Host: zamim340.ggff.net
+    path: /tr?ed=2560
+- name: "\U0001F1FA\U0001F1F8 US 684"
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 162.159.153.2
+  skip-cert-verify: true
+  sni: zamim340.ggff.net
+  tfo: false
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: zamim340.ggff.net
+    path: /tr?ed=2560
+- allowInsecure: ''
+  name: "\U0001F1FA\U0001F1F8 US 685"
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 104.26.5.60
+  skip-cert-verify: false
+  sni: zamim340.ggff.net
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: zamim340.ggff.net
+    path: /tr?ed=2560
+- client-fingerprint: random
+  name: "\U0001F1FA\U0001F1F8 US 686"
+  network: ws
+  port: 443
+  server: 104.16.209.110
+  servername: masaleini.mahsaamini.dpdns.org
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 10d9df89-9a20-4110-9711-bca119490ee9
+  ws-opts:
+    headers:
+      Host: masaleini.mahsaamini.dpdns.org
+- client-fingerprint: randomized
+  name: "\U0001F1FA\U0001F1F8 US 687"
+  network: ws
+  port: 443
+  server: 104.21.73.239
+  servername: digitalscientificresearchgroup.ir
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
+  ws-opts:
+    headers:
+      Host: digitalscientificresearchgroup.ir
+    path: /4McLR3NKFOydbxDs/MTguMTk5LjIxMy4yMDE
+- name: "\U0001F1FA\U0001F1F8 US 688"
+  network: ws
+  port: 80
+  server: mitivpn.fastly80-2.hosting-ip.com
+  servername: arzinja.info
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48108ffd-b20c-4d94-bf99-d3e3187a10c7
+  ws-opts:
+    headers:
+      Host: arzinja.info
+    path: /telegram-mitivpn-telegram-mitivpn-telegram-mitivpn?ed=2048
+- name: "\U0001F1F3\U0001F1F1 NL 028"
+  network: ws
+  port: 80
+  server: 45.131.4.147
+  servername: redfree8.pooriashop.ir
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redfree8.pooriashop.ir
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- name: "\U0001F1F8\U0001F1EA SE 029"
+  network: httpupgrade
+  port: 8880
+  server: 185.146.173.39
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: Parsashonam-220
+- name: "\U0001F1FA\U0001F1F8 US 689"
+  network: ws
+  port: 443
+  server: 104.17.148.22
+  servername: nautica.foolvpn.me
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: c7d543af-1023-4b96-a698-187c190d3f4c
+  ws-opts:
+    headers:
+      Host: nautica.foolvpn.me
+    path: /47.89.39.186-39251
+- name: "\U0001F1FA\U0001F1F8 US 690"
+  network: ws
+  port: 8080
+  server: 104.17.148.22
+  servername: TEL-ArV2ry-TEL-ArV2ry-TEL-ArV2ry.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.ipsq.dDnS-ip.nEt
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: telegram-id-ArV2ray
+  ws-opts:
+    headers:
+      Host: TEL-ArV2ry-TEL-ArV2ry-TEL-ArV2ry.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.ipsq.dDnS-ip.nEt
+    path: /telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry?ed=2056
+- allowInsecure: '1'
+  name: "\U0001F1FA\U0001F1F8 US 691"
+  network: tcp
+  password: 4467ae8518abf1ef321618c0bfb5549ccc
+  port: 25131
+  server: 129.151.163.120
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  tls: true
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1EC\U0001F1E7 GB 019"
+  network: ws
+  port: 443
+  server: 158.180.228.226
+  servername: beyonddsz.cfd
+  tls: true
+  type: vmess
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-opts:
+    headers:
+      Host: beyonddsz.cfd
+    path: /linkws
+- allowInsecure: '1'
+  name: "\U0001F1E9\U0001F1EA DE 038"
+  network: tcp
+  password: 4467ae8518abf1ef321618c0bfb5549ccc
+  port: 60800
+  server: 130.61.173.105
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  tls: true
+  type: trojan
+- allowInsecure: '1'
+  name: "\U0001F1FA\U0001F1F8 US 692"
+  network: tcp
+  password: 4467ae8518abf1ef321618c0bfb5549ccc
+  port: 25131
+  server: sydney-mini-ddns.faforex.eu.org
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  tls: true
+  type: trojan
+- allowInsecure: '1'
+  name: "\U0001F1FA\U0001F1F8 US 693"
+  network: tcp
+  password: 4467ae8518abf1ef321618c0bfb5549ccc
+  port: 25131
+  server: jhb-01.oci.ee
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  tls: true
+  type: trojan
+- allowInsecure: '1'
+  name: "\U0001F1E9\U0001F1EA DE 039"
+  network: tcp
+  password: 4467ae8518abf1ef321618c0bfb5549ccc
+  port: 42600
+  server: 84.235.237.61
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  tls: true
+  type: trojan
