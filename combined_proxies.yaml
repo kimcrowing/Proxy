@@ -13005,3 +13005,58 @@ proxies:
   sni: www.cloudflare.com
   tls: true
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1F7\U0001F1FA RU 012"
+  network: tcp
+  port: 45215
+  raw:
+    add: fa.fxlcn.com
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: ''
+    id: 469e0b31-30c3-4dab-800d-711232634ce1
+    net: tcp
+    path: /
+    port: 45215
+    ps: "\U0001F1F7\U0001F1FA RU_235"
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: fa.fxlcn.com
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 694"
+  network: ws
+  port: 2053
+  raw:
+    add: m8d.457.pp.ua
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: m8s.457.pp.ua
+    id: 850ccc2e-382f-4875-ffe6-5cafdf888e54
+    net: ws
+    path: /m8s.457.pp.ua
+    port: '2053'
+    ps: "\U0001F525Join+Telegram:@FarahVPN\U0001F7E3"
+    scy: auto
+    sni: m8s.457.pp.ua
+    tls: tls
+    type: ''
+    v: '2'
+  server: m8d.457.pp.ua
+  servername: m8s.457.pp.ua
+  tls: true
+  type: vmess
+  uuid: 850ccc2e-382f-4875-ffe6-5cafdf888e54
+  ws-opts:
+    headers:
+      Host: m8s.457.pp.ua
+    path: /m8s.457.pp.ua
