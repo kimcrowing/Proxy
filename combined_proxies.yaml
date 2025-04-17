@@ -13628,3 +13628,13 @@ proxies:
   sni: trojan.burgerip.co.uk
   tls: true
   type: trojan
+- name: "\U0001F1FA\U0001F1F8 US 717"
+  network: grpc
+  port: 8880
+  server: 88.218.95.8
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9e28dd25-f4e1-4434-a31d-40c8ed0c0f52
