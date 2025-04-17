@@ -13638,3 +13638,117 @@ proxies:
   type: vless
   udp: true
   uuid: 9e28dd25-f4e1-4434-a31d-40c8ed0c0f52
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 718"
+  network: ws
+  port: 443
+  server: d3fgkhtpi57foq.cloudfront.net
+  tls: true
+  type: vmess
+  uuid: 2d6a51f1-6c41-4443-87fc-a2d32130942b
+  ws-opts:
+    headers:
+      Host: d3fgkhtpi57foq.cloudfront.net
+    path: /c02
+- name: "\U0001F1F3\U0001F1F1 NL 030"
+  network: ws
+  port: 443
+  server: 185.133.35.242
+  servername: vb.ylks0033.dpdns.org
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: vb.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: "\U0001F1E9\U0001F1EA DE 042"
+  network: ws
+  port: 443
+  server: 185.16.110.111
+  servername: vb.ylks0033.dpdns.org
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: vb.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: "\U0001F1F8\U0001F1EA SE 030"
+  network: ws
+  port: 443
+  server: 141.147.114.60
+  servername: psycho.suex12.ir
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: psycho.suex12.ir
+    path: /Telegram
+- client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 US 719"
+  network: ws
+  port: 443
+  server: 173.245.58.100
+  servername: cr7.medicaldream.ir
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: ccff34b1-44fd-478d-bc0e-5111cb11f5be
+  ws-opts:
+    headers:
+      Host: cr7.medicaldream.ir
+    path: /?ed=2550?/
+- name: "\U0001F1FA\U0001F1F8 US 720"
+  network: ws
+  port: 2096
+  server: 104.17.128.1
+  servername: vlee.amclubs.nyc.mn
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vlee.amclubs.nyc.mn
+    path: /?ed=2560
+- name: "\U0001F1FA\U0001F1F8 US 721"
+  network: ws
+  port: 2087
+  server: 104.25.254.4
+  servername: vlee.amclubs.nyc.mn
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vlee.amclubs.nyc.mn
+    path: /?ed=2560
+- name: "\U0001F1FA\U0001F1F8 US 722"
+  network: grpc
+  port: 19356
+  server: 162.19.212.19
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: df681322-6cfb-4ed1-9571-de0e88d7c888
