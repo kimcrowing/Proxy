@@ -3487,16 +3487,29 @@ proxies:
     headers:
       Host: 2E21CEDc-fA8B-4020-8Ce0-390e7287D276.890603.Pp.uA
     path: /h7Rcu0y30lhjdVjJ3gc4aj
-- alterId: 0
-  cipher: auto
-  name: "\U0001F1FA\U0001F1F8 US 229"
+- name: "\U0001F1FA\U0001F1F8 US 229"
   network: ws
-  port: 50279
-  server: 38.150.34.202
-  tls: true
-  type: vmess
-  uuid: 92362b77-a3bb-4cdd-a466-ca11e0819c08
+  password: 15b24b56-d667-4fa8-b548-f3dc942fb461
+  port: 443
+  server: 104.21.34.159
+  sni: 2qwert.2031.pp.ua
+  type: trojan
   ws-opts:
     headers:
-      Host: www.a.wdhbvua.pics
-    path: /
+      Host: 2qwert.2031.pp.ua
+    path: /4p35eUnmGxQ8YJFJxz
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 230"
+  network: ws
+  port: 2086
+  server: 104.18.114.1
+  servername: m116.164748.xyz
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+  ws-opts:
+    headers:
+      Host: m116.164748.xyz
+    path: github.com/Alvin9999
