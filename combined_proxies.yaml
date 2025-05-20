@@ -2116,7 +2116,55 @@ proxies:
   tls: false
   type: http
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 149"
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 149"
+  network: ws
+  port: 80
+  server: www.hdmoli.com
+  skip-cert-verify: true
+  tfo: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
+  ws-opts:
+    headers:
+      Host: fr.freeyyds.dpdns.org
+    path: /rongseven?ed=2048
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 150"
+  network: ws
+  port: 80
+  server: www.xinjuc.com
+  skip-cert-verify: true
+  tfo: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
+  ws-opts:
+    headers:
+      Host: hk.freeyyds.dpdns.org
+    path: /rongseven?ed=2048
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 151"
+  network: ws
+  port: 80
+  server: www.wn03.cc
+  skip-cert-verify: true
+  tfo: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
+  ws-opts:
+    headers:
+      Host: us.freeyyds.dpdns.org
+    path: /rongseven?ed=2048
+- name: "\U0001F1FA\U0001F1F8 US 152"
   network: ws
   port: 80
   server: www.clickbank.com
@@ -2156,7 +2204,7 @@ proxies:
     ip-version: dual
     max-early-data: 2050
     path: /hajmi
-- name: "\U0001F1FA\U0001F1F8 US 150"
+- name: "\U0001F1FA\U0001F1F8 US 153"
   network: ws
   port: 80
   server: www.drctcldfa.com
@@ -2176,54 +2224,6 @@ proxies:
     ip-version: dual
     max-early-data: 2050
     path: /hajmi
-- alterId: 0
-  cipher: auto
-  name: "\U0001F1FA\U0001F1F8 US 151"
-  network: ws
-  port: 80
-  server: www.hdmoli.com
-  skip-cert-verify: true
-  tfo: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
-  ws-opts:
-    headers:
-      Host: fr.freeyyds.dpdns.org
-    path: /rongseven?ed=2048
-- alterId: 0
-  cipher: auto
-  name: "\U0001F1FA\U0001F1F8 US 152"
-  network: ws
-  port: 80
-  server: www.xinjuc.com
-  skip-cert-verify: true
-  tfo: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
-  ws-opts:
-    headers:
-      Host: hk.freeyyds.dpdns.org
-    path: /rongseven?ed=2048
-- alterId: 0
-  cipher: auto
-  name: "\U0001F1FA\U0001F1F8 US 153"
-  network: ws
-  port: 80
-  server: www.wn03.cc
-  skip-cert-verify: true
-  tfo: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
-  ws-opts:
-    headers:
-      Host: us.freeyyds.dpdns.org
-    path: /rongseven?ed=2048
 - name: "\U0001F1FA\U0001F1F8 US 154"
   network: ws
   port: 80
@@ -3680,3 +3680,14 @@ proxies:
     headers:
       Host: m6278.164748.xyz
     path: github.com/Alvin9999
+- name: "\U0001F1E9\U0001F1EA DE 012"
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 185.16.110.113
+  sni: icecream.955850.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /
