@@ -3090,20 +3090,6 @@ proxies:
     headers:
       Host: us03s.5d8ecf82.cfd
     path: /
-- delay: 2146
-  name: "\U0001F1EC\U0001F1F7 GR 001"
-  network: ws
-  port: 443
-  server: 31.22.116.38
-  servername: usd.kobtty.me
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7671069f-ce73-4977-be03-414e79f1d7cd
-  ws-opts:
-    headers:
-      Host: usd.kobtty.me
-    path: /bing
 - alterId: 0
   cipher: auto
   name: "\U0001F1FA\U0001F1F8 US 208"
@@ -3158,24 +3144,8 @@ proxies:
     path: /XESALISTHEBEST?ed=2048
 - alterId: 0
   cipher: auto
-  name: "\U0001F1FA\U0001F1F8 US 212"
-  network: ws
-  port: 42360
-  server: 0000000000000000000000000080.cgroup-node-for-bigairport.sbs
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-opts:
-    headers:
-      Host: 0000000000000000000000000080.cgroup-node-for-bigairport.sbs
-    path: /
-- alterId: 0
-  cipher: auto
   delay: 1166
-  name: "\U0001F1FA\U0001F1F8 US 213"
+  name: "\U0001F1FA\U0001F1F8 US 212"
   network: ws
   port: 2052
   server: s1.db-link01.top
@@ -3189,7 +3159,7 @@ proxies:
     path: /dabai.in172.67.2.142
 - client-fingerprint: chrome
   delay: 2653
-  name: "\U0001F1FA\U0001F1F8 US 214"
+  name: "\U0001F1FA\U0001F1F8 US 213"
   network: ws
   port: 2083
   server: www.parsvds.com
@@ -3205,7 +3175,7 @@ proxies:
   cipher: auto
   fingerprint: ''
   ip-version: dual
-  name: "\U0001F1FA\U0001F1F8 US 215"
+  name: "\U0001F1FA\U0001F1F8 US 214"
   network: ws
   port: 2052
   server: 104.21.44.185
@@ -3219,7 +3189,7 @@ proxies:
     path: /mehdi
 - alterId: 0
   cipher: auto
-  name: "\U0001F1FA\U0001F1F8 US 216"
+  name: "\U0001F1FA\U0001F1F8 US 215"
   network: ws
   port: 8080
   server: s3.cn-db.top
@@ -3233,21 +3203,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: "\U0001F1FA\U0001F1F8 US 217"
-  network: ws
-  port: 8443
-  server: 156.229.48.237
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
-  ws-opts:
-    headers:
-      Host: lax1.ibgfw.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: "\U0001F1E8\U0001F1E6 CA 001"
+  name: "\U0001F1FA\U0001F1F8 US 216"
   network: ws
   port: 8880
   server: s4.db-link02.top
@@ -3261,7 +3217,7 @@ proxies:
     headers:
       Host: 100-128-12-180.s4.db-link02.top
     path: /dabai.in104.25.239.131
-- name: "\U0001F1FA\U0001F1F8 US 218"
+- name: "\U0001F1FA\U0001F1F8 US 217"
   network: ws
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 8443
@@ -3277,7 +3233,7 @@ proxies:
     path: /tro8sFW1S91B6sZrM1?ed=2560
 - alterId: 0
   cipher: auto
-  name: "\U0001F1FA\U0001F1F8 US 219"
+  name: "\U0001F1FA\U0001F1F8 US 218"
   network: ws
   port: 8080
   server: 104.16.155.10
@@ -3291,7 +3247,7 @@ proxies:
     headers:
       Host: 100-149-191-2.s5.db-link02.top
     path: /dabai.in104.20.16.209
-- name: "\U0001F1FA\U0001F1F8 US 220"
+- name: "\U0001F1FA\U0001F1F8 US 219"
   network: ws
   password: T%40_WvT8Ho%40LW%25w_%2C
   port: 2053
@@ -3307,7 +3263,7 @@ proxies:
     path: /trGPZDfetEwuO25SAs?ed=2560
 - alterId: 0
   cipher: auto
-  name: "\U0001F1E8\U0001F1E6 CA 002"
+  name: "\U0001F1FA\U0001F1F8 US 220"
   network: ws
   port: 2086
   server: s1.cn-db.top
@@ -3351,7 +3307,7 @@ proxies:
       Host: lax1.ibgfw.top
     path: /xrenvws
 - delay: 1303
-  name: "\U0001F1E8\U0001F1E6 CA 003"
+  name: "\U0001F1E8\U0001F1E6 CA 001"
   network: ws
   port: 443
   server: 140.238.158.238
@@ -3458,20 +3414,6 @@ proxies:
   cipher: auto
   name: "\U0001F1FA\U0001F1F8 US 225"
   network: ws
-  port: 23451
-  server: phx-plus-1ddns.faforex.eu.org
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f845faba-ef07-4ef0-b055-866bbb81143c
-  ws-opts:
-    headers:
-      Host: phx-plus-1ddns.faforex.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: "\U0001F1FA\U0001F1F8 US 226"
-  network: ws
   port: 2096
   server: de01.sh-cloudflare.sbs
   servername: de01.sh-cloudflare.sbs
@@ -3499,7 +3441,7 @@ proxies:
     path: /itdog?ed=2560
 - alterId: 0
   cipher: auto
-  name: "\U0001F1FA\U0001F1F8 US 227"
+  name: "\U0001F1FA\U0001F1F8 US 226"
   network: ws
   port: 443
   server: us148.vp1000.net
@@ -3513,7 +3455,7 @@ proxies:
     path: /cp100vp800kkkdsnx
 - alterId: 0
   cipher: auto
-  name: "\U0001F1FA\U0001F1F8 US 228"
+  name: "\U0001F1FA\U0001F1F8 US 227"
   network: ws
   port: 8443
   server: us01.sh-cloudflare.sbs
@@ -3528,7 +3470,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: "\U0001F1FA\U0001F1F8 US 229"
+  name: "\U0001F1FA\U0001F1F8 US 228"
   network: ws
   port: 443
   server: cdnjs.com
@@ -3541,7 +3483,7 @@ proxies:
     path: /us.kkp.me.eu.org/aa
 - alterId: 0
   cipher: auto
-  name: "\U0001F1FA\U0001F1F8 US 230"
+  name: "\U0001F1FA\U0001F1F8 US 229"
   network: ws
   port: 443
   server: time.is
@@ -3554,7 +3496,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: "\U0001F1FA\U0001F1F8 US 231"
+  name: "\U0001F1FA\U0001F1F8 US 230"
   network: ws
   port: 443
   server: 2e21cedc-fa8b-4020-8ce0-390e7287d276.890603.pp.ua
@@ -3565,7 +3507,7 @@ proxies:
     headers:
       Host: 2E21CEDc-fA8B-4020-8Ce0-390e7287D276.890603.Pp.uA
     path: /h7Rcu0y30lhjdVjJ3gc4aj
-- name: "\U0001F1FA\U0001F1F8 US 232"
+- name: "\U0001F1FA\U0001F1F8 US 231"
   network: ws
   password: 15b24b56-d667-4fa8-b548-f3dc942fb461
   port: 443
@@ -3578,7 +3520,7 @@ proxies:
     path: /4p35eUnmGxQ8YJFJxz
 - alterId: 0
   cipher: auto
-  name: "\U0001F1FA\U0001F1F8 US 233"
+  name: "\U0001F1FA\U0001F1F8 US 232"
   network: ws
   port: 2086
   server: 104.18.114.1
@@ -3593,7 +3535,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: "\U0001F1FA\U0001F1F8 US 234"
+  name: "\U0001F1FA\U0001F1F8 US 233"
   network: ws
   port: 2086
   server: 104.18.114.2
@@ -3608,7 +3550,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: "\U0001F1FA\U0001F1F8 US 235"
+  name: "\U0001F1FA\U0001F1F8 US 234"
   network: ws
   port: 2086
   server: 104.21.238.3
@@ -3623,7 +3565,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: "\U0001F1FA\U0001F1F8 US 236"
+  name: "\U0001F1FA\U0001F1F8 US 235"
   network: ws
   port: 2086
   server: 104.21.238.4
@@ -3638,7 +3580,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: "\U0001F1FA\U0001F1F8 US 237"
+  name: "\U0001F1FA\U0001F1F8 US 236"
   network: ws
   port: 2086
   server: 104.21.238.5
@@ -3653,7 +3595,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: "\U0001F1FA\U0001F1F8 US 238"
+  name: "\U0001F1FA\U0001F1F8 US 237"
   network: ws
   port: 2086
   server: 104.21.238.6
@@ -3668,7 +3610,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: "\U0001F1FA\U0001F1F8 US 239"
+  name: "\U0001F1FA\U0001F1F8 US 238"
   network: ws
   port: 2086
   server: 104.21.238.7
@@ -3683,7 +3625,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: "\U0001F1FA\U0001F1F8 US 240"
+  name: "\U0001F1FA\U0001F1F8 US 239"
   network: ws
   port: 2086
   server: 104.21.238.8
@@ -3718,7 +3660,7 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=194.76.18.129:443
-- name: "\U0001F1FA\U0001F1F8 US 241"
+- name: "\U0001F1FA\U0001F1F8 US 240"
   network: ws
   password: c8eac4b7-95ba-4ce0-920d-c3279eb3b391
   port: 443
@@ -3731,7 +3673,7 @@ proxies:
     path: /ptGwaGzcA4KNAXX
 - alterId: 0
   cipher: auto
-  name: "\U0001F1FA\U0001F1F8 US 242"
+  name: "\U0001F1FA\U0001F1F8 US 241"
   network: ws
   port: 2082
   server: cs.flha.ru
@@ -3742,7 +3684,7 @@ proxies:
     headers:
       Host: cs.flha.ru
     path: /
-- name: "\U0001F1FA\U0001F1F8 US 243"
+- name: "\U0001F1FA\U0001F1F8 US 242"
   network: ws
   password: 5453ae26-250d-4e79-b4ec-016baf806865
   port: 443
@@ -3755,7 +3697,7 @@ proxies:
     path: /OYzPAeaZdXUq2d6J3gc4aj
 - alterId: 0
   cipher: auto
-  name: "\U0001F1FA\U0001F1F8 US 244"
+  name: "\U0001F1FA\U0001F1F8 US 243"
   network: ws
   port: 2086
   server: 104.21.238.9
@@ -3770,7 +3712,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: "\U0001F1FA\U0001F1F8 US 245"
+  name: "\U0001F1FA\U0001F1F8 US 244"
   network: ws
   port: 2086
   server: 104.21.238.10
@@ -3785,7 +3727,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: "\U0001F1FA\U0001F1F8 US 246"
+  name: "\U0001F1FA\U0001F1F8 US 245"
   network: ws
   port: 443
   server: auth0.openai.com
@@ -3809,3 +3751,63 @@ proxies:
   tls: true
   type: vmess
   uuid: ceaaf653-9874-58c6-b100-092c01a1f73d
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 246"
+  network: ws
+  port: 80
+  server: Xcvfgt5.222560.xyz
+  tls: false
+  type: vmess
+  uuid: 19a78eeb-d83a-4364-b095-b7dd93436320
+  ws-opts:
+    headers:
+      Host: Xcvfgt5.222560.xyz
+    path: /7LBPethgWxDoVuzO0WLijID
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 247"
+  network: ws
+  port: 80
+  server: xxxsde4.freevpnatm2025.dpdns.org
+  tls: false
+  type: vmess
+  uuid: 90f357dd-79ac-47c6-b0b8-958e2d19de07
+  ws-opts:
+    headers:
+      Host: xxxsde4.freevpnatm2025.dpdns.org
+    path: /10W6SJaK0F0oVXeNU6S2RVRP
+- name: "\U0001F1FA\U0001F1F8 US 248"
+  network: tcp
+  password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
+  port: 443
+  server: usla.mjt000.com
+  skip-cert-verify: false
+  sni: usla.mjt000.com
+  type: trojan
+- name: "\U0001F1EB\U0001F1F7 FR 013"
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 141.11.203.191
+  skip-cert-verify: false
+  sni: epmw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epmw.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: "\U0001F1FA\U0001F1F8 US 249"
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 108.165.152.58
+  skip-cert-verify: false
+  sni: epmw.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epmw.ambercc.filegear-sg.me
+    path: /?ed=2560
