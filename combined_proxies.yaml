@@ -3316,21 +3316,6 @@ proxies:
     path: /?ed=2560
 - alterId: 0
   cipher: auto
-  name: "\U0001F1F8\U0001F1EC SG 018"
-  network: ws
-  port: 33443
-  server: tls.05.node-for-bigairport.win
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: b71f9e84-86c9-49c4-b5f4-b33b35ee7410
-  ws-opts:
-    headers:
-      Host: tls.05.node-for-bigairport.win
-    path: /
-- alterId: 0
-  cipher: auto
   name: "\U0001F1FA\U0001F1F8 US 220"
   network: ws
   port: 443
@@ -3487,4 +3472,30 @@ proxies:
   ws-opts:
     headers:
       Host: m116.164748.xyz
+    path: github.com/Alvin9999
+- name: "\U0001F1FA\U0001F1F8 US 231"
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2096
+  server: 104.17.128.1
+  sni: vle.amclubdns.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: vle.amclubdns.dpdns.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 232"
+  network: ws
+  port: 2086
+  server: 104.21.238.7
+  servername: m8217.164748.xyz
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+  ws-opts:
+    headers:
+      Host: m8217.164748.xyz
     path: github.com/Alvin9999
