@@ -2268,6 +2268,21 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 159"
+  network: ws
+  port: 16617
+  server: planb.mojcn.com
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 0c0fdaa9-da2e-42c0-b38e-25d54ec1e6d4
+  ws-opts:
+    headers:
+      Host: b37048544d083a503188d38c53d6e4f2.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
   name: "\U0001F1EC\U0001F1E7 GB 001"
   network: ws
   port: 16618
@@ -2281,7 +2296,7 @@ proxies:
     headers:
       Host: e5406c2f4f42756d4a4089ffcd58947b.mobgslb.tbcache.com
     path: /
-- name: "\U0001F1FA\U0001F1F8 US 159"
+- name: "\U0001F1FA\U0001F1F8 US 160"
   network: ws
   password: 7248e825-887c-48b9-83bc-c26bc6392bf8
   port: 443
@@ -2293,19 +2308,6 @@ proxies:
     headers:
       Host: xXcdvFgt.191268.XYz
     path: /ctdmgeIg3NII3ibrzzKXJGy3S1
-- name: "\U0001F1FA\U0001F1F8 US 160"
-  network: ws
-  password: Aimer
-  port: 8080
-  server: 34.85.77.183
-  skip-cert-verify: true
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560
 - name: "\U0001F1EF\U0001F1F5 JP 028"
   network: ws
   password: Aimer
@@ -2813,678 +2815,609 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560
-- alterId: 0
-  cipher: auto
+- name: "\U0001F1EE\U0001F1F3 IN 003"
+  network: tcp
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 103.252.116.138
+  skip-cert-verify: false
+  sni: hk.freeguard.org
+  type: trojan
+- client-fingerprint: chrome
+  name: "\U0001F1E9\U0001F1EA DE 012"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 5.10.214.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1E9\U0001F1EA DE 013"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 5.10.215.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1E9\U0001F1EA DE 014"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 5.175.141.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1F3\U0001F1F1 NL 005"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 5.182.34.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1F7\U0001F1FA RU 014"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 5.182.84.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1F7\U0001F1FA RU 015"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 5.182.85.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1EE\U0001F1F3 IN 004"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 14.102.228.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1EE\U0001F1F3 IN 005"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 14.102.229.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 002"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 25.25.25.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 003"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 25.26.27.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
   name: "\U0001F1FA\U0001F1F8 US 187"
   network: ws
-  port: 16617
-  server: planb.mojcn.com
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 0c0fdaa9-da2e-42c0-b38e-25d54ec1e6d4
+  password: ttfang
+  port: 2096
+  server: 31.12.75.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
   ws-opts:
     headers:
-      Host: b37048544d083a503188d38c53d6e4f2.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1E9\U0001F1EA DE 015"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 31.185.108.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 004"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.8.211.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 005"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.12.30.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 006"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.12.31.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
   name: "\U0001F1FA\U0001F1F8 US 188"
   network: ws
-  port: 80
-  server: www.hdmoli.com
+  password: ttfang
+  port: 2096
+  server: 45.40.144.216
   skip-cert-verify: true
-  tfo: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
+  sni: ttfang.fange.me
+  type: trojan
   ws-opts:
     headers:
-      Host: fr.freeyyds.dpdns.org
-    path: /rongseven?ed=2048
-- alterId: 0
-  cipher: auto
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
   name: "\U0001F1FA\U0001F1F8 US 189"
   network: ws
-  port: 80
-  server: www.xinjuc.com
+  password: ttfang
+  port: 2096
+  server: 45.40.145.216
   skip-cert-verify: true
-  tfo: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
+  sni: ttfang.fange.me
+  type: trojan
   ws-opts:
     headers:
-      Host: hk.freeyyds.dpdns.org
-    path: /rongseven?ed=2048
-- alterId: 0
-  cipher: auto
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
   name: "\U0001F1FA\U0001F1F8 US 190"
   network: ws
-  port: 80
-  server: baota.me
+  password: ttfang
+  port: 2096
+  server: 45.40.146.216
   skip-cert-verify: true
-  tfo: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
+  sni: ttfang.fange.me
+  type: trojan
   ws-opts:
     headers:
-      Host: us.freeyyds.dpdns.org
-    path: /rongseven?ed=2048
-- alterId: 0
-  cipher: auto
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
   name: "\U0001F1FA\U0001F1F8 US 191"
   network: ws
-  port: 80
-  server: cloudflare-ip.mofashi.ltd
+  password: ttfang
+  port: 2096
+  server: 45.40.147.216
   skip-cert-verify: true
-  tfo: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
+  sni: ttfang.fange.me
+  type: trojan
   ws-opts:
     headers:
-      Host: us.freeyyds.dpdns.org
-    path: /rongseven?ed=2048
-- alterId: 0
-  cipher: auto
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
   name: "\U0001F1FA\U0001F1F8 US 192"
   network: ws
-  port: 80
-  server: www.wn03.cc
+  password: ttfang
+  port: 2096
+  server: 45.40.148.216
   skip-cert-verify: true
-  tfo: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
+  sni: ttfang.fange.me
+  type: trojan
   ws-opts:
     headers:
-      Host: us.freeyyds.dpdns.org
-    path: /rongseven?ed=2048
-- name: "\U0001F1FA\U0001F1F8 US 193"
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 US 193"
   network: ws
-  port: 80
-  server: www.clickbank.com
-  smux:
-    enabled: false
-    max_streams: 8
-    protocol: h2mux
-  type: vless
-  udp: true
-  uuid: 5aebf7d1-fb08-4200-9ab3-9ae3c01ab356
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: dbe661d5a761ff6c.s-5HU09JDF-97SHS.WWWrubika.irto.xn--ls8haaaaaaaaaaaaaaaaaa.la.which.xn--ls8haaaaaaaaaaaaaaaaaa.xn-ls8faaaaaaaaaa.speedtest.net.google.com.eu.ir.nl.aparat.com.komak.IR.Hj-De.85858569.xYz.
-      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/124.0.0.0 Safari/537.36
-    ip-version: dual
-    max-early-data: 2050
-    path: /hajmi
-- name: "\U0001F1F3\U0001F1F1 NL 005"
-  network: ws
-  port: 80
-  server: www.eshipz.com
-  smux:
-    enabled: false
-    max_streams: 8
-    protocol: h2mux
-  type: vless
-  udp: true
-  uuid: 5aebf7d1-fb08-4200-9ab3-9ae3c01ab356
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: dbe661d5a761ff6c.s-5HU09JDF-97SHS.WWWrubika.irto.xn--ls8haaaaaaaaaaaaaaaaaa.la.which.xn--ls8haaaaaaaaaaaaaaaaaa.xn-ls8faaaaaaaaaa.speedtest.net.google.com.eu.ir.nl.aparat.com.komak.IR.Hj-En.85858569.xYz.
-      User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/117.0.0.0 Mobile Safari/537.36
-    ip-version: dual
-    max-early-data: 2050
-    path: /hajmi
-- name: "\U0001F1FA\U0001F1F8 US 194"
-  network: ws
-  port: 80
-  server: www.drctcldfa.com
-  smux:
-    enabled: false
-    max_streams: 8
-    protocol: h2mux
-  type: vless
-  udp: true
-  uuid: 5aebf7d1-fb08-4200-9ab3-9ae3c01ab356
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: dbe661d5a761ff6c.s-5HU09JDF-97SHS.WWWrubika.irto.xn--ls8haaaaaaaaaaaaaaaaaa.la.which.xn--ls8haaaaaaaaaaaaaaaaaa.xn-ls8faaaaaaaaaa.speedtest.net.google.com.eu.ir.nl.aparat.com.komak.IR.Hj-Us.85858569.xYz.
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/125.0.0.0 Safari/537.36
-    ip-version: dual
-    max-early-data: 2050
-    path: /hajmi
-- name: "\U0001F1FA\U0001F1F8 US 195"
-  network: ws
-  port: 80
-  server: 104.24.37.192
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 9a2680ff-c5d5-410a-9108-8d6b10e4ea1e
-  ws-opts:
-    headers:
-      Host: ppal03.dolobe7975.workers.dev
-    path: /?ed=2560
-- name: "\U0001F1FA\U0001F1F8 US 196"
-  network: ws
-  port: 2052
-  server: 172.67.135.195
+  password: ttfang
+  port: 2096
+  server: 45.40.149.216
   skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: 0d710c53-876d-401f-97f0-6bd1a8db941a
+  sni: ttfang.fange.me
+  type: trojan
   ws-opts:
     headers:
-      Host: sWEeT-DIsK-b69d.TUdTudtrUHtRU.wOrkERS.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/51.0.2704.63 Safari/537.36
-    path: /J61hhknxUXEwJZLq/MTU5LjY5LjE1My4xMTQ=?ed=2560
-  xudp: true
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 US 194"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.40.150.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 US 195"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.40.151.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 US 196"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.40.152.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
 - client-fingerprint: chrome
   name: "\U0001F1FA\U0001F1F8 US 197"
   network: ws
-  port: 80
-  server: 104.26.15.85
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  password: ttfang
+  port: 2096
+  server: 45.40.153.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
   ws-opts:
     headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /?ed=2560
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
 - client-fingerprint: chrome
   name: "\U0001F1FA\U0001F1F8 US 198"
   network: ws
-  port: 80
-  server: 104.26.14.85
-  skip-cert-verify: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  password: ttfang
+  port: 2096
+  server: 45.40.154.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
   ws-opts:
     headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /?ed=2560
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
 - client-fingerprint: chrome
-  delay: 2905
   name: "\U0001F1FA\U0001F1F8 US 199"
   network: ws
-  port: 2052
-  server: 104.26.12.101
-  servername: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
+  password: ttfang
+  port: 2096
+  server: 45.40.155.216
   skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: dfc1a9ab-6241-4b73-92f7-b299fc6b7751
+  sni: ttfang.fange.me
+  type: trojan
   ws-opts:
     headers:
-      Host: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
-    path: /?ed=1080/telegram
-- name: "\U0001F1FA\U0001F1F8 US 200"
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1EB\U0001F1F7 FR 013"
   network: ws
-  port: 80
-  server: 66.235.200.191
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  password: ttfang
+  port: 2096
+  server: 45.80.108.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
   ws-opts:
     headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
-- name: "\U0001F1F7\U0001F1FA RU 014"
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1EB\U0001F1F7 FR 014"
   network: ws
-  port: 80
-  server: 185.174.138.194
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  password: ttfang
+  port: 2096
+  server: 45.80.110.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
   ws-opts:
     headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
-- name: "\U0001F1FA\U0001F1F8 US 201"
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1EB\U0001F1F7 FR 015"
   network: ws
-  port: 80
-  server: 66.235.200.58
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  password: ttfang
+  port: 2096
+  server: 45.80.111.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
   ws-opts:
     headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 007"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.85.118.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 008"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.85.119.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
 - client-fingerprint: chrome
   name: "\U0001F1F3\U0001F1F1 NL 006"
   network: ws
-  port: 80
-  server: 45.149.12.128
-  servername: pormang.webhost99.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  password: ttfang
+  port: 2096
+  server: 45.128.76.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
   ws-opts:
     headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
-- name: "\U0001F1E7\U0001F1F7 BR 004"
-  network: ws
-  port: 8880
-  server: 188.114.97.1
-  servername: falcunargo-channel.be3374a836.workers.Dev
-  tls: false
-  type: vless
-  uuid: 91d9b8d8-2aab-4e1a-9573-0d59e9cd7f8e
-  ws-opts:
-    headers:
-      Host: falcunargo-channel.be3374a836.workers.Dev
-    path: /?ed=2048
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
 - client-fingerprint: chrome
-  name: "\U0001F1E7\U0001F1F7 BR 005"
+  name: "\U0001F1F3\U0001F1F1 NL 007"
   network: ws
-  port: 80
-  server: 188.114.96.223
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: eb201923-0e39-4425-bd0f-6244cd24ef2a
+  password: ttfang
+  port: 2096
+  server: 45.130.125.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
   ws-opts:
     headers:
-      Host: zaq11000d.b835a8094d.workers.dev
-    path: /?ed=2560
-- name: "\U0001F1FA\U0001F1F8 US 202"
-  network: ws
-  port: 80
-  server: 104.24.147.64
-  servername: ppal03-ppal03.letiwe3303.workers.dev
-  tls: false
-  type: vless
-  uuid: 03e4d6fe-f461-499f-b9c6-35c60f192e1a
-  ws-opts:
-    headers:
-      Host: ppal03-ppal03.letiwe3303.workers.dev
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 US 203"
-  network: ws
-  port: 80
-  server: 104.24.248.204
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 2370f4d8-6694-4e51-8c72-b2782ae96a59
-  ws-opts:
-    headers:
-      Host: withered-wave-ee0b-ppal03.faxip46069.workers.dev
-    path: /?ed=2560
-- name: "\U0001F1FA\U0001F1F8 US 204"
-  network: ws
-  port: 80
-  server: 104.16.178.238
-  servername: little-bird-a235-ppal03.fosawaw121.workers.dev
-  tls: false
-  type: vless
-  uuid: d4eddaf9-a660-4905-b835-cad98677b380
-  ws-opts:
-    headers:
-      Host: little-bird-a235-ppal03.fosawaw121.workers.dev
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 US 205"
-  network: ws
-  port: 80
-  server: 104.24.186.156
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 6ff4726f-3650-4803-95eb-50b240f6ac75
-  ws-opts:
-    headers:
-      Host: red-math-7092-ppal03.mewoco2522.workers.dev
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 US 206"
-  network: ws
-  port: 80
-  server: 104.17.148.22
-  servername: redw.pooriam.ir
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /LwW5jwrnymnOdqki?ed=2560
-- client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 US 207"
-  network: ws
-  port: 80
-  server: 104.16.1.47
-  servername: flat-bread-ddb6-ppal03.joriy39169.workers.dev
-  tls: false
-  type: vless
-  uuid: b550a101-63fe-4862-bfd3-8b87bb4168dd
-  ws-opts:
-    headers:
-      Host: flat-bread-ddb6-ppal03.joriy39169.workers.dev
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 US 208"
-  network: ws
-  port: 80
-  server: 172.67.204.84
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /t.mevpnAndroid2/?ed=2560
-- name: "\U0001F1F3\U0001F1F1 NL 007"
-  network: ws
-  port: 80
-  server: 45.149.12.232
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
-- name: "\U0001F1FA\U0001F1F8 US 209"
-  network: ws
-  port: 80
-  server: 66.235.200.149
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
-- name: "\U0001F1FA\U0001F1F8 US 210"
-  network: ws
-  port: 80
-  server: 66.235.200.30
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
 - client-fingerprint: chrome
   name: "\U0001F1F3\U0001F1F1 NL 008"
   network: ws
-  port: 80
-  server: 45.149.12.206
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+  password: ttfang
+  port: 2096
+  server: 45.131.4.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
   ws-opts:
     headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
-- name: "\U0001F1FA\U0001F1F8 US 211"
-  network: ws
-  port: 80
-  server: 104.26.12.31
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /
-- name: "\U0001F1FA\U0001F1F8 US 212"
-  network: ws
-  port: 80
-  server: 104.27.88.150
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
-- name: "\U0001F1FA\U0001F1F8 US 213"
-  network: ws
-  port: 80
-  server: 172.67.75.172
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /
-- name: "\U0001F1FA\U0001F1F8 US 214"
-  network: ws
-  port: 80
-  server: 104.16.171.121
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: a3875c94-e968-404c-b62d-5a292d20e6d8
-  ws-opts:
-    headers:
-      Host: polished-limit-deb9-ppal03.latopi8673.workers.dev
-    path: /?ed=2560
-- name: "\U0001F1FA\U0001F1F8 US 215"
-  network: ws
-  port: 80
-  server: 66.235.200.5
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
-  ws-opts:
-    headers:
-      Host: pormang.webhost99.workers.dev
-    path: /
-- name: "\U0001F1FA\U0001F1F8 US 216"
-  network: ws
-  port: 80
-  server: 104.16.76.55
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 5d8bc42a-d345-4bd3-a844-4b90afc44670
-  ws-opts:
-    headers:
-      Host: patient-shadow-baf1-ppal03.hohel98085.workers.dev
-    path: /?ed=2560
-- name: "\U0001F1F3\U0001F1F1 NL 009"
-  network: ws
-  port: 80
-  server: 45.131.5.111
-  servername: feng4.l1ut8bi9.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: d6ff33a6-03bf-4338-8a63-62ab284a9466
-  ws-opts:
-    headers:
-      Host: feng4.l1ut8bi9.workers.dev
-    path: /Telegram
-- name: "\U0001F1FA\U0001F1F8 US 217"
-  network: ws
-  port: 80
-  server: 104.24.9.204
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: ca68a029-971c-4ea4-8c1d-411cb7adc474
-  ws-opts:
-    headers:
-      Host: patient-sunset-f000-ppal03.cijej53213.workers.dev
-    path: /?ed=2560
-- name: "\U0001F1FA\U0001F1F8 US 218"
-  network: ws
-  port: 80
-  server: 104.16.188.41
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: proud-queen-55500071.cexonoc962.workers.dev
-    path: /?ed=2560
-- name: "\U0001F1FA\U0001F1F8 US 219"
-  network: ws
-  port: 80
-  server: 104.21.30.29
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.mifeng.us.kg
-    path: /telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
 - client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 US 220"
+  name: "\U0001F1F3\U0001F1F1 NL 009"
   network: ws
-  port: 80
-  server: 104.21.56.44
-  servername: '@V2ray_6_@V2ray_6_@40V2ray_6@V2ray_6_@V2ray_6_@40V2ray_6@40V2ray_6_@40V2ray_6_@40V2ray_6'
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  password: ttfang
+  port: 2096
+  server: 45.131.5.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
   ws-opts:
     headers:
-      Host: redw.pooriam.ir
-    path: /
-- name: "\U0001F1FA\U0001F1F8 US 221"
-  network: ws
-  port: 80
-  server: 172.67.168.60
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 5335d16e-7e42-4c9b-93a3-9e83bfd3073d
-  ws-opts:
-    headers:
-      Host: workerr.johnstoner.workers.dev
-    path: /?ed=2048
-- name: "\U0001F1FA\U0001F1F8 US 222"
-  network: ws
-  port: 8080
-  server: 104.26.14.185
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: a.xn--i-sx6a60i.us.kg.
-    path: /
-- name: "\U0001F1FA\U0001F1F8 US 223"
-  network: ws
-  port: 8880
-  server: 66.235.200.94
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 5faa94c6-ea27-4ea0-9e39-2de3d6ea9be1
-  ws-opts:
-    headers:
-      Host: channel-falcunargo.efa180b5d7.workers.Dev
-    path: "/\u2726\u2770+\U0001D5DD\U0001D5FC\U0001D5F6\U0001D5FB+\u27AA+"
-- name: "\U0001F1FA\U0001F1F8 US 224"
-  network: ws
-  port: 80
-  server: 104.21.24.112
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 65b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: bLue-sNoW-a243.GeleNE5962.wOrKeRS.dEV
-    path: /Fvy0Y7NJ7uucUDha?ed=2560
-- name: "\U0001F1FA\U0001F1F8 US 225"
-  network: ws
-  port: 80
-  server: 172.67.189.174
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 19b3cbba-e6ac-485a-9481-926a0415eab2
-  ws-opts:
-    headers:
-      Host: sHrill-tErm-639b.TageLIT414.workeRs.dEv
-    path: /
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
 - client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 US 226"
+  name: "\U0001F1F3\U0001F1F1 NL 010"
   network: ws
-  port: 8080
-  server: 104.18.56.155
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 9f0eae34-97c1-4c07-8a55-438379981334
+  password: ttfang
+  port: 2096
+  server: 45.131.6.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
   ws-opts:
     headers:
-      Host: snowy-bush-4df8-ppal03.toxebex651.workers.dev
-    path: /
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
 - client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 US 227"
+  name: "\U0001F1F3\U0001F1F1 NL 011"
   network: ws
-  port: 80
-  server: 172.64.78.198
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 2370f4d8-6694-4e51-8c72-b2782ae96a59
+  password: ttfang
+  port: 2096
+  server: 45.131.7.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
   ws-opts:
     headers:
-      Host: withered-wave-ee0b-ppal03.faxip46069.workers.dev
-    path: /?ed=2560
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
 - client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 US 228"
+  name: "\U0001F1F3\U0001F1F1 NL 012"
   network: ws
-  port: 80
-  server: 104.16.182.65
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: f86586c2-3a4c-49c9-83ec-5ae43786d4f7
+  password: ttfang
+  port: 2096
+  server: 45.131.208.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
   ws-opts:
     headers:
-      Host: dark-bonus-0f2f-ppal03.yapeyef825.workers.dev
-    path: /Telegram
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1F3\U0001F1F1 NL 013"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.131.209.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1F3\U0001F1F1 NL 014"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.131.210.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1F3\U0001F1F1 NL 015"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.131.211.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1F3\U0001F1F1 NL 016"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.135.235.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1F3\U0001F1F1 NL 017"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.142.120.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1F3\U0001F1F1 NL 018"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.146.201.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1F3\U0001F1F1 NL 019"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.149.12.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
