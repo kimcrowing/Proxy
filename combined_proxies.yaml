@@ -2266,14 +2266,6 @@ proxies:
     headers:
       Host: m116.164748.xyz
     path: github.com/Alvin9999
-- name: "\U0001F1EE\U0001F1F3 IN 003"
-  network: tcp
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  port: 443
-  server: 103.252.116.138
-  skip-cert-verify: false
-  sni: hk.freeguard.org
-  type: trojan
 - name: "\U0001F1FA\U0001F1F8 US 159"
   network: ws
   password: 7248e825-887c-48b9-83bc-c26bc6392bf8
@@ -2367,8 +2359,8 @@ proxies:
 - name: "\U0001F1F7\U0001F1FA RU 005"
   network: ws
   password: Aimer
-  port: 443
-  server: 5.182.84.244
+  port: 2087
+  server: 5.182.84.9
   skip-cert-verify: true
   sni: epgc.aimercc.dpdns.org
   type: trojan
@@ -2393,8 +2385,8 @@ proxies:
 - name: "\U0001F1F7\U0001F1FA RU 007"
   network: ws
   password: Aimer
-  port: 2087
-  server: 5.182.84.9
+  port: 443
+  server: 5.182.84.244
   skip-cert-verify: true
   sni: epgc.aimercc.dpdns.org
   type: trojan
@@ -2419,6 +2411,19 @@ proxies:
 - name: "\U0001F1F7\U0001F1FA RU 009"
   network: ws
   password: Aimer
+  port: 2083
+  server: 5.182.84.52
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: "\U0001F1F7\U0001F1FA RU 010"
+  network: ws
+  password: Aimer
   port: 2087
   server: 5.182.84.229
   skip-cert-verify: true
@@ -2429,7 +2434,7 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- name: "\U0001F1F7\U0001F1FA RU 010"
+- name: "\U0001F1F7\U0001F1FA RU 011"
   network: ws
   password: Aimer
   port: 443
@@ -2442,24 +2447,11 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- name: "\U0001F1F7\U0001F1FA RU 011"
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 5.182.84.52
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
 - name: "\U0001F1F7\U0001F1FA RU 012"
   network: ws
   password: Aimer
-  port: 2096
-  server: 92.243.74.23
+  port: 2087
+  server: 92.243.75.49
   skip-cert-verify: true
   sni: epgc.aimercc.dpdns.org
   type: trojan
@@ -2471,8 +2463,8 @@ proxies:
 - name: "\U0001F1F7\U0001F1FA RU 013"
   network: ws
   password: Aimer
-  port: 2087
-  server: 92.243.75.49
+  port: 2096
+  server: 92.243.74.23
   skip-cert-verify: true
   sni: epgc.aimercc.dpdns.org
   type: trojan
@@ -2497,19 +2489,6 @@ proxies:
 - name: "\U0001F1FA\U0001F1F8 US 160"
   network: ws
   password: Aimer
-  port: 7000
-  server: 154.17.12.30
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: "\U0001F1FA\U0001F1F8 US 161"
-  network: ws
-  password: Aimer
   port: 8443
   server: 135.84.74.27
   skip-cert-verify: true
@@ -2520,33 +2499,7 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- name: "\U0001F1FA\U0001F1F8 US 162"
-  network: ws
-  password: tg-fq521free
-  port: 443
-  server: 216.24.57.30
-  skip-cert-verify: false
-  sni: torjan.xn--xhq44j.eu.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: torjan.xn--xhq44j.eu.org
-    path: /
-- name: "\U0001F1FA\U0001F1F8 US 163"
-  network: ws
-  password: tg-fq521free
-  port: 443
-  server: 198.62.62.67
-  skip-cert-verify: false
-  sni: torjan.xn--xhq44j.eu.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: torjan.xn--xhq44j.eu.org
-    path: /
-- name: "\U0001F1FA\U0001F1F8 US 164"
+- name: "\U0001F1FA\U0001F1F8 US 161"
   network: ws
   password: Aimer
   port: 2053
@@ -2559,46 +2512,7 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- name: "\U0001F1FA\U0001F1F8 US 165"
-  network: ws
-  password: slch2024
-  port: 8443
-  server: 104.18.3.108
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /
-- name: "\U0001F1FA\U0001F1F8 US 166"
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 199.34.228.164
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: "\U0001F1FA\U0001F1F8 US 167"
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 66.81.247.88
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: "\U0001F1FA\U0001F1F8 US 168"
+- name: "\U0001F1FA\U0001F1F8 US 162"
   network: ws
   password: Aimer
   port: 8443
@@ -2611,11 +2525,11 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- name: "\U0001F1FA\U0001F1F8 US 169"
+- name: "\U0001F1FA\U0001F1F8 US 163"
   network: ws
   password: Aimer
   port: 2083
-  server: 155.46.213.38
+  server: 66.81.247.88
   skip-cert-verify: true
   sni: epgc.aimercc.dpdns.org
   type: trojan
@@ -2624,85 +2538,7 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- name: "\U0001F1FA\U0001F1F8 US 170"
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 192.200.160.35
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: "\U0001F1FA\U0001F1F8 US 171"
-  network: ws
-  password: Aimer
-  port: 2096
-  server: 108.165.152.14
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: "\U0001F1FA\U0001F1F8 US 172"
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 63.141.128.66
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: "\U0001F1FA\U0001F1F8 US 173"
-  network: ws
-  password: Aimer
-  port: 2096
-  server: 108.165.152.55
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: "\U0001F1FA\U0001F1F8 US 174"
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 104.129.166.131
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: "\U0001F1FA\U0001F1F8 US 175"
-  network: ws
-  password: Aimer
-  port: 2096
-  server: 108.165.152.40
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: "\U0001F1FA\U0001F1F8 US 176"
+- name: "\U0001F1FA\U0001F1F8 US 164"
   network: ws
   password: Aimer
   port: 2083
@@ -2715,24 +2551,11 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- name: "\U0001F1FA\U0001F1F8 US 177"
-  network: ws
-  password: Aimer
-  port: 443
-  server: 108.165.152.219
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: "\U0001F1FA\U0001F1F8 US 178"
+- name: "\U0001F1FA\U0001F1F8 US 165"
   network: ws
   password: Aimer
   port: 2083
-  server: 130.250.137.63
+  server: 155.46.213.38
   skip-cert-verify: true
   sni: epgc.aimercc.dpdns.org
   type: trojan
@@ -2741,11 +2564,37 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- name: "\U0001F1FA\U0001F1F8 US 179"
+- name: "\U0001F1FA\U0001F1F8 US 166"
+  network: ws
+  password: tg-fq521free
+  port: 443
+  server: 216.24.57.30
+  skip-cert-verify: false
+  sni: torjan.xn--xhq44j.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: torjan.xn--xhq44j.eu.org
+    path: /
+- name: "\U0001F1FA\U0001F1F8 US 167"
+  network: ws
+  password: slch2024
+  port: 8443
+  server: 104.18.3.108
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /
+- name: "\U0001F1FA\U0001F1F8 US 168"
   network: ws
   password: Aimer
   port: 2087
-  server: 108.165.152.143
+  server: 199.34.228.164
   skip-cert-verify: true
   sni: epgc.aimercc.dpdns.org
   type: trojan
@@ -2754,11 +2603,11 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- name: "\U0001F1FA\U0001F1F8 US 180"
+- name: "\U0001F1FA\U0001F1F8 US 169"
   network: ws
   password: Aimer
   port: 2083
-  server: 198.62.62.61
+  server: 192.200.160.35
   skip-cert-verify: true
   sni: epgc.aimercc.dpdns.org
   type: trojan
@@ -2767,11 +2616,11 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- name: "\U0001F1FA\U0001F1F8 US 181"
+- name: "\U0001F1FA\U0001F1F8 US 170"
   network: ws
   password: Aimer
-  port: 443
-  server: 108.165.152.113
+  port: 2087
+  server: 63.141.128.66
   skip-cert-verify: true
   sni: epgc.aimercc.dpdns.org
   type: trojan
@@ -2780,7 +2629,7 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- name: "\U0001F1FA\U0001F1F8 US 182"
+- name: "\U0001F1FA\U0001F1F8 US 171"
   network: ws
   password: Aimer
   port: 2087
@@ -2793,11 +2642,24 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- name: "\U0001F1FA\U0001F1F8 US 183"
+- name: "\U0001F1FA\U0001F1F8 US 172"
+  network: ws
+  password: tg-fq521free
+  port: 443
+  server: 198.62.62.67
+  skip-cert-verify: false
+  sni: torjan.xn--xhq44j.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: torjan.xn--xhq44j.eu.org
+    path: /
+- name: "\U0001F1FA\U0001F1F8 US 173"
   network: ws
   password: Aimer
-  port: 443
-  server: 23.94.233.164
+  port: 8443
+  server: 104.129.166.131
   skip-cert-verify: true
   sni: epgc.aimercc.dpdns.org
   type: trojan
@@ -2806,7 +2668,33 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- name: "\U0001F1FA\U0001F1F8 US 184"
+- name: "\U0001F1FA\U0001F1F8 US 174"
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 198.62.62.61
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: "\U0001F1FA\U0001F1F8 US 175"
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 130.250.137.63
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: "\U0001F1FA\U0001F1F8 US 176"
   network: ws
   password: Aimer
   port: 2096
@@ -2819,37 +2707,11 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- name: "\U0001F1FA\U0001F1F8 US 185"
+- name: "\U0001F1FA\U0001F1F8 US 177"
   network: ws
   password: Aimer
   port: 2083
   server: 192.0.54.221
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: "\U0001F1FA\U0001F1F8 US 186"
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 107.173.155.242
-  skip-cert-verify: true
-  sni: epgc.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgc.aimercc.dpdns.org
-    path: /?ed=2560
-- name: "\U0001F1FA\U0001F1F8 US 187"
-  network: ws
-  password: Aimer
-  port: 12354
-  server: 107.172.87.159
   skip-cert-verify: true
   sni: epgc.aimercc.dpdns.org
   type: trojan
@@ -2937,7 +2799,7 @@ proxies:
       Host: ttfang.fange.me
     path: "Telegram\U0001F1E8\U0001F1F3"
 - client-fingerprint: chrome
-  name: "\U0001F1EE\U0001F1F3 IN 004"
+  name: "\U0001F1EE\U0001F1F3 IN 003"
   network: ws
   password: ttfang
   port: 2096
@@ -2950,7 +2812,7 @@ proxies:
       Host: ttfang.fange.me
     path: "Telegram\U0001F1E8\U0001F1F3"
 - client-fingerprint: chrome
-  name: "\U0001F1EE\U0001F1F3 IN 005"
+  name: "\U0001F1EE\U0001F1F3 IN 004"
   network: ws
   password: ttfang
   port: 2096
@@ -2989,7 +2851,7 @@ proxies:
       Host: ttfang.fange.me
     path: "Telegram\U0001F1E8\U0001F1F3"
 - client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 US 188"
+  name: "\U0001F1FA\U0001F1F8 US 178"
   network: ws
   password: ttfang
   port: 2096
@@ -3054,7 +2916,7 @@ proxies:
       Host: ttfang.fange.me
     path: "Telegram\U0001F1E8\U0001F1F3"
 - client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 US 189"
+  name: "\U0001F1FA\U0001F1F8 US 179"
   network: ws
   password: ttfang
   port: 2096
@@ -3067,7 +2929,7 @@ proxies:
       Host: ttfang.fange.me
     path: "Telegram\U0001F1E8\U0001F1F3"
 - client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 US 190"
+  name: "\U0001F1FA\U0001F1F8 US 180"
   network: ws
   password: ttfang
   port: 2096
@@ -3080,7 +2942,7 @@ proxies:
       Host: ttfang.fange.me
     path: "Telegram\U0001F1E8\U0001F1F3"
 - client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 US 191"
+  name: "\U0001F1FA\U0001F1F8 US 181"
   network: ws
   password: ttfang
   port: 2096
@@ -3093,7 +2955,7 @@ proxies:
       Host: ttfang.fange.me
     path: "Telegram\U0001F1E8\U0001F1F3"
 - client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 US 192"
+  name: "\U0001F1FA\U0001F1F8 US 182"
   network: ws
   password: ttfang
   port: 2096
@@ -3106,7 +2968,7 @@ proxies:
       Host: ttfang.fange.me
     path: "Telegram\U0001F1E8\U0001F1F3"
 - client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 US 193"
+  name: "\U0001F1FA\U0001F1F8 US 183"
   network: ws
   password: ttfang
   port: 2096
@@ -3119,7 +2981,7 @@ proxies:
       Host: ttfang.fange.me
     path: "Telegram\U0001F1E8\U0001F1F3"
 - client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 US 194"
+  name: "\U0001F1FA\U0001F1F8 US 184"
   network: ws
   password: ttfang
   port: 2096
@@ -3132,7 +2994,7 @@ proxies:
       Host: ttfang.fange.me
     path: "Telegram\U0001F1E8\U0001F1F3"
 - client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 US 195"
+  name: "\U0001F1FA\U0001F1F8 US 185"
   network: ws
   password: ttfang
   port: 2096
@@ -3145,7 +3007,7 @@ proxies:
       Host: ttfang.fange.me
     path: "Telegram\U0001F1E8\U0001F1F3"
 - client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 US 196"
+  name: "\U0001F1FA\U0001F1F8 US 186"
   network: ws
   password: ttfang
   port: 2096
@@ -3158,7 +3020,7 @@ proxies:
       Host: ttfang.fange.me
     path: "Telegram\U0001F1E8\U0001F1F3"
 - client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 US 197"
+  name: "\U0001F1FA\U0001F1F8 US 187"
   network: ws
   password: ttfang
   port: 2096
@@ -3171,7 +3033,7 @@ proxies:
       Host: ttfang.fange.me
     path: "Telegram\U0001F1E8\U0001F1F3"
 - client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 US 198"
+  name: "\U0001F1FA\U0001F1F8 US 188"
   network: ws
   password: ttfang
   port: 2096
@@ -3184,7 +3046,7 @@ proxies:
       Host: ttfang.fange.me
     path: "Telegram\U0001F1E8\U0001F1F3"
 - client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 US 199"
+  name: "\U0001F1FA\U0001F1F8 US 189"
   network: ws
   password: ttfang
   port: 2096
@@ -3197,7 +3059,7 @@ proxies:
       Host: ttfang.fange.me
     path: "Telegram\U0001F1E8\U0001F1F3"
 - client-fingerprint: chrome
-  name: "\U0001F1FA\U0001F1F8 US 200"
+  name: "\U0001F1FA\U0001F1F8 US 190"
   network: ws
   password: ttfang
   port: 2096
@@ -3475,6 +3337,201 @@ proxies:
   password: ttfang
   port: 2096
   server: 45.159.216.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1F3\U0001F1F1 NL 022"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.159.217.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1F3\U0001F1F1 NL 023"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.159.218.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1F3\U0001F1F1 NL 024"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.159.219.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1FF\U0001F1E6 ZA 001"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.196.29.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1F7\U0001F1FA RU 017"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 46.254.92.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1F7\U0001F1FA RU 018"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 46.254.93.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 US 191"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 50.62.88.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 US 192"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 50.62.89.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 US 193"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 50.62.90.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 US 194"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 50.62.91.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 US 195"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 50.62.172.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 US 196"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 50.62.173.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 US 197"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 50.62.174.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 US 198"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 50.62.175.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: "Telegram\U0001F1E8\U0001F1F3"
+- client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 US 199"
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 50.62.194.216
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
