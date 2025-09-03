@@ -5,7 +5,6 @@ import re
 # 定义要下载的 YAML 配置文件 URLs
 urls = [
     "https://gitlab.com/wybgit/surge_conf/-/raw/main/myconfig/Clash/clashconfig.yaml",
-    "https://github.com/aiboboxx/clashfree/blob/main/clash.yml",
     "https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/refs/heads/master/list.yml",
     "https://raw.githubusercontent.com/anaer/Sub/refs/heads/main/clash.yaml"
 ]
