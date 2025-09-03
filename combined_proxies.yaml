@@ -2116,7 +2116,190 @@ proxies:
   tls: false
   type: http
   udp: true
-- name: "\U0001F1FA\U0001F1F8 US 149"
+- cipher: rc4-md5
+  name: "\U0001F1EF\U0001F1F5 JP 028"
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202508150964186-5McRC3HiAX.download.microsoft.com
+    mode: http
+  port: 8766
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  name: "\U0001F1EF\U0001F1F5 JP 029"
+  password: 8a6ca14c0936
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jpxw9v1.dashengjs.net
+    mode: websocket
+    mux: false
+    path: /wrdfiatyd
+    skip-cert-verify: false
+    tls: true
+  port: 443
+  server: 137.220.142.150
+  tfo: false
+  type: ss
+- name: "\U0001F1EF\U0001F1F5 JP 030"
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 4613
+  server: xingxing.jiasu123.org
+  skip-cert-verify: true
+  sni: 23.45.86.28
+  type: trojan
+- name: "\U0001F1EF\U0001F1F5 JP 031"
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 1924
+  server: xingxing.jiasu123.org
+  skip-cert-verify: true
+  sni: 23.45.86.28
+  type: trojan
+- name: "\U0001F1F8\U0001F1EC SG 017"
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 3957
+  server: xingxing.jiasu123.org
+  skip-cert-verify: true
+  sni: 23.45.86.28
+  type: trojan
+- name: "\U0001F1F8\U0001F1EC SG 018"
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 3043
+  server: xingxing.jiasu123.org
+  skip-cert-verify: true
+  sni: 23.45.86.28
+  type: trojan
+- alterId: 2
+  cipher: auto
+  name: "\U0001F1F8\U0001F1EC SG 019"
+  network: ws
+  port: '30839'
+  server: v39.heduian.link
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
+- cipher: aes-128-gcm
+  name: "\U0001F1F8\U0001F1EC SG 020"
+  password: 01721e43-5389-4f97-b21c-900abb2bda9e
+  port: 12020
+  server: awes35lesl.blhao0o.dpdns.org
+  tfo: false
+  type: ss
+- cipher: rc4-md5
+  name: "\U0001F1FA\U0001F1F8 US 149"
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202508150964186-5McRC3HiAX.download.microsoft.com
+    mode: http
+  port: 8774
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
+- name: "\U0001F1FA\U0001F1F8 US 150"
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 4801
+  server: xingxing.jiasu123.org
+  skip-cert-verify: true
+  sni: 23.45.86.28
+  type: trojan
+- name: "\U0001F1FA\U0001F1F8 US 151"
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 4317
+  server: xingxing.jiasu123.org
+  skip-cert-verify: true
+  sni: 23.45.86.28
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1EF\U0001F1F5 JP 032"
+  network: kcp
+  port: '34933'
+  server: 8.209.211.236
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 8a9150bc-b9c8-40ac-be83-aaec45176a81
+- name: "\U0001F1E8\U0001F1ED CH 002"
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.18.250.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: "/Telegram\U0001F1E8\U0001F1F3"
+- name: "\U0001F1EA\U0001F1F8 ES 002"
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.238.228.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: "/Telegram\U0001F1E8\U0001F1F3"
+- name: "\U0001F1F7\U0001F1FA RU 004"
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 194.53.53.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: "/Telegram\U0001F1E8\U0001F1F3"
+- name: "\U0001F1FA\U0001F1F8 US 152"
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 209.94.90.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: "/Telegram\U0001F1E8\U0001F1F3"
+- name: "\U0001F1FA\U0001F1F8 US 153"
+  network: ws
+  password: 318cab24-ec99-40a6-a54a-0db9c661a3d0
+  port: 443
+  server: aio.proxybox.dpdns.org
+  skip-cert-verify: false
+  sni: aio.proxybox.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: aio.proxybox.dpdns.org
+    path: /188.34.160.97-2053
+- name: "\U0001F1FA\U0001F1F8 US 154"
   network: ws
   password: slch2024
   port: 2096
@@ -2128,7 +2311,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1FA\U0001F1F8 US 150"
+- name: "\U0001F1FA\U0001F1F8 US 155"
   network: ws
   password: slch2024
   port: 2096
@@ -2140,7 +2323,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1F7\U0001F1FA RU 004"
+- name: "\U0001F1F7\U0001F1FA RU 005"
   network: ws
   password: slch2024
   port: 2096
@@ -2152,7 +2335,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1F7\U0001F1FA RU 005"
+- name: "\U0001F1F7\U0001F1FA RU 006"
   network: ws
   password: slch2024
   port: 2096
@@ -2176,7 +2359,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1FA\U0001F1F8 US 151"
+- name: "\U0001F1FA\U0001F1F8 US 156"
   network: ws
   password: slch2024
   port: 2096
@@ -2200,7 +2383,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1FA\U0001F1F8 US 152"
+- name: "\U0001F1FA\U0001F1F8 US 157"
   network: ws
   password: slch2024
   port: 2096
@@ -2212,7 +2395,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1FA\U0001F1F8 US 153"
+- name: "\U0001F1FA\U0001F1F8 US 158"
   network: ws
   password: slch2024
   port: 2096
@@ -2224,7 +2407,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1FA\U0001F1F8 US 154"
+- name: "\U0001F1FA\U0001F1F8 US 159"
   network: ws
   password: slch2024
   port: 2096
@@ -2236,7 +2419,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1FA\U0001F1F8 US 155"
+- name: "\U0001F1FA\U0001F1F8 US 160"
   network: ws
   password: slch2024
   port: 2096
@@ -2248,7 +2431,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1FA\U0001F1F8 US 156"
+- name: "\U0001F1FA\U0001F1F8 US 161"
   network: ws
   password: slch2024
   port: 2096
@@ -2260,7 +2443,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1FA\U0001F1F8 US 157"
+- name: "\U0001F1FA\U0001F1F8 US 162"
   network: ws
   password: slch2024
   port: 2096
@@ -2272,7 +2455,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1FA\U0001F1F8 US 158"
+- name: "\U0001F1FA\U0001F1F8 US 163"
   network: ws
   password: slch2024
   port: 2096
@@ -2284,7 +2467,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1FA\U0001F1F8 US 159"
+- name: "\U0001F1FA\U0001F1F8 US 164"
   network: ws
   password: slch2024
   port: 2096
@@ -2296,7 +2479,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1FA\U0001F1F8 US 160"
+- name: "\U0001F1FA\U0001F1F8 US 165"
   network: ws
   password: slch2024
   port: 2096
@@ -2308,7 +2491,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1FA\U0001F1F8 US 161"
+- name: "\U0001F1FA\U0001F1F8 US 166"
   network: ws
   password: slch2024
   port: 2096
@@ -2320,7 +2503,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1FA\U0001F1F8 US 162"
+- name: "\U0001F1FA\U0001F1F8 US 167"
   network: ws
   password: slch2024
   port: 2096
@@ -2332,7 +2515,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1FA\U0001F1F8 US 163"
+- name: "\U0001F1FA\U0001F1F8 US 168"
   network: ws
   password: slch2024
   port: 2096
@@ -2344,7 +2527,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1FA\U0001F1F8 US 164"
+- name: "\U0001F1FA\U0001F1F8 US 169"
   network: ws
   password: slch2024
   port: 2096
@@ -2356,7 +2539,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1FA\U0001F1F8 US 165"
+- name: "\U0001F1FA\U0001F1F8 US 170"
   network: ws
   password: slch2024
   port: 2096
@@ -2368,7 +2551,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1FA\U0001F1F8 US 166"
+- name: "\U0001F1FA\U0001F1F8 US 171"
   network: ws
   password: slch2024
   port: 2096
@@ -2380,7 +2563,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1FA\U0001F1F8 US 167"
+- name: "\U0001F1FA\U0001F1F8 US 172"
   network: ws
   password: slch2024
   port: 2096
@@ -2392,7 +2575,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1FA\U0001F1F8 US 168"
+- name: "\U0001F1FA\U0001F1F8 US 173"
   network: ws
   password: slch2024
   port: 2096
@@ -2404,7 +2587,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1FA\U0001F1F8 US 169"
+- name: "\U0001F1FA\U0001F1F8 US 174"
   network: ws
   password: slch2024
   port: 2096
@@ -2464,7 +2647,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1F7\U0001F1FA RU 006"
+- name: "\U0001F1F7\U0001F1FA RU 007"
   network: ws
   password: slch2024
   port: 2096
@@ -2476,7 +2659,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1F7\U0001F1FA RU 007"
+- name: "\U0001F1F7\U0001F1FA RU 008"
   network: ws
   password: slch2024
   port: 2096
@@ -2488,7 +2671,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1F7\U0001F1FA RU 008"
+- name: "\U0001F1F7\U0001F1FA RU 009"
   network: ws
   password: slch2024
   port: 2096
@@ -2512,7 +2695,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1F7\U0001F1FA RU 009"
+- name: "\U0001F1F7\U0001F1FA RU 010"
   network: ws
   password: slch2024
   port: 2096
@@ -2524,7 +2707,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1EA\U0001F1F8 ES 002"
+- name: "\U0001F1EA\U0001F1F8 ES 003"
   network: ws
   password: slch2024
   port: 2096
@@ -2560,7 +2743,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1F7\U0001F1FA RU 010"
+- name: "\U0001F1F7\U0001F1FA RU 011"
   network: ws
   password: slch2024
   port: 2096
@@ -2572,7 +2755,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1F7\U0001F1FA RU 011"
+- name: "\U0001F1F7\U0001F1FA RU 012"
   network: ws
   password: slch2024
   port: 2096
@@ -2608,7 +2791,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1F7\U0001F1FA RU 012"
+- name: "\U0001F1F7\U0001F1FA RU 013"
   network: ws
   password: slch2024
   port: 2096
@@ -2620,7 +2803,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1F7\U0001F1FA RU 013"
+- name: "\U0001F1F7\U0001F1FA RU 014"
   network: ws
   password: slch2024
   port: 2096
@@ -2632,7 +2815,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1FA\U0001F1F8 US 170"
+- name: "\U0001F1FA\U0001F1F8 US 175"
   network: ws
   password: slch2024
   port: 2096
@@ -2644,7 +2827,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1FA\U0001F1F8 US 171"
+- name: "\U0001F1FA\U0001F1F8 US 176"
   network: ws
   password: slch2024
   port: 2096
@@ -2656,7 +2839,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1FA\U0001F1F8 US 172"
+- name: "\U0001F1FA\U0001F1F8 US 177"
   network: ws
   password: slch2024
   port: 2096
@@ -2668,7 +2851,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1FA\U0001F1F8 US 173"
+- name: "\U0001F1FA\U0001F1F8 US 178"
   network: ws
   password: slch2024
   port: 2096
@@ -2680,7 +2863,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1FA\U0001F1F8 US 174"
+- name: "\U0001F1FA\U0001F1F8 US 179"
   network: ws
   password: slch2024
   port: 2096
@@ -2704,7 +2887,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1FA\U0001F1F8 US 175"
+- name: "\U0001F1FA\U0001F1F8 US 180"
   network: ws
   password: slch2024
   port: 2096
@@ -2716,7 +2899,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1FA\U0001F1F8 US 176"
+- name: "\U0001F1FA\U0001F1F8 US 181"
   network: ws
   password: slch2024
   port: 2096
@@ -2728,7 +2911,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1FA\U0001F1F8 US 177"
+- name: "\U0001F1FA\U0001F1F8 US 182"
   network: ws
   password: slch2024
   port: 2096
@@ -2740,7 +2923,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1FA\U0001F1F8 US 178"
+- name: "\U0001F1FA\U0001F1F8 US 183"
   network: ws
   password: slch2024
   port: 2096
@@ -2788,7 +2971,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1EA\U0001F1F8 ES 003"
+- name: "\U0001F1EA\U0001F1F8 ES 004"
   network: ws
   password: slch2024
   port: 2096
@@ -2800,7 +2983,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1EA\U0001F1F8 ES 004"
+- name: "\U0001F1EA\U0001F1F8 ES 005"
   network: ws
   password: slch2024
   port: 2096
@@ -2812,7 +2995,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1EA\U0001F1F8 ES 005"
+- name: "\U0001F1EA\U0001F1F8 ES 006"
   network: ws
   password: slch2024
   port: 2096
@@ -2824,7 +3007,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1EA\U0001F1F8 ES 006"
+- name: "\U0001F1EA\U0001F1F8 ES 007"
   network: ws
   password: slch2024
   port: 2096
@@ -2836,7 +3019,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1EA\U0001F1F8 ES 007"
+- name: "\U0001F1EA\U0001F1F8 ES 008"
   network: ws
   password: slch2024
   port: 2096
@@ -2848,7 +3031,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1F7\U0001F1FA RU 014"
+- name: "\U0001F1F7\U0001F1FA RU 015"
   network: ws
   password: slch2024
   port: 2096
@@ -2956,7 +3139,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1F7\U0001F1FA RU 015"
+- name: "\U0001F1F7\U0001F1FA RU 016"
   network: ws
   password: slch2024
   port: 2096
@@ -3028,7 +3211,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1FA\U0001F1F8 US 179"
+- name: "\U0001F1FA\U0001F1F8 US 184"
   network: ws
   password: slch2024
   port: 2096
@@ -3064,7 +3247,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1F7\U0001F1FA RU 016"
+- name: "\U0001F1F7\U0001F1FA RU 017"
   network: ws
   password: slch2024
   port: 2096
@@ -3076,7 +3259,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1EA\U0001F1F8 ES 008"
+- name: "\U0001F1EA\U0001F1F8 ES 009"
   network: ws
   password: slch2024
   port: 2096
@@ -3088,7 +3271,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1F8\U0001F1EC SG 017"
+- name: "\U0001F1F8\U0001F1EC SG 021"
   network: ws
   password: slch2024
   port: 2096
