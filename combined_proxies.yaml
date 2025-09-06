@@ -21,6 +21,90 @@ proxies:
   tls: false
   type: http
   udp: true
+- name: "\U0001F1E6\U0001F1FA AU 001"
+  password: c5691b8f-d833-41e4-9295-769f3edb4cd2
+  port: 443
+  server: customer-45-142-215-88.stark-industries.solutions
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "\U0001F1E6\U0001F1FA AU 002"
+  password: 4a39dba7-463b-4c8a-a804-758282c11c62
+  port: 443
+  server: in01.trojanyyds.xyz
+  skip-cert-verify: true
+  sni: in01.trojanyyds.xyz
+  type: trojan
+- name: "\U0001F1E6\U0001F1FA AU 003"
+  password: cd30052f-f1b2-35df-9773-bd586e72f67a
+  port: 34618
+  server: 34618.kuajing.buzz
+  skip-cert-verify: false
+  sni: eplcgame.com
+  type: trojan
+- client-fingerprint: chrome
+  name: "\U0001F1E6\U0001F1FA AU 004"
+  port: 4145
+  server: 184.178.172.14
+  skip-cert-verify: true
+  type: socks5
+  udp: true
+- country: "\U0001F1FA\U0001F1F8US"
+  name: "\U0001F1E6\U0001F1FA AU 005"
+  password: 8d1e94cd-23cf-4267-b630-c6894e6e1b4d
+  port: 443
+  server: tw02.trojanyyds.xyz
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1E6\U0001F1FA AU 006"
+  port: 1080
+  server: 18.135.133.116
+  skip-cert-verify: true
+  tls: false
+  type: http
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1E6\U0001F1FA AU 007"
+  port: 8080
+  server: 39.102.213.50
+  skip-cert-verify: true
+  type: socks5
+  udp: true
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: "\U0001F1E6\U0001F1FA AU 008"
+  port: 58831
+  server: 183.236.48.163
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- client-fingerprint: chrome
+  name: "\U0001F1E6\U0001F1FA AU 009"
+  password: lNOcIAxy
+  port: 36442
+  server: 36.151.192.239
+  skip-cert-verify: true
+  sni: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  type: trojan
+  udp: true
+- cipher: aes-256-gcm
+  name: "\U0001F1E6\U0001F1FA AU 010"
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+  port: 12343
+  server: au.acxylm.top
+  type: ss
+  udp: true
+- name: "\U0001F1E6\U0001F1FA AU 011"
+  port: 19404
+  server: 192.111.139.163
+  skip-cert-verify: true
+  type: socks5
+  udp: true
 - client-fingerprint: chrome
   name: "\U0001F1E7\U0001F1F7 BR 001"
   port: 3128
@@ -42,6 +126,213 @@ proxies:
   port: 41829
   server: br.acxylm.top
   type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1E8\U0001F1E6 CA 001"
+  port: 80
+  server: 35.178.104.4
+  skip-cert-verify: true
+  tls: false
+  type: http
+  udp: true
+- name: "\U0001F1E8\U0001F1E6 CA 002"
+  password: 40c9871b-74af-45f5-ac2c-12597587dc98
+  port: 41199
+  server: free.6vczxw.xyz
+  skip-cert-verify: true
+  sni: sg15.bluemixnet.xyz
+  type: trojan
+  udp: true
+- alterId: 64
+  cipher: none
+  name: "\U0001F1E8\U0001F1E6 CA 003"
+  port: 50002
+  server: 47.92.152.169
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- client-fingerprint: chrome
+  name: "\U0001F1E8\U0001F1E6 CA 004"
+  port: 8443
+  server: 8.209.96.245
+  skip-cert-verify: true
+  tls: false
+  type: http
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1E8\U0001F1E6 CA 005"
+  port: 3128
+  server: 3.129.184.210
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: "\U0001F1E8\U0001F1E6 CA 006"
+  network: tcp
+  password: 9995cc0e-2e9d-4c80-8c81-4fdbb6322a3a
+  port: 443
+  server: 20.89.130.227
+  skip-cert-verify: true
+  sni: fscus.fscloud123456789.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1E8\U0001F1E6 CA 007"
+  port: 31034
+  server: 72.49.49.11
+  skip-cert-verify: true
+  type: socks5
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1E8\U0001F1E6 CA 008"
+  port: 7890
+  server: 104.168.62.130
+  skip-cert-verify: true
+  tls: false
+  type: http
+  udp: true
+- name: "\U0001F1E8\U0001F1E6 CA 009"
+  password: c5691b8f-d833-41e4-9295-769f3edb4cd2
+  port: 443
+  server: customer-45-89-55-150.stark-industries.solutions
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- country: "\U0001F1EF\U0001F1F5JP"
+  name: "\U0001F1E8\U0001F1E6 CA 010"
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  port: 443
+  server: my01.trojanyyds.xyz
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "\U0001F1E8\U0001F1E6 CA 011"
+  password: f4a08f9d-1fb0-4cd3-a8e3-b0a561f9c44b
+  port: 41239
+  server: free.6vczxw.xyz
+  skip-cert-verify: true
+  sni: us15.t8l1n9k.link
+  type: trojan
+  udp: true
+- name: "\U0001F1E8\U0001F1E6 CA 012"
+  password: 8993fa1c-342e-41fc-b01e-8719abde1324
+  port: 443
+  server: ar.mjt000.com
+  skip-cert-verify: true
+  sni: ar.mjt000.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1E8\U0001F1E6 CA 013"
+  port: 4145
+  server: 72.205.0.93
+  skip-cert-verify: true
+  type: socks5
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1E8\U0001F1E6 CA 014"
+  network: ws
+  port: 2082
+  server: 104.19.45.50
+  servername: ip26.6929198.xyz
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  ws-opts:
+    headers:
+      Host: ip26.6929198.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1E8\U0001F1E6 CA 015"
+  network: ws
+  port: 2095
+  server: 104.20.25.146
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+  ws-opts:
+    headers:
+      Host: ip21.6016725.xyz
+    path: /github.com/Alvin9999
+- name: "\U0001F1E8\U0001F1E6 CA 016"
+  network: tcp
+  password: f10d81d8-ad4b-300a-825b-f54f515bd06e
+  port: 443
+  server: jp1.jjzgy.live
+  skip-cert-verify: true
+  sni: jp1.jjzgy.live
+  type: trojan
+  udp: true
+- country: "\U0001F1ED\U0001F1F0 HK"
+  name: "\U0001F1E8\U0001F1E6 CA 017"
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  port: 443
+  server: my01.trojanyyds.xyz
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: "\U0001F1E8\U0001F1E6 CA 018"
+  port: 4145
+  server: 198.8.84.3
+  skip-cert-verify: true
+  type: socks5
+  udp: true
+- name: "\U0001F1E8\U0001F1E6 CA 019"
+  port: 4145
+  server: 198.8.94.170
+  skip-cert-verify: true
+  type: socks5
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1E8\U0001F1E6 CA 020"
+  port: 1080
+  server: 54.212.22.168
+  skip-cert-verify: true
+  type: socks5
+  udp: true
+- cipher: aes-256-gcm
+  name: "\U0001F1E8\U0001F1E6 CA 021"
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+  port: 34468
+  server: us07.bfyrek.top
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1E8\U0001F1E6 CA 022"
+  port: 3128
+  server: 99.80.11.54
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- cipher: chacha20-ietf
+  name: "\U0001F1E8\U0001F1E6 CA 023"
+  password: asd123456
+  port: 8388
+  server: 103.36.90.195
+  tfo: false
+  type: ss
+- client-fingerprint: chrome
+  name: "\U0001F1E8\U0001F1E6 CA 024"
+  port: 8008
+  server: 8.215.12.103
+  skip-cert-verify: true
+  type: socks5
+  udp: true
+- country: "\U0001F1ED\U0001F1F0HK"
+  name: "\U0001F1E8\U0001F1E6 CA 025"
+  password: bc90fb72-0b2c-45b4-a8d8-c9baa4eaaef3
+  port: 443
+  server: ru.mjt000.com
+  skip-cert-verify: true
+  sni: ru.mjt000.com
+  type: trojan
   udp: true
 - alterId: 0
   name: "\U0001F1E8\U0001F1ED CH 001"
@@ -333,6 +624,306 @@ proxies:
     headers:
       Host: obdii.cfd
     path: /linkws
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 001"
+  port: 8800
+  server: 101.200.158.109
+  skip-cert-verify: true
+  type: socks5
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1EC\U0001F1E7 GB 002"
+  network: ws
+  port: 443
+  server: 16.724064.xyz
+  servername: 16.724064.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: b7cf4466-956a-4639-b861-0cf78cbb6f8f
+  ws-opts:
+    headers:
+      Host: 16.724064.xyz
+    path: /zlppvws
+- cipher: chacha20-ietf-poly1305
+  country: "\U0001F1FA\U0001F1F8 US"
+  name: "\U0001F1EC\U0001F1E7 GB 003"
+  password: W74XFALLLuw6m5IA
+  port: 443
+  server: series-a1.samanehha.co
+  type: ss
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 004"
+  port: 7890
+  server: 113.26.167.156
+  skip-cert-verify: true
+  tls: false
+  type: http
+  udp: true
+- cipher: aes-256-gcm
+  name: "\U0001F1EC\U0001F1E7 GB 005"
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+  port: 19262
+  server: uk.acxylm.top
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 006"
+  port: 8080
+  server: 154.205.152.96
+  skip-cert-verify: true
+  type: socks5
+  udp: true
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: "\U0001F1EC\U0001F1E7 GB 007"
+  network: ws
+  port: 443
+  server: 2.189.59.7
+  servername: obdii.cfd
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      host: obdii.cfd
+    path: /linkws
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 008"
+  port: 1080
+  server: 18.133.16.21
+  skip-cert-verify: true
+  type: socks5
+  udp: true
+- cipher: aes-256-gcm
+  name: "\U0001F1EC\U0001F1E7 GB 009"
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+  port: 48465
+  server: hl.acxylm.top
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 010"
+  port: 4006
+  server: 38.54.101.254
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 011"
+  port: 9080
+  server: 39.102.208.189
+  skip-cert-verify: true
+  type: socks5
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 012"
+  port: 80
+  server: 39.102.209.128
+  skip-cert-verify: true
+  type: socks5
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 013"
+  port: 3128
+  server: 39.104.59.56
+  skip-cert-verify: true
+  type: socks5
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 014"
+  port: 8090
+  server: 47.104.27.165
+  skip-cert-verify: true
+  type: socks5
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 015"
+  port: 9098
+  server: 47.119.22.92
+  skip-cert-verify: true
+  type: socks5
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 016"
+  port: 8080
+  server: 47.122.31.238
+  skip-cert-verify: true
+  tls: false
+  type: http
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 017"
+  port: 80
+  server: 47.122.56.158
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 018"
+  port: 8443
+  server: 47.122.57.58
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 019"
+  port: 8080
+  server: 47.122.60.157
+  skip-cert-verify: true
+  tls: false
+  type: http
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 020"
+  port: 8081
+  server: 47.122.65.32
+  skip-cert-verify: true
+  type: socks5
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 021"
+  port: 8443
+  server: 47.238.130.212
+  skip-cert-verify: true
+  type: socks5
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 022"
+  port: 3128
+  server: 47.92.143.92
+  skip-cert-verify: true
+  type: socks5
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 023"
+  port: 80
+  server: 47.92.152.43
+  skip-cert-verify: true
+  type: socks5
+  udp: true
+- cipher: aes-256-gcm
+  name: "\U0001F1EC\U0001F1E7 GB 024"
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+  port: 55268
+  server: hk01.acxylm.top
+  type: ss
+  udp: true
+- alpn:
+  - http/1.1
+  alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 025"
+  network: ws
+  port: 443
+  server: 57.128.184.127
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: baradiha.com
+    path: /linkvws
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 026"
+  port: 9002
+  server: 8.130.39.117
+  skip-cert-verify: true
+  type: socks5
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 027"
+  port: 8008
+  server: 8.130.90.177
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 028"
+  port: 8080
+  server: 8.137.38.48
+  skip-cert-verify: true
+  type: socks5
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 029"
+  port: 3128
+  server: 8.138.149.37
+  skip-cert-verify: true
+  type: socks5
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 030"
+  port: 8080
+  server: 8.148.20.126
+  skip-cert-verify: true
+  type: socks5
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 031"
+  port: 9098
+  server: 8.148.22.214
+  skip-cert-verify: true
+  type: socks5
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 032"
+  port: 8080
+  server: 8.148.24.225
+  skip-cert-verify: true
+  tls: false
+  type: http
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 033"
+  port: 8081
+  server: 8.148.4.166
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 034"
+  port: 8080
+  server: 8.211.42.167
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 035"
+  port: 3128
+  server: 8.213.222.157
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- client-fingerprint: chrome
+  name: "\U0001F1EC\U0001F1E7 GB 036"
+  port: 808
+  server: 8.220.204.215
+  skip-cert-verify: true
+  type: socks5
+  udp: true
+- cipher: aes-256-gcm
+  name: "\U0001F1EC\U0001F1E7 GB 037"
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+  port: 36605
+  server: hk07.bfyrek.top
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   name: "\U0001F1EE\U0001F1E9 ID 001"
   port: 8199
@@ -2357,6 +2948,19 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "/Telegram\U0001F1E8\U0001F1F3"
+- name: "\U0001F1EC\U0001F1E7 GB 038"
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.156.19.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: "/Telegram\U0001F1E8\U0001F1F3"
 - name: "\U0001F1F3\U0001F1F1 NL 005"
   network: ws
   password: slch2024
@@ -2790,7 +3394,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1E8\U0001F1E6 CA 001"
+- name: "\U0001F1E8\U0001F1E6 CA 026"
   network: ws
   password: slch2024
   port: 2096
@@ -3030,7 +3634,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1EC\U0001F1E7 GB 001"
+- name: "\U0001F1EC\U0001F1E7 GB 039"
   network: ws
   password: slch2024
   port: 2096
@@ -3138,7 +3742,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1EC\U0001F1E7 GB 002"
+- name: "\U0001F1EC\U0001F1E7 GB 040"
   network: ws
   password: slch2024
   port: 2096
@@ -3186,7 +3790,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1EC\U0001F1E7 GB 003"
+- name: "\U0001F1EC\U0001F1E7 GB 041"
   network: ws
   password: slch2024
   port: 2096
@@ -3282,7 +3886,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1E6\U0001F1FA AU 001"
+- name: "\U0001F1E6\U0001F1FA AU 012"
   network: ws
   password: slch2024
   port: 2096
@@ -3342,7 +3946,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1EC\U0001F1E7 GB 004"
+- name: "\U0001F1EC\U0001F1E7 GB 042"
   network: ws
   password: slch2024
   port: 2096
@@ -3426,7 +4030,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1E6\U0001F1FA AU 002"
+- name: "\U0001F1E6\U0001F1FA AU 013"
   network: ws
   password: slch2024
   port: 2096
@@ -3438,7 +4042,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1E6\U0001F1FA AU 003"
+- name: "\U0001F1E6\U0001F1FA AU 014"
   network: ws
   password: slch2024
   port: 2096
@@ -3450,7 +4054,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1E6\U0001F1FA AU 004"
+- name: "\U0001F1E6\U0001F1FA AU 015"
   network: ws
   password: slch2024
   port: 2096
@@ -3462,7 +4066,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1E6\U0001F1FA AU 005"
+- name: "\U0001F1E6\U0001F1FA AU 016"
   network: ws
   password: slch2024
   port: 2096
@@ -3522,7 +4126,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1EC\U0001F1E7 GB 005"
+- name: "\U0001F1EC\U0001F1E7 GB 043"
   network: ws
   password: slch2024
   port: 2096
@@ -3534,7 +4138,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1EC\U0001F1E7 GB 006"
+- name: "\U0001F1EC\U0001F1E7 GB 044"
   network: ws
   password: slch2024
   port: 2096
@@ -3570,7 +4174,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: "Telegram\U0001F1E8\U0001F1F3"
-- name: "\U0001F1EC\U0001F1E7 GB 007"
+- name: "\U0001F1EC\U0001F1E7 GB 045"
   network: ws
   password: slch2024
   port: 2096
