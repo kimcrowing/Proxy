@@ -93,7 +93,7 @@ country_flags = {
 # 定义代理筛选函数，删除名称中包含 "CN"、"File" 或 "HK" 的代理
 def valid_proxy(proxy):
     name = proxy.get('name', '')
-    banned_keywords = ['CN', 'File', 'HK', 'CA', 'AU', 'GB']
+    banned_keywords = ['CN', 'File']
     return not any(keyword in name for keyword in banned_keywords)
 
 # 合并所有代理服务器，并进行筛选和去重
