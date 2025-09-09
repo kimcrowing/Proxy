@@ -2712,11 +2712,10 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202509031722041-9tGNGazmKT.download.microsoft.com
+    host: 202509031722041-NTzL1f4K0s.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
-  tfo: false
   type: ss
 - cipher: aes-256-gcm
   name: "\U0001F1EF\U0001F1F5 JP 029"
@@ -2731,7 +2730,6 @@ proxies:
     tls: true
   port: 443
   server: 137.220.142.150
-  tfo: false
   type: ss
 - name: "\U0001F1EF\U0001F1F5 JP 030"
   network: tcp
@@ -2749,6 +2747,12 @@ proxies:
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
+- cipher: aes-256-gcm
+  name: "\U0001F1EF\U0001F1F5 JP 032"
+  password: amazongreatvpn
+  port: 16888
+  server: 3.115.20.29
+  type: ss
 - name: "\U0001F1F8\U0001F1EC SG 017"
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -2773,7 +2777,6 @@ proxies:
   server: v39.heduian.link
   servername: ''
   skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
@@ -2786,11 +2789,10 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202509031722041-9tGNGazmKT.download.microsoft.com
+    host: 202509031722041-NTzL1f4K0s.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
-  tfo: false
   type: ss
 - name: "\U0001F1FA\U0001F1F8 US 150"
   network: tcp
@@ -2810,7 +2812,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: "\U0001F1EF\U0001F1F5 JP 032"
+  name: "\U0001F1EF\U0001F1F5 JP 033"
   network: kcp
   port: '34933'
   server: 8.209.211.236
@@ -3828,7 +3830,7 @@ proxies:
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
-- name: "\U0001F1EF\U0001F1F5 JP 033"
+- name: "\U0001F1EF\U0001F1F5 JP 034"
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 18233
