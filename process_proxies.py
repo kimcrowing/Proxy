@@ -2,7 +2,7 @@ import requests
 import yaml
 import re
 from datetime import datetime
-import collections  # 用于 OrderedDict 以统一字段顺序
+import collections  # 用于 OrderedDict 以控制字段顺序
 
 # 定义要下载的 YAML 配置文件 URLs
 urls = [
@@ -176,7 +176,7 @@ for proxy_list in all_proxies:
                 ordered_proxy['server'] = proxy['server']
                 ordered_proxy['port'] = proxy['port']
                 
-                # 添加类型特定字段和可选字段，按字母顺序
+                # 添加类型特定字段和可选字段
                 additional_fields = {}
                 if proxy['type'] == 'ss':
                     additional_fields['cipher'] = proxy['cipher']
@@ -196,8 +196,8 @@ for proxy_list in all_proxies:
                 
                 # 添加通用可选字段
                 additional_fields['udp'] = proxy.get('udp', True)
-                additional_fields['tfo'] = proxy.get('tfo', False)  # mihomo 支持
-                additional_fields['ip-version'] = proxy.get('ip-version', 'dual')  # mihomo 支持
+                additional_fields['tfo'] = proxy.get('tfo', False)
+                additional_fields['ip-version'] = proxy.get('ip-version', 'dual')
                 
                 # 按字母顺序排序 additional_fields
                 sorted_additional = sorted(additional_fields.items())
@@ -208,12 +208,13 @@ for proxy_list in all_proxies:
                 proxy_key = (ordered_proxy['server'], ordered_proxy['port'], ordered_proxy['type'])
                 if proxy_key not in seen_proxies:
                     seen_proxies.add(proxy_key)
-                    merged_proxies.append(ordered_proxy)
+                    # 转换为普通字典以避免 Python 标签
+                    merged_proxies.append(dict(ordered_proxy))
                 
                 break
 
-# 将合并后的代理保存为新的 YAML 文件 (yaml.dump 支持 OrderedDict)
+# 将合并后的代理保存为新的 YAML 文件
 with open('combined_proxies.yaml', 'w', encoding='utf-8') as outfile:
-    yaml.dump({'proxies': merged_proxies}, outfile, default_flow_style=False, allow_unicode=True)
+    yaml.dump({'proxies': merged_proxies}, outfile, default_flow_style=False, allow_unicode=True, sort_keys=False)
 
 print("Proxy configurations have been successfully processed and unified for mihomo.")
