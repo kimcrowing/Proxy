@@ -17,7 +17,6 @@ def get_latest_hongkongclash_yaml():
     dir_path = f"uploads/{year}/{month:02d}"
     api_url = f"https://api.github.com/repos/hongkongclash/hongkongclash.github.io/contents/{dir_path}?ref=main"
     
-    # 获取目录文件列表
     response = requests.get(api_url)
     if response.status_code != 200:
         print(f"No files found in {dir_path}, trying previous month...")
@@ -29,13 +28,11 @@ def get_latest_hongkongclash_yaml():
         api_url = f"https://api.github.com/repos/hongkongclash/hongkongclash.github.io/contents/{dir_path}?ref=main"
         response = requests.get(api_url)
     
-    # 过滤 YAML 文件并按文件名排序（假设文件名如 0-20250915.yaml）
     files = [f for f in response.json() if isinstance(f, dict) and f['name'].endswith('.yaml')]
     if not files:
         print("No YAML files found in the repository")
         return None
     
-    # 获取最新文件（按文件名排序，日期最新的在最后）
     latest_file = sorted(files, key=lambda x: x['name'])[-1]['name']
     raw_url = f"https://raw.githubusercontent.com/hongkongclash/hongkongclash.github.io/main/{dir_path}/{latest_file}"
     print(f"Latest hongkongclash YAML: {raw_url}")
@@ -52,10 +49,9 @@ all_proxies = []
 # 下载并解析 YAML 文件
 for url in urls:
     response = requests.get(url)
-    response.raise_for_status()  # 请求失败则抛出异常
+    response.raise_for_status()
     content = response.text
 
-    # 如果页面包含 HTML 标签，则尝试从 <pre> 标签中提取 YAML 数据
     if '<html>' in content:
         match = re.search(r'<pre>(.*?)</pre>', content, re.DOTALL)
         if match:
@@ -130,6 +126,22 @@ def valid_proxy(proxy):
     proxy_type = proxy.get('type', '').lower()
     banned_keywords = ['CN', 'File']
     banned_types = ['socks5', 'http']
+    
+    # 检查必要字段
+    required_fields = {
+        'ss': ['name', 'server', 'port', 'type', 'cipher', 'password'],
+        'trojan': ['name', 'server', 'port', 'type', 'password'],
+        'vmess': ['name', 'server', 'port', 'type', 'uuid', 'alterId', 'cipher']
+    }
+    
+    if proxy_type not in required_fields:
+        return False
+    
+    # 验证必要字段是否存在
+    for field in required_fields[proxy_type]:
+        if field not in proxy or proxy[field] is None:
+            return False
+    
     return (
         not any(keyword in name for keyword in banned_keywords) and
         proxy_type not in banned_types
@@ -145,24 +157,55 @@ for proxy_list in all_proxies:
             continue
 
         name = proxy.get('name', '')
-        matched = False  # 用于标识是否找到匹配的国家
+        matched = False
 
         # 检查名称中是否包含国家名称或英文缩写
         for country, (flag, code) in country_flags.items():
-            if country in name or code in name:  # 同时检查国家名称和英文缩写
+            if country in name or code in name:
                 matched = True
-                # 统计该国家的代理数量
                 if country not in name_counter:
                     name_counter[country] = 1
                 else:
                     name_counter[country] += 1
-                # 生成新的名称
                 new_name = f"{flag} {code} {str(name_counter[country]).zfill(3)}"
-                proxy['name'] = new_name
-                break  # 找到匹配的国家后跳出循环
+                
+                # 创建新代理对象，清理多余字段
+                cleaned_proxy = {
+                    'name': new_name,
+                    'server': proxy['server'],
+                    'port': proxy['port'],
+                    'type': proxy['type']
+                }
+                
+                # 根据类型添加必要字段
+                if proxy['type'] == 'ss':
+                    cleaned_proxy.update({
+                        'cipher': proxy['cipher'],
+                        'password': proxy['password'],
+                        'udp': proxy.get('udp', True)
+                    })
+                elif proxy['type'] == 'trojan':
+                    cleaned_proxy.update({
+                        'password': proxy['password'],
+                        'skip-cert-verify': proxy.get('skip-cert-verify', False),
+                        'sni': proxy.get('sni', proxy['server']),
+                        'udp': proxy.get('udp', True)
+                    })
+                elif proxy['type'] == 'vmess':
+                    cleaned_proxy.update({
+                        'uuid': proxy['uuid'],
+                        'alterId': proxy['alterId'],
+                        'cipher': proxy.get('cipher', 'auto'),
+                        'tls': proxy.get('tls', False),
+                        'skip-cert-verify': proxy.get('skip-cert-verify', False),
+                        'network': proxy.get('network', 'ws'),
+                        'client-fingerprint': proxy.get('client-fingerprint', 'chrome')
+                    })
+                
+                break
 
-        if matched and proxy not in merged_proxies:
-            merged_proxies.append(proxy)
+        if matched and cleaned_proxy not in merged_proxies:
+            merged_proxies.append(cleaned_proxy)
 
 # 将合并后的代理保存为新的 YAML 文件
 with open('combined_proxies.yaml', 'w', encoding='utf-8') as outfile:
