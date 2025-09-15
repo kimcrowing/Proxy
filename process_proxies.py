@@ -74,7 +74,7 @@ for url in urls:
         print(f"Error parsing YAML from {url}: {e}")
         continue
 
-# 定义国家与国旗图标和英文缩写的映射关系，新增香港
+# 定义国家与国旗图标和英文缩写的映射关系
 country_flags = {
     '美国': ('🇺🇸', 'US'),
     '加拿大': ('🇨🇦', 'CA'),
@@ -121,14 +121,19 @@ country_flags = {
     '匈牙利': ('🇭🇺', 'HU'),
     '斯洛伐克共和国': ('🇸🇰', 'SK'),
     '泰国王国': ('🇹🇭', 'TH'),
-    '香港': ('🇭🇰', 'HK')  # 新增香港
+    '香港': ('🇭🇰', 'HK')
 }
 
-# 定义代理筛选函数，删除名称中包含 "CN" 或 "File" 的代理（移除 "HK" 限制）
+# 定义代理筛选函数，删除名称中包含 "CN" 或 "File" 的代理，以及 type 为 socks5 或 http 的节点
 def valid_proxy(proxy):
     name = proxy.get('name', '')
-    banned_keywords = ['CN', 'File']  # 移除 'HK'，以保留香港节点
-    return not any(keyword in name for keyword in banned_keywords)
+    proxy_type = proxy.get('type', '').lower()
+    banned_keywords = ['CN', 'File']
+    banned_types = ['socks5', 'http']
+    return (
+        not any(keyword in name for keyword in banned_keywords) and
+        proxy_type not in banned_types
+    )
 
 # 合并所有代理服务器，并进行筛选和去重
 merged_proxies = []
