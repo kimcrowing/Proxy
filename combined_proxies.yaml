@@ -1,3274 +1,5863 @@
 proxies:
-- cipher: aes-256-gcm
-  name: 🇦🇪 AE 001
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 55645
-  server: du.acxylm.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇦🇪 AE 002
-  password: u17T3BvpYaaiuW2c
-  port: 443
-  server: series-a2-mec.varzesh360.co
-  type: ss
-  udp: true
-- name: 🇦🇺 AU 001
-  password: c5691b8f-d833-41e4-9295-769f3edb4cd2
-  port: 443
-  server: customer-45-142-215-88.stark-industries.solutions
-  skip-cert-verify: true
-  sni: customer-45-142-215-88.stark-industries.solutions
-  type: trojan
-  udp: true
-- name: 🇦🇺 AU 002
-  password: 4a39dba7-463b-4c8a-a804-758282c11c62
-  port: 443
-  server: in01.trojanyyds.xyz
-  skip-cert-verify: true
-  sni: in01.trojanyyds.xyz
-  type: trojan
-  udp: true
-- name: 🇦🇺 AU 003
-  password: cd30052f-f1b2-35df-9773-bd586e72f67a
-  port: 34618
-  server: 34618.kuajing.buzz
-  skip-cert-verify: false
-  sni: eplcgame.com
-  type: trojan
-  udp: true
-- name: 🇦🇺 AU 004
-  password: 8d1e94cd-23cf-4267-b630-c6894e6e1b4d
-  port: 443
-  server: tw02.trojanyyds.xyz
-  skip-cert-verify: true
-  sni: tw02.trojanyyds.xyz
-  type: trojan
-  udp: true
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇦🇺 AU 005
-  network: ws
-  port: 58831
-  server: 183.236.48.163
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇦🇺 AU 006
-  password: lNOcIAxy
-  port: 36442
-  server: 36.151.192.239
-  skip-cert-verify: true
-  sni: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  type: trojan
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇦🇺 AU 007
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 12343
-  server: au.acxylm.top
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇧🇷 BR 001
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 41829
-  server: br.acxylm.top
-  type: ss
-  udp: true
-- name: 🇨🇦 CA 001
-  password: 40c9871b-74af-45f5-ac2c-12597587dc98
-  port: 41199
-  server: free.6vczxw.xyz
-  skip-cert-verify: true
-  sni: sg15.bluemixnet.xyz
-  type: trojan
-  udp: true
-- alterId: 64
-  cipher: none
-  client-fingerprint: chrome
-  name: 🇨🇦 CA 002
-  network: ws
-  port: 50002
-  server: 47.92.152.169
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇨🇦 CA 003
-  password: 9995cc0e-2e9d-4c80-8c81-4fdbb6322a3a
-  port: 443
-  server: 20.89.130.227
-  skip-cert-verify: true
-  sni: fscus.fscloud123456789.com
-  type: trojan
-  udp: true
-- name: 🇨🇦 CA 004
-  password: c5691b8f-d833-41e4-9295-769f3edb4cd2
-  port: 443
-  server: customer-45-89-55-150.stark-industries.solutions
-  skip-cert-verify: true
-  sni: customer-45-89-55-150.stark-industries.solutions
-  type: trojan
-  udp: true
-- name: 🇨🇦 CA 005
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  port: 443
-  server: my01.trojanyyds.xyz
-  skip-cert-verify: true
-  sni: my01.trojanyyds.xyz
-  type: trojan
-  udp: true
-- name: 🇨🇦 CA 006
-  password: f4a08f9d-1fb0-4cd3-a8e3-b0a561f9c44b
-  port: 41239
-  server: free.6vczxw.xyz
-  skip-cert-verify: true
-  sni: us15.t8l1n9k.link
-  type: trojan
-  udp: true
-- name: 🇨🇦 CA 007
-  password: 8993fa1c-342e-41fc-b01e-8719abde1324
-  port: 443
-  server: ar.mjt000.com
-  skip-cert-verify: true
-  sni: ar.mjt000.com
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇨🇦 CA 008
-  network: ws
-  port: 2082
-  server: 104.19.45.50
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇨🇦 CA 009
-  network: ws
-  port: 2095
-  server: 104.20.25.146
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-- name: 🇨🇦 CA 010
-  password: f10d81d8-ad4b-300a-825b-f54f515bd06e
-  port: 443
-  server: jp1.jjzgy.live
-  skip-cert-verify: true
-  sni: jp1.jjzgy.live
-  type: trojan
-  udp: true
-- name: 🇨🇦 CA 011
-  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
-  port: 443
-  server: my01.trojanyyds.xyz
-  skip-cert-verify: true
-  sni: my01.trojanyyds.xyz
-  type: trojan
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇨🇦 CA 012
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 34468
-  server: us07.bfyrek.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf
-  name: 🇨🇦 CA 013
-  password: asd123456
-  port: 8388
-  server: 103.36.90.195
-  type: ss
-  udp: true
-- name: 🇨🇦 CA 014
-  password: bc90fb72-0b2c-45b4-a8d8-c9baa4eaaef3
-  port: 443
-  server: ru.mjt000.com
-  skip-cert-verify: true
-  sni: ru.mjt000.com
-  type: trojan
-  udp: true
-- name: 🇨🇭 CH 001
-  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
-  port: 20980
-  server: ent1.imyourdaddy.top
-  skip-cert-verify: true
-  sni: ent1.imyourdaddy.top
-  type: trojan
-  udp: true
-- name: 🇩🇪 DE 001
-  password: 061a01f1-704b-4712-8e12-6d3fc95a127d
-  port: 20992
-  server: ent1.imyourdaddy.top
-  skip-cert-verify: true
-  sni: ent1.imyourdaddy.top
-  type: trojan
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇩🇪 DE 002
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 27684
-  server: de01.acxylm.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇩🇪 DE 003
-  network: ws
-  port: 443
-  server: 2.189.59.2
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇩🇪 DE 004
-  network: ws
-  port: 443
-  server: 45.149.12.79
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-- cipher: aes-256-gcm
-  name: 🇩🇪 DE 005
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 55504
-  server: de03.acxylm.top
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇩🇪 DE 006
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 44944
-  server: de02.acxylm.top
-  type: ss
-  udp: true
-- name: 🇫🇮 FI 001
-  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
-  port: 20982
-  server: ent1.imyourdaddy.top
-  skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇫🇷 FR 001
-  network: ws
-  port: 443
-  server: 2.189.59.3
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇫🇷 FR 002
-  network: ws
-  port: 443
-  server: www.baldengineer.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇫🇷 FR 003
-  network: ws
-  port: 443
-  server: www.baldengineer.com
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇫🇷 FR 004
-  network: ws
-  port: 443
-  server: tradegdt.ai
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 39cec18f-a439-427c-9a4e-aeb6fcdf6f53
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇫🇷 FR 005
-  network: ws
-  port: 443
-  server: www.baldengineer.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇫🇷 FR 006
-  network: ws
-  port: 443
-  server: 104.21.24.170
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: b321fd5d-e6ec-4293-a644-164e3885f52e
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇫🇷 FR 007
-  network: ws
-  port: 443
-  server: tradegdt.ai
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 39cec18f-a439-427c-9a4e-aeb6fcdf6f53
-- cipher: aes-256-gcm
-  name: 🇫🇷 FR 008
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 61287
-  server: fr03.acxylm.top
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇫🇷 FR 009
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 20109
-  server: fr01.acxylm.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇫🇷 FR 010
-  network: ws
-  port: 443
-  server: 23.162.152.177
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇫🇷 FR 011
-  network: ws
-  port: 443
-  server: 2.189.59.6
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇬🇧 GB 001
-  network: ws
-  port: 443
-  server: 16.724064.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: b7cf4466-956a-4639-b861-0cf78cbb6f8f
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 GB 002
-  password: W74XFALLLuw6m5IA
-  port: 443
-  server: series-a1.samanehha.co
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇬🇧 GB 003
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 19262
-  server: uk.acxylm.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇬🇧 GB 004
-  network: ws
-  port: 443
-  server: 2.189.59.7
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-- cipher: aes-256-gcm
-  name: 🇬🇧 GB 005
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 48465
-  server: hl.acxylm.top
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇬🇧 GB 006
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 55268
-  server: hk01.acxylm.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇬🇧 GB 007
-  network: ws
-  port: 443
-  server: 57.128.184.127
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-- cipher: aes-256-gcm
-  name: 🇬🇧 GB 008
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 36605
-  server: hk07.bfyrek.top
-  type: ss
-  udp: true
-- name: 🇭🇰 HK 001
-  password: QwwHvrnN
-  port: 14505
-  server: 36.151.192.242
-  skip-cert-verify: true
-  sni: 36.151.192.242
-  type: trojan
-  udp: true
-- name: 🇭🇰 HK 002
-  password: QwwHvrnN
-  port: 42395
-  server: 36.151.192.196
-  skip-cert-verify: true
-  sni: 36.151.192.196
-  type: trojan
-  udp: true
-- alterId: 64
-  cipher: none
-  client-fingerprint: chrome
-  name: 🇭🇰 HK 003
-  network: tcp
-  port: 46602
-  server: 183.236.51.23
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇭🇰 HK 004
-  network: tcp
-  port: 56601
-  server: 183.236.51.23
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇭🇰 HK 005
-  network: tcp
-  port: '53002'
-  server: 183.236.51.23
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇭🇰 HK 006
-  network: tcp
-  port: 58002
-  server: 120.232.153.27
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-gcm
-  name: 🇭🇰 HK 007
-  password: Z1K84W4D8G5KO54J
-  port: 15011
-  server: 58.63.250.61
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇭🇰 HK 008
-  password: MAADD8JLM8XKVW56
-  port: 15016
-  server: 36.141.40.92
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰 HK 009
-  password: bb741d28-cd11-4ce8-8799-459407bacde8
-  port: 32184
-  server: 4.api-catssr.catcloud.host
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇭🇰 HK 010
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 31452
-  server: hk03.acxylm.top
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇭🇰 HK 011
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 20177
-  server: hk04.acxylm.top
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇭🇰 HK 012
-  network: ws
-  port: 33416
-  server: yd2.ainivp.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 9204afcd-023e-781f-1abc-c12efccd1344
-- cipher: aes-256-cfb
-  name: 🇭🇰 HK 013
-  password: hGkQ6915tD
-  port: 16088
-  server: 120.232.81.50
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇭🇰 HK 014
-  network: ws
-  port: 22300
-  server: 120.232.81.14
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 8cd69cef-002a-4f66-9ff6-48fbb7c2e2c7
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇭🇰 HK 015
-  network: ws
-  port: 60066
-  server: hk0067.alibabaokz.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e50e453f-04f5-4c31-b962-bff22b152410
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰 HK 016
-  password: f337e72a-be9a-4ea1-8332-7cbc88f0006f
-  port: 34338
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇭🇰 HK 017
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 45567
-  server: us3.acxylm.top
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇭🇰 HK 018
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 10473
-  server: hk02.acxylm.top
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇭🇰 HK 019
-  password: 486c819c-dc4a-4981-8949-a02a6b327287
-  port: 34001
-  server: gychun.ccdox.icu
-  type: ss
-  udp: true
-- name: 🇮🇹 IT 001
-  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
-  port: 20983
-  server: ent1.imyourdaddy.top
-  skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
-  udp: true
-- name: 🇯🇵 JP 001
-  password: FLorg
-  port: 443
-  server: 43.153.175.137
-  skip-cert-verify: true
-  sni: trojan.tcorg.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇯🇵 JP 002
-  password: FLorg
-  port: 443
-  server: 43.153.175.137
-  skip-cert-verify: false
-  sni: trojan.tcorg.filegear-sg.me
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇯🇵 JP 003
-  password: hGkQ6915tD
-  port: 15084
-  server: 120.232.81.50
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇯🇵 JP 004
-  network: ws
-  port: 33202
-  server: yd2.ainivp.com
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 9204afcd-023e-781f-1abc-c12efccd1344
-- cipher: aes-256-cfb
-  name: 🇯🇵 JP 005
-  password: amazonskr05
-  port: 443
-  server: 18.183.217.223
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇯🇵 JP 006
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 19428
-  server: jp01.acxylm.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 JP 007
-  password: f337e72a-be9a-4ea1-8332-7cbc88f0006f
-  port: 20002
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 JP 008
-  password: f337e72a-be9a-4ea1-8332-7cbc88f0006f
-  port: 20004
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇯🇵 JP 009
-  password: amazonskr05
-  port: 443
-  server: 3.112.215.69
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇯🇵 JP 010
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 43787
-  server: jp02.acxylm.top
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇯🇵 JP 011
-  password: amazonskr05
-  port: 443
-  server: 54.95.5.168
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇯🇵 JP 012
-  password: amazonskr05
-  port: 443
-  server: 57.180.42.246
-  type: ss
-  udp: true
-- name: 🇯🇵 JP 013
-  password: QwwHvrnN
-  port: 17806
-  server: 36.151.192.239
-  skip-cert-verify: true
-  sni: 36.151.192.239
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 JP 014
-  password: f337e72a-be9a-4ea1-8332-7cbc88f0006f
-  port: 20008
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇯🇵 JP 015
-  network: ws
-  port: 60126
-  server: hk0106.alibabaokz.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e50e453f-04f5-4c31-b962-bff22b152410
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇯🇵 JP 016
-  network: ws
-  port: 60034
-  server: jp0160.alibabaokz.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e50e453f-04f5-4c31-b962-bff22b152410
-- cipher: aes-256-cfb
-  name: 🇰🇷 KR 001
-  password: amazonskr05
-  port: 443
-  server: 13.209.16.115
-  type: ss
-  udp: true
-- name: 🇰🇷 KR 002
-  password: ad6e2bae-d580-4117-aa37-a8c111100740
-  port: 13036
-  server: naiu-other.05vr9nyqg5.download
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 🇰🇷 KR 003
-  password: QwwHvrnN
-  port: 36900
-  server: 36.151.192.198
-  skip-cert-verify: true
-  sni: 36.151.192.198
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇰🇷 KR 004
-  password: qwerREWQ@@
-  port: 54345
-  server: 221.139.79.57
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇰🇷 KR 005
-  password: amazonskr05
-  port: 443
-  server: 3.35.137.32
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇰🇷 KR 006
-  password: amazonskr05
-  port: 443
-  server: 3.39.240.246
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇰🇷 KR 007
-  password: amazonskr05
-  port: 443
-  server: 43.202.57.197
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇰🇷 KR 008
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 59988
-  server: kr01.acxylm.top
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇲🇽 MX 001
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 61258
-  server: mx.acxylm.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 001
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.188
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 002
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.199
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 003
-  password: 2fwufOmJ9ELfN4umzcHBfV
-  port: 12224
-  server: 194.87.82.28
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇳🇱 NL 004
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 25806
-  server: id.acxylm.top
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇵🇭 PH 001
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 56433
-  server: ph.acxylm.top
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇷🇺 RU 001
-  password: 2fwufOmJ9ELfN4umzcHBfV
-  port: 12224
-  server: 194.87.82.28
-  type: ss
-  udp: true
-- name: 🇷🇺 RU 002
-  password: 38571ca6-6692-4559-b901-0bc5826b7661
-  port: 60194
-  server: ru0195.alibabaokz.com
-  skip-cert-verify: true
-  sni: ru0195.alibabaokz.com
-  type: trojan
-  udp: true
-- name: 🇸🇬 SG 001
-  password: ad6e2bae-d580-4117-aa37-a8c111100740
-  port: 13028
-  server: naiu-sg.05vr9nyqg5.download
-  skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇸🇬 SG 002
-  password: amazonskr05
-  port: 443
-  server: 13.229.238.238
-  type: ss
-  udp: true
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇸🇬 SG 003
-  network: ws
-  port: 56601
-  server: 183.236.51.23
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇸🇬 SG 004
-  network: tcp
-  port: 53002
-  server: 183.236.51.23
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇸🇬 SG 005
-  network: ws
-  port: 58002
-  server: 120.232.153.27
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-gcm
-  name: 🇸🇬 SG 006
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 29321
-  server: sgp3.acxylm.top
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇸🇬 SG 007
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 20923
-  server: sgp5.acxylm.top
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇸🇬 SG 008
-  password: amazonskr05
-  port: 443
-  server: 47.128.215.67
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇸🇬 SG 009
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 46417
-  server: sgp1.acxylm.top
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇸🇬 SG 010
-  password: amazonskr05
-  port: 443
-  server: 52.77.209.61
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇸🇬 SG 011
-  password: amazonskr05
-  port: 443
-  server: 52.77.236.51
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇹🇭 TH 001
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 50948
-  server: th.acxylm.top
-  type: ss
-  udp: true
-- name: 🇹🇷 TR 001
-  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
-  port: 20987
-  server: ent1.imyourdaddy.top
-  skip-cert-verify: true
-  sni: ent1.imyourdaddy.top
-  type: trojan
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇹🇷 TR 002
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 55691
-  server: tr.acxylm.top
-  type: ss
-  udp: true
-- name: 🇺🇸 US 001
-  password: trojan
-  port: 8443
-  server: 104.18.12.229
-  skip-cert-verify: true
-  sni: mav2flyng.pages.dev
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 002
-  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
-  port: 20980
-  server: ent1.imyourdaddy.top
-  skip-cert-verify: true
-  sni: ent1.imyourdaddy.top
-  type: trojan
-  udp: true
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇺🇸 US 003
-  network: tcp
-  port: 56601
-  server: 183.236.51.23
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇺🇸 US 004
-  password: 7cb80b97-119b-4704-a036-5b67fceb3aac
-  port: 41139
-  server: free.6vczxw.xyz
-  skip-cert-verify: true
-  sni: jp15.bluemixnet.xyz
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 005
-  password: dns68
-  port: 443
-  server: 63.141.128.254
-  skip-cert-verify: true
-  sni: trojan.putata.us.kg
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 006
-  password: dns68
-  port: 443
-  server: 135.84.79.80
-  skip-cert-verify: true
-  sni: trojan.putata.us.kg
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 007
-  password: dns68
-  port: 443
-  server: 199.68.156.68
-  skip-cert-verify: true
-  sni: trojan.putata.us.kg
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 008
-  password: LYaOvuNXdQGTZNonhlRUKqOJcKVihzKY
-  port: 889
-  server: 103.168.154.7
-  skip-cert-verify: true
-  sni: cdn.cjhh.lol
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 009
-  password: e3fee3b6-fca1-3985-99dc-da7ca03260ea
-  port: 443
-  server: 18.179.44.127
-  skip-cert-verify: true
-  sni: akamai.cdn.steampipe.steamcontent.com
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 010
-  password: cd41b9d7-df15-46ad-a778-257b0851525a
-  port: 443
-  server: in01.trojanyyds.xyz
-  skip-cert-verify: true
-  sni: in01.trojanyyds.xyz
-  type: trojan
-  udp: true
-- alterId: 64
-  cipher: none
-  client-fingerprint: chrome
-  name: 🇺🇸 US 011
-  network: ws
-  port: 50004
-  server: 112.132.212.19
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇺🇸 US 012
-  password: FLorg
-  port: 443
-  server: 43.153.175.137
-  skip-cert-verify: true
-  sni: trojan.tcorg.filegear-sg.me
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇺🇸 US 013
-  network: ws
-  port: 2082
-  server: 104.26.5.145
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇺🇸 US 014
-  network: ws
-  port: 2095
-  server: 104.19.45.11
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇺🇸 US 015
-  network: tcp
-  port: 40434
-  server: 183.236.51.23
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇺🇸 US 016
-  password: ad6e2bae-d580-4117-aa37-a8c111100740
-  port: 13036
-  server: naiu-other.05vr9nyqg5.download
-  skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇺🇸 US 017
-  network: tcp
-  port: 58831
-  server: 183.236.48.163
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇺🇸 US 018
-  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
-  port: 21005
-  server: ent1.imyourdaddy.top
-  skip-cert-verify: true
-  sni: alibabashop.com
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸 US 019
-  password: f337e72a-be9a-4ea1-8332-7cbc88f0006f
-  port: 20013
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇺🇸 US 020
-  network: ws
-  port: 443
-  server: 2.189.59.7
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇺🇸 US 021
-  network: ws
-  port: 41490
-  server: 183.236.48.143
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇺🇸 US 022
-  network: ws
-  port: 31878
-  server: 183.236.48.143
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇺🇸 US 023
-  network: ws
-  port: 52482
-  server: 183.240.253.23
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇺🇸 US 024
-  network: ws
-  port: 42055
-  server: 183.240.253.20
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇺🇸 US 025
-  network: ws
-  port: 37614
-  server: 183.240.253.20
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇺🇸 US 026
-  network: ws
-  port: 443
-  server: 2.189.59.4
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-- cipher: aes-256-gcm
-  name: 🇺🇸 US 027
-  password: 2MkHPhqUTQKK7N7D
-  port: 38045
-  server: zhuliu.zhenxunwudi.top
-  type: ss
-  udp: true
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇺🇸 US 028
-  network: ws
-  port: 31001
-  server: 142.4.96.65
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇺🇸 US 029
-  network: ws
-  port: 2086
-  server: 172.64.80.1
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 3fd7b958-2161-46e1-b6fc-bd6bb2165312
-- cipher: aes-256-gcm
-  name: 🇺🇸 US 030
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 26800
-  server: us1.acxylm.top
-  type: ss
-  udp: true
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇺🇸 US 031
-  network: ws
-  port: 52908
-  server: 120.234.109.251
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇺🇸 US 032
-  network: tcp
-  port: 52112
-  server: 183.236.51.23
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-128-gcm
-  name: 🇺🇸 US 033
-  password: 1de124fc-2e1b-47bf-a094-9e7494e87be6
-  port: 25251
-  server: alibaba1.xn--z7x16bf6t.com
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇺🇸 US 034
-  network: ws
-  port: 8443
-  server: 104.21.238.200
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 9201ffaa-6ca3-4f57-8b1f-266a2f390e43
-- name: 🇺🇸 US 035
-  password: ad6e2bae-d580-4117-aa37-a8c111100740
-  port: 13008
-  server: naiu-hk.05vr9nyqg5.download
-  skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇺🇸 US 036
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 30031
-  server: us5.acxylm.top
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇺🇸 US 037
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 14209
-  server: us2.acxylm.top
-  type: ss
-  udp: true
-- alterId: 64
-  cipher: none
-  client-fingerprint: chrome
-  name: 🇺🇸 US 038
-  network: tcp
-  port: 45402
-  server: 183.236.48.158
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: none
-  client-fingerprint: chrome
-  name: 🇺🇸 US 039
-  network: tcp
-  port: 35601
-  server: 183.240.253.23
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇺🇸 US 040
-  network: ws
-  port: 59952
-  server: 183.236.48.158
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇺🇸 US 041
-  password: ad6e2bae-d580-4117-aa37-a8c111100740
-  port: 13021
-  server: naiu-us.05vr9nyqg5.download
-  skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: random
-  name: 🇺🇸 US 042
-  network: ws
-  port: 443
-  server: www.baldengineer.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-- cipher: aes-256-gcm
-  name: 🇺🇸 US 043
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 48417
-  server: sgp2.acxylm.top
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇺🇸 US 044
-  password: amazonskr05
-  port: 443
-  server: 34.220.113.138
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇺🇸 US 045
-  password: amazonskr05
-  port: 443
-  server: 35.86.117.124
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇺🇸 US 046
-  password: amazonskr05
-  port: 443
-  server: 35.88.126.102
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇺🇸 US 047
-  password: amazonskr05
-  port: 443
-  server: 35.88.136.187
-  type: ss
-  udp: true
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇺🇸 US 048
-  network: ws
-  port: 39041
-  server: 183.240.253.26
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-gcm
-  name: 🇺🇸 US 049
-  password: Y6R9pAtvxxzmGC
-  port: 3389
-  server: 38.75.136.21
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇺🇸 US 050
-  password: amazonskr05
-  port: 443
-  server: 44.242.211.17
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇺🇸 US 051
-  password: amazonskr05
-  port: 443
-  server: 44.243.115.246
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇺🇸 US 052
-  password: amazonskr05
-  port: 443
-  server: 44.244.24.140
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇺🇸 US 053
-  password: amazonskr05
-  port: 443
-  server: 44.244.25.243
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇺🇸 US 054
-  password: amazonskr05
-  port: 443
-  server: 54.191.9.106
-  type: ss
-  udp: true
-- name: 🇺🇸 US 055
-  password: 2baa2d43-b564-3b1f-92c7-c6fa1ff7e0a2
-  port: 39874
-  server: scm.zarelayv1.com
-  skip-cert-verify: true
-  sni: us-katt.zodport.com
-  type: trojan
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇻🇳 VN 001
-  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  port: 40251
-  server: vn.acxylm.top
-  type: ss
-  udp: true
-- name: 🇻🇳 VN 002
-  password: 94d219c9-1afc-4d42-b090-8b3794764380
-  port: 443
-  server: 160.30.21.105
-  skip-cert-verify: true
-  sni: 160.30.21.105
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇭🇰 HK 020
-  network: ws
-  port: '30809'
-  server: v9.heduian.link
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: aes-256-gcm
-  name: 🇭🇰 HK 021
-  password: 2b5fad3874e5
-  port: 443
-  server: 156.251.179.135
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇭🇰 HK 022
-  network: ws
-  port: 46981
-  server: 43.247.134.211
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 0f6e3f70-d64d-4825-aa04-1ead22e96b8b
-- name: 🇭🇰 HK 023
-  password: 253bc477d4e43c209f2d427272968280
-  port: 391
-  server: 36.156.102.77
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇭🇰 HK 024
-  password: amazongreatvpn
-  port: 16888
-  server: 16.162.87.199
-  type: ss
-  udp: true
-- name: 🇭🇰 HK 025
-  password: 253bc477d4e43c209f2d427272968280
-  port: 391
-  server: 36.150.215.200
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰 HK 026
-  password: 2cf69d5f-0293-4ddb-bbfc-145de8dfc570
-  port: 4772
-  server: shenzhen99.fkfkd.cn
-  type: ss
-  udp: true
-- cipher: rc4-md5
-  name: 🇯🇵 JP 017
-  password: efanccyun
-  port: 8766
-  server: cn01.efan8867801.xyz
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇯🇵 JP 018
-  password: 8a6ca14c0936
-  port: 443
-  server: 137.220.142.150
-  type: ss
-  udp: true
-- name: 🇯🇵 JP 019
-  password: 253bc477d4e43c209f2d427272968280
-  port: 327
-  server: 36.156.102.77
-  skip-cert-verify: true
-  sni: 23.45.86.28
-  type: trojan
-  udp: true
-- name: 🇯🇵 JP 020
-  password: 253bc477d4e43c209f2d427272968280
-  port: 1924
-  server: 36.156.102.77
-  skip-cert-verify: true
-  sni: 23.45.86.28
-  type: trojan
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇯🇵 JP 021
-  password: amazongreatvpn
-  port: 16888
-  server: 57.181.174.7
-  type: ss
-  udp: true
-- name: 🇸🇬 SG 012
-  password: 253bc477d4e43c209f2d427272968280
-  port: 1501
-  server: 36.156.102.77
-  skip-cert-verify: true
-  sni: 23.45.86.28
-  type: trojan
-  udp: true
-- name: 🇸🇬 SG 013
-  password: 253bc477d4e43c209f2d427272968280
-  port: 9160
-  server: 36.156.102.77
-  skip-cert-verify: true
-  sni: 23.45.86.28
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇸🇬 SG 014
-  network: ws
-  port: '30839'
-  server: v39.heduian.link
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: rc4-md5
-  name: 🇺🇸 US 056
-  password: efanccyun
-  port: 8774
-  server: cn01.efan8867801.xyz
-  type: ss
-  udp: true
-- name: 🇺🇸 US 057
-  password: 253bc477d4e43c209f2d427272968280
-  port: 4729
-  server: 36.156.102.77
-  skip-cert-verify: true
-  sni: 23.45.86.28
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 058
-  password: 253bc477d4e43c209f2d427272968280
-  port: 13855
-  server: 36.156.102.77
-  skip-cert-verify: true
-  sni: 23.45.86.28
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇭🇰 HK 027
-  network: tcp
-  port: '46981'
-  server: 43.247.134.211
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 0f6e3f70-d64d-4825-aa04-1ead22e96b8b
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇭🇰 HK 028
-  network: kcp
-  port: '28590'
-  server: 47.239.183.87
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: d75481c7-b5c8-40a9-811a-02b709e74816
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇯🇵 JP 022
-  network: kcp
-  port: '34933'
-  server: 8.209.211.236
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 8a9150bc-b9c8-40ac-be83-aaec45176a81
-- name: 🇳🇱 NL 005
-  password: XWnVX2ASHl
-  port: 37757
-  server: 5.255.103.217
-  skip-cert-verify: false
-  sni: moshali.arshiacomplus.dpdns.org
-  type: trojan
-  udp: true
-- name: 🇸🇬 SG 015
-  password: 9e76767d-4bfa-4f04-a800-42e2f63afed2
-  port: 443
-  server: de.viefast.net
-  skip-cert-verify: true
-  sni: csapp.catch.net.tw
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 059
-  password: 253bc477d4e43c209f2d427272968280
-  port: 2282
-  server: xingxing.jiasu123.org
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 060
-  password: 253bc477d4e43c209f2d427272968280
-  port: 316
-  server: xingxing.jiasu123.org
-  skip-cert-verify: true
-  sni: 23.45.86.28
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 061
-  password: 253bc477d4e43c209f2d427272968280
-  port: 4613
-  server: xingxing.jiasu123.org
-  skip-cert-verify: true
-  sni: 23.45.86.28
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 062
-  password: 253bc477d4e43c209f2d427272968280
-  port: 3957
-  server: xingxing.jiasu123.org
-  skip-cert-verify: true
-  sni: 23.45.86.28
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 063
-  password: 253bc477d4e43c209f2d427272968280
-  port: 2966
-  server: xingxing.jiasu123.org
-  skip-cert-verify: true
-  sni: 23.45.86.28
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 064
-  password: 253bc477d4e43c209f2d427272968280
-  port: 1823
-  server: xingxing.jiasu123.org
-  skip-cert-verify: true
-  sni: 23.45.86.28
-  type: trojan
-  udp: true
-- name: 🇦🇹 AT 001
-  password: slch2024
-  port: 2096
-  server: 212.183.88.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇦🇺 AU 008
-  password: slch2024
-  port: 2096
-  server: 192.65.217.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇦🇺 AU 009
-  password: slch2024
-  port: 2096
-  server: 185.207.197.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇪🇸 ES 001
-  password: slch2024
-  port: 2096
-  server: 185.18.250.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇬🇧 GB 009
-  password: slch2024
-  port: 2096
-  server: 195.26.229.87
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇬🇧 GB 010
-  password: slch2024
-  port: 2096
-  server: 195.26.229.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇬🇧 GB 011
-  password: slch2024
-  port: 2096
-  server: 193.124.224.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇬🇧 GB 012
-  password: slch2024
-  port: 2096
-  server: 188.244.122.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇪🇸 ES 002
-  password: slch2024
-  port: 2096
-  server: 185.251.83.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇪🇸 ES 003
-  password: slch2024
-  port: 2096
-  server: 185.251.80.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇪🇸 ES 004
-  password: slch2024
-  port: 2096
-  server: 185.251.82.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇪🇸 ES 005
-  password: slch2024
-  port: 2096
-  server: 185.238.228.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇪🇸 ES 006
-  password: slch2024
-  port: 2096
-  server: 185.251.81.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇫🇷 FR 012
-  password: slch2024
-  port: 2096
-  server: 185.7.240.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇩🇪 DE 007
-  password: slch2024
-  port: 2096
-  server: 185.16.110.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇬🇧 GB 013
-  password: slch2024
-  port: 2096
-  server: 185.156.19.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇬🇧 GB 014
-  password: slch2024
-  port: 2096
-  server: 194.36.55.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇷🇺 RU 003
-  password: slch2024
-  port: 2096
-  server: 194.76.18.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇳🇱 NL 006
-  password: slch2024
-  port: 2096
-  server: 188.164.248.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇳🇱 NL 007
-  password: slch2024
-  port: 2096
-  server: 188.164.248.87
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇸🇬 SG 016
-  password: slch2024
-  port: 2096
-  server: 185.18.184.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇳🇱 NL 008
-  password: slch2024
-  port: 2096
-  server: 188.42.145.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇷🇺 RU 004
-  password: slch2024
-  port: 2096
-  server: 213.241.198.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇷🇺 RU 005
-  password: slch2024
-  port: 2096
-  server: 185.174.138.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇷🇺 RU 006
-  password: slch2024
-  port: 2096
-  server: 185.59.218.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 065
-  password: slch2024
-  port: 2096
-  server: 199.68.156.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 066
-  password: slch2024
-  port: 2096
-  server: 198.62.62.87
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 067
-  password: slch2024
-  port: 2096
-  server: 198.62.62.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 068
-  password: slch2024
-  port: 2096
-  server: 192.200.160.87
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 069
-  password: slch2024
-  port: 2096
-  server: 199.68.156.87
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 070
-  password: slch2024
-  port: 2096
-  server: 199.34.230.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇷🇺 RU 007
-  password: slch2024
-  port: 2096
-  server: 195.13.45.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 071
-  password: slch2024
-  port: 2096
-  server: 209.46.30.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 072
-  password: slch2024
-  port: 2096
-  server: 192.0.63.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 073
-  password: slch2024
-  port: 2096
-  server: 199.34.230.87
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 074
-  password: slch2024
-  port: 2096
-  server: 204.93.210.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇬🇧 GB 015
-  network: ws
-  port: 16622
-  server: t.cnmjcn.cyou
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 743dbce9-ec7d-49dd-b9d6-3b1a151e729f
-- name: 🇷🇺 RU 008
-  password: slch2024
-  port: 2096
-  server: 195.13.44.87
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 075
-  password: slch2024
-  port: 2096
-  server: 192.200.160.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 076
-  password: slch2024
-  port: 2096
-  server: 199.34.229.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 077
-  password: slch2024
-  port: 2096
-  server: 192.0.54.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 078
-  password: slch2024
-  port: 2096
-  server: 199.181.197.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇷🇺 RU 009
-  password: slch2024
-  port: 2096
-  server: 195.13.44.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 079
-  password: slch2024
-  port: 2096
-  server: 216.24.57.87
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 080
-  password: slch2024
-  port: 2096
-  server: 216.205.52.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇨🇦 CA 015
-  password: slch2024
-  port: 2096
-  server: 205.233.181.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 081
-  password: slch2024
-  port: 2096
-  server: 216.24.57.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇯🇵 JP 023
-  password: 253bc477d4e43c209f2d427272968280
-  port: 18233
-  server: 13.231.37.82
-  skip-cert-verify: true
-  sni: 23.45.86.28
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇬🇧 GB 016
-  network: tcp
-  port: 39674
-  server: 82.197.69.131
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 5a89386a-827b-4f54-8778-2f1b5122c6ef
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇸🇬 SG 017
-  network: ws
-  port: 443
-  server: 54.169.173.51
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 14a79148-3d75-41d6-a998-2be9edef88cb
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇰🇷 KR 009
-  network: ws
-  port: 443
-  server: 202.79.161.188
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇺🇸 US 082
-  network: none
-  port: 43966
-  server: 209.54.104.219
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 0e3606ae-321a-4d0b-85ec-5f4352f4bc24
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇺🇸 US 083
-  network: none
-  port: 36299
-  server: 66.253.5.158
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4ada72ac-46b4-4080-aa1e-c81999725ba5
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇺🇸 US 084
-  network: ws
-  port: 443
-  server: www.speedtest.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: b7acf44f-3c3a-430c-8ed0-fb64ccc9a13a
-- name: 🇦🇺 AU 010
-  password: 253bc477d4e43c209f2d427272968280
-  port: 2282
-  server: 43.198.184.150
-  skip-cert-verify: true
-  sni: fe2.update.microsoft.com
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 085
-  password: 253bc477d4e43c209f2d427272968280
-  port: 1924
-  server: xingxing.jiasu123.org
-  skip-cert-verify: true
-  sni: 23.45.86.28
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 086
-  password: 253bc477d4e43c209f2d427272968280
-  port: 4801
-  server: xingxing.jiasu123.org
-  skip-cert-verify: true
-  sni: 23.45.86.28
-  type: trojan
-  udp: true
-- name: 🇷🇺 RU 010
-  password: slch2024
-  port: 2096
-  server: 193.9.49.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 087
-  password: 253bc477d4e43c209f2d427272968280
-  port: 46943
-  server: xingxing.jiasu123.org
-  skip-cert-verify: true
-  sni: 23.45.86.28
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 088
-  password: 253bc477d4e43c209f2d427272968280
-  port: 3043
-  server: xingxing.jiasu123.org
-  skip-cert-verify: true
-  sni: 23.45.86.28
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 089
-  password: 253bc477d4e43c209f2d427272968280
-  port: 4317
-  server: xingxing.jiasu123.org
-  skip-cert-verify: true
-  sni: 23.45.86.28
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 090
-  password: 253bc477d4e43c209f2d427272968280
-  port: 1523
-  server: xingxing.jiasu123.org
-  skip-cert-verify: true
-  sni: 23.45.86.28
-  type: trojan
-  udp: true
-- name: 🇷🇺 RU 011
-  password: slch2024
-  port: 2096
-  server: 195.13.54.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇳🇱 NL 009
-  password: slch2024
-  port: 2096
-  server: 185.193.29.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇭🇰 HK 029
-  network: ws
-  port: 30809
-  server: v9.heduian.link
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: aes-256-gcm
-  name: 🇭🇰 HK 030
-  password: 2b5fad3874e5
-  port: 443
-  server: 156.251.179.135
-  type: ss
-  udp: true
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇭🇰 HK 031
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-- name: 🇭🇰 HK 032
-  password: 253bc477d4e43c209f2d427272968280
-  port: 443
-  server: 42.2.170.224
-  skip-cert-verify: false
-  sni: www.baidu.com
-  type: trojan
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇭🇰 HK 033
-  password: amazongreatvpn
-  port: 16888
-  server: 43.198.113.57
-  type: ss
-  udp: true
-- name: 🇭🇰 HK 034
-  password: 253bc477d4e43c209f2d427272968280
-  port: 443
-  server: 203.218.202.199
-  skip-cert-verify: false
-  sni: www.baidu.com
-  type: trojan
-  udp: true
-- cipher: rc4-md5
-  name: 🇯🇵 JP 024
-  password: efanccyun
-  port: 8766
-  server: cn01.efan8867801.xyz
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇯🇵 JP 025
-  password: 8a6ca14c0936
-  port: 443
-  server: 137.220.142.150
-  type: ss
-  udp: true
-- name: 🇯🇵 JP 026
-  password: 253bc477d4e43c209f2d427272968280
-  port: 1924
-  server: 36.156.102.77
-  skip-cert-verify: false
-  sni: 23.45.86.28
-  type: trojan
-  udp: true
-- name: 🇯🇵 JP 027
-  password: 253bc477d4e43c209f2d427272968280
-  port: 316
-  server: xingxing.jiasu123.org
-  skip-cert-verify: false
-  sni: 23.45.86.28
-  type: trojan
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇯🇵 JP 028
-  password: amazongreatvpn
-  port: 16888
-  server: 35.75.5.176
-  type: ss
-  udp: true
-- name: 🇸🇬 SG 018
-  password: 253bc477d4e43c209f2d427272968280
-  port: 3957
-  server: xingxing.jiasu123.org
-  skip-cert-verify: false
-  sni: 23.45.86.28
-  type: trojan
-  udp: true
-- name: 🇸🇬 SG 019
-  password: 253bc477d4e43c209f2d427272968280
-  port: 9160
-  server: 36.156.102.77
-  skip-cert-verify: false
-  sni: 23.45.86.28
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇸🇬 SG 020
-  network: ws
-  port: 30839
-  server: v39.heduian.link
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: aes-128-gcm
-  name: 🇺🇸 US 091
-  password: 01721e43-5389-4f97-b21c-900abb2bda9e
-  port: 12009
-  server: awes35lesl.blhao0o.dpdns.org
-  type: ss
-  udp: true
-- cipher: rc4-md5
-  name: 🇺🇸 US 092
-  password: efanccyun
-  port: 8774
-  server: cn01.efan8867801.xyz
-  type: ss
-  udp: true
-- name: 🇺🇸 US 093
-  password: 253bc477d4e43c209f2d427272968280
-  port: 2966
-  server: xingxing.jiasu123.org
-  skip-cert-verify: false
-  sni: 23.45.86.28
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 094
-  password: 253bc477d4e43c209f2d427272968280
-  port: 18233
-  server: 13.231.37.82
-  skip-cert-verify: false
-  sni: 23.45.86.28
-  type: trojan
-  udp: true
-- cipher: ss
-  name: 🇭🇰 HK 035
-  password: //YWVzLTI1Ni1nY206YW1hem9uZ3JlYXR2cG4
-  port: 16888
-  server: 43.198.113.57
-  type: ss
-  udp: true
-- cipher: ss
-  name: 🇯🇵 JP 029
-  password: //YWVzLTI1Ni1nY206YW1hem9uZ3JlYXR2cG4
-  port: 16888
-  server: 35.75.5.176
-  type: ss
-  udp: true
-- cipher: ss
-  name: 🇺🇸 US 095
-  password: //YWVzLTEyOC1nY206MDE3MjFlNDMtNTM4OS00Zjk3LWIyMWMtOTAwYWJiMmJkYTll
-  port: 12009
-  server: awes35lesl.blhao0o.dpdns.org
-  type: ss
-  udp: true
-- name: 🇦🇹 AT 002
-  password: slch2024
-  port: 2096
-  server: 212.183.88.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇦🇹 AT 003
-  password: slch2024
-  port: 2096
-  server: 212.183.88.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇦🇹 AT 004
-  password: slch2024
-  port: 2096
-  server: 212.183.88.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇨🇭 CH 002
-  password: slch2024
-  port: 2096
-  server: 185.18.250.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇨🇿 CZ 001
-  password: slch2024
-  port: 2096
-  server: 193.124.224.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇨🇿 CZ 002
-  password: slch2024
-  port: 2096
-  server: 193.124.224.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇨🇿 CZ 003
-  password: slch2024
-  port: 2096
-  server: 193.124.224.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇨🇿 CZ 004
-  password: slch2024
-  port: 2096
-  server: 193.124.224.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇩🇪 DE 008
-  password: slch2024
-  port: 2096
-  server: 188.244.122.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇩🇪 DE 009
-  password: slch2024
-  port: 2096
-  server: 188.244.122.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇩🇪 DE 010
-  password: slch2024
-  port: 2096
-  server: 188.244.122.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇩🇪 DE 011
-  password: slch2024
-  port: 2096
-  server: 188.244.122.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇪🇸 ES 007
-  password: slch2024
-  port: 2096
-  server: 185.251.83.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇪🇸 ES 008
-  password: slch2024
-  port: 2096
-  server: 185.251.83.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇪🇸 ES 009
-  password: slch2024
-  port: 2096
-  server: 185.251.80.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇪🇸 ES 010
-  password: slch2024
-  port: 2096
-  server: 185.238.228.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇪🇸 ES 011
-  password: slch2024
-  port: 2096
-  server: 185.251.83.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇪🇸 ES 012
-  password: slch2024
-  port: 2096
-  server: 185.251.80.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇪🇸 ES 013
-  password: slch2024
-  port: 2096
-  server: 185.251.81.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇪🇸 ES 014
-  password: slch2024
-  port: 2096
-  server: 185.251.81.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇪🇸 ES 015
-  password: slch2024
-  port: 2096
-  server: 185.251.82.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇪🇸 ES 016
-  password: slch2024
-  port: 2096
-  server: 185.251.83.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇪🇸 ES 017
-  password: slch2024
-  port: 2096
-  server: 185.251.82.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇪🇸 ES 018
-  password: slch2024
-  port: 2096
-  server: 185.251.81.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇪🇸 ES 019
-  password: slch2024
-  port: 2096
-  server: 185.251.80.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇪🇸 ES 020
-  password: slch2024
-  port: 2096
-  server: 185.251.81.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇫🇷 FR 013
-  password: slch2024
-  port: 2096
-  server: 185.7.240.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇫🇷 FR 014
-  password: slch2024
-  port: 2096
-  server: 185.7.240.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇫🇷 FR 015
-  password: slch2024
-  port: 2096
-  server: 185.7.240.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇫🇷 FR 016
-  password: slch2024
-  port: 2096
-  server: 185.7.240.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇫🇷 FR 017
-  password: slch2024
-  port: 2096
-  server: 185.16.110.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇫🇷 FR 018
-  password: slch2024
-  port: 2096
-  server: 185.16.110.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇫🇷 FR 019
-  password: slch2024
-  port: 2096
-  server: 185.16.110.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇬🇧 GB 017
-  password: slch2024
-  port: 2096
-  server: 185.156.19.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇬🇧 GB 018
-  password: slch2024
-  port: 2096
-  server: 185.156.19.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇬🇧 GB 019
-  password: slch2024
-  port: 2096
-  server: 185.156.19.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇬🇧 GB 020
-  password: slch2024
-  port: 2096
-  server: 185.156.19.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇳🇱 NL 010
-  password: slch2024
-  port: 2096
-  server: 188.164.248.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇳🇱 NL 011
-  password: slch2024
-  port: 2096
-  server: 188.164.248.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇳🇱 NL 012
-  password: slch2024
-  port: 2096
-  server: 185.18.184.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇳🇱 NL 013
-  password: slch2024
-  port: 2096
-  server: 188.164.248.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇳🇱 NL 014
-  password: slch2024
-  port: 2096
-  server: 188.164.248.87
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇳🇱 NL 015
-  password: slch2024
-  port: 2096
-  server: 188.164.248.87
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇷🇺 RU 012
-  password: slch2024
-  port: 2096
-  server: 185.148.107.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇷🇺 RU 013
-  password: slch2024
-  port: 2096
-  server: 185.148.107.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇷🇺 RU 014
-  password: slch2024
-  port: 2096
-  server: 185.148.107.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇷🇺 RU 015
-  password: slch2024
-  port: 2096
-  server: 185.174.138.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇷🇺 RU 016
-  password: slch2024
-  port: 2096
-  server: 185.176.24.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇷🇺 RU 017
-  password: slch2024
-  port: 2096
-  server: 185.59.218.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇷🇺 RU 018
-  password: slch2024
-  port: 2096
-  server: 185.59.218.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇷🇺 RU 019
-  password: slch2024
-  port: 2096
-  server: 185.148.107.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇷🇺 RU 020
-  password: slch2024
-  port: 2096
-  server: 185.176.24.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇷🇺 RU 021
-  password: slch2024
-  port: 2096
-  server: 188.42.145.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇷🇺 RU 022
-  password: slch2024
-  port: 2096
-  server: 185.148.107.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇷🇺 RU 023
-  password: slch2024
-  port: 2096
-  server: 185.148.107.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇷🇺 RU 024
-  password: slch2024
-  port: 2096
-  server: 188.42.145.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇷🇺 RU 025
-  password: slch2024
-  port: 2096
-  server: 185.176.24.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇷🇺 RU 026
-  password: slch2024
-  port: 2096
-  server: 188.42.145.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇷🇺 RU 027
-  password: slch2024
-  port: 2096
-  server: 185.176.24.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 096
-  password: slch2024
-  port: 2096
-  server: 199.68.156.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 097
-  password: slch2024
-  port: 2096
-  server: 199.68.156.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 098
-  password: slch2024
-  port: 2096
-  server: 199.68.156.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 099
-  password: slch2024
-  port: 2096
-  server: 209.94.90.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 100
-  password: slch2024
-  port: 2096
-  server: 192.200.160.87
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 101
-  password: slch2024
-  port: 2096
-  server: 195.13.44.87
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 102
-  password: slch2024
-  port: 2096
-  server: 209.94.90.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 103
-  password: slch2024
-  port: 2096
-  server: 192.200.160.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 104
-  password: slch2024
-  port: 2096
-  server: 199.34.229.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 105
-  password: slch2024
-  port: 2096
-  server: 199.34.230.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 106
-  password: slch2024
-  port: 2096
-  server: 192.0.54.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 107
-  password: slch2024
-  port: 2096
-  server: 185.148.104.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 108
-  password: slch2024
-  port: 2096
-  server: 192.0.63.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 109
-  password: slch2024
-  port: 2096
-  server: 209.94.90.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 110
-  password: slch2024
-  port: 2096
-  server: 199.68.156.87
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 111
-  password: slch2024
-  port: 2096
-  server: 198.62.62.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 112
-  password: slch2024
-  port: 2096
-  server: 199.181.197.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 113
-  password: slch2024
-  port: 2096
-  server: 192.0.54.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 114
-  password: slch2024
-  port: 2096
-  server: 209.94.90.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 115
-  password: slch2024
-  port: 2096
-  server: 195.13.44.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 116
-  password: slch2024
-  port: 2096
-  server: 216.24.57.87
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 117
-  password: slch2024
-  port: 2096
-  server: 216.205.52.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 118
-  password: slch2024
-  port: 2096
-  server: 195.13.44.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 119
-  password: slch2024
-  port: 2096
-  server: 185.148.105.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 120
-  password: slch2024
-  port: 2096
-  server: 195.13.45.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 121
-  password: slch2024
-  port: 2096
-  server: 209.94.90.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 122
-  password: slch2024
-  port: 2096
-  server: 192.0.63.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 123
-  password: slch2024
-  port: 2096
-  server: 185.148.105.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 124
-  password: slch2024
-  port: 2096
-  server: 192.0.63.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 125
-  password: slch2024
-  port: 2096
-  server: 205.233.181.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 126
-  password: slch2024
-  port: 2096
-  server: 209.46.30.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 127
-  password: slch2024
-  port: 2096
-  server: 209.94.90.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 128
-  password: slch2024
-  port: 2096
-  server: 199.68.156.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 129
-  password: slch2024
-  port: 2096
-  server: 198.62.62.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 130
-  password: slch2024
-  port: 2096
-  server: 198.62.62.87
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 131
-  password: slch2024
-  port: 2096
-  server: 198.62.62.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 132
-  password: slch2024
-  port: 2096
-  server: 195.13.45.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 133
-  password: slch2024
-  port: 2096
-  server: 192.200.160.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 134
-  password: slch2024
-  port: 2096
-  server: 198.62.62.87
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 135
-  password: slch2024
-  port: 2096
-  server: 199.34.230.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 136
-  password: slch2024
-  port: 2096
-  server: 192.200.160.87
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 137
-  password: slch2024
-  port: 2096
-  server: 199.34.229.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 138
-  password: slch2024
-  port: 2096
-  server: 195.13.45.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- name: 🇺🇸 US 139
-  password: slch2024
-  port: 2096
-  server: 216.24.57.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇭🇰 HK 036
-  password: 2b5fad3874e5
-  port: 443
-  server: 156.251.179.135
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇯🇵 JP 030
-  password: 8a6ca14c0936
-  port: 443
-  server: 137.220.142.150
-  type: ss
-  udp: true
-- cipher: rc4-md5
-  name: 🇺🇸 US 140
-  password: efanccyun
-  port: 8774
-  server: cn01.efan8867801.xyz
-  type: ss
-  udp: true
-- cipher: rc4-md5
-  name: 🇯🇵 JP 031
-  password: efanccyun
-  port: 8766
-  server: cn01.efan8867801.xyz
-  type: ss
-  udp: true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇦🇪 AE 001
+    - - type
+      - ss
+    - - server
+      - du.acxylm.top
+    - - port
+      - 55645
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - f8017657-aa43-43e1-830a-e1b2bcdbeeef
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇦🇪 AE 002
+    - - type
+      - ss
+    - - server
+      - series-a2-mec.varzesh360.co
+    - - port
+      - 443
+    - - cipher
+      - chacha20-ietf-poly1305
+    - - ip-version
+      - dual
+    - - password
+      - u17T3BvpYaaiuW2c
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇦🇺 AU 001
+    - - type
+      - trojan
+    - - server
+      - customer-45-142-215-88.stark-industries.solutions
+    - - port
+      - 443
+    - - ip-version
+      - dual
+    - - password
+      - c5691b8f-d833-41e4-9295-769f3edb4cd2
+    - - skip-cert-verify
+      - true
+    - - sni
+      - customer-45-142-215-88.stark-industries.solutions
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇦🇺 AU 002
+    - - type
+      - trojan
+    - - server
+      - in01.trojanyyds.xyz
+    - - port
+      - 443
+    - - ip-version
+      - dual
+    - - password
+      - 4a39dba7-463b-4c8a-a804-758282c11c62
+    - - skip-cert-verify
+      - true
+    - - sni
+      - in01.trojanyyds.xyz
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇦🇺 AU 003
+    - - type
+      - trojan
+    - - server
+      - 34618.kuajing.buzz
+    - - port
+      - 34618
+    - - ip-version
+      - dual
+    - - password
+      - cd30052f-f1b2-35df-9773-bd586e72f67a
+    - - skip-cert-verify
+      - false
+    - - sni
+      - eplcgame.com
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇦🇺 AU 004
+    - - type
+      - trojan
+    - - server
+      - tw02.trojanyyds.xyz
+    - - port
+      - 443
+    - - ip-version
+      - dual
+    - - password
+      - 8d1e94cd-23cf-4267-b630-c6894e6e1b4d
+    - - skip-cert-verify
+      - true
+    - - sni
+      - tw02.trojanyyds.xyz
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇦🇺 AU 005
+    - - type
+      - vmess
+    - - server
+      - 183.236.48.163
+    - - port
+      - 58831
+    - - alterId
+      - 64
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - false
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 418048af-a293-4b99-9b0c-98ca3580dd24
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇦🇺 AU 006
+    - - type
+      - trojan
+    - - server
+      - 36.151.192.239
+    - - port
+      - 36442
+    - - ip-version
+      - dual
+    - - password
+      - lNOcIAxy
+    - - skip-cert-verify
+      - true
+    - - sni
+      - wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇦🇺 AU 007
+    - - type
+      - ss
+    - - server
+      - au.acxylm.top
+    - - port
+      - 12343
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - f8017657-aa43-43e1-830a-e1b2bcdbeeef
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇧🇷 BR 001
+    - - type
+      - ss
+    - - server
+      - br.acxylm.top
+    - - port
+      - 41829
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - f8017657-aa43-43e1-830a-e1b2bcdbeeef
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇨🇦 CA 001
+    - - type
+      - trojan
+    - - server
+      - free.6vczxw.xyz
+    - - port
+      - 41199
+    - - ip-version
+      - dual
+    - - password
+      - 40c9871b-74af-45f5-ac2c-12597587dc98
+    - - skip-cert-verify
+      - true
+    - - sni
+      - sg15.bluemixnet.xyz
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇨🇦 CA 002
+    - - type
+      - vmess
+    - - server
+      - 47.92.152.169
+    - - port
+      - 50002
+    - - alterId
+      - 64
+    - - cipher
+      - none
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - false
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 418048af-a293-4b99-9b0c-98ca3580dd24
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇨🇦 CA 003
+    - - type
+      - trojan
+    - - server
+      - 20.89.130.227
+    - - port
+      - 443
+    - - ip-version
+      - dual
+    - - password
+      - 9995cc0e-2e9d-4c80-8c81-4fdbb6322a3a
+    - - skip-cert-verify
+      - true
+    - - sni
+      - fscus.fscloud123456789.com
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇨🇦 CA 004
+    - - type
+      - trojan
+    - - server
+      - customer-45-89-55-150.stark-industries.solutions
+    - - port
+      - 443
+    - - ip-version
+      - dual
+    - - password
+      - c5691b8f-d833-41e4-9295-769f3edb4cd2
+    - - skip-cert-verify
+      - true
+    - - sni
+      - customer-45-89-55-150.stark-industries.solutions
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇨🇦 CA 005
+    - - type
+      - trojan
+    - - server
+      - my01.trojanyyds.xyz
+    - - port
+      - 443
+    - - ip-version
+      - dual
+    - - password
+      - 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+    - - skip-cert-verify
+      - true
+    - - sni
+      - my01.trojanyyds.xyz
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇨🇦 CA 006
+    - - type
+      - trojan
+    - - server
+      - free.6vczxw.xyz
+    - - port
+      - 41239
+    - - ip-version
+      - dual
+    - - password
+      - f4a08f9d-1fb0-4cd3-a8e3-b0a561f9c44b
+    - - skip-cert-verify
+      - true
+    - - sni
+      - us15.t8l1n9k.link
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇨🇦 CA 007
+    - - type
+      - trojan
+    - - server
+      - ar.mjt000.com
+    - - port
+      - 443
+    - - ip-version
+      - dual
+    - - password
+      - 8993fa1c-342e-41fc-b01e-8719abde1324
+    - - skip-cert-verify
+      - true
+    - - sni
+      - ar.mjt000.com
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇨🇦 CA 008
+    - - type
+      - vmess
+    - - server
+      - 104.19.45.50
+    - - port
+      - 2082
+    - - alterId
+      - 0
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - false
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇨🇦 CA 009
+    - - type
+      - vmess
+    - - server
+      - 104.20.25.146
+    - - port
+      - 2095
+    - - alterId
+      - 0
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - true
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 18d96190-c10f-448f-a82a-2d36df5c3cde
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇨🇦 CA 010
+    - - type
+      - trojan
+    - - server
+      - jp1.jjzgy.live
+    - - port
+      - 443
+    - - ip-version
+      - dual
+    - - password
+      - f10d81d8-ad4b-300a-825b-f54f515bd06e
+    - - skip-cert-verify
+      - true
+    - - sni
+      - jp1.jjzgy.live
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇨🇦 CA 012
+    - - type
+      - ss
+    - - server
+      - us07.bfyrek.top
+    - - port
+      - 34468
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - f8017657-aa43-43e1-830a-e1b2bcdbeeef
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇨🇦 CA 013
+    - - type
+      - ss
+    - - server
+      - 103.36.90.195
+    - - port
+      - 8388
+    - - cipher
+      - chacha20-ietf
+    - - ip-version
+      - dual
+    - - password
+      - asd123456
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇨🇦 CA 014
+    - - type
+      - trojan
+    - - server
+      - ru.mjt000.com
+    - - port
+      - 443
+    - - ip-version
+      - dual
+    - - password
+      - bc90fb72-0b2c-45b4-a8d8-c9baa4eaaef3
+    - - skip-cert-verify
+      - true
+    - - sni
+      - ru.mjt000.com
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇨🇭 CH 001
+    - - type
+      - trojan
+    - - server
+      - ent1.imyourdaddy.top
+    - - port
+      - 20980
+    - - ip-version
+      - dual
+    - - password
+      - 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
+    - - skip-cert-verify
+      - true
+    - - sni
+      - ent1.imyourdaddy.top
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇩🇪 DE 001
+    - - type
+      - trojan
+    - - server
+      - ent1.imyourdaddy.top
+    - - port
+      - 20992
+    - - ip-version
+      - dual
+    - - password
+      - 061a01f1-704b-4712-8e12-6d3fc95a127d
+    - - skip-cert-verify
+      - true
+    - - sni
+      - ent1.imyourdaddy.top
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇩🇪 DE 002
+    - - type
+      - ss
+    - - server
+      - de01.acxylm.top
+    - - port
+      - 27684
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - f8017657-aa43-43e1-830a-e1b2bcdbeeef
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇩🇪 DE 003
+    - - type
+      - vmess
+    - - server
+      - 2.189.59.2
+    - - port
+      - 443
+    - - alterId
+      - 0
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - false
+    - - tfo
+      - false
+    - - tls
+      - true
+    - - udp
+      - true
+    - - uuid
+      - 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇩🇪 DE 004
+    - - type
+      - vmess
+    - - server
+      - 45.149.12.79
+    - - port
+      - 443
+    - - alterId
+      - 0
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - true
+    - - tfo
+      - false
+    - - tls
+      - true
+    - - udp
+      - true
+    - - uuid
+      - 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇩🇪 DE 005
+    - - type
+      - ss
+    - - server
+      - de03.acxylm.top
+    - - port
+      - 55504
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - f8017657-aa43-43e1-830a-e1b2bcdbeeef
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇩🇪 DE 006
+    - - type
+      - ss
+    - - server
+      - de02.acxylm.top
+    - - port
+      - 44944
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - f8017657-aa43-43e1-830a-e1b2bcdbeeef
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇫🇮 FI 001
+    - - type
+      - trojan
+    - - server
+      - ent1.imyourdaddy.top
+    - - port
+      - 20982
+    - - ip-version
+      - dual
+    - - password
+      - 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
+    - - skip-cert-verify
+      - true
+    - - sni
+      - sale.alibaba.com
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇫🇷 FR 001
+    - - type
+      - vmess
+    - - server
+      - 2.189.59.3
+    - - port
+      - 443
+    - - alterId
+      - 0
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - true
+    - - tfo
+      - false
+    - - tls
+      - true
+    - - udp
+      - true
+    - - uuid
+      - 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇫🇷 FR 002
+    - - type
+      - vmess
+    - - server
+      - www.baldengineer.com
+    - - port
+      - 443
+    - - alterId
+      - 0
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - true
+    - - tfo
+      - false
+    - - tls
+      - true
+    - - udp
+      - true
+    - - uuid
+      - f584de15-2034-4170-a723-f48c2bae5e0f
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇫🇷 FR 004
+    - - type
+      - vmess
+    - - server
+      - tradegdt.ai
+    - - port
+      - 443
+    - - alterId
+      - 0
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - true
+    - - tfo
+      - false
+    - - tls
+      - true
+    - - udp
+      - true
+    - - uuid
+      - 39cec18f-a439-427c-9a4e-aeb6fcdf6f53
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇫🇷 FR 006
+    - - type
+      - vmess
+    - - server
+      - 104.21.24.170
+    - - port
+      - 443
+    - - alterId
+      - 0
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - true
+    - - tfo
+      - false
+    - - tls
+      - true
+    - - udp
+      - true
+    - - uuid
+      - b321fd5d-e6ec-4293-a644-164e3885f52e
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇫🇷 FR 008
+    - - type
+      - ss
+    - - server
+      - fr03.acxylm.top
+    - - port
+      - 61287
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - f8017657-aa43-43e1-830a-e1b2bcdbeeef
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇫🇷 FR 009
+    - - type
+      - ss
+    - - server
+      - fr01.acxylm.top
+    - - port
+      - 20109
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - f8017657-aa43-43e1-830a-e1b2bcdbeeef
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇫🇷 FR 010
+    - - type
+      - vmess
+    - - server
+      - 23.162.152.177
+    - - port
+      - 443
+    - - alterId
+      - 0
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - true
+    - - tfo
+      - false
+    - - tls
+      - true
+    - - udp
+      - true
+    - - uuid
+      - 03fcc618-b93d-6796-6aed-8a38c975d581
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇫🇷 FR 011
+    - - type
+      - vmess
+    - - server
+      - 2.189.59.6
+    - - port
+      - 443
+    - - alterId
+      - 0
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - true
+    - - tfo
+      - false
+    - - tls
+      - true
+    - - udp
+      - true
+    - - uuid
+      - 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇬🇧 GB 001
+    - - type
+      - vmess
+    - - server
+      - 16.724064.xyz
+    - - port
+      - 443
+    - - alterId
+      - 0
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - true
+    - - tfo
+      - false
+    - - tls
+      - true
+    - - udp
+      - true
+    - - uuid
+      - b7cf4466-956a-4639-b861-0cf78cbb6f8f
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇬🇧 GB 002
+    - - type
+      - ss
+    - - server
+      - series-a1.samanehha.co
+    - - port
+      - 443
+    - - cipher
+      - chacha20-ietf-poly1305
+    - - ip-version
+      - dual
+    - - password
+      - W74XFALLLuw6m5IA
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇬🇧 GB 003
+    - - type
+      - ss
+    - - server
+      - uk.acxylm.top
+    - - port
+      - 19262
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - f8017657-aa43-43e1-830a-e1b2bcdbeeef
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇬🇧 GB 004
+    - - type
+      - vmess
+    - - server
+      - 2.189.59.7
+    - - port
+      - 443
+    - - alterId
+      - 0
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - false
+    - - tfo
+      - false
+    - - tls
+      - true
+    - - udp
+      - true
+    - - uuid
+      - 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇬🇧 GB 005
+    - - type
+      - ss
+    - - server
+      - hl.acxylm.top
+    - - port
+      - 48465
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - f8017657-aa43-43e1-830a-e1b2bcdbeeef
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇬🇧 GB 006
+    - - type
+      - ss
+    - - server
+      - hk01.acxylm.top
+    - - port
+      - 55268
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - f8017657-aa43-43e1-830a-e1b2bcdbeeef
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇬🇧 GB 007
+    - - type
+      - vmess
+    - - server
+      - 57.128.184.127
+    - - port
+      - 443
+    - - alterId
+      - 0
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - true
+    - - tfo
+      - false
+    - - tls
+      - true
+    - - udp
+      - true
+    - - uuid
+      - 03fcc618-b93d-6796-6aed-8a38c975d581
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇬🇧 GB 008
+    - - type
+      - ss
+    - - server
+      - hk07.bfyrek.top
+    - - port
+      - 36605
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - f8017657-aa43-43e1-830a-e1b2bcdbeeef
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇭🇰 HK 001
+    - - type
+      - trojan
+    - - server
+      - 36.151.192.242
+    - - port
+      - 14505
+    - - ip-version
+      - dual
+    - - password
+      - QwwHvrnN
+    - - skip-cert-verify
+      - true
+    - - sni
+      - 36.151.192.242
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇭🇰 HK 002
+    - - type
+      - trojan
+    - - server
+      - 36.151.192.196
+    - - port
+      - 42395
+    - - ip-version
+      - dual
+    - - password
+      - QwwHvrnN
+    - - skip-cert-verify
+      - true
+    - - sni
+      - 36.151.192.196
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇭🇰 HK 003
+    - - type
+      - vmess
+    - - server
+      - 183.236.51.23
+    - - port
+      - 46602
+    - - alterId
+      - 64
+    - - cipher
+      - none
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - tcp
+    - - skip-cert-verify
+      - false
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 418048af-a293-4b99-9b0c-98ca3580dd24
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇭🇰 HK 004
+    - - type
+      - vmess
+    - - server
+      - 183.236.51.23
+    - - port
+      - 56601
+    - - alterId
+      - 64
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - tcp
+    - - skip-cert-verify
+      - true
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 418048af-a293-4b99-9b0c-98ca3580dd24
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇭🇰 HK 005
+    - - type
+      - vmess
+    - - server
+      - 183.236.51.23
+    - - port
+      - '53002'
+    - - alterId
+      - 64
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - tcp
+    - - skip-cert-verify
+      - false
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 418048af-a293-4b99-9b0c-98ca3580dd24
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇭🇰 HK 006
+    - - type
+      - vmess
+    - - server
+      - 120.232.153.27
+    - - port
+      - 58002
+    - - alterId
+      - 64
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - tcp
+    - - skip-cert-verify
+      - true
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 418048af-a293-4b99-9b0c-98ca3580dd24
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇭🇰 HK 007
+    - - type
+      - ss
+    - - server
+      - 58.63.250.61
+    - - port
+      - 15011
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - Z1K84W4D8G5KO54J
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇭🇰 HK 008
+    - - type
+      - ss
+    - - server
+      - 36.141.40.92
+    - - port
+      - 15016
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - MAADD8JLM8XKVW56
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇭🇰 HK 009
+    - - type
+      - ss
+    - - server
+      - 4.api-catssr.catcloud.host
+    - - port
+      - 32184
+    - - cipher
+      - chacha20-ietf-poly1305
+    - - ip-version
+      - dual
+    - - password
+      - bb741d28-cd11-4ce8-8799-459407bacde8
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇭🇰 HK 010
+    - - type
+      - ss
+    - - server
+      - hk03.acxylm.top
+    - - port
+      - 31452
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - f8017657-aa43-43e1-830a-e1b2bcdbeeef
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇭🇰 HK 011
+    - - type
+      - ss
+    - - server
+      - hk04.acxylm.top
+    - - port
+      - 20177
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - f8017657-aa43-43e1-830a-e1b2bcdbeeef
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇭🇰 HK 012
+    - - type
+      - vmess
+    - - server
+      - yd2.ainivp.com
+    - - port
+      - 33416
+    - - alterId
+      - 0
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - true
+    - - tfo
+      - false
+    - - tls
+      - true
+    - - udp
+      - true
+    - - uuid
+      - 9204afcd-023e-781f-1abc-c12efccd1344
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇭🇰 HK 013
+    - - type
+      - ss
+    - - server
+      - 120.232.81.50
+    - - port
+      - 16088
+    - - cipher
+      - aes-256-cfb
+    - - ip-version
+      - dual
+    - - password
+      - hGkQ6915tD
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇭🇰 HK 014
+    - - type
+      - vmess
+    - - server
+      - 120.232.81.14
+    - - port
+      - 22300
+    - - alterId
+      - 0
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - false
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 8cd69cef-002a-4f66-9ff6-48fbb7c2e2c7
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇭🇰 HK 015
+    - - type
+      - vmess
+    - - server
+      - hk0067.alibabaokz.com
+    - - port
+      - 60066
+    - - alterId
+      - 0
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - false
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - e50e453f-04f5-4c31-b962-bff22b152410
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇭🇰 HK 016
+    - - type
+      - ss
+    - - server
+      - gy.666666222.shop
+    - - port
+      - 34338
+    - - cipher
+      - chacha20-ietf-poly1305
+    - - ip-version
+      - dual
+    - - password
+      - f337e72a-be9a-4ea1-8332-7cbc88f0006f
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇭🇰 HK 017
+    - - type
+      - ss
+    - - server
+      - us3.acxylm.top
+    - - port
+      - 45567
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - f8017657-aa43-43e1-830a-e1b2bcdbeeef
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇭🇰 HK 018
+    - - type
+      - ss
+    - - server
+      - hk02.acxylm.top
+    - - port
+      - 10473
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - f8017657-aa43-43e1-830a-e1b2bcdbeeef
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇭🇰 HK 019
+    - - type
+      - ss
+    - - server
+      - gychun.ccdox.icu
+    - - port
+      - 34001
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - 486c819c-dc4a-4981-8949-a02a6b327287
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇮🇹 IT 001
+    - - type
+      - trojan
+    - - server
+      - ent1.imyourdaddy.top
+    - - port
+      - 20983
+    - - ip-version
+      - dual
+    - - password
+      - 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
+    - - skip-cert-verify
+      - true
+    - - sni
+      - sale.alibaba.com
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇯🇵 JP 001
+    - - type
+      - trojan
+    - - server
+      - 43.153.175.137
+    - - port
+      - 443
+    - - ip-version
+      - dual
+    - - password
+      - FLorg
+    - - skip-cert-verify
+      - true
+    - - sni
+      - trojan.tcorg.filegear-sg.me
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇯🇵 JP 003
+    - - type
+      - ss
+    - - server
+      - 120.232.81.50
+    - - port
+      - 15084
+    - - cipher
+      - aes-256-cfb
+    - - ip-version
+      - dual
+    - - password
+      - hGkQ6915tD
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇯🇵 JP 004
+    - - type
+      - vmess
+    - - server
+      - yd2.ainivp.com
+    - - port
+      - 33202
+    - - alterId
+      - 0
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - false
+    - - tfo
+      - false
+    - - tls
+      - true
+    - - udp
+      - true
+    - - uuid
+      - 9204afcd-023e-781f-1abc-c12efccd1344
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇯🇵 JP 005
+    - - type
+      - ss
+    - - server
+      - 18.183.217.223
+    - - port
+      - 443
+    - - cipher
+      - aes-256-cfb
+    - - ip-version
+      - dual
+    - - password
+      - amazonskr05
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇯🇵 JP 006
+    - - type
+      - ss
+    - - server
+      - jp01.acxylm.top
+    - - port
+      - 19428
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - f8017657-aa43-43e1-830a-e1b2bcdbeeef
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇯🇵 JP 007
+    - - type
+      - ss
+    - - server
+      - gy.666666222.shop
+    - - port
+      - 20002
+    - - cipher
+      - chacha20-ietf-poly1305
+    - - ip-version
+      - dual
+    - - password
+      - f337e72a-be9a-4ea1-8332-7cbc88f0006f
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇯🇵 JP 008
+    - - type
+      - ss
+    - - server
+      - gy.666666222.shop
+    - - port
+      - 20004
+    - - cipher
+      - chacha20-ietf-poly1305
+    - - ip-version
+      - dual
+    - - password
+      - f337e72a-be9a-4ea1-8332-7cbc88f0006f
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇯🇵 JP 009
+    - - type
+      - ss
+    - - server
+      - 3.112.215.69
+    - - port
+      - 443
+    - - cipher
+      - aes-256-cfb
+    - - ip-version
+      - dual
+    - - password
+      - amazonskr05
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇯🇵 JP 010
+    - - type
+      - ss
+    - - server
+      - jp02.acxylm.top
+    - - port
+      - 43787
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - f8017657-aa43-43e1-830a-e1b2bcdbeeef
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇯🇵 JP 011
+    - - type
+      - ss
+    - - server
+      - 54.95.5.168
+    - - port
+      - 443
+    - - cipher
+      - aes-256-cfb
+    - - ip-version
+      - dual
+    - - password
+      - amazonskr05
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇯🇵 JP 012
+    - - type
+      - ss
+    - - server
+      - 57.180.42.246
+    - - port
+      - 443
+    - - cipher
+      - aes-256-cfb
+    - - ip-version
+      - dual
+    - - password
+      - amazonskr05
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇯🇵 JP 013
+    - - type
+      - trojan
+    - - server
+      - 36.151.192.239
+    - - port
+      - 17806
+    - - ip-version
+      - dual
+    - - password
+      - QwwHvrnN
+    - - skip-cert-verify
+      - true
+    - - sni
+      - 36.151.192.239
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇯🇵 JP 014
+    - - type
+      - ss
+    - - server
+      - gy.666666222.shop
+    - - port
+      - 20008
+    - - cipher
+      - chacha20-ietf-poly1305
+    - - ip-version
+      - dual
+    - - password
+      - f337e72a-be9a-4ea1-8332-7cbc88f0006f
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇯🇵 JP 015
+    - - type
+      - vmess
+    - - server
+      - hk0106.alibabaokz.com
+    - - port
+      - 60126
+    - - alterId
+      - 0
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - false
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - e50e453f-04f5-4c31-b962-bff22b152410
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇯🇵 JP 016
+    - - type
+      - vmess
+    - - server
+      - jp0160.alibabaokz.com
+    - - port
+      - 60034
+    - - alterId
+      - 0
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - false
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - e50e453f-04f5-4c31-b962-bff22b152410
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇰🇷 KR 001
+    - - type
+      - ss
+    - - server
+      - 13.209.16.115
+    - - port
+      - 443
+    - - cipher
+      - aes-256-cfb
+    - - ip-version
+      - dual
+    - - password
+      - amazonskr05
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇰🇷 KR 002
+    - - type
+      - trojan
+    - - server
+      - naiu-other.05vr9nyqg5.download
+    - - port
+      - 13036
+    - - ip-version
+      - dual
+    - - password
+      - ad6e2bae-d580-4117-aa37-a8c111100740
+    - - skip-cert-verify
+      - true
+    - - sni
+      - cloudflare.node-ssl.cdn-alibaba.com
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇰🇷 KR 003
+    - - type
+      - trojan
+    - - server
+      - 36.151.192.198
+    - - port
+      - 36900
+    - - ip-version
+      - dual
+    - - password
+      - QwwHvrnN
+    - - skip-cert-verify
+      - true
+    - - sni
+      - 36.151.192.198
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇰🇷 KR 004
+    - - type
+      - ss
+    - - server
+      - 221.139.79.57
+    - - port
+      - 54345
+    - - cipher
+      - aes-256-cfb
+    - - ip-version
+      - dual
+    - - password
+      - qwerREWQ@@
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇰🇷 KR 005
+    - - type
+      - ss
+    - - server
+      - 3.35.137.32
+    - - port
+      - 443
+    - - cipher
+      - aes-256-cfb
+    - - ip-version
+      - dual
+    - - password
+      - amazonskr05
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇰🇷 KR 006
+    - - type
+      - ss
+    - - server
+      - 3.39.240.246
+    - - port
+      - 443
+    - - cipher
+      - aes-256-cfb
+    - - ip-version
+      - dual
+    - - password
+      - amazonskr05
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇰🇷 KR 007
+    - - type
+      - ss
+    - - server
+      - 43.202.57.197
+    - - port
+      - 443
+    - - cipher
+      - aes-256-cfb
+    - - ip-version
+      - dual
+    - - password
+      - amazonskr05
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇰🇷 KR 008
+    - - type
+      - ss
+    - - server
+      - kr01.acxylm.top
+    - - port
+      - 59988
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - f8017657-aa43-43e1-830a-e1b2bcdbeeef
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇲🇽 MX 001
+    - - type
+      - ss
+    - - server
+      - mx.acxylm.top
+    - - port
+      - 61258
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - f8017657-aa43-43e1-830a-e1b2bcdbeeef
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇳🇱 NL 001
+    - - type
+      - ss
+    - - server
+      - 45.87.175.188
+    - - port
+      - 8080
+    - - cipher
+      - chacha20-ietf-poly1305
+    - - ip-version
+      - dual
+    - - password
+      - 1RWwXhwfAB5gAEozU4G2Pg
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇳🇱 NL 002
+    - - type
+      - ss
+    - - server
+      - 45.87.175.199
+    - - port
+      - 8080
+    - - cipher
+      - chacha20-ietf-poly1305
+    - - ip-version
+      - dual
+    - - password
+      - 1RWwXhwfAB5gAEozU4G2Pg
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇳🇱 NL 003
+    - - type
+      - ss
+    - - server
+      - 194.87.82.28
+    - - port
+      - 12224
+    - - cipher
+      - chacha20-ietf-poly1305
+    - - ip-version
+      - dual
+    - - password
+      - 2fwufOmJ9ELfN4umzcHBfV
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇳🇱 NL 004
+    - - type
+      - ss
+    - - server
+      - id.acxylm.top
+    - - port
+      - 25806
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - f8017657-aa43-43e1-830a-e1b2bcdbeeef
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇵🇭 PH 001
+    - - type
+      - ss
+    - - server
+      - ph.acxylm.top
+    - - port
+      - 56433
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - f8017657-aa43-43e1-830a-e1b2bcdbeeef
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇷🇺 RU 002
+    - - type
+      - trojan
+    - - server
+      - ru0195.alibabaokz.com
+    - - port
+      - 60194
+    - - ip-version
+      - dual
+    - - password
+      - 38571ca6-6692-4559-b901-0bc5826b7661
+    - - skip-cert-verify
+      - true
+    - - sni
+      - ru0195.alibabaokz.com
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇸🇬 SG 001
+    - - type
+      - trojan
+    - - server
+      - naiu-sg.05vr9nyqg5.download
+    - - port
+      - 13028
+    - - ip-version
+      - dual
+    - - password
+      - ad6e2bae-d580-4117-aa37-a8c111100740
+    - - skip-cert-verify
+      - false
+    - - sni
+      - cloudflare.node-ssl.cdn-alibaba.com
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇸🇬 SG 002
+    - - type
+      - ss
+    - - server
+      - 13.229.238.238
+    - - port
+      - 443
+    - - cipher
+      - aes-256-cfb
+    - - ip-version
+      - dual
+    - - password
+      - amazonskr05
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇸🇬 SG 004
+    - - type
+      - vmess
+    - - server
+      - 183.236.51.23
+    - - port
+      - 53002
+    - - alterId
+      - 64
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - tcp
+    - - skip-cert-verify
+      - true
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 418048af-a293-4b99-9b0c-98ca3580dd24
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇸🇬 SG 006
+    - - type
+      - ss
+    - - server
+      - sgp3.acxylm.top
+    - - port
+      - 29321
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - f8017657-aa43-43e1-830a-e1b2bcdbeeef
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇸🇬 SG 007
+    - - type
+      - ss
+    - - server
+      - sgp5.acxylm.top
+    - - port
+      - 20923
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - f8017657-aa43-43e1-830a-e1b2bcdbeeef
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇸🇬 SG 008
+    - - type
+      - ss
+    - - server
+      - 47.128.215.67
+    - - port
+      - 443
+    - - cipher
+      - aes-256-cfb
+    - - ip-version
+      - dual
+    - - password
+      - amazonskr05
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇸🇬 SG 009
+    - - type
+      - ss
+    - - server
+      - sgp1.acxylm.top
+    - - port
+      - 46417
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - f8017657-aa43-43e1-830a-e1b2bcdbeeef
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇸🇬 SG 010
+    - - type
+      - ss
+    - - server
+      - 52.77.209.61
+    - - port
+      - 443
+    - - cipher
+      - aes-256-cfb
+    - - ip-version
+      - dual
+    - - password
+      - amazonskr05
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇸🇬 SG 011
+    - - type
+      - ss
+    - - server
+      - 52.77.236.51
+    - - port
+      - 443
+    - - cipher
+      - aes-256-cfb
+    - - ip-version
+      - dual
+    - - password
+      - amazonskr05
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇹🇭 TH 001
+    - - type
+      - ss
+    - - server
+      - th.acxylm.top
+    - - port
+      - 50948
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - f8017657-aa43-43e1-830a-e1b2bcdbeeef
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇹🇷 TR 001
+    - - type
+      - trojan
+    - - server
+      - ent1.imyourdaddy.top
+    - - port
+      - 20987
+    - - ip-version
+      - dual
+    - - password
+      - 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
+    - - skip-cert-verify
+      - true
+    - - sni
+      - ent1.imyourdaddy.top
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇹🇷 TR 002
+    - - type
+      - ss
+    - - server
+      - tr.acxylm.top
+    - - port
+      - 55691
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - f8017657-aa43-43e1-830a-e1b2bcdbeeef
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 001
+    - - type
+      - trojan
+    - - server
+      - 104.18.12.229
+    - - port
+      - 8443
+    - - ip-version
+      - dual
+    - - password
+      - trojan
+    - - skip-cert-verify
+      - true
+    - - sni
+      - mav2flyng.pages.dev
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 004
+    - - type
+      - trojan
+    - - server
+      - free.6vczxw.xyz
+    - - port
+      - 41139
+    - - ip-version
+      - dual
+    - - password
+      - 7cb80b97-119b-4704-a036-5b67fceb3aac
+    - - skip-cert-verify
+      - true
+    - - sni
+      - jp15.bluemixnet.xyz
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 005
+    - - type
+      - trojan
+    - - server
+      - 63.141.128.254
+    - - port
+      - 443
+    - - ip-version
+      - dual
+    - - password
+      - dns68
+    - - skip-cert-verify
+      - true
+    - - sni
+      - trojan.putata.us.kg
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 006
+    - - type
+      - trojan
+    - - server
+      - 135.84.79.80
+    - - port
+      - 443
+    - - ip-version
+      - dual
+    - - password
+      - dns68
+    - - skip-cert-verify
+      - true
+    - - sni
+      - trojan.putata.us.kg
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 007
+    - - type
+      - trojan
+    - - server
+      - 199.68.156.68
+    - - port
+      - 443
+    - - ip-version
+      - dual
+    - - password
+      - dns68
+    - - skip-cert-verify
+      - true
+    - - sni
+      - trojan.putata.us.kg
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 008
+    - - type
+      - trojan
+    - - server
+      - 103.168.154.7
+    - - port
+      - 889
+    - - ip-version
+      - dual
+    - - password
+      - LYaOvuNXdQGTZNonhlRUKqOJcKVihzKY
+    - - skip-cert-verify
+      - true
+    - - sni
+      - cdn.cjhh.lol
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 009
+    - - type
+      - trojan
+    - - server
+      - 18.179.44.127
+    - - port
+      - 443
+    - - ip-version
+      - dual
+    - - password
+      - e3fee3b6-fca1-3985-99dc-da7ca03260ea
+    - - skip-cert-verify
+      - true
+    - - sni
+      - akamai.cdn.steampipe.steamcontent.com
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 011
+    - - type
+      - vmess
+    - - server
+      - 112.132.212.19
+    - - port
+      - 50004
+    - - alterId
+      - 64
+    - - cipher
+      - none
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - false
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 418048af-a293-4b99-9b0c-98ca3580dd24
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 013
+    - - type
+      - vmess
+    - - server
+      - 104.26.5.145
+    - - port
+      - 2082
+    - - alterId
+      - 0
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - true
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 014
+    - - type
+      - vmess
+    - - server
+      - 104.19.45.11
+    - - port
+      - 2095
+    - - alterId
+      - 0
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - false
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 18d96190-c10f-448f-a82a-2d36df5c3cde
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 015
+    - - type
+      - vmess
+    - - server
+      - 183.236.51.23
+    - - port
+      - 40434
+    - - alterId
+      - 64
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - tcp
+    - - skip-cert-verify
+      - false
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 418048af-a293-4b99-9b0c-98ca3580dd24
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 018
+    - - type
+      - trojan
+    - - server
+      - ent1.imyourdaddy.top
+    - - port
+      - 21005
+    - - ip-version
+      - dual
+    - - password
+      - 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
+    - - skip-cert-verify
+      - true
+    - - sni
+      - alibabashop.com
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 019
+    - - type
+      - ss
+    - - server
+      - gy.666666222.shop
+    - - port
+      - 20013
+    - - cipher
+      - chacha20-ietf-poly1305
+    - - ip-version
+      - dual
+    - - password
+      - f337e72a-be9a-4ea1-8332-7cbc88f0006f
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 021
+    - - type
+      - vmess
+    - - server
+      - 183.236.48.143
+    - - port
+      - 41490
+    - - alterId
+      - 64
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - true
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 418048af-a293-4b99-9b0c-98ca3580dd24
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 022
+    - - type
+      - vmess
+    - - server
+      - 183.236.48.143
+    - - port
+      - 31878
+    - - alterId
+      - 64
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - true
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 418048af-a293-4b99-9b0c-98ca3580dd24
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 023
+    - - type
+      - vmess
+    - - server
+      - 183.240.253.23
+    - - port
+      - 52482
+    - - alterId
+      - 64
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - true
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 418048af-a293-4b99-9b0c-98ca3580dd24
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 024
+    - - type
+      - vmess
+    - - server
+      - 183.240.253.20
+    - - port
+      - 42055
+    - - alterId
+      - 64
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - true
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 418048af-a293-4b99-9b0c-98ca3580dd24
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 025
+    - - type
+      - vmess
+    - - server
+      - 183.240.253.20
+    - - port
+      - 37614
+    - - alterId
+      - 64
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - true
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 418048af-a293-4b99-9b0c-98ca3580dd24
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 026
+    - - type
+      - vmess
+    - - server
+      - 2.189.59.4
+    - - port
+      - 443
+    - - alterId
+      - 0
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - true
+    - - tfo
+      - false
+    - - tls
+      - true
+    - - udp
+      - true
+    - - uuid
+      - 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 027
+    - - type
+      - ss
+    - - server
+      - zhuliu.zhenxunwudi.top
+    - - port
+      - 38045
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - 2MkHPhqUTQKK7N7D
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 028
+    - - type
+      - vmess
+    - - server
+      - 142.4.96.65
+    - - port
+      - 31001
+    - - alterId
+      - 64
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - true
+    - - tfo
+      - false
+    - - tls
+      - true
+    - - udp
+      - true
+    - - uuid
+      - 418048af-a293-4b99-9b0c-98ca3580dd24
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 029
+    - - type
+      - vmess
+    - - server
+      - 172.64.80.1
+    - - port
+      - 2086
+    - - alterId
+      - 0
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - true
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 3fd7b958-2161-46e1-b6fc-bd6bb2165312
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 030
+    - - type
+      - ss
+    - - server
+      - us1.acxylm.top
+    - - port
+      - 26800
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - f8017657-aa43-43e1-830a-e1b2bcdbeeef
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 031
+    - - type
+      - vmess
+    - - server
+      - 120.234.109.251
+    - - port
+      - 52908
+    - - alterId
+      - 64
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - true
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 418048af-a293-4b99-9b0c-98ca3580dd24
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 032
+    - - type
+      - vmess
+    - - server
+      - 183.236.51.23
+    - - port
+      - 52112
+    - - alterId
+      - 64
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - tcp
+    - - skip-cert-verify
+      - true
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 418048af-a293-4b99-9b0c-98ca3580dd24
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 033
+    - - type
+      - ss
+    - - server
+      - alibaba1.xn--z7x16bf6t.com
+    - - port
+      - 25251
+    - - cipher
+      - aes-128-gcm
+    - - ip-version
+      - dual
+    - - password
+      - 1de124fc-2e1b-47bf-a094-9e7494e87be6
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 034
+    - - type
+      - vmess
+    - - server
+      - 104.21.238.200
+    - - port
+      - 8443
+    - - alterId
+      - 0
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - false
+    - - tfo
+      - false
+    - - tls
+      - true
+    - - udp
+      - true
+    - - uuid
+      - 9201ffaa-6ca3-4f57-8b1f-266a2f390e43
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 035
+    - - type
+      - trojan
+    - - server
+      - naiu-hk.05vr9nyqg5.download
+    - - port
+      - 13008
+    - - ip-version
+      - dual
+    - - password
+      - ad6e2bae-d580-4117-aa37-a8c111100740
+    - - skip-cert-verify
+      - false
+    - - sni
+      - cloudflare.node-ssl.cdn-alibaba.com
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 036
+    - - type
+      - ss
+    - - server
+      - us5.acxylm.top
+    - - port
+      - 30031
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - f8017657-aa43-43e1-830a-e1b2bcdbeeef
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 037
+    - - type
+      - ss
+    - - server
+      - us2.acxylm.top
+    - - port
+      - 14209
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - f8017657-aa43-43e1-830a-e1b2bcdbeeef
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 038
+    - - type
+      - vmess
+    - - server
+      - 183.236.48.158
+    - - port
+      - 45402
+    - - alterId
+      - 64
+    - - cipher
+      - none
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - tcp
+    - - skip-cert-verify
+      - false
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 418048af-a293-4b99-9b0c-98ca3580dd24
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 039
+    - - type
+      - vmess
+    - - server
+      - 183.240.253.23
+    - - port
+      - 35601
+    - - alterId
+      - 64
+    - - cipher
+      - none
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - tcp
+    - - skip-cert-verify
+      - false
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 418048af-a293-4b99-9b0c-98ca3580dd24
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 040
+    - - type
+      - vmess
+    - - server
+      - 183.236.48.158
+    - - port
+      - 59952
+    - - alterId
+      - 64
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - false
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 418048af-a293-4b99-9b0c-98ca3580dd24
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 041
+    - - type
+      - trojan
+    - - server
+      - naiu-us.05vr9nyqg5.download
+    - - port
+      - 13021
+    - - ip-version
+      - dual
+    - - password
+      - ad6e2bae-d580-4117-aa37-a8c111100740
+    - - skip-cert-verify
+      - false
+    - - sni
+      - cloudflare.node-ssl.cdn-alibaba.com
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 043
+    - - type
+      - ss
+    - - server
+      - sgp2.acxylm.top
+    - - port
+      - 48417
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - f8017657-aa43-43e1-830a-e1b2bcdbeeef
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 044
+    - - type
+      - ss
+    - - server
+      - 34.220.113.138
+    - - port
+      - 443
+    - - cipher
+      - aes-256-cfb
+    - - ip-version
+      - dual
+    - - password
+      - amazonskr05
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 045
+    - - type
+      - ss
+    - - server
+      - 35.86.117.124
+    - - port
+      - 443
+    - - cipher
+      - aes-256-cfb
+    - - ip-version
+      - dual
+    - - password
+      - amazonskr05
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 046
+    - - type
+      - ss
+    - - server
+      - 35.88.126.102
+    - - port
+      - 443
+    - - cipher
+      - aes-256-cfb
+    - - ip-version
+      - dual
+    - - password
+      - amazonskr05
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 047
+    - - type
+      - ss
+    - - server
+      - 35.88.136.187
+    - - port
+      - 443
+    - - cipher
+      - aes-256-cfb
+    - - ip-version
+      - dual
+    - - password
+      - amazonskr05
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 048
+    - - type
+      - vmess
+    - - server
+      - 183.240.253.26
+    - - port
+      - 39041
+    - - alterId
+      - 64
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - true
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 418048af-a293-4b99-9b0c-98ca3580dd24
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 049
+    - - type
+      - ss
+    - - server
+      - 38.75.136.21
+    - - port
+      - 3389
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - Y6R9pAtvxxzmGC
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 050
+    - - type
+      - ss
+    - - server
+      - 44.242.211.17
+    - - port
+      - 443
+    - - cipher
+      - aes-256-cfb
+    - - ip-version
+      - dual
+    - - password
+      - amazonskr05
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 051
+    - - type
+      - ss
+    - - server
+      - 44.243.115.246
+    - - port
+      - 443
+    - - cipher
+      - aes-256-cfb
+    - - ip-version
+      - dual
+    - - password
+      - amazonskr05
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 052
+    - - type
+      - ss
+    - - server
+      - 44.244.24.140
+    - - port
+      - 443
+    - - cipher
+      - aes-256-cfb
+    - - ip-version
+      - dual
+    - - password
+      - amazonskr05
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 053
+    - - type
+      - ss
+    - - server
+      - 44.244.25.243
+    - - port
+      - 443
+    - - cipher
+      - aes-256-cfb
+    - - ip-version
+      - dual
+    - - password
+      - amazonskr05
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 054
+    - - type
+      - ss
+    - - server
+      - 54.191.9.106
+    - - port
+      - 443
+    - - cipher
+      - aes-256-cfb
+    - - ip-version
+      - dual
+    - - password
+      - amazonskr05
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 055
+    - - type
+      - trojan
+    - - server
+      - scm.zarelayv1.com
+    - - port
+      - 39874
+    - - ip-version
+      - dual
+    - - password
+      - 2baa2d43-b564-3b1f-92c7-c6fa1ff7e0a2
+    - - skip-cert-verify
+      - true
+    - - sni
+      - us-katt.zodport.com
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇻🇳 VN 001
+    - - type
+      - ss
+    - - server
+      - vn.acxylm.top
+    - - port
+      - 40251
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - f8017657-aa43-43e1-830a-e1b2bcdbeeef
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇻🇳 VN 002
+    - - type
+      - trojan
+    - - server
+      - 160.30.21.105
+    - - port
+      - 443
+    - - ip-version
+      - dual
+    - - password
+      - 94d219c9-1afc-4d42-b090-8b3794764380
+    - - skip-cert-verify
+      - true
+    - - sni
+      - 160.30.21.105
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇭🇰 HK 020
+    - - type
+      - vmess
+    - - server
+      - v9.heduian.link
+    - - port
+      - '30809'
+    - - alterId
+      - 2
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - false
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - cbb3f877-d1fb-344c-87a9-d153bffd5484
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇭🇰 HK 021
+    - - type
+      - ss
+    - - server
+      - 156.251.179.135
+    - - port
+      - 443
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - 2b5fad3874e5
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇭🇰 HK 022
+    - - type
+      - vmess
+    - - server
+      - 43.247.134.211
+    - - port
+      - 46981
+    - - alterId
+      - 0
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - false
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 0f6e3f70-d64d-4825-aa04-1ead22e96b8b
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇭🇰 HK 023
+    - - type
+      - trojan
+    - - server
+      - 36.156.102.77
+    - - port
+      - 391
+    - - ip-version
+      - dual
+    - - password
+      - 253bc477d4e43c209f2d427272968280
+    - - skip-cert-verify
+      - true
+    - - sni
+      - www.baidu.com
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇭🇰 HK 024
+    - - type
+      - ss
+    - - server
+      - 16.162.87.199
+    - - port
+      - 16888
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - amazongreatvpn
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇭🇰 HK 025
+    - - type
+      - trojan
+    - - server
+      - 36.150.215.200
+    - - port
+      - 391
+    - - ip-version
+      - dual
+    - - password
+      - 253bc477d4e43c209f2d427272968280
+    - - skip-cert-verify
+      - true
+    - - sni
+      - www.baidu.com
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇭🇰 HK 026
+    - - type
+      - ss
+    - - server
+      - shenzhen99.fkfkd.cn
+    - - port
+      - 4772
+    - - cipher
+      - chacha20-ietf-poly1305
+    - - ip-version
+      - dual
+    - - password
+      - 2cf69d5f-0293-4ddb-bbfc-145de8dfc570
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇯🇵 JP 017
+    - - type
+      - ss
+    - - server
+      - cn01.efan8867801.xyz
+    - - port
+      - 8766
+    - - cipher
+      - rc4-md5
+    - - ip-version
+      - dual
+    - - password
+      - efanccyun
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇯🇵 JP 018
+    - - type
+      - ss
+    - - server
+      - 137.220.142.150
+    - - port
+      - 443
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - 8a6ca14c0936
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇯🇵 JP 019
+    - - type
+      - trojan
+    - - server
+      - 36.156.102.77
+    - - port
+      - 327
+    - - ip-version
+      - dual
+    - - password
+      - 253bc477d4e43c209f2d427272968280
+    - - skip-cert-verify
+      - true
+    - - sni
+      - 23.45.86.28
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇯🇵 JP 020
+    - - type
+      - trojan
+    - - server
+      - 36.156.102.77
+    - - port
+      - 1924
+    - - ip-version
+      - dual
+    - - password
+      - 253bc477d4e43c209f2d427272968280
+    - - skip-cert-verify
+      - true
+    - - sni
+      - 23.45.86.28
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇯🇵 JP 021
+    - - type
+      - ss
+    - - server
+      - 57.181.174.7
+    - - port
+      - 16888
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - amazongreatvpn
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇸🇬 SG 012
+    - - type
+      - trojan
+    - - server
+      - 36.156.102.77
+    - - port
+      - 1501
+    - - ip-version
+      - dual
+    - - password
+      - 253bc477d4e43c209f2d427272968280
+    - - skip-cert-verify
+      - true
+    - - sni
+      - 23.45.86.28
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇸🇬 SG 013
+    - - type
+      - trojan
+    - - server
+      - 36.156.102.77
+    - - port
+      - 9160
+    - - ip-version
+      - dual
+    - - password
+      - 253bc477d4e43c209f2d427272968280
+    - - skip-cert-verify
+      - true
+    - - sni
+      - 23.45.86.28
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇸🇬 SG 014
+    - - type
+      - vmess
+    - - server
+      - v39.heduian.link
+    - - port
+      - '30839'
+    - - alterId
+      - 2
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - false
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - cbb3f877-d1fb-344c-87a9-d153bffd5484
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 056
+    - - type
+      - ss
+    - - server
+      - cn01.efan8867801.xyz
+    - - port
+      - 8774
+    - - cipher
+      - rc4-md5
+    - - ip-version
+      - dual
+    - - password
+      - efanccyun
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 057
+    - - type
+      - trojan
+    - - server
+      - 36.156.102.77
+    - - port
+      - 4729
+    - - ip-version
+      - dual
+    - - password
+      - 253bc477d4e43c209f2d427272968280
+    - - skip-cert-verify
+      - true
+    - - sni
+      - 23.45.86.28
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 058
+    - - type
+      - trojan
+    - - server
+      - 36.156.102.77
+    - - port
+      - 13855
+    - - ip-version
+      - dual
+    - - password
+      - 253bc477d4e43c209f2d427272968280
+    - - skip-cert-verify
+      - true
+    - - sni
+      - 23.45.86.28
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇭🇰 HK 027
+    - - type
+      - vmess
+    - - server
+      - 43.247.134.211
+    - - port
+      - '46981'
+    - - alterId
+      - 0
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - tcp
+    - - skip-cert-verify
+      - false
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 0f6e3f70-d64d-4825-aa04-1ead22e96b8b
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇭🇰 HK 028
+    - - type
+      - vmess
+    - - server
+      - 47.239.183.87
+    - - port
+      - '28590'
+    - - alterId
+      - 0
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - kcp
+    - - skip-cert-verify
+      - false
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - d75481c7-b5c8-40a9-811a-02b709e74816
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇯🇵 JP 022
+    - - type
+      - vmess
+    - - server
+      - 8.209.211.236
+    - - port
+      - '34933'
+    - - alterId
+      - 0
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - kcp
+    - - skip-cert-verify
+      - false
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 8a9150bc-b9c8-40ac-be83-aaec45176a81
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇳🇱 NL 005
+    - - type
+      - trojan
+    - - server
+      - 5.255.103.217
+    - - port
+      - 37757
+    - - ip-version
+      - dual
+    - - password
+      - XWnVX2ASHl
+    - - skip-cert-verify
+      - false
+    - - sni
+      - moshali.arshiacomplus.dpdns.org
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇸🇬 SG 015
+    - - type
+      - trojan
+    - - server
+      - de.viefast.net
+    - - port
+      - 443
+    - - ip-version
+      - dual
+    - - password
+      - 9e76767d-4bfa-4f04-a800-42e2f63afed2
+    - - skip-cert-verify
+      - true
+    - - sni
+      - csapp.catch.net.tw
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 059
+    - - type
+      - trojan
+    - - server
+      - xingxing.jiasu123.org
+    - - port
+      - 2282
+    - - ip-version
+      - dual
+    - - password
+      - 253bc477d4e43c209f2d427272968280
+    - - skip-cert-verify
+      - true
+    - - sni
+      - www.baidu.com
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 060
+    - - type
+      - trojan
+    - - server
+      - xingxing.jiasu123.org
+    - - port
+      - 316
+    - - ip-version
+      - dual
+    - - password
+      - 253bc477d4e43c209f2d427272968280
+    - - skip-cert-verify
+      - true
+    - - sni
+      - 23.45.86.28
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 061
+    - - type
+      - trojan
+    - - server
+      - xingxing.jiasu123.org
+    - - port
+      - 4613
+    - - ip-version
+      - dual
+    - - password
+      - 253bc477d4e43c209f2d427272968280
+    - - skip-cert-verify
+      - true
+    - - sni
+      - 23.45.86.28
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 062
+    - - type
+      - trojan
+    - - server
+      - xingxing.jiasu123.org
+    - - port
+      - 3957
+    - - ip-version
+      - dual
+    - - password
+      - 253bc477d4e43c209f2d427272968280
+    - - skip-cert-verify
+      - true
+    - - sni
+      - 23.45.86.28
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 063
+    - - type
+      - trojan
+    - - server
+      - xingxing.jiasu123.org
+    - - port
+      - 2966
+    - - ip-version
+      - dual
+    - - password
+      - 253bc477d4e43c209f2d427272968280
+    - - skip-cert-verify
+      - true
+    - - sni
+      - 23.45.86.28
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 064
+    - - type
+      - trojan
+    - - server
+      - xingxing.jiasu123.org
+    - - port
+      - 1823
+    - - ip-version
+      - dual
+    - - password
+      - 253bc477d4e43c209f2d427272968280
+    - - skip-cert-verify
+      - true
+    - - sni
+      - 23.45.86.28
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇦🇹 AT 001
+    - - type
+      - trojan
+    - - server
+      - 212.183.88.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇦🇺 AU 008
+    - - type
+      - trojan
+    - - server
+      - 192.65.217.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇦🇺 AU 009
+    - - type
+      - trojan
+    - - server
+      - 185.207.197.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇪🇸 ES 001
+    - - type
+      - trojan
+    - - server
+      - 185.18.250.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇬🇧 GB 009
+    - - type
+      - trojan
+    - - server
+      - 195.26.229.87
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - true
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇬🇧 GB 010
+    - - type
+      - trojan
+    - - server
+      - 195.26.229.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇬🇧 GB 011
+    - - type
+      - trojan
+    - - server
+      - 193.124.224.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - true
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇬🇧 GB 012
+    - - type
+      - trojan
+    - - server
+      - 188.244.122.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇪🇸 ES 002
+    - - type
+      - trojan
+    - - server
+      - 185.251.83.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇪🇸 ES 003
+    - - type
+      - trojan
+    - - server
+      - 185.251.80.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇪🇸 ES 004
+    - - type
+      - trojan
+    - - server
+      - 185.251.82.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇪🇸 ES 005
+    - - type
+      - trojan
+    - - server
+      - 185.238.228.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇪🇸 ES 006
+    - - type
+      - trojan
+    - - server
+      - 185.251.81.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇫🇷 FR 012
+    - - type
+      - trojan
+    - - server
+      - 185.7.240.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇩🇪 DE 007
+    - - type
+      - trojan
+    - - server
+      - 185.16.110.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇬🇧 GB 013
+    - - type
+      - trojan
+    - - server
+      - 185.156.19.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇬🇧 GB 014
+    - - type
+      - trojan
+    - - server
+      - 194.36.55.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇷🇺 RU 003
+    - - type
+      - trojan
+    - - server
+      - 194.76.18.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇳🇱 NL 006
+    - - type
+      - trojan
+    - - server
+      - 188.164.248.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇳🇱 NL 007
+    - - type
+      - trojan
+    - - server
+      - 188.164.248.87
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇸🇬 SG 016
+    - - type
+      - trojan
+    - - server
+      - 185.18.184.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇳🇱 NL 008
+    - - type
+      - trojan
+    - - server
+      - 188.42.145.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇷🇺 RU 004
+    - - type
+      - trojan
+    - - server
+      - 213.241.198.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇷🇺 RU 005
+    - - type
+      - trojan
+    - - server
+      - 185.174.138.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇷🇺 RU 006
+    - - type
+      - trojan
+    - - server
+      - 185.59.218.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 065
+    - - type
+      - trojan
+    - - server
+      - 199.68.156.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 066
+    - - type
+      - trojan
+    - - server
+      - 198.62.62.87
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 067
+    - - type
+      - trojan
+    - - server
+      - 198.62.62.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 068
+    - - type
+      - trojan
+    - - server
+      - 192.200.160.87
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 069
+    - - type
+      - trojan
+    - - server
+      - 199.68.156.87
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 070
+    - - type
+      - trojan
+    - - server
+      - 199.34.230.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇷🇺 RU 007
+    - - type
+      - trojan
+    - - server
+      - 195.13.45.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 071
+    - - type
+      - trojan
+    - - server
+      - 209.46.30.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 072
+    - - type
+      - trojan
+    - - server
+      - 192.0.63.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 073
+    - - type
+      - trojan
+    - - server
+      - 199.34.230.87
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 074
+    - - type
+      - trojan
+    - - server
+      - 204.93.210.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇬🇧 GB 015
+    - - type
+      - vmess
+    - - server
+      - t.cnmjcn.cyou
+    - - port
+      - 16622
+    - - alterId
+      - 0
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - false
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 743dbce9-ec7d-49dd-b9d6-3b1a151e729f
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇷🇺 RU 008
+    - - type
+      - trojan
+    - - server
+      - 195.13.44.87
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 075
+    - - type
+      - trojan
+    - - server
+      - 192.200.160.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 076
+    - - type
+      - trojan
+    - - server
+      - 199.34.229.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 077
+    - - type
+      - trojan
+    - - server
+      - 192.0.54.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 078
+    - - type
+      - trojan
+    - - server
+      - 199.181.197.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇷🇺 RU 009
+    - - type
+      - trojan
+    - - server
+      - 195.13.44.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 079
+    - - type
+      - trojan
+    - - server
+      - 216.24.57.87
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 080
+    - - type
+      - trojan
+    - - server
+      - 216.205.52.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇨🇦 CA 015
+    - - type
+      - trojan
+    - - server
+      - 205.233.181.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 081
+    - - type
+      - trojan
+    - - server
+      - 216.24.57.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇯🇵 JP 023
+    - - type
+      - trojan
+    - - server
+      - 13.231.37.82
+    - - port
+      - 18233
+    - - ip-version
+      - dual
+    - - password
+      - 253bc477d4e43c209f2d427272968280
+    - - skip-cert-verify
+      - true
+    - - sni
+      - 23.45.86.28
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇬🇧 GB 016
+    - - type
+      - vmess
+    - - server
+      - 82.197.69.131
+    - - port
+      - 39674
+    - - alterId
+      - 0
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - tcp
+    - - skip-cert-verify
+      - true
+    - - tfo
+      - true
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 5a89386a-827b-4f54-8778-2f1b5122c6ef
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇸🇬 SG 017
+    - - type
+      - vmess
+    - - server
+      - 54.169.173.51
+    - - port
+      - 443
+    - - alterId
+      - 0
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - true
+    - - tfo
+      - true
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 14a79148-3d75-41d6-a998-2be9edef88cb
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇰🇷 KR 009
+    - - type
+      - vmess
+    - - server
+      - 202.79.161.188
+    - - port
+      - 443
+    - - alterId
+      - 0
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - true
+    - - tfo
+      - true
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 418048af-a293-4b99-9b0c-98ca3580dd24
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 082
+    - - type
+      - vmess
+    - - server
+      - 209.54.104.219
+    - - port
+      - 43966
+    - - alterId
+      - 0
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - none
+    - - skip-cert-verify
+      - true
+    - - tfo
+      - true
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 0e3606ae-321a-4d0b-85ec-5f4352f4bc24
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 083
+    - - type
+      - vmess
+    - - server
+      - 66.253.5.158
+    - - port
+      - 36299
+    - - alterId
+      - 0
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - none
+    - - skip-cert-verify
+      - true
+    - - tfo
+      - true
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 4ada72ac-46b4-4080-aa1e-c81999725ba5
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 084
+    - - type
+      - vmess
+    - - server
+      - www.speedtest.net
+    - - port
+      - 443
+    - - alterId
+      - 0
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - true
+    - - tfo
+      - true
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - b7acf44f-3c3a-430c-8ed0-fb64ccc9a13a
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇦🇺 AU 010
+    - - type
+      - trojan
+    - - server
+      - 43.198.184.150
+    - - port
+      - 2282
+    - - ip-version
+      - dual
+    - - password
+      - 253bc477d4e43c209f2d427272968280
+    - - skip-cert-verify
+      - true
+    - - sni
+      - fe2.update.microsoft.com
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 085
+    - - type
+      - trojan
+    - - server
+      - xingxing.jiasu123.org
+    - - port
+      - 1924
+    - - ip-version
+      - dual
+    - - password
+      - 253bc477d4e43c209f2d427272968280
+    - - skip-cert-verify
+      - true
+    - - sni
+      - 23.45.86.28
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 086
+    - - type
+      - trojan
+    - - server
+      - xingxing.jiasu123.org
+    - - port
+      - 4801
+    - - ip-version
+      - dual
+    - - password
+      - 253bc477d4e43c209f2d427272968280
+    - - skip-cert-verify
+      - true
+    - - sni
+      - 23.45.86.28
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇷🇺 RU 010
+    - - type
+      - trojan
+    - - server
+      - 193.9.49.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 087
+    - - type
+      - trojan
+    - - server
+      - xingxing.jiasu123.org
+    - - port
+      - 46943
+    - - ip-version
+      - dual
+    - - password
+      - 253bc477d4e43c209f2d427272968280
+    - - skip-cert-verify
+      - true
+    - - sni
+      - 23.45.86.28
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 088
+    - - type
+      - trojan
+    - - server
+      - xingxing.jiasu123.org
+    - - port
+      - 3043
+    - - ip-version
+      - dual
+    - - password
+      - 253bc477d4e43c209f2d427272968280
+    - - skip-cert-verify
+      - true
+    - - sni
+      - 23.45.86.28
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 089
+    - - type
+      - trojan
+    - - server
+      - xingxing.jiasu123.org
+    - - port
+      - 4317
+    - - ip-version
+      - dual
+    - - password
+      - 253bc477d4e43c209f2d427272968280
+    - - skip-cert-verify
+      - true
+    - - sni
+      - 23.45.86.28
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 090
+    - - type
+      - trojan
+    - - server
+      - xingxing.jiasu123.org
+    - - port
+      - 1523
+    - - ip-version
+      - dual
+    - - password
+      - 253bc477d4e43c209f2d427272968280
+    - - skip-cert-verify
+      - true
+    - - sni
+      - 23.45.86.28
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇷🇺 RU 011
+    - - type
+      - trojan
+    - - server
+      - 195.13.54.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇳🇱 NL 009
+    - - type
+      - trojan
+    - - server
+      - 185.193.29.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇭🇰 HK 029
+    - - type
+      - vmess
+    - - server
+      - v9.heduian.link
+    - - port
+      - 30809
+    - - alterId
+      - 2
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - false
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - cbb3f877-d1fb-344c-87a9-d153bffd5484
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇭🇰 HK 031
+    - - type
+      - vmess
+    - - server
+      - hkt.gotochinatown.net
+    - - port
+      - 80
+    - - alterId
+      - 2
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - false
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇭🇰 HK 032
+    - - type
+      - trojan
+    - - server
+      - 42.2.170.224
+    - - port
+      - 443
+    - - ip-version
+      - dual
+    - - password
+      - 253bc477d4e43c209f2d427272968280
+    - - skip-cert-verify
+      - false
+    - - sni
+      - www.baidu.com
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇭🇰 HK 033
+    - - type
+      - ss
+    - - server
+      - 43.198.113.57
+    - - port
+      - 16888
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - amazongreatvpn
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇭🇰 HK 034
+    - - type
+      - trojan
+    - - server
+      - 203.218.202.199
+    - - port
+      - 443
+    - - ip-version
+      - dual
+    - - password
+      - 253bc477d4e43c209f2d427272968280
+    - - skip-cert-verify
+      - false
+    - - sni
+      - www.baidu.com
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇯🇵 JP 028
+    - - type
+      - ss
+    - - server
+      - 35.75.5.176
+    - - port
+      - 16888
+    - - cipher
+      - aes-256-gcm
+    - - ip-version
+      - dual
+    - - password
+      - amazongreatvpn
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇸🇬 SG 020
+    - - type
+      - vmess
+    - - server
+      - v39.heduian.link
+    - - port
+      - 30839
+    - - alterId
+      - 2
+    - - cipher
+      - auto
+    - - client-fingerprint
+      - chrome
+    - - ip-version
+      - dual
+    - - network
+      - ws
+    - - skip-cert-verify
+      - false
+    - - tfo
+      - false
+    - - tls
+      - false
+    - - udp
+      - true
+    - - uuid
+      - cbb3f877-d1fb-344c-87a9-d153bffd5484
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 091
+    - - type
+      - ss
+    - - server
+      - awes35lesl.blhao0o.dpdns.org
+    - - port
+      - 12009
+    - - cipher
+      - aes-128-gcm
+    - - ip-version
+      - dual
+    - - password
+      - 01721e43-5389-4f97-b21c-900abb2bda9e
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇷🇺 RU 012
+    - - type
+      - trojan
+    - - server
+      - 185.148.107.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇷🇺 RU 016
+    - - type
+      - trojan
+    - - server
+      - 185.176.24.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 099
+    - - type
+      - trojan
+    - - server
+      - 209.94.90.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 107
+    - - type
+      - trojan
+    - - server
+      - 185.148.104.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
+- !!python/object/apply:collections.OrderedDict
+  - - - name
+      - 🇺🇸 US 119
+    - - type
+      - trojan
+    - - server
+      - 185.148.105.195
+    - - port
+      - 2096
+    - - ip-version
+      - dual
+    - - password
+      - slch2024
+    - - skip-cert-verify
+      - false
+    - - sni
+      - ocost-dy.wmlefl.cc
+    - - tfo
+      - false
+    - - udp
+      - true
