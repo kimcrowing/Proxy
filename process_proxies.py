@@ -2,6 +2,7 @@ import requests
 import yaml
 import re
 from datetime import datetime
+import collections  # 用于 OrderedDict 以统一字段顺序
 
 # 定义要下载的 YAML 配置文件 URLs
 urls = [
@@ -48,26 +49,26 @@ all_proxies = []
 
 # 下载并解析 YAML 文件
 for url in urls:
-    response = requests.get(url)
-    response.raise_for_status()
-    content = response.text
-
-    if '<html>' in content:
-        match = re.search(r'<pre>(.*?)</pre>', content, re.DOTALL)
-        if match:
-            content = match.group(1)
-        else:
-            print(f"No YAML data found in {url}")
-            continue
-
     try:
+        response = requests.get(url)
+        response.raise_for_status()
+        content = response.text
+
+        if '<html>' in content:
+            match = re.search(r'<pre>(.*?)</pre>', content, re.DOTALL)
+            if match:
+                content = match.group(1)
+            else:
+                print(f"No YAML data found in {url}")
+                continue
+
         data = yaml.safe_load(content)
         if 'proxies' in data and data['proxies']:
             all_proxies.append(data['proxies'])
         else:
             print(f"No proxies found in {url}")
-    except yaml.YAMLError as e:
-        print(f"Error parsing YAML from {url}: {e}")
+    except (requests.RequestException, yaml.YAMLError) as e:
+        print(f"Error processing {url}: {e}")
         continue
 
 # 定义国家与国旗图标和英文缩写的映射关系
@@ -127,17 +128,15 @@ def valid_proxy(proxy):
     banned_keywords = ['CN', 'File']
     banned_types = ['socks5', 'http']
     
-    # 检查必要字段
+    # 定义 mihomo 最小必要字段
     required_fields = {
-        'ss': ['name', 'server', 'port', 'type', 'cipher', 'password'],
-        'trojan': ['name', 'server', 'port', 'type', 'password'],
-        'vmess': ['name', 'server', 'port', 'type', 'uuid', 'alterId', 'cipher']
+        'ss': ['server', 'port', 'cipher', 'password'],
+        'trojan': ['server', 'port', 'password'],
+        'vmess': ['server', 'port', 'uuid', 'alterId', 'cipher']
     }
     
     if proxy_type not in required_fields:
         return False
-    
-    # 验证必要字段是否存在
     for field in required_fields[proxy_type]:
         if field not in proxy or proxy[field] is None:
             return False
@@ -150,6 +149,7 @@ def valid_proxy(proxy):
 # 合并所有代理服务器，并进行筛选和去重
 merged_proxies = []
 name_counter = {}  # 用于记录每个国家的代理数量
+seen_proxies = set()  # 用于去重（基于 server, port, type）
 
 for proxy_list in all_proxies:
     for proxy in proxy_list:
@@ -159,7 +159,7 @@ for proxy_list in all_proxies:
         name = proxy.get('name', '')
         matched = False
 
-        # 检查名称中是否包含国家名称或英文缩写
+        # 检查国家匹配
         for country, (flag, code) in country_flags.items():
             if country in name or code in name:
                 matched = True
@@ -169,46 +169,51 @@ for proxy_list in all_proxies:
                     name_counter[country] += 1
                 new_name = f"{flag} {code} {str(name_counter[country]).zfill(3)}"
                 
-                # 创建新代理对象，清理多余字段
-                cleaned_proxy = {
-                    'name': new_name,
-                    'server': proxy['server'],
-                    'port': proxy['port'],
-                    'type': proxy['type']
-                }
+                # 创建统一格式的代理对象 (使用 OrderedDict 以控制字段顺序)
+                ordered_proxy = collections.OrderedDict()
+                ordered_proxy['name'] = new_name
+                ordered_proxy['type'] = proxy['type']
+                ordered_proxy['server'] = proxy['server']
+                ordered_proxy['port'] = proxy['port']
                 
-                # 根据类型添加必要字段
+                # 添加类型特定字段和可选字段，按字母顺序
+                additional_fields = {}
                 if proxy['type'] == 'ss':
-                    cleaned_proxy.update({
-                        'cipher': proxy['cipher'],
-                        'password': proxy['password'],
-                        'udp': proxy.get('udp', True)
-                    })
+                    additional_fields['cipher'] = proxy['cipher']
+                    additional_fields['password'] = proxy['password']
                 elif proxy['type'] == 'trojan':
-                    cleaned_proxy.update({
-                        'password': proxy['password'],
-                        'skip-cert-verify': proxy.get('skip-cert-verify', False),
-                        'sni': proxy.get('sni', proxy['server']),
-                        'udp': proxy.get('udp', True)
-                    })
+                    additional_fields['password'] = proxy['password']
+                    additional_fields['sni'] = proxy.get('sni', proxy['server'])
+                    additional_fields['skip-cert-verify'] = proxy.get('skip-cert-verify', False)
                 elif proxy['type'] == 'vmess':
-                    cleaned_proxy.update({
-                        'uuid': proxy['uuid'],
-                        'alterId': proxy['alterId'],
-                        'cipher': proxy.get('cipher', 'auto'),
-                        'tls': proxy.get('tls', False),
-                        'skip-cert-verify': proxy.get('skip-cert-verify', False),
-                        'network': proxy.get('network', 'ws'),
-                        'client-fingerprint': proxy.get('client-fingerprint', 'chrome')
-                    })
+                    additional_fields['uuid'] = proxy['uuid']
+                    additional_fields['alterId'] = proxy['alterId']
+                    additional_fields['cipher'] = proxy.get('cipher', 'auto')
+                    additional_fields['tls'] = proxy.get('tls', False)
+                    additional_fields['network'] = proxy.get('network', 'ws')
+                    additional_fields['client-fingerprint'] = proxy.get('client-fingerprint', 'chrome')
+                    additional_fields['skip-cert-verify'] = proxy.get('skip-cert-verify', False)
+                
+                # 添加通用可选字段
+                additional_fields['udp'] = proxy.get('udp', True)
+                additional_fields['tfo'] = proxy.get('tfo', False)  # mihomo 支持
+                additional_fields['ip-version'] = proxy.get('ip-version', 'dual')  # mihomo 支持
+                
+                # 按字母顺序排序 additional_fields
+                sorted_additional = sorted(additional_fields.items())
+                for key, value in sorted_additional:
+                    ordered_proxy[key] = value
+                
+                # 去重
+                proxy_key = (ordered_proxy['server'], ordered_proxy['port'], ordered_proxy['type'])
+                if proxy_key not in seen_proxies:
+                    seen_proxies.add(proxy_key)
+                    merged_proxies.append(ordered_proxy)
                 
                 break
 
-        if matched and cleaned_proxy not in merged_proxies:
-            merged_proxies.append(cleaned_proxy)
-
-# 将合并后的代理保存为新的 YAML 文件
+# 将合并后的代理保存为新的 YAML 文件 (yaml.dump 支持 OrderedDict)
 with open('combined_proxies.yaml', 'w', encoding='utf-8') as outfile:
     yaml.dump({'proxies': merged_proxies}, outfile, default_flow_style=False, allow_unicode=True)
 
-print("Proxy configurations have been successfully processed.")
+print("Proxy configurations have been successfully processed and unified for mihomo.")
