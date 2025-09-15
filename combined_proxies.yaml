@@ -7,17 +7,18 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  country: 🇺🇸 US
   name: 🇦🇪 AE 002
   password: u17T3BvpYaaiuW2c
   port: 443
   server: series-a2-mec.varzesh360.co
   type: ss
+  udp: true
 - name: 🇦🇺 AU 001
   password: c5691b8f-d833-41e4-9295-769f3edb4cd2
   port: 443
   server: customer-45-142-215-88.stark-industries.solutions
   skip-cert-verify: true
+  sni: customer-45-142-215-88.stark-industries.solutions
   type: trojan
   udp: true
 - name: 🇦🇺 AU 002
@@ -27,6 +28,7 @@ proxies:
   skip-cert-verify: true
   sni: in01.trojanyyds.xyz
   type: trojan
+  udp: true
 - name: 🇦🇺 AU 003
   password: cd30052f-f1b2-35df-9773-bd586e72f67a
   port: 34618
@@ -34,27 +36,27 @@ proxies:
   skip-cert-verify: false
   sni: eplcgame.com
   type: trojan
-- country: 🇺🇸US
-  name: 🇦🇺 AU 004
+  udp: true
+- name: 🇦🇺 AU 004
   password: 8d1e94cd-23cf-4267-b630-c6894e6e1b4d
   port: 443
   server: tw02.trojanyyds.xyz
   skip-cert-verify: true
+  sni: tw02.trojanyyds.xyz
   type: trojan
   udp: true
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
   name: 🇦🇺 AU 005
+  network: ws
   port: 58831
   server: 183.236.48.163
   skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- client-fingerprint: chrome
-  name: 🇦🇺 AU 006
+- name: 🇦🇺 AU 006
   password: lNOcIAxy
   port: 36442
   server: 36.151.192.239
@@ -86,7 +88,9 @@ proxies:
   udp: true
 - alterId: 64
   cipher: none
+  client-fingerprint: chrome
   name: 🇨🇦 CA 002
+  network: ws
   port: 50002
   server: 47.92.152.169
   skip-cert-verify: false
@@ -94,7 +98,6 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: 🇨🇦 CA 003
-  network: tcp
   password: 9995cc0e-2e9d-4c80-8c81-4fdbb6322a3a
   port: 443
   server: 20.89.130.227
@@ -107,14 +110,15 @@ proxies:
   port: 443
   server: customer-45-89-55-150.stark-industries.solutions
   skip-cert-verify: true
+  sni: customer-45-89-55-150.stark-industries.solutions
   type: trojan
   udp: true
-- country: 🇯🇵JP
-  name: 🇨🇦 CA 005
+- name: 🇨🇦 CA 005
   password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   port: 443
   server: my01.trojanyyds.xyz
   skip-cert-verify: true
+  sni: my01.trojanyyds.xyz
   type: trojan
   udp: true
 - name: 🇨🇦 CA 006
@@ -135,21 +139,18 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
   name: 🇨🇦 CA 008
   network: ws
   port: 2082
   server: 104.19.45.50
-  servername: ip26.6929198.xyz
   skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip26.6929198.xyz
-    path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
   name: 🇨🇦 CA 009
   network: ws
   port: 2095
@@ -157,14 +158,8 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: ip21.6016725.xyz
-    path: /github.com/Alvin9999
 - name: 🇨🇦 CA 010
-  network: tcp
   password: f10d81d8-ad4b-300a-825b-f54f515bd06e
   port: 443
   server: jp1.jjzgy.live
@@ -172,12 +167,12 @@ proxies:
   sni: jp1.jjzgy.live
   type: trojan
   udp: true
-- country: 🇭🇰 HK
-  name: 🇨🇦 CA 011
+- name: 🇨🇦 CA 011
   password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   port: 443
   server: my01.trojanyyds.xyz
   skip-cert-verify: true
+  sni: my01.trojanyyds.xyz
   type: trojan
   udp: true
 - cipher: aes-256-gcm
@@ -192,10 +187,9 @@ proxies:
   password: asd123456
   port: 8388
   server: 103.36.90.195
-  tfo: false
   type: ss
-- country: 🇭🇰HK
-  name: 🇨🇦 CA 014
+  udp: true
+- name: 🇨🇦 CA 014
   password: bc90fb72-0b2c-45b4-a8d8-c9baa4eaaef3
   port: 443
   server: ru.mjt000.com
@@ -203,13 +197,12 @@ proxies:
   sni: ru.mjt000.com
   type: trojan
   udp: true
-- alterId: 0
-  name: 🇨🇭 CH 001
+- name: 🇨🇭 CH 001
   password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
   port: 20980
   server: ent1.imyourdaddy.top
   skip-cert-verify: true
-  tls: true
+  sni: ent1.imyourdaddy.top
   type: trojan
   udp: true
 - name: 🇩🇪 DE 001
@@ -217,7 +210,9 @@ proxies:
   port: 20992
   server: ent1.imyourdaddy.top
   skip-cert-verify: true
+  sni: ent1.imyourdaddy.top
   type: trojan
+  udp: true
 - cipher: aes-256-gcm
   name: 🇩🇪 DE 002
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
@@ -227,6 +222,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
   name: 🇩🇪 DE 003
   network: ws
   port: 443
@@ -235,28 +231,17 @@ proxies:
   tls: true
   type: vmess
   uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: obdii.cfd
-    path: /linkws
 - alterId: 0
   cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
+  client-fingerprint: chrome
   name: 🇩🇪 DE 004
   network: ws
   port: 443
   server: 45.149.12.79
-  servername: obdii.cfd
   skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      HOST: obdii.cfd
-    path: /linkws#@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1/?ed=2560
 - cipher: aes-256-gcm
   name: 🇩🇪 DE 005
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
@@ -271,8 +256,7 @@ proxies:
   server: de02.acxylm.top
   type: ss
   udp: true
-- country: 🇨🇭CH
-  name: 🇫🇮 FI 001
+- name: 🇫🇮 FI 001
   password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
   port: 20982
   server: ent1.imyourdaddy.top
@@ -282,6 +266,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
   name: 🇫🇷 FR 001
   network: ws
   port: 443
@@ -289,112 +274,73 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: obdii.cfd
-    path: /linkws
-- alpn:
-  - http/1.1
-  alterId: 0
+- alterId: 0
   cipher: auto
+  client-fingerprint: chrome
   name: 🇫🇷 FR 002
   network: ws
   port: 443
   server: www.baldengineer.com
-  servername: yen63jj36j3jfflan.thelastronin.cloudns.org
   skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-  ws-opts:
-    headers:
-      Host: yelan.thelastronin.cloudns.org
-    path: /linkws/afrhms16v.bestxray.buzz
 - alterId: 0
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
+  client-fingerprint: chrome
   name: 🇫🇷 FR 003
   network: ws
   port: 443
   server: www.baldengineer.com
-  servername: yen63jj36j3jfflan.thelastronin.cloudns.org
+  skip-cert-verify: false
   tls: true
   type: vmess
-  udp: true
   uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-  ws-opts:
-    headers:
-      Host: yelan.thelastronin.cloudns.org
-    path: /linkws/afrhms16v.bestxray.buzz
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
   name: 🇫🇷 FR 004
   network: ws
   port: 443
   server: tradegdt.ai
-  servername: yh25hw5j5welan.thelastronin.cloudns.org
   skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: 39cec18f-a439-427c-9a4e-aeb6fcdf6f53
-  ws-opts:
-    headers:
-      Host: yelan.thelastronin.cloudns.org
-    path: /linkws/linja05.hwcar.sbs
 - alterId: 0
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
+  client-fingerprint: chrome
   name: 🇫🇷 FR 005
   network: ws
   port: 443
   server: www.baldengineer.com
-  servername: yen63jj36j3jfflan.thelastronin.cloudns.org
   skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-  ws-opts:
-    headers:
-      Host: yelan.thelastronin.cloudns.org
-    path: /linkws/afrhms16v.bestxray.buzz
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
   name: 🇫🇷 FR 006
   network: ws
   port: 443
   server: 104.21.24.170
-  servername: denc36.xtooltech.cfd
   skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: b321fd5d-e6ec-4293-a644-164e3885f52e
-  ws-opts:
-    headers:
-      Host: adenc36v.xtooltech.cfd
-    path: /linkws
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
   name: 🇫🇷 FR 007
   network: ws
   port: 443
   server: tradegdt.ai
-  servername: yh25hw5j5welan.thelastronin.cloudns.org
   skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 39cec18f-a439-427c-9a4e-aeb6fcdf6f53
-  ws-opts:
-    headers:
-      Host: yelan.thelastronin.cloudns.org
-    path: /linkws/linja05.hwcar.sbs
 - cipher: aes-256-gcm
   name: 🇫🇷 FR 008
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
@@ -411,6 +357,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
   name: 🇫🇷 FR 010
   network: ws
   port: 443
@@ -419,12 +366,9 @@ proxies:
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      host: 23.162.152.177
-    path: linkvws
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
   name: 🇫🇷 FR 011
   network: ws
   port: 443
@@ -432,35 +376,25 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: obdii.cfd
-    path: /linkws
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
   name: 🇬🇧 GB 001
   network: ws
   port: 443
   server: 16.724064.xyz
-  servername: 16.724064.xyz
   skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: b7cf4466-956a-4639-b861-0cf78cbb6f8f
-  ws-opts:
-    headers:
-      Host: 16.724064.xyz
-    path: /zlppvws
 - cipher: chacha20-ietf-poly1305
-  country: 🇺🇸 US
   name: 🇬🇧 GB 002
   password: W74XFALLLuw6m5IA
   port: 443
   server: series-a1.samanehha.co
   type: ss
+  udp: true
 - cipher: aes-256-gcm
   name: 🇬🇧 GB 003
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
@@ -470,20 +404,15 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
+  client-fingerprint: chrome
   name: 🇬🇧 GB 004
   network: ws
   port: 443
   server: 2.189.59.7
-  servername: obdii.cfd
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      host: obdii.cfd
-    path: /linkws
 - cipher: aes-256-gcm
   name: 🇬🇧 GB 005
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
@@ -498,25 +427,17 @@ proxies:
   server: hk01.acxylm.top
   type: ss
   udp: true
-- alpn:
-  - http/1.1
-  alterId: 0
+- alterId: 0
   cipher: auto
   client-fingerprint: chrome
   name: 🇬🇧 GB 007
   network: ws
   port: 443
   server: 57.128.184.127
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
   skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: baradiha.com
-    path: /linkvws
 - cipher: aes-256-gcm
   name: 🇬🇧 GB 008
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
@@ -524,88 +445,59 @@ proxies:
   server: hk07.bfyrek.top
   type: ss
   udp: true
-- cipher: rc4-md5
-  name: 🇭🇰 HK 001
-  obfs: plain
-  obfs-param: cd5ed74592.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40213
-  protocol: auth_aes128_md5
-  protocol-param: 74592:o4fbeopsgcf
-  server: 95b1cd85a0968ff2.cdn.jiashule.com
-  type: ssr
-- alterId: -1
-  cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 🇭🇰 HK 002
-  obfs: plain
-  obfs-param: cd5ed74592.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40208
-  protocol: auth_aes128_md5
-  protocol-param: 74592:o4fbeopsgcf
-  server: 7438974b54cf5c57.cdn.jiashule.com
-  type: ssr
-  udp: true
-- name: 🇭🇰 HK 003
-  network: tcp
+- name: 🇭🇰 HK 001
   password: QwwHvrnN
   port: 14505
   server: 36.151.192.242
   skip-cert-verify: true
+  sni: 36.151.192.242
   type: trojan
   udp: true
-- name: 🇭🇰 HK 004
+- name: 🇭🇰 HK 002
   password: QwwHvrnN
   port: 42395
   server: 36.151.192.196
   skip-cert-verify: true
+  sni: 36.151.192.196
   type: trojan
-- cipher: chacha20-ietf
-  country: 🇨🇳 CN
-  name: 🇭🇰 HK 005
-  obfs: plain
-  obfs-param: 83f38107560.windows.net
-  password: 4wMNkIVsgybXfA2u
-  port: 57420
-  protocol: auth_aes128_sha1
-  protocol-param: 107560:cztSoV
-  server: pro.sr.hk01.yunti-relay01.net
-  type: ssr
+  udp: true
 - alterId: 64
   cipher: none
-  name: 🇭🇰 HK 006
+  client-fingerprint: chrome
+  name: 🇭🇰 HK 003
   network: tcp
   port: 46602
   server: 183.236.51.23
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts: {}
-- alterId: 64
-  cipher: auto
-  country: 🇨🇳CN
-  h2-opts: {}
-  http-opts: {}
-  name: 🇭🇰 HK 007
-  network: tcp
-  port: 56601
-  server: 183.236.51.23
-  skip-cert-verify: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 🇭🇰 HK 008
-  network: tcp
-  port: '53002'
-  server: 183.236.51.23
-  servername: ''
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 🇭🇰 HK 009
+  client-fingerprint: chrome
+  name: 🇭🇰 HK 004
+  network: tcp
+  port: 56601
+  server: 183.236.51.23
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: 🇭🇰 HK 005
+  network: tcp
+  port: '53002'
+  server: 183.236.51.23
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: 🇭🇰 HK 006
   network: tcp
   port: 58002
   server: 120.232.153.27
@@ -614,34 +506,35 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-256-gcm
-  name: 🇭🇰 HK 010
+  name: 🇭🇰 HK 007
   password: Z1K84W4D8G5KO54J
   port: 15011
   server: 58.63.250.61
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 🇭🇰 HK 011
+  name: 🇭🇰 HK 008
   password: MAADD8JLM8XKVW56
   port: 15016
   server: 36.141.40.92
-  tfo: false
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇭🇰 HK 012
+  name: 🇭🇰 HK 009
   password: bb741d28-cd11-4ce8-8799-459407bacde8
   port: 32184
   server: 4.api-catssr.catcloud.host
   type: ss
+  udp: true
 - cipher: aes-256-gcm
-  name: 🇭🇰 HK 013
+  name: 🇭🇰 HK 010
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 31452
   server: hk03.acxylm.top
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 🇭🇰 HK 014
+  name: 🇭🇰 HK 011
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 20177
   server: hk04.acxylm.top
@@ -649,7 +542,8 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 🇭🇰 HK 015
+  client-fingerprint: chrome
+  name: 🇭🇰 HK 012
   network: ws
   port: 33416
   server: yd2.ainivp.com
@@ -657,75 +551,64 @@ proxies:
   tls: true
   type: vmess
   uuid: 9204afcd-023e-781f-1abc-c12efccd1344
-  ws-opts:
-    headers:
-      host: yd2.ainivp.com
-    path: /ray
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 🇭🇰 HK 016
+  name: 🇭🇰 HK 013
   password: hGkQ6915tD
   port: 16088
   server: 120.232.81.50
-  tfo: false
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 🇭🇰 HK 017
+  client-fingerprint: chrome
+  name: 🇭🇰 HK 014
+  network: ws
   port: 22300
   server: 120.232.81.14
+  skip-cert-verify: false
+  tls: false
   type: vmess
-  udp: true
   uuid: 8cd69cef-002a-4f66-9ff6-48fbb7c2e2c7
 - alterId: 0
   cipher: auto
-  name: 🇭🇰 HK 018
+  client-fingerprint: chrome
+  name: 🇭🇰 HK 015
+  network: ws
   port: 60066
   server: hk0067.alibabaokz.com
+  skip-cert-verify: false
+  tls: false
   type: vmess
-  udp: true
   uuid: e50e453f-04f5-4c31-b962-bff22b152410
 - cipher: chacha20-ietf-poly1305
-  name: 🇭🇰 HK 019
+  name: 🇭🇰 HK 016
   password: f337e72a-be9a-4ea1-8332-7cbc88f0006f
   port: 34338
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 🇭🇰 HK 020
+  name: 🇭🇰 HK 017
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 45567
   server: us3.acxylm.top
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 🇭🇰 HK 021
+  name: 🇭🇰 HK 018
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 10473
   server: hk02.acxylm.top
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 🇭🇰 HK 022
+  name: 🇭🇰 HK 019
   password: 486c819c-dc4a-4981-8949-a02a6b327287
   port: 34001
   server: gychun.ccdox.icu
   type: ss
   udp: true
-- cipher: chacha20-ietf
-  country: 🏁 ZZ
-  name: 🇭🇰 HK 023
-  obfs: plain
-  obfs-param: 83f38107560.windows.net
-  password: 4wMNkIVsgybXfA2u
-  port: 54615
-  protocol: auth_aes128_sha1
-  protocol-param: 107560:cztSoV
-  server: pro.sr.hk01.yunti-relay01.net
-  type: ssr
-- country: 🇦🇺AU
-  name: 🇮🇹 IT 001
+- name: 🇮🇹 IT 001
   password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
   port: 20983
   server: ent1.imyourdaddy.top
@@ -734,7 +617,6 @@ proxies:
   type: trojan
   udp: true
 - name: 🇯🇵 JP 001
-  network: ws
   password: FLorg
   port: 443
   server: 43.153.175.137
@@ -742,21 +624,14 @@ proxies:
   sni: trojan.tcorg.filegear-sg.me
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: trojan.tcorg.filegear-sg.me
-    path: /
 - name: 🇯🇵 JP 002
-  network: ws
   password: FLorg
   port: 443
   server: 43.153.175.137
+  skip-cert-verify: false
   sni: trojan.tcorg.filegear-sg.me
   type: trojan
-  ws-opts:
-    headers:
-      Host: trojan.tcorg.filegear-sg.me
-    path: /
+  udp: true
 - cipher: aes-256-cfb
   name: 🇯🇵 JP 003
   password: hGkQ6915tD
@@ -764,110 +639,83 @@ proxies:
   server: 120.232.81.50
   type: ss
   udp: true
-- cipher: rc4-md5
-  name: 🇯🇵 JP 004
-  obfs: plain
-  obfs-param: 8195986416.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40219
-  protocol: auth_aes128_md5
-  protocol-param: 86416:SlZFuy
-  server: 7438974b54cf5c57.cdn.jiashule.com
-  type: ssr
 - alterId: 0
   cipher: auto
-  name: 🇯🇵 JP 005
+  client-fingerprint: chrome
+  name: 🇯🇵 JP 004
   network: ws
   port: 33202
   server: yd2.ainivp.com
-  servername: yd2.ainivp.com
   skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 9204afcd-023e-781f-1abc-c12efccd1344
-  ws-opts:
-    headers:
-      Host: yd2.ainivp.com
-    path: /ray
 - cipher: aes-256-cfb
-  country: 🇯🇵JP
-  name: 🇯🇵 JP 006
+  name: 🇯🇵 JP 005
   password: amazonskr05
   port: 443
   server: 18.183.217.223
   type: ss
+  udp: true
 - cipher: aes-256-gcm
-  name: 🇯🇵 JP 007
+  name: 🇯🇵 JP 006
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 19428
   server: jp01.acxylm.top
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 JP 008
+  name: 🇯🇵 JP 007
   password: f337e72a-be9a-4ea1-8332-7cbc88f0006f
   port: 20002
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 JP 009
+  name: 🇯🇵 JP 008
   password: f337e72a-be9a-4ea1-8332-7cbc88f0006f
   port: 20004
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 🇯🇵 JP 010
+  name: 🇯🇵 JP 009
   password: amazonskr05
   port: 443
   server: 3.112.215.69
   type: ss
+  udp: true
 - cipher: aes-256-gcm
-  name: 🇯🇵 JP 011
+  name: 🇯🇵 JP 010
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 43787
   server: jp02.acxylm.top
   type: ss
   udp: true
-- alterId: -1
-  cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 🇯🇵 JP 012
-  obfs: plain
-  obfs-param: 8195986416.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40255
-  protocol: auth_aes128_md5
-  protocol-param: 86416:SlZFuy
-  server: 28b09af269781f9b.cdn.jiashule.com
-  type: ssr
-  udp: true
 - cipher: aes-256-cfb
-  country: 🇯🇵JP
-  name: 🇯🇵 JP 013
+  name: 🇯🇵 JP 011
   password: amazonskr05
   port: 443
   server: 54.95.5.168
   type: ss
+  udp: true
 - cipher: aes-256-cfb
-  country: 🇧🇪BE
-  name: 🇯🇵 JP 014
+  name: 🇯🇵 JP 012
   password: amazonskr05
   port: 443
   server: 57.180.42.246
   type: ss
-- alterId: 0
-  name: 🇯🇵 JP 015
+  udp: true
+- name: 🇯🇵 JP 013
   password: QwwHvrnN
   port: 17806
   server: 36.151.192.239
   skip-cert-verify: true
-  tls: true
+  sni: 36.151.192.239
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 JP 016
+  name: 🇯🇵 JP 014
   password: f337e72a-be9a-4ea1-8332-7cbc88f0006f
   port: 20008
   server: gy.666666222.shop
@@ -875,27 +723,33 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 🇯🇵 JP 017
+  client-fingerprint: chrome
+  name: 🇯🇵 JP 015
+  network: ws
   port: 60126
   server: hk0106.alibabaokz.com
+  skip-cert-verify: false
+  tls: false
   type: vmess
-  udp: true
   uuid: e50e453f-04f5-4c31-b962-bff22b152410
 - alterId: 0
   cipher: auto
-  name: 🇯🇵 JP 018
+  client-fingerprint: chrome
+  name: 🇯🇵 JP 016
+  network: ws
   port: 60034
   server: jp0160.alibabaokz.com
+  skip-cert-verify: false
+  tls: false
   type: vmess
-  udp: true
   uuid: e50e453f-04f5-4c31-b962-bff22b152410
 - cipher: aes-256-cfb
-  country: 🇰🇷KR
   name: 🇰🇷 KR 001
   password: amazonskr05
   port: 443
   server: 13.209.16.115
   type: ss
+  udp: true
 - name: 🇰🇷 KR 002
   password: ad6e2bae-d580-4117-aa37-a8c111100740
   port: 13036
@@ -905,43 +759,41 @@ proxies:
   type: trojan
   udp: true
 - name: 🇰🇷 KR 003
-  network: tcp
   password: QwwHvrnN
   port: 36900
   server: 36.151.192.198
   skip-cert-verify: true
+  sni: 36.151.192.198
   type: trojan
-- alterId: -1
-  cipher: aes-256-cfb
-  client-fingerprint: chrome
+  udp: true
+- cipher: aes-256-cfb
   name: 🇰🇷 KR 004
   password: qwerREWQ@@
   port: 54345
   server: 221.139.79.57
-  tfo: false
   type: ss
+  udp: true
 - cipher: aes-256-cfb
   name: 🇰🇷 KR 005
   password: amazonskr05
   port: 443
   server: 3.35.137.32
-  tfo: false
   type: ss
+  udp: true
 - cipher: aes-256-cfb
   name: 🇰🇷 KR 006
   password: amazonskr05
   port: 443
   server: 3.39.240.246
-  tfo: false
   type: ss
+  udp: true
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
   name: 🇰🇷 KR 007
   password: amazonskr05
   port: 443
   server: 43.202.57.197
-  tfo: false
   type: ss
+  udp: true
 - cipher: aes-256-gcm
   name: 🇰🇷 KR 008
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
@@ -964,19 +816,19 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
   name: 🇳🇱 NL 002
   password: 1RWwXhwfAB5gAEozU4G2Pg
   port: 8080
   server: 45.87.175.199
-  tfo: false
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 🇳🇱 NL 003
   password: 2fwufOmJ9ELfN4umzcHBfV
   port: 12224
   server: 194.87.82.28
   type: ss
+  udp: true
 - cipher: aes-256-gcm
   name: 🇳🇱 NL 004
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
@@ -991,13 +843,13 @@ proxies:
   server: ph.acxylm.top
   type: ss
   udp: true
-- alterId: -1
-  cipher: chacha20-ietf-poly1305
+- cipher: chacha20-ietf-poly1305
   name: 🇷🇺 RU 001
   password: 2fwufOmJ9ELfN4umzcHBfV
   port: 12224
   server: 194.87.82.28
   type: ss
+  udp: true
 - name: 🇷🇺 RU 002
   password: 38571ca6-6692-4559-b901-0bc5826b7661
   port: 60194
@@ -1005,33 +857,36 @@ proxies:
   skip-cert-verify: true
   sni: ru0195.alibabaokz.com
   type: trojan
-- client-fingerprint: chrome
-  name: 🇸🇬 SG 001
+  udp: true
+- name: 🇸🇬 SG 001
   password: ad6e2bae-d580-4117-aa37-a8c111100740
   port: 13028
   server: naiu-sg.05vr9nyqg5.download
   skip-cert-verify: false
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
+  udp: true
 - cipher: aes-256-cfb
   name: 🇸🇬 SG 002
   password: amazonskr05
   port: 443
   server: 13.229.238.238
   type: ss
+  udp: true
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
   name: 🇸🇬 SG 003
+  network: ws
   port: 56601
   server: 183.236.51.23
   skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
+  client-fingerprint: chrome
   name: 🇸🇬 SG 004
   network: tcp
   port: 53002
@@ -1040,67 +895,54 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: -1
-  cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 🇸🇬 SG 005
-  obfs: plain
-  obfs-param: cd5ed74592.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40251
-  protocol: auth_aes128_md5
-  protocol-param: 74592:o4fbeopsgcf
-  server: 95b1cd85a0968ff2.cdn.jiashule.com
-  type: ssr
-  udp: true
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 🇸🇬 SG 006
+  name: 🇸🇬 SG 005
+  network: ws
   port: 58002
   server: 120.232.153.27
   skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-256-gcm
-  name: 🇸🇬 SG 007
+  name: 🇸🇬 SG 006
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 29321
   server: sgp3.acxylm.top
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 🇸🇬 SG 008
+  name: 🇸🇬 SG 007
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 20923
   server: sgp5.acxylm.top
   type: ss
   udp: true
-- alterId: -1
-  cipher: aes-256-cfb
-  name: 🇸🇬 SG 009
+- cipher: aes-256-cfb
+  name: 🇸🇬 SG 008
   password: amazonskr05
   port: 443
   server: 47.128.215.67
   type: ss
+  udp: true
 - cipher: aes-256-gcm
-  name: 🇸🇬 SG 010
+  name: 🇸🇬 SG 009
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 46417
   server: sgp1.acxylm.top
   type: ss
   udp: true
-- alterId: -1
-  cipher: aes-256-cfb
-  name: 🇸🇬 SG 011
+- cipher: aes-256-cfb
+  name: 🇸🇬 SG 010
   password: amazonskr05
   port: 443
   server: 52.77.209.61
   type: ss
+  udp: true
 - cipher: aes-256-cfb
-  name: 🇸🇬 SG 012
+  name: 🇸🇬 SG 011
   password: amazonskr05
   port: 443
   server: 52.77.236.51
@@ -1114,11 +956,11 @@ proxies:
   type: ss
   udp: true
 - name: 🇹🇷 TR 001
-  network: tcp
   password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
   port: 20987
   server: ent1.imyourdaddy.top
   skip-cert-verify: true
+  sni: ent1.imyourdaddy.top
   type: trojan
   udp: true
 - cipher: aes-256-gcm
@@ -1129,7 +971,6 @@ proxies:
   type: ss
   udp: true
 - name: 🇺🇸 US 001
-  network: ws
   password: trojan
   port: 8443
   server: 104.18.12.229
@@ -1137,20 +978,17 @@ proxies:
   sni: mav2flyng.pages.dev
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: mav2flyng.pages.dev
-    path: /
-- country: 🇨🇭 CH
-  name: 🇺🇸 US 002
+- name: 🇺🇸 US 002
   password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
   port: 20980
   server: ent1.imyourdaddy.top
   skip-cert-verify: true
+  sni: ent1.imyourdaddy.top
   type: trojan
   udp: true
 - alterId: 64
   cipher: auto
+  client-fingerprint: chrome
   name: 🇺🇸 US 003
   network: tcp
   port: 56601
@@ -1168,7 +1006,6 @@ proxies:
   type: trojan
   udp: true
 - name: 🇺🇸 US 005
-  network: ws
   password: dns68
   port: 443
   server: 63.141.128.254
@@ -1176,12 +1013,7 @@ proxies:
   sni: trojan.putata.us.kg
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: trojan.putata.us.kg
-    path: /?ed=2560
 - name: 🇺🇸 US 006
-  network: ws
   password: dns68
   port: 443
   server: 135.84.79.80
@@ -1189,30 +1021,20 @@ proxies:
   sni: trojan.putata.us.kg
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: trojan.putata.us.kg
-    path: /?ed=2560
-- alterId: 0
-  name: 🇺🇸 US 007
-  network: ws
+- name: 🇺🇸 US 007
   password: dns68
   port: 443
   server: 199.68.156.68
   skip-cert-verify: true
   sni: trojan.putata.us.kg
-  tls: true
   type: trojan
   udp: true
-- alterId: 0
-  name: 🇺🇸 US 008
-  network: tcp
+- name: 🇺🇸 US 008
   password: LYaOvuNXdQGTZNonhlRUKqOJcKVihzKY
   port: 889
   server: 103.168.154.7
   skip-cert-verify: true
   sni: cdn.cjhh.lol
-  tls: true
   type: trojan
   udp: true
 - name: 🇺🇸 US 009
@@ -1228,17 +1050,21 @@ proxies:
   port: 443
   server: in01.trojanyyds.xyz
   skip-cert-verify: true
+  sni: in01.trojanyyds.xyz
   type: trojan
+  udp: true
 - alterId: 64
   cipher: none
+  client-fingerprint: chrome
   name: 🇺🇸 US 011
+  network: ws
   port: 50004
   server: 112.132.212.19
+  skip-cert-verify: false
+  tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts: {}
 - name: 🇺🇸 US 012
-  network: ws
   password: FLorg
   port: 443
   server: 43.153.175.137
@@ -1246,71 +1072,51 @@ proxies:
   sni: trojan.tcorg.filegear-sg.me
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: trojan.tcorg.filegear-sg.me
-    path: /?ed
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
   name: 🇺🇸 US 013
   network: ws
   port: 2082
   server: 104.26.5.145
-  servername: ip26.6929198.xyz
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-  ws-opts:
-    headers:
-      Host: ip26.6929198.xyz
-    path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
+  client-fingerprint: chrome
   name: 🇺🇸 US 014
   network: ws
   port: 2095
   server: 104.19.45.11
-  servername: ip25.6016725.xyz
+  skip-cert-verify: false
+  tls: false
   type: vmess
-  udp: true
   uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: ip25.6016725.xyz
-    path: github.com/Alvin9999
 - alterId: 64
   cipher: auto
+  client-fingerprint: chrome
   name: 🇺🇸 US 015
   network: tcp
   port: 40434
   server: 183.236.51.23
+  skip-cert-verify: false
+  tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- client-fingerprint: chrome
-  name: 🇺🇸 US 016
+- name: 🇺🇸 US 016
   password: ad6e2bae-d580-4117-aa37-a8c111100740
   port: 13036
   server: naiu-other.05vr9nyqg5.download
   skip-cert-verify: false
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
-- cipher: rc4-md5
-  name: 🇺🇸 US 017
-  obfs: plain
-  obfs-param: cd5ed74592.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40251
-  protocol: auth_aes128_md5
-  protocol-param: 74592:o4fbeopsgcf
-  server: 95b1cd85a0968ff2.cdn.jiashule.com
-  type: ssr
+  udp: true
 - alterId: 64
   cipher: auto
-  name: 🇺🇸 US 018
+  client-fingerprint: chrome
+  name: 🇺🇸 US 017
   network: tcp
   port: 58831
   server: 183.236.48.163
@@ -1318,24 +1124,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 183.236.48.163
-  ws-path: /
-- alterId: -1
-  cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 🇺🇸 US 019
-  obfs: plain
-  obfs-param: cd5ed74592.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40243
-  protocol: auth_aes128_md5
-  protocol-param: 74592:o4fbeopsgcf
-  server: 28b09af269781f9b.cdn.jiashule.com
-  type: ssr
-  udp: true
-- country: 🇦🇺AU
-  name: 🇺🇸 US 020
+- name: 🇺🇸 US 018
   password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
   port: 21005
   server: ent1.imyourdaddy.top
@@ -1344,28 +1133,16 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇺🇸 US 021
+  name: 🇺🇸 US 019
   password: f337e72a-be9a-4ea1-8332-7cbc88f0006f
   port: 20013
   server: gy.666666222.shop
   type: ss
   udp: true
-- alterId: -1
-  cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 🇺🇸 US 022
-  obfs: plain
-  obfs-param: cd5ed74592.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40263
-  protocol: auth_aes128_md5
-  protocol-param: 74592:o4fbeopsgcf
-  server: 7438974b54cf5c57.cdn.jiashule.com
-  type: ssr
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 🇺🇸 US 023
+  client-fingerprint: chrome
+  name: 🇺🇸 US 020
   network: ws
   port: 443
   server: 2.189.59.7
@@ -1373,102 +1150,94 @@ proxies:
   tls: true
   type: vmess
   uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      host: obdii.cfd
-    path: /linkws
 - alterId: 64
   cipher: auto
-  name: 🇺🇸 US 024
+  client-fingerprint: chrome
+  name: 🇺🇸 US 021
+  network: ws
   port: 41490
   server: 183.236.48.143
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 🇺🇸 US 025
+  client-fingerprint: chrome
+  name: 🇺🇸 US 022
+  network: ws
   port: 31878
   server: 183.236.48.143
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 🇺🇸 US 026
+  client-fingerprint: chrome
+  name: 🇺🇸 US 023
+  network: ws
   port: 52482
   server: 183.240.253.23
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 🇺🇸 US 027
+  client-fingerprint: chrome
+  name: 🇺🇸 US 024
+  network: ws
   port: 42055
   server: 183.240.253.20
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 🇺🇸 US 028
+  client-fingerprint: chrome
+  name: 🇺🇸 US 025
+  network: ws
   port: 37614
   server: 183.240.253.20
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 🇺🇸 US 029
+  client-fingerprint: chrome
+  name: 🇺🇸 US 026
   network: ws
   port: 443
   server: 2.189.59.4
   skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: obdii.cfd
-    path: /linkws
 - cipher: aes-256-gcm
-  country: 🇨🇳CN
-  name: 🇺🇸 US 030
+  name: 🇺🇸 US 027
   password: 2MkHPhqUTQKK7N7D
   port: 38045
   server: zhuliu.zhenxunwudi.top
   type: ss
+  udp: true
 - alterId: 64
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 🇺🇸 US 031
+  client-fingerprint: chrome
+  name: 🇺🇸 US 028
   network: ws
   port: 31001
   server: 142.4.96.65
   skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.29675080.xyz
-    path: /path/1728035392933
 - alterId: 0
   cipher: auto
-  name: 🇺🇸 US 032
+  client-fingerprint: chrome
+  name: 🇺🇸 US 029
   network: ws
   port: 2086
   server: 172.64.80.1
@@ -1476,12 +1245,8 @@ proxies:
   tls: false
   type: vmess
   uuid: 3fd7b958-2161-46e1-b6fc-bd6bb2165312
-  ws-opts:
-    headers:
-      host: shs.xiaoqi666.xyz
-    path: /
 - cipher: aes-256-gcm
-  name: 🇺🇸 US 033
+  name: 🇺🇸 US 030
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 26800
   server: us1.acxylm.top
@@ -1489,67 +1254,61 @@ proxies:
   udp: true
 - alterId: 64
   cipher: auto
-  name: 🇺🇸 US 034
+  client-fingerprint: chrome
+  name: 🇺🇸 US 031
+  network: ws
   port: 52908
   server: 120.234.109.251
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 🇺🇸 US 035
+  client-fingerprint: chrome
+  name: 🇺🇸 US 032
   network: tcp
   port: 52112
   server: 183.236.51.23
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  version: '2'
 - cipher: aes-128-gcm
-  country: 🇨🇳CN
-  name: 🇺🇸 US 036
+  name: 🇺🇸 US 033
   password: 1de124fc-2e1b-47bf-a094-9e7494e87be6
   port: 25251
   server: alibaba1.xn--z7x16bf6t.com
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 🇺🇸 US 037
+  client-fingerprint: chrome
+  name: 🇺🇸 US 034
   network: ws
   port: 8443
   server: 104.21.238.200
-  servername: http1.9290254.xyz
+  skip-cert-verify: false
   tls: true
   type: vmess
-  udp: true
   uuid: 9201ffaa-6ca3-4f57-8b1f-266a2f390e43
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: http1.9290254.xyz
-    path: /github.com/Alvin9999
-    v2ray-http-upgrade: true
-    v2ray-http-upgrade-fast-open: true
-- alterId: -1
-  name: 🇺🇸 US 038
+- name: 🇺🇸 US 035
   password: ad6e2bae-d580-4117-aa37-a8c111100740
   port: 13008
   server: naiu-hk.05vr9nyqg5.download
+  skip-cert-verify: false
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
+  udp: true
 - cipher: aes-256-gcm
-  name: 🇺🇸 US 039
+  name: 🇺🇸 US 036
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 30031
   server: us5.acxylm.top
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 🇺🇸 US 040
+  name: 🇺🇸 US 037
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 14209
   server: us2.acxylm.top
@@ -1557,176 +1316,152 @@ proxies:
   udp: true
 - alterId: 64
   cipher: none
-  name: 🇺🇸 US 041
+  client-fingerprint: chrome
+  name: 🇺🇸 US 038
   network: tcp
   port: 45402
   server: 183.236.48.158
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts: {}
-- alterId: 64
-  cipher: none
-  name: 🇺🇸 US 042
-  network: tcp
-  port: 35601
-  server: 183.240.253.23
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts: {}
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇺🇸 US 043
-  port: 59952
-  server: 183.236.48.158
   skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇺🇸 US 044
+- alterId: 64
+  cipher: none
+  client-fingerprint: chrome
+  name: 🇺🇸 US 039
   network: tcp
+  port: 35601
+  server: 183.240.253.23
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: 🇺🇸 US 040
+  network: ws
+  port: 59952
+  server: 183.236.48.158
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇺🇸 US 041
   password: ad6e2bae-d580-4117-aa37-a8c111100740
   port: 13021
   server: naiu-us.05vr9nyqg5.download
   skip-cert-verify: false
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
-- alpn:
-  - http/1.1
-  alterId: 0
+  udp: true
+- alterId: 0
   cipher: auto
   client-fingerprint: random
-  name: 🇺🇸 US 045
+  name: 🇺🇸 US 042
   network: ws
   port: 443
   server: www.baldengineer.com
-  servername: yen63jj36j3jfflan.thelastronin.cloudns.org
   skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-  ws-opts:
-    headers:
-      Host: yelan.thelastronin.cloudns.org
-    path: /linkws/afrhms16v.bestxray.buzz
 - cipher: aes-256-gcm
-  name: 🇺🇸 US 046
+  name: 🇺🇸 US 043
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
   port: 48417
   server: sgp2.acxylm.top
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 🇺🇸 US 047
-  obfs: plain
-  password: amazonskr05
-  port: 443
-  protocol: origin
-  server: 34.219.118.99
-  type: ssr
-- cipher: aes-256-cfb
-  country: 🇺🇸US
-  name: 🇺🇸 US 048
+  name: 🇺🇸 US 044
   password: amazonskr05
   port: 443
   server: 34.220.113.138
   type: ss
+  udp: true
 - cipher: aes-256-cfb
-  name: 🇺🇸 US 049
+  name: 🇺🇸 US 045
   password: amazonskr05
   port: 443
   server: 35.86.117.124
   type: ss
+  udp: true
 - cipher: aes-256-cfb
-  name: 🇺🇸 US 050
+  name: 🇺🇸 US 046
   password: amazonskr05
   port: 443
   server: 35.88.126.102
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  country: 🏁 ZZ
-  name: 🇺🇸 US 051
+  name: 🇺🇸 US 047
   password: amazonskr05
   port: 443
   server: 35.88.136.187
   type: ss
+  udp: true
 - alterId: 64
   cipher: auto
-  name: 🇺🇸 US 052
+  client-fingerprint: chrome
+  name: 🇺🇸 US 048
+  network: ws
   port: 39041
   server: 183.240.253.26
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 🇺🇸 US 053
+- cipher: aes-256-gcm
+  name: 🇺🇸 US 049
   password: Y6R9pAtvxxzmGC
   port: 3389
   server: 38.75.136.21
-  skip-cert-verify: true
-  tls: true
   type: ss
+  udp: true
 - cipher: aes-256-cfb
-  name: 🇺🇸 US 054
+  name: 🇺🇸 US 050
   password: amazonskr05
   port: 443
   server: 44.242.211.17
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 🇺🇸 US 055
+  name: 🇺🇸 US 051
   password: amazonskr05
   port: 443
   server: 44.243.115.246
   type: ss
   udp: true
-- alterId: -1
-  cipher: aes-256-cfb
-  name: 🇺🇸 US 056
+- cipher: aes-256-cfb
+  name: 🇺🇸 US 052
   password: amazonskr05
   port: 443
   server: 44.244.24.140
   type: ss
+  udp: true
 - cipher: aes-256-cfb
-  country: 🇺🇸US
-  name: 🇺🇸 US 057
+  name: 🇺🇸 US 053
   password: amazonskr05
   port: 443
   server: 44.244.25.243
   type: ss
-- alterId: -1
-  cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 🇺🇸 US 058
-  obfs: plain
-  obfs-param: cd5ed74592.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40205
-  protocol: auth_aes128_md5
-  protocol-param: 74592:o4fbeopsgcf
-  server: 95b1cd85a0968ff2.cdn.jiashule.com
-  type: ssr
   udp: true
-- alterId: -1
-  cipher: aes-256-cfb
-  name: 🇺🇸 US 059
+- cipher: aes-256-cfb
+  name: 🇺🇸 US 054
   password: amazonskr05
   port: 443
   server: 54.191.9.106
   type: ss
-- name: 🇺🇸 US 060
+  udp: true
+- name: 🇺🇸 US 055
   password: 2baa2d43-b564-3b1f-92c7-c6fa1ff7e0a2
   port: 39874
   server: scm.zarelayv1.com
   skip-cert-verify: true
   sni: us-katt.zodport.com
   type: trojan
+  udp: true
 - cipher: aes-256-gcm
   name: 🇻🇳 VN 001
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
@@ -1734,225 +1469,194 @@ proxies:
   server: vn.acxylm.top
   type: ss
   udp: true
-- country: 🏁 ZZ
-  name: 🇻🇳 VN 002
+- name: 🇻🇳 VN 002
   password: 94d219c9-1afc-4d42-b090-8b3794764380
   port: 443
   server: 160.30.21.105
   skip-cert-verify: true
+  sni: 160.30.21.105
   type: trojan
   udp: true
 - alterId: 2
   cipher: auto
-  name: 🇭🇰 HK 024
+  client-fingerprint: chrome
+  name: 🇭🇰 HK 020
   network: ws
   port: '30809'
   server: v9.heduian.link
-  servername: ''
   skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /oooo
 - cipher: aes-256-gcm
-  name: 🇭🇰 HK 025
+  name: 🇭🇰 HK 021
   password: 2b5fad3874e5
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: hk6v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /aqwshiog
-    skip-cert-verify: false
-    tls: true
   port: 443
   server: 156.251.179.135
-  tfo: false
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 🇭🇰 HK 026
+  client-fingerprint: chrome
+  name: 🇭🇰 HK 022
+  network: ws
   port: 46981
   server: 43.247.134.211
   skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
   uuid: 0f6e3f70-d64d-4825-aa04-1ead22e96b8b
-- name: 🇭🇰 HK 027
-  network: tcp
+- name: 🇭🇰 HK 023
   password: 253bc477d4e43c209f2d427272968280
   port: 391
   server: 36.156.102.77
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
+  udp: true
 - cipher: aes-256-gcm
-  name: 🇭🇰 HK 028
+  name: 🇭🇰 HK 024
   password: amazongreatvpn
   port: 16888
   server: 16.162.87.199
-  tfo: false
   type: ss
-- name: 🇭🇰 HK 029
-  network: tcp
+  udp: true
+- name: 🇭🇰 HK 025
   password: 253bc477d4e43c209f2d427272968280
   port: 391
   server: 36.150.215.200
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇭🇰 HK 030
+  name: 🇭🇰 HK 026
   password: 2cf69d5f-0293-4ddb-bbfc-145de8dfc570
   port: 4772
   server: shenzhen99.fkfkd.cn
-  tfo: false
   type: ss
+  udp: true
 - cipher: rc4-md5
-  name: 🇯🇵 JP 019
+  name: 🇯🇵 JP 017
   password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202509121565513-hgGUWL4a7n.download.microsoft.com
-    mode: http
   port: 8766
   server: cn01.efan8867801.xyz
-  tfo: false
   type: ss
+  udp: true
 - cipher: aes-256-gcm
-  name: 🇯🇵 JP 020
+  name: 🇯🇵 JP 018
   password: 8a6ca14c0936
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jpxw9v1.dashengjs.net
-    mode: websocket
-    mux: false
-    path: /wrdfiatyd
-    skip-cert-verify: false
-    tls: true
   port: 443
   server: 137.220.142.150
-  tfo: false
   type: ss
-- name: 🇯🇵 JP 021
-  network: tcp
+  udp: true
+- name: 🇯🇵 JP 019
   password: 253bc477d4e43c209f2d427272968280
   port: 327
   server: 36.156.102.77
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
-- name: 🇯🇵 JP 022
-  network: tcp
+  udp: true
+- name: 🇯🇵 JP 020
   password: 253bc477d4e43c209f2d427272968280
   port: 1924
   server: 36.156.102.77
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
+  udp: true
 - cipher: aes-256-gcm
-  name: 🇯🇵 JP 023
+  name: 🇯🇵 JP 021
   password: amazongreatvpn
   port: 16888
   server: 57.181.174.7
-  tfo: false
   type: ss
-- name: 🇸🇬 SG 013
-  network: tcp
+  udp: true
+- name: 🇸🇬 SG 012
   password: 253bc477d4e43c209f2d427272968280
   port: 1501
   server: 36.156.102.77
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
-- name: 🇸🇬 SG 014
-  network: tcp
+  udp: true
+- name: 🇸🇬 SG 013
   password: 253bc477d4e43c209f2d427272968280
   port: 9160
   server: 36.156.102.77
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
+  udp: true
 - alterId: 2
   cipher: auto
-  name: 🇸🇬 SG 015
+  client-fingerprint: chrome
+  name: 🇸🇬 SG 014
   network: ws
   port: '30839'
   server: v39.heduian.link
-  servername: ''
   skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /oooo
 - cipher: rc4-md5
-  name: 🇺🇸 US 061
+  name: 🇺🇸 US 056
   password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202509121565513-hgGUWL4a7n.download.microsoft.com
-    mode: http
   port: 8774
   server: cn01.efan8867801.xyz
-  tfo: false
   type: ss
-- name: 🇺🇸 US 062
-  network: tcp
+  udp: true
+- name: 🇺🇸 US 057
   password: 253bc477d4e43c209f2d427272968280
   port: 4729
   server: 36.156.102.77
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
-- name: 🇺🇸 US 063
-  network: tcp
+  udp: true
+- name: 🇺🇸 US 058
   password: 253bc477d4e43c209f2d427272968280
   port: 13855
   server: 36.156.102.77
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 🇭🇰 HK 031
+  client-fingerprint: chrome
+  name: 🇭🇰 HK 027
   network: tcp
   port: '46981'
   server: 43.247.134.211
-  servername: ''
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 0f6e3f70-d64d-4825-aa04-1ead22e96b8b
 - alterId: 0
   cipher: auto
-  name: 🇭🇰 HK 032
+  client-fingerprint: chrome
+  name: 🇭🇰 HK 028
   network: kcp
   port: '28590'
   server: 47.239.183.87
-  servername: ''
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: d75481c7-b5c8-40a9-811a-02b709e74816
 - alterId: 0
   cipher: auto
-  name: 🇯🇵 JP 024
+  client-fingerprint: chrome
+  name: 🇯🇵 JP 022
   network: kcp
   port: '34933'
   server: 8.209.211.236
-  servername: ''
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 8a9150bc-b9c8-40ac-be83-aaec45176a81
 - name: 🇳🇱 NL 005
-  network: ws
   password: XWnVX2ASHl
   port: 37757
   server: 5.255.103.217
@@ -1960,11 +1664,7 @@ proxies:
   sni: moshali.arshiacomplus.dpdns.org
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: moshali.arshiacomplus.dpdns.org
-    path: /moshaliplus
-- name: 🇸🇬 SG 016
+- name: 🇸🇬 SG 015
   password: 9e76767d-4bfa-4f04-a800-42e2f63afed2
   port: 443
   server: de.viefast.net
@@ -1972,56 +1672,55 @@ proxies:
   sni: csapp.catch.net.tw
   type: trojan
   udp: true
-- name: 🇺🇸 US 064
-  network: tcp
+- name: 🇺🇸 US 059
   password: 253bc477d4e43c209f2d427272968280
   port: 2282
   server: xingxing.jiasu123.org
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- name: 🇺🇸 US 065
-  network: tcp
+  udp: true
+- name: 🇺🇸 US 060
   password: 253bc477d4e43c209f2d427272968280
   port: 316
   server: xingxing.jiasu123.org
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
-- name: 🇺🇸 US 066
-  network: tcp
+  udp: true
+- name: 🇺🇸 US 061
   password: 253bc477d4e43c209f2d427272968280
   port: 4613
   server: xingxing.jiasu123.org
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
-- name: 🇺🇸 US 067
-  network: tcp
+  udp: true
+- name: 🇺🇸 US 062
   password: 253bc477d4e43c209f2d427272968280
   port: 3957
   server: xingxing.jiasu123.org
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
-- name: 🇺🇸 US 068
-  network: tcp
+  udp: true
+- name: 🇺🇸 US 063
   password: 253bc477d4e43c209f2d427272968280
   port: 2966
   server: xingxing.jiasu123.org
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
-- name: 🇺🇸 US 069
-  network: tcp
+  udp: true
+- name: 🇺🇸 US 064
   password: 253bc477d4e43c209f2d427272968280
   port: 1823
   server: xingxing.jiasu123.org
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
+  udp: true
 - name: 🇦🇹 AT 001
-  network: ws
   password: slch2024
   port: 2096
   server: 212.183.88.195
@@ -2029,12 +1728,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
 - name: 🇦🇺 AU 008
-  network: ws
   password: slch2024
   port: 2096
   server: 192.65.217.195
@@ -2042,12 +1736,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
 - name: 🇦🇺 AU 009
-  network: ws
   password: slch2024
   port: 2096
   server: 185.207.197.195
@@ -2055,12 +1744,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /TelegramU0001F1E8U0001F1F3
 - name: 🇪🇸 ES 001
-  network: ws
   password: slch2024
   port: 2096
   server: 185.18.250.195
@@ -2068,12 +1752,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
 - name: 🇬🇧 GB 009
-  network: ws
   password: slch2024
   port: 2096
   server: 195.26.229.87
@@ -2081,12 +1760,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /TelegramU0001F1E8U0001F1F3
 - name: 🇬🇧 GB 010
-  network: ws
   password: slch2024
   port: 2096
   server: 195.26.229.195
@@ -2094,12 +1768,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
 - name: 🇬🇧 GB 011
-  network: ws
   password: slch2024
   port: 2096
   server: 193.124.224.195
@@ -2107,12 +1776,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /TelegramU0001F1E8U0001F1F3
 - name: 🇬🇧 GB 012
-  network: ws
   password: slch2024
   port: 2096
   server: 188.244.122.195
@@ -2120,12 +1784,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
 - name: 🇪🇸 ES 002
-  network: ws
   password: slch2024
   port: 2096
   server: 185.251.83.195
@@ -2133,12 +1792,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /TelegramU0001F1E8U0001F1F3
 - name: 🇪🇸 ES 003
-  network: ws
   password: slch2024
   port: 2096
   server: 185.251.80.195
@@ -2146,12 +1800,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
 - name: 🇪🇸 ES 004
-  network: ws
   password: slch2024
   port: 2096
   server: 185.251.82.195
@@ -2159,12 +1808,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
 - name: 🇪🇸 ES 005
-  network: ws
   password: slch2024
   port: 2096
   server: 185.238.228.195
@@ -2172,12 +1816,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
 - name: 🇪🇸 ES 006
-  network: ws
   password: slch2024
   port: 2096
   server: 185.251.81.195
@@ -2185,12 +1824,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
 - name: 🇫🇷 FR 012
-  network: ws
   password: slch2024
   port: 2096
   server: 185.7.240.195
@@ -2198,12 +1832,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
 - name: 🇩🇪 DE 007
-  network: ws
   password: slch2024
   port: 2096
   server: 185.16.110.195
@@ -2211,12 +1840,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
 - name: 🇬🇧 GB 013
-  network: ws
   password: slch2024
   port: 2096
   server: 185.156.19.195
@@ -2224,12 +1848,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
 - name: 🇬🇧 GB 014
-  network: ws
   password: slch2024
   port: 2096
   server: 194.36.55.195
@@ -2237,12 +1856,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
 - name: 🇷🇺 RU 003
-  network: ws
   password: slch2024
   port: 2096
   server: 194.76.18.195
@@ -2250,12 +1864,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
 - name: 🇳🇱 NL 006
-  network: ws
   password: slch2024
   port: 2096
   server: 188.164.248.195
@@ -2263,12 +1872,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
 - name: 🇳🇱 NL 007
-  network: ws
   password: slch2024
   port: 2096
   server: 188.164.248.87
@@ -2276,12 +1880,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 🇸🇬 SG 017
-  network: ws
+- name: 🇸🇬 SG 016
   password: slch2024
   port: 2096
   server: 185.18.184.195
@@ -2289,12 +1888,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
 - name: 🇳🇱 NL 008
-  network: ws
   password: slch2024
   port: 2096
   server: 188.42.145.195
@@ -2302,12 +1896,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
 - name: 🇷🇺 RU 004
-  network: ws
   password: slch2024
   port: 2096
   server: 213.241.198.195
@@ -2315,12 +1904,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /TelegramU0001F1E8U0001F1F3
 - name: 🇷🇺 RU 005
-  network: ws
   password: slch2024
   port: 2096
   server: 185.174.138.195
@@ -2328,12 +1912,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
 - name: 🇷🇺 RU 006
-  network: ws
   password: slch2024
   port: 2096
   server: 185.59.218.195
@@ -2341,12 +1920,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
-- name: 🇺🇸 US 070
-  network: ws
+- name: 🇺🇸 US 065
   password: slch2024
   port: 2096
   server: 199.68.156.195
@@ -2354,12 +1928,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇮🇷ShadowProxy66
-- name: 🇺🇸 US 071
-  network: ws
+- name: 🇺🇸 US 066
   password: slch2024
   port: 2096
   server: 198.62.62.87
@@ -2367,12 +1936,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 🇺🇸 US 072
-  network: ws
+- name: 🇺🇸 US 067
   password: slch2024
   port: 2096
   server: 198.62.62.195
@@ -2380,12 +1944,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
-- name: 🇺🇸 US 073
-  network: ws
+- name: 🇺🇸 US 068
   password: slch2024
   port: 2096
   server: 192.200.160.87
@@ -2393,12 +1952,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 🇺🇸 US 074
-  network: ws
+- name: 🇺🇸 US 069
   password: slch2024
   port: 2096
   server: 199.68.156.87
@@ -2406,12 +1960,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 🇺🇸 US 075
-  network: ws
+- name: 🇺🇸 US 070
   password: slch2024
   port: 2096
   server: 199.34.230.195
@@ -2419,12 +1968,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
 - name: 🇷🇺 RU 007
-  network: ws
   password: slch2024
   port: 2096
   server: 195.13.45.195
@@ -2432,12 +1976,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
-- name: 🇺🇸 US 076
-  network: ws
+- name: 🇺🇸 US 071
   password: slch2024
   port: 2096
   server: 209.46.30.195
@@ -2445,12 +1984,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
-- name: 🇺🇸 US 077
-  network: ws
+- name: 🇺🇸 US 072
   password: slch2024
   port: 2096
   server: 192.0.63.195
@@ -2458,12 +1992,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 🇺🇸 US 078
-  network: ws
+- name: 🇺🇸 US 073
   password: slch2024
   port: 2096
   server: 199.34.230.87
@@ -2471,12 +2000,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 🇺🇸 US 079
-  network: ws
+- name: 🇺🇸 US 074
   password: slch2024
   port: 2096
   server: 204.93.210.195
@@ -2484,27 +2008,18 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /TelegramU0001F1E8U0001F1F3
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
   name: 🇬🇧 GB 015
   network: ws
   port: 16622
   server: t.cnmjcn.cyou
   skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
   uuid: 743dbce9-ec7d-49dd-b9d6-3b1a151e729f
-  ws-opts:
-    headers:
-      Host: f604066249a784d694db65d3ebf5d60c.mobgslb.tbcache.com
-    path: /
 - name: 🇷🇺 RU 008
-  network: ws
   password: slch2024
   port: 2096
   server: 195.13.44.87
@@ -2512,12 +2027,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 🇺🇸 US 080
-  network: ws
+- name: 🇺🇸 US 075
   password: slch2024
   port: 2096
   server: 192.200.160.195
@@ -2525,12 +2035,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 🇺🇸 US 081
-  network: ws
+- name: 🇺🇸 US 076
   password: slch2024
   port: 2096
   server: 199.34.229.195
@@ -2538,12 +2043,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 🇺🇸 US 082
-  network: ws
+- name: 🇺🇸 US 077
   password: slch2024
   port: 2096
   server: 192.0.54.195
@@ -2551,12 +2051,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 🇺🇸 US 083
-  network: ws
+- name: 🇺🇸 US 078
   password: slch2024
   port: 2096
   server: 199.181.197.195
@@ -2564,12 +2059,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
 - name: 🇷🇺 RU 009
-  network: ws
   password: slch2024
   port: 2096
   server: 195.13.44.195
@@ -2577,12 +2067,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 🇺🇸 US 084
-  network: ws
+- name: 🇺🇸 US 079
   password: slch2024
   port: 2096
   server: 216.24.57.87
@@ -2590,12 +2075,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 🇺🇸 US 085
-  network: ws
+- name: 🇺🇸 US 080
   password: slch2024
   port: 2096
   server: 216.205.52.195
@@ -2603,12 +2083,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
 - name: 🇨🇦 CA 015
-  network: ws
   password: slch2024
   port: 2096
   server: 205.233.181.195
@@ -2616,12 +2091,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 🇺🇸 US 086
-  network: ws
+- name: 🇺🇸 US 081
   password: slch2024
   port: 2096
   server: 216.24.57.195
@@ -2629,515 +2099,105 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 🇯🇵 JP 025
-  network: tcp
+- name: 🇯🇵 JP 023
   password: 253bc477d4e43c209f2d427272968280
   port: 18233
   server: 13.231.37.82
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
-- client-fingerprint: chrome
-  name: 🇺🇸 US 087
-  network: ws
-  port: 2096
-  server: 172.66.40.99
-  servername: d11.AlanHIAhO.cOM
-  skip-cert-verify: true
-  tfo: true
-  tls: true
-  type: vless
   udp: true
-  uuid: 502ce704-dcec-4f92-9489-505c99ce6c89
-  ws-opts:
-    headers:
-      Host: d11.AlanHIAhO.cOM
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/120.0.0.0 Safari/537.36
-    path: /
-- client-fingerprint: chrome
-  grpc-opts: {}
-  name: 🇷🇺 RU 010
-  network: grpc
-  port: 8880
-  server: 185.236.232.72
-  skip-cert-verify: true
-  tfo: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- client-fingerprint: chrome
-  grpc-opts: {}
-  name: 🇷🇺 RU 011
-  network: grpc
-  port: 8880
-  server: 185.236.232.148
-  skip-cert-verify: true
-  tfo: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- client-fingerprint: chrome
-  name: 🇺🇸 US 088
-  network: ws
-  port: 8443
-  server: 104.21.3.219
-  servername: ovhwuxian.pai50288.uk
-  skip-cert-verify: true
-  tfo: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
-  ws-opts:
-    headers:
-      Host: ovhwuxian.pai50288.uk
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/120.0.0.0 Safari/537.36
-    path: /57ba2ab1
-- client-fingerprint: chrome
-  grpc-opts: {}
-  name: 🇷🇺 RU 012
-  network: grpc
-  port: 8880
-  server: 185.236.232.120
-  skip-cert-verify: true
-  tfo: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- client-fingerprint: chrome
-  grpc-opts: {}
-  name: 🇺🇸 US 089
-  network: grpc
-  port: 8880
-  server: 45.86.72.106
-  skip-cert-verify: true
-  tfo: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- client-fingerprint: chrome
-  grpc-opts: {}
-  name: 🇷🇺 RU 013
-  network: grpc
-  port: 8880
-  server: 185.236.232.243
-  skip-cert-verify: true
-  tfo: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- client-fingerprint: chrome
-  grpc-opts: {}
-  name: 🇷🇺 RU 014
-  network: grpc
-  port: 8880
-  server: 185.236.232.189
-  skip-cert-verify: true
-  tfo: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- client-fingerprint: chrome
-  grpc-opts: {}
-  name: 🇺🇸 US 090
-  network: grpc
-  port: 8880
-  server: 45.82.251.121
-  skip-cert-verify: true
-  tfo: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- client-fingerprint: chrome
-  name: 🇺🇸 US 091
-  network: ws
-  port: 443
-  server: 104.21.36.57
-  servername: mirror.fullmargintraders.com
-  skip-cert-verify: true
-  tfo: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6c11247b-6078-461a-93d5-22e4df284e6d
-  ws-opts:
-    headers:
-      Host: mirror.fullmargintraders.com
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/120.0.0.0 Safari/537.36
-    path: /wsv/6c11247b-6078-461a-93d5-22e4df284e6d
-- client-fingerprint: chrome
-  grpc-opts: {}
-  name: 🇺🇸 US 092
-  network: grpc
-  port: 8880
-  server: 45.82.251.180
-  skip-cert-verify: true
-  tfo: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- client-fingerprint: chrome
-  grpc-opts: {}
-  name: 🇺🇸 US 093
-  network: grpc
-  port: 8880
-  server: 45.82.251.114
-  skip-cert-verify: true
-  tfo: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- client-fingerprint: chrome
-  name: 🇺🇸 US 094
-  network: ws
-  port: 21275
-  server: 45.45.218.166
-  servername: ula347.tiri-viri.com
-  skip-cert-verify: true
-  tfo: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 678a8311-6184-4a1f-a651-84be3cc82e37
-  ws-opts:
-    headers:
-      Host: ula347.tiri-viri.com
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/120.0.0.0 Safari/537.36
-    path: /
-- client-fingerprint: chrome
-  grpc-opts: {}
-  name: 🇷🇺 RU 015
-  network: grpc
-  port: 8880
-  server: 185.236.232.123
-  skip-cert-verify: true
-  tfo: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- client-fingerprint: chrome
-  grpc-opts: {}
-  name: 🇺🇸 US 095
-  network: grpc
-  port: 8880
-  server: 45.82.251.97
-  skip-cert-verify: true
-  tfo: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- client-fingerprint: chrome
-  grpc-opts: {}
-  name: 🇷🇺 RU 016
-  network: grpc
-  port: 8880
-  server: 185.236.232.199
-  skip-cert-verify: true
-  tfo: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- client-fingerprint: chrome
-  grpc-opts: {}
-  name: 🇺🇸 US 096
-  network: grpc
-  port: 8880
-  server: pqh25v7.vetrkot.com
-  skip-cert-verify: true
-  tfo: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- client-fingerprint: chrome
-  grpc-opts: {}
-  name: 🇺🇸 US 097
-  network: grpc
-  port: 8880
-  server: 45.82.251.142
-  skip-cert-verify: true
-  tfo: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- client-fingerprint: chrome
-  grpc-opts: {}
-  name: 🇺🇸 US 098
-  network: grpc
-  port: 8880
-  server: 45.82.251.122
-  skip-cert-verify: true
-  tfo: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- client-fingerprint: chrome
-  grpc-opts: {}
-  name: 🇷🇺 RU 017
-  network: grpc
-  port: 8880
-  server: 185.236.232.223
-  skip-cert-verify: true
-  tfo: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- client-fingerprint: chrome
-  grpc-opts: {}
-  name: 🇺🇸 US 099
-  network: grpc
-  port: 8880
-  server: 45.82.251.93
-  skip-cert-verify: true
-  tfo: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- client-fingerprint: chrome
-  grpc-opts: {}
-  name: 🇷🇺 RU 018
-  network: grpc
-  port: 8880
-  server: 185.236.232.129
-  skip-cert-verify: true
-  tfo: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- client-fingerprint: chrome
-  grpc-opts: {}
-  name: 🇷🇺 RU 019
-  network: grpc
-  port: 8880
-  server: 185.236.232.116
-  skip-cert-verify: true
-  tfo: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
   name: 🇬🇧 GB 016
   network: tcp
   port: 39674
   server: 82.197.69.131
   skip-cert-verify: true
-  tfo: true
+  tls: false
   type: vmess
-  udp: true
   uuid: 5a89386a-827b-4f54-8778-2f1b5122c6ef
 - alterId: 0
   cipher: auto
-  name: 🇸🇬 SG 018
+  client-fingerprint: chrome
+  name: 🇸🇬 SG 017
   network: ws
   port: 443
   server: 54.169.173.51
   skip-cert-verify: true
-  tfo: true
+  tls: false
   type: vmess
-  udp: true
   uuid: 14a79148-3d75-41d6-a998-2be9edef88cb
-  ws-opts:
-    headers:
-      Host: singapore2.helloshuai.com
-    path: /39cb4/
-- client-fingerprint: chrome
-  name: 🇺🇸 US 100
-  network: ws
-  port: 443
-  server: kifpool.me
-  servername: nkang2replace.airlineshoma.com
-  skip-cert-verify: true
-  tfo: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: b754b53a-aaf5-475c-eeed-46806c2aa63f
-  ws-opts:
-    headers:
-      Host: nkang2replace.airlineshoma.com
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/120.0.0.0 Safari/537.36
-    path: /
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
   name: 🇰🇷 KR 009
   network: ws
   port: 443
   server: 202.79.161.188
   skip-cert-verify: true
-  tfo: true
+  tls: false
   type: vmess
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.32278117.xyz
-    path: /path/170733132233
-- client-fingerprint: chrome
-  grpc-opts: {}
-  name: 🇺🇸 US 101
-  network: grpc
-  port: 443
-  server: 167.68.42.168
-  servername: pqh24v3.hiddendom.shop
-  skip-cert-verify: true
-  tfo: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- client-fingerprint: chrome
-  grpc-opts: {}
-  name: 🇺🇸 US 102
-  network: grpc
-  port: 443
-  server: 141.193.213.214
-  servername: pqh23v5.hiddendom.shop
-  skip-cert-verify: true
-  tfo: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
 - alterId: 0
   cipher: auto
-  name: 🇺🇸 US 103
+  client-fingerprint: chrome
+  name: 🇺🇸 US 082
   network: none
   port: 43966
   server: 209.54.104.219
   skip-cert-verify: true
-  tfo: true
+  tls: false
   type: vmess
-  udp: true
   uuid: 0e3606ae-321a-4d0b-85ec-5f4352f4bc24
 - alterId: 0
   cipher: auto
-  name: 🇺🇸 US 104
+  client-fingerprint: chrome
+  name: 🇺🇸 US 083
   network: none
   port: 36299
   server: 66.253.5.158
   skip-cert-verify: true
-  tfo: true
+  tls: false
   type: vmess
-  udp: true
   uuid: 4ada72ac-46b4-4080-aa1e-c81999725ba5
-- client-fingerprint: chrome
-  grpc-opts: {}
-  name: 🇷🇺 RU 020
-  network: grpc
-  port: 8880
-  server: 185.231.205.99
-  skip-cert-verify: true
-  tfo: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - alterId: 0
   cipher: auto
-  name: 🇺🇸 US 105
+  client-fingerprint: chrome
+  name: 🇺🇸 US 084
   network: ws
   port: 443
   server: www.speedtest.net
   skip-cert-verify: true
-  tfo: true
+  tls: false
   type: vmess
-  udp: true
   uuid: b7acf44f-3c3a-430c-8ed0-fb64ccc9a13a
-  ws-opts:
-    headers:
-      Host: BLaZE-fRA-64.BLaZECLOuD.sitE
-    path: /linkvkwss
-- client-fingerprint: chrome
-  grpc-opts: {}
-  name: 🇷🇺 RU 021
-  network: grpc
-  port: 8880
-  server: 185.236.232.240
-  skip-cert-verify: true
-  tfo: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- client-fingerprint: chrome
-  grpc-opts: {}
-  name: 🇺🇸 US 106
-  network: grpc
-  port: 8880
-  server: 45.82.251.92
-  skip-cert-verify: true
-  tfo: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- client-fingerprint: chrome
-  grpc-opts: {}
-  name: 🇺🇸 US 107
-  network: grpc
-  port: 443
-  server: 104.26.2.186
-  servername: pqh31v7.hiddendom.shop
-  skip-cert-verify: true
-  tfo: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
 - name: 🇦🇺 AU 010
-  network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 2282
   server: 43.198.184.150
   skip-cert-verify: true
   sni: fe2.update.microsoft.com
   type: trojan
-- name: 🇺🇸 US 108
-  network: tcp
+  udp: true
+- name: 🇺🇸 US 085
   password: 253bc477d4e43c209f2d427272968280
   port: 1924
   server: xingxing.jiasu123.org
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
-- name: 🇺🇸 US 109
-  network: tcp
+  udp: true
+- name: 🇺🇸 US 086
   password: 253bc477d4e43c209f2d427272968280
   port: 4801
   server: xingxing.jiasu123.org
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
-- name: 🇷🇺 RU 022
-  network: ws
+  udp: true
+- name: 🇷🇺 RU 010
   password: slch2024
   port: 2096
   server: 193.9.49.195
@@ -3145,44 +2205,39 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 🇺🇸 US 110
-  network: tcp
+- name: 🇺🇸 US 087
   password: 253bc477d4e43c209f2d427272968280
   port: 46943
   server: xingxing.jiasu123.org
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
-- name: 🇺🇸 US 111
-  network: tcp
+  udp: true
+- name: 🇺🇸 US 088
   password: 253bc477d4e43c209f2d427272968280
   port: 3043
   server: xingxing.jiasu123.org
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
-- name: 🇺🇸 US 112
-  network: tcp
+  udp: true
+- name: 🇺🇸 US 089
   password: 253bc477d4e43c209f2d427272968280
   port: 4317
   server: xingxing.jiasu123.org
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
-- name: 🇺🇸 US 113
-  network: tcp
+  udp: true
+- name: 🇺🇸 US 090
   password: 253bc477d4e43c209f2d427272968280
   port: 1523
   server: xingxing.jiasu123.org
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
-- name: 🇷🇺 RU 023
-  network: ws
+  udp: true
+- name: 🇷🇺 RU 011
   password: slch2024
   port: 2096
   server: 195.13.54.195
@@ -3190,34 +2245,18 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
 - name: 🇳🇱 NL 009
-  network: ws
   password: slch2024
   port: 2096
   server: 185.193.29.195
+  skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- auth: 5fbe139f-c1e0-4b92-bb3c-7f68035962c3
-  name: 🇫🇮 FI 002
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: 5fbe139f-c1e0-4b92-bb3c-7f68035962c3
-  port: 33659
-  server: hl.dport.top
-  skip-cert-verify: false
-  sni: hl.dport.top
-  type: hysteria2
+  udp: true
 - alterId: 2
   cipher: auto
-  name: 🇭🇰 HK 033
+  client-fingerprint: chrome
+  name: 🇭🇰 HK 029
   network: ws
   port: 30809
   server: v9.heduian.link
@@ -3225,19 +2264,17 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /oooo
 - cipher: aes-256-gcm
-  name: 🇭🇰 HK 034
+  name: 🇭🇰 HK 030
   password: 2b5fad3874e5
   port: 443
   server: 156.251.179.135
   type: ss
+  udp: true
 - alterId: 2
   cipher: auto
-  name: 🇭🇰 HK 035
+  client-fingerprint: chrome
+  name: 🇭🇰 HK 031
   network: ws
   port: 80
   server: hkt.gotochinatown.net
@@ -3245,79 +2282,86 @@ proxies:
   tls: false
   type: vmess
   uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: hkt.gotochinatown.net
-    path: /
-- name: 🇭🇰 HK 036
+- name: 🇭🇰 HK 032
   password: 253bc477d4e43c209f2d427272968280
   port: 443
   server: 42.2.170.224
   skip-cert-verify: false
   sni: www.baidu.com
   type: trojan
+  udp: true
 - cipher: aes-256-gcm
-  name: 🇭🇰 HK 037
+  name: 🇭🇰 HK 033
   password: amazongreatvpn
   port: 16888
   server: 43.198.113.57
   type: ss
-- name: 🇭🇰 HK 038
+  udp: true
+- name: 🇭🇰 HK 034
   password: 253bc477d4e43c209f2d427272968280
   port: 443
   server: 203.218.202.199
   skip-cert-verify: false
   sni: www.baidu.com
   type: trojan
+  udp: true
 - cipher: rc4-md5
-  name: 🇯🇵 JP 026
+  name: 🇯🇵 JP 024
   password: efanccyun
   port: 8766
   server: cn01.efan8867801.xyz
   type: ss
+  udp: true
 - cipher: aes-256-gcm
-  name: 🇯🇵 JP 027
+  name: 🇯🇵 JP 025
   password: 8a6ca14c0936
   port: 443
   server: 137.220.142.150
   type: ss
-- name: 🇯🇵 JP 028
+  udp: true
+- name: 🇯🇵 JP 026
   password: 253bc477d4e43c209f2d427272968280
   port: 1924
   server: 36.156.102.77
   skip-cert-verify: false
   sni: 23.45.86.28
   type: trojan
-- name: 🇯🇵 JP 029
+  udp: true
+- name: 🇯🇵 JP 027
   password: 253bc477d4e43c209f2d427272968280
   port: 316
   server: xingxing.jiasu123.org
   skip-cert-verify: false
   sni: 23.45.86.28
   type: trojan
+  udp: true
 - cipher: aes-256-gcm
-  name: 🇯🇵 JP 030
+  name: 🇯🇵 JP 028
   password: amazongreatvpn
   port: 16888
   server: 35.75.5.176
   type: ss
-- name: 🇸🇬 SG 019
+  udp: true
+- name: 🇸🇬 SG 018
   password: 253bc477d4e43c209f2d427272968280
   port: 3957
   server: xingxing.jiasu123.org
   skip-cert-verify: false
   sni: 23.45.86.28
   type: trojan
-- name: 🇸🇬 SG 020
+  udp: true
+- name: 🇸🇬 SG 019
   password: 253bc477d4e43c209f2d427272968280
   port: 9160
   server: 36.156.102.77
   skip-cert-verify: false
   sni: 23.45.86.28
   type: trojan
+  udp: true
 - alterId: 2
   cipher: auto
-  name: 🇸🇬 SG 021
+  client-fingerprint: chrome
+  name: 🇸🇬 SG 020
   network: ws
   port: 30839
   server: v39.heduian.link
@@ -3325,1335 +2369,906 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /oooo
 - cipher: aes-128-gcm
-  name: 🇺🇸 US 114
+  name: 🇺🇸 US 091
   password: 01721e43-5389-4f97-b21c-900abb2bda9e
   port: 12009
   server: awes35lesl.blhao0o.dpdns.org
   type: ss
+  udp: true
 - cipher: rc4-md5
-  name: 🇺🇸 US 115
+  name: 🇺🇸 US 092
   password: efanccyun
   port: 8774
   server: cn01.efan8867801.xyz
   type: ss
-- name: 🇺🇸 US 116
+  udp: true
+- name: 🇺🇸 US 093
   password: 253bc477d4e43c209f2d427272968280
   port: 2966
   server: xingxing.jiasu123.org
   skip-cert-verify: false
   sni: 23.45.86.28
   type: trojan
-- name: 🇺🇸 US 117
+  udp: true
+- name: 🇺🇸 US 094
   password: 253bc477d4e43c209f2d427272968280
   port: 18233
   server: 13.231.37.82
   skip-cert-verify: false
   sni: 23.45.86.28
   type: trojan
+  udp: true
 - cipher: ss
-  name: 🇭🇰 HK 039
+  name: 🇭🇰 HK 035
   password: //YWVzLTI1Ni1nY206YW1hem9uZ3JlYXR2cG4
   port: 16888
   server: 43.198.113.57
   type: ss
+  udp: true
 - cipher: ss
-  name: 🇯🇵 JP 031
+  name: 🇯🇵 JP 029
   password: //YWVzLTI1Ni1nY206YW1hem9uZ3JlYXR2cG4
   port: 16888
   server: 35.75.5.176
   type: ss
+  udp: true
 - cipher: ss
-  name: 🇺🇸 US 118
+  name: 🇺🇸 US 095
   password: //YWVzLTEyOC1nY206MDE3MjFlNDMtNTM4OS00Zjk3LWIyMWMtOTAwYWJiMmJkYTll
   port: 12009
   server: awes35lesl.blhao0o.dpdns.org
   type: ss
+  udp: true
 - name: 🇦🇹 AT 002
-  network: ws
   password: slch2024
   port: 2096
   server: 212.183.88.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
+  udp: true
 - name: 🇦🇹 AT 003
-  network: ws
   password: slch2024
   port: 2096
   server: 212.183.88.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
+  udp: true
 - name: 🇦🇹 AT 004
-  network: ws
   password: slch2024
   port: 2096
   server: 212.183.88.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
+  udp: true
 - name: 🇨🇭 CH 002
-  network: ws
   password: slch2024
   port: 2096
   server: 185.18.250.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
+  udp: true
 - name: 🇨🇿 CZ 001
-  network: ws
   password: slch2024
   port: 2096
   server: 193.124.224.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /TelegramU0001F1E8U0001F1F3
+  udp: true
 - name: 🇨🇿 CZ 002
-  network: ws
   password: slch2024
   port: 2096
   server: 193.124.224.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
+  udp: true
 - name: 🇨🇿 CZ 003
-  network: ws
   password: slch2024
   port: 2096
   server: 193.124.224.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
+  udp: true
 - name: 🇨🇿 CZ 004
-  network: ws
   password: slch2024
   port: 2096
   server: 193.124.224.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
+  udp: true
 - name: 🇩🇪 DE 008
-  network: ws
   password: slch2024
   port: 2096
   server: 188.244.122.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
+  udp: true
 - name: 🇩🇪 DE 009
-  network: ws
   password: slch2024
   port: 2096
   server: 188.244.122.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /TelegramU0001F1E8U0001F1F3
+  udp: true
 - name: 🇩🇪 DE 010
-  network: ws
   password: slch2024
   port: 2096
   server: 188.244.122.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
+  udp: true
 - name: 🇩🇪 DE 011
-  network: ws
   password: slch2024
   port: 2096
   server: 188.244.122.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
+  udp: true
 - name: 🇪🇸 ES 007
-  network: ws
   password: slch2024
   port: 2096
   server: 185.251.83.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
+  udp: true
 - name: 🇪🇸 ES 008
-  network: ws
   password: slch2024
   port: 2096
   server: 185.251.83.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
+  udp: true
 - name: 🇪🇸 ES 009
-  network: ws
   password: slch2024
   port: 2096
   server: 185.251.80.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
+  udp: true
 - name: 🇪🇸 ES 010
-  network: ws
   password: slch2024
   port: 2096
   server: 185.238.228.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
+  udp: true
 - name: 🇪🇸 ES 011
-  network: ws
   password: slch2024
   port: 2096
   server: 185.251.83.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /TelegramU0001F1E8U0001F1F3
+  udp: true
 - name: 🇪🇸 ES 012
-  network: ws
   password: slch2024
   port: 2096
   server: 185.251.80.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
+  udp: true
 - name: 🇪🇸 ES 013
-  network: ws
   password: slch2024
   port: 2096
   server: 185.251.81.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
+  udp: true
 - name: 🇪🇸 ES 014
-  network: ws
   password: slch2024
   port: 2096
   server: 185.251.81.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
+  udp: true
 - name: 🇪🇸 ES 015
-  network: ws
   password: slch2024
   port: 2096
   server: 185.251.82.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
+  udp: true
 - name: 🇪🇸 ES 016
-  network: ws
   password: slch2024
   port: 2096
   server: 185.251.83.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始U0001F1E8U0001F1F3
+  udp: true
 - name: 🇪🇸 ES 017
-  network: ws
   password: slch2024
   port: 2096
   server: 185.251.82.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
+  udp: true
 - name: 🇪🇸 ES 018
-  network: ws
   password: slch2024
   port: 2096
   server: 185.251.81.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram@ShadowProxy66
+  udp: true
 - name: 🇪🇸 ES 019
-  network: ws
   password: slch2024
   port: 2096
   server: 185.251.80.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
+  udp: true
 - name: 🇪🇸 ES 020
-  network: ws
   password: slch2024
   port: 2096
   server: 185.251.81.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
+  udp: true
 - name: 🇫🇷 FR 013
-  network: ws
   password: slch2024
   port: 2096
   server: 185.7.240.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram@ShadowProxy66
+  udp: true
 - name: 🇫🇷 FR 014
-  network: ws
   password: slch2024
   port: 2096
   server: 185.7.240.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
+  udp: true
 - name: 🇫🇷 FR 015
-  network: ws
   password: slch2024
   port: 2096
   server: 185.7.240.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
+  udp: true
 - name: 🇫🇷 FR 016
-  network: ws
   password: slch2024
   port: 2096
   server: 185.7.240.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
+  udp: true
 - name: 🇫🇷 FR 017
-  network: ws
   password: slch2024
   port: 2096
   server: 185.16.110.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
+  udp: true
 - name: 🇫🇷 FR 018
-  network: ws
   password: slch2024
   port: 2096
   server: 185.16.110.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
+  udp: true
 - name: 🇫🇷 FR 019
-  network: ws
   password: slch2024
   port: 2096
   server: 185.16.110.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
+  udp: true
 - name: 🇬🇧 GB 017
-  network: ws
   password: slch2024
   port: 2096
   server: 185.156.19.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
+  udp: true
 - name: 🇬🇧 GB 018
-  network: ws
   password: slch2024
   port: 2096
   server: 185.156.19.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
+  udp: true
 - name: 🇬🇧 GB 019
-  network: ws
   password: slch2024
   port: 2096
   server: 185.156.19.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /TelegramU0001F1E8U0001F1F3
+  udp: true
 - name: 🇬🇧 GB 020
-  network: ws
   password: slch2024
   port: 2096
   server: 185.156.19.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
+  udp: true
 - name: 🇳🇱 NL 010
-  network: ws
   password: slch2024
   port: 2096
   server: 188.164.248.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
+  udp: true
 - name: 🇳🇱 NL 011
-  network: ws
   password: slch2024
   port: 2096
   server: 188.164.248.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
+  udp: true
 - name: 🇳🇱 NL 012
-  network: ws
   password: slch2024
   port: 2096
   server: 185.18.184.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
+  udp: true
 - name: 🇳🇱 NL 013
-  network: ws
   password: slch2024
   port: 2096
   server: 188.164.248.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
+  udp: true
 - name: 🇳🇱 NL 014
-  network: ws
   password: slch2024
   port: 2096
   server: 188.164.248.87
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
+  udp: true
 - name: 🇳🇱 NL 015
-  network: ws
   password: slch2024
   port: 2096
   server: 188.164.248.87
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇮🇷@ShadowProxy66
-- name: 🇷🇺 RU 024
-  network: ws
+  udp: true
+- name: 🇷🇺 RU 012
   password: slch2024
   port: 2096
   server: 185.148.107.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /TelegramU0001F1E8U0001F1F3
-- name: 🇷🇺 RU 025
-  network: ws
+  udp: true
+- name: 🇷🇺 RU 013
   password: slch2024
   port: 2096
   server: 185.148.107.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram@ShadowProxy66
-- name: 🇷🇺 RU 026
-  network: ws
+  udp: true
+- name: 🇷🇺 RU 014
   password: slch2024
   port: 2096
   server: 185.148.107.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 🇷🇺 RU 027
-  network: ws
+  udp: true
+- name: 🇷🇺 RU 015
   password: slch2024
   port: 2096
   server: 185.174.138.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 🇷🇺 RU 028
-  network: ws
+  udp: true
+- name: 🇷🇺 RU 016
   password: slch2024
   port: 2096
   server: 185.176.24.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /TelegramU0001F1E8U0001F1F3
-- name: 🇷🇺 RU 029
-  network: ws
+  udp: true
+- name: 🇷🇺 RU 017
   password: slch2024
   port: 2096
   server: 185.59.218.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 🇷🇺 RU 030
-  network: ws
+  udp: true
+- name: 🇷🇺 RU 018
   password: slch2024
   port: 2096
   server: 185.59.218.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 🇷🇺 RU 031
-  network: ws
+  udp: true
+- name: 🇷🇺 RU 019
   password: slch2024
   port: 2096
   server: 185.148.107.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 🇷🇺 RU 032
-  network: ws
+  udp: true
+- name: 🇷🇺 RU 020
   password: slch2024
   port: 2096
   server: 185.176.24.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 🇷🇺 RU 033
-  network: ws
+  udp: true
+- name: 🇷🇺 RU 021
   password: slch2024
   port: 2096
   server: 188.42.145.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 🇷🇺 RU 034
-  network: ws
+  udp: true
+- name: 🇷🇺 RU 022
   password: slch2024
   port: 2096
   server: 185.148.107.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始U0001F1E8U0001F1F3
-- name: 🇷🇺 RU 035
-  network: ws
+  udp: true
+- name: 🇷🇺 RU 023
   password: slch2024
   port: 2096
   server: 185.148.107.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
-- name: 🇷🇺 RU 036
-  network: ws
+  udp: true
+- name: 🇷🇺 RU 024
   password: slch2024
   port: 2096
   server: 188.42.145.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
-- name: 🇷🇺 RU 037
-  network: ws
+  udp: true
+- name: 🇷🇺 RU 025
   password: slch2024
   port: 2096
   server: 185.176.24.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 🇷🇺 RU 038
-  network: ws
+  udp: true
+- name: 🇷🇺 RU 026
   password: slch2024
   port: 2096
   server: 188.42.145.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 🇷🇺 RU 039
-  network: ws
+  udp: true
+- name: 🇷🇺 RU 027
   password: slch2024
   port: 2096
   server: 185.176.24.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
-- name: 🇺🇸 US 119
-  network: ws
+  udp: true
+- name: 🇺🇸 US 096
   password: slch2024
   port: 2096
   server: 199.68.156.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇮🇷ShadowProxy66
-- name: 🇺🇸 US 120
-  network: ws
+  udp: true
+- name: 🇺🇸 US 097
   password: slch2024
   port: 2096
   server: 199.68.156.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 🇺🇸 US 121
-  network: ws
+  udp: true
+- name: 🇺🇸 US 098
   password: slch2024
   port: 2096
   server: 199.68.156.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /
-- name: 🇺🇸 US 122
-  network: ws
+  udp: true
+- name: 🇺🇸 US 099
   password: slch2024
   port: 2096
   server: 209.94.90.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇮🇷ShadowProxy66
-- name: 🇺🇸 US 123
-  network: ws
+  udp: true
+- name: 🇺🇸 US 100
   password: slch2024
   port: 2096
   server: 192.200.160.87
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 🇺🇸 US 124
-  network: ws
+  udp: true
+- name: 🇺🇸 US 101
   password: slch2024
   port: 2096
   server: 195.13.44.87
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 🇺🇸 US 125
-  network: ws
+  udp: true
+- name: 🇺🇸 US 102
   password: slch2024
   port: 2096
   server: 209.94.90.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 🇺🇸 US 126
-  network: ws
+  udp: true
+- name: 🇺🇸 US 103
   password: slch2024
   port: 2096
   server: 192.200.160.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 🇺🇸 US 127
-  network: ws
+  udp: true
+- name: 🇺🇸 US 104
   password: slch2024
   port: 2096
   server: 199.34.229.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 🇺🇸 US 128
-  network: ws
+  udp: true
+- name: 🇺🇸 US 105
   password: slch2024
   port: 2096
   server: 199.34.230.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 🇺🇸 US 129
-  network: ws
+  udp: true
+- name: 🇺🇸 US 106
   password: slch2024
   port: 2096
   server: 192.0.54.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 🇺🇸 US 130
-  network: ws
+  udp: true
+- name: 🇺🇸 US 107
   password: slch2024
   port: 2096
   server: 185.148.104.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 🇺🇸 US 131
-  network: ws
+  udp: true
+- name: 🇺🇸 US 108
   password: slch2024
   port: 2096
   server: 192.0.63.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 🇺🇸 US 132
-  network: ws
+  udp: true
+- name: 🇺🇸 US 109
   password: slch2024
   port: 2096
   server: 209.94.90.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 🇺🇸 US 133
-  network: ws
+  udp: true
+- name: 🇺🇸 US 110
   password: slch2024
   port: 2096
   server: 199.68.156.87
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 🇺🇸 US 134
-  network: ws
+  udp: true
+- name: 🇺🇸 US 111
   password: slch2024
   port: 2096
   server: 198.62.62.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 🇺🇸 US 135
-  network: ws
+  udp: true
+- name: 🇺🇸 US 112
   password: slch2024
   port: 2096
   server: 199.181.197.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 🇺🇸 US 136
-  network: ws
+  udp: true
+- name: 🇺🇸 US 113
   password: slch2024
   port: 2096
   server: 192.0.54.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 🇺🇸 US 137
-  network: ws
+  udp: true
+- name: 🇺🇸 US 114
   password: slch2024
   port: 2096
   server: 209.94.90.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇮🇷@ShadowProxy66
-- name: 🇺🇸 US 138
-  network: ws
+  udp: true
+- name: 🇺🇸 US 115
   password: slch2024
   port: 2096
   server: 195.13.44.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 🇺🇸 US 139
-  network: ws
+  udp: true
+- name: 🇺🇸 US 116
   password: slch2024
   port: 2096
   server: 216.24.57.87
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 🇺🇸 US 140
-  network: ws
+  udp: true
+- name: 🇺🇸 US 117
   password: slch2024
   port: 2096
   server: 216.205.52.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 🇺🇸 US 141
-  network: ws
+  udp: true
+- name: 🇺🇸 US 118
   password: slch2024
   port: 2096
   server: 195.13.44.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
-- name: 🇺🇸 US 142
-  network: ws
+  udp: true
+- name: 🇺🇸 US 119
   password: slch2024
   port: 2096
   server: 185.148.105.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 🇺🇸 US 143
-  network: ws
+  udp: true
+- name: 🇺🇸 US 120
   password: slch2024
   port: 2096
   server: 195.13.45.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 🇺🇸 US 144
-  network: ws
+  udp: true
+- name: 🇺🇸 US 121
   password: slch2024
   port: 2096
   server: 209.94.90.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram@ShadowProxy66
-- name: 🇺🇸 US 145
-  network: ws
+  udp: true
+- name: 🇺🇸 US 122
   password: slch2024
   port: 2096
   server: 192.0.63.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 🇺🇸 US 146
-  network: ws
+  udp: true
+- name: 🇺🇸 US 123
   password: slch2024
   port: 2096
   server: 185.148.105.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
-- name: 🇺🇸 US 147
-  network: ws
+  udp: true
+- name: 🇺🇸 US 124
   password: slch2024
   port: 2096
   server: 192.0.63.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
-- name: 🇺🇸 US 148
-  network: ws
+  udp: true
+- name: 🇺🇸 US 125
   password: slch2024
   port: 2096
   server: 205.233.181.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 🇺🇸 US 149
-  network: ws
+  udp: true
+- name: 🇺🇸 US 126
   password: slch2024
   port: 2096
   server: 209.46.30.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
-- name: 🇺🇸 US 150
-  network: ws
+  udp: true
+- name: 🇺🇸 US 127
   password: slch2024
   port: 2096
   server: 209.94.90.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始@ShadowProxy66
-- name: 🇺🇸 US 151
-  network: ws
+  udp: true
+- name: 🇺🇸 US 128
   password: slch2024
   port: 2096
   server: 199.68.156.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /TelegramU0001F1EEU0001F1F7ShadowProxy66
-- name: 🇺🇸 US 152
-  network: ws
+  udp: true
+- name: 🇺🇸 US 129
   password: slch2024
   port: 2096
   server: 198.62.62.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
-- name: 🇺🇸 US 153
-  network: ws
+  udp: true
+- name: 🇺🇸 US 130
   password: slch2024
   port: 2096
   server: 198.62.62.87
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 🇺🇸 US 154
-  network: ws
+  udp: true
+- name: 🇺🇸 US 131
   password: slch2024
   port: 2096
   server: 198.62.62.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 🇺🇸 US 155
-  network: ws
+  udp: true
+- name: 🇺🇸 US 132
   password: slch2024
   port: 2096
   server: 195.13.45.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
-- name: 🇺🇸 US 156
-  network: ws
+  udp: true
+- name: 🇺🇸 US 133
   password: slch2024
   port: 2096
   server: 192.200.160.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
-- name: 🇺🇸 US 157
-  network: ws
+  udp: true
+- name: 🇺🇸 US 134
   password: slch2024
   port: 2096
   server: 198.62.62.87
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 🇺🇸 US 158
-  network: ws
+  udp: true
+- name: 🇺🇸 US 135
   password: slch2024
   port: 2096
   server: 199.34.230.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
-- name: 🇺🇸 US 159
-  network: ws
+  udp: true
+- name: 🇺🇸 US 136
   password: slch2024
   port: 2096
   server: 192.200.160.87
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
-- name: 🇺🇸 US 160
-  network: ws
+  udp: true
+- name: 🇺🇸 US 137
   password: slch2024
   port: 2096
   server: 199.34.229.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /由零开始
-- name: 🇺🇸 US 161
-  network: ws
+  udp: true
+- name: 🇺🇸 US 138
   password: slch2024
   port: 2096
   server: 195.13.45.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: 🇺🇸 US 162
-  network: ws
+  udp: true
+- name: 🇺🇸 US 139
   password: slch2024
   port: 2096
   server: 216.24.57.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram
+  udp: true
 - cipher: aes-256-gcm
-  name: 🇭🇰 HK 040
+  name: 🇭🇰 HK 036
   password: 2b5fad3874e5
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: hk6v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /aqwshiog
-    skip-cert-verify: false
-    tls: true
   port: 443
   server: 156.251.179.135
   type: ss
+  udp: true
 - cipher: aes-256-gcm
-  name: 🇯🇵 JP 032
+  name: 🇯🇵 JP 030
   password: 8a6ca14c0936
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jpxw9v1.dashengjs.net
-    mode: websocket
-    mux: false
-    path: /wrdfiatyd
-    skip-cert-verify: false
-    tls: true
   port: 443
   server: 137.220.142.150
   type: ss
+  udp: true
 - cipher: rc4-md5
-  name: 🇺🇸 US 163
+  name: 🇺🇸 US 140
   password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202509031722041-5eflEJAUDw.download.microsoft.com
-    mode: http
   port: 8774
   server: cn01.efan8867801.xyz
   type: ss
+  udp: true
 - cipher: rc4-md5
-  name: 🇯🇵 JP 033
+  name: 🇯🇵 JP 031
   password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202509031722041-5eflEJAUDw.download.microsoft.com
-    mode: http
   port: 8766
   server: cn01.efan8867801.xyz
   type: ss
+  udp: true
