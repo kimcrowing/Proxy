@@ -1967,16 +1967,6 @@ proxies:
   tls: false
   udp: true
   uuid: c53d41d1-7d56-43ce-9994-408780c6476a
-- name: 🇫🇷 FR 012
-  type: trojan
-  server: fr.viefast.net
-  port: 443
-  ip-version: dual
-  password: 9e76767d-4bfa-4f04-a800-42e2f63afed2
-  skip-cert-verify: true
-  sni: csapp.catch.net.tw
-  tfo: false
-  udp: true
 - name: 🇺🇸 US 061
   type: vmess
   server: planb.mojcn.com
@@ -2477,7 +2467,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   tfo: false
   udp: true
-- name: 🇫🇷 FR 013
+- name: 🇫🇷 FR 012
   type: trojan
   server: 185.7.240.195
   port: 2096
@@ -2487,7 +2477,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   tfo: false
   udp: true
-- name: 🇫🇷 FR 017
+- name: 🇫🇷 FR 016
   type: trojan
   server: 185.16.110.195
   port: 2096
