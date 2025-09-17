@@ -1733,7 +1733,7 @@ proxies:
   udp: true
 - name: 🇭🇰 HK 024
   type: ss
-  server: 43.199.87.121
+  server: 54.46.92.199
   port: 16888
   cipher: aes-256-gcm
   ip-version: dual
@@ -1742,14 +1742,28 @@ proxies:
   udp: true
 - name: 🇭🇰 HK 025
   type: trojan
-  server: 203.218.158.70
-  port: 443
+  server: 36.150.215.200
+  port: 4451
   ip-version: dual
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: true
-  sni: fe2.update.microsoft.com
+  sni: www.baidu.com
   tfo: false
   udp: true
+- name: 🇭🇰 HK 026
+  type: vmess
+  server: 183.240.180.47
+  port: 52512
+  alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  ip-version: dual
+  network: ws
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: 🇯🇵 JP 017
   type: ss
   server: cn01.efan8867801.xyz
@@ -1770,8 +1784,8 @@ proxies:
   udp: true
 - name: 🇯🇵 JP 019
   type: trojan
-  server: xingxing.jiasu123.org
-  port: 133
+  server: 153.121.76.9
+  port: 3160
   ip-version: dual
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: true
@@ -1790,7 +1804,7 @@ proxies:
   udp: true
 - name: 🇯🇵 JP 021
   type: ss
-  server: 57.183.17.7
+  server: 18.178.135.125
   port: 16888
   cipher: aes-256-gcm
   ip-version: dual
@@ -1832,6 +1846,25 @@ proxies:
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: 🇺🇸 US 056
+  type: trojan
+  server: 36.150.215.200
+  port: 13855
+  ip-version: dual
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: true
+  sni: 23.45.86.28
+  tfo: false
+  udp: true
+- name: 🇺🇸 US 057
+  type: ss
+  server: cn01.efan8867801.xyz
+  port: 8774
+  cipher: rc4-md5
+  ip-version: dual
+  password: efanccyun
+  tfo: false
+  udp: true
+- name: 🇺🇸 US 058
   type: vmess
   server: 193.124.24.247
   port: 6506
@@ -1845,25 +1878,6 @@ proxies:
   tls: false
   udp: true
   uuid: c53d41d1-7d56-43ce-9994-408780c6476a
-- name: 🇺🇸 US 057
-  type: ss
-  server: cn01.efan8867801.xyz
-  port: 8774
-  cipher: rc4-md5
-  ip-version: dual
-  password: efanccyun
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 058
-  type: trojan
-  server: 36.150.215.200
-  port: 13855
-  ip-version: dual
-  password: 253bc477d4e43c209f2d427272968280
-  skip-cert-verify: true
-  sni: 23.45.86.28
-  tfo: false
-  udp: true
 - name: 🇺🇸 US 059
   type: trojan
   server: xingxing.jiasu123.org
@@ -1874,7 +1888,16 @@ proxies:
   sni: 23.45.86.28
   tfo: false
   udp: true
-- name: 🇭🇰 HK 026
+- name: 🇻🇳 VN 003
+  type: ss
+  server: 103.186.155.116
+  port: 38388
+  cipher: aes-256-cfb
+  ip-version: dual
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  tfo: false
+  udp: true
+- name: 🇭🇰 HK 027
   type: vmess
   server: 149.104.15.178
   port: '21201'
@@ -1888,7 +1911,21 @@ proxies:
   tls: false
   udp: true
   uuid: e43b6c20-2f61-4e8c-a692-c737fa5cfa0d
-- name: 🇭🇰 HK 027
+- name: 🇭🇰 HK 028
+  type: vmess
+  server: 183.240.180.47
+  port: '52512'
+  alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  ip-version: dual
+  network: tcp
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇭🇰 HK 029
   type: vmess
   server: 47.239.183.87
   port: '28590'
@@ -1904,8 +1941,8 @@ proxies:
   uuid: d75481c7-b5c8-40a9-811a-02b709e74816
 - name: 🇯🇵 JP 022
   type: vmess
-  server: 8.209.211.236
-  port: '34933'
+  server: 47.74.42.174
+  port: '40354'
   alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -1915,7 +1952,7 @@ proxies:
   tfo: false
   tls: false
   udp: true
-  uuid: 8a9150bc-b9c8-40ac-be83-aaec45176a81
+  uuid: 79f0cb97-d631-493e-84a1-82a0576fa952
 - name: 🇺🇸 US 060
   type: vmess
   server: 193.124.24.247
@@ -2192,7 +2229,7 @@ proxies:
   tls: false
   udp: true
   uuid: 5809237d-bb6a-4cf8-98d3-dceb9e003638
-- name: 🇭🇰 HK 028
+- name: 🇭🇰 HK 030
   type: vmess
   server: v9.heduian.link
   port: 30809
@@ -2206,7 +2243,7 @@ proxies:
   tls: false
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 🇭🇰 HK 030
+- name: 🇭🇰 HK 032
   type: vmess
   server: hkt.gotochinatown.net
   port: 80
@@ -2220,7 +2257,7 @@ proxies:
   tls: false
   udp: true
   uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-- name: 🇭🇰 HK 031
+- name: 🇭🇰 HK 033
   type: trojan
   server: 42.2.170.224
   port: 443
@@ -2230,7 +2267,7 @@ proxies:
   sni: www.baidu.com
   tfo: false
   udp: true
-- name: 🇭🇰 HK 032
+- name: 🇭🇰 HK 034
   type: ss
   server: 43.198.113.57
   port: 16888
@@ -2239,7 +2276,7 @@ proxies:
   password: amazongreatvpn
   tfo: false
   udp: true
-- name: 🇭🇰 HK 033
+- name: 🇭🇰 HK 035
   type: trojan
   server: 203.218.202.199
   port: 443
