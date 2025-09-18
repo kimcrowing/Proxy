@@ -1939,16 +1939,6 @@ proxies:
   tls: false
   udp: true
   uuid: 79f0cb97-d631-493e-84a1-82a0576fa952
-- name: 🇳🇱 NL 005
-  type: trojan
-  server: 38.180.249.177
-  port: 8443
-  ip-version: dual
-  password: installshield
-  skip-cert-verify: true
-  sni: 38.180.249.177
-  tfo: false
-  udp: true
 - name: 🇺🇸 US 059
   type: trojan
   server: xingxing.jiasu123.org
@@ -3021,7 +3011,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   tfo: false
   udp: true
-- name: 🇳🇱 NL 006
+- name: 🇳🇱 NL 005
   type: trojan
   server: 188.164.248.195
   port: 2096
@@ -3031,7 +3021,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   tfo: false
   udp: true
-- name: 🇳🇱 NL 008
+- name: 🇳🇱 NL 007
   type: trojan
   server: 185.18.184.195
   port: 2096
@@ -3041,7 +3031,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   tfo: false
   udp: true
-- name: 🇳🇱 NL 010
+- name: 🇳🇱 NL 009
   type: trojan
   server: 188.164.248.87
   port: 2096
