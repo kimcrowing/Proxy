@@ -1723,17 +1723,17 @@ proxies:
   uuid: e43b6c20-2f61-4e8c-a692-c737fa5cfa0d
 - name: 🇭🇰 HK 023
   type: trojan
-  server: 203.218.158.199
+  server: 112.118.248.22
   port: 443
   ip-version: dual
   password: 253bc477d4e43c209f2d427272968280
-  skip-cert-verify: true
-  sni: fe2.update.microsoft.com
+  skip-cert-verify: false
+  sni: www.nintendogames.net
   tfo: false
   udp: true
 - name: 🇭🇰 HK 024
   type: ss
-  server: 18.163.190.75
+  server: 54.46.38.22
   port: 16888
   cipher: aes-256-gcm
   ip-version: dual
@@ -1742,8 +1742,8 @@ proxies:
   udp: true
 - name: 🇭🇰 HK 025
   type: trojan
-  server: 36.151.251.6
-  port: 4451
+  server: 160.16.63.16
+  port: 447
   ip-version: dual
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: true
@@ -1784,12 +1784,12 @@ proxies:
   udp: true
 - name: 🇯🇵 JP 019
   type: trojan
-  server: 153.121.76.9
-  port: 3160
+  server: 153.121.45.139
+  port: 327
   ip-version: dual
   password: 253bc477d4e43c209f2d427272968280
-  skip-cert-verify: true
-  sni: 23.45.86.28
+  skip-cert-verify: false
+  sni: www.nintendogames.net
   tfo: false
   udp: true
 - name: 🇯🇵 JP 020
@@ -1798,13 +1798,13 @@ proxies:
   port: 1806
   ip-version: dual
   password: 253bc477d4e43c209f2d427272968280
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.nintendogames.net
   tfo: false
   udp: true
 - name: 🇯🇵 JP 021
   type: ss
-  server: 13.230.37.83
+  server: 3.115.88.171
   port: 16888
   cipher: aes-256-gcm
   ip-version: dual
@@ -1860,17 +1860,17 @@ proxies:
   port: 3294
   ip-version: dual
   password: 253bc477d4e43c209f2d427272968280
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.nintendogames.net
   tfo: false
   udp: true
 - name: 🇺🇸 US 058
   type: trojan
-  server: 153.121.76.9
-  port: 4317
+  server: 153.121.73.102
+  port: 3296
   ip-version: dual
   password: 253bc477d4e43c209f2d427272968280
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.nintendogames.net
   tfo: false
   udp: true
@@ -1927,8 +1927,8 @@ proxies:
   uuid: d75481c7-b5c8-40a9-811a-02b709e74816
 - name: 🇯🇵 JP 022
   type: vmess
-  server: 47.74.42.174
-  port: '40354'
+  server: 8.209.200.91
+  port: '40916'
   alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -1938,27 +1938,7 @@ proxies:
   tfo: false
   tls: false
   udp: true
-  uuid: 79f0cb97-d631-493e-84a1-82a0576fa952
-- name: 🇺🇸 US 059
-  type: trojan
-  server: xingxing.jiasu123.org
-  port: 3043
-  ip-version: dual
-  password: 253bc477d4e43c209f2d427272968280
-  skip-cert-verify: true
-  sni: 23.45.86.28
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 060
-  type: trojan
-  server: xingxing.jiasu123.org
-  port: 4317
-  ip-version: dual
-  password: 253bc477d4e43c209f2d427272968280
-  skip-cert-verify: true
-  sni: 23.45.86.28
-  tfo: false
-  udp: true
+  uuid: af07bf42-c942-4085-a7cb-80f9bed88776
 - name: 🇧🇪 BE 001
   type: vmess
   server: 57.129.24.124
@@ -1973,7 +1953,7 @@ proxies:
   tls: false
   udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-- name: 🇺🇸 US 061
+- name: 🇺🇸 US 059
   type: vmess
   server: 104.17.148.22
   port: 443
@@ -1987,7 +1967,7 @@ proxies:
   tls: false
   udp: true
   uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
-- name: 🇺🇸 US 062
+- name: 🇺🇸 US 060
   type: vmess
   server: lt.fxlcn.com
   port: 45276
@@ -2001,7 +1981,7 @@ proxies:
   tls: false
   udp: true
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- name: 🇺🇸 US 063
+- name: 🇺🇸 US 061
   type: vmess
   server: cf.fovi.tk
   port: 443
@@ -2015,7 +1995,7 @@ proxies:
   tls: false
   udp: true
   uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
-- name: 🇺🇸 US 064
+- name: 🇺🇸 US 062
   type: vmess
   server: ye.fxlcn.com
   port: 45246
@@ -2029,7 +2009,7 @@ proxies:
   tls: false
   udp: true
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- name: 🇺🇸 US 065
+- name: 🇺🇸 US 063
   type: vmess
   server: orvps2.horsenma.net
   port: 8443
@@ -2043,7 +2023,7 @@ proxies:
   tls: false
   udp: true
   uuid: 57e595e6-ef54-4e0d-b8df-e96db9612b99
-- name: 🇺🇸 US 066
+- name: 🇺🇸 US 064
   type: vmess
   server: lt.fxlcn.com
   port: 45271
@@ -2085,7 +2065,7 @@ proxies:
   tls: false
   udp: true
   uuid: b01c7ef9-33ec-41f6-bfbf-77ddc4d21649
-- name: 🇺🇸 US 067
+- name: 🇺🇸 US 065
   type: vmess
   server: lt.fxlcn.com
   port: 45417
@@ -2099,7 +2079,7 @@ proxies:
   tls: false
   udp: true
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- name: 🇺🇸 US 068
+- name: 🇺🇸 US 066
   type: vmess
   server: lt.fxlcn.com
   port: 45235
@@ -2113,7 +2093,7 @@ proxies:
   tls: false
   udp: true
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- name: 🇺🇸 US 069
+- name: 🇺🇸 US 067
   type: vmess
   server: codepen.io
   port: 443
@@ -2127,7 +2107,7 @@ proxies:
   tls: false
   udp: true
   uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
-- name: 🇺🇸 US 070
+- name: 🇺🇸 US 068
   type: vmess
   server: lt.fxlcn.com
   port: 45291
@@ -2141,7 +2121,7 @@ proxies:
   tls: false
   udp: true
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- name: 🇺🇸 US 071
+- name: 🇺🇸 US 069
   type: vmess
   server: lt.fxlcn.com
   port: 45233
@@ -2225,7 +2205,7 @@ proxies:
   tls: false
   udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-- name: 🇺🇸 US 072
+- name: 🇺🇸 US 070
   type: trojan
   server: log.bpminecraft.com
   port: 443
@@ -2235,7 +2215,7 @@ proxies:
   sni: heihu880.pages.dev
   tfo: true
   udp: true
-- name: 🇺🇸 US 073
+- name: 🇺🇸 US 071
   type: trojan
   server: 104.18.42.163
   port: 443
@@ -2245,7 +2225,7 @@ proxies:
   sni: heihu880.pages.dev
   tfo: true
   udp: true
-- name: 🇺🇸 US 074
+- name: 🇺🇸 US 072
   type: trojan
   server: www.visa.com.sg
   port: 8443
@@ -2255,7 +2235,7 @@ proxies:
   sni: pangpi.pages.dev
   tfo: true
   udp: true
-- name: 🇺🇸 US 075
+- name: 🇺🇸 US 073
   type: trojan
   server: www.iplocation.net
   port: 443
@@ -2265,7 +2245,7 @@ proxies:
   sni: heihu880.pages.dev
   tfo: true
   udp: true
-- name: 🇺🇸 US 076
+- name: 🇺🇸 US 074
   type: trojan
   server: whatismyipaddress.com
   port: 443
@@ -2275,7 +2255,7 @@ proxies:
   sni: heihu880.pages.dev
   tfo: true
   udp: true
-- name: 🇺🇸 US 077
+- name: 🇺🇸 US 075
   type: trojan
   server: 172.66.44.230
   port: 8443
@@ -2285,7 +2265,7 @@ proxies:
   sni: Koma-YT.PAGeS.Dev
   tfo: true
   udp: true
-- name: 🇺🇸 US 078
+- name: 🇺🇸 US 076
   type: trojan
   server: www.gco.gov.qa
   port: 443
@@ -2295,7 +2275,7 @@ proxies:
   sni: heihu880.pages.dev
   tfo: true
   udp: true
-- name: 🇺🇸 US 079
+- name: 🇺🇸 US 077
   type: trojan
   server: dcf741e8.epeius-2gy.pages.dev
   port: 443
@@ -2305,7 +2285,7 @@ proxies:
   sni: dcf741e8.epeius-2gy.pages.dev
   tfo: true
   udp: true
-- name: 🇺🇸 US 080
+- name: 🇺🇸 US 078
   type: trojan
   server: www.visa.com.hk
   port: 8443
@@ -2315,7 +2295,7 @@ proxies:
   sni: heihu880.pages.dev
   tfo: true
   udp: true
-- name: 🇺🇸 US 081
+- name: 🇺🇸 US 079
   type: trojan
   server: www.zsu.gov.ua
   port: 443
@@ -2325,7 +2305,7 @@ proxies:
   sni: heihu880.pages.dev
   tfo: true
   udp: true
-- name: 🇺🇸 US 082
+- name: 🇺🇸 US 080
   type: trojan
   server: fbi.gov
   port: 443
@@ -2335,7 +2315,7 @@ proxies:
   sni: heihu880.pages.dev
   tfo: true
   udp: true
-- name: 🇺🇸 US 083
+- name: 🇺🇸 US 081
   type: trojan
   server: www.gov.se
   port: 443
@@ -2345,7 +2325,7 @@ proxies:
   sni: heihu880.pages.dev
   tfo: true
   udp: true
-- name: 🇺🇸 US 084
+- name: 🇺🇸 US 082
   type: trojan
   server: www.gov.ua
   port: 443
@@ -2365,7 +2345,7 @@ proxies:
   sni: hsdgbuys.pages.dev
   tfo: true
   udp: true
-- name: 🇺🇸 US 085
+- name: 🇺🇸 US 083
   type: trojan
   server: iplocation.io
   port: 443
@@ -2385,7 +2365,7 @@ proxies:
   sni: heihu880.pages.dev
   tfo: true
   udp: true
-- name: 🇺🇸 US 086
+- name: 🇺🇸 US 084
   type: trojan
   server: 104.25.165.81
   port: 8443
@@ -2395,7 +2375,7 @@ proxies:
   sni: top-azx.pages.dev
   tfo: true
   udp: true
-- name: 🇺🇸 US 087
+- name: 🇺🇸 US 085
   type: trojan
   server: www.ipaddress.my
   port: 443
@@ -2405,7 +2385,7 @@ proxies:
   sni: heihu880.pages.dev
   tfo: true
   udp: true
-- name: 🇺🇸 US 088
+- name: 🇺🇸 US 086
   type: trojan
   server: 104.25.165.83
   port: 8443
@@ -2415,7 +2395,7 @@ proxies:
   sni: top-azx.pages.dev
   tfo: true
   udp: true
-- name: 🇺🇸 US 089
+- name: 🇺🇸 US 087
   type: trojan
   server: koma-yt.pages.dev
   port: 8443
@@ -2425,7 +2405,7 @@ proxies:
   sni: Koma-YT.PAGeS.Dev
   tfo: true
   udp: true
-- name: 🇺🇸 US 090
+- name: 🇺🇸 US 088
   type: trojan
   server: time.is
   port: 2087
@@ -2435,7 +2415,7 @@ proxies:
   sni: heihu880.pages.dev
   tfo: true
   udp: true
-- name: 🇺🇸 US 091
+- name: 🇺🇸 US 089
   type: trojan
   server: 172.66.46.254
   port: 443
@@ -2445,7 +2425,7 @@ proxies:
   sni: dcf741e8.epeius-2gy.pages.dev
   tfo: true
   udp: true
-- name: 🇺🇸 US 092
+- name: 🇺🇸 US 090
   type: trojan
   server: ip.sb
   port: 8443
@@ -2455,7 +2435,7 @@ proxies:
   sni: fofang.pages.dev
   tfo: true
   udp: true
-- name: 🇺🇸 US 093
+- name: 🇺🇸 US 091
   type: trojan
   server: www.udemy.com
   port: 443
@@ -2465,7 +2445,7 @@ proxies:
   sni: heihu880.pages.dev
   tfo: true
   udp: true
-- name: 🇺🇸 US 094
+- name: 🇺🇸 US 092
   type: trojan
   server: singapore.com
   port: 443
@@ -2475,7 +2455,7 @@ proxies:
   sni: heihu880.pages.dev
   tfo: true
   udp: true
-- name: 🇺🇸 US 095
+- name: 🇺🇸 US 093
   type: trojan
   server: 104.17.148.22
   port: 443
@@ -2485,7 +2465,7 @@ proxies:
   sni: redfree8-p1.pooriashop.ir
   tfo: true
   udp: true
-- name: 🇺🇸 US 096
+- name: 🇺🇸 US 094
   type: trojan
   server: www.wto.org
   port: 443
@@ -2495,7 +2475,7 @@ proxies:
   sni: heihu880.pages.dev
   tfo: true
   udp: true
-- name: 🇺🇸 US 097
+- name: 🇺🇸 US 095
   type: trojan
   server: 104.21.112.1
   port: 443
@@ -2505,7 +2485,7 @@ proxies:
   sni: yellow-cloud-d53f.vavovi6084.workers.dev
   tfo: true
   udp: true
-- name: 🇺🇸 US 098
+- name: 🇺🇸 US 096
   type: trojan
   server: www.ipget.net
   port: 443
@@ -2515,7 +2495,7 @@ proxies:
   sni: heihu880.pages.dev
   tfo: true
   udp: true
-- name: 🇺🇸 US 099
+- name: 🇺🇸 US 097
   type: trojan
   server: 104.18.27.94
   port: 443
@@ -2525,7 +2505,7 @@ proxies:
   sni: heihu880.pages.dev
   tfo: true
   udp: true
-- name: 🇺🇸 US 100
+- name: 🇺🇸 US 098
   type: trojan
   server: www.pcmag.com
   port: 443
@@ -2535,7 +2515,7 @@ proxies:
   sni: heihu880.pages.dev
   tfo: true
   udp: true
-- name: 🇺🇸 US 101
+- name: 🇺🇸 US 099
   type: trojan
   server: www.udacity.com
   port: 443
@@ -2545,7 +2525,7 @@ proxies:
   sni: heihu880.pages.dev
   tfo: true
   udp: true
-- name: 🇺🇸 US 102
+- name: 🇺🇸 US 100
   type: trojan
   server: japan.com
   port: 443
@@ -2555,7 +2535,7 @@ proxies:
   sni: heihu880.pages.dev
   tfo: true
   udp: true
-- name: 🇺🇸 US 103
+- name: 🇺🇸 US 101
   type: trojan
   server: www.visa.com.tw
   port: 443
@@ -2565,7 +2545,7 @@ proxies:
   sni: heihu880.pages.dev
   tfo: true
   udp: true
-- name: 🇺🇸 US 104
+- name: 🇺🇸 US 102
   type: trojan
   server: 104.17.148.22
   port: 80
@@ -2575,7 +2555,7 @@ proxies:
   sni: redfree8-p1.pooriashop.ir
   tfo: true
   udp: true
-- name: 🇺🇸 US 105
+- name: 🇺🇸 US 103
   type: trojan
   server: 45.82.14.144
   port: 2025
@@ -2585,7 +2565,7 @@ proxies:
   sni: dns.google.com
   tfo: true
   udp: true
-- name: 🇺🇸 US 106
+- name: 🇺🇸 US 104
   type: trojan
   server: 38.207.133.204
   port: 10002
@@ -2595,7 +2575,7 @@ proxies:
   sni: qingming-b08.pages.dev
   tfo: true
   udp: true
-- name: 🇺🇸 US 107
+- name: 🇺🇸 US 105
   type: trojan
   server: 104.21.18.192
   port: 443
@@ -2605,7 +2585,7 @@ proxies:
   sni: sAiKOXpUbGm.ZhkinGkuRD13.WorkErs.dEV
   tfo: true
   udp: true
-- name: 🇺🇸 US 108
+- name: 🇺🇸 US 106
   type: trojan
   server: edtunnel-dgp.pages.dev
   port: 443
@@ -2615,7 +2595,7 @@ proxies:
   sni: heihu880.pages.dev
   tfo: true
   udp: true
-- name: 🇺🇸 US 109
+- name: 🇺🇸 US 107
   type: trojan
   server: 198.41.208.69
   port: 8443
@@ -2635,7 +2615,7 @@ proxies:
   sni: vkvd127.mycdn.me
   tfo: true
   udp: true
-- name: 🇺🇸 US 110
+- name: 🇺🇸 US 108
   type: vmess
   server: v2ray.codefyinc.com
   port: 443
@@ -2649,6 +2629,20 @@ proxies:
   tls: false
   udp: true
   uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+- name: 🇺🇸 US 109
+  type: vmess
+  server: 193.124.24.247
+  port: 6506
+  alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  ip-version: dual
+  network: tcp
+  skip-cert-verify: true
+  tfo: true
+  tls: false
+  udp: true
+  uuid: c53d41d1-7d56-43ce-9994-408780c6476a
 - name: 🇻🇳 VN 004
   type: vmess
   server: vn4.viefast.net
@@ -2663,7 +2657,7 @@ proxies:
   tls: false
   udp: true
   uuid: 9e76767d-4bfa-4f04-a800-42e2f63afed2
-- name: 🇺🇸 US 111
+- name: 🇺🇸 US 110
   type: vmess
   server: s1.db-link.in
   port: 80
@@ -2705,7 +2699,7 @@ proxies:
   tls: false
   udp: true
   uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
-- name: 🇺🇸 US 112
+- name: 🇺🇸 US 111
   type: vmess
   server: 165.140.216.141
   port: 443
@@ -2790,7 +2784,7 @@ proxies:
   sni: www.baidu.com
   tfo: false
   udp: true
-- name: 🇯🇵 JP 027
+- name: 🇯🇵 JP 028
   type: ss
   server: 137.220.142.150
   port: 443
@@ -2799,7 +2793,7 @@ proxies:
   password: 8a6ca14c0936
   tfo: false
   udp: true
-- name: 🇯🇵 JP 028
+- name: 🇯🇵 JP 029
   type: trojan
   server: 36.156.102.77
   port: 1924
@@ -2809,7 +2803,7 @@ proxies:
   sni: 23.45.86.28
   tfo: false
   udp: true
-- name: 🇯🇵 JP 029
+- name: 🇯🇵 JP 030
   type: trojan
   server: xingxing.jiasu123.org
   port: 316
@@ -2819,7 +2813,7 @@ proxies:
   sni: 23.45.86.28
   tfo: false
   udp: true
-- name: 🇯🇵 JP 030
+- name: 🇯🇵 JP 031
   type: ss
   server: 35.75.5.176
   port: 16888
@@ -2862,7 +2856,7 @@ proxies:
   tls: false
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 🇺🇸 US 113
+- name: 🇺🇸 US 112
   type: ss
   server: awes35lesl.blhao0o.dpdns.org
   port: 12009
@@ -2871,7 +2865,7 @@ proxies:
   password: 01721e43-5389-4f97-b21c-900abb2bda9e
   tfo: false
   udp: true
-- name: 🇺🇸 US 115
+- name: 🇺🇸 US 114
   type: trojan
   server: xingxing.jiasu123.org
   port: 2966
@@ -2881,7 +2875,7 @@ proxies:
   sni: 23.45.86.28
   tfo: false
   udp: true
-- name: 🇺🇸 US 116
+- name: 🇺🇸 US 115
   type: trojan
   server: 13.231.37.82
   port: 18233
@@ -3091,7 +3085,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   tfo: false
   udp: true
-- name: 🇺🇸 US 118
+- name: 🇺🇸 US 117
   type: trojan
   server: 199.68.156.195
   port: 2096
@@ -3101,7 +3095,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   tfo: false
   udp: true
-- name: 🇺🇸 US 121
+- name: 🇺🇸 US 120
   type: trojan
   server: 209.94.90.195
   port: 2096
@@ -3111,7 +3105,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   tfo: false
   udp: true
-- name: 🇺🇸 US 122
+- name: 🇺🇸 US 121
   type: trojan
   server: 192.200.160.87
   port: 2096
@@ -3121,7 +3115,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   tfo: false
   udp: true
-- name: 🇺🇸 US 123
+- name: 🇺🇸 US 122
   type: trojan
   server: 195.13.44.87
   port: 2096
@@ -3131,7 +3125,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   tfo: false
   udp: true
-- name: 🇺🇸 US 125
+- name: 🇺🇸 US 124
   type: trojan
   server: 192.200.160.195
   port: 2096
@@ -3141,7 +3135,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   tfo: false
   udp: true
-- name: 🇺🇸 US 126
+- name: 🇺🇸 US 125
   type: trojan
   server: 199.34.229.195
   port: 2096
@@ -3151,7 +3145,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   tfo: false
   udp: true
-- name: 🇺🇸 US 127
+- name: 🇺🇸 US 126
   type: trojan
   server: 199.34.230.195
   port: 2096
@@ -3161,7 +3155,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   tfo: false
   udp: true
-- name: 🇺🇸 US 128
+- name: 🇺🇸 US 127
   type: trojan
   server: 192.0.54.195
   port: 2096
@@ -3171,7 +3165,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   tfo: false
   udp: true
-- name: 🇺🇸 US 129
+- name: 🇺🇸 US 128
   type: trojan
   server: 185.148.104.195
   port: 2096
@@ -3181,7 +3175,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   tfo: false
   udp: true
-- name: 🇺🇸 US 130
+- name: 🇺🇸 US 129
   type: trojan
   server: 192.0.63.195
   port: 2096
@@ -3191,7 +3185,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   tfo: false
   udp: true
-- name: 🇺🇸 US 132
+- name: 🇺🇸 US 131
   type: trojan
   server: 199.68.156.87
   port: 2096
@@ -3201,7 +3195,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   tfo: false
   udp: true
-- name: 🇺🇸 US 133
+- name: 🇺🇸 US 132
   type: trojan
   server: 198.62.62.195
   port: 2096
@@ -3211,7 +3205,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   tfo: false
   udp: true
-- name: 🇺🇸 US 134
+- name: 🇺🇸 US 133
   type: trojan
   server: 199.181.197.195
   port: 2096
@@ -3221,7 +3215,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   tfo: false
   udp: true
-- name: 🇺🇸 US 137
+- name: 🇺🇸 US 136
   type: trojan
   server: 195.13.44.195
   port: 2096
@@ -3231,7 +3225,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   tfo: false
   udp: true
-- name: 🇺🇸 US 138
+- name: 🇺🇸 US 137
   type: trojan
   server: 216.24.57.87
   port: 2096
@@ -3241,7 +3235,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   tfo: false
   udp: true
-- name: 🇺🇸 US 139
+- name: 🇺🇸 US 138
   type: trojan
   server: 216.205.52.195
   port: 2096
@@ -3251,7 +3245,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   tfo: false
   udp: true
-- name: 🇺🇸 US 141
+- name: 🇺🇸 US 140
   type: trojan
   server: 185.148.105.195
   port: 2096
@@ -3261,7 +3255,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   tfo: false
   udp: true
-- name: 🇺🇸 US 142
+- name: 🇺🇸 US 141
   type: trojan
   server: 195.13.45.195
   port: 2096
@@ -3271,7 +3265,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   tfo: false
   udp: true
-- name: 🇺🇸 US 147
+- name: 🇺🇸 US 146
   type: trojan
   server: 205.233.181.195
   port: 2096
@@ -3281,7 +3275,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   tfo: false
   udp: true
-- name: 🇺🇸 US 148
+- name: 🇺🇸 US 147
   type: trojan
   server: 209.46.30.195
   port: 2096
@@ -3291,7 +3285,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   tfo: false
   udp: true
-- name: 🇺🇸 US 152
+- name: 🇺🇸 US 151
   type: trojan
   server: 198.62.62.87
   port: 2096
@@ -3301,7 +3295,7 @@ proxies:
   sni: ocost-dy.wmlefl.cc
   tfo: false
   udp: true
-- name: 🇺🇸 US 161
+- name: 🇺🇸 US 160
   type: trojan
   server: 216.24.57.195
   port: 2096
