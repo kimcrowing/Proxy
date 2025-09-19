@@ -2741,24 +2741,10 @@ proxies:
   tls: false
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 🇭🇰 HK 032
-  type: vmess
-  server: hkt.gotochinatown.net
-  port: 80
-  alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
-  network: ws
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  udp: true
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
 - name: 🇭🇰 HK 033
   type: trojan
-  server: 42.2.170.224
-  port: 443
+  server: 36.156.102.121
+  port: 392
   ip-version: dual
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
@@ -2767,7 +2753,7 @@ proxies:
   udp: true
 - name: 🇭🇰 HK 034
   type: ss
-  server: 43.198.113.57
+  server: 54.46.92.199
   port: 16888
   cipher: aes-256-gcm
   ip-version: dual
@@ -2776,27 +2762,18 @@ proxies:
   udp: true
 - name: 🇭🇰 HK 035
   type: trojan
-  server: 203.218.202.199
-  port: 443
+  server: 36.150.215.200
+  port: 4451
   ip-version: dual
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
   sni: www.baidu.com
   tfo: false
   udp: true
-- name: 🇯🇵 JP 028
-  type: ss
-  server: 137.220.142.150
-  port: 443
-  cipher: aes-256-gcm
-  ip-version: dual
-  password: 8a6ca14c0936
-  tfo: false
-  udp: true
 - name: 🇯🇵 JP 029
   type: trojan
-  server: 36.156.102.77
-  port: 1924
+  server: 153.121.76.9
+  port: 3160
   ip-version: dual
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
@@ -2805,8 +2782,8 @@ proxies:
   udp: true
 - name: 🇯🇵 JP 030
   type: trojan
-  server: xingxing.jiasu123.org
-  port: 316
+  server: 36.150.215.200
+  port: 1806
   ip-version: dual
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
@@ -2815,7 +2792,7 @@ proxies:
   udp: true
 - name: 🇯🇵 JP 031
   type: ss
-  server: 35.75.5.176
+  server: 18.178.135.125
   port: 16888
   cipher: aes-256-gcm
   ip-version: dual
@@ -2825,7 +2802,7 @@ proxies:
 - name: 🇸🇬 SG 015
   type: trojan
   server: xingxing.jiasu123.org
-  port: 3957
+  port: 3043
   ip-version: dual
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
@@ -2834,8 +2811,8 @@ proxies:
   udp: true
 - name: 🇸🇬 SG 016
   type: trojan
-  server: 36.156.102.77
-  port: 9160
+  server: xingxing.jiasu123.org
+  port: 4397
   ip-version: dual
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
@@ -2857,18 +2834,9 @@ proxies:
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: 🇺🇸 US 112
-  type: ss
-  server: awes35lesl.blhao0o.dpdns.org
-  port: 12009
-  cipher: aes-128-gcm
-  ip-version: dual
-  password: 01721e43-5389-4f97-b21c-900abb2bda9e
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 114
   type: trojan
-  server: xingxing.jiasu123.org
-  port: 2966
+  server: 36.150.215.200
+  port: 13855
   ip-version: dual
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
@@ -2877,431 +2845,30 @@ proxies:
   udp: true
 - name: 🇺🇸 US 115
   type: trojan
-  server: 13.231.37.82
-  port: 18233
+  server: xingxing.jiasu123.org
+  port: 4317
   ip-version: dual
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
   sni: 23.45.86.28
   tfo: false
   udp: true
-- name: 🇦🇹 AT 001
-  type: trojan
-  server: 212.183.88.195
-  port: 2096
+- name: 🇻🇳 VN 005
+  type: ss
+  server: 103.186.155.116
+  port: 38388
+  cipher: aes-256-cfb
   ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇨🇭 CH 002
-  type: trojan
-  server: 185.18.250.195
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇨🇿 CZ 001
-  type: trojan
-  server: 193.124.224.195
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇩🇪 DE 008
-  type: trojan
-  server: 188.244.122.195
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇪🇸 ES 001
-  type: trojan
-  server: 185.251.83.195
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇪🇸 ES 003
-  type: trojan
-  server: 185.251.80.195
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇪🇸 ES 004
-  type: trojan
-  server: 185.238.228.195
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇪🇸 ES 007
-  type: trojan
-  server: 185.251.81.195
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇪🇸 ES 009
-  type: trojan
-  server: 185.251.82.195
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇫🇷 FR 013
-  type: trojan
-  server: 185.7.240.195
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇫🇷 FR 017
-  type: trojan
-  server: 185.16.110.195
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇬🇧 GB 010
-  type: trojan
-  server: 185.156.19.195
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇳🇱 NL 005
-  type: trojan
-  server: 188.164.248.195
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇳🇱 NL 007
-  type: trojan
-  server: 185.18.184.195
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇳🇱 NL 009
-  type: trojan
-  server: 188.164.248.87
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇷🇺 RU 006
-  type: trojan
-  server: 185.148.107.195
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇷🇺 RU 009
-  type: trojan
-  server: 185.174.138.195
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇷🇺 RU 010
-  type: trojan
-  server: 185.176.24.195
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇷🇺 RU 011
-  type: trojan
-  server: 185.59.218.195
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇷🇺 RU 015
-  type: trojan
-  server: 188.42.145.195
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   tfo: false
   udp: true
 - name: 🇺🇸 US 117
   type: trojan
-  server: 199.68.156.195
-  port: 2096
+  server: 167.68.4.199
+  port: 2053
   ip-version: dual
-  password: slch2024
+  password: Aimer
   skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 120
-  type: trojan
-  server: 209.94.90.195
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 121
-  type: trojan
-  server: 192.200.160.87
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 122
-  type: trojan
-  server: 195.13.44.87
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 124
-  type: trojan
-  server: 192.200.160.195
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 125
-  type: trojan
-  server: 199.34.229.195
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 126
-  type: trojan
-  server: 199.34.230.195
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 127
-  type: trojan
-  server: 192.0.54.195
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 128
-  type: trojan
-  server: 185.148.104.195
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 129
-  type: trojan
-  server: 192.0.63.195
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 131
-  type: trojan
-  server: 199.68.156.87
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 132
-  type: trojan
-  server: 198.62.62.195
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 133
-  type: trojan
-  server: 199.181.197.195
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 136
-  type: trojan
-  server: 195.13.44.195
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 137
-  type: trojan
-  server: 216.24.57.87
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 138
-  type: trojan
-  server: 216.205.52.195
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 140
-  type: trojan
-  server: 185.148.105.195
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 141
-  type: trojan
-  server: 195.13.45.195
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 146
-  type: trojan
-  server: 205.233.181.195
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 147
-  type: trojan
-  server: 209.46.30.195
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 151
-  type: trojan
-  server: 198.62.62.87
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 160
-  type: trojan
-  server: 216.24.57.195
-  port: 2096
-  ip-version: dual
-  password: slch2024
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
+  sni: epge.muarua.filegear-sg.me
   tfo: false
   udp: true
