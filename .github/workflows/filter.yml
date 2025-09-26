@@ -1,122 +1,127 @@
-name: Proxy Node Initial Screening
+name: Auto Test Proxies with LiteSpeedTest
 
 on:
   schedule:
-    - cron: '0 */6 * * *'  # 每 6 小时运行一次
-  workflow_dispatch:  # 允许手动触发
+    - cron: '0 0 * * *'  # 每天 UTC 00:00 运行
+  workflow_dispatch:  # 支持手动触发
 
 jobs:
-  screen-proxies:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y wget python3 python3-pip
-          pip3 install pyyaml
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
 
-      - name: Download LiteSpeedTest binary
+      - name: Install Python dependencies
         run: |
-          wget https://github.com/xxf098/LiteSpeedTest/releases/download/v0.15.0/lite-linux-amd64-v3-v0.15.0.gz
-          gunzip lite-linux-amd64-v3-v0.15.0.gz
-          chmod +x lite-linux-amd64-v3-v0.15.0
-          sudo mv lite-linux-amd64-v3-v0.15.0 /usr/local/bin/lite
-          lite --version || echo "LiteSpeedTest version check failed"
+          python -m pip install --upgrade pip
+          pip install requests pyyaml
 
-      - name: Validate and Convert YAML to LiteSpeedTest input
-        run: |
-          python3 -c "
-          import yaml, base64
-          with open('combined_proxies.yaml', 'r', encoding='utf-8') as f:
-              data = yaml.safe_load(f)
-          proxies = data.get('proxies', [])
-          if not proxies:
-              print('No proxies found!')
-              exit(1)
-          full_config = {
-              'proxies': proxies,
-              'proxy-groups': [{'name': 'select', 'type': 'select', 'proxies': [p['name'] for p in proxies]}]
-          }
-          clash_yaml = yaml.dump(full_config, allow_unicode=True, default_flow_style=False)
-          b64_encoded = base64.b64encode(clash_yaml.encode('utf-8')).decode('utf-8')
-          with open('proxies.b64', 'w', encoding='utf-8') as f:
-              f.write(b64_encoded)
-          print(f'Generated Base64 for {len(proxies)} proxies')
-          "
+      - name: Run proxy merge script
+        run: python proxy.py
 
-      - name: Debug input Base64
-        run: |
-          echo "Sample of proxies.b64 (first 200 chars):"
-          head -c 200 proxies.b64
-          base64 -d proxies.b64 > /dev/null && echo "Valid Base64 input" || echo "Invalid Base64 input"
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.21'
 
-      - name: Create LiteSpeedTest config
+      - name: Install LiteSpeedTest
         run: |
-          cat > config.json << EOF
-          {
-            "group": "screening",
-            "speedtestMode": "pingonly",
-            "pingMethod": "tcpping",
-            "sortMethod": "rspeed",
-            "concurrency": 3,
-            "testMode": 2,
-            "timeout": 20,
-            "language": "en",
-            "unique": true,
-            "outputMode": 0
-          }
-          EOF
+          git clone https://github.com/xxf098/LiteSpeedTest.git
+          cd LiteSpeedTest
+          cp $(go env GOROOT)/misc/wasm/wasm_exec.js ./web/gui/
+          npm install --prefix web/gui
+          npm run --prefix web/gui build
+          GOOS=js GOARCH=wasm go build -o ./web/gui/dist/main.wasm ./wasm
+          go build -o lite
+          mv lite ../
+          cd ..
 
       - name: Test proxies with LiteSpeedTest
         run: |
-          b64_input=$(cat proxies.b64)
-          ./lite --config config.json --test "$b64_input" > valid_proxies.b64 2> test_error.log || echo "Test failed, check test_error.log"
+          # 创建 LiteSpeedTest 配置文件
+          cat > config.json << EOF
+          {
+            "group": "test",
+            "mode": 1,  # speedonly
+            "pingmethod": 1,  # tcpping
+            "sort": 1,  # 按速度排序
+            "concurrency": 10,  # 并发测试 10 个节点
+            "testmode": 2,  # ALLTEST
+            "timeout": 5000,  # 超时 5 秒
+            "speedlimit": 1.0,  # 最低速度 1Mbps
+            "output": 3,  # 输出 JSON
+            "unique": true  # 去重
+          }
+          EOF
 
-      - name: Debug output
-        run: |
-          echo "Contents of test_error.log:"
-          cat test_error.log
-          echo "Contents of valid_proxies.b64 (first 500 chars):"
-          head -c 500 valid_proxies.b64
-          base64 -d valid_proxies.b64 > /dev/null 2>/dev/null && echo "Valid Base64 output" || echo "Invalid Base64 output or empty"
+          # 初始化有效代理 JSON 文件
+          echo '[]' > valid_proxies.json
 
-      - name: Convert output to YAML
-        run: |
+          # 读取 node_urls.txt，循环测试每个 URL
+          while IFS= read -r url; do
+            if [ -n "$url" ]; then
+              echo "Testing URL: $url"
+              ./lite --config config.json --test "$url" > test_result.json || true
+
+              # 解析 LiteSpeedTest 输出，提取有效 proxies
+              python3 -c "
+import json
+import yaml
+try:
+    with open('test_result.json', 'r') as f:
+        result = json.load(f)
+    valid_proxies = result.get('proxies', []) if isinstance(result, dict) else []
+    if valid_proxies:
+        with open('valid_proxies.json', 'r+') as f:
+            all_valid = json.load(f)
+            all_valid.extend(valid_proxies)
+            f.seek(0)
+            f.truncate()
+            json.dump(all_valid, f)
+        print(f'Added {len(valid_proxies)} valid proxies from {url}')
+    else:
+        print(f'No valid proxies found for {url}')
+except Exception as e:
+    print(f'Error processing {url}: {e}')
+              "
+              # 避免速率限制
+              sleep 5
+            fi
+          done < node_urls.txt
+
+          # 将 valid_proxies.json 转换为 valid_proxies.yaml
           python3 -c "
-          import yaml, base64
-          try:
-              with open('valid_proxies.b64', 'r', encoding='utf-8') as f:
-                  b64_data = f.read().strip()
-              if not b64_data or 'error' in b64_data.lower():
-                  print('Output invalid or empty')
-                  exit(1)
-              decoded_data = base64.b64decode(b64_data, validate=True)
-              yaml_data = decoded_data.decode('utf-8-sig')
-              parsed = yaml.safe_load(yaml_data)
-              if not parsed or 'proxies' not in parsed:
-                  print('Invalid YAML structure')
-                  exit(1)
-              with open('valid_proxies.yaml', 'w', encoding='utf-8') as f:
-                  yaml.dump(parsed, f, allow_unicode=True, default_flow_style=False)
-              print('Successfully converted to valid_proxies.yaml')
-          except Exception as e:
-              print(f'Conversion error: {e}')
-              exit(1)
+import json
+import yaml
+try:
+    with open('valid_proxies.json', 'r') as f:
+        proxies = json.load(f)
+    if proxies:
+        yaml.dump({'proxies': proxies}, open('valid_proxies.yaml', 'w'), default_flow_style=False, allow_unicode=True, sort_keys=False)
+        print(f'Generated valid_proxies.yaml with {len(proxies)} proxies')
+    else:
+        print('No valid proxies found, skipping valid_proxies.yaml generation')
+except Exception as e:
+    print(f'Error generating valid_proxies.yaml: {e}')
           "
 
-      - name: Check output
-        run: |
-          if [ ! -s valid_proxies.yaml ]; then
-            echo "No valid proxies found! Check logs."
-            exit 1
-          fi
-          echo "Valid proxies written to valid_proxies.yaml (count: $(python3 -c \"import yaml; print(len(yaml.safe_load(open('valid_proxies.yaml'))['proxies']))\"))"
-
-      - name: Commit valid proxies
-        uses: stefanzweifel/git-auto-commit-action@v5
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
         with:
-          commit_message: "Update valid proxy nodes - $(date +'%Y-%m-%d %H:%M')"
-          file_pattern: "valid_proxies.yaml"
+          name: proxy-files
+          path: |
+            combined_proxies.yaml
+            valid_proxies.yaml
+            node_urls.txt
+            test_result.json
+            valid_proxies.json
+
+      - name: Notify on failure
+        if: failure()
+        run: echo "Proxy test failed - check logs for details."
