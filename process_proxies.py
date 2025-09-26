@@ -135,8 +135,8 @@ unknown_country = ('❓', 'UNK')  # 用于不匹配的代理
 def valid_proxy(proxy):
     name = proxy.get('name', '')
     proxy_type = proxy.get('type', '').lower()
-    banned_keywords = ['CN', 'File']
-    banned_types = ['socks5', 'http']
+    banned_keywords = ['File']
+    banned_types = ['http']
     
     # 定义 mihomo 最小必要字段
     required_fields = {
