@@ -179,6 +179,86 @@ proxies:
   port: 20980
   password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
   skip-cert-verify: true
+- name: 🇨🇳 001
+  type: vmess
+  server: hn.xn--wlqw1swrj04ju56d.com
+  port: 80
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: false
+  uuid: f9ddefc5-d121-486f-9e2f-0c2cd1a3decc
+- name: 🇨🇳 002
+  type: vmess
+  server: 112.132.212.19
+  port: 50004
+  alterId: 64
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇨🇳 003
+  type: vmess
+  server: 112.132.215.12
+  port: 50002
+  alterId: 64
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇨🇳 004
+  type: vmess
+  server: 114.55.132.202
+  port: 50002
+  alterId: 64
+  cipher: auto
+  skip-cert-verify: false
+  tls: false
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇨🇳 005
+  type: vmess
+  server: 120.210.205.59
+  port: 50002
+  alterId: 64
+  cipher: none
+  network: tcp
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇨🇳 006
+  type: vmess
+  server: 120.226.29.105
+  port: 8888
+  alterId: 0
+  cipher: auto
+  network: ws
+  uuid: 8645841f-23fb-47e2-9dae-33580c96b49e
+- name: 🇨🇳 007
+  type: vmess
+  server: 183.236.51.36
+  port: 59003
+  alterId: 64
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  tls: false
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇨🇳 008
+  type: vmess
+  server: 47.104.186.133
+  port: 50002
+  alterId: 64
+  cipher: auto
+  skip-cert-verify: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇨🇳 009
+  type: vmess
+  server: 47.116.173.76
+  port: 50002
+  alterId: 64
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: 🇩🇪 001
   type: trojan
   server: ent1.imyourdaddy.top
@@ -816,13 +896,6 @@ proxies:
   password: e3fee3b6-fca1-3985-99dc-da7ca03260ea
   skip-cert-verify: true
   sni: akamai.cdn.steampipe.steamcontent.com
-- name: 🇺🇸 011
-  type: vmess
-  server: 112.132.212.19
-  port: 50004
-  alterId: 64
-  cipher: none
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: 🇺🇸 013
   type: vmess
   server: 104.26.5.145
@@ -1287,6 +1360,13 @@ proxies:
   password: installshield
   skip-cert-verify: true
   sni: 176.97.68.153
+- name: 🇨🇳 011
+  type: trojan
+  server: 106.75.134.1
+  port: 12000
+  password: 2fd0d127-266d-4d0b-b453-f94659a132fc
+  skip-cert-verify: true
+  sni: aliyun.com
 - name: 🇫🇷 012
   type: trojan
   server: 23.162.152.30
