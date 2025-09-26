@@ -1,47 +1,82 @@
-name: Clash-SpeedTest 节点测速筛选
+name: Proxy Node Initial Screening
 
 on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
+  schedule:
+    - cron: '0 */6 * * *'  # 每 6 小时运行一次（可调整）
+  workflow_dispatch:  # 允许手动触发
 
 jobs:
-  speedtest:
+  screen-proxies:
     runs-on: ubuntu-latest
     steps:
-      - name: 检出仓库代码
-        uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wget python3 python3-pip
+          pip3 install pyyaml  # 用于处理 YAML 文件
+
+      - name: Download LiteSpeedTest binary
+        run: |
+          # 下载最新 LiteSpeedTest（替换为最新版本）
+          wget https://github.com/xxf098/LiteSpeedTest/releases/download/v1.3.3/lite-linux-amd64.tar.gz
+          tar -xzf lite-linux-amd64.tar.gz
+          chmod +x lite
+          sudo mv lite /usr/local/bin/
+
+      - name: Convert YAML to LiteSpeedTest input
+        run: |
+          # 从 combined_proxies.yaml 提取 proxies 字段并转为 Base64（Clash 兼容输入）
+          python3 -c "
+          import yaml, base64
+          with open('combined_proxies.yaml', 'r') as f:
+              data = yaml.safe_load(f)
+          proxies = data.get('proxies', [])
+          # 转换为 Clash 格式的 YAML 字符串
+          clash_yaml = yaml.dump({'proxies': proxies}, allow_unicode=True)
+          # 编码为 Base64
+          with open('proxies.b64', 'w') as f:
+              f.write(base64.b64encode(clash_yaml.encode()).decode())
+          "
+
+      - name: Create LiteSpeedTest config
+        run: |
+          cat > config.json << EOF
+          {
+            "group": "screening",
+            "speedtestMode": "pingonly",  // 仅 ping 测试，快速初筛
+            "pingMethod": "googleping",   // 使用 Google Ping（可改为 tcpping）
+            "sortMethod": "rspeed",       // 按速度排序（可选）
+            "concurrency": 10,            // 并发测试 10 个节点
+            "testMode": 2,                // 详细测试模式
+            "timeout": 10,                // 超时 10 秒
+            "language": "en",
+            "unique": true,               // 启用去重
+            "outputMode": 1               // 输出 Base64 格式（Clash 兼容）
+          }
+          EOF
+
+      - name: Test proxies with LiteSpeedTest
+        run: |
+          # 使用 Base64 编码的输入运行测试
+          ./lite --config config.json --test file://proxies.b64 > valid_proxies.b64 2>&1 || echo "Test failed"
+
+      - name: Convert output to YAML
+        run: |
+          # 将 Base64 输出解码为 YAML
+          python3 -c "
+          import yaml, base64
+          with open('valid_proxies.b64', 'r') as f:
+              b64_data = f.read().strip()
+          yaml_data = base64.b64decode(b64_data).decode()
+          with open('valid_proxies.yaml', 'w') as f:
+              f.write(yaml_data)
+          "
+
+      - name: Commit valid proxies back to repo
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          repository: kimcrowing/Proxy
-          token: ${{ secrets.ACTIONS_GITHUB_TOKEN }}
-      - name: 设置 Go 环境
-        uses: actions/setup-go@v4
-        with:
-          go-version: '1.24'
-
-      - name: 使用 go install 安装 clash-speedtest
-        run: |
-          go install github.com/kimcrowing/clash-speedtest@latest
-          # 将 Go 安装目录添加到 PATH 中
-          echo "$HOME/go/bin" >> $GITHUB_PATH
-
-      - name: 运行测速并筛选节点
-        run: |
-          # 使用仓库根目录下的 combined_proxies.yaml 作为输入配置文件，
-          # 筛选条件：延迟低于 800ms 且下载速度大于 5MB/s
-          clash-speedtest -c "combined_proxies.yaml" -output "nodes_filtered.yaml" -max-latency 3000ms
-
-      - name: Configure Git to allow pushing changes
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-      
-      - name: Commit and push changes to repository
-        run: |
-          git config core.ignorecase false
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "github-actions[bot]"
-          git add .
-          git commit -m "Updated at $(date '+%Y-%m-%d %H:%M:%S')"
-          git push
+          commit_message: "Update valid proxy nodes - $(date +'%Y-%m-%d %H:%M')"
+          file_pattern: "valid_proxies.yaml"
