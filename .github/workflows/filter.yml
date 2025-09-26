@@ -30,20 +30,32 @@ jobs:
         with:
           go-version: '1.21'
 
+      - name: Set up Node.js (for LiteSpeedTest frontend)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'  # >=14 as per LiteSpeedTest README
+          cache: 'npm'  # Cache npm dependencies for faster builds
+
       - name: Install LiteSpeedTest
         run: |
           git clone https://github.com/xxf098/LiteSpeedTest.git
           cd LiteSpeedTest
+          # Copy wasm_exec.js as per README
           cp $(go env GOROOT)/misc/wasm/wasm_exec.js ./web/gui/
-          npm install --prefix web/gui
-          npm run --prefix web/gui build
-          GOOS=js GOARCH=wasm go build -o ./web/gui/dist/main.wasm ./wasm
+          # Install npm dependencies with cache support
+          npm ci --prefix web/gui
+          # Build frontend (optional for CLI, but included for completeness)
+          npm run build --prefix web/gui || true
+          # Build WASM
+          GOOS=js GOARCH=wasm go build -o ./web/gui/dist/main.wasm ./wasm || true
+          # Build CLI binary
           go build -o lite
           mv lite ../
           cd ..
 
       - name: Test proxies with LiteSpeedTest
         run: |
+          set -e  # Exit on error
           # 创建 LiteSpeedTest 配置文件
           cat > config.json << EOF
           {
