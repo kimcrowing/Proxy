@@ -3,7 +3,8 @@ import yaml
 import re
 from datetime import datetime
 import collections  # 用于 OrderedDict 以控制字段顺序
-import socket  # 用于域名解析
+import socket
+import time
 
 # 定义要下载的 YAML 配置文件 URLs
 urls = [
@@ -72,7 +73,7 @@ for url in urls:
         print(f"Error processing {url}: {e}")
         continue
 
-# 定义国家与国旗图标和英文缩写的映射关系（扩展国家列表）
+# 定义国家与国旗图标和英文缩写的映射关系
 country_flags = {
     '美国': ('🇺🇸', 'US'),
     '加拿大': ('🇨🇦', 'CA'),
@@ -135,47 +136,55 @@ unknown_country = ('❓', 'UNK')  # 用于不匹配的代理
 # 缓存 IP/域名查询结果
 ip_cache = {}
 
-# 查询 IP 地址或域名的国家
-def get_country_from_ip(server):
+# 查询 IP 地址或域名的国家（支持批量查询）
+def get_country_from_ip(servers):
     # 检查缓存
-    if server in ip_cache:
-        return ip_cache[server]
+    result = {}
+    to_query = [server for server in servers if server not in ip_cache]
     
-    # 尝试解析域名到 IP（如果 server 是域名）
-    try:
-        # 检查是否是 IP 地址
-        socket.inet_aton(server)  # 仅支持 IPv4
-        query = server
-    except socket.error:
-        # 如果是域名，解析到 IP
-        try:
-            query = socket.gethostbyname(server)  # 获取 IP
-        except socket.gaierror as e:
-            print(f"Error resolving domain {server}: {e}")
-            ip_cache[server] = (unknown_country[0], '未知')
-            return unknown_country[0], '未知'
+    if not to_query:
+        return {server: ip_cache[server] for server in servers}
 
-    # 查询国家
-    try:
-        response = requests.get(f"http://ip-api.com/json/{query}")
-        response.raise_for_status()
-        data = response.json()
-        if data['status'] == 'success':
-            country_code = data['countryCode']  # e.g., 'US'
-            # 查找对应的国旗
-            for country, (flag, code) in country_flags.items():
-                if code == country_code:
-                    ip_cache[server] = (flag, country)
-                    return flag, country
-            ip_cache[server] = (unknown_country[0], '未知')  # 未知国家
-            return unknown_country[0], '未知'
-        else:
-            ip_cache[server] = (unknown_country[0], '未知')
-            return unknown_country[0], '未知'
-    except requests.RequestException as e:
-        print(f"Error querying {server}: {e}")
-        ip_cache[server] = (unknown_country[0], '未知')
-        return unknown_country[0], '未知'
+    # 批量查询
+    for i in range(0, len(to_query), 100):  # ip-api.com 批量限制 100 个
+        batch = to_query[i:i+100]
+        batch_query = [{"query": server} for server in batch]
+        for attempt in range(3):
+            try:
+                response = requests.post("http://ip-api.com/batch", json=batch_query)
+                response.raise_for_status()
+                data = response.json()
+                
+                for query, server in zip(data, batch):
+                    if query.get('status') == 'success':
+                        country_code = query.get('countryCode')
+                        for country, (flag, code) in country_flags.items():
+                            if code == country_code:
+                                ip_cache[server] = (flag, country)
+                                result[server] = (flag, country)
+                                break
+                        else:
+                            ip_cache[server] = (unknown_country[0], '未知')
+                            result[server] = (unknown_country[0], '未知')
+                    else:
+                        print(f"Query failed for {server}: {query.get('message', 'Unknown error')}")
+                        ip_cache[server] = (unknown_country[0], '未知')
+                        result[server] = (unknown_country[0], '未知')
+                break
+            except requests.RequestException as e:
+                print(f"Batch query attempt {attempt+1}/3 failed: {e}")
+                time.sleep(2)
+                if attempt == 2:
+                    for server in batch:
+                        ip_cache[server] = (unknown_country[0], '未知')
+                        result[server] = (unknown_country[0], '未知')
+    
+    # 填充缓存中的结果
+    for server in servers:
+        if server not in result:
+            result[server] = ip_cache[server]
+    
+    return result
 
 # 定义代理筛选函数，删除名称中包含 "CN" 或 "File" 的代理，以及 type 为 socks5 或 http 的节点
 def valid_proxy(proxy):
@@ -184,7 +193,6 @@ def valid_proxy(proxy):
     banned_keywords = ['File']
     banned_types = ['http']
     
-    # 定义 mihomo 最小必要字段
     required_fields = {
         'ss': ['server', 'port', 'cipher', 'password'],
         'trojan': ['server', 'port', 'password'],
@@ -207,14 +215,23 @@ merged_proxies = []
 name_counter = {}  # 用于记录每个国家的代理数量
 seen_proxies = set()  # 用于去重（基于 server, port, type）
 
+# 收集所有需要查询的 server
+servers_to_query = set()
+for proxy_list in all_proxies:
+    for proxy in proxy_list:
+        if valid_proxy(proxy):
+            servers_to_query.add(proxy.get('server', ''))
+
+# 批量查询国家
+server_countries = get_country_from_ip(list(servers_to_query))
+
 for proxy_list in all_proxies:
     for proxy in proxy_list:
         if not valid_proxy(proxy):
             continue
 
         server = proxy.get('server', '')
-        # 根据 server 查询国家
-        flag, country_key = get_country_from_ip(server)
+        flag, country_key = server_countries.get(server, (unknown_country[0], '未知'))
         
         if country_key not in name_counter:
             name_counter[country_key] = 1
@@ -222,14 +239,13 @@ for proxy_list in all_proxies:
             name_counter[country_key] += 1
         new_name = f"{flag} {str(name_counter[country_key]).zfill(3)}"
         
-        # 创建统一格式的代理对象 (使用 OrderedDict 以控制字段顺序)
+        # 创建统一格式的代理对象
         ordered_proxy = collections.OrderedDict()
         ordered_proxy['name'] = new_name
         ordered_proxy['type'] = proxy['type']
         ordered_proxy['server'] = proxy['server']
         ordered_proxy['port'] = proxy['port']
         
-        # 添加类型特定字段（仅保留原始字段，不补充默认值）
         additional_fields = {}
         if proxy['type'] == 'ss':
             if 'cipher' in proxy:
@@ -259,16 +275,13 @@ for proxy_list in all_proxies:
             if 'skip-cert-verify' in proxy:
                 additional_fields['skip-cert-verify'] = proxy['skip-cert-verify']
         
-        # 按字母顺序排序 additional_fields
         sorted_additional = sorted(additional_fields.items())
         for key, value in sorted_additional:
             ordered_proxy[key] = value
         
-        # 去重
         proxy_key = (ordered_proxy['server'], ordered_proxy['port'], ordered_proxy['type'])
         if proxy_key not in seen_proxies:
             seen_proxies.add(proxy_key)
-            # 转换为普通字典以避免 Python 标签
             merged_proxies.append(dict(ordered_proxy))
 
 # 将合并后的代理保存为新的 YAML 文件
