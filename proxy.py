@@ -4,6 +4,7 @@ import re
 from datetime import datetime
 import collections  # 用于 OrderedDict 以控制字段顺序
 import time
+import socket  # 用于有效性测试
 
 # 定义要下载的 YAML 配置文件 URLs
 urls = [
@@ -40,15 +41,61 @@ def get_latest_hongkongclash_yaml():
     print(f"Latest hongkongclash YAML: {raw_url}")
     return raw_url
 
-# 将 hongkongclash 的最新 YAML URL 添加到 urls 列表
+# 获取并打印所有订阅链接
+print("=== Acquired Clash Subscription URLs ===")
+for i, url in enumerate(urls, 1):
+    print(f"URL {i}: {url}")
 latest_hongkongclash_url = get_latest_hongkongclash_yaml()
 if latest_hongkongclash_url:
     urls.append(latest_hongkongclash_url)
+    print(f"URL {len(urls)}: {latest_hongkongclash_url}")
+print(f"Total URLs: {len(urls)}")
+print("======================================")
 
-# 用来存储所有代理服务器
-all_proxies = []
+# 输出所有节点文件链接到 node_urls.txt
+with open('node_urls.txt', 'w', encoding='utf-8') as urlfile:
+    for url in urls:
+        urlfile.write(url + '\n')
+print(f"Node URLs saved to node_urls.txt: {len(urls)} links")
 
-# 下载并解析 YAML 文件
+# 定义代理有效性测试函数（使用 socket 检查 server:port 是否可达）
+def test_proxy_connection(server, port, timeout=5):
+    try:
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        sock.settimeout(timeout)
+        sock.connect((server, port))
+        sock.close()
+        return True
+    except (socket.timeout, socket.error, OSError):
+        return False
+
+# 定义代理筛选函数（排除特定关键字、类型，并检查所需字段）
+def valid_proxy(proxy):
+    name = proxy.get('name', '')
+    proxy_type = proxy.get('type', '').lower()
+    banned_keywords = ['File']
+    banned_types = ['http']
+    
+    required_fields = {
+        'ss': ['server', 'port', 'cipher', 'password'],
+        'trojan': ['server', 'port', 'password'],
+        'vmess': ['server', 'port', 'uuid', 'alterId', 'cipher']
+    }
+    
+    if proxy_type not in required_fields:
+        return False
+    for field in required_fields[proxy_type]:
+        if field not in proxy or proxy[field] is None:
+            return False
+    
+    return (
+        not any(keyword in name for keyword in banned_keywords) and
+        proxy_type not in banned_types
+    )
+
+# 收集所有有效的代理服务器（先测试有效性）
+all_valid_proxies = []
+
 for url in urls:
     try:
         response = requests.get(url)
@@ -65,14 +112,33 @@ for url in urls:
 
         data = yaml.safe_load(content)
         if 'proxies' in data and data['proxies']:
-            all_proxies.append(data['proxies'])
+            for proxy in data['proxies']:
+                if valid_proxy(proxy):  # 先应用原筛选
+                    server = proxy.get('server', '')
+                    port = proxy.get('port', 0)
+                    if test_proxy_connection(server, port):
+                        all_valid_proxies.append(proxy)
+                    else:
+                        print(f"Invalid connection for proxy: {proxy.get('name', 'Unknown')} at {server}:{port}")
         else:
             print(f"No proxies found in {url}")
     except (requests.RequestException, yaml.YAMLError) as e:
         print(f"Error processing {url}: {e}")
         continue
 
-# 定义国家与国旗图标和英文缩写的映射关系（大幅扩展）
+# 打印所有有效节点
+print("\n=== Valid Proxies ===")
+for i, proxy in enumerate(all_valid_proxies, 1):
+    print(f"Proxy {i}:")
+    print(f"  Name: {proxy.get('name', 'Unknown')}")
+    print(f"  Type: {proxy.get('type', 'Unknown')}")
+    print(f"  Server: {proxy.get('server', 'Unknown')}")
+    print(f"  Port: {proxy.get('port', 'Unknown')}")
+    print(f"  Additional Fields: {', '.join(f'{k}={v}' for k, v in proxy.items() if k not in ['name', 'type', 'server', 'port'])}")
+print(f"Total Valid Proxies: {len(all_valid_proxies)}")
+print("=====================")
+
+# 定义国家与国旗图标和英文缩写的映射关系
 country_flags = {
     '美国': ('🇺🇸', 'US'),
     '加拿大': ('🇨🇦', 'CA'),
@@ -95,7 +161,7 @@ country_flags = {
     '南非': ('🇿🇦', 'ZA'),
     '印度': ('🇮🇳', 'IN'),
     '中国': ('🇨🇳', 'CN'),
-    '中国大陆': ('🇨🇳', 'CN'),  # 新增别名
+    '中国大陆': ('🇨🇳', 'CN'),
     '日本': ('🇯🇵', 'JP'),
     '韩国': ('🇰🇷', 'KR'),
     '新加坡': ('🇸🇬', 'SG'),
@@ -109,7 +175,7 @@ country_flags = {
     '墨西哥': ('🇲🇽', 'MX'),
     '俄罗斯': ('🇷🇺', 'RU'),
     '土耳其': ('🇹🇷', 'TR'),
-    '南非共和国': ('🇿🇦', 'ZA'),  # 别名
+    '南非共和国': ('🇿🇦', 'ZA'),
     '沙特阿拉伯': ('🇸🇦', 'SA'),
     '阿联酋': ('🇦🇪', 'AE'),
     '埃及': ('🇪🇬', 'EG'),
@@ -119,7 +185,7 @@ country_flags = {
     '捷克共和国': ('🇨🇿', 'CZ'),
     '匈牙利': ('🇭🇺', 'HU'),
     '斯洛伐克共和国': ('🇸🇰', 'SK'),
-    '泰国王国': ('🇹🇭', 'TH'),  # 别名
+    '泰国王国': ('🇹🇭', 'TH'),
     '香港': ('🇭🇰', 'HK'),
     '台湾': ('🇹🇼', 'TW'),
     '澳门': ('🇲🇴', 'MO'),
@@ -127,55 +193,55 @@ country_flags = {
     '乌克兰': ('🇺🇦', 'UA'),
     '罗马尼亚': ('🇷🇴', 'RO'),
     '塞尔维亚': ('🇷🇸', 'RS'),
-    '瑞典王国': ('🇸🇪', 'SE'),  # 别名
-    '挪威王国': ('🇳🇴', 'NO'),  # 别名
-    '丹麦王国': ('🇩🇰', 'DK'),  # 别名
-    '阿尔巴尼亚': ('🇦🇱', 'AL'),  # 新增
-    '阿尔及利亚': ('🇩🇿', 'DZ'),  # 新增
-    '安哥拉': ('🇦🇴', 'AO'),  # 新增
-    '亚美尼亚': ('🇦🇲', 'AM'),  # 新增
-    '奥地利共和国': ('🇦🇹', 'AT'),  # 别名
-    '阿塞拜疆': ('🇦🇿', 'AZ'),  # 新增
-    '巴林': ('🇧🇭', 'BH'),  # 新增
-    '孟加拉国': ('🇧🇩', 'BD'),  # 新增
-    '白俄罗斯': ('🇧🇾', 'BY'),  # 新增
-    '玻利维亚': ('🇧🇴', 'BO'),  # 新增
-    '波斯尼亚和黑塞哥维那': ('🇧🇦', 'BA'),  # 新增
-    '保加利亚': ('🇧🇬', 'BG'),  # 新增
-    '智利': ('🇨🇱', 'CL'),  # 新增
-    '哥伦比亚': ('🇨🇴', 'CO'),  # 新增
-    '哥斯达黎加': ('🇨🇷', 'CR'),  # 新增
-    '克罗地亚': ('🇭🇷', 'HR'),  # 新增
-    '塞浦路斯': ('🇨🇾', 'CY'),  # 新增
-    '厄瓜多尔': ('🇪🇨', 'EC'),  # 新增
-    '爱沙尼亚': ('🇪🇪', 'EE'),  # 新增
-    '埃塞俄比亚': ('🇪🇹', 'ET'),  # 新增
-    '格鲁吉亚': ('🇬🇪', 'GE'),  # 新增
-    '加纳': ('🇬🇭', 'GH'),  # 新增
-    '冰岛': ('🇮🇸', 'IS'),  # 新增
-    '伊拉克': ('🇮🇶', 'IQ'),  # 新增
-    '约旦': ('🇯🇴', 'JO'),  # 新增
-    '哈萨克斯坦': ('🇰🇿', 'KZ'),  # 新增
-    '肯尼亚': ('🇰🇪', 'KE'),  # 新增
-    '科威特': ('🇰🇼', 'KW'),  # 新增
-    '拉脱维亚': ('🇱🇻', 'LV'),  # 新增
-    '黎巴嫩': ('🇱🇧', 'LB'),  # 新增
-    '立陶宛': ('🇱🇹', 'LT'),  # 新增
-    '卢森堡': ('🇱🇺', 'LU'),  # 新增
-    '马其顿': ('🇲🇰', 'MK'),  # 新增
-    '马耳他': ('🇲🇹', 'MT'),  # 新增
-    '摩洛哥': ('🇲🇦', 'MA'),  # 新增
-    '尼泊尔': ('🇳🇵', 'NP'),  # 新增
-    '尼日利亚': ('🇳🇬', 'NG'),  # 新增
-    '巴基斯坦': ('🇵🇰', 'PK'),  # 新增
-    '巴拿马': ('🇵🇦', 'PA'),  # 新增
-    '秘鲁': ('🇵🇪', 'PE'),  # 新增
-    '卡塔尔': ('🇶🇦', 'QA'),  # 新增
-    '斯洛文尼亚': ('🇸🇮', 'SI'),  # 新增
-    '斯里兰卡': ('🇱🇰', 'LK'),  # 新增
-    '突尼斯': ('🇹🇳', 'TN'),  # 新增
-    '乌拉圭': ('🇺🇾', 'UY'),  # 新增
-    '委内瑞拉': ('🇻🇪', 'VE'),  # 新增
+    '瑞典王国': ('🇸🇪', 'SE'),
+    '挪威王国': ('🇳🇴', 'NO'),
+    '丹麦王国': ('🇩🇰', 'DK'),
+    '阿尔巴尼亚': ('🇦🇱', 'AL'),
+    '阿尔及利亚': ('🇩🇿', 'DZ'),
+    '安哥拉': ('🇦🇴', 'AO'),
+    '亚美尼亚': ('🇦🇲', 'AM'),
+    '奥地利共和国': ('🇦🇹', 'AT'),
+    '阿塞拜疆': ('🇦🇿', 'AZ'),
+    '巴林': ('🇧🇭', 'BH'),
+    '孟加拉国': ('🇧🇩', 'BD'),
+    '白俄罗斯': ('🇧🇾', 'BY'),
+    '玻利维亚': ('🇧🇴', 'BO'),
+    '波斯尼亚和黑塞哥维那': ('🇧🇦', 'BA'),
+    '保加利亚': ('🇧🇬', 'BG'),
+    '智利': ('🇨🇱', 'CL'),
+    '哥伦比亚': ('🇨🇴', 'CO'),
+    '哥斯达黎加': ('🇨🇷', 'CR'),
+    '克罗地亚': ('🇭🇷', 'HR'),
+    '塞浦路斯': ('🇨🇾', 'CY'),
+    '厄瓜多尔': ('🇪🇨', 'EC'),
+    '爱沙尼亚': ('🇪🇪', 'EE'),
+    '埃塞俄比亚': ('🇪🇹', 'ET'),
+    '格鲁吉亚': ('🇬🇪', 'GE'),
+    '加纳': ('🇬🇭', 'GH'),
+    '冰岛': ('🇮🇸', 'IS'),
+    '伊拉克': ('🇮🇶', 'IQ'),
+    '约旦': ('🇯🇴', 'JO'),
+    '哈萨克斯坦': ('🇰🇿', 'KZ'),
+    '肯尼亚': ('🇰🇪', 'KE'),
+    '科威特': ('🇰🇼', 'KW'),
+    '拉脱维亚': ('🇱🇻', 'LV'),
+    '黎巴嫩': ('🇱🇧', 'LB'),
+    '立陶宛': ('🇱🇹', 'LT'),
+    '卢森堡': ('🇱🇺', 'LU'),
+    '马其顿': ('🇲🇰', 'MK'),
+    '马耳他': ('🇲🇴', 'MT'),
+    '摩洛哥': ('🇲🇦', 'MA'),
+    '尼泊尔': ('🇳🇵', 'NP'),
+    '尼日利亚': ('🇳🇬', 'NG'),
+    '巴基斯坦': ('🇵🇰', 'PK'),
+    '巴拿马': ('🇵🇦', 'PA'),
+    '秘鲁': ('🇵🇪', 'PE'),
+    '卡塔尔': ('🇶🇦', 'QA'),
+    '斯洛文尼亚': ('🇸🇮', 'SI'),
+    '斯里兰卡': ('🇱🇰', 'LK'),
+    '突尼斯': ('🇹🇳', 'TN'),
+    '乌拉圭': ('🇺🇾', 'UY'),
+    '委内瑞拉': ('🇻🇪', 'VE'),
 }
 unknown_country = ('❓', 'UNK')  # 用于不匹配的代理
 
@@ -229,31 +295,7 @@ def get_country_from_ip(servers):
     
     return result
 
-# 定义代理筛选函数，删除名称中包含 "CN" 或 "File" 的代理，以及 type 为 socks5 或 http 的节点
-def valid_proxy(proxy):
-    name = proxy.get('name', '')
-    proxy_type = proxy.get('type', '').lower()
-    banned_keywords = ['File']
-    banned_types = ['http']
-    
-    required_fields = {
-        'ss': ['server', 'port', 'cipher', 'password'],
-        'trojan': ['server', 'port', 'password'],
-        'vmess': ['server', 'port', 'uuid', 'alterId', 'cipher']
-    }
-    
-    if proxy_type not in required_fields:
-        return False
-    for field in required_fields[proxy_type]:
-        if field not in proxy or proxy[field] is None:
-            return False
-    
-    return (
-        not any(keyword in name for keyword in banned_keywords) and
-        proxy_type not in banned_types
-    )
-
-# 合并所有代理服务器，并进行筛选和去重
+# 合并有效代理服务器，并进行去重、重命名
 merged_proxies = []
 name_counter = {}  # 用于记录每个国家的代理数量
 seen_proxies = set()  # 用于去重（基于 server, port, type）
@@ -262,35 +304,31 @@ seen_proxies = set()  # 用于去重（基于 server, port, type）
 servers_to_query = set()
 proxy_info = []  # 存储有效代理及其匹配状态
 
-for proxy_list in all_proxies:
-    for proxy in proxy_list:
-        if not valid_proxy(proxy):
-            continue
-        
-        name = proxy.get('name', '')
-        server = proxy.get('server', '')
-        matched = False
-        flag = unknown_country[0]
-        country_key = '未知'
-        
-        # 优先基于 name 匹配国家
-        for country, (f, code) in country_flags.items():
-            if country in name or code in name:
-                matched = True
-                flag = f
-                country_key = country
-                break
-        
-        if not matched:
-            servers_to_query.add(server)
-        
-        proxy_info.append({
-            'proxy': proxy,
-            'flag': flag,
-            'country_key': country_key,
-            'matched': matched,
-            'server': server
-        })
+for proxy in all_valid_proxies:
+    name = proxy.get('name', '')
+    server = proxy.get('server', '')
+    matched = False
+    flag = unknown_country[0]
+    country_key = '未知'
+    
+    # 优先基于 name 匹配国家
+    for country, (f, code) in country_flags.items():
+        if country in name or code in name:
+            matched = True
+            flag = f
+            country_key = country
+            break
+    
+    if not matched:
+        servers_to_query.add(server)
+    
+    proxy_info.append({
+        'proxy': proxy,
+        'flag': flag,
+        'country_key': country_key,
+        'matched': matched,
+        'server': server
+    })
 
 # 如果有未匹配的，批量查询
 if servers_to_query:
@@ -358,14 +396,8 @@ for info in proxy_info:
         seen_proxies.add(proxy_key)
         merged_proxies.append(dict(ordered_proxy))
 
-# 将合并后的代理保存为新的 YAML 文件
-with open('combined_proxies.yaml', 'w', encoding='utf-8') as outfile:
+# 将有效代理保存为 YAML 文件
+with open('valid_proxies.yaml', 'w', encoding='utf-8') as outfile:
     yaml.dump({'proxies': merged_proxies}, outfile, default_flow_style=False, allow_unicode=True, sort_keys=False)
 
-# 输出所有节点文件链接到 node_urls.txt
-with open('node_urls.txt', 'w', encoding='utf-8') as urlfile:
-    for url in urls:
-        urlfile.write(url + '\n')
-
-print("Proxy configurations have been successfully processed and unified for mihomo.")
-print(f"Node URLs saved to node_urls.txt: {len(urls)} links")
+print(f"Valid proxy configurations have been successfully processed and saved to valid_proxies.yaml ({len(merged_proxies)} proxies).")
