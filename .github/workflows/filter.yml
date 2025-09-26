@@ -20,11 +20,11 @@ jobs:
 
       - name: Download LiteSpeedTest binary
         run: |
-          # 下载最新 LiteSpeedTest（替换为最新版本）
+          # 下载指定版本的 LiteSpeedTest
           wget https://github.com/xxf098/LiteSpeedTest/releases/download/v0.15.0/lite-linux-amd64-v3-v0.15.0.gz
-          tar -xzf lite-linux-amd64-v3-v0.15.0.gz
-          chmod +x lite
-          sudo mv lite /usr/local/bin/
+          gunzip lite-linux-amd64-v3-v0.15.0.gz
+          chmod +x lite-linux-amd64-v3-v0.15.0
+          sudo mv lite-linux-amd64-v3-v0.15.0 /usr/local/bin/lite
 
       - name: Convert YAML to LiteSpeedTest input
         run: |
@@ -74,6 +74,14 @@ jobs:
           with open('valid_proxies.yaml', 'w') as f:
               f.write(yaml_data)
           "
+
+      - name: Check output
+        run: |
+          # 确保输出文件不为空
+          if [ ! -s valid_proxies.yaml ]; then
+            echo "No valid proxies found!"
+            exit 1
+          fi
 
       - name: Commit valid proxies back to repo
         uses: stefanzweifel/git-auto-commit-action@v5
