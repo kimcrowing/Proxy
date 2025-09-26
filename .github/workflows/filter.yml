@@ -21,8 +21,8 @@ jobs:
       - name: Download LiteSpeedTest binary
         run: |
           # 下载最新 LiteSpeedTest（替换为最新版本）
-          wget https://github.com/xxf098/LiteSpeedTest/releases/download/v1.3.3/lite-linux-amd64.tar.gz
-          tar -xzf lite-linux-amd64.tar.gz
+          wget https://github.com/xxf098/LiteSpeedTest/releases/download/v0.15.0/lite-linux-amd64-v3-v0.15.0.gz
+          tar -xzf lite-linux-amd64-v3-v0.15.0.gz
           chmod +x lite
           sudo mv lite /usr/local/bin/
 
