@@ -71,7 +71,7 @@ for url in urls:
         print(f"Error processing {url}: {e}")
         continue
 
-# 定义国家与国旗图标和英文缩写的映射关系
+# 定义国家与国旗图标和英文缩写的映射关系（扩展国家列表）
 country_flags = {
     '美国': ('🇺🇸', 'US'),
     '加拿大': ('🇨🇦', 'CA'),
@@ -118,8 +118,18 @@ country_flags = {
     '匈牙利': ('🇭🇺', 'HU'),
     '斯洛伐克共和国': ('🇸🇰', 'SK'),
     '泰国王国': ('🇹🇭', 'TH'),
-    '香港': ('🇭🇰', 'HK')
+    '香港': ('🇭🇰', 'HK'),
+    '台湾': ('🇹🇼', 'TW'),  # 新增
+    '澳门': ('🇲🇴', 'MO'),  # 新增
+    '波兰': ('🇵🇱', 'PL'),  # 新增
+    '乌克兰': ('🇺🇦', 'UA'),  # 新增
+    '罗马尼亚': ('🇷🇴', 'RO'),  # 新增
+    '塞尔维亚': ('🇷🇸', 'RS'),  # 新增
+    '瑞典王国': ('🇸🇪', 'SE'),  # 新增别名
+    '挪威王国': ('🇳🇴', 'NO'),  # 新增别名
+    '丹麦王国': ('🇩🇰', 'DK'),  # 新增别名
 }
+unknown_country = ('❓', 'UNK')  # 用于不匹配的代理
 
 # 定义代理筛选函数，删除名称中包含 "CN" 或 "File" 的代理，以及 type 为 socks5 或 http 的节点
 def valid_proxy(proxy):
@@ -158,60 +168,75 @@ for proxy_list in all_proxies:
 
         name = proxy.get('name', '')
         matched = False
+        country_key = None
 
         # 检查国家匹配
         for country, (flag, code) in country_flags.items():
             if country in name or code in name:
                 matched = True
-                if country not in name_counter:
-                    name_counter[country] = 1
-                else:
-                    name_counter[country] += 1
-                new_name = f"{flag} {code} {str(name_counter[country]).zfill(3)}"
-                
-                # 创建统一格式的代理对象 (使用 OrderedDict 以控制字段顺序)
-                ordered_proxy = collections.OrderedDict()
-                ordered_proxy['name'] = new_name
-                ordered_proxy['type'] = proxy['type']
-                ordered_proxy['server'] = proxy['server']
-                ordered_proxy['port'] = proxy['port']
-                
-                # 添加类型特定字段和可选字段
-                additional_fields = {}
-                if proxy['type'] == 'ss':
-                    additional_fields['cipher'] = proxy['cipher']
-                    additional_fields['password'] = proxy['password']
-                elif proxy['type'] == 'trojan':
-                    additional_fields['password'] = proxy['password']
-                    additional_fields['sni'] = proxy.get('sni', proxy['server'])
-                    additional_fields['skip-cert-verify'] = proxy.get('skip-cert-verify', False)
-                elif proxy['type'] == 'vmess':
-                    additional_fields['uuid'] = proxy['uuid']
-                    additional_fields['alterId'] = proxy['alterId']
-                    additional_fields['cipher'] = proxy.get('cipher', 'auto')
-                    additional_fields['tls'] = proxy.get('tls', False)
-                    additional_fields['network'] = proxy.get('network', 'ws')
-                    additional_fields['client-fingerprint'] = proxy.get('client-fingerprint', 'chrome')
-                    additional_fields['skip-cert-verify'] = proxy.get('skip-cert-verify', False)
-                
-                # 添加通用可选字段
-                additional_fields['udp'] = proxy.get('udp', True)
-                additional_fields['tfo'] = proxy.get('tfo', False)
-                additional_fields['ip-version'] = proxy.get('ip-version', 'dual')
-                
-                # 按字母顺序排序 additional_fields
-                sorted_additional = sorted(additional_fields.items())
-                for key, value in sorted_additional:
-                    ordered_proxy[key] = value
-                
-                # 去重
-                proxy_key = (ordered_proxy['server'], ordered_proxy['port'], ordered_proxy['type'])
-                if proxy_key not in seen_proxies:
-                    seen_proxies.add(proxy_key)
-                    # 转换为普通字典以避免 Python 标签
-                    merged_proxies.append(dict(ordered_proxy))
-                
+                country_key = country
+                flag = country_flags[country][0]  # 只取国旗
                 break
+        
+        if not matched:
+            # 处理未知国家
+            country_key = '未知'
+            flag = unknown_country[0]
+        
+        if country_key not in name_counter:
+            name_counter[country_key] = 1
+        else:
+            name_counter[country_key] += 1
+        new_name = f"{flag} {str(name_counter[country_key]).zfill(3)}"
+        
+        # 创建统一格式的代理对象 (使用 OrderedDict 以控制字段顺序)
+        ordered_proxy = collections.OrderedDict()
+        ordered_proxy['name'] = new_name
+        ordered_proxy['type'] = proxy['type']
+        ordered_proxy['server'] = proxy['server']
+        ordered_proxy['port'] = proxy['port']
+        
+        # 添加类型特定字段（仅保留原始字段，不补充默认值）
+        additional_fields = {}
+        if proxy['type'] == 'ss':
+            if 'cipher' in proxy:
+                additional_fields['cipher'] = proxy['cipher']
+            if 'password' in proxy:
+                additional_fields['password'] = proxy['password']
+        elif proxy['type'] == 'trojan':
+            if 'password' in proxy:
+                additional_fields['password'] = proxy['password']
+            if 'sni' in proxy:
+                additional_fields['sni'] = proxy['sni']
+            if 'skip-cert-verify' in proxy:
+                additional_fields['skip-cert-verify'] = proxy['skip-cert-verify']
+        elif proxy['type'] == 'vmess':
+            if 'uuid' in proxy:
+                additional_fields['uuid'] = proxy['uuid']
+            if 'alterId' in proxy:
+                additional_fields['alterId'] = proxy['alterId']
+            if 'cipher' in proxy:
+                additional_fields['cipher'] = proxy['cipher']
+            if 'tls' in proxy:
+                additional_fields['tls'] = proxy['tls']
+            if 'network' in proxy:
+                additional_fields['network'] = proxy['network']
+            if 'client-fingerprint' in proxy:
+                additional_fields['client-fingerprint'] = proxy['client-fingerprint']
+            if 'skip-cert-verify' in proxy:
+                additional_fields['skip-cert-verify'] = proxy['skip-cert-verify']
+        
+        # 按字母顺序排序 additional_fields
+        sorted_additional = sorted(additional_fields.items())
+        for key, value in sorted_additional:
+            ordered_proxy[key] = value
+        
+        # 去重
+        proxy_key = (ordered_proxy['server'], ordered_proxy['port'], ordered_proxy['type'])
+        if proxy_key not in seen_proxies:
+            seen_proxies.add(proxy_key)
+            # 转换为普通字典以避免 Python 标签
+            merged_proxies.append(dict(ordered_proxy))
 
 # 将合并后的代理保存为新的 YAML 文件
 with open('combined_proxies.yaml', 'w', encoding='utf-8') as outfile:
