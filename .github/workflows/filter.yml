@@ -1,124 +1,133 @@
 name: Auto Process and Test Proxies with LiteSpeedTest
-
 on:
-  schedule:
-    - cron: '0 0 * * *'  # 每天 UTC 00:00 运行
-  workflow_dispatch:  # 支持手动触发
+schedule:
+
+cron: '0 0 * * *'  # 每天 UTC 00:00 运行
+workflow_dispatch:  # 支持手动触发
 
 jobs:
-  process:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+process:
+runs-on: ubuntu-latest
+steps:
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.10'
 
-      - name: Install Python dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install requests pyyaml
+name: Checkout repository
+uses: actions/checkout@v4
 
-      - name: Run proxy processing script (collect URLs and proxies)
-        run: python proxy.py
 
-      - name: Set up Go (for LiteSpeedTest)
-        uses: actions/setup-go@v5
-        with:
-          go-version: '1.21'
+name: Set up Python
+uses: actions/setup-python@v5
+with:
+python-version: '3.10'
 
-      - name: Set up Node.js (for LiteSpeedTest frontend)
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'  # >=14 as per LiteSpeedTest README
-          cache: 'npm'  # Cache npm dependencies for faster builds
 
-      - name: Install LiteSpeedTest
-        run: |
-          git clone https://github.com/xxf098/LiteSpeedTest.git
-          cd LiteSpeedTest
-          # Copy wasm_exec.js as per README
-          cp $(go env GOROOT)/misc/wasm/wasm_exec.js ./web/gui/
-          # Install npm dependencies with cache support
-          npm ci --prefix web/gui
-          # Build frontend (optional for CLI, but included for completeness)
-          npm run build --prefix web/gui || true
-          # Build WASM
-          GOOS=js GOARCH=wasm go build -o ./web/gui/dist/main.wasm ./wasm || true
-          # Build CLI binary
-          go build -o lite
-          mv lite ../
-          cd ..
+name: Install Python dependencies
+run: |
+python -m pip install --upgrade pip
+pip install requests pyyaml
 
-      - name: Test proxies with LiteSpeedTest
-        run: |
-          set -e  # Exit on error
-          # Create LiteSpeedTest configuration
-          cat > config.json << EOF
-          {
-            "group": "test",
-            "mode": 1,  # speedonly
-            "pingmethod": 1,  # tcpping
-            "sort": 1,  # sort by speed
-            "concurrency": 10,  # test 10 nodes concurrently
-            "testmode": 2,  # ALLTEST
-            "timeout": 5000,  # 5 seconds timeout
-            "speedlimit": 1.0,  # minimum 1Mbps
-            "output": 3,  # JSON output
-            "unique": true  # deduplicate
-          }
-          EOF
 
-          # Initialize valid proxies JSON file
-          echo '[]' > lite_valid_proxies.json
+name: Run proxy processing script (collect URLs and proxies)
+run: python proxy.py
 
-          # Read node_urls.txt and test each URL
-          while IFS= read -r url; do
-            if [ -n "$url" ]; then
-              echo "Testing URL: $url"
-              ./lite --config config.json --test "$url" > test_result.json || true
 
-              # Parse LiteSpeedTest output and extract valid proxies
-              python3 -c "
+name: Set up Go (for LiteSpeedTest)
+uses: actions/setup-go@v5
+with:
+go-version: '1.21'
+
+
+name: Set up Node.js (for LiteSpeedTest frontend)
+uses: actions/setup-node@v4
+with:
+node-version: '18'  # >=14 as per LiteSpeedTest README
+cache: 'npm'  # Cache npm dependencies for faster builds
+
+
+name: Install LiteSpeedTest
+run: |
+git clone https://github.com/xxf098/LiteSpeedTest.git
+cd LiteSpeedTest
+Copy wasm_exec.js as per README
+cp $(go env GOROOT)/misc/wasm/wasm_exec.js ./web/gui/
+Install npm dependencies with cache support
+npm ci --prefix web/gui
+Build frontend (optional for CLI, but included for completeness)
+npm run build --prefix web/gui || true
+Build WASM
+GOOS=js GOARCH=wasm go build -o ./web/gui/dist/main.wasm ./wasm || true
+Build CLI binary
+go build -o lite
+mv lite ../
+cd ..
+
+
+name: Test proxies with LiteSpeedTest
+run: |
+set -e  # Exit on error
+Create LiteSpeedTest configuration
+cat > config.json << EOF
+{
+"group": "test",
+"mode": 1,  # speedonly
+"pingmethod": 1,  # tcpping
+"sort": 1,  # sort by speed
+"concurrency": 10,  # test 10 nodes concurrently
+"testmode": 2,  # ALLTEST
+"timeout": 5000,  # 5 seconds timeout
+"speedlimit": 1.0,  # minimum 1Mbps
+"output": 3,  # JSON output
+"unique": true  # deduplicate
+}
+EOF
+Initialize valid proxies JSON file
+echo '[]' > lite_valid_proxies.json
+Read node_urls.txt and test each URL
+while IFS= read -r url; do
+if [ -n "$url" ]; then
+echo "Testing URL: $url"
+./lite --config config.json --test "$url" > test_result.json || true
+Parse LiteSpeedTest output and extract valid proxies
+python3 -c "
 import json
 try:
-    with open('test_result.json', 'r') as f:
-        result = json.load(f)
-    valid_proxies = result.get('proxies', []) if isinstance(result, dict) else []
-    if valid_proxies:
-        with open('lite_valid_proxies.json', 'r+') as f:
-            all_valid = json.load(f)
-            all_valid.extend(valid_proxies)
-            f.seek(0)
-            f.truncate()
-            json.dump(all_valid, f)
-        print(f'Added {len(valid_proxies)} valid proxies from {url}')
-    else:
-        print(f'No valid proxies found for {url}')
+with open('test_result.json', 'r') as f:
+result = json.load(f)
+valid_proxies = result.get('proxies', []) if isinstance(result, dict) else []
+if valid_proxies:
+with open('lite_valid_proxies.json', 'r+') as f:
+all_valid = json.load(f)
+all_valid.extend(valid_proxies)
+f.seek(0)
+f.truncate()
+json.dump(all_valid, f)
+print(f'Added {len(valid_proxies)} valid proxies from {url}')
+else:
+print(f'No valid proxies found for {url}')
 except Exception as e:
-    print(f'Error processing {url}: {e}')
+print(f'Error processing {url}: {e}')
 "
-              # Avoid rate limiting
-              sleep 5
-            fi
-          done < node_urls.txt
+Avoid rate limiting
+sleep 5
+fi
+done < node_urls.txt
 
-      - name: Process valid proxies (country query and renaming)
-        run: python proxy.py
 
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: proxy-files
-          path: |
-            valid_proxies.yaml
-            lite_valid_proxies.json
-            node_urls.txt
-            test_result.json
+name: Process valid proxies (country query and renaming)
+run: python proxy.py
 
-      - name: Notify on failure
-        if: failure()
-        run: echo "Proxy processing or testing failed - check logs for details."
+
+name: Upload artifacts
+uses: actions/upload-artifact@v4
+with:
+name: proxy-files
+path: |
+valid_proxies.yaml
+lite_valid_proxies.json
+node_urls.txt
+test_result.json
+
+
+name: Notify on failure
+if: failure()
+run: echo "Proxy processing or testing failed - check logs for details."
