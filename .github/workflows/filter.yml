@@ -56,32 +56,32 @@ jobs:
       - name: Test proxies with LiteSpeedTest
         run: |
           set -e  # Exit on error
-          # 创建 LiteSpeedTest 配置文件
+          # Create LiteSpeedTest configuration
           cat > config.json << EOF
           {
             "group": "test",
             "mode": 1,  # speedonly
             "pingmethod": 1,  # tcpping
-            "sort": 1,  # 按速度排序
-            "concurrency": 10,  # 并发测试 10 个节点
+            "sort": 1,  # sort by speed
+            "concurrency": 10,  # test 10 nodes concurrently
             "testmode": 2,  # ALLTEST
-            "timeout": 5000,  # 超时 5 秒
-            "speedlimit": 1.0,  # 最低速度 1Mbps
-            "output": 3,  # 输出 JSON
-            "unique": true  # 去重
+            "timeout": 5000,  # 5 seconds timeout
+            "speedlimit": 1.0,  # minimum 1Mbps
+            "output": 3,  # JSON output
+            "unique": true  # deduplicate
           }
           EOF
 
-          # 初始化有效代理 JSON 文件
+          # Initialize valid proxies JSON file
           echo '[]' > lite_valid_proxies.json
 
-          # 读取 node_urls.txt，循环测试每个 URL
+          # Read node_urls.txt and test each URL
           while IFS= read -r url; do
             if [ -n "$url" ]; then
               echo "Testing URL: $url"
               ./lite --config config.json --test "$url" > test_result.json || true
 
-              # 解析 LiteSpeedTest 输出，提取有效 proxies
+              # Parse LiteSpeedTest output and extract valid proxies
               python3 -c "
 import json
 try:
@@ -100,8 +100,8 @@ try:
         print(f'No valid proxies found for {url}')
 except Exception as e:
     print(f'Error processing {url}: {e}')
-              "
-              # 避免速率限制
+"
+              # Avoid rate limiting
               sleep 5
             fi
           done < node_urls.txt
