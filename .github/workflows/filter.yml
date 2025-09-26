@@ -2,7 +2,7 @@ name: Proxy Node Initial Screening
 
 on:
   schedule:
-    - cron: '0 */6 * * *'  # 每 6 小时运行一次（可调整）
+    - cron: '0 */6 * * *'  # 每 6 小时运行一次
   workflow_dispatch:  # 允许手动触发
 
 jobs:
@@ -20,7 +20,6 @@ jobs:
 
       - name: Download LiteSpeedTest binary
         run: |
-          # 下载指定版本的 LiteSpeedTest
           wget https://github.com/xxf098/LiteSpeedTest/releases/download/v0.15.0/lite-linux-amd64-v3-v0.15.0.gz
           gunzip lite-linux-amd64-v3-v0.15.0.gz
           chmod +x lite-linux-amd64-v3-v0.15.0
@@ -28,17 +27,14 @@ jobs:
 
       - name: Convert YAML to LiteSpeedTest input
         run: |
-          # 从 combined_proxies.yaml 提取 proxies 字段并转为 Base64（Clash 兼容输入）
           python3 -c "
           import yaml, base64
           with open('combined_proxies.yaml', 'r') as f:
               data = yaml.safe_load(f)
           proxies = data.get('proxies', [])
-          # 转换为 Clash 格式的 YAML 字符串
           clash_yaml = yaml.dump({'proxies': proxies}, allow_unicode=True)
-          # 编码为 Base64
           with open('proxies.b64', 'w') as f:
-              f.write(base64.b64encode(clash_yaml.encode()).decode())
+              f.write(base64.b64encode(clash_yaml.encode('utf-8')).decode('utf-8'))
           "
 
       - name: Create LiteSpeedTest config
@@ -46,42 +42,68 @@ jobs:
           cat > config.json << EOF
           {
             "group": "screening",
-            "speedtestMode": "pingonly",  // 仅 ping 测试，快速初筛
-            "pingMethod": "googleping",   // 使用 Google Ping（可改为 tcpping）
-            "sortMethod": "rspeed",       // 按速度排序（可选）
-            "concurrency": 10,            // 并发测试 10 个节点
-            "testMode": 2,                // 详细测试模式
-            "timeout": 10,                // 超时 10 秒
+            "speedtestMode": "pingonly",
+            "pingMethod": "googleping",
+            "sortMethod": "rspeed",
+            "concurrency": 10,
+            "testMode": 2,
+            "timeout": 10,
             "language": "en",
-            "unique": true,               // 启用去重
-            "outputMode": 1               // 输出 Base64 格式（Clash 兼容）
+            "unique": true,
+            "outputMode": 1
           }
           EOF
 
       - name: Test proxies with LiteSpeedTest
         run: |
-          # 使用 Base64 编码的输入运行测试
-          ./lite --config config.json --test file://proxies.b64 > valid_proxies.b64 2>&1 || echo "Test failed"
+          ./lite --config config.json --test file://proxies.b64 > valid_proxies.b64 2> test_error.log || echo "Test failed, check test_error.log"
+
+      - name: Debug Base64 output
+        run: |
+          echo "Contents of valid_proxies.b64:"
+          cat valid_proxies.b64
+          echo "Checking if valid_proxies.b64 is valid Base64:"
+          base64 -d valid_proxies.b64 > /dev/null && echo "Valid Base64" || echo "Invalid Base64"
 
       - name: Convert output to YAML
         run: |
-          # 将 Base64 输出解码为 YAML
           python3 -c "
           import yaml, base64
-          with open('valid_proxies.b64', 'r') as f:
-              b64_data = f.read().strip()
-          yaml_data = base64.b64decode(b64_data).decode()
-          with open('valid_proxies.yaml', 'w') as f:
-              f.write(yaml_data)
+          try:
+              with open('valid_proxies.b64', 'r', encoding='utf-8') as f:
+                  b64_data = f.read().strip()
+              # Decode Base64, handling potential errors
+              try:
+                  decoded_data = base64.b64decode(b64_data, validate=True)
+              except Exception as e:
+                  print(f'Base64 decode error: {e}')
+                  exit(1)
+              # Try decoding as UTF-8, fallback to latin1 if needed
+              try:
+                  yaml_data = decoded_data.decode('utf-8')
+              except UnicodeDecodeError:
+                  print('UTF-8 decode failed, trying latin1')
+                  yaml_data = decoded_data.decode('latin1')
+              # Validate YAML
+              try:
+                  yaml.safe_load(yaml_data)
+              except yaml.YAMLError as e:
+                  print(f'YAML parse error: {e}')
+                  exit(1)
+              with open('valid_proxies.yaml', 'w', encoding='utf-8') as f:
+                  f.write(yaml_data)
+          except Exception as e:
+              print(f'Error processing file: {e}')
+              exit(1)
           "
 
       - name: Check output
         run: |
-          # 确保输出文件不为空
           if [ ! -s valid_proxies.yaml ]; then
             echo "No valid proxies found!"
             exit 1
           fi
+          echo "Valid proxies written to valid_proxies.yaml"
 
       - name: Commit valid proxies back to repo
         uses: stefanzweifel/git-auto-commit-action@v5
