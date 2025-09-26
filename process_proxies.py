@@ -3,6 +3,7 @@ import yaml
 import re
 from datetime import datetime
 import collections  # 用于 OrderedDict 以控制字段顺序
+import socket  # 用于域名解析
 
 # 定义要下载的 YAML 配置文件 URLs
 urls = [
@@ -119,17 +120,62 @@ country_flags = {
     '斯洛伐克共和国': ('🇸🇰', 'SK'),
     '泰国王国': ('🇹🇭', 'TH'),
     '香港': ('🇭🇰', 'HK'),
-    '台湾': ('🇹🇼', 'TW'),  # 新增
-    '澳门': ('🇲🇴', 'MO'),  # 新增
-    '波兰': ('🇵🇱', 'PL'),  # 新增
-    '乌克兰': ('🇺🇦', 'UA'),  # 新增
-    '罗马尼亚': ('🇷🇴', 'RO'),  # 新增
-    '塞尔维亚': ('🇷🇸', 'RS'),  # 新增
-    '瑞典王国': ('🇸🇪', 'SE'),  # 新增别名
-    '挪威王国': ('🇳🇴', 'NO'),  # 新增别名
-    '丹麦王国': ('🇩🇰', 'DK'),  # 新增别名
+    '台湾': ('🇹🇼', 'TW'),
+    '澳门': ('🇲🇴', 'MO'),
+    '波兰': ('🇵🇱', 'PL'),
+    '乌克兰': ('🇺🇦', 'UA'),
+    '罗马尼亚': ('🇷🇴', 'RO'),
+    '塞尔维亚': ('🇷🇸', 'RS'),
+    '瑞典王国': ('🇸🇪', 'SE'),
+    '挪威王国': ('🇳🇴', 'NO'),
+    '丹麦王国': ('🇩🇰', 'DK'),
 }
 unknown_country = ('❓', 'UNK')  # 用于不匹配的代理
+
+# 缓存 IP/域名查询结果
+ip_cache = {}
+
+# 查询 IP 地址或域名的国家
+def get_country_from_ip(server):
+    # 检查缓存
+    if server in ip_cache:
+        return ip_cache[server]
+    
+    # 尝试解析域名到 IP（如果 server 是域名）
+    try:
+        # 检查是否是 IP 地址
+        socket.inet_aton(server)  # 仅支持 IPv4
+        query = server
+    except socket.error:
+        # 如果是域名，解析到 IP
+        try:
+            query = socket.gethostbyname(server)  # 获取 IP
+        except socket.gaierror as e:
+            print(f"Error resolving domain {server}: {e}")
+            ip_cache[server] = (unknown_country[0], '未知')
+            return unknown_country[0], '未知'
+
+    # 查询国家
+    try:
+        response = requests.get(f"http://ip-api.com/json/{query}")
+        response.raise_for_status()
+        data = response.json()
+        if data['status'] == 'success':
+            country_code = data['countryCode']  # e.g., 'US'
+            # 查找对应的国旗
+            for country, (flag, code) in country_flags.items():
+                if code == country_code:
+                    ip_cache[server] = (flag, country)
+                    return flag, country
+            ip_cache[server] = (unknown_country[0], '未知')  # 未知国家
+            return unknown_country[0], '未知'
+        else:
+            ip_cache[server] = (unknown_country[0], '未知')
+            return unknown_country[0], '未知'
+    except requests.RequestException as e:
+        print(f"Error querying {server}: {e}")
+        ip_cache[server] = (unknown_country[0], '未知')
+        return unknown_country[0], '未知'
 
 # 定义代理筛选函数，删除名称中包含 "CN" 或 "File" 的代理，以及 type 为 socks5 或 http 的节点
 def valid_proxy(proxy):
@@ -166,22 +212,9 @@ for proxy_list in all_proxies:
         if not valid_proxy(proxy):
             continue
 
-        name = proxy.get('name', '')
-        matched = False
-        country_key = None
-
-        # 检查国家匹配
-        for country, (flag, code) in country_flags.items():
-            if country in name or code in name:
-                matched = True
-                country_key = country
-                flag = country_flags[country][0]  # 只取国旗
-                break
-        
-        if not matched:
-            # 处理未知国家
-            country_key = '未知'
-            flag = unknown_country[0]
+        server = proxy.get('server', '')
+        # 根据 server 查询国家
+        flag, country_key = get_country_from_ip(server)
         
         if country_key not in name_counter:
             name_counter[country_key] = 1
