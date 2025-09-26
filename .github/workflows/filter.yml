@@ -24,6 +24,7 @@ jobs:
           gunzip lite-linux-amd64-v3-v0.15.0.gz
           chmod +x lite-linux-amd64-v3-v0.15.0
           sudo mv lite-linux-amd64-v3-v0.15.0 /usr/local/bin/lite
+          lite --version || echo "LiteSpeedTest version check failed"
 
       - name: Validate and Convert YAML to LiteSpeedTest input
         run: |
@@ -35,7 +36,6 @@ jobs:
           if not proxies:
               print('No proxies found!')
               exit(1)
-          # 添加最小 proxy-groups，使其成为完整 Clash 订阅
           full_config = {
               'proxies': proxies,
               'proxy-groups': [{'name': 'select', 'type': 'select', 'proxies': [p['name'] for p in proxies]}]
@@ -61,20 +61,19 @@ jobs:
             "speedtestMode": "pingonly",
             "pingMethod": "tcpping",
             "sortMethod": "rspeed",
-            "concurrency": 3,  // 进一步降低并发
+            "concurrency": 3,
             "testMode": 2,
-            "timeout": 20,     // 增加超时
+            "timeout": 20,
             "language": "en",
             "unique": true,
-            "outputMode": 0    // 0: base64 输出
+            "outputMode": 0
           }
           EOF
 
       - name: Test proxies with LiteSpeedTest
         run: |
-          # 直接传递 Base64 字符串作为订阅输入
-          b64_input=\$(cat proxies.b64)
-          ./lite --config config.json --test "\$b64_input" > valid_proxies.b64 2> test_error.log || echo "Test failed, check test_error.log"
+          b64_input=$(cat proxies.b64)
+          ./lite --config config.json --test "$b64_input" > valid_proxies.b64 2> test_error.log || echo "Test failed, check test_error.log"
 
       - name: Debug output
         run: |
@@ -82,8 +81,9 @@ jobs:
           cat test_error.log
           echo "Contents of valid_proxies.b64 (first 500 chars):"
           head -c 500 valid_proxies.b64
+          base64 -d valid_proxies.b64 > /dev/null 2>/dev/null && echo "Valid Base64 output" || echo "Invalid Base64 output or empty"
 
-      - name: Convert output to YAML (if valid)
+      - name: Convert output to YAML
         run: |
           python3 -c "
           import yaml, base64
@@ -107,12 +107,15 @@ jobs:
               exit(1)
           "
 
-      - name: Check and Commit
+      - name: Check output
         run: |
           if [ ! -s valid_proxies.yaml ]; then
-            echo "No valid proxies! Check logs."
+            echo "No valid proxies found! Check logs."
             exit 1
           fi
+          echo "Valid proxies written to valid_proxies.yaml (count: $(python3 -c \"import yaml; print(len(yaml.safe_load(open('valid_proxies.yaml'))['proxies']))\"))"
+
+      - name: Commit valid proxies
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update valid proxy nodes - $(date +'%Y-%m-%d %H:%M')"
