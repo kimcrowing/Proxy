@@ -1,3013 +1,2056 @@
 proxies:
-- name: 🇦🇪 AE 001
+- name: 🇦🇪 001
   type: ss
   server: du.acxylm.top
   port: 55645
   cipher: aes-256-gcm
-  ip-version: dual
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  tfo: false
-  udp: true
-- name: 🇦🇪 AE 002
+- name: 🇦🇪 002
   type: ss
   server: series-a2-mec.varzesh360.co
   port: 443
   cipher: chacha20-ietf-poly1305
-  ip-version: dual
   password: u17T3BvpYaaiuW2c
-  tfo: false
-  udp: true
-- name: 🇦🇺 AU 001
+- name: 🇦🇺 001
   type: trojan
   server: customer-45-142-215-88.stark-industries.solutions
   port: 443
-  ip-version: dual
   password: c5691b8f-d833-41e4-9295-769f3edb4cd2
   skip-cert-verify: true
-  sni: customer-45-142-215-88.stark-industries.solutions
-  tfo: false
-  udp: true
-- name: 🇦🇺 AU 002
+- name: 🇦🇺 002
   type: trojan
   server: in01.trojanyyds.xyz
   port: 443
-  ip-version: dual
   password: 4a39dba7-463b-4c8a-a804-758282c11c62
   skip-cert-verify: true
   sni: in01.trojanyyds.xyz
-  tfo: false
-  udp: true
-- name: 🇦🇺 AU 003
+- name: 🇦🇺 003
   type: trojan
   server: 34618.kuajing.buzz
   port: 34618
-  ip-version: dual
   password: cd30052f-f1b2-35df-9773-bd586e72f67a
   skip-cert-verify: false
   sni: eplcgame.com
-  tfo: false
-  udp: true
-- name: 🇦🇺 AU 004
+- name: 🇦🇺 004
   type: trojan
   server: tw02.trojanyyds.xyz
   port: 443
-  ip-version: dual
   password: 8d1e94cd-23cf-4267-b630-c6894e6e1b4d
   skip-cert-verify: true
-  sni: tw02.trojanyyds.xyz
-  tfo: false
-  udp: true
-- name: 🇦🇺 AU 005
+- name: 🇦🇺 005
   type: vmess
   server: 183.236.48.163
   port: 58831
   alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  ip-version: dual
-  network: ws
   skip-cert-verify: false
-  tfo: false
   tls: false
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇦🇺 AU 006
+- name: 🇦🇺 006
   type: trojan
   server: 36.151.192.239
   port: 36442
-  ip-version: dual
   password: lNOcIAxy
   skip-cert-verify: true
   sni: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tfo: false
-  udp: true
-- name: 🇦🇺 AU 007
+- name: 🇦🇺 007
   type: ss
   server: au.acxylm.top
   port: 12343
   cipher: aes-256-gcm
-  ip-version: dual
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  tfo: false
-  udp: true
-- name: 🇧🇷 BR 001
+- name: ❓ 001
+  type: ss
+  server: 193.124.22.253
+  port: 33068
+  cipher: chacha20-ietf-poly1305
+  password: 3MgIhqwp4pjM8SKwixNkYZ
+- name: ❓ 002
+  type: ss
+  server: series-a2-me.varzesh360.co
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: Bog0ELmMM9DSxDdQ
+- name: 🇧🇷 001
   type: ss
   server: br.acxylm.top
   port: 41829
   cipher: aes-256-gcm
-  ip-version: dual
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  tfo: false
-  udp: true
-- name: 🇨🇦 CA 001
+- name: 🇨🇦 001
   type: trojan
   server: free.6vczxw.xyz
   port: 41199
-  ip-version: dual
   password: 40c9871b-74af-45f5-ac2c-12597587dc98
   skip-cert-verify: true
   sni: sg15.bluemixnet.xyz
-  tfo: false
-  udp: true
-- name: 🇨🇦 CA 002
+- name: 🇨🇦 002
   type: vmess
   server: 47.92.152.169
   port: 50002
   alterId: 64
   cipher: none
-  client-fingerprint: chrome
-  ip-version: dual
-  network: ws
   skip-cert-verify: false
-  tfo: false
   tls: false
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇨🇦 CA 003
+- name: 🇨🇦 003
   type: trojan
   server: 20.89.130.227
   port: 443
-  ip-version: dual
   password: 9995cc0e-2e9d-4c80-8c81-4fdbb6322a3a
   skip-cert-verify: true
   sni: fscus.fscloud123456789.com
-  tfo: false
-  udp: true
-- name: 🇨🇦 CA 004
+- name: 🇨🇦 004
   type: trojan
   server: customer-45-89-55-150.stark-industries.solutions
   port: 443
-  ip-version: dual
   password: c5691b8f-d833-41e4-9295-769f3edb4cd2
   skip-cert-verify: true
-  sni: customer-45-89-55-150.stark-industries.solutions
-  tfo: false
-  udp: true
-- name: 🇨🇦 CA 005
+- name: 🇨🇦 005
   type: trojan
   server: my01.trojanyyds.xyz
   port: 443
-  ip-version: dual
   password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
   skip-cert-verify: true
-  sni: my01.trojanyyds.xyz
-  tfo: false
-  udp: true
-- name: 🇨🇦 CA 006
+- name: 🇨🇦 006
   type: trojan
   server: free.6vczxw.xyz
   port: 41239
-  ip-version: dual
   password: f4a08f9d-1fb0-4cd3-a8e3-b0a561f9c44b
   skip-cert-verify: true
   sni: us15.t8l1n9k.link
-  tfo: false
-  udp: true
-- name: 🇨🇦 CA 007
+- name: 🇨🇦 007
   type: trojan
   server: ar.mjt000.com
   port: 443
-  ip-version: dual
   password: 8993fa1c-342e-41fc-b01e-8719abde1324
   skip-cert-verify: true
   sni: ar.mjt000.com
-  tfo: false
-  udp: true
-- name: 🇨🇦 CA 008
+- name: 🇨🇦 008
   type: vmess
   server: 104.19.45.50
   port: 2082
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: false
-  tfo: false
   tls: false
-  udp: true
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-- name: 🇨🇦 CA 009
+- name: 🇨🇦 009
   type: vmess
   server: 104.20.25.146
   port: 2095
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: true
-  tfo: false
   tls: false
-  udp: true
   uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-- name: 🇨🇦 CA 010
+- name: 🇨🇦 010
   type: trojan
   server: jp1.jjzgy.live
   port: 443
-  ip-version: dual
   password: f10d81d8-ad4b-300a-825b-f54f515bd06e
   skip-cert-verify: true
   sni: jp1.jjzgy.live
-  tfo: false
-  udp: true
-- name: 🇨🇦 CA 012
+- name: 🇨🇦 012
   type: ss
   server: us07.bfyrek.top
   port: 34468
   cipher: aes-256-gcm
-  ip-version: dual
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  tfo: false
-  udp: true
-- name: 🇨🇦 CA 013
+- name: 🇨🇦 013
   type: ss
   server: 103.36.90.195
   port: 8388
   cipher: chacha20-ietf
-  ip-version: dual
   password: asd123456
-  tfo: false
-  udp: true
-- name: 🇨🇦 CA 014
+- name: 🇨🇦 014
   type: trojan
   server: ru.mjt000.com
   port: 443
-  ip-version: dual
   password: bc90fb72-0b2c-45b4-a8d8-c9baa4eaaef3
   skip-cert-verify: true
   sni: ru.mjt000.com
-  tfo: false
-  udp: true
-- name: 🇨🇭 CH 001
+- name: 🇨🇭 001
   type: trojan
   server: ent1.imyourdaddy.top
   port: 20980
-  ip-version: dual
   password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
   skip-cert-verify: true
-  sni: ent1.imyourdaddy.top
-  tfo: false
-  udp: true
-- name: 🇩🇪 DE 001
+- name: 🇩🇪 001
   type: trojan
   server: ent1.imyourdaddy.top
   port: 20992
-  ip-version: dual
   password: 061a01f1-704b-4712-8e12-6d3fc95a127d
   skip-cert-verify: true
-  sni: ent1.imyourdaddy.top
-  tfo: false
-  udp: true
-- name: 🇩🇪 DE 002
+- name: 🇩🇪 002
   type: ss
   server: de01.acxylm.top
   port: 27684
   cipher: aes-256-gcm
-  ip-version: dual
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  tfo: false
-  udp: true
-- name: 🇩🇪 DE 003
+- name: 🇩🇪 003
   type: vmess
   server: 2.189.59.2
   port: 443
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: false
-  tfo: false
   tls: true
-  udp: true
   uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-- name: 🇩🇪 DE 004
+- name: 🇩🇪 004
   type: vmess
   server: 45.149.12.79
   port: 443
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: true
-  tfo: false
   tls: true
-  udp: true
   uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-- name: 🇩🇪 DE 005
+- name: 🇩🇪 005
   type: ss
   server: de03.acxylm.top
   port: 55504
   cipher: aes-256-gcm
-  ip-version: dual
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  tfo: false
-  udp: true
-- name: 🇩🇪 DE 006
+- name: 🇩🇪 006
   type: ss
   server: de02.acxylm.top
   port: 44944
   cipher: aes-256-gcm
-  ip-version: dual
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  tfo: false
-  udp: true
-- name: 🇫🇮 FI 001
+- name: 🇫🇮 001
   type: trojan
   server: ent1.imyourdaddy.top
   port: 20982
-  ip-version: dual
   password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
   skip-cert-verify: true
   sni: sale.alibaba.com
-  tfo: false
-  udp: true
-- name: 🇫🇷 FR 001
+- name: 🇫🇷 001
   type: vmess
   server: 2.189.59.3
   port: 443
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: true
-  tfo: false
   tls: true
-  udp: true
   uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-- name: 🇫🇷 FR 002
+- name: 🇫🇷 002
   type: vmess
   server: www.baldengineer.com
   port: 443
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: true
-  tfo: false
   tls: true
-  udp: true
   uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-- name: 🇫🇷 FR 004
+- name: 🇫🇷 004
   type: vmess
   server: tradegdt.ai
   port: 443
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: true
-  tfo: false
   tls: true
-  udp: true
   uuid: 39cec18f-a439-427c-9a4e-aeb6fcdf6f53
-- name: 🇫🇷 FR 006
+- name: 🇫🇷 006
   type: vmess
   server: 104.21.24.170
   port: 443
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: true
-  tfo: false
   tls: true
-  udp: true
   uuid: b321fd5d-e6ec-4293-a644-164e3885f52e
-- name: 🇫🇷 FR 008
+- name: 🇫🇷 008
   type: ss
   server: fr03.acxylm.top
   port: 61287
   cipher: aes-256-gcm
-  ip-version: dual
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  tfo: false
-  udp: true
-- name: 🇫🇷 FR 009
+- name: 🇫🇷 009
   type: ss
   server: fr01.acxylm.top
   port: 20109
   cipher: aes-256-gcm
-  ip-version: dual
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  tfo: false
-  udp: true
-- name: 🇫🇷 FR 010
+- name: 🇫🇷 010
   type: vmess
   server: 23.162.152.177
   port: 443
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: true
-  tfo: false
   tls: true
-  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-- name: 🇫🇷 FR 011
+- name: 🇫🇷 011
   type: vmess
   server: 2.189.59.6
   port: 443
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: true
-  tfo: false
   tls: true
-  udp: true
   uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-- name: 🇬🇧 GB 001
+- name: 🇬🇧 001
   type: vmess
   server: 16.724064.xyz
   port: 443
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: true
-  tfo: false
   tls: true
-  udp: true
   uuid: b7cf4466-956a-4639-b861-0cf78cbb6f8f
-- name: 🇬🇧 GB 002
+- name: 🇬🇧 002
   type: ss
   server: series-a1.samanehha.co
   port: 443
   cipher: chacha20-ietf-poly1305
-  ip-version: dual
   password: W74XFALLLuw6m5IA
-  tfo: false
-  udp: true
-- name: 🇬🇧 GB 003
+- name: 🇬🇧 003
   type: ss
   server: uk.acxylm.top
   port: 19262
   cipher: aes-256-gcm
-  ip-version: dual
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  tfo: false
-  udp: true
-- name: 🇬🇧 GB 004
+- name: 🇬🇧 004
   type: vmess
   server: 2.189.59.7
   port: 443
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
-  skip-cert-verify: false
-  tfo: false
   tls: true
-  udp: true
   uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-- name: 🇬🇧 GB 005
+- name: 🇬🇧 005
   type: ss
   server: hl.acxylm.top
   port: 48465
   cipher: aes-256-gcm
-  ip-version: dual
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  tfo: false
-  udp: true
-- name: 🇬🇧 GB 006
+- name: 🇬🇧 006
   type: ss
   server: hk01.acxylm.top
   port: 55268
   cipher: aes-256-gcm
-  ip-version: dual
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  tfo: false
-  udp: true
-- name: 🇬🇧 GB 007
+- name: 🇬🇧 007
   type: vmess
   server: 57.128.184.127
   port: 443
   alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: true
-  tfo: false
   tls: true
-  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-- name: 🇬🇧 GB 008
+- name: 🇬🇧 008
   type: ss
   server: hk07.bfyrek.top
   port: 36605
   cipher: aes-256-gcm
-  ip-version: dual
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  tfo: false
-  udp: true
-- name: 🇭🇰 HK 001
+- name: 🇭🇰 001
   type: trojan
   server: 36.151.192.242
   port: 14505
-  ip-version: dual
   password: QwwHvrnN
   skip-cert-verify: true
-  sni: 36.151.192.242
-  tfo: false
-  udp: true
-- name: 🇭🇰 HK 002
+- name: 🇭🇰 002
   type: trojan
   server: 36.151.192.196
   port: 42395
-  ip-version: dual
   password: QwwHvrnN
   skip-cert-verify: true
-  sni: 36.151.192.196
-  tfo: false
-  udp: true
-- name: 🇭🇰 HK 003
+- name: 🇭🇰 003
   type: vmess
   server: 183.236.51.23
   port: 46602
   alterId: 64
   cipher: none
-  client-fingerprint: chrome
-  ip-version: dual
   network: tcp
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇭🇰 HK 004
+- name: 🇭🇰 004
   type: vmess
   server: 183.236.51.23
   port: 56601
   alterId: 64
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: tcp
   skip-cert-verify: true
-  tfo: false
-  tls: false
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇭🇰 HK 005
+- name: 🇭🇰 005
   type: vmess
   server: 183.236.51.23
   port: '53002'
   alterId: 64
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: tcp
-  skip-cert-verify: false
-  tfo: false
   tls: false
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇭🇰 HK 006
+- name: 🇭🇰 006
   type: vmess
   server: 120.232.153.27
   port: 58002
   alterId: 64
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: tcp
   skip-cert-verify: true
-  tfo: false
   tls: false
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇭🇰 HK 007
+- name: 🇭🇰 007
   type: ss
   server: 58.63.250.61
   port: 15011
   cipher: aes-256-gcm
-  ip-version: dual
   password: Z1K84W4D8G5KO54J
-  tfo: false
-  udp: true
-- name: 🇭🇰 HK 008
+- name: 🇭🇰 008
   type: ss
   server: 36.141.40.92
   port: 15016
   cipher: aes-256-gcm
-  ip-version: dual
   password: MAADD8JLM8XKVW56
-  tfo: false
-  udp: true
-- name: 🇭🇰 HK 009
+- name: 🇭🇰 009
   type: ss
   server: 4.api-catssr.catcloud.host
   port: 32184
   cipher: chacha20-ietf-poly1305
-  ip-version: dual
   password: bb741d28-cd11-4ce8-8799-459407bacde8
-  tfo: false
-  udp: true
-- name: 🇭🇰 HK 010
+- name: 🇭🇰 010
   type: ss
   server: hk03.acxylm.top
   port: 31452
   cipher: aes-256-gcm
-  ip-version: dual
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  tfo: false
-  udp: true
-- name: 🇭🇰 HK 011
+- name: 🇭🇰 011
   type: ss
   server: hk04.acxylm.top
   port: 20177
   cipher: aes-256-gcm
-  ip-version: dual
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  tfo: false
-  udp: true
-- name: 🇭🇰 HK 012
+- name: 🇭🇰 012
   type: vmess
   server: yd2.ainivp.com
   port: 33416
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: true
-  tfo: false
   tls: true
-  udp: true
   uuid: 9204afcd-023e-781f-1abc-c12efccd1344
-- name: 🇭🇰 HK 013
+- name: 🇭🇰 013
   type: ss
   server: 120.232.81.50
   port: 16088
   cipher: aes-256-cfb
-  ip-version: dual
   password: hGkQ6915tD
-  tfo: false
-  udp: true
-- name: 🇭🇰 HK 014
+- name: 🇭🇰 014
   type: vmess
   server: 120.232.81.14
   port: 22300
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
-  network: ws
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  udp: true
   uuid: 8cd69cef-002a-4f66-9ff6-48fbb7c2e2c7
-- name: 🇭🇰 HK 015
+- name: 🇭🇰 015
   type: vmess
   server: hk0067.alibabaokz.com
   port: 60066
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
-  network: ws
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  udp: true
   uuid: e50e453f-04f5-4c31-b962-bff22b152410
-- name: 🇭🇰 HK 016
+- name: 🇭🇰 016
   type: ss
   server: gy.666666222.shop
   port: 34338
   cipher: chacha20-ietf-poly1305
-  ip-version: dual
   password: f337e72a-be9a-4ea1-8332-7cbc88f0006f
-  tfo: false
-  udp: true
-- name: 🇭🇰 HK 017
+- name: 🇭🇰 017
   type: ss
   server: us3.acxylm.top
   port: 45567
   cipher: aes-256-gcm
-  ip-version: dual
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  tfo: false
-  udp: true
-- name: 🇭🇰 HK 018
+- name: 🇭🇰 018
   type: ss
   server: hk02.acxylm.top
   port: 10473
   cipher: aes-256-gcm
-  ip-version: dual
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  tfo: false
-  udp: true
-- name: 🇭🇰 HK 019
+- name: 🇭🇰 019
   type: ss
   server: gychun.ccdox.icu
   port: 34001
   cipher: aes-256-gcm
-  ip-version: dual
   password: 486c819c-dc4a-4981-8949-a02a6b327287
-  tfo: false
-  udp: true
-- name: 🇮🇹 IT 001
+- name: 🇮🇹 001
   type: trojan
   server: ent1.imyourdaddy.top
   port: 20983
-  ip-version: dual
   password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
   skip-cert-verify: true
   sni: sale.alibaba.com
-  tfo: false
-  udp: true
-- name: 🇯🇵 JP 001
+- name: 🇯🇵 001
   type: trojan
   server: 43.153.175.137
   port: 443
-  ip-version: dual
   password: FLorg
   skip-cert-verify: true
   sni: trojan.tcorg.filegear-sg.me
-  tfo: false
-  udp: true
-- name: 🇯🇵 JP 003
+- name: 🇯🇵 003
   type: ss
   server: 120.232.81.50
   port: 15084
   cipher: aes-256-cfb
-  ip-version: dual
   password: hGkQ6915tD
-  tfo: false
-  udp: true
-- name: 🇯🇵 JP 004
+- name: 🇯🇵 004
   type: vmess
   server: yd2.ainivp.com
   port: 33202
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: false
-  tfo: false
   tls: true
-  udp: true
   uuid: 9204afcd-023e-781f-1abc-c12efccd1344
-- name: 🇯🇵 JP 005
+- name: 🇯🇵 005
   type: ss
   server: 18.183.217.223
   port: 443
   cipher: aes-256-cfb
-  ip-version: dual
   password: amazonskr05
-  tfo: false
-  udp: true
-- name: 🇯🇵 JP 006
+- name: 🇯🇵 006
   type: ss
   server: jp01.acxylm.top
   port: 19428
   cipher: aes-256-gcm
-  ip-version: dual
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  tfo: false
-  udp: true
-- name: 🇯🇵 JP 007
+- name: 🇯🇵 007
   type: ss
   server: gy.666666222.shop
   port: 20002
   cipher: chacha20-ietf-poly1305
-  ip-version: dual
   password: f337e72a-be9a-4ea1-8332-7cbc88f0006f
-  tfo: false
-  udp: true
-- name: 🇯🇵 JP 008
+- name: 🇯🇵 008
   type: ss
   server: gy.666666222.shop
   port: 20004
   cipher: chacha20-ietf-poly1305
-  ip-version: dual
   password: f337e72a-be9a-4ea1-8332-7cbc88f0006f
-  tfo: false
-  udp: true
-- name: 🇯🇵 JP 009
+- name: 🇯🇵 009
   type: ss
   server: 3.112.215.69
   port: 443
   cipher: aes-256-cfb
-  ip-version: dual
   password: amazonskr05
-  tfo: false
-  udp: true
-- name: 🇯🇵 JP 010
+- name: 🇯🇵 010
   type: ss
   server: jp02.acxylm.top
   port: 43787
   cipher: aes-256-gcm
-  ip-version: dual
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  tfo: false
-  udp: true
-- name: 🇯🇵 JP 011
+- name: 🇯🇵 011
   type: ss
   server: 54.95.5.168
   port: 443
   cipher: aes-256-cfb
-  ip-version: dual
   password: amazonskr05
-  tfo: false
-  udp: true
-- name: 🇯🇵 JP 012
+- name: 🇯🇵 012
   type: ss
   server: 57.180.42.246
   port: 443
   cipher: aes-256-cfb
-  ip-version: dual
   password: amazonskr05
-  tfo: false
-  udp: true
-- name: 🇯🇵 JP 013
+- name: 🇯🇵 013
   type: trojan
   server: 36.151.192.239
   port: 17806
-  ip-version: dual
   password: QwwHvrnN
   skip-cert-verify: true
-  sni: 36.151.192.239
-  tfo: false
-  udp: true
-- name: 🇯🇵 JP 014
+- name: 🇯🇵 014
   type: ss
   server: gy.666666222.shop
   port: 20008
   cipher: chacha20-ietf-poly1305
-  ip-version: dual
   password: f337e72a-be9a-4ea1-8332-7cbc88f0006f
-  tfo: false
-  udp: true
-- name: 🇯🇵 JP 015
+- name: 🇯🇵 015
   type: vmess
   server: hk0106.alibabaokz.com
   port: 60126
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
-  network: ws
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  udp: true
   uuid: e50e453f-04f5-4c31-b962-bff22b152410
-- name: 🇯🇵 JP 016
+- name: 🇯🇵 016
   type: vmess
   server: jp0160.alibabaokz.com
   port: 60034
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
-  network: ws
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  udp: true
   uuid: e50e453f-04f5-4c31-b962-bff22b152410
-- name: 🇰🇷 KR 001
+- name: 🇰🇷 001
   type: ss
   server: 13.209.16.115
   port: 443
   cipher: aes-256-cfb
-  ip-version: dual
   password: amazonskr05
-  tfo: false
-  udp: true
-- name: 🇰🇷 KR 002
+- name: 🇰🇷 002
   type: trojan
   server: naiu-other.05vr9nyqg5.download
   port: 13036
-  ip-version: dual
   password: ad6e2bae-d580-4117-aa37-a8c111100740
   skip-cert-verify: true
   sni: cloudflare.node-ssl.cdn-alibaba.com
-  tfo: false
-  udp: true
-- name: 🇰🇷 KR 003
+- name: 🇰🇷 003
   type: trojan
   server: 36.151.192.198
   port: 36900
-  ip-version: dual
   password: QwwHvrnN
   skip-cert-verify: true
-  sni: 36.151.192.198
-  tfo: false
-  udp: true
-- name: 🇰🇷 KR 004
+- name: 🇰🇷 004
   type: ss
   server: 221.139.79.57
   port: 54345
   cipher: aes-256-cfb
-  ip-version: dual
   password: qwerREWQ@@
-  tfo: false
-  udp: true
-- name: 🇰🇷 KR 005
+- name: 🇰🇷 005
   type: ss
   server: 3.35.137.32
   port: 443
   cipher: aes-256-cfb
-  ip-version: dual
   password: amazonskr05
-  tfo: false
-  udp: true
-- name: 🇰🇷 KR 006
+- name: 🇰🇷 006
   type: ss
   server: 3.39.240.246
   port: 443
   cipher: aes-256-cfb
-  ip-version: dual
   password: amazonskr05
-  tfo: false
-  udp: true
-- name: 🇰🇷 KR 007
+- name: 🇰🇷 007
   type: ss
   server: 43.202.57.197
   port: 443
   cipher: aes-256-cfb
-  ip-version: dual
   password: amazonskr05
-  tfo: false
-  udp: true
-- name: 🇰🇷 KR 008
+- name: 🇰🇷 008
   type: ss
   server: kr01.acxylm.top
   port: 59988
   cipher: aes-256-gcm
-  ip-version: dual
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  tfo: false
-  udp: true
-- name: 🇲🇽 MX 001
+- name: 🇲🇽 001
   type: ss
   server: mx.acxylm.top
   port: 61258
   cipher: aes-256-gcm
-  ip-version: dual
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  tfo: false
-  udp: true
-- name: 🇳🇱 NL 001
+- name: 🇳🇱 001
   type: ss
   server: 45.87.175.188
   port: 8080
   cipher: chacha20-ietf-poly1305
-  ip-version: dual
   password: 1RWwXhwfAB5gAEozU4G2Pg
-  tfo: false
-  udp: true
-- name: 🇳🇱 NL 002
+- name: 🇳🇱 002
   type: ss
   server: 45.87.175.199
   port: 8080
   cipher: chacha20-ietf-poly1305
-  ip-version: dual
   password: 1RWwXhwfAB5gAEozU4G2Pg
-  tfo: false
-  udp: true
-- name: 🇳🇱 NL 003
+- name: 🇳🇱 003
   type: ss
   server: 194.87.82.28
   port: 12224
   cipher: chacha20-ietf-poly1305
-  ip-version: dual
   password: 2fwufOmJ9ELfN4umzcHBfV
-  tfo: false
-  udp: true
-- name: 🇳🇱 NL 004
+- name: 🇳🇱 004
   type: ss
   server: id.acxylm.top
   port: 25806
   cipher: aes-256-gcm
-  ip-version: dual
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  tfo: false
-  udp: true
-- name: 🇵🇭 PH 001
+- name: 🇵🇭 001
   type: ss
   server: ph.acxylm.top
   port: 56433
   cipher: aes-256-gcm
-  ip-version: dual
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  tfo: false
-  udp: true
-- name: 🇷🇺 RU 002
+- name: 🇷🇺 002
   type: trojan
   server: ru0195.alibabaokz.com
   port: 60194
-  ip-version: dual
   password: 38571ca6-6692-4559-b901-0bc5826b7661
   skip-cert-verify: true
   sni: ru0195.alibabaokz.com
-  tfo: false
-  udp: true
-- name: 🇸🇬 SG 001
+- name: 🇸🇬 001
   type: trojan
   server: naiu-sg.05vr9nyqg5.download
   port: 13028
-  ip-version: dual
   password: ad6e2bae-d580-4117-aa37-a8c111100740
   skip-cert-verify: false
   sni: cloudflare.node-ssl.cdn-alibaba.com
-  tfo: false
-  udp: true
-- name: 🇸🇬 SG 002
+- name: 🇸🇬 002
   type: ss
   server: 13.229.238.238
   port: 443
   cipher: aes-256-cfb
-  ip-version: dual
   password: amazonskr05
-  tfo: false
-  udp: true
-- name: 🇸🇬 SG 004
+- name: 🇸🇬 004
   type: vmess
   server: 183.236.51.23
   port: 53002
   alterId: 64
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: tcp
   skip-cert-verify: true
-  tfo: false
   tls: false
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇸🇬 SG 006
+- name: 🇸🇬 006
   type: ss
   server: sgp3.acxylm.top
   port: 29321
   cipher: aes-256-gcm
-  ip-version: dual
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  tfo: false
-  udp: true
-- name: 🇸🇬 SG 007
+- name: 🇸🇬 007
   type: ss
   server: sgp5.acxylm.top
   port: 20923
   cipher: aes-256-gcm
-  ip-version: dual
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  tfo: false
-  udp: true
-- name: 🇸🇬 SG 008
+- name: 🇸🇬 008
   type: ss
   server: 47.128.215.67
   port: 443
   cipher: aes-256-cfb
-  ip-version: dual
   password: amazonskr05
-  tfo: false
-  udp: true
-- name: 🇸🇬 SG 009
+- name: 🇸🇬 009
   type: ss
   server: sgp1.acxylm.top
   port: 46417
   cipher: aes-256-gcm
-  ip-version: dual
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  tfo: false
-  udp: true
-- name: 🇸🇬 SG 010
+- name: 🇸🇬 010
   type: ss
   server: 52.77.209.61
   port: 443
   cipher: aes-256-cfb
-  ip-version: dual
   password: amazonskr05
-  tfo: false
-  udp: true
-- name: 🇸🇬 SG 011
+- name: 🇸🇬 011
   type: ss
   server: 52.77.236.51
   port: 443
   cipher: aes-256-cfb
-  ip-version: dual
   password: amazonskr05
-  tfo: false
-  udp: true
-- name: 🇹🇭 TH 001
+- name: 🇹🇭 001
   type: ss
   server: th.acxylm.top
   port: 50948
   cipher: aes-256-gcm
-  ip-version: dual
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  tfo: false
-  udp: true
-- name: 🇹🇷 TR 001
+- name: 🇹🇷 001
   type: trojan
   server: ent1.imyourdaddy.top
   port: 20987
-  ip-version: dual
   password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
   skip-cert-verify: true
-  sni: ent1.imyourdaddy.top
-  tfo: false
-  udp: true
-- name: 🇹🇷 TR 002
+- name: 🇹🇷 002
   type: ss
   server: tr.acxylm.top
   port: 55691
   cipher: aes-256-gcm
-  ip-version: dual
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 001
+- name: 🇺🇸 001
   type: trojan
   server: 104.18.12.229
   port: 8443
-  ip-version: dual
   password: trojan
   skip-cert-verify: true
   sni: mav2flyng.pages.dev
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 004
+- name: 🇺🇸 004
   type: trojan
   server: free.6vczxw.xyz
   port: 41139
-  ip-version: dual
   password: 7cb80b97-119b-4704-a036-5b67fceb3aac
   skip-cert-verify: true
   sni: jp15.bluemixnet.xyz
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 005
+- name: 🇺🇸 005
   type: trojan
   server: 63.141.128.254
   port: 443
-  ip-version: dual
   password: dns68
   skip-cert-verify: true
   sni: trojan.putata.us.kg
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 006
+- name: 🇺🇸 006
   type: trojan
   server: 135.84.79.80
   port: 443
-  ip-version: dual
   password: dns68
   skip-cert-verify: true
   sni: trojan.putata.us.kg
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 007
+- name: 🇺🇸 007
   type: trojan
   server: 199.68.156.68
   port: 443
-  ip-version: dual
   password: dns68
   skip-cert-verify: true
   sni: trojan.putata.us.kg
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 008
+- name: 🇺🇸 008
   type: trojan
   server: 103.168.154.7
   port: 889
-  ip-version: dual
   password: LYaOvuNXdQGTZNonhlRUKqOJcKVihzKY
   skip-cert-verify: true
   sni: cdn.cjhh.lol
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 009
+- name: 🇺🇸 009
   type: trojan
   server: 18.179.44.127
   port: 443
-  ip-version: dual
   password: e3fee3b6-fca1-3985-99dc-da7ca03260ea
   skip-cert-verify: true
   sni: akamai.cdn.steampipe.steamcontent.com
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 011
+- name: 🇺🇸 011
   type: vmess
   server: 112.132.212.19
   port: 50004
   alterId: 64
   cipher: none
-  client-fingerprint: chrome
-  ip-version: dual
-  network: ws
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇺🇸 US 013
+- name: 🇺🇸 013
   type: vmess
   server: 104.26.5.145
   port: 2082
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: true
-  tfo: false
   tls: false
-  udp: true
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-- name: 🇺🇸 US 014
+- name: 🇺🇸 014
   type: vmess
   server: 104.19.45.11
   port: 2095
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  udp: true
   uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-- name: 🇺🇸 US 015
+- name: 🇺🇸 015
   type: vmess
   server: 183.236.51.23
   port: 40434
   alterId: 64
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: tcp
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇺🇸 US 018
+- name: 🇺🇸 018
   type: trojan
   server: ent1.imyourdaddy.top
   port: 21005
-  ip-version: dual
   password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
   skip-cert-verify: true
   sni: alibabashop.com
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 019
+- name: 🇺🇸 019
   type: ss
   server: gy.666666222.shop
   port: 20013
   cipher: chacha20-ietf-poly1305
-  ip-version: dual
   password: f337e72a-be9a-4ea1-8332-7cbc88f0006f
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 021
+- name: 🇺🇸 021
   type: vmess
   server: 183.236.48.143
   port: 41490
   alterId: 64
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
-  network: ws
   skip-cert-verify: true
-  tfo: false
   tls: false
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇺🇸 US 022
+- name: 🇺🇸 022
   type: vmess
   server: 183.236.48.143
   port: 31878
   alterId: 64
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
-  network: ws
   skip-cert-verify: true
-  tfo: false
   tls: false
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇺🇸 US 023
+- name: 🇺🇸 023
   type: vmess
   server: 183.240.253.23
   port: 52482
   alterId: 64
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
-  network: ws
   skip-cert-verify: true
-  tfo: false
   tls: false
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇺🇸 US 024
+- name: 🇺🇸 024
   type: vmess
   server: 183.240.253.20
   port: 42055
   alterId: 64
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
-  network: ws
   skip-cert-verify: true
-  tfo: false
   tls: false
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇺🇸 US 025
+- name: 🇺🇸 025
   type: vmess
   server: 183.240.253.20
   port: 37614
   alterId: 64
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
-  network: ws
   skip-cert-verify: true
-  tfo: false
   tls: false
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇺🇸 US 026
+- name: 🇺🇸 026
   type: vmess
   server: 2.189.59.4
   port: 443
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: true
-  tfo: false
   tls: true
-  udp: true
   uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-- name: 🇺🇸 US 027
+- name: 🇺🇸 027
   type: ss
   server: zhuliu.zhenxunwudi.top
   port: 38045
   cipher: aes-256-gcm
-  ip-version: dual
   password: 2MkHPhqUTQKK7N7D
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 028
+- name: 🇺🇸 028
   type: vmess
   server: 142.4.96.65
   port: 31001
   alterId: 64
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: true
-  tfo: false
   tls: true
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇺🇸 US 029
+- name: 🇺🇸 029
   type: vmess
   server: 172.64.80.1
   port: 2086
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: true
-  tfo: false
   tls: false
-  udp: true
   uuid: 3fd7b958-2161-46e1-b6fc-bd6bb2165312
-- name: 🇺🇸 US 030
+- name: 🇺🇸 030
   type: ss
   server: us1.acxylm.top
   port: 26800
   cipher: aes-256-gcm
-  ip-version: dual
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 031
+- name: 🇺🇸 031
   type: vmess
   server: 120.234.109.251
   port: 52908
   alterId: 64
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
-  network: ws
   skip-cert-verify: true
-  tfo: false
   tls: false
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇺🇸 US 032
+- name: 🇺🇸 032
   type: vmess
   server: 183.236.51.23
   port: 52112
   alterId: 64
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: tcp
   skip-cert-verify: true
-  tfo: false
   tls: false
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇺🇸 US 033
+- name: 🇺🇸 033
   type: ss
   server: alibaba1.xn--z7x16bf6t.com
   port: 25251
   cipher: aes-128-gcm
-  ip-version: dual
   password: 1de124fc-2e1b-47bf-a094-9e7494e87be6
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 034
+- name: 🇺🇸 034
   type: vmess
   server: 104.21.238.200
   port: 8443
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
-  skip-cert-verify: false
-  tfo: false
   tls: true
-  udp: true
   uuid: 9201ffaa-6ca3-4f57-8b1f-266a2f390e43
-- name: 🇺🇸 US 035
+- name: 🇺🇸 035
   type: trojan
   server: naiu-hk.05vr9nyqg5.download
   port: 13008
-  ip-version: dual
   password: ad6e2bae-d580-4117-aa37-a8c111100740
-  skip-cert-verify: false
   sni: cloudflare.node-ssl.cdn-alibaba.com
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 036
+- name: 🇺🇸 036
   type: ss
   server: us5.acxylm.top
   port: 30031
   cipher: aes-256-gcm
-  ip-version: dual
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 037
+- name: 🇺🇸 037
   type: ss
   server: us2.acxylm.top
   port: 14209
   cipher: aes-256-gcm
-  ip-version: dual
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 038
+- name: 🇺🇸 038
   type: vmess
   server: 183.236.48.158
   port: 45402
   alterId: 64
   cipher: none
-  client-fingerprint: chrome
-  ip-version: dual
   network: tcp
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇺🇸 US 039
+- name: 🇺🇸 039
   type: vmess
   server: 183.240.253.23
   port: 35601
   alterId: 64
   cipher: none
-  client-fingerprint: chrome
-  ip-version: dual
   network: tcp
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇺🇸 US 040
+- name: 🇺🇸 040
   type: vmess
   server: 183.236.48.158
   port: 59952
   alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  ip-version: dual
-  network: ws
   skip-cert-verify: false
-  tfo: false
   tls: false
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇺🇸 US 041
+- name: 🇺🇸 041
   type: trojan
   server: naiu-us.05vr9nyqg5.download
   port: 13021
-  ip-version: dual
   password: ad6e2bae-d580-4117-aa37-a8c111100740
   skip-cert-verify: false
   sni: cloudflare.node-ssl.cdn-alibaba.com
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 043
+- name: 🇺🇸 043
   type: ss
   server: sgp2.acxylm.top
   port: 48417
   cipher: aes-256-gcm
-  ip-version: dual
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 044
+- name: 🇺🇸 044
   type: ss
   server: 34.220.113.138
   port: 443
   cipher: aes-256-cfb
-  ip-version: dual
   password: amazonskr05
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 045
+- name: 🇺🇸 045
   type: ss
   server: 35.86.117.124
   port: 443
   cipher: aes-256-cfb
-  ip-version: dual
   password: amazonskr05
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 046
+- name: 🇺🇸 046
   type: ss
   server: 35.88.126.102
   port: 443
   cipher: aes-256-cfb
-  ip-version: dual
   password: amazonskr05
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 047
+- name: 🇺🇸 047
   type: ss
   server: 35.88.136.187
   port: 443
   cipher: aes-256-cfb
-  ip-version: dual
   password: amazonskr05
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 048
+- name: 🇺🇸 048
   type: vmess
   server: 183.240.253.26
   port: 39041
   alterId: 64
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
-  network: ws
   skip-cert-verify: true
-  tfo: false
   tls: false
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇺🇸 US 049
+- name: 🇺🇸 049
   type: ss
   server: 38.75.136.21
   port: 3389
   cipher: aes-256-gcm
-  ip-version: dual
   password: Y6R9pAtvxxzmGC
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 050
+- name: 🇺🇸 050
   type: ss
   server: 44.242.211.17
   port: 443
   cipher: aes-256-cfb
-  ip-version: dual
   password: amazonskr05
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 051
+- name: 🇺🇸 051
   type: ss
   server: 44.243.115.246
   port: 443
   cipher: aes-256-cfb
-  ip-version: dual
   password: amazonskr05
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 052
+- name: 🇺🇸 052
   type: ss
   server: 44.244.24.140
   port: 443
   cipher: aes-256-cfb
-  ip-version: dual
   password: amazonskr05
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 053
+- name: 🇺🇸 053
   type: ss
   server: 44.244.25.243
   port: 443
   cipher: aes-256-cfb
-  ip-version: dual
   password: amazonskr05
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 054
+- name: 🇺🇸 054
   type: ss
   server: 54.191.9.106
   port: 443
   cipher: aes-256-cfb
-  ip-version: dual
   password: amazonskr05
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 055
+- name: 🇺🇸 055
   type: trojan
   server: scm.zarelayv1.com
   port: 39874
-  ip-version: dual
   password: 2baa2d43-b564-3b1f-92c7-c6fa1ff7e0a2
   skip-cert-verify: true
   sni: us-katt.zodport.com
-  tfo: false
-  udp: true
-- name: 🇻🇳 VN 001
+- name: 🇻🇳 001
   type: ss
   server: vn.acxylm.top
   port: 40251
   cipher: aes-256-gcm
-  ip-version: dual
   password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
-  tfo: false
-  udp: true
-- name: 🇻🇳 VN 002
+- name: 🇻🇳 002
   type: trojan
   server: 160.30.21.105
   port: 443
-  ip-version: dual
   password: 94d219c9-1afc-4d42-b090-8b3794764380
   skip-cert-verify: true
-  sni: 160.30.21.105
-  tfo: false
-  udp: true
-- name: 🇭🇰 HK 020
+- name: ❓ 004
+  type: ss
+  server: 54.72.237.123
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇭🇰 020
   type: vmess
   server: v9.heduian.link
   port: '30809'
   alterId: 2
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: false
-  tfo: false
   tls: false
-  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 🇭🇰 HK 021
+- name: 🇭🇰 021
   type: ss
   server: 103.103.245.158
   port: 443
   cipher: aes-256-gcm
-  ip-version: dual
   password: ccf426f1fe78
-  tfo: false
-  udp: true
-- name: 🇭🇰 HK 022
+- name: 🇭🇰 022
   type: vmess
   server: 43.247.135.86
   port: 44601
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
-  network: ws
   skip-cert-verify: false
-  tfo: false
   tls: false
-  udp: true
   uuid: 3bff49e6-b2e2-44ce-801f-06eab407e8bd
-- name: 🇭🇰 HK 023
+- name: 🇭🇰 023
   type: trojan
   server: 202.181.103.246
   port: 443
-  ip-version: dual
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: true
   sni: www.nintendogames.net
-  tfo: false
-  udp: true
-- name: 🇭🇰 HK 024
+- name: 🇭🇰 024
   type: trojan
   server: 160.16.236.32
   port: 443
-  ip-version: dual
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
   sni: www.nintendogames.net
-  tfo: false
-  udp: true
-- name: 🇯🇵 JP 017
+- name: 🇯🇵 017
   type: ss
   server: cn01.efan8867801.xyz
   port: 8766
   cipher: rc4-md5
-  ip-version: dual
   password: efanccyun
-  tfo: false
-  udp: true
-- name: 🇯🇵 JP 018
+- name: 🇯🇵 018
   type: trojan
   server: 160.16.68.250
   port: 3160
-  ip-version: dual
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
   sni: www.nintendogames.net
-  tfo: false
-  udp: true
-- name: 🇯🇵 JP 019
+- name: 🇯🇵 019
   type: trojan
   server: 160.16.231.103
   port: 1331
-  ip-version: dual
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
   sni: www.nintendogames.net
-  tfo: false
-  udp: true
-- name: 🇯🇵 JP 020
+- name: 🇯🇵 020
   type: vmess
   server: a.lyazzz.online
   port: '41315'
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: false
-  tfo: false
   tls: false
-  udp: true
   uuid: bd64d2a3-76a1-407f-af7f-bdcdcb78d21e
-- name: 🇰🇷 KR 009
+- name: 🇰🇷 009
   type: ss
   server: 154.90.63.177
   port: 989
   cipher: aes-256-cfb
-  ip-version: dual
   password: f8f7aCzcPKbsF8p3
-  tfo: false
-  udp: true
-- name: 🇸🇬 SG 012
+- name: 🇸🇬 012
   type: trojan
   server: 160.16.130.66
   port: 2045
-  ip-version: dual
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: true
   sni: www.nintendogames.net
-  tfo: false
-  udp: true
-- name: 🇸🇬 SG 013
+- name: 🇸🇬 013
   type: trojan
   server: 160.16.117.182
   port: 4397
-  ip-version: dual
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: true
   sni: www.nintendogames.net
-  tfo: false
-  udp: true
-- name: 🇸🇬 SG 014
+- name: 🇸🇬 014
   type: vmess
   server: v39.heduian.link
   port: '30839'
   alterId: 2
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: false
-  tfo: false
   tls: false
-  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 🇺🇸 US 056
+- name: 🇺🇸 056
   type: trojan
   server: 160.16.87.174
   port: 1700
-  ip-version: dual
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
   sni: www.nintendogames.net
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 057
+- name: 🇺🇸 057
   type: trojan
   server: 160.16.117.182
   port: 3296
-  ip-version: dual
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
   sni: www.nintendogames.net
-  tfo: false
-  udp: true
-- name: 🇻🇳 VN 003
+- name: 🇻🇳 003
   type: ss
   server: 103.186.155.28
   port: 38388
   cipher: aes-256-cfb
-  ip-version: dual
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  tfo: false
-  udp: true
-- name: 🇭🇰 HK 025
+- name: 🇭🇰 025
   type: vmess
   server: 43.247.135.86
   port: '44601'
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: tcp
-  skip-cert-verify: false
-  tfo: false
   tls: false
-  udp: true
   uuid: 3bff49e6-b2e2-44ce-801f-06eab407e8bd
-- name: 🇭🇰 HK 026
+- name: 🇭🇰 026
   type: vmess
   server: 47.242.186.1
   port: '5043'
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: kcp
-  skip-cert-verify: false
-  tfo: false
   tls: false
-  udp: true
   uuid: 93c35277-ee3f-4ab2-9d9e-462b97a8795f
-- name: 🇯🇵 JP 021
+- name: 🇯🇵 021
   type: vmess
   server: 47.74.14.30
   port: '5106'
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: kcp
-  skip-cert-verify: false
-  tfo: false
   tls: false
-  udp: true
   uuid: 1cc84891-1657-4f71-97d0-287df565820e
-- name: 🇺🇸 US 058
+- name: 🇦🇺 008
+  type: trojan
+  server: 176.97.68.153
+  port: 8443
+  password: installshield
+  skip-cert-verify: true
+  sni: 176.97.68.153
+- name: 🇫🇷 012
+  type: trojan
+  server: 23.162.152.30
+  port: 8443
+  password: installshield
+  skip-cert-verify: true
+- name: 🇺🇸 058
   type: trojan
   server: auto.wgnmdgfw.com
   port: 16327
-  ip-version: dual
   password: 90f45c05-917f-3b1b-a582-899cfe4cf7b3
   skip-cert-verify: false
   sni: eplcgame.com
-  tfo: false
-  udp: true
-- name: 🇯🇵 JP 028
+- name: 🇯🇵 028
   type: trojan
   server: 153.121.45.139
   port: 1700
-  ip-version: dual
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
   sni: www.nintendogames.net
-  tfo: false
-  udp: true
-- name: 🇯🇵 JP 031
+- name: 🇯🇵 031
   type: trojan
   server: 160.16.196.59
   port: 1802
-  ip-version: dual
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
   sni: www.nintendogames.net
-  tfo: false
-  udp: true
-- name: 🇯🇵 JP 032
+- name: 🇯🇵 032
   type: trojan
   server: 160.16.72.33
   port: 1924
-  ip-version: dual
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
   sni: www.nintendogames.net
-  tfo: false
-  udp: true
-- name: 🇯🇵 JP 033
+- name: 🇯🇵 033
   type: trojan
   server: 160.16.72.33
   port: 3294
-  ip-version: dual
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
   sni: www.nintendogames.net
-  tfo: false
-  udp: true
-- name: 🇯🇵 JP 034
+- name: 🇯🇵 034
   type: trojan
   server: 160.16.63.16
   port: 447
-  ip-version: dual
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: true
   sni: www.nintendogames.net
-  tfo: false
-  udp: true
-- name: 🇯🇵 JP 035
+- name: 🇯🇵 035
   type: trojan
   server: 153.121.73.102
   port: 3294
-  ip-version: dual
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
   sni: www.nintendogames.net
-  tfo: false
-  udp: true
-- name: 🇯🇵 JP 036
+- name: 🇯🇵 036
   type: trojan
   server: 153.121.73.102
   port: 3296
-  ip-version: dual
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
   sni: www.nintendogames.net
-  tfo: false
-  udp: true
-- name: 🇧🇪 BE 001
+- name: 🇧🇪 001
   type: vmess
   server: 57.129.24.124
   port: 443
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: true
-  tfo: true
-  tls: false
-  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-- name: 🇺🇸 US 059
+- name: 🇺🇸 059
   type: vmess
   server: 104.17.148.22
   port: 443
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: true
-  tfo: true
-  tls: false
-  udp: true
   uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
-- name: 🇺🇸 US 060
+- name: 🇺🇸 060
   type: vmess
   server: lt.fxlcn.com
   port: 45276
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: tcp
   skip-cert-verify: true
-  tfo: true
-  tls: false
-  udp: true
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- name: 🇺🇸 US 061
+- name: 🇺🇸 061
   type: vmess
   server: cf.fovi.tk
   port: 443
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: true
-  tfo: true
-  tls: false
-  udp: true
   uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
-- name: 🇺🇸 US 062
+- name: 🇺🇦 001
+  type: vmess
+  server: pq-brazil1.09vpn.com
+  port: 80
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: c04c3b34-70fd-4fec-963e-c12d09f36bef
+- name: 🇺🇸 062
   type: vmess
   server: ye.fxlcn.com
   port: 45246
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: tcp
   skip-cert-verify: true
-  tfo: true
-  tls: false
-  udp: true
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- name: 🇺🇸 US 063
+- name: 🇺🇸 063
   type: vmess
   server: orvps2.horsenma.net
   port: 8443
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: true
-  tfo: true
-  tls: false
-  udp: true
   uuid: 57e595e6-ef54-4e0d-b8df-e96db9612b99
-- name: 🇺🇸 US 064
+- name: 🇺🇸 064
   type: vmess
   server: lt.fxlcn.com
   port: 45271
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: tcp
   skip-cert-verify: true
-  tfo: true
-  tls: false
-  udp: true
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- name: 🇧🇪 BE 002
+- name: 🇧🇪 002
   type: vmess
   server: 57.129.24.125
   port: 443
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: true
-  tfo: true
-  tls: false
-  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-- name: 🇩🇪 DE 007
+- name: 🇩🇪 007
   type: vmess
   server: 94.136.185.230
   port: 10534
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: tcp
   skip-cert-verify: true
-  tfo: true
-  tls: false
-  udp: true
   uuid: b01c7ef9-33ec-41f6-bfbf-77ddc4d21649
-- name: 🇺🇸 US 065
+- name: 🇺🇸 065
   type: vmess
   server: lt.fxlcn.com
   port: 45417
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: tcp
   skip-cert-verify: true
-  tfo: true
-  tls: false
-  udp: true
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- name: 🇺🇸 US 066
+- name: 🇺🇸 066
   type: vmess
   server: lt.fxlcn.com
   port: 45235
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: tcp
   skip-cert-verify: true
-  tfo: true
-  tls: false
-  udp: true
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- name: 🇺🇸 US 067
+- name: 🇺🇸 067
   type: vmess
   server: codepen.io
   port: 443
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: true
-  tfo: true
-  tls: false
-  udp: true
   uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
-- name: 🇺🇸 US 068
+- name: 🇺🇸 068
   type: vmess
   server: lt.fxlcn.com
   port: 45291
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: tcp
   skip-cert-verify: true
-  tfo: true
-  tls: false
-  udp: true
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- name: 🇺🇸 US 069
+- name: 🇺🇸 069
   type: vmess
   server: lt.fxlcn.com
   port: 45233
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: tcp
   skip-cert-verify: true
-  tfo: true
-  tls: false
-  udp: true
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- name: 🇫🇷 FR 012
+- name: 🇫🇷 013
   type: vmess
   server: 146.59.55.50
   port: 443
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: true
-  tfo: true
-  tls: false
-  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-- name: 🇧🇪 BE 003
+- name: 🇧🇪 003
   type: vmess
   server: 57.129.28.69
   port: 443
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: true
-  tfo: true
-  tls: false
-  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-- name: 🇨🇦 CA 015
+- name: 🇨🇦 015
   type: vmess
   server: 51.79.102.253
   port: 80
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: true
-  tfo: true
-  tls: false
-  udp: true
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-- name: 🇧🇪 BE 004
+- name: 🇧🇪 004
   type: vmess
   server: 57.129.25.25
   port: 443
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: true
-  tfo: true
-  tls: false
-  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-- name: 🇧🇪 BE 005
+- name: 🇧🇪 005
   type: vmess
   server: 57.129.28.65
   port: 443
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: true
-  tfo: true
-  tls: false
-  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-- name: 🇺🇸 US 070
+- name: 🇺🇸 070
   type: trojan
   server: log.bpminecraft.com
   port: 443
-  ip-version: dual
   password: vip
   skip-cert-verify: true
   sni: heihu880.pages.dev
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 071
+- name: 🇺🇸 071
   type: trojan
   server: 104.18.42.163
   port: 443
-  ip-version: dual
   password: vip
   skip-cert-verify: true
   sni: heihu880.pages.dev
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 072
+- name: 🇺🇸 072
   type: trojan
   server: www.visa.com.sg
   port: 8443
-  ip-version: dual
   password: trojan
   skip-cert-verify: true
   sni: pangpi.pages.dev
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 073
+- name: 🇺🇸 073
   type: trojan
   server: www.iplocation.net
   port: 443
-  ip-version: dual
   password: vip
   skip-cert-verify: true
   sni: heihu880.pages.dev
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 074
+- name: 🇺🇸 074
   type: trojan
   server: whatismyipaddress.com
   port: 443
-  ip-version: dual
   password: vip
   skip-cert-verify: true
   sni: heihu880.pages.dev
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 075
+- name: 🇺🇸 075
   type: trojan
   server: 172.66.44.230
   port: 8443
-  ip-version: dual
   password: 8r%3C%5B9%27l6hAO%238ZQi
   skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 076
+- name: 🇺🇸 076
   type: trojan
   server: www.gco.gov.qa
   port: 443
-  ip-version: dual
   password: vip
   skip-cert-verify: true
   sni: heihu880.pages.dev
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 077
+- name: 🇺🇸 077
   type: trojan
   server: dcf741e8.epeius-2gy.pages.dev
   port: 443
-  ip-version: dual
   password: auto
   skip-cert-verify: true
   sni: dcf741e8.epeius-2gy.pages.dev
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 078
+- name: 🇺🇸 078
   type: trojan
   server: www.visa.com.hk
   port: 8443
-  ip-version: dual
   password: vip
   skip-cert-verify: true
   sni: heihu880.pages.dev
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 079
+- name: 🇺🇸 079
   type: trojan
   server: www.zsu.gov.ua
   port: 443
-  ip-version: dual
   password: vip
   skip-cert-verify: true
   sni: heihu880.pages.dev
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 080
+- name: 🇺🇸 080
   type: trojan
   server: fbi.gov
   port: 443
-  ip-version: dual
   password: vip
   skip-cert-verify: true
   sni: heihu880.pages.dev
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 081
+- name: 🇺🇸 081
   type: trojan
   server: www.gov.se
   port: 443
-  ip-version: dual
   password: vip
   skip-cert-verify: true
   sni: heihu880.pages.dev
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 082
+- name: 🇺🇸 082
   type: trojan
   server: www.gov.ua
   port: 443
-  ip-version: dual
   password: vip
   skip-cert-verify: true
   sni: heihu880.pages.dev
-  tfo: true
-  udp: true
-- name: 🇷🇺 RU 003
+- name: 🇷🇺 003
   type: trojan
   server: 92.243.75.49
   port: 2087
-  ip-version: dual
   password: wb6368
   skip-cert-verify: true
   sni: hsdgbuys.pages.dev
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 083
+- name: 🇺🇸 083
   type: trojan
   server: iplocation.io
   port: 443
-  ip-version: dual
   password: vip
   skip-cert-verify: true
   sni: heihu880.pages.dev
-  tfo: true
-  udp: true
-- name: 🇩🇰 DK 001
+- name: 🇩🇰 001
   type: trojan
   server: www.csgo.com
   port: 443
-  ip-version: dual
   password: vip
   skip-cert-verify: true
   sni: heihu880.pages.dev
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 084
+- name: 🇺🇸 084
   type: trojan
   server: 104.25.165.81
   port: 8443
-  ip-version: dual
   password: '123456'
   skip-cert-verify: true
   sni: top-azx.pages.dev
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 085
+- name: 🇺🇸 085
   type: trojan
   server: www.ipaddress.my
   port: 443
-  ip-version: dual
   password: vip
   skip-cert-verify: true
   sni: heihu880.pages.dev
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 086
+- name: 🇺🇸 086
   type: trojan
   server: 104.25.165.83
   port: 8443
-  ip-version: dual
   password: '123456'
   skip-cert-verify: true
   sni: top-azx.pages.dev
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 087
+- name: 🇺🇸 087
   type: trojan
   server: koma-yt.pages.dev
   port: 8443
-  ip-version: dual
   password: 8r%3C%5B9%27l6hAO%238ZQi
   skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 088
+- name: 🇺🇸 088
   type: trojan
   server: time.is
   port: 2087
-  ip-version: dual
   password: vip
   skip-cert-verify: true
   sni: heihu880.pages.dev
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 089
+- name: 🇺🇸 089
   type: trojan
   server: 172.66.46.254
   port: 443
-  ip-version: dual
   password: auto
   skip-cert-verify: true
   sni: dcf741e8.epeius-2gy.pages.dev
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 090
+- name: 🇺🇸 090
   type: trojan
   server: ip.sb
   port: 8443
-  ip-version: dual
   password: trojan
   skip-cert-verify: true
   sni: fofang.pages.dev
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 091
+- name: 🇺🇸 091
   type: trojan
   server: www.udemy.com
   port: 443
-  ip-version: dual
   password: vip
   skip-cert-verify: true
   sni: heihu880.pages.dev
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 092
+- name: 🇺🇸 092
   type: trojan
   server: singapore.com
   port: 443
-  ip-version: dual
   password: vip
   skip-cert-verify: true
   sni: heihu880.pages.dev
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 093
+- name: 🇺🇸 093
   type: trojan
   server: 104.17.148.22
   port: 443
-  ip-version: dual
   password: redfree8
   skip-cert-verify: true
   sni: redfree8-p1.pooriashop.ir
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 094
+- name: 🇺🇸 094
   type: trojan
   server: www.wto.org
   port: 443
-  ip-version: dual
   password: vip
   skip-cert-verify: true
   sni: heihu880.pages.dev
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 095
+- name: 🇺🇸 095
   type: trojan
   server: 104.21.112.1
   port: 443
-  ip-version: dual
   password: f8b7cd5e-60c4-4e95-9b7b-d561ef4eed8c
   skip-cert-verify: true
   sni: yellow-cloud-d53f.vavovi6084.workers.dev
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 096
+- name: 🇺🇸 096
   type: trojan
   server: www.ipget.net
   port: 443
-  ip-version: dual
   password: vip
   skip-cert-verify: true
   sni: heihu880.pages.dev
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 097
+- name: 🇺🇸 097
   type: trojan
   server: 104.18.27.94
   port: 443
-  ip-version: dual
   password: vip
   skip-cert-verify: true
   sni: heihu880.pages.dev
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 098
+- name: 🇺🇸 098
   type: trojan
   server: www.pcmag.com
   port: 443
-  ip-version: dual
   password: vip
   skip-cert-verify: true
   sni: heihu880.pages.dev
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 099
+- name: 🇺🇸 099
   type: trojan
   server: www.udacity.com
   port: 443
-  ip-version: dual
   password: vip
   skip-cert-verify: true
   sni: heihu880.pages.dev
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 100
+- name: 🇺🇸 100
   type: trojan
   server: japan.com
   port: 443
-  ip-version: dual
   password: vip
   skip-cert-verify: true
   sni: heihu880.pages.dev
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 101
+- name: 🇺🇸 101
   type: trojan
   server: www.visa.com.tw
   port: 443
-  ip-version: dual
   password: vip
   skip-cert-verify: true
   sni: heihu880.pages.dev
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 102
+- name: 🇺🇸 102
   type: trojan
   server: 104.17.148.22
   port: 80
-  ip-version: dual
   password: redfree8
   skip-cert-verify: true
   sni: redfree8-p1.pooriashop.ir
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 103
+- name: 🇺🇸 103
   type: trojan
   server: 45.82.14.144
   port: 2025
-  ip-version: dual
   password: vpn
   skip-cert-verify: true
   sni: dns.google.com
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 104
+- name: 🇺🇸 104
   type: trojan
   server: 38.207.133.204
   port: 10002
-  ip-version: dual
   password: trojan
   skip-cert-verify: true
   sni: qingming-b08.pages.dev
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 105
+- name: 🇺🇸 105
   type: trojan
   server: 104.21.18.192
   port: 443
-  ip-version: dual
   password: rXzh%3B%3FnW1GGKB(K8
   skip-cert-verify: true
   sni: sAiKOXpUbGm.ZhkinGkuRD13.WorkErs.dEV
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 106
+- name: 🇺🇸 106
   type: trojan
   server: edtunnel-dgp.pages.dev
   port: 443
-  ip-version: dual
   password: vip
   skip-cert-verify: true
   sni: heihu880.pages.dev
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 107
+- name: 🇺🇸 107
   type: trojan
   server: 198.41.208.69
   port: 8443
-  ip-version: dual
   password: '123456'
   skip-cert-verify: true
   sni: top-azx.pages.dev
-  tfo: true
-  udp: true
-- name: 🇷🇺 RU 004
+- name: 🇷🇺 004
   type: trojan
   server: 109.120.132.80
   port: 2025
-  ip-version: dual
   password: vpn
   skip-cert-verify: true
   sni: vkvd127.mycdn.me
-  tfo: true
-  udp: true
-- name: 🇺🇸 US 108
+- name: 🇺🇸 108
   type: vmess
   server: v2ray.codefyinc.com
   port: 443
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: true
-  tfo: true
-  tls: false
-  udp: true
   uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
-- name: 🇺🇸 US 109
+- name: 🇺🇸 109
   type: vmess
   server: 193.124.24.247
   port: 6506
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: tcp
   skip-cert-verify: true
-  tfo: true
-  tls: false
-  udp: true
   uuid: c53d41d1-7d56-43ce-9994-408780c6476a
-- name: 🇻🇳 VN 004
+- name: 🇻🇳 004
   type: vmess
   server: vn4.viefast.net
   port: 80
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: true
-  tfo: true
-  tls: false
-  udp: true
   uuid: 9e76767d-4bfa-4f04-a800-42e2f63afed2
-- name: 🇺🇸 US 110
+- name: 🇺🇸 110
   type: vmess
   server: s1.db-link.in
   port: 80
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: true
-  tfo: true
-  tls: false
-  udp: true
   uuid: 003ef206-46b6-3701-ab77-b03debe7511f
-- name: 🇧🇪 BE 006
+- name: 🇧🇪 006
   type: vmess
   server: fapeng.org
   port: 443
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: true
-  tfo: true
-  tls: false
-  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-- name: 🇬🇧 GB 009
+- name: 🇬🇧 009
   type: vmess
   server: 89.31.120.192
   port: 443
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: tcp
   skip-cert-verify: true
-  tfo: true
-  tls: false
-  udp: true
   uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
-- name: 🇺🇸 US 111
+- name: 🇺🇸 111
   type: vmess
   server: 165.140.216.141
   port: 443
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: tcp
   skip-cert-verify: true
-  tfo: true
-  tls: false
-  udp: true
   uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-- name: 🇺🇸 US 112
+- name: 🇺🇸 112
   type: vmess
   server: bbbbbbbbb.222769.xyz
   port: 80
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
-  skip-cert-verify: false
-  tfo: false
   tls: false
-  udp: true
   uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7
-- name: 🇫🇷 FR 013
+- name: 🇫🇷 014
   type: vmess
   server: 51.75.161.102
   port: 443
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
-  skip-cert-verify: false
-  tfo: false
   tls: true
-  udp: true
   uuid: 1805c3ae-ed84-4e7e-8ca2-fe9acd0897b0
-- name: 🇭🇰 HK 027
+- name: ❓ 005
+  type: ss
+  server: 18.159.61.225
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇭🇰 027
   type: vmess
   server: v9.heduian.link
   port: 30809
   alterId: 2
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: false
-  tfo: false
   tls: false
-  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 🇭🇰 HK 028
+- name: 🇭🇰 028
   type: ss
   server: 156.251.179.135
   port: 443
   cipher: aes-256-gcm
-  ip-version: dual
   password: 2b5fad3874e5
-  tfo: false
-  udp: true
-- name: 🇭🇰 HK 031
+- name: 🇭🇰 031
   type: ss
   server: hk.fastsoonlink.com
   port: 40000
   cipher: chacha20-ietf-poly1305
-  ip-version: dual
   password: 9177de1a-aeff-43f1-93a6-7dd08a2fdc41
-  tfo: false
-  udp: true
-- name: 🇭🇰 HK 032
+- name: 🇭🇰 032
   type: trojan
   server: 160.16.70.180
   port: 447
-  ip-version: dual
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
   sni: www.nintendogames.net
-  tfo: false
-  udp: true
-- name: 🇭🇰 HK 033
+- name: 🇭🇰 033
   type: vmess
   server: 103.224.80.96
   port: 13193
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: http
   skip-cert-verify: false
-  tfo: false
   tls: false
-  udp: true
   uuid: 080d4d5d-6dbd-4d75-9927-aa3902c150a5
-- name: 🇯🇵 JP 038
+- name: 🇯🇵 038
   type: ss
   server: 137.220.142.139
   port: 443
   cipher: aes-256-gcm
-  ip-version: dual
   password: 8808e9f11454
-  tfo: false
-  udp: true
-- name: 🇯🇵 JP 039
+- name: 🇯🇵 039
   type: trojan
   server: 153.121.73.102
   port: 1924
-  ip-version: dual
   password: 253bc477d4e43c209f2d427272968280
   skip-cert-verify: false
   sni: www.nintendogames.net
-  tfo: false
-  udp: true
-- name: 🇯🇵 JP 041
+- name: 🇯🇵 041
   type: vmess
   server: nnertn.vxzjv.xyz
   port: 37925
   alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
-  network: ws
   skip-cert-verify: false
-  tfo: false
   tls: false
-  udp: true
   uuid: ffaf7559-d3a9-37fd-8e5b-a3abeb53d924
-- name: 🇰🇷 KR 010
+- name: 🇰🇷 010
   type: ss
   server: p141.panda001.net
   port: 4652
   cipher: aes-256-cfb
-  ip-version: dual
   password: qwerREWQ@@
-  tfo: false
-  udp: true
-- name: 🇸🇬 SG 017
+- name: 🇸🇬 017
   type: vmess
   server: v39.heduian.link
   port: 30839
   alterId: 2
   cipher: auto
-  client-fingerprint: chrome
-  ip-version: dual
   network: ws
   skip-cert-verify: false
-  tfo: false
   tls: false
-  udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 🇺🇸 US 113
+- name: 🇺🇸 113
   type: ss
   server: cn01.efan8867801.xyz
   port: 8774
   cipher: rc4-md5
-  ip-version: dual
   password: efanccyun
-  tfo: false
-  udp: true
-- name: 🇳🇱 NL 005
+- name: 🇳🇱 005
   type: trojan
   server: 5.255.102.41
   port: 17590
-  ip-version: dual
   password: 02XtoczO7V
   skip-cert-verify: false
   sni: mooshali.arshiacomplus.dpdns.org
-  tfo: false
-  udp: true
-- name: 🇸🇪 SE 001
+- name: 🇸🇪 001
   type: trojan
   server: 45.91.171.116
   port: 443
-  ip-version: dual
   password: 2ee85121-31de-4581-a492-eb00f606e392
   skip-cert-verify: false
   sni: sto.freeguard.org
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 116
+- name: 🇺🇸 116
   type: trojan
   server: toaster.isquirrel.net
   port: 443
-  ip-version: dual
   password: 3ZFDxASRw0XIcKYFlp4RSCeSwA8ap7lEAzZB7uNnO38yDYOzDe3p23CxF0OlTx6YSK3j3
   skip-cert-verify: false
-  sni: toaster.isquirrel.net
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 117
+- name: 🇺🇸 117
   type: trojan
   server: blength.appagent.net
   port: 18332
-  ip-version: dual
   password: 0C3YaEDx46ODTFTcaF8lXlZ3zeqSlF33wZagexzRjIyODa8RDwp8XSCO93ygCSYcSYABA
   skip-cert-verify: false
-  sni: blength.appagent.net
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 118
+- name: 🇺🇸 118
   type: trojan
   server: kasheet.appagent.net
   port: 18333
-  ip-version: dual
   password: B3AO9XlcTxaIATp08S29pS6luwZ8C4qDFzaCFYEDDSA5YDeKZAy3e2ZXRe73zIpxwByN7
   skip-cert-verify: false
-  sni: kasheet.appagent.net
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 119
+- name: 🇺🇸 119
   type: trojan
   server: sirens.isquirrel.net
   port: 28334
-  ip-version: dual
   password: RzFSy3laClaxnYCcO3jBEpYgDyZx2CO78IC3X46ATFD73RSSZZTx8yCOKYDOqeD8pSeRa
   skip-cert-verify: false
-  sni: sirens.isquirrel.net
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 120
+- name: 🇺🇸 120
   type: trojan
   server: seginus.appagent.net
   port: 28331
-  ip-version: dual
   password: nzSaSa3SFaCNFDCjOCg8A39e53p8l2xaTFCOu7qZx2Z8px4CK3DXeZYAwRRS3zY66laOE
   skip-cert-verify: false
-  sni: seginus.appagent.net
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 121
+- name: 🇺🇸 121
   type: trojan
   server: delight.appagent.net
   port: 443
-  ip-version: dual
   password: D0AASSpCKFjOBSwlwqylnOep8BDlgN3e3RY9S3Op2RaZZ58gID8yY3ej56CSuYacZz3EA
   skip-cert-verify: false
-  sni: delight.appagent.net
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 122
+- name: 🇺🇸 122
   type: trojan
   server: connect.appagent.net
   port: 28333
-  ip-version: dual
   password: eYaw9xlNDu4695IF3CyY2leZOTnY8ZSOD3Xa3DClz0xqZy7Z3eaBFaTKOSwCSAOyEap4D
   skip-cert-verify: false
-  sni: connect.appagent.net
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 123
+- name: 🇺🇸 123
   type: trojan
   server: mintaka.appagent.net
   port: 443
-  ip-version: dual
   password: 4xS33pu88RaTF37ZxRjzAZc9zxe8OaYBX9CSO3p5SSxquFOFEySnDlCleCFA2DN3gaeDl
   skip-cert-verify: false
-  sni: mintaka.appagent.net
-  tfo: false
-  udp: true
-- name: 🇺🇸 US 124
+- name: 🇺🇸 124
   type: trojan
   server: hanger.appagent.net
   port: 28331
-  ip-version: dual
   password: Z3aK0aZqwyNcz7S3l3ncNCODYxNFnA8SCOOSOZ3y3AX8xA4a0RZ3gxn39aqYAaBOyzR43acKOCzSX3S
   skip-cert-verify: false
-  sni: hanger.appagent.net
-  tfo: false
-  udp: true
