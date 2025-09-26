@@ -1,4 +1,4 @@
-name: Auto Process and Test Proxies
+name: Auto Process and Test Proxies with LiteSpeedTest
 
 on:
   schedule:
@@ -22,15 +22,15 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests pyyaml
 
-      - name: Run proxy processing script
+      - name: Run proxy processing script (collect URLs and proxies)
         run: python proxy.py
 
-      - name: Set up Go (for LiteSpeedTest, optional advanced testing)
+      - name: Set up Go (for LiteSpeedTest)
         uses: actions/setup-go@v5
         with:
           go-version: '1.21'
 
-      - name: Install LiteSpeedTest (optional)
+      - name: Install LiteSpeedTest
         run: |
           git clone https://github.com/xxf098/LiteSpeedTest.git
           cd LiteSpeedTest
@@ -42,7 +42,7 @@ jobs:
           mv lite ../
           cd ..
 
-      - name: Advanced test with LiteSpeedTest (optional)
+      - name: Test proxies with LiteSpeedTest
         run: |
           # 创建 LiteSpeedTest 配置文件
           cat > config.json << EOF
@@ -94,21 +94,8 @@ except Exception as e:
             fi
           done < node_urls.txt
 
-          # 将 lite_valid_proxies.json 转换为 lite_valid_proxies.yaml
-          python3 -c "
-import json
-import yaml
-try:
-    with open('lite_valid_proxies.json', 'r') as f:
-        proxies = json.load(f)
-    if proxies:
-        yaml.dump({'proxies': proxies}, open('lite_valid_proxies.yaml', 'w'), default_flow_style=False, allow_unicode=True, sort_keys=False)
-        print(f'Generated lite_valid_proxies.yaml with {len(proxies)} proxies')
-    else:
-        print('No valid proxies found from LiteSpeedTest, skipping lite_valid_proxies.yaml generation')
-except Exception as e:
-    print(f'Error generating lite_valid_proxies.yaml: {e}')
-          "
+      - name: Process valid proxies (country query and renaming)
+        run: python proxy.py
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
@@ -116,11 +103,10 @@ except Exception as e:
           name: proxy-files
           path: |
             valid_proxies.yaml
-            lite_valid_proxies.yaml
+            lite_valid_proxies.json
             node_urls.txt
             test_result.json
-            lite_valid_proxies.json
 
       - name: Notify on failure
         if: failure()
-        run: echo "Proxy processing failed - check logs for details."
+        run: echo "Proxy processing or testing failed - check logs for details."
