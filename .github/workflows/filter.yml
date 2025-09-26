@@ -16,7 +16,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y wget python3 python3-pip
-          pip3 install pyyaml  # 用于处理 YAML 文件
+          pip3 install pyyaml
 
       - name: Download LiteSpeedTest binary
         run: |
@@ -25,17 +25,33 @@ jobs:
           chmod +x lite-linux-amd64-v3-v0.15.0
           sudo mv lite-linux-amd64-v3-v0.15.0 /usr/local/bin/lite
 
-      - name: Convert YAML to LiteSpeedTest input
+      - name: Validate and Convert YAML to LiteSpeedTest input
         run: |
           python3 -c "
           import yaml, base64
-          with open('combined_proxies.yaml', 'r') as f:
+          with open('combined_proxies.yaml', 'r', encoding='utf-8') as f:
               data = yaml.safe_load(f)
           proxies = data.get('proxies', [])
-          clash_yaml = yaml.dump({'proxies': proxies}, allow_unicode=True)
-          with open('proxies.b64', 'w') as f:
-              f.write(base64.b64encode(clash_yaml.encode('utf-8')).decode('utf-8'))
+          if not proxies:
+              print('No proxies found!')
+              exit(1)
+          # 添加最小 proxy-groups，使其成为完整 Clash 订阅
+          full_config = {
+              'proxies': proxies,
+              'proxy-groups': [{'name': 'select', 'type': 'select', 'proxies': [p['name'] for p in proxies]}]
+          }
+          clash_yaml = yaml.dump(full_config, allow_unicode=True, default_flow_style=False)
+          b64_encoded = base64.b64encode(clash_yaml.encode('utf-8')).decode('utf-8')
+          with open('proxies.b64', 'w', encoding='utf-8') as f:
+              f.write(b64_encoded)
+          print(f'Generated Base64 for {len(proxies)} proxies')
           "
+
+      - name: Debug input Base64
+        run: |
+          echo "Sample of proxies.b64 (first 200 chars):"
+          head -c 200 proxies.b64
+          base64 -d proxies.b64 > /dev/null && echo "Valid Base64 input" || echo "Invalid Base64 input"
 
       - name: Create LiteSpeedTest config
         run: |
@@ -43,69 +59,60 @@ jobs:
           {
             "group": "screening",
             "speedtestMode": "pingonly",
-            "pingMethod": "googleping",
+            "pingMethod": "tcpping",
             "sortMethod": "rspeed",
-            "concurrency": 10,
+            "concurrency": 3,  // 进一步降低并发
             "testMode": 2,
-            "timeout": 10,
+            "timeout": 20,     // 增加超时
             "language": "en",
             "unique": true,
-            "outputMode": 1
+            "outputMode": 0    // 0: base64 输出
           }
           EOF
 
       - name: Test proxies with LiteSpeedTest
         run: |
-          ./lite --config config.json --test file://proxies.b64 > valid_proxies.b64 2> test_error.log || echo "Test failed, check test_error.log"
+          # 直接传递 Base64 字符串作为订阅输入
+          b64_input=\$(cat proxies.b64)
+          ./lite --config config.json --test "\$b64_input" > valid_proxies.b64 2> test_error.log || echo "Test failed, check test_error.log"
 
-      - name: Debug Base64 output
+      - name: Debug output
         run: |
-          echo "Contents of valid_proxies.b64:"
-          cat valid_proxies.b64
-          echo "Checking if valid_proxies.b64 is valid Base64:"
-          base64 -d valid_proxies.b64 > /dev/null && echo "Valid Base64" || echo "Invalid Base64"
+          echo "Contents of test_error.log:"
+          cat test_error.log
+          echo "Contents of valid_proxies.b64 (first 500 chars):"
+          head -c 500 valid_proxies.b64
 
-      - name: Convert output to YAML
+      - name: Convert output to YAML (if valid)
         run: |
           python3 -c "
           import yaml, base64
           try:
               with open('valid_proxies.b64', 'r', encoding='utf-8') as f:
                   b64_data = f.read().strip()
-              # Decode Base64, handling potential errors
-              try:
-                  decoded_data = base64.b64decode(b64_data, validate=True)
-              except Exception as e:
-                  print(f'Base64 decode error: {e}')
+              if not b64_data or 'error' in b64_data.lower():
+                  print('Output invalid or empty')
                   exit(1)
-              # Try decoding as UTF-8, fallback to latin1 if needed
-              try:
-                  yaml_data = decoded_data.decode('utf-8')
-              except UnicodeDecodeError:
-                  print('UTF-8 decode failed, trying latin1')
-                  yaml_data = decoded_data.decode('latin1')
-              # Validate YAML
-              try:
-                  yaml.safe_load(yaml_data)
-              except yaml.YAMLError as e:
-                  print(f'YAML parse error: {e}')
+              decoded_data = base64.b64decode(b64_data, validate=True)
+              yaml_data = decoded_data.decode('utf-8-sig')
+              parsed = yaml.safe_load(yaml_data)
+              if not parsed or 'proxies' not in parsed:
+                  print('Invalid YAML structure')
                   exit(1)
               with open('valid_proxies.yaml', 'w', encoding='utf-8') as f:
-                  f.write(yaml_data)
+                  yaml.dump(parsed, f, allow_unicode=True, default_flow_style=False)
+              print('Successfully converted to valid_proxies.yaml')
           except Exception as e:
-              print(f'Error processing file: {e}')
+              print(f'Conversion error: {e}')
               exit(1)
           "
 
-      - name: Check output
+      - name: Check and Commit
         run: |
           if [ ! -s valid_proxies.yaml ]; then
-            echo "No valid proxies found!"
+            echo "No valid proxies! Check logs."
             exit 1
           fi
-          echo "Valid proxies written to valid_proxies.yaml"
-
-      - name: Commit valid proxies back to repo
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update valid proxy nodes - $(date +'%Y-%m-%d %H:%M')"
