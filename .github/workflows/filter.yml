@@ -1,4 +1,4 @@
-name: Auto Test Proxies with LiteSpeedTest
+name: Auto Process and Test Proxies
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:  # 支持手动触发
 
 jobs:
-  test:
+  process:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -22,15 +22,15 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests pyyaml
 
-      - name: Run proxy merge script
+      - name: Run proxy processing script
         run: python proxy.py
 
-      - name: Set up Go
+      - name: Set up Go (for LiteSpeedTest, optional advanced testing)
         uses: actions/setup-go@v5
         with:
           go-version: '1.21'
 
-      - name: Install LiteSpeedTest
+      - name: Install LiteSpeedTest (optional)
         run: |
           git clone https://github.com/xxf098/LiteSpeedTest.git
           cd LiteSpeedTest
@@ -42,7 +42,7 @@ jobs:
           mv lite ../
           cd ..
 
-      - name: Test proxies with LiteSpeedTest
+      - name: Advanced test with LiteSpeedTest (optional)
         run: |
           # 创建 LiteSpeedTest 配置文件
           cat > config.json << EOF
@@ -61,7 +61,7 @@ jobs:
           EOF
 
           # 初始化有效代理 JSON 文件
-          echo '[]' > valid_proxies.json
+          echo '[]' > lite_valid_proxies.json
 
           # 读取 node_urls.txt，循环测试每个 URL
           while IFS= read -r url; do
@@ -72,13 +72,12 @@ jobs:
               # 解析 LiteSpeedTest 输出，提取有效 proxies
               python3 -c "
 import json
-import yaml
 try:
     with open('test_result.json', 'r') as f:
         result = json.load(f)
     valid_proxies = result.get('proxies', []) if isinstance(result, dict) else []
     if valid_proxies:
-        with open('valid_proxies.json', 'r+') as f:
+        with open('lite_valid_proxies.json', 'r+') as f:
             all_valid = json.load(f)
             all_valid.extend(valid_proxies)
             f.seek(0)
@@ -95,20 +94,20 @@ except Exception as e:
             fi
           done < node_urls.txt
 
-          # 将 valid_proxies.json 转换为 valid_proxies.yaml
+          # 将 lite_valid_proxies.json 转换为 lite_valid_proxies.yaml
           python3 -c "
 import json
 import yaml
 try:
-    with open('valid_proxies.json', 'r') as f:
+    with open('lite_valid_proxies.json', 'r') as f:
         proxies = json.load(f)
     if proxies:
-        yaml.dump({'proxies': proxies}, open('valid_proxies.yaml', 'w'), default_flow_style=False, allow_unicode=True, sort_keys=False)
-        print(f'Generated valid_proxies.yaml with {len(proxies)} proxies')
+        yaml.dump({'proxies': proxies}, open('lite_valid_proxies.yaml', 'w'), default_flow_style=False, allow_unicode=True, sort_keys=False)
+        print(f'Generated lite_valid_proxies.yaml with {len(proxies)} proxies')
     else:
-        print('No valid proxies found, skipping valid_proxies.yaml generation')
+        print('No valid proxies found from LiteSpeedTest, skipping lite_valid_proxies.yaml generation')
 except Exception as e:
-    print(f'Error generating valid_proxies.yaml: {e}')
+    print(f'Error generating lite_valid_proxies.yaml: {e}')
           "
 
       - name: Upload artifacts
@@ -116,12 +115,12 @@ except Exception as e:
         with:
           name: proxy-files
           path: |
-            combined_proxies.yaml
             valid_proxies.yaml
+            lite_valid_proxies.yaml
             node_urls.txt
             test_result.json
-            valid_proxies.json
+            lite_valid_proxies.json
 
       - name: Notify on failure
         if: failure()
-        run: echo "Proxy test failed - check logs for details."
+        run: echo "Proxy processing failed - check logs for details."
