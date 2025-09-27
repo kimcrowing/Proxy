@@ -134,7 +134,7 @@ if os.path.exists('lite_valid_proxies.json'):
         '美国': ('🇺🇸', 'US'), '加拿大': ('🇨🇦', 'CA'), '英国': ('🇬🇧', 'GB'), '澳大利亚': ('🇦🇺', 'AU'),
         '德国': ('🇩🇪', 'DE'), '法国': ('🇫🇷', 'FR'), '意大利': ('🇮🇹', 'IT'), '西班牙': ('🇪🇸', 'ES'),
         '荷兰': ('🇳🇱', 'NL'), '瑞典': ('🇸🇪', 'SE'), '挪威': ('🇳🇴', 'NO'), '丹麦': ('🇩🇰', 'DK'),
-        '芬兰': ('🇫����', 'FI'), '瑞士': ('🇨🇭', 'CH'), '比利时': ('🇧🇪', 'BE'), '奥地利': ('🇦🇹', 'AT'),
+        '芬兰': ('🇫🇮', 'FI'), '瑞士': ('🇨🇭', 'CH'), '比利时': ('🇧🇪', 'BE'), '奥地利': ('🇦🇹', 'AT'),
         '爱尔兰': ('🇮🇪', 'IE'), '新西兰': ('🇳🇿', 'NZ'), '南非': ('🇿🇦', 'ZA'), '印度': ('🇮🇳', 'IN'),
         '中国': ('🇨🇳', 'CN'), '中国大陆': ('🇨🇳', 'CN'), '日本': ('🇯🇵', 'JP'), '韩国': ('🇰🇷', 'KR'),
         '新加坡': ('🇸🇬', 'SG'), '马来西亚': ('🇲🇾', 'MY'), '泰国': ('🇹🇭', 'TH'), '越南': ('🇻🇳', 'VN'),
@@ -202,37 +202,39 @@ if os.path.exists('lite_valid_proxies.json'):
     for proxy in filtered_proxies:  # 使用过滤后的 proxies
         name = proxy.get('name', '')
         server = proxy.get('server', '')
-        matched = False
-        flag = unknown_country[0]
-        country_key = '未知'
-        for country, (f, code) in country_flags.items():
-            if country in name or code in name:
-                matched = True
-                flag = f
-                country_key = country
-                break
-        if not matched:
-            servers_to_query.add(server)
+        # 收集所有 server 用于批量 IP 查询
+        servers_to_query.add(server)
         proxy_info.append({
             'proxy': proxy,
-            'flag': flag,
-            'country_key': country_key,
-            'matched': matched,
+            'name': name,
             'server': server
         })
 
-    if servers_to_query:
-        server_countries = get_country_from_ip(list(servers_to_query))
-        for info in proxy_info:
-            if not info['matched']:
-                flag, country_key = server_countries.get(info['server'], (unknown_country[0], '未知'))
-                info['flag'] = flag
-                info['country_key'] = country_key
+    # 批量查询 IP 国家
+    server_countries = get_country_from_ip(list(servers_to_query))
 
     for info in proxy_info:
         proxy = info['proxy']
-        flag = info['flag']
-        country_key = info['country_key']
+        name = info['name']
+        server = info['server']
+        # 优先 IP 查询
+        server_country = server_countries.get(server, None)
+        if server_country and server_country[1] != '未知':
+            flag, country_key = server_country
+        else:
+            # fallback 到关键词匹配
+            matched = False
+            flag = unknown_country[0]
+            country_key = '未知'
+            for country, (f, code) in country_flags.items():
+                if country in name or code in name:
+                    matched = True
+                    flag = f
+                    country_key = country
+                    break
+            if not matched:
+                flag, country_key = unknown_country
+
         if country_key not in name_counter:
             name_counter[country_key] = 1
         else:
