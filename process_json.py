@@ -10,19 +10,16 @@ try:
         result = json.load(f)
     print("调试 JSON (过滤后):", json.dumps(result, indent=2)[:1000])  # 截断调试
     
-    # 从 debug_raw.txt (raw_output.txt 全文) 提取 Remarks
+    # 从 debug_raw.txt 提取 Remarks
     remarks_map = {}
     if os.path.exists("debug_raw.txt"):
         with open("debug_raw.txt", "r") as f:
             content = f.read()
         # Regex: 时间 ID 备注 recv/elapse: 值
-        matches = re.findall(r'^\S+ (\d+) ([^(]+?recv|elapse):', content, re.MULTILINE)
-        for iid_str, _ in matches:
+        matches = re.findall(r'^\S+ (\d+) ([^(]+?)( recv| elapse):', content, re.MULTILINE)
+        for iid_str, remark, _ in matches:
             iid = int(iid_str)
-            # 完整备注：从行中取 ID 后部分直到 recv/elapse
-            line_match = re.search(rf'^\S+ {iid} ([^ ]+?)( recv| elapse):', content, re.MULTILINE)
-            if line_match:
-                remarks_map[iid] = line_match.group(1).strip()
+            remarks_map[iid] = remark.strip()
         print(f"提取 {len(remarks_map)} 个 Remarks (e.g., ID 17: {remarks_map.get(17, 'N/A')})")
 
     # 聚合事件为 nodes
@@ -42,12 +39,19 @@ try:
                 elif info == 'gotspeed' and 'maxspeed' in event and event['maxspeed'] != 'N/A':
                     node_map[iid]['Speed'] = event['maxspeed']
         
-        valid_nodes = [node_map[iid] for iid in node_map if node_map[iid]['IsOk']]
-        print(f"聚合 {len(valid_nodes)} 个有效节点 (e.g., {valid_nodes[0]['Remarks'] if valid_nodes else 'None'})")
+        all_nodes = [node_map[iid] for iid in node_map]
+        valid_nodes = [node for node in all_nodes if node['IsOk'] and (node.get('Speed', '0') >= '1.0MB' or '1.0MB' in str(node.get('Speed', '')))]
+        print(f"=== 筛选符合条件的节点 ({len(valid_nodes)} 个) ===")
+        for node in valid_nodes:
+            speed_str = node.get('Speed', 'N/A')
+            latency_str = node.get('Latency', 'N/A')
+            print(f"节点: {node['Remarks']} | 延迟: {latency_str}ms | 最大速度: {speed_str}")
+        print("======================================")
+        print(f"聚合 {len(valid_nodes)} 个有效节点")
     else:
         valid_nodes = []
 
-    # 映射到 Clash 代理格式
+    # 整合处理：映射到 Clash 代理格式，追加到 lite_valid_proxies.json
     valid_proxies = []
     for node in valid_nodes:
         proxy = {
@@ -71,7 +75,9 @@ try:
             f.seek(0)
             f.truncate()
             json.dump(all_valid, f, indent=2)
-        print(f"从 {url} 添加了 {len(valid_proxies)} 个有效代理 (e.g., {valid_proxies[0]['name']})")
+        print(f"=== 整合处理完成，添加 {len(valid_proxies)} 个代理到 lite_valid_proxies.json ===")
+        print(f"示例: {valid_proxies[0]['name']} | {valid_proxies[0]['max_speed']}")
+        print("======================================")
     else:
         print(f"未找到 {url} 的有效代理")
 except Exception as e:
