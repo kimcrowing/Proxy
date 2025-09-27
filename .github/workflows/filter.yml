@@ -33,7 +33,6 @@ jobs:
           gunzip lite.gz || { echo "解压失败"; exit 1; }
           echo "解压后的文件:"
           ls -l
-          # 检查 'lite' 文件是否存在
           if [ -f "lite" ]; then
             chmod +x lite
             ./lite -v || { echo "二进制兼容性检查失败"; ls -l; exit 1; }
@@ -86,7 +85,7 @@ try:
         print(f"未找到 {url} 的有效代理")
 except Exception as e:
     print(f"处理 {url} 时出错: {e}")
-'
+              '
               sleep 5
             fi
           done < node_urls.txt
