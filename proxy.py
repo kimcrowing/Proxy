@@ -29,7 +29,7 @@ def get_latest_hongkongclash_yaml():
             if month == 0:
                 month = 12
                 year -= 1
-            dir_path = f"Uploads/{year}/{month:02d}"
+            dir_path = f"uploads/{year}/{month:02d}"
             api_url = f"https://api.github.com/repos/hongkongclash/hongkongclash.github.io/contents/{dir_path}?ref=main"
             response = requests.get(api_url)
             response.raise_for_status()
@@ -95,12 +95,12 @@ def valid_proxy(proxy):
         'ss': ['server', 'port', 'cipher', 'password'],
         'trojan': ['server', 'port', 'password'],
         'vmess': ['server', 'port', 'uuid', 'alterId', 'cipher'],
-        # 可选：支持 Hysteria2 和 Vless
-        # 'hysteria2': ['server', 'port', 'password'],
-        # 'vless': ['server', 'port', 'uuid']
+        'hysteria2': ['server', 'port', 'password'],  # 支持 Hysteria2
+        'vless': ['server', 'port', 'uuid']  # 支持 Vless (简化字段)
     }
     
     if proxy_type not in required_fields:
+        print(f"Unsupported proxy type: {proxy_type}")
         return False
     for field in required_fields[proxy_type]:
         if field not in proxy or proxy[field] is None:
@@ -167,7 +167,7 @@ if os.path.exists('lite_valid_proxies.json'):
     print(f"Total Valid Proxies: {len(all_valid_proxies)}")
     print("======================================")
 
-    # 国家与国旗映射
+    # 国家与国旗映射 (简化版，完整列表如之前)
     country_flags = {
         '美国': ('🇺🇸', 'US'), '加拿大': ('🇨🇦', 'CA'), '英国': ('🇬🇧', 'GB'), '澳大利亚': ('🇦🇺', 'AU'),
         '德国': ('🇩🇪', 'DE'), '法国': ('🇫🇷', 'FR'), '意大利': ('🇮🇹', 'IT'), '西班牙': ('🇪🇸', 'ES'),
@@ -185,7 +185,8 @@ if os.path.exists('lite_valid_proxies.json'):
     }
     unknown_country = ('❓', 'UNK')
 
-    # 查询 IP/域名国家
+    ip_cache = {}
+
     def get_country_from_ip(servers):
         result = {}
         to_query = [server for server in servers if server not in ip_cache]
@@ -230,7 +231,6 @@ if os.path.exists('lite_valid_proxies.json'):
         return result
 
     # 合并有效代理
-    ip_cache = {}
     merged_proxies = []
     name_counter = {}
     seen_proxies = set()
@@ -311,13 +311,12 @@ if os.path.exists('lite_valid_proxies.json'):
                 additional_fields['client-fingerprint'] = proxy['client-fingerprint']
             if 'skip-cert-verify' in proxy:
                 additional_fields['skip-cert-verify'] = proxy['skip-cert-verify']
-        # 可选：支持 Hysteria2 和 Vless
-        # elif proxy['type'] == 'hysteria2':
-        #     if 'password' in proxy:
-        #         additional_fields['password'] = proxy['password']
-        # elif proxy['type'] == 'vless':
-        #     if 'uuid' in proxy:
-        #         additional_fields['uuid'] = proxy['uuid']
+        elif proxy['type'] == 'hysteria2':
+            if 'password' in proxy:
+                additional_fields['password'] = proxy['password']
+        elif proxy['type'] == 'vless':
+            if 'uuid' in proxy:
+                additional_fields['uuid'] = proxy['uuid']
         
         sorted_additional = sorted(additional_fields.items())
         for key, value in sorted_additional:
