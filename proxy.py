@@ -2,7 +2,7 @@ import requests
 import yaml
 import re
 from datetime import datetime
-import collections  # 用于 OrderedDict 以控制字段顺序
+import collections
 import time
 import json
 import os
@@ -21,45 +21,50 @@ def get_latest_hongkongclash_yaml():
     dir_path = f"uploads/{year}/{month:02d}"
     api_url = f"https://api.github.com/repos/hongkongclash/hongkongclash.github.io/contents/{dir_path}?ref=main"
     
-    response = requests.get(api_url)
-    if response.status_code != 200:
-        print(f"No files found in {dir_path}, trying previous month...")
-        month -= 1
-        if month == 0:
-            month = 12
-            year -= 1
-        dir_path = f"uploads/{year}/{month:02d}"
-        api_url = f"https://api.github.com/repos/hongkongclash/hongkongclash.github.io/contents/{dir_path}?ref=main"
+    try:
         response = requests.get(api_url)
-    
-    files = [f for f in response.json() if isinstance(f, dict) and f['name'].endswith('.yaml')]
-    if not files:
-        print("No YAML files found in the repository")
+        if response.status_code != 200:
+            print(f"No files found in {dir_path}, trying previous month...")
+            month -= 1
+            if month == 0:
+                month = 12
+                year -= 1
+            dir_path = f"uploads/{year}/{month:02d}"
+            api_url = f"https://api.github.com/repos/hongkongclash/hongkongclash.github.io/contents/{dir_path}?ref=main"
+            response = requests.get(api_url)
+            response.raise_for_status()
+        
+        files = [f for f in response.json() if isinstance(f, dict) and f['name'].endswith('.yaml')]
+        if not files:
+            print("No YAML files found in the repository")
+            return []
+        
+        # 提取文件名中的日期（格式：X-YYYYMMDD.yaml）
+        date_pattern = re.compile(r'^\d+-(\d{8})\.yaml$')
+        dates = []
+        for f in files:
+            match = date_pattern.match(f['name'])
+            if match:
+                dates.append(match.group(1))
+        
+        if not dates:
+            print("No valid date-format YAML files found")
+            return []
+        
+        # 获取最新日期
+        latest_date = max(dates)
+        # 收集该日期的所有 YAML 文件
+        latest_files = [f for f in files if f['name'].endswith(f'{latest_date}.yaml')]
+        latest_files = sorted(latest_files, key=lambda x: x['name'])  # 按文件名排序
+        raw_urls = [f"https://raw.githubusercontent.com/hongkongclash/hongkongclash.github.io/main/{dir_path}/{f['name']}" for f in latest_files]
+        
+        print(f"Latest hongkongclash YAML files for {latest_date}:")
+        for i, url in enumerate(raw_urls, 1):
+            print(f"  File {i}: {url}")
+        return raw_urls
+    except requests.RequestException as e:
+        print(f"Error fetching hongkongclash files: {e}")
         return []
-    
-    # 提取文件名中的日期（格式：X-YYYYMMDD.yaml）
-    date_pattern = re.compile(r'^\d+-(\d{8})\.yaml$')
-    dates = []
-    for f in files:
-        match = date_pattern.match(f['name'])
-        if match:
-            dates.append(match.group(1))
-    
-    if not dates:
-        print("No valid date-format YAML files found")
-        return []
-    
-    # 获取最新日期
-    latest_date = max(dates)
-    # 收集该日期的所有 YAML 文件
-    latest_files = [f for f in files if f['name'].endswith(f'{latest_date}.yaml')]
-    latest_files = sorted(latest_files, key=lambda x: x['name'])  # 按文件名排序
-    raw_urls = [f"https://raw.githubusercontent.com/hongkongclash/hongkongclash.github.io/main/{dir_path}/{f['name']}" for f in latest_files]
-    
-    print(f"Latest hongkongclash YAML files for {latest_date}:")
-    for i, url in enumerate(raw_urls, 1):
-        print(f"  File {i}: {url}")
-    return raw_urls
 
 # 获取并打印所有订阅链接
 print("=== Acquired Clash Subscription URLs ===")
@@ -135,14 +140,21 @@ for url in urls:
 
 print(f"Total Proxies Collected (before LiteSpeedTest): {len(all_proxies)}")
 
-# 以下部分将在 GitHub Actions 中处理 LiteSpeedTest 结果
-# 如果运行本地测试，跳过国家查询和重命名（假设有效节点由 Actions 提供）
+# 确保生成空的 valid_proxies.yaml，即使没有有效代理
+with open('valid_proxies.yaml', 'w', encoding='utf-8') as outfile:
+    yaml.dump({'proxies': []}, outfile, default_flow_style=False, allow_unicode=True, sort_keys=False)
+
+# 处理 LiteSpeedTest 结果
 if os.path.exists('lite_valid_proxies.json'):
     print("\n=== Processing LiteSpeedTest Valid Proxies ===")
     
     # 读取 LiteSpeedTest 的有效节点
-    with open('lite_valid_proxies.json', 'r') as f:
-        all_valid_proxies = json.load(f)
+    try:
+        with open('lite_valid_proxies.json', 'r') as f:
+            all_valid_proxies = json.load(f)
+    except json.JSONDecodeError as e:
+        print(f"Error decoding lite_valid_proxies.json: {e}")
+        all_valid_proxies = []
     
     # 打印有效节点
     print("\n=== Valid Proxies from LiteSpeedTest ===")
@@ -261,7 +273,7 @@ if os.path.exists('lite_valid_proxies.json'):
         '乌拉圭': ('🇺🇾', 'UY'),
         '委内瑞拉': ('🇻🇪', 'VE'),
     }
-    unknown_country = ('❓', 'UNK')  # 用于不匹配的代理
+    unknown_country = ('❓', 'UNK')
 
     # 缓存 IP/域名查询结果
     ip_cache = {}
@@ -274,7 +286,7 @@ if os.path.exists('lite_valid_proxies.json'):
         if not to_query:
             return {server: ip_cache[server] for server in servers}
 
-        for i in range(0, len(to_query), 100):  # ip-api.com 批量限制 100 个
+        for i in range(0, len(to_query), 100):
             batch = to_query[i:i+100]
             batch_query = [{"query": server} for server in batch]
             for attempt in range(3):
@@ -315,12 +327,12 @@ if os.path.exists('lite_valid_proxies.json'):
 
     # 合并有效代理服务器，并进行去重、重命名
     merged_proxies = []
-    name_counter = {}  # 用于记录每个国家的代理数量
-    seen_proxies = set()  # 用于去重（基于 server, port, type）
+    name_counter = {}
+    seen_proxies = set()
 
     # 收集所有需要查询的 server（仅对 name 未匹配的）
     servers_to_query = set()
-    proxy_info = []  # 存储有效代理及其匹配状态
+    proxy_info = []
 
     for proxy in all_valid_proxies:
         name = proxy.get('name', '')
@@ -420,4 +432,4 @@ if os.path.exists('lite_valid_proxies.json'):
 
     print(f"Valid proxy configurations have been successfully processed and saved to valid_proxies.yaml ({len(merged_proxies)} proxies).")
 else:
-    print("No lite_valid_proxies.json found; skipping country query and YAML generation.")
+    print("No lite_valid_proxies.json found; generating empty valid_proxies.yaml.")
