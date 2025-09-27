@@ -33,11 +33,16 @@ jobs:
           gunzip lite.gz || { echo "Decompress failed"; exit 1; }
           echo "Files after gunzip:"
           ls -l
-          # Assume decompressed file is named 'lite' (adjust if different)
-          mv lite-linux-amd64-v0.15.0 lite 2>/dev/null || mv lite lite 2>/dev/null || { echo "No expected binary found (expected lite-linux-amd64-v0.15.0 or lite)"; ls -l; exit 1; }
-          chmod +x lite
-          ./lite --version || { echo "Binary compatibility check failed"; ls -l; exit 1; }
-          echo "LiteSpeedTest binary prepared successfully"
+          # Check if 'lite' exists
+          if [ -f "lite" ]; then
+            chmod +x lite
+            ./lite --version || { echo "Binary compatibility check failed"; ls -l; exit 1; }
+            echo "LiteSpeedTest binary prepared successfully"
+          else
+            echo "Expected binary 'lite' not found"
+            ls -l
+            exit 1
+          fi
 
       - name: Test proxies with LiteSpeedTest
         run: |
