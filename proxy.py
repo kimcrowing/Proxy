@@ -74,6 +74,34 @@ print(f"Node URLs saved to node_urls.txt: {len(urls)} links")
 with open('valid_proxies.yaml', 'w', encoding='utf-8') as outfile:
     yaml.dump({'proxies': []}, outfile, default_flow_style=False, allow_unicode=True, sort_keys=False)
 
+# 定义代理筛选函数
+def valid_proxy(proxy):
+    name = proxy.get('name', '')
+    proxy_type = proxy.get('type', '').lower()
+    banned_keywords = ['File']
+    banned_types = ['http']
+    
+    required_fields = {
+        'ss': ['server', 'port', 'cipher', 'password'],
+        'trojan': ['server', 'port', 'password'],
+        'vmess': ['server', 'port', 'uuid', 'alterId', 'cipher'],
+        'hysteria2': ['server', 'port', 'password'],  # 支持 Hysteria2
+        'vless': ['server', 'port', 'uuid']  # 支持 Vless (简化字段)
+    }
+    
+    if proxy_type not in required_fields:
+        print(f"Unsupported proxy type: {proxy_type}")
+        return False
+    for field in required_fields[proxy_type]:
+        if field not in proxy or proxy[field] is None or proxy[field] == '':
+            print(f"Missing required field '{field}' for {proxy_type} proxy: {name}")
+            return False
+    
+    return (
+        not any(keyword in name for keyword in banned_keywords) and
+        proxy_type not in banned_types
+    )
+
 # 处理 LiteSpeedTest 结果
 if os.path.exists('lite_valid_proxies.json'):
     print("\n=== Processing LiteSpeedTest Valid Proxies ===")
@@ -84,8 +112,12 @@ if os.path.exists('lite_valid_proxies.json'):
         print(f"Error decoding lite_valid_proxies.json: {e}")
         all_valid_proxies = []
     
+    # 过滤无效代理
+    filtered_proxies = [proxy for proxy in all_valid_proxies if valid_proxy(proxy)]
+    print(f"Filtered proxies: {len(filtered_proxies)} / {len(all_valid_proxies)} (removed invalid)")
+    
     print("\n=== Valid Proxies from LiteSpeedTest ===")
-    for i, proxy in enumerate(all_valid_proxies, 1):
+    for i, proxy in enumerate(filtered_proxies, 1):
         print(f"Proxy {i}:")
         print(f"  Name: {proxy.get('name', 'Unknown')}")
         print(f"  Type: {proxy.get('type', 'Unknown')}")
@@ -94,7 +126,7 @@ if os.path.exists('lite_valid_proxies.json'):
         print(f"  Latency: {proxy.get('latency_ms', 'N/A')}ms")
         print(f"  Max Speed: {proxy.get('max_speed', 'N/A')}")
         print(f"  Additional Fields: {', '.join(f'{k}={v}' for k, v in proxy.items() if k not in ['name', 'type', 'server', 'port', 'latency_ms', 'max_speed'])}")
-    print(f"Total Valid Proxies: {len(all_valid_proxies)}")
+    print(f"Total Valid Proxies: {len(filtered_proxies)}")
     print("======================================")
 
     # 国家与国旗映射 (简化版，完整列表如之前)
@@ -102,7 +134,7 @@ if os.path.exists('lite_valid_proxies.json'):
         '美国': ('🇺🇸', 'US'), '加拿大': ('🇨🇦', 'CA'), '英国': ('🇬🇧', 'GB'), '澳大利亚': ('🇦🇺', 'AU'),
         '德国': ('🇩🇪', 'DE'), '法国': ('🇫🇷', 'FR'), '意大利': ('🇮🇹', 'IT'), '西班牙': ('🇪🇸', 'ES'),
         '荷兰': ('🇳🇱', 'NL'), '瑞典': ('🇸🇪', 'SE'), '挪威': ('🇳🇴', 'NO'), '丹麦': ('🇩🇰', 'DK'),
-        '芬兰': ('🇫🇮', 'FI'), '瑞士': ('🇨🇭', 'CH'), '比利时': ('🇧🇪', 'BE'), '奥地利': ('🇦🇹', 'AT'),
+        '芬兰': ('🇫����', 'FI'), '瑞士': ('🇨🇭', 'CH'), '比利时': ('🇧🇪', 'BE'), '奥地利': ('🇦🇹', 'AT'),
         '爱尔兰': ('🇮🇪', 'IE'), '新西兰': ('🇳🇿', 'NZ'), '南非': ('🇿🇦', 'ZA'), '印度': ('🇮🇳', 'IN'),
         '中国': ('🇨🇳', 'CN'), '中国大陆': ('🇨🇳', 'CN'), '日本': ('🇯🇵', 'JP'), '韩国': ('🇰🇷', 'KR'),
         '新加坡': ('🇸🇬', 'SG'), '马来西亚': ('🇲🇾', 'MY'), '泰国': ('🇹🇭', 'TH'), '越南': ('🇻🇳', 'VN'),
@@ -167,7 +199,7 @@ if os.path.exists('lite_valid_proxies.json'):
 
     servers_to_query = set()
     proxy_info = []
-    for proxy in all_valid_proxies:
+    for proxy in filtered_proxies:  # 使用过滤后的 proxies
         name = proxy.get('name', '')
         server = proxy.get('server', '')
         matched = False
