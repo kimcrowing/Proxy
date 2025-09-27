@@ -84,65 +84,7 @@ with open('node_urls.txt', 'w', encoding='utf-8') as urlfile:
         urlfile.write(url + '\n')
 print(f"Node URLs saved to node_urls.txt: {len(urls)} links")
 
-# 定义代理筛选函数
-def valid_proxy(proxy):
-    name = proxy.get('name', '')
-    proxy_type = proxy.get('type', '').lower()
-    banned_keywords = ['File']
-    banned_types = ['http']
-    
-    required_fields = {
-        'ss': ['server', 'port', 'cipher', 'password'],
-        'trojan': ['server', 'port', 'password'],
-        'vmess': ['server', 'port', 'uuid', 'alterId', 'cipher'],
-        'hysteria2': ['server', 'port', 'password'],  # 支持 Hysteria2
-        'vless': ['server', 'port', 'uuid']  # 支持 Vless (简化字段)
-    }
-    
-    if proxy_type not in required_fields:
-        print(f"Unsupported proxy type: {proxy_type}")
-        return False
-    for field in required_fields[proxy_type]:
-        if field not in proxy or proxy[field] is None:
-            return False
-    
-    return (
-        not any(keyword in name for keyword in banned_keywords) and
-        proxy_type not in banned_types
-    )
-
-# 收集所有代理服务器
-all_proxies = []
-for url in urls:
-    try:
-        response = requests.get(url)
-        response.raise_for_status()
-        content = response.text
-
-        if '<html>' in content:
-            match = re.search(r'<pre>(.*?)</pre>', content, re.DOTALL)
-            if match:
-                content = match.group(1)
-            else:
-                print(f"No YAML data found in {url}")
-                continue
-
-        data = yaml.safe_load(content)
-        if 'proxies' in data and data['proxies']:
-            for proxy in data['proxies']:
-                if valid_proxy(proxy):
-                    all_proxies.append(proxy)
-                else:
-                    print(f"Invalid proxy format: {proxy.get('name', 'Unknown')} at {proxy.get('server', 'Unknown')}:{proxy.get('port', 'Unknown')}")
-        else:
-            print(f"No proxies found in {url}")
-    except (requests.RequestException, yaml.YAMLError) as e:
-        print(f"Error processing {url}: {e}")
-        continue
-
-print(f"Total Proxies Collected (before LiteSpeedTest): {len(all_proxies)}")
-
-# 确保生成空的 valid_proxies.yaml
+# 确保生成空的 valid_proxies.yaml（如果 LiteSpeedTest 未运行）
 with open('valid_proxies.yaml', 'w', encoding='utf-8') as outfile:
     yaml.dump({'proxies': []}, outfile, default_flow_style=False, allow_unicode=True, sort_keys=False)
 
@@ -219,7 +161,7 @@ if os.path.exists('lite_valid_proxies.json'):
                     break
                 except requests.RequestException as e:
                     print(f"Batch query attempt {attempt+1}/3 failed: {e}")
-                    time.sleep(2)
+                    time.sleep(3)  # 增加重试延迟，避免速率限制
                     if attempt == 2:
                         for server in batch:
                             ip_cache[server] = (unknown_country[0], '未知')
