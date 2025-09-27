@@ -1337,13 +1337,6 @@ proxies:
   network: kcp
   tls: false
   uuid: 1cc84891-1657-4f71-97d0-287df565820e
-- name: 🇦🇺 008
-  type: trojan
-  server: 176.97.68.153
-  port: 8443
-  password: installshield
-  skip-cert-verify: true
-  sni: 176.97.68.153
 - name: 🇨🇳 011
   type: trojan
   server: 106.75.134.1
@@ -1351,12 +1344,6 @@ proxies:
   password: 2fd0d127-266d-4d0b-b453-f94659a132fc
   skip-cert-verify: true
   sni: aliyun.com
-- name: 🇫🇷 012
-  type: trojan
-  server: 23.162.152.30
-  port: 8443
-  password: installshield
-  skip-cert-verify: true
 - name: 🇯🇵 021
   type: trojan
   server: 202.181.103.246
@@ -1569,7 +1556,7 @@ proxies:
   network: tcp
   skip-cert-verify: true
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- name: 🇫🇷 013
+- name: 🇫🇷 012
   type: vmess
   server: 146.59.55.50
   port: 443
@@ -1973,7 +1960,7 @@ proxies:
   network: ws
   tls: false
   uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7
-- name: 🇫🇷 014
+- name: 🇫🇷 013
   type: vmess
   server: 51.75.161.102
   port: 443
