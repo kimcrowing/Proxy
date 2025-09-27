@@ -41,8 +41,15 @@ jobs:
           cd LiteSpeedTest
           cp $(go env GOROOT)/misc/wasm/wasm_exec.js ./web/gui/
           npm install --prefix web/gui
+          npm audit fix --prefix web/gui || true  # Fix vulnerabilities
           npm run build --prefix web/gui || true
+          # Fix WASM dependencies
+          GOOS=js GOARCH=wasm go mod tidy
+          GOOS=js GOARCH=wasm go get -u ./...
           GOOS=js GOARCH=wasm go build -o ./web/gui/dist/main.wasm ./wasm || true
+          # Fix main CLI dependencies
+          go mod tidy
+          go get -u ./...
           go build -o lite
           mv lite ../
           cd ..
