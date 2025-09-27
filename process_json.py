@@ -10,22 +10,23 @@ try:
         result = json.load(f)
     print("调试 JSON (过滤后):", json.dumps(result, indent=2)[:1000])  # 截断调试
     
-    # 从 raw_output.txt 提取 Remarks (recv/elapse 行: "时间 ID 备注 recv/elapse 值")
+    # 从 raw_output.txt 提取 Remarks (e.g., "18 🇺🇸_US_美国_8 recv: 52.9MB/s")
     remarks_map = {}
     if os.path.exists("raw_output.txt"):
         with open("raw_output.txt", "r") as f:
             content = f.read()
-        # Regex: 捕获 ID + 备注 (e.g., "16 CA加拿大(mibei77.com 米贝节点分享) recv: 33.9MB/s")
-        matches = re.findall(r'^\S+ (\d+) ([^ ]+[^)]*\)) (recv|elapse):', content, re.MULTILINE)
-        for iid, remark, _ in matches:
-            iid = int(iid)
-            if iid not in remarks_map:
-                remarks_map[iid] = remark.strip()
+        # Regex: 时间 ID 备注 recv/elapse: 值
+        matches = re.findall(r'^\S+ (\d+) ([^ ]+?recv|elapse):', content, re.MULTILINE)
+        for iid_str, _ in matches:
+            iid = int(iid_str)
+            # 进一步匹配完整备注 (从行中取 ID 前备注)
+            line_match = re.search(rf'^\S+ {iid} ([^ ]+?)( recv| elapse):', content, re.MULTILINE)
+            if line_match:
+                remarks_map[iid] = line_match.group(1).strip()
 
-    # 假设过滤后为事件数组，聚合为 nodes
+    # 聚合事件为 nodes
     if isinstance(result, list):
         events = result
-        # 聚合：收集 endone 作为 IsOk=true
         node_map = {}
         for event in events:
             iid = event.get('id')
@@ -45,13 +46,13 @@ try:
     else:
         valid_nodes = []
 
-    # 映射到 Clash 代理格式（占位；实际从订阅 URL yaml.load 提取 server/port/type 等）
+    # 映射到 Clash 代理格式
     valid_proxies = []
     for node in valid_nodes:
         proxy = {
             'name': node.get('Remarks', 'Unknown'),
-            'type': node.get('Type', 'vmess'),  # 默认
-            'server': node.get('Server', 'example.com'),  # 需补充
+            'type': node.get('Type', 'vmess'),
+            'server': node.get('Server', 'example.com'),
             'port': node.get('Port', 443),
             'latency_ms': node.get('Latency'),
             'max_speed': node.get('Speed')
