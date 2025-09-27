@@ -9,8 +9,6 @@ import os
 
 # 定义要下载的 YAML 配置文件 URLs（更新为2025年有效免费Clash源）
 urls = [
-    "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.yaml",
-    "https://raw.githubusercontent.com/tindy2013/subconverter/master/base/config/example_config.yaml",
     "https://gist.githubusercontent.com/mcxiaoke/d41b9f6aefe15002b38b95c96c60ffc0/raw/clash.yaml"
 ]
 
