@@ -7,64 +7,50 @@ import time
 import json
 import os
 
-# 定义要下载的 YAML 配置文件 URLs
+# 定义要下载的 YAML 配置文件 URLs（更新为2025年有效免费Clash源）
 urls = [
-    "https://gitlab.com/wybgit/surge_conf/-/raw/main/myconfig/Clash/clashconfig.yaml",
-    "https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/refs/heads/master/list.yml",
-    "https://raw.githubusercontent.com/anaer/Sub/refs/heads/main/clash.yaml"
+    "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.yaml",
+    "https://raw.githubusercontent.com/tindy2013/subconverter/master/base/config/example_config.yaml",
+    "https://gist.githubusercontent.com/mcxiaoke/d41b9f6aefe15002b38b95c96c60ffc0/raw/clash.yaml"
 ]
 
-# 动态获取 hongkongclash 仓库最新日期的所有 YAML 文件
+# 动态获取 hongkongclash 仓库最新日期的所有 YAML 文件（扩展回退到最近12个月）
 def get_latest_hongkongclash_yaml():
     year = datetime.now().year
     month = datetime.now().month
-    dir_path = f"uploads/{year}/{month:02d}"
-    api_url = f"https://api.github.com/repos/hongkongclash/hongkongclash.github.io/contents/{dir_path}?ref=main"
-    
-    try:
-        response = requests.get(api_url)
-        if response.status_code != 200:
-            print(f"No files found in {dir_path}, trying previous month...")
-            month -= 1
-            if month == 0:
-                month = 12
-                year -= 1
-            dir_path = f"uploads/{year}/{month:02d}"
-            api_url = f"https://api.github.com/repos/hongkongclash/hongkongclash.github.io/contents/{dir_path}?ref=main"
+    attempts = 0
+    max_attempts = 12  # 尝试最近12个月
+    while attempts < max_attempts:
+        dir_path = f"uploads/{year}/{month:02d}"
+        api_url = f"https://api.github.com/repos/hongkongclash/hongkongclash.github.io/contents/{dir_path}?ref=main"
+        
+        try:
             response = requests.get(api_url)
-            response.raise_for_status()
+            if response.status_code == 200:
+                files = [f for f in response.json() if isinstance(f, dict) and f['name'].endswith('.yaml')]
+                if files:
+                    # 提取日期并获取最新
+                    date_pattern = re.compile(r'^\d+-(\d{8})\.yaml$')
+                    dates = [match.group(1) for f in files if (match := date_pattern.match(f['name']))]
+                    if dates:
+                        latest_date = max(dates)
+                        latest_files = sorted([f for f in files if f['name'].endswith(f'{latest_date}.yaml')], key=lambda x: x['name'])
+                        raw_urls = [f"https://raw.githubusercontent.com/hongkongclash/hongkongclash.github.io/main/{dir_path}/{f['name']}" for f in latest_files]
+                        print(f"Found hongkongclash YAML files in {dir_path} for {latest_date}: {len(raw_urls)} files")
+                        return raw_urls
+            print(f"No files in {dir_path}, trying previous month...")
+        except requests.RequestException as e:
+            print(f"Error fetching {dir_path}: {e}")
         
-        files = [f for f in response.json() if isinstance(f, dict) and f['name'].endswith('.yaml')]
-        if not files:
-            print("No YAML files found in the repository")
-            return []
-        
-        # 提取文件名中的日期（格式：X-YYYYMMDD.yaml）
-        date_pattern = re.compile(r'^\d+-(\d{8})\.yaml$')
-        dates = []
-        for f in files:
-            match = date_pattern.match(f['name'])
-            if match:
-                dates.append(match.group(1))
-        
-        if not dates:
-            print("No valid date-format YAML files found")
-            return []
-        
-        # 获取最新日期
-        latest_date = max(dates)
-        # 收集该日期的所有 YAML 文件
-        latest_files = [f for f in files if f['name'].endswith(f'{latest_date}.yaml')]
-        latest_files = sorted(latest_files, key=lambda x: x['name'])
-        raw_urls = [f"https://raw.githubusercontent.com/hongkongclash/hongkongclash.github.io/main/{dir_path}/{f['name']}" for f in latest_files]
-        
-        print(f"Latest hongkongclash YAML files for {latest_date}:")
-        for i, url in enumerate(raw_urls, 1):
-            print(f"  File {i}: {url}")
-        return raw_urls
-    except requests.RequestException as e:
-        print(f"Error fetching hongkongclash files: {e}")
-        return []
+        # 回退
+        month -= 1
+        if month == 0:
+            month = 12
+            year -= 1
+        attempts += 1
+    
+    print("No YAML files found in recent 12 months")
+    return []
 
 # 获取并打印所有订阅链接
 print("=== Acquired Clash Subscription URLs ===")
