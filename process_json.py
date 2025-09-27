@@ -15,11 +15,13 @@ try:
     if os.path.exists("debug_raw.txt"):
         with open("debug_raw.txt", "r") as f:
             content = f.read()
-        # Regex: 时间 ID 备注 recv/elapse: 值
-        matches = re.findall(r'^\S+ (\d+) ([^(]+?)( recv| elapse):', content, re.MULTILINE)
-        for iid_str, remark, _ in matches:
+        # 改进 Regex: 捕获 ID + 完整备注 (直到 recv/elapse)
+        matches = re.findall(r'^\S+ (\d+) ([^ ]+?recv|elapse):', content, re.MULTILINE)
+        for iid_str, _ in matches:
             iid = int(iid_str)
-            remarks_map[iid] = remark.strip()
+            line_match = re.search(rf'^\S+ {iid} ([^ ]+?)( recv| elapse):', content, re.MULTILINE)
+            if line_match:
+                remarks_map[iid] = line_match.group(1).strip()
         print(f"提取 {len(remarks_map)} 个 Remarks (e.g., ID 17: {remarks_map.get(17, 'N/A')})")
 
     # 聚合事件为 nodes
@@ -40,8 +42,14 @@ try:
                     node_map[iid]['Speed'] = event['maxspeed']
         
         all_nodes = [node_map[iid] for iid in node_map]
-        valid_nodes = [node for node in all_nodes if node['IsOk'] and (node.get('Speed', '0') >= '1.0MB' or '1.0MB' in str(node.get('Speed', '')))]
-        print(f"=== 筛选符合条件的节点 ({len(valid_nodes)} 个) ===")
+        valid_nodes = []
+        for node in all_nodes:
+            if node['IsOk']:
+                speed_str = node.get('Speed', '0')
+                # 简单单位检查: >=1.0MB/s (忽略 KB)
+                if 'MB' in speed_str and float(speed_str.replace('MB', '')) >= 1.0:
+                    valid_nodes.append(node)
+        print(f"=== 筛选符合条件的节点 ({len(valid_nodes)} 个, speed >=1.0MB/s) ===")
         for node in valid_nodes:
             speed_str = node.get('Speed', 'N/A')
             latency_str = node.get('Latency', 'N/A')
@@ -80,6 +88,13 @@ try:
         print("======================================")
     else:
         print(f"未找到 {url} 的有效代理")
+        # 调试: 如果空，打印 raw_output.txt 预览
+        if os.path.exists("debug_raw.txt"):
+            print("raw_output.txt 预览 (前5行):")
+            with open("debug_raw.txt", "r") as f:
+                lines = f.readlines()[:5]
+                for line in lines:
+                    print(repr(line.strip()))  # repr 显示隐藏字符
 except Exception as e:
     print(f"处理 {url} 时出错: {e}")
     traceback.print_exc()
