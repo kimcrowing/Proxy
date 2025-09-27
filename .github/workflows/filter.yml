@@ -33,8 +33,8 @@ jobs:
       - name: Set up Node.js (for LiteSpeedTest frontend)
         uses: actions/setup-node@v4
         with:
-          node-version: '18'  # >=14 as per LiteSpeedTest README
-          cache: 'npm'  # Cache npm dependencies for faster builds
+          node-version: '18'
+          cache: 'npm'
 
       - name: Install LiteSpeedTest
         run: |
@@ -70,31 +70,40 @@ jobs:
             if [ -n "$url" ]; then
               echo "Testing URL: $url"
               ./lite --config config.json --test "$url" > test_result.json || true
-              python3 -c "  # Line ~70
-import json
-try:
-    with open('test_result.json', 'r') as f:
-        result = json.load(f)
-    valid_proxies = result.get('proxies', []) if isinstance(result, dict) else []
-    if valid_proxies:
-        with open('lite_valid_proxies.json', 'r+') as f:
-            all_valid = json.load(f)
-            all_valid.extend(valid_proxies)
-            f.seek(0)
-            f.truncate()
-            json.dump(all_valid, f)
-        print(f'Added {len(valid_proxies)} valid proxies from {url}')
-    else:
-        print(f'No valid proxies found for {url}')
-except Exception as e:
-    print(f'Error processing {url}: {e}')
-"  # Line ~83
+              python3 -c |
+                import json
+                try:
+                    with open('test_result.json', 'r') as f:
+                        result = json.load(f)
+                    print('Debug JSON:', json.dumps(result, indent=2))
+                    valid_proxies = result.get('proxies', []) if isinstance(result, dict) else []
+                    if valid_proxies:
+                        with open('lite_valid_proxies.json', 'r+') as f:
+                            all_valid = json.load(f)
+                            all_valid.extend(valid_proxies)
+                            f.seek(0)
+                            f.truncate()
+                            json.dump(all_valid, f)
+                        print(f'Added {len(valid_proxies)} valid proxies from {{url}}')
+                    else:
+                        print(f'No valid proxies found for {{url}}')
+                except Exception as e:
+                    print(f'Error processing {{url}}: {e}')
               sleep 5
             fi
           done < node_urls.txt
 
       - name: Process valid proxies (country query and renaming)
         run: python proxy.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config core.ignorecase false
+          git add valid_proxies.yaml node_urls.txt lite_valid_proxies.json test_result.json
+          git commit -m "Update proxy configurations" || echo "No changes to commit"
+          git push || echo "No changes to push"
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
