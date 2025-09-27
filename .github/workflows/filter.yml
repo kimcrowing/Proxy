@@ -75,12 +75,14 @@ jobs:
               echo "URL 内容预览:"
               curl -s "$url" | head -c 500 || echo "URL 为空或访问失败"
               echo "---"
-              # 运行 LiteSpeedTest
-              ./lite --config config.json --test "$url" > raw_output.txt || true
+              # 运行 LiteSpeedTest，重定向 stdout + stderr
+              ./lite --config config.json --test "$url" > raw_output.txt 2>&1 || true
               # 调试：保存 raw_output.txt 全文到 debug_raw.txt
               cat raw_output.txt > debug_raw.txt || echo "debug_raw.txt 为空"
               echo "原始输出预览 (前10行):"
               head -n 10 raw_output.txt || echo "raw_output.txt 为空"
+              echo "raw_output.txt 行数:"
+              wc -l raw_output.txt || echo "0"
               # Python 过滤 JSON 事件
               python filter_json.py
               echo "过滤后事件数:"
