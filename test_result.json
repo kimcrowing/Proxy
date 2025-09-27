@@ -920,18 +920,7 @@
     "lost": "0.00%"
   },
   {
-    "id": 0,
-    "info": "gotping",
-    "lost": "0.00%"
-  },
-  {
     "id": 1,
-    "info": "gotspeed",
-    "speed": "N/A",
-    "maxspeed": "N/A"
-  },
-  {
-    "id": 0,
     "info": "gotspeed",
     "speed": "N/A",
     "maxspeed": "N/A"
@@ -939,6 +928,17 @@
   {
     "id": 1,
     "info": "endone"
+  },
+  {
+    "id": 0,
+    "info": "gotping",
+    "lost": "0.00%"
+  },
+  {
+    "id": 0,
+    "info": "gotspeed",
+    "speed": "N/A",
+    "maxspeed": "N/A"
   },
   {
     "id": 0,
@@ -1145,7 +1145,7 @@
   {
     "id": 13,
     "info": "gotping",
-    "ping": 510,
+    "ping": 265,
     "lost": "0.00%"
   },
   {
@@ -1172,19 +1172,172 @@
     "info": "startping"
   },
   {
+    "id": 13,
+    "info": "gotspeed",
+    "speed": "112.0KB",
+    "maxspeed": "128.0KB",
+    "traffic": 131072
+  },
+  {
     "id": 14,
     "info": "gotping",
+    "ping": 208,
     "lost": "0.00%"
   },
   {
     "id": 14,
+    "info": "startspeed"
+  },
+  {
+    "id": 13,
     "info": "gotspeed",
-    "speed": "N/A",
-    "maxspeed": "N/A"
+    "speed": "68.4KB",
+    "maxspeed": "128.0KB",
+    "traffic": 63524
   },
   {
     "id": 14,
+    "info": "gotspeed",
+    "speed": "4.3MB",
+    "maxspeed": "4.3MB",
+    "traffic": 4494669
+  },
+  {
+    "id": 13,
+    "info": "gotspeed",
+    "speed": "51.0KB",
+    "maxspeed": "128.0KB",
+    "traffic": 34780
+  },
+  {
+    "id": 14,
+    "info": "gotspeed",
+    "speed": "4.2MB",
+    "maxspeed": "5.0MB",
+    "traffic": 5277551
+  },
+  {
+    "id": 13,
+    "info": "gotspeed",
+    "speed": "48.5KB",
+    "maxspeed": "128.0KB",
+    "traffic": 38612
+  },
+  {
+    "id": 14,
+    "info": "gotspeed",
+    "speed": "4.0MB",
+    "maxspeed": "5.0MB",
+    "traffic": 3567116
+  },
+  {
+    "id": 13,
+    "info": "gotspeed",
+    "speed": "48.2KB",
+    "maxspeed": "128.0KB",
+    "traffic": 59692
+  },
+  {
+    "id": 14,
+    "info": "gotspeed",
+    "speed": "3.8MB",
+    "maxspeed": "5.0MB",
+    "traffic": 3624321
+  },
+  {
+    "id": 13,
+    "info": "gotspeed",
+    "speed": "46.6KB",
+    "maxspeed": "128.0KB",
+    "traffic": 38036
+  },
+  {
+    "id": 14,
+    "info": "gotspeed",
+    "speed": "4.0MB",
+    "maxspeed": "5.0MB",
+    "traffic": 5130864
+  },
+  {
+    "id": 13,
+    "info": "gotspeed",
+    "speed": "46.4KB",
+    "maxspeed": "128.0KB",
+    "traffic": 60268
+  },
+  {
+    "id": 14,
+    "info": "gotspeed",
+    "speed": "3.9MB",
+    "maxspeed": "5.0MB",
+    "traffic": 4560784
+  },
+  {
+    "id": 13,
+    "info": "gotspeed",
+    "speed": "44.8KB",
+    "maxspeed": "128.0KB",
+    "traffic": 37460
+  },
+  {
+    "id": 14,
+    "info": "gotspeed",
+    "speed": "3.7MB",
+    "maxspeed": "5.0MB",
+    "traffic": 2659184
+  },
+  {
+    "id": 13,
+    "info": "gotspeed",
+    "speed": "45.6KB",
+    "maxspeed": "128.0KB",
+    "traffic": 60844
+  },
+  {
+    "id": 14,
+    "info": "gotspeed",
+    "speed": "3.5MB",
+    "maxspeed": "5.0MB",
+    "traffic": 2175559
+  },
+  {
+    "id": 13,
+    "info": "gotspeed",
+    "speed": "47.1KB",
+    "maxspeed": "128.0KB",
+    "traffic": 65536
+  },
+  {
+    "id": 14,
+    "info": "gotspeed",
+    "speed": "3.4MB",
+    "maxspeed": "5.0MB",
+    "traffic": 2364744
+  },
+  {
+    "id": 13,
+    "info": "gotspeed",
+    "speed": "47.3KB",
+    "maxspeed": "128.0KB",
+    "traffic": 56764
+  },
+  {
+    "id": 14,
+    "info": "gotspeed",
+    "speed": "3.1MB",
+    "maxspeed": "5.0MB",
+    "traffic": 667904
+  },
+  {
+    "id": 13,
     "info": "endone"
+  },
+  {
+    "id": 13,
+    "info": "gotspeed",
+    "speed": "47.6KB",
+    "maxspeed": "128.0KB",
+    "traffic": 16384
   },
   {
     "id": 15,
@@ -1210,72 +1363,47 @@
     "info": "startping"
   },
   {
-    "id": 13,
+    "id": 14,
     "info": "gotspeed",
-    "speed": "54.3KB",
-    "maxspeed": "66.9KB",
-    "traffic": 68460
+    "speed": "2.8MB",
+    "maxspeed": "5.0MB",
+    "traffic": 105968
   },
   {
-    "id": 13,
+    "id": 14,
     "info": "gotspeed",
-    "speed": "54.0KB",
-    "maxspeed": "66.9KB",
-    "traffic": 62612
+    "speed": "2.5MB",
+    "maxspeed": "5.0MB",
+    "traffic": 89488
   },
   {
-    "id": 13,
-    "info": "gotspeed",
-    "speed": "60.1KB",
-    "maxspeed": "80.0KB",
-    "traffic": 81920
-  },
-  {
-    "id": 13,
-    "info": "gotspeed",
-    "speed": "60.4KB",
-    "maxspeed": "80.0KB",
-    "traffic": 79332
-  },
-  {
-    "id": 16,
-    "info": "gotping",
-    "lost": "0.00%"
-  },
-  {
-    "id": 16,
-    "info": "gotspeed",
-    "speed": "N/A",
-    "maxspeed": "N/A"
-  },
-  {
-    "id": 16,
+    "id": 14,
     "info": "endone"
+  },
+  {
+    "id": 14,
+    "info": "gotspeed",
+    "speed": "2.4MB",
+    "maxspeed": "5.0MB",
+    "traffic": 73200
   },
   {
     "id": 17,
     "info": "startping"
   },
   {
-    "id": 13,
-    "info": "gotspeed",
-    "speed": "49.3KB",
-    "maxspeed": "80.0KB",
-    "traffic": 35356
-  },
-  {
-    "id": 17,
+    "id": 16,
     "info": "gotping",
     "lost": "0.00%"
   },
   {
-    "id": 17,
+    "id": 16,
     "info": "gotspeed",
     "speed": "N/A",
     "maxspeed": "N/A"
   },
   {
-    "id": 17,
+    "id": 16,
     "info": "endone"
   },
   {
@@ -1300,13 +1428,6 @@
   {
     "id": 19,
     "info": "startping"
-  },
-  {
-    "id": 13,
-    "info": "gotspeed",
-    "speed": "43.7KB",
-    "maxspeed": "80.0KB",
-    "traffic": 21652
   },
   {
     "id": 19,
@@ -1328,9 +1449,28 @@
     "info": "startping"
   },
   {
+    "id": 17,
+    "info": "gotping",
+    "lost": "0.00%"
+  },
+  {
+    "id": 17,
+    "info": "gotspeed",
+    "speed": "N/A",
+    "maxspeed": "N/A"
+  },
+  {
+    "id": 17,
+    "info": "endone"
+  },
+  {
+    "id": 21,
+    "info": "startping"
+  },
+  {
     "id": 20,
     "info": "gotping",
-    "ping": 324,
+    "ping": 334,
     "lost": "0.00%"
   },
   {
@@ -1338,6 +1478,25 @@
     "info": "startspeed"
   },
   {
+    "id": 21,
+    "info": "gotping",
+    "lost": "0.00%"
+  },
+  {
+    "id": 21,
+    "info": "gotspeed",
+    "speed": "N/A",
+    "maxspeed": "N/A"
+  },
+  {
+    "id": 21,
+    "info": "endone"
+  },
+  {
+    "id": 22,
+    "info": "startping"
+  },
+  {
     "id": 20,
     "info": "gotspeed",
     "speed": "N/A",
@@ -1348,65 +1507,6 @@
     "info": "endone"
   },
   {
-    "id": 21,
-    "info": "startping"
-  },
-  {
-    "id": 21,
-    "info": "gotping",
-    "lost": "0.00%"
-  },
-  {
-    "id": 21,
-    "info": "gotspeed",
-    "speed": "N/A",
-    "maxspeed": "N/A"
-  },
-  {
-    "id": 21,
-    "info": "endone"
-  },
-  {
-    "id": 22,
-    "info": "startping"
-  },
-  {
-    "id": 13,
-    "info": "gotspeed",
-    "speed": "35.6KB",
-    "maxspeed": "80.0KB",
-    "traffic": 24336
-  },
-  {
-    "id": 13,
-    "info": "gotspeed",
-    "speed": "36.1KB",
-    "maxspeed": "80.0KB",
-    "traffic": 52316
-  },
-  {
-    "id": 13,
-    "info": "gotspeed",
-    "speed": "36.6KB",
-    "maxspeed": "80.0KB",
-    "traffic": 61796
-  },
-  {
-    "id": 22,
-    "info": "gotping",
-    "lost": "0.00%"
-  },
-  {
-    "id": 22,
-    "info": "gotspeed",
-    "speed": "N/A",
-    "maxspeed": "N/A"
-  },
-  {
-    "id": 22,
-    "info": "endone"
-  },
-  {
     "id": 23,
     "info": "startping"
   },
@@ -1430,15 +1530,19 @@
     "info": "startping"
   },
   {
-    "id": 13,
-    "info": "endone"
+    "id": 22,
+    "info": "gotping",
+    "lost": "0.00%"
   },
   {
-    "id": 13,
+    "id": 22,
     "info": "gotspeed",
-    "speed": "36.6KB",
-    "maxspeed": "80.0KB",
-    "traffic": 40624
+    "speed": "N/A",
+    "maxspeed": "N/A"
+  },
+  {
+    "id": 22,
+    "info": "endone"
   },
   {
     "id": 25,
@@ -1502,18 +1606,18 @@
     "info": "startping"
   },
   {
-    "id": 28,
+    "id": 24,
     "info": "gotping",
     "lost": "0.00%"
   },
   {
-    "id": 28,
+    "id": 24,
     "info": "gotspeed",
     "speed": "N/A",
     "maxspeed": "N/A"
   },
   {
-    "id": 28,
+    "id": 24,
     "info": "endone"
   },
   {
@@ -1521,18 +1625,18 @@
     "info": "startping"
   },
   {
-    "id": 29,
+    "id": 28,
     "info": "gotping",
     "lost": "0.00%"
   },
   {
-    "id": 29,
+    "id": 28,
     "info": "gotspeed",
     "speed": "N/A",
     "maxspeed": "N/A"
   },
   {
-    "id": 29,
+    "id": 28,
     "info": "endone"
   },
   {
@@ -1540,18 +1644,18 @@
     "info": "startping"
   },
   {
-    "id": 24,
+    "id": 29,
     "info": "gotping",
     "lost": "0.00%"
   },
   {
-    "id": 24,
+    "id": 29,
     "info": "gotspeed",
     "speed": "N/A",
     "maxspeed": "N/A"
   },
   {
-    "id": 24,
+    "id": 29,
     "info": "endone"
   },
   {
@@ -1711,18 +1815,18 @@
     "info": "startping"
   },
   {
-    "id": 38,
+    "id": 39,
     "info": "gotping",
     "lost": "0.00%"
   },
   {
-    "id": 38,
+    "id": 39,
     "info": "gotspeed",
     "speed": "N/A",
     "maxspeed": "N/A"
   },
   {
-    "id": 38,
+    "id": 39,
     "info": "endone"
   },
   {
@@ -1730,18 +1834,18 @@
     "info": "startping"
   },
   {
-    "id": 39,
+    "id": 40,
     "info": "gotping",
     "lost": "0.00%"
   },
   {
-    "id": 39,
+    "id": 40,
     "info": "gotspeed",
     "speed": "N/A",
     "maxspeed": "N/A"
   },
   {
-    "id": 39,
+    "id": 40,
     "info": "endone"
   },
   {
@@ -1749,33 +1853,33 @@
     "info": "startping"
   },
   {
-    "id": 41,
+    "id": 38,
     "info": "gotping",
     "lost": "0.00%"
   },
   {
-    "id": 41,
+    "id": 38,
     "info": "gotspeed",
     "speed": "N/A",
     "maxspeed": "N/A"
   },
   {
-    "id": 41,
+    "id": 38,
     "info": "endone"
   },
   {
-    "id": 40,
+    "id": 41,
     "info": "gotping",
     "lost": "0.00%"
   },
   {
-    "id": 40,
+    "id": 41,
     "info": "gotspeed",
     "speed": "N/A",
     "maxspeed": "N/A"
   },
   {
-    "id": 40,
+    "id": 41,
     "info": "endone"
   },
   {
