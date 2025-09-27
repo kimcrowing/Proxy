@@ -9,6 +9,8 @@ import os
 
 # 定义要下载的 YAML 配置文件 URLs（更新为2025年有效免费Clash源）
 urls = [
+    "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.yaml",
+    "https://raw.githubusercontent.com/tindy2013/subconverter/master/base/config/example_config.yaml",
     "https://gist.githubusercontent.com/mcxiaoke/d41b9f6aefe15002b38b95c96c60ffc0/raw/clash.yaml"
 ]
 
@@ -211,50 +213,11 @@ if os.path.exists('lite_valid_proxies.json'):
         ordered_proxy['server'] = proxy['server']
         ordered_proxy['port'] = proxy['port']
         
-        additional_fields = {}
-        if proxy['type'] == 'ss':
-            if 'cipher' in proxy:
-                additional_fields['cipher'] = proxy['cipher']
-            if 'password' in proxy:
-                additional_fields['password'] = proxy['password']
-        elif proxy['type'] == 'trojan':
-            if 'password' in proxy:
-                additional_fields['password'] = proxy['password']
-            if 'sni' in proxy:
-                additional_fields['sni'] = proxy['sni']
-            if 'skip-cert-verify' in proxy:
-                additional_fields['skip-cert-verify'] = proxy['skip-cert-verify']
-        elif proxy['type'] == 'vmess':
-            if 'uuid' in proxy:
-                additional_fields['uuid'] = proxy['uuid']
-            if 'alterId' in proxy:
-                additional_fields['alterId'] = proxy['alterId']
-            if 'cipher' in proxy:
-                additional_fields['cipher'] = proxy['cipher']
-            if 'tls' in proxy:
-                additional_fields['tls'] = proxy['tls']
-            if 'network' in proxy:
-                additional_fields['network'] = proxy['network']
-            if 'client-fingerprint' in proxy:
-                additional_fields['client-fingerprint'] = proxy['client-fingerprint']
-            if 'skip-cert-verify' in proxy:
-                additional_fields['skip-cert-verify'] = proxy['skip-cert-verify']
-        elif proxy['type'] == 'hysteria2':
-            if 'password' in proxy:
-                additional_fields['password'] = proxy['password']
-        elif proxy['type'] == 'vless':
-            if 'uuid' in proxy:
-                additional_fields['uuid'] = proxy['uuid']
-        
+        # 复制所有原始字段，除了 name/type/server/port (保留测试字段如 latency_ms)
+        additional_fields = {k: v for k, v in proxy.items() if k not in ['name', 'type', 'server', 'port']}
         sorted_additional = sorted(additional_fields.items())
         for key, value in sorted_additional:
             ordered_proxy[key] = value
-        
-        # 添加测试指标 (可选)
-        if 'latency_ms' in proxy:
-            ordered_proxy['latency_ms'] = proxy['latency_ms']
-        if 'max_speed' in proxy:
-            ordered_proxy['max_speed'] = proxy['max_speed']
         
         proxy_key = (ordered_proxy['server'], ordered_proxy['port'], ordered_proxy['type'])
         if proxy_key not in seen_proxies:
