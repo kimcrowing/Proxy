@@ -70,7 +70,7 @@ jobs:
             if [ -n "$url" ]; then
               echo "Testing URL: $url"
               ./lite --config config.json --test "$url" > test_result.json || true
-              python3 -c "
+              python3 -c "  # Line ~70
 import json
 try:
     with open('test_result.json', 'r') as f:
@@ -88,7 +88,7 @@ try:
         print(f'No valid proxies found for {url}')
 except Exception as e:
     print(f'Error processing {url}: {e}')
-"
+"  # Line ~83
               sleep 5
             fi
           done < node_urls.txt
