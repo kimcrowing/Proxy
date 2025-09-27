@@ -77,7 +77,7 @@ jobs:
               echo "---"
               # 运行 LiteSpeedTest
               ./lite --config config.json --test "$url" > raw_output.txt || true
-              # 调试：保存 raw_output.txt 全文
+              # 调试：保存 raw_output.txt 全文到 debug_raw.txt
               cat raw_output.txt > debug_raw.txt || echo "debug_raw.txt 为空"
               echo "原始输出预览 (前10行):"
               head -n 10 raw_output.txt || echo "raw_output.txt 为空"
@@ -87,6 +87,7 @@ jobs:
               jq 'length' test_result.json 2>/dev/null || echo "0"
               echo "过滤后 test_result.json 内容 (前3事件):"
               jq '.[0:3]' test_result.json 2>/dev/null || cat test_result.json
+              # 先筛选输出节点
               python process_json.py "$url"
               echo "当前 lite_valid_proxies.json (前2):"
               jq '.[0:2]' lite_valid_proxies.json 2>/dev/null || cat lite_valid_proxies.json
