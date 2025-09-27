@@ -3,7 +3,7 @@ name: Proxy Server Processing Workflow
 on:
   workflow_dispatch:
   schedule:
-    - cron: '45 */10 * * *'
+    - cron: '0 13 * * *'
   push:
     branches:
       - master
