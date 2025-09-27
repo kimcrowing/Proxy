@@ -7,11 +7,13 @@ import time
 import json
 import os
 
-# 定义要下载的 YAML 配置文件 URLs（更新为2025年有效免费Clash源）
+# 定义要下载的 YAML 配置文件 URLs（最近经常更新的Clash订阅源）
 urls = [
-    "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.yaml",
-    "https://raw.githubusercontent.com/tindy2013/subconverter/master/base/config/example_config.yaml",
-    "https://gist.githubusercontent.com/mcxiaoke/d41b9f6aefe15002b38b95c96c60ffc0/raw/clash.yaml"
+    "https://raw.githubusercontent.com/Ruk1ng001/freeSub/main/clash.yaml",
+    "https://raw.githubusercontent.com/SnapdragonLee/SystemProxy/master/dist/clash_config.yaml",
+    "https://raw.githubusercontent.com/firefoxmmx2/v2rayshare_subcription/main/subscription/clash_sub.yaml",
+    "https://raw.githubusercontent.com/VPN-Subcription-Links/ClashX-V2Ray-TopFreeProxy/master/SUB/ClashX.yml",
+    "https://raw.githubusercontent.com/adiwzx/freenode/main/adispeed.yml"
 ]
 
 # 动态获取 hongkongclash 仓库最新日期的所有 YAML 文件（扩展回退到最近12个月）
