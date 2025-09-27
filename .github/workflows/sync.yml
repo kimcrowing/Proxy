@@ -2,7 +2,7 @@ name: Sync combined_proxies.yaml to iptv directory
 
 on:
   schedule:
-    - cron: '55 */10 * * *'  # 每天零点触发，可根据需要修改调度时间
+    - cron: '30 13 * * *'  # 每天零点触发，可根据需要修改调度时间
   workflow_dispatch:     # 允许手动触发
 
 jobs:
