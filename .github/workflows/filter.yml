@@ -34,19 +34,19 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-          cache: 'npm'
 
       - name: Install LiteSpeedTest
         run: |
           git clone https://github.com/xxf098/LiteSpeedTest.git
           cd LiteSpeedTest
           cp $(go env GOROOT)/misc/wasm/wasm_exec.js ./web/gui/
-          npm ci --prefix web/gui
+          npm install --prefix web/gui
           npm run build --prefix web/gui || true
           GOOS=js GOARCH=wasm go build -o ./web/gui/dist/main.wasm ./wasm || true
           go build -o lite
           mv lite ../
           cd ..
+          ls -l lite || echo "LiteSpeedTest binary not found"
 
       - name: Test proxies with LiteSpeedTest
         run: |
@@ -70,6 +70,7 @@ jobs:
             if [ -n "$url" ]; then
               echo "Testing URL: $url"
               ./lite --config config.json --test "$url" > test_result.json || true
+              cat test_result.json || echo "Failed to read test_result.json"
               python3 -c |
                 import json
                 try:
