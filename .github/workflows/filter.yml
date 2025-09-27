@@ -25,35 +25,16 @@ jobs:
       - name: Run proxy processing script (collect URLs and proxies)
         run: python proxy.py
 
-      - name: Set up Go (for LiteSpeedTest)
-        uses: actions/setup-go@v5
-        with:
-          go-version: '1.24'
-
-      - name: Set up Node.js (for LiteSpeedTest frontend)
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-
-      - name: Install LiteSpeedTest
+      - name: Download and prepare LiteSpeedTest release binary
         run: |
-          git clone https://github.com/xxf098/LiteSpeedTest.git
-          cd LiteSpeedTest
-          cp $(go env GOROOT)/misc/wasm/wasm_exec.js ./web/gui/
-          npm install --prefix web/gui
-          npm audit fix --prefix web/gui || true  # Fix vulnerabilities
-          npm run build --prefix web/gui || true
-          # Fix WASM dependencies
-          GOOS=js GOARCH=wasm go mod tidy
-          GOOS=js GOARCH=wasm go get -u ./...
-          GOOS=js GOARCH=wasm go build -o ./web/gui/dist/main.wasm ./wasm || true
-          # Fix main CLI dependencies
-          go mod tidy
-          go get -u ./...
-          go build -o lite
-          mv lite ../
-          cd ..
-          ls -l lite || echo "LiteSpeedTest binary not found"
+          RELEASE_URL="https://github.com/xxf098/LiteSpeedTest/releases/download/v0.15.0/lite-linux-amd64-v0.15.0.gz"
+          echo "Downloading from: $RELEASE_URL"
+          curl -L -o lite.gz "$RELEASE_URL" || { echo "Download failed"; exit 1; }
+          gunzip lite.gz || { echo "Decompress failed"; exit 1; }
+          mv lite-linux-amd64-v0.15.0 lite
+          chmod +x lite
+          ./lite --version || { echo "Binary compatibility check failed"; ls -l lite; exit 1; }
+          echo "LiteSpeedTest binary prepared successfully"
 
       - name: Test proxies with LiteSpeedTest
         run: |
@@ -68,7 +49,7 @@ jobs:
             "testmode": 2,
             "timeout": 5000,
             "speedlimit": 1.0,
-            "output": 3,
+            "outputMode": 3,
             "unique": true
           }
           EOF
@@ -78,25 +59,26 @@ jobs:
               echo "Testing URL: $url"
               ./lite --config config.json --test "$url" > test_result.json || true
               cat test_result.json || echo "Failed to read test_result.json"
-              python3 -c |
+              python3 -c '
                 import json
                 try:
-                    with open('test_result.json', 'r') as f:
+                    with open("test_result.json", "r") as f:
                         result = json.load(f)
-                    print('Debug JSON:', json.dumps(result, indent=2))
-                    valid_proxies = result.get('proxies', []) if isinstance(result, dict) else []
+                    print("Debug JSON:", json.dumps(result, indent=2))
+                    valid_proxies = result.get("proxies", []) if isinstance(result, dict) else []
                     if valid_proxies:
-                        with open('lite_valid_proxies.json', 'r+') as f:
+                        with open("lite_valid_proxies.json", "r+") as f:
                             all_valid = json.load(f)
                             all_valid.extend(valid_proxies)
                             f.seek(0)
                             f.truncate()
                             json.dump(all_valid, f)
-                        print(f'Added {len(valid_proxies)} valid proxies from {{url}}')
+                        print(f"Added {len(valid_proxies)} valid proxies from {url}")
                     else:
-                        print(f'No valid proxies found for {{url}}')
+                        print(f"No valid proxies found for {url}")
                 except Exception as e:
-                    print(f'Error processing {{url}}: {e}')
+                    print(f"Error processing {url}: {e}")
+              '
               sleep 5
             fi
           done < node_urls.txt
