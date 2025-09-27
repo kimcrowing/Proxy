@@ -26,6 +26,10 @@ jobs:
       - name: Copy combined_proxies.yaml to iptv directory
         run: cp combined_proxies.yaml kimcrowing.github.io/iptv/combined_proxies.yaml
 
+      # 4. 将 valid_proxies.yaml 文件复制到目标目录
+      - name: Copy combined_proxies.yaml to iptv directory
+        run: cp valid_proxies.yaml kimcrowing.github.io/iptv/valid_proxies.yaml
+        
       # 5. 在目标仓库中提交并推送更改
       - name: Commit and push changes
         run: |
