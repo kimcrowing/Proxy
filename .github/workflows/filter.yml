@@ -75,17 +75,19 @@ jobs:
               echo "URL 内容预览:"
               curl -s "$url" | head -c 500 || echo "URL 为空或访问失败"
               echo "---"
-              # 运行 LiteSpeedTest 并过滤输出为纯 JSON 数组（改进 regex 支持嵌套）
+              # 运行 LiteSpeedTest 并过滤输出为纯 JSON 数组（简化 regex，无警告）
               ./lite --config config.json --test "$url" > raw_output.txt || true
               echo "原始输出预览:"
               head -n 10 raw_output.txt || echo "raw_output.txt 为空"
-              # 改进过滤：捕获嵌套 JSON 对象，然后 jq 聚合为数组
-              grep -oE '\{(?:[^{}]|(?:\{[^{}]*\}[^{}]*)*)*\}' raw_output.txt | jq -s '.' > test_result.json 2>/dev/null || echo '[]' > test_result.json
-              echo "过滤后 test_result.json 内容 (前10事件):"
-              jq '.[0:10]' test_result.json 2>/dev/null || cat test_result.json
+              # 简化过滤：提取简单 {} 块，然后 jq 聚合为数组
+              grep -o '{[^}]*}' raw_output.txt | jq -s '.' > test_result.json 2>/dev/null || echo '[]' > test_result.json
+              echo "过滤后事件数:"
+              jq 'length' test_result.json 2>/dev/null || echo "0"
+              echo "过滤后 test_result.json 内容 (前3事件):"
+              jq '.[0:3]' test_result.json 2>/dev/null || cat test_result.json
               python process_json.py "$url"
-              echo "当前 lite_valid_proxies.json (前5):"
-              jq '.[0:5]' lite_valid_proxies.json 2>/dev/null || cat lite_valid_proxies.json
+              echo "当前 lite_valid_proxies.json (前2):"
+              jq '.[0:2]' lite_valid_proxies.json 2>/dev/null || cat lite_valid_proxies.json
               sleep 5
             fi
           done < node_urls.txt
