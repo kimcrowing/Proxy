@@ -89,7 +89,9 @@ if os.path.exists('lite_valid_proxies.json'):
         print(f"  Type: {proxy.get('type', 'Unknown')}")
         print(f"  Server: {proxy.get('server', 'Unknown')}")
         print(f"  Port: {proxy.get('port', 'Unknown')}")
-        print(f"  Additional Fields: {', '.join(f'{k}={v}' for k, v in proxy.items() if k not in ['name', 'type', 'server', 'port'])}")
+        print(f"  Latency: {proxy.get('latency_ms', 'N/A')}ms")
+        print(f"  Max Speed: {proxy.get('max_speed', 'N/A')}")
+        print(f"  Additional Fields: {', '.join(f'{k}={v}' for k, v in proxy.items() if k not in ['name', 'type', 'server', 'port', 'latency_ms', 'max_speed'])}")
     print(f"Total Valid Proxies: {len(all_valid_proxies)}")
     print("======================================")
 
@@ -247,6 +249,12 @@ if os.path.exists('lite_valid_proxies.json'):
         sorted_additional = sorted(additional_fields.items())
         for key, value in sorted_additional:
             ordered_proxy[key] = value
+        
+        # 添加测试指标 (可选)
+        if 'latency_ms' in proxy:
+            ordered_proxy['latency_ms'] = proxy['latency_ms']
+        if 'max_speed' in proxy:
+            ordered_proxy['max_speed'] = proxy['max_speed']
         
         proxy_key = (ordered_proxy['server'], ordered_proxy['port'], ordered_proxy['type'])
         if proxy_key not in seen_proxies:
