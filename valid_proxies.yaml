@@ -7,168 +7,1274 @@ proxies:
   id: 9
   latency_ms: 0
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5dHFoTWRJclRrZ1E0NlB2aHlBdE1I@switcher-nick-croquet.freesocks.work:443#%E7%BE%8E%E5%9B%BD_4
-  max_speed: N/A
+  max_speed: 31.5KB
   password: 9tqhMdIrTkgQ46PvhyAtMH
-- name: 🇮🇳 001
-  type: ss
-  server: 143.244.137.253
-  port: 2494
-  cipher: chacha20-ietf-poly1305
+- name: ❓ 001
+  type: trojan
+  server: jp02.weyaf9sdoh2h.space
+  port: 19075
   id: 0
   latency_ms: 0
-  link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpOWm9ielU3V3h1MjRrRGNiT2VIQkVZ@143.244.137.253:2494#%F0%9F%94%B4_%F0%9F%87%AE%F0%9F%87%B3_%F0%9F%92%BB_github.com%2FRuk1ng001_66386338373066
-  max_speed: 18.6MB
-  password: NZobzU7Wxu24kDcbOeHBEY
-- name: 🇨🇳 001
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp02.weyaf9sdoh2h.space:19075?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3763323037663762
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 002
   type: trojan
-  server: 36.150.215.138
-  port: 4451
+  server: jp02.weyaf9sdoh2h.space
+  port: 19096
   id: 1
   latency_ms: 0
-  link: trojan://BxceQaOe@36.150.215.138:4451?allowInsecure=1#%E2%9D%93_%F0%9F%87%A8%F0%9F%87%B3_%F0%9F%93%B6_github.com%2FRuk1ng001_6636633830633563
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp02.weyaf9sdoh2h.space:19096?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_6362383964303032
   max_speed: N/A
-  password: /BxceQaOe
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
   skip-cert-verify: true
-- name: ❓ 001
-  type: ss
-  server: liubu9.singdns.com
-  port: 17459
-  cipher: aes-128-gcm
+  sni: TG.WangCai2
+- name: ❓ 003
+  type: trojan
+  server: jp02.weyaf9sdoh2h.space
+  port: 19067
+  id: 2
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp02.weyaf9sdoh2h.space:19067?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_6565303831396632
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 004
+  type: trojan
+  server: jp03.weyaf9sdoh2h.space
+  port: 17019
+  id: 3
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17019?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3663383438643963
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: 🇯🇵 001
+  type: trojan
+  server: 160.16.89.176
+  port: 2381
   id: 4
   latency_ms: 0
-  link: ss://YWVzLTEyOC1nY206NTdiYzBjMDQtODE4NC00OGY1LTkwNmItODk3ZDA5NWVkNDQ1@liubu9.singdns.com:17459#github.com%2FRuk1ng001_3261373933353430
+  link: trojan://ea39fa94f1ee00999337ea1fd3318e69@160.16.89.176:2381?security=tls&sni=www.nintendogames.net#github.com%2FRuk1ng001_3563383238316431
   max_speed: N/A
-  password: 57bc0c04-8184-48f5-906b-897d095ed445
-- name: 🇨🇳 003
+  password: /ea39fa94f1ee00999337ea1fd3318e69
+  sni: www.nintendogames.net
+- name: ❓ 005
   type: trojan
-  server: 36.141.40.42
-  port: 13007
+  server: jp01.weyaf9sdoh2h.space
+  port: 18047
+  id: 6
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp01.weyaf9sdoh2h.space:18047?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_6665316433356632
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 006
+  type: trojan
+  server: jp03.weyaf9sdoh2h.space
+  port: 17035
+  id: 7
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17035?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3166356335623232
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 007
+  type: trojan
+  server: jp03.weyaf9sdoh2h.space
+  port: 17033
+  id: 8
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17033?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_6661383161313730
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 008
+  type: trojan
+  server: jp02.weyaf9sdoh2h.space
+  port: 19039
+  id: 9
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp02.weyaf9sdoh2h.space:19039?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3539663333396262
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 009
+  type: trojan
+  server: jp02.weyaf9sdoh2h.space
+  port: 19058
+  id: 10
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp02.weyaf9sdoh2h.space:19058?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3165643733613730
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 010
+  type: trojan
+  server: jp02.weyaf9sdoh2h.space
+  port: 19044
+  id: 11
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp02.weyaf9sdoh2h.space:19044?security=tls#github.com%2FRuk1ng001_3538343366383733
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+- name: ❓ 011
+  type: trojan
+  server: jp01.weyaf9sdoh2h.space
+  port: 18042
+  id: 13
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp01.weyaf9sdoh2h.space:18042?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3331326236343066
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 012
+  type: trojan
+  server: jp01.weyaf9sdoh2h.space
+  port: 18098
+  id: 14
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp01.weyaf9sdoh2h.space:18098?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3262643766363661
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 013
+  type: trojan
+  server: jp01.weyaf9sdoh2h.space
+  port: 18058
   id: 15
   latency_ms: 0
-  link: trojan://3c77ad6b-9c9c-4aff-beff-0a16e2cdea15@36.141.40.42:13007?security=tls&sni=cloudflare.node-ssl.cdn-alibaba.com#%E2%9D%93_%F0%9F%87%A8%F0%9F%87%B3_%F0%9F%93%B6_github.com%2FRuk1ng001_3837636633616234
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp01.weyaf9sdoh2h.space:18058?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3831616137633765
   max_speed: N/A
-  password: /3c77ad6b-9c9c-4aff-beff-0a16e2cdea15
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-- name: 🇺🇸 003
-  type: ss
-  server: 45.87.175.174
-  port: 8080
-  cipher: chacha20-ietf-poly1305
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 014
+  type: trojan
+  server: jp02.weyaf9sdoh2h.space
+  port: 19000
   id: 16
   latency_ms: 0
-  link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@45.87.175.174:8080#%E2%9D%93_%F0%9F%87%B3%F0%9F%87%B1_%F0%9F%92%BB_github.com%2FRuk1ng001_6432353039393731
-  max_speed: 304.0KB
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇯🇵 001
-  type: ss
-  server: 194.68.27.76
-  port: 989
-  cipher: aes-256-cfb
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp02.weyaf9sdoh2h.space:19000?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_6531346266303766
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 015
+  type: trojan
+  server: jp01.weyaf9sdoh2h.space
+  port: 18090
   id: 17
   latency_ms: 0
-  link: ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw==@194.68.27.76:989#%F0%9F%9F%A1_%F0%9F%87%AF%F0%9F%87%B5_%F0%9F%92%BB_github.com%2FRuk1ng001_3363383831653737
-  max_speed: 1.1MB
-  password: f8f7aCzcPKbsF8p3
-- name: 🇭🇰 001
-  type: ss
-  server: 103.149.182.191
-  port: 8388
-  cipher: chacha20-ietf
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp01.weyaf9sdoh2h.space:18090?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_6664643430666532
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 016
+  type: trojan
+  server: jp02.weyaf9sdoh2h.space
+  port: 19014
+  id: 18
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp02.weyaf9sdoh2h.space:19014?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3131313039373430
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 017
+  type: trojan
+  server: jp01.weyaf9sdoh2h.space
+  port: 18066
+  id: 19
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp01.weyaf9sdoh2h.space:18066?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_6138313836366339
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 018
+  type: trojan
+  server: jp01.weyaf9sdoh2h.space
+  port: 18038
   id: 20
   latency_ms: 0
-  link: ss://Y2hhY2hhMjAtaWV0Zjphc2QxMjM0NTY=@103.149.182.191:8388#%E2%9D%93_%F0%9F%87%A8%F0%9F%87%B3%3A%F0%9F%87%AD%F0%9F%87%B0_%F0%9F%92%BC_github.com%2FRuk1ng001_3363333662373361
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp01.weyaf9sdoh2h.space:18038?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3266353463306334
   max_speed: N/A
-  password: asd123456
-- name: 🇨🇳 004
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 019
   type: trojan
-  server: 36.151.251.18
-  port: 811
+  server: jp03.weyaf9sdoh2h.space
+  port: 17059
+  id: 21
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17059?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3434393361356138
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 020
+  type: trojan
+  server: jp01.weyaf9sdoh2h.space
+  port: 18046
   id: 22
   latency_ms: 0
-  link: trojan://BxceQaOe@36.151.251.18:811?allowInsecure=1#%E2%9D%93_%F0%9F%87%A8%F0%9F%87%B3_%F0%9F%93%B6_github.com%2FRuk1ng001_6465343238613838
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp01.weyaf9sdoh2h.space:18046?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3762613036336162
   max_speed: N/A
-  password: /BxceQaOe
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
   skip-cert-verify: true
-- name: 🇨🇳 005
+  sni: TG.WangCai2
+- name: ❓ 021
   type: trojan
-  server: 36.151.251.18
-  port: 2145
+  server: jp03.weyaf9sdoh2h.space
+  port: 17034
+  id: 23
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17034?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3437356164643962
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 022
+  type: trojan
+  server: jp03.weyaf9sdoh2h.space
+  port: 17070
+  id: 24
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17070?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3466643038613062
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 023
+  type: trojan
+  server: jp01.weyaf9sdoh2h.space
+  port: 18021
+  id: 25
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp01.weyaf9sdoh2h.space:18021?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_38383433663136
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 024
+  type: ss
+  server: uk.vpnsparta.pro
+  port: 57456
+  cipher: chacha20-ietf-poly1305
   id: 26
   latency_ms: 0
-  link: trojan://BxceQaOe@36.151.251.18:2145?allowInsecure=1#%E2%9D%93_%F0%9F%87%A8%F0%9F%87%B3_%F0%9F%93%B6_github.com%2FRuk1ng001_6161323737623434
-  max_speed: N/A
-  password: /BxceQaOe
-  skip-cert-verify: true
-- name: ❓ 003
-  type: ss
-  server: p141.panda001.net
-  port: 4652
-  cipher: aes-256-cfb
+  link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjNDA2NDFjMWY4OWU3YWNi@uk.vpnsparta.pro:57456#github.com%2FRuk1ng001_3933393466306661
+  max_speed: 49.6MB
+  password: c40641c1f89e7acb
+- name: ❓ 025
+  type: trojan
+  server: jp03.weyaf9sdoh2h.space
+  port: 17097
   id: 27
   latency_ms: 0
-  link: ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@p141.panda001.net:4652#github.com%2FRuk1ng001_3831353438663762
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17097?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_6330613436356336
   max_speed: N/A
-  password: qwerREWQ@@
-- name: ❓ 004
-  type: ss
-  server: 185.153.197.5
-  port: 989
-  cipher: aes-256-cfb
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 026
+  type: trojan
+  server: jp03.weyaf9sdoh2h.space
+  port: 17088
+  id: 28
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17088?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3136346331326161
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 027
+  type: trojan
+  server: jp02.weyaf9sdoh2h.space
+  port: 19055
+  id: 29
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp02.weyaf9sdoh2h.space:19055?allowInsecure=1#github.com%2FRuk1ng001_3563343765656564
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+- name: ❓ 028
+  type: trojan
+  server: jp02.weyaf9sdoh2h.space
+  port: 19095
   id: 30
   latency_ms: 0
-  link: ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw==@185.153.197.5:989#%F0%9F%94%B4_%F0%9F%87%B2%F0%9F%87%A9_%F0%9F%92%BC_github.com%2FRuk1ng001_65373938613838
-  max_speed: 115.4KB
-  password: f8f7aCzcPKbsF8p3
-- name: 🇦🇺 001
-  type: ss
-  server: 3.107.178.116
-  port: 80
-  cipher: aes-256-gcm
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp02.weyaf9sdoh2h.space:19095?security=tls#github.com%2FRuk1ng001_3166363135306464
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+- name: ❓ 029
+  type: trojan
+  server: jp02.weyaf9sdoh2h.space
+  port: 19061
+  id: 31
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp02.weyaf9sdoh2h.space:19061?allowInsecure=1#github.com%2FRuk1ng001_6666326330633430
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+- name: ❓ 030
+  type: trojan
+  server: jp03.weyaf9sdoh2h.space
+  port: 17048
+  id: 32
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17048?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3932353236346265
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 031
+  type: trojan
+  server: jp02.weyaf9sdoh2h.space
+  port: 19098
   id: 34
   latency_ms: 0
-  link: ss://YWVzLTI1Ni1nY206ZGFkYTA4MDE=@3.107.178.116:80#%F0%9F%9F%A1_%F0%9F%87%A6%F0%9F%87%BA_%F0%9F%92%BB_github.com%2FRuk1ng001_6334393066363163
-  max_speed: 5.3MB
-  password: dada0801
-- name: ❓ 005
-  type: ss
-  server: 91.132.94.200
-  port: 989
-  cipher: aes-256-cfb
-  id: 36
-  latency_ms: 0
-  link: ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw==@91.132.94.200:989#github.com%2FRuk1ng001_6133636335623663
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp02.weyaf9sdoh2h.space:19098?security=tls#github.com%2FRuk1ng001_3238386631316230
   max_speed: N/A
-  password: f8f7aCzcPKbsF8p3
-- name: 🇳🇱 001
-  type: ss
-  server: 151.242.251.142
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  id: 39
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+- name: ❓ 032
+  type: trojan
+  server: jp01.weyaf9sdoh2h.space
+  port: 18000
+  id: 35
   latency_ms: 0
-  link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@151.242.251.142:8080#%F0%9F%9F%A1_%F0%9F%87%B3%F0%9F%87%B1_%F0%9F%92%BB_github.com%2FRuk1ng001_3838643531666338
-  max_speed: 48.0MB
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp01.weyaf9sdoh2h.space:18000?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3334646662363364
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 034
+  type: trojan
+  server: jp01.weyaf9sdoh2h.space
+  port: 18074
+  id: 40
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp01.weyaf9sdoh2h.space:18074?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3138376536393334
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 035
+  type: trojan
+  server: jp03.weyaf9sdoh2h.space
+  port: 17066
+  id: 41
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17066?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3934393566646561
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 036
+  type: trojan
+  server: jp02.weyaf9sdoh2h.space
+  port: 19086
+  id: 42
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp02.weyaf9sdoh2h.space:19086?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_6134303162336664
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 037
+  type: trojan
+  server: jp01.weyaf9sdoh2h.space
+  port: 18001
+  id: 43
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp01.weyaf9sdoh2h.space:18001?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3435336132323034
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 038
+  type: trojan
+  server: jp02.weyaf9sdoh2h.space
+  port: 19065
+  id: 44
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp02.weyaf9sdoh2h.space:19065?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3236393331303163
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 039
+  type: trojan
+  server: jp02.weyaf9sdoh2h.space
+  port: 19068
+  id: 46
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp02.weyaf9sdoh2h.space:19068?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3463666138373931
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 040
+  type: trojan
+  server: jp02.weyaf9sdoh2h.space
+  port: 19078
+  id: 48
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp02.weyaf9sdoh2h.space:19078?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3731393536303765
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 041
+  type: trojan
+  server: jp02.weyaf9sdoh2h.space
+  port: 19097
+  id: 49
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp02.weyaf9sdoh2h.space:19097?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3961643737656337
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 042
+  type: trojan
+  server: jp03.weyaf9sdoh2h.space
+  port: 17009
+  id: 50
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17009?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_6562653136346662
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 043
+  type: trojan
+  server: jp01.weyaf9sdoh2h.space
+  port: 18019
+  id: 51
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp01.weyaf9sdoh2h.space:18019?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3661303835356262
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: 🇺🇸 003
+  type: ss
+  server: 45.87.175.166
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  id: 52
+  latency_ms: 0
+  link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxUld3WGh3ZkFCNWdBRW96VTRHMlBn@45.87.175.166:443#%E2%9D%93_%F0%9F%87%B3%F0%9F%87%B1_%F0%9F%92%BB_github.com%2FRuk1ng001_6463623238323336
+  max_speed: 234.8KB
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+- name: ❓ 044
+  type: trojan
+  server: jp02.weyaf9sdoh2h.space
+  port: 19059
+  id: 53
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp02.weyaf9sdoh2h.space:19059?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_6161373431396439
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 045
+  type: trojan
+  server: jp03.weyaf9sdoh2h.space
+  port: 17014
+  id: 54
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17014?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_6232643036393131
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
 - name: 🇵🇹 001
   type: ss
   server: 185.231.233.112
   port: 989
   cipher: aes-256-cfb
-  id: 45
+  id: 55
   latency_ms: 0
   link: ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw==@185.231.233.112:989#%F0%9F%9F%A0_%F0%9F%87%B5%F0%9F%87%B9_%F0%9F%92%BB_github.com%2FRuk1ng001_6239313761366362
-  max_speed: 34.9KB
-  password: f8f7aCzcPKbsF8p3
-- name: 🇭🇰 002
-  type: ss
-  server: 156.251.179.135
-  port: 443
-  cipher: aes-256-gcm
-  id: 48
-  latency_ms: 0
-  link: ss://YWVzLTI1Ni1nY206MmI1ZmFkMzg3NGU1@156.251.179.135:443#%F0%9F%9F%A0_%F0%9F%87%A8%F0%9F%87%B3%3A%F0%9F%87%AD%F0%9F%87%B0_%F0%9F%92%BB_github.com%2FRuk1ng001_3135313836333639
   max_speed: N/A
-  password: 2b5fad3874e5
+  password: f8f7aCzcPKbsF8p3
+- name: ❓ 046
+  type: trojan
+  server: jp03.weyaf9sdoh2h.space
+  port: 17096
+  id: 56
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17096?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3838303131613266
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 047
+  type: ss
+  server: liubu9.singdns.com
+  port: 17459
+  cipher: aes-128-gcm
+  id: 57
+  latency_ms: 0
+  link: ss://YWVzLTEyOC1nY206NTdiYzBjMDQtODE4NC00OGY1LTkwNmItODk3ZDA5NWVkNDQ1@liubu9.singdns.com:17459#github.com%2FRuk1ng001_3261373933353430
+  max_speed: N/A
+  password: 57bc0c04-8184-48f5-906b-897d095ed445
+- name: ❓ 048
+  type: trojan
+  server: jp01.weyaf9sdoh2h.space
+  port: 18018
+  id: 59
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp01.weyaf9sdoh2h.space:18018?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3837393236646332
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 049
+  type: trojan
+  server: jp02.weyaf9sdoh2h.space
+  port: 19076
+  id: 60
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp02.weyaf9sdoh2h.space:19076?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_6665386631643663
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 050
+  type: trojan
+  server: jp01.weyaf9sdoh2h.space
+  port: 18055
+  id: 61
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp01.weyaf9sdoh2h.space:18055?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3863333539623762
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 051
+  type: ss
+  server: 185.153.197.5
+  port: 989
+  cipher: aes-256-cfb
+  id: 62
+  latency_ms: 0
+  link: ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw==@185.153.197.5:989#%F0%9F%94%B4_%F0%9F%87%B2%F0%9F%87%A9_%F0%9F%92%BC_github.com%2FRuk1ng001_65373938613838
+  max_speed: 77.1KB
+  password: f8f7aCzcPKbsF8p3
+- name: 🇯🇵 003
+  type: trojan
+  server: 37.202.200.11
+  port: 12412
+  id: 63
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@37.202.200.11:12412?allowInsecure=1&sni=wjp04.weyaf9sdoh2h.space#%F0%9F%9F%A1_%F0%9F%87%AF%F0%9F%87%B5_%F0%9F%92%BB_github.com%2FRuk1ng001_3365386236303132
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: wjp04.weyaf9sdoh2h.space
+- name: ❓ 052
+  type: trojan
+  server: jp01.weyaf9sdoh2h.space
+  port: 18011
+  id: 64
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp01.weyaf9sdoh2h.space:18011?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3637303932333233
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 053
+  type: trojan
+  server: jp01.weyaf9sdoh2h.space
+  port: 18009
+  id: 65
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp01.weyaf9sdoh2h.space:18009?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3230646335383563
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 054
+  type: trojan
+  server: jp03.weyaf9sdoh2h.space
+  port: 17056
+  id: 66
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17056?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3161626437666562
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 056
+  type: trojan
+  server: jp02.weyaf9sdoh2h.space
+  port: 19080
+  id: 72
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp02.weyaf9sdoh2h.space:19080?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3565306230386637
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 057
+  type: trojan
+  server: jp02.weyaf9sdoh2h.space
+  port: 19052
+  id: 73
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp02.weyaf9sdoh2h.space:19052?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3536633737353965
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 058
+  type: trojan
+  server: jp02.weyaf9sdoh2h.space
+  port: 19010
+  id: 74
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp02.weyaf9sdoh2h.space:19010?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3338373739623163
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 059
+  type: trojan
+  server: jp03.weyaf9sdoh2h.space
+  port: 17050
+  id: 77
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17050?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3134306631306539
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: 🇯🇵 004
+  type: trojan
+  server: 37.202.200.19
+  port: 15013
+  id: 78
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@37.202.200.19:15013?allowInsecure=1&sni=jp02.weyaf9sdoh2h.space#%F0%9F%9F%A1_%F0%9F%87%AF%F0%9F%87%B5_%F0%9F%92%BB_github.com%2FRuk1ng001_3335666637343036
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: jp02.weyaf9sdoh2h.space
+- name: ❓ 060
+  type: trojan
+  server: jp03.weyaf9sdoh2h.space
+  port: 17099
+  id: 79
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17099?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_6262633863386534
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 062
+  type: ss
+  server: p141.panda001.net
+  port: 4652
+  cipher: aes-256-cfb
+  id: 81
+  latency_ms: 0
+  link: ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@p141.panda001.net:4652#github.com%2FRuk1ng001_3831353438663762
+  max_speed: N/A
+  password: qwerREWQ@@
+- name: ❓ 063
+  type: trojan
+  server: jp03.weyaf9sdoh2h.space
+  port: 17087
+  id: 83
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17087?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3938303330626439
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 064
+  type: trojan
+  server: jp03.weyaf9sdoh2h.space
+  port: 17090
+  id: 84
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17090?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3962363133386235
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 065
+  type: trojan
+  server: jp01.weyaf9sdoh2h.space
+  port: 18049
+  id: 85
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp01.weyaf9sdoh2h.space:18049?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_6136316562313638
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 066
+  type: trojan
+  server: jp03.weyaf9sdoh2h.space
+  port: 17076
+  id: 86
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17076?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3865363436633039
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 067
+  type: trojan
+  server: jp02.weyaf9sdoh2h.space
+  port: 19088
+  id: 87
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp02.weyaf9sdoh2h.space:19088?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3434646635653066
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 068
+  type: trojan
+  server: jp02.weyaf9sdoh2h.space
+  port: 19070
+  id: 88
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp02.weyaf9sdoh2h.space:19070?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_6465663835656236
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 069
+  type: trojan
+  server: jp01.weyaf9sdoh2h.space
+  port: 18025
+  id: 89
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp01.weyaf9sdoh2h.space:18025?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_6562656638346532
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 070
+  type: trojan
+  server: jp03.weyaf9sdoh2h.space
+  port: 17074
+  id: 90
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17074?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3764323162363666
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 071
+  type: trojan
+  server: jp01.weyaf9sdoh2h.space
+  port: 18076
+  id: 93
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp01.weyaf9sdoh2h.space:18076?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3338643233636161
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: 🇨🇳 001
+  type: trojan
+  server: 36.151.251.35
+  port: 24392
+  id: 94
+  latency_ms: 0
+  link: trojan://BxceQaOe@36.151.251.35:24392?allowInsecure=1#%E2%9D%93_%F0%9F%87%A8%F0%9F%87%B3_%F0%9F%93%B6_github.com%2FRuk1ng001_3862366537356439
+  max_speed: N/A
+  password: /BxceQaOe
+  skip-cert-verify: true
+- name: ❓ 072
+  type: trojan
+  server: jp03.weyaf9sdoh2h.space
+  port: 17031
+  id: 95
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17031?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3832663939323536
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 073
+  type: trojan
+  server: jp02.weyaf9sdoh2h.space
+  port: 19038
+  id: 96
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp02.weyaf9sdoh2h.space:19038?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3737376435316332
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: 🇭🇰 001
+  type: trojan
+  server: 58.152.110.83
+  port: 443
+  id: 97
+  latency_ms: 0
+  link: trojan://ea39fa94f1ee00999337ea1fd3318e69@58.152.110.83:443?security=tls&sni=www.nintendogames.net#%F0%9F%9F%A1_%F0%9F%87%A8%F0%9F%87%B3%3A%F0%9F%87%AD%F0%9F%87%B0_%F0%9F%93%B6_github.com%2FRuk1ng001_34613331636335
+  max_speed: 206.9KB
+  password: /ea39fa94f1ee00999337ea1fd3318e69
+  sni: www.nintendogames.net
+- name: ❓ 074
+  type: ss
+  server: 188.214.157.58
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  id: 98
+  latency_ms: 0
+  link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ==@188.214.157.58:990#github.com%2FRuk1ng001_3835343863316164
+  max_speed: N/A
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+- name: ❓ 075
+  type: trojan
+  server: jp02.weyaf9sdoh2h.space
+  port: 19066
+  id: 99
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp02.weyaf9sdoh2h.space:19066?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3662386234376162
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 076
+  type: trojan
+  server: jp02.weyaf9sdoh2h.space
+  port: 19089
+  id: 101
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp02.weyaf9sdoh2h.space:19089?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3933633238323236
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 077
+  type: trojan
+  server: jp03.weyaf9sdoh2h.space
+  port: 17001
+  id: 103
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17001?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_6336623233633633
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 078
+  type: trojan
+  server: jp01.weyaf9sdoh2h.space
+  port: 18050
+  id: 105
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp01.weyaf9sdoh2h.space:18050?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_6566306437616236
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 079
+  type: trojan
+  server: jp02.weyaf9sdoh2h.space
+  port: 19048
+  id: 107
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp02.weyaf9sdoh2h.space:19048?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3139326236316633
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 080
+  type: trojan
+  server: jp01.weyaf9sdoh2h.space
+  port: 18028
+  id: 108
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp01.weyaf9sdoh2h.space:18028?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3661623633633237
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 081
+  type: trojan
+  server: jp01.weyaf9sdoh2h.space
+  port: 18016
+  id: 109
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp01.weyaf9sdoh2h.space:18016?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3134623332656638
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 083
+  type: trojan
+  server: jp02.weyaf9sdoh2h.space
+  port: 19045
+  id: 112
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp02.weyaf9sdoh2h.space:19045?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_6433313537336336
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 084
+  type: trojan
+  server: jp01.weyaf9sdoh2h.space
+  port: 18072
+  id: 114
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp01.weyaf9sdoh2h.space:18072?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3636646339313965
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 085
+  type: trojan
+  server: jp01.weyaf9sdoh2h.space
+  port: 18029
+  id: 115
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp01.weyaf9sdoh2h.space:18029?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3536316364303565
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 086
+  type: trojan
+  server: jp02.weyaf9sdoh2h.space
+  port: 19004
+  id: 116
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp02.weyaf9sdoh2h.space:19004?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_6537303437613562
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 087
+  type: trojan
+  server: jp03.weyaf9sdoh2h.space
+  port: 17028
+  id: 117
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17028?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3130636636643034
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 088
+  type: trojan
+  server: jp03.weyaf9sdoh2h.space
+  port: 17053
+  id: 118
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17053?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3838303363393636
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 089
+  type: trojan
+  server: jp01.weyaf9sdoh2h.space
+  port: 18061
+  id: 121
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp01.weyaf9sdoh2h.space:18061?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3738636637653932
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 090
+  type: trojan
+  server: jp03.weyaf9sdoh2h.space
+  port: 17093
+  id: 122
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17093?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3536343935343932
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: 🇨🇳 003
+  type: trojan
+  server: 36.151.251.23
+  port: 4451
+  id: 123
+  latency_ms: 0
+  link: trojan://BxceQaOe@36.151.251.23:4451?allowInsecure=1#%E2%9D%93_%F0%9F%87%A8%F0%9F%87%B3_%F0%9F%93%B6_github.com%2FRuk1ng001_3666663465633561
+  max_speed: N/A
+  password: /BxceQaOe
+  skip-cert-verify: true
+- name: ❓ 091
+  type: trojan
+  server: jp02.weyaf9sdoh2h.space
+  port: 19047
+  id: 124
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp02.weyaf9sdoh2h.space:19047?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_6536366665326530
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 092
+  type: trojan
+  server: jp01.weyaf9sdoh2h.space
+  port: 18083
+  id: 125
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp01.weyaf9sdoh2h.space:18083?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3262383936633532
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 093
+  type: trojan
+  server: jp03.weyaf9sdoh2h.space
+  port: 17003
+  id: 126
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17003?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_6263383336363464
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 094
+  type: trojan
+  server: jp01.weyaf9sdoh2h.space
+  port: 18094
+  id: 127
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp01.weyaf9sdoh2h.space:18094?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3161363863613136
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 095
+  type: trojan
+  server: jp01.weyaf9sdoh2h.space
+  port: 18095
+  id: 128
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp01.weyaf9sdoh2h.space:18095?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_33343539373766
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 096
+  type: trojan
+  server: jp03.weyaf9sdoh2h.space
+  port: 17058
+  id: 129
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17058?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3633333531336431
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 097
+  type: trojan
+  server: jp02.weyaf9sdoh2h.space
+  port: 19029
+  id: 131
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp02.weyaf9sdoh2h.space:19029?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3130633733633563
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 098
+  type: trojan
+  server: jp03.weyaf9sdoh2h.space
+  port: 17041
+  id: 132
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17041?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_6134386161303566
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 099
+  type: trojan
+  server: jp03.weyaf9sdoh2h.space
+  port: 17025
+  id: 133
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17025?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3235663339626539
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 100
+  type: trojan
+  server: jp02.weyaf9sdoh2h.space
+  port: 19084
+  id: 135
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp02.weyaf9sdoh2h.space:19084?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_6636346136363533
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 101
+  type: trojan
+  server: jp01.weyaf9sdoh2h.space
+  port: 18013
+  id: 136
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp01.weyaf9sdoh2h.space:18013?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3837376561353064
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 102
+  type: trojan
+  server: jp03.weyaf9sdoh2h.space
+  port: 17036
+  id: 138
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17036?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3165333439653035
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 103
+  type: trojan
+  server: jp01.weyaf9sdoh2h.space
+  port: 18091
+  id: 139
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp01.weyaf9sdoh2h.space:18091?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_38666532313562
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 104
+  type: trojan
+  server: jp02.weyaf9sdoh2h.space
+  port: 19033
+  id: 140
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp02.weyaf9sdoh2h.space:19033?security=tls#github.com%2FRuk1ng001_3861333263306431
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+- name: ❓ 105
+  type: trojan
+  server: jp03.weyaf9sdoh2h.space
+  port: 17075
+  id: 141
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17075?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_35363566653036
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 106
+  type: trojan
+  server: jp02.weyaf9sdoh2h.space
+  port: 19009
+  id: 142
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp02.weyaf9sdoh2h.space:19009?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3436303762343565
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 107
+  type: trojan
+  server: jp03.weyaf9sdoh2h.space
+  port: 17000
+  id: 144
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17000?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3561383639643861
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 108
+  type: trojan
+  server: jp03.weyaf9sdoh2h.space
+  port: 17042
+  id: 145
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17042?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3162656666643130
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 109
+  type: trojan
+  server: jp01.weyaf9sdoh2h.space
+  port: 18078
+  id: 146
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp01.weyaf9sdoh2h.space:18078?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3265656335363730
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 110
+  type: trojan
+  server: jp03.weyaf9sdoh2h.space
+  port: 17054
+  id: 147
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17054?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3761313133633535
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 111
+  type: trojan
+  server: jp03.weyaf9sdoh2h.space
+  port: 17006
+  id: 148
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17006?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3131663933353338
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 112
+  type: trojan
+  server: jp01.weyaf9sdoh2h.space
+  port: 18071
+  id: 149
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp01.weyaf9sdoh2h.space:18071?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_3963653364393431
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
+- name: ❓ 113
+  type: trojan
+  server: jp03.weyaf9sdoh2h.space
+  port: 17077
+  id: 150
+  latency_ms: 0
+  link: trojan://898e1dca-14b2-4371-abc8-1b9f839bff6d@jp03.weyaf9sdoh2h.space:17077?allowInsecure=1&sni=TG.WangCai2#github.com%2FRuk1ng001_6365303132393230
+  max_speed: N/A
+  password: /898e1dca-14b2-4371-abc8-1b9f839bff6d
+  skip-cert-verify: true
+  sni: TG.WangCai2
 - name: 🇫🇷 001
   type: ss
   server: 13.38.44.116
@@ -177,7 +1283,7 @@ proxies:
   id: 3
   latency_ms: 0
   link: ss://YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU=@13.38.44.116:443#%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_1_1%401
-  max_speed: N/A
+  max_speed: 40.9MB
   password: amazonskr05
 - name: 🇬🇧 001
   type: ss
@@ -219,7 +1325,7 @@ proxies:
   link: ss://YWVzLTI1Ni1nY206dWd5QmtTRUZ4VkVtVVlTSHl2eG1XTmo5@198.8.92.84:40220#adi%7C0701+-+ip1
   max_speed: N/A
   password: ugyBkSEFxVEmUYSHyvxmWNj9
-- name: 🇨🇳 008
+- name: 🇨🇳 005
   type: trojan
   server: 120.236.197.205
   port: 3389
@@ -318,7 +1424,7 @@ proxies:
   link: ss://YWVzLTI1Ni1nY206SjlZMm5jcmRQRUMzOGd3eWRORkZHQm5h@198.8.92.84:35294#adi%7C0703+-+ip1+2
   max_speed: N/A
   password: J9Y2ncrdPEC38gwydNFFGBna
-- name: 🇳🇱 002
+- name: 🇳🇱 001
   type: ss
   server: 81.19.208.107
   port: 50168
@@ -425,10 +1531,30 @@ proxies:
   id: 4
   latency_ms: 0
   link: trojan://ea39fa94f1ee00999337ea1fd3318e69@58.152.110.40:443?security=tls&sni=www.nintendogames.net#%F0%9F%87%AD%F0%9F%87%B0+%E9%A6%99%E6%B8%AF4%7C%40stairnode
-  max_speed: 14.9MB
+  max_speed: N/A
   password: /ea39fa94f1ee00999337ea1fd3318e69
   sni: www.nintendogames.net
-- name: 🇯🇵 002
+- name: 🇨🇳 006
+  type: trojan
+  server: 36.151.251.18
+  port: 2145
+  id: 5
+  latency_ms: 0
+  link: trojan://BxceQaOe@36.151.251.18:2145?allowInsecure=1#%F0%9F%87%AF%F0%9F%87%B5+%E6%97%A5%E6%9C%AC%7C%40stairnode
+  max_speed: N/A
+  password: /BxceQaOe
+  skip-cert-verify: true
+- name: 🇨🇳 007
+  type: trojan
+  server: 36.150.215.138
+  port: 4451
+  id: 6
+  latency_ms: 0
+  link: trojan://BxceQaOe@36.150.215.138:4451?allowInsecure=1#%F0%9F%87%AD%F0%9F%87%B0+%E9%A6%99%E6%B8%AF5%7C%40stairnode
+  max_speed: N/A
+  password: /BxceQaOe
+  skip-cert-verify: true
+- name: 🇯🇵 005
   type: trojan
   server: 160.16.81.84
   port: 4452
@@ -438,7 +1564,7 @@ proxies:
   max_speed: N/A
   password: /ea39fa94f1ee00999337ea1fd3318e69
   sni: www.nintendogames.net
-- name: 🇯🇵 003
+- name: 🇯🇵 006
   type: trojan
   server: 160.16.81.84
   port: 1331
@@ -448,7 +1574,7 @@ proxies:
   max_speed: N/A
   password: /ea39fa94f1ee00999337ea1fd3318e69
   sni: www.nintendogames.net
-- name: 🇯🇵 004
+- name: 🇯🇵 007
   type: trojan
   server: 160.16.81.84
   port: 5321
@@ -458,7 +1584,7 @@ proxies:
   max_speed: N/A
   password: /ea39fa94f1ee00999337ea1fd3318e69
   sni: www.nintendogames.net
-- name: 🇯🇵 005
+- name: 🇯🇵 008
   type: trojan
   server: 160.16.81.84
   port: 2283
@@ -469,7 +1595,7 @@ proxies:
   password: /ea39fa94f1ee00999337ea1fd3318e69
   skip-cert-verify: true
   sni: www.baidu.com
-- name: 🇨🇳 011
+- name: 🇨🇳 008
   type: trojan
   server: 36.156.102.115
   port: 2088
@@ -479,7 +1605,7 @@ proxies:
   max_speed: N/A
   password: /BxceQaOe
   skip-cert-verify: true
-- name: 🇯🇵 006
+- name: 🇯🇵 009
   type: trojan
   server: 160.16.81.84
   port: 2467
@@ -489,7 +1615,7 @@ proxies:
   max_speed: N/A
   password: /ea39fa94f1ee00999337ea1fd3318e69
   sni: www.nintendogames.net
-- name: 🇯🇵 007
+- name: 🇯🇵 010
   type: trojan
   server: 160.16.81.84
   port: 2381
@@ -499,7 +1625,7 @@ proxies:
   max_speed: N/A
   password: /ea39fa94f1ee00999337ea1fd3318e69
   sni: www.nintendogames.net
-- name: 🇨🇳 012
+- name: 🇨🇳 009
   type: trojan
   server: 36.156.102.115
   port: 26876
@@ -509,7 +1635,17 @@ proxies:
   max_speed: N/A
   password: /BxceQaOe
   skip-cert-verify: true
-- name: 🇨🇳 014
+- name: 🇨🇳 010
+  type: trojan
+  server: 36.151.251.18
+  port: 811
+  id: 0
+  latency_ms: 0
+  link: trojan://BxceQaOe@36.151.251.18:811?allowInsecure=1#%E6%97%A5%E6%9C%AC_1
+  max_speed: N/A
+  password: /BxceQaOe
+  skip-cert-verify: true
+- name: 🇨🇳 011
   type: trojan
   server: 36.156.102.115
   port: 44095
