@@ -21,7 +21,7 @@ def get_latest_hongkongclash_yaml():
     year = datetime.now().year
     month = datetime.now().month
     attempts = 0
-    max_attempts = 12  # 尝试最近12个月
+    max_attempts = 1  # 尝试最近12个月
     while attempts < max_attempts:
         dir_path = f"uploads/{year}/{month:02d}"
         api_url = f"https://api.github.com/repos/hongkongclash/hongkongclash.github.io/contents/{dir_path}?ref=main"
