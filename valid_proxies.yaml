@@ -7,7 +7,7 @@ proxies:
   id: 0
   latency_ms: 0
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@45.87.175.174:8080#%F0%9F%87%A9%F0%9F%87%AA_DE_%E5%BE%B7%E5%9B%BD
-  max_speed: 49.9MB
+  max_speed: 37.0MB
   password: k1dBOmOB4oqi7Ump37a1bQ
 - name: 🇳🇱 001
   type: ss
@@ -17,7 +17,7 @@ proxies:
   id: 2
   latency_ms: 0
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1bzdFYnRxSXdnWlhYSG1NdjVMYkxjT3hwdHlQbE5raA==@178.23.190.238:443#%F0%9F%87%B3%F0%9F%87%B1_NL_%E8%8D%B7%E5%85%B0
-  max_speed: 894.9KB
+  max_speed: 593.4KB
   password: uo7EbtqIwgZXXHmMv5LbLcOxptyPlNkh
 - name: 🇺🇸 002
   type: ss
@@ -27,7 +27,7 @@ proxies:
   id: 3
   latency_ms: 0
   link: ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.6:443#%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_1
-  max_speed: 67.1MB
+  max_speed: 70.7MB
   password: shadowsocks
 - name: 🇭🇰 001
   type: ss
@@ -37,7 +37,7 @@ proxies:
   id: 5
   latency_ms: 0
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpIYU5xdzlwSUU0amN4OThzZzdVUWdIZUdOVE00UjJwaw==@194.246.114.101:443#%F0%9F%87%B7%F0%9F%87%BA_RU_%E4%BF%84%E7%BD%97%E6%96%AF_1
-  max_speed: 9.3MB
+  max_speed: 9.0MB
   password: HaNqw9pIE4jcx98sg7UQgHeGNTM4R2pk
 - name: 🇺🇸 003
   type: ss
@@ -57,7 +57,7 @@ proxies:
   id: 8
   latency_ms: 0
   link: ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw==@185.153.197.5:989#%F0%9F%87%B2%F0%9F%87%A9_MD_%E6%91%A9%E5%B0%94%E5%A4%9A%E7%93%A6
-  max_speed: N/A
+  max_speed: 1.2MB
   password: f8f7aCzcPKbsF8p3
 - name: 🇺🇸 004
   type: ss
@@ -67,58 +67,70 @@ proxies:
   id: 9
   latency_ms: 0
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz@185.47.255.22:990#%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_4
-  max_speed: 779.5KB
+  max_speed: 178.9KB
   password: f8f7aCzcPKbsF8p3
-- name: 🇰🇷 001
+- name: 🇨🇳 001
   type: ss
-  server: 221.150.109.20
-  port: 42013
-  cipher: aes-256-cfb
+  server: 103.109.23.165
+  port: 33007
+  cipher: chacha20-ietf-poly1305
   id: 0
   latency_ms: 0
-  link: ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@221.150.109.20:42013#%F0%9F%9F%A1_%F0%9F%87%B0%F0%9F%87%B7_%F0%9F%93%B6_github.com%2FRuk1ng001_6235633663653237
+  link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpzeG5DUEtiNzBER1JvNjItZ29YRlZIcmp6Ri01b01iRA==@103.109.23.165:33007#github.com%2FRuk1ng001_34356265303331
   max_speed: N/A
-  password: qwerREWQ@@
-- name: 🇰🇷 002
+  password: sxnCPKb70DGRo62-goXFVHrjzF-5oMbD
+- name: 🇰🇷 001
   type: ss
-  server: 121.170.203.147
-  port: 61417
+  server: 221.139.79.57
+  port: 13979
   cipher: aes-256-cfb
   id: 1
   latency_ms: 0
-  link: ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@121.170.203.147:61417#%F0%9F%9F%A1_%F0%9F%87%B0%F0%9F%87%B7_%F0%9F%93%B6_github.com%2FRuk1ng001_3965393362663330
-  max_speed: N/A
+  link: ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@221.139.79.57:13979#%E2%9D%93_%F0%9F%87%B0%F0%9F%87%B7_%F0%9F%93%B6_github.com%2FRuk1ng001_3936623539623764
+  max_speed: 4.5MB
   password: qwerREWQ@@
 - name: 🇷🇺 001
   type: ss
-  server: 45.140.169.225
-  port: 10081
+  server: 195.58.49.100
+  port: 10912
   cipher: aes-256-gcm
   id: 2
   latency_ms: 0
-  link: ss://YWVzLTI1Ni1nY206YzVmY2RmNzgyOTExMmNiNA==@45.140.169.225:10081#github.com%2FRuk1ng001_6130613462363033
-  max_speed: 334.1KB
-  password: c5fcdf7829112cb4
-- name: 🇨🇳 001
-  type: ss
-  server: 212.192.15.59
-  port: 50521
-  cipher: aes-256-gcm
+  link: ss://YWVzLTI1Ni1nY206OWYzZDFhNmQzMTQ2ODU5OQ==@195.58.49.100:10912#%F0%9F%94%B4_%F0%9F%87%B7%F0%9F%87%BA_%F0%9F%92%BB_github.com%2FRuk1ng001_3831626232363932
+  max_speed: N/A
+  password: 9f3d1a6d31468599
+- name: ❓ 002
+  type: trojan
+  server: green2.cdntencentmusic.com
+  port: 35502
   id: 3
   latency_ms: 0
-  link: ss://YWVzLTI1Ni1nY206N2UxZGQ0YzU1YmY4NWRhNQ==@212.192.15.59:50521#%F0%9F%94%B4_%F0%9F%87%A8%F0%9F%87%B3%3A%F0%9F%87%AD%F0%9F%87%B0_%F0%9F%92%BB_github.com%2FRuk1ng001_3866613863623335
-  max_speed: 640.0KB
-  password: 7e1dd4c55bf85da5
-- name: 🇰🇷 003
+  link: trojan://40991964-b3be-4458-8bc7-5b1774552acf@green2.cdntencentmusic.com:35502?allowInsecure=1&sni=green2.cdntencentmusic.com#github.com%2FRuk1ng001_3237653439643365
+  max_speed: N/A
+  password: /40991964-b3be-4458-8bc7-5b1774552acf
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+- name: ❓ 003
+  type: trojan
+  server: green2.cdntencentmusic.com
+  port: 31101
+  id: 5
+  latency_ms: 0
+  link: trojan://0a10af44-d4c6-4803-aca4-abc92983bc5c@green2.cdntencentmusic.com:31101?allowInsecure=1&sni=green2.cdntencentmusic.com#github.com%2FRuk1ng001_6636323639653032
+  max_speed: 74.6KB
+  password: /0a10af44-d4c6-4803-aca4-abc92983bc5c
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+- name: 🇵🇹 001
   type: ss
-  server: 168.126.234.233
-  port: 28860
+  server: 185.231.233.112
+  port: 989
   cipher: aes-256-cfb
   id: 6
   latency_ms: 0
-  link: ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@168.126.234.233:28860#%F0%9F%9F%A1_%F0%9F%87%B0%F0%9F%87%B7_%F0%9F%93%B6_github.com%2FRuk1ng001_3232613266343631
-  max_speed: 8.0MB
-  password: qwerREWQ@@
+  link: ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw==@185.231.233.112:989#%F0%9F%9F%A0_%F0%9F%87%B5%F0%9F%87%B9_%F0%9F%92%BB_github.com%2FRuk1ng001_6239313761366362
+  max_speed: 50.8KB
+  password: f8f7aCzcPKbsF8p3
 - name: 🇭🇰 002
   type: trojan
   server: 58.152.46.60
@@ -126,311 +138,225 @@ proxies:
   id: 7
   latency_ms: 0
   link: trojan://BxceQaOe@58.152.46.60:443?allowInsecure=1&sni=t.me%2Fripaojiedian#%F0%9F%9F%A1_%F0%9F%87%A8%F0%9F%87%B3%3A%F0%9F%87%AD%F0%9F%87%B0_%F0%9F%93%B6_github.com%2FRuk1ng001_6634633430623562
-  max_speed: 7.5MB
+  max_speed: 5.7MB
   password: /BxceQaOe
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
-- name: 🇰🇷 004
+- name: 🇰🇷 002
   type: ss
-  server: 221.139.79.41
-  port: 41240
+  server: 121.170.203.148
+  port: 11815
   cipher: aes-256-cfb
-  id: 9
-  latency_ms: 335
-  link: ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@221.139.79.41:41240#%E2%9D%93_%F0%9F%87%B0%F0%9F%87%B7_%F0%9F%93%B6_github.com%2FRuk1ng001_3136666634653738
-  max_speed: 214.6KB
-  password: qwerREWQ@@
-- name: 🇭🇰 003
-  type: ss
-  server: 103.149.183.200
-  port: 8388
-  cipher: chacha20-ietf
   id: 10
   latency_ms: 0
-  link: ss://Y2hhY2hhMjAtaWV0Zjphc2QxMjM0NTY=@103.149.183.200:8388#%F0%9F%9F%A0_%F0%9F%87%A8%F0%9F%87%B3%3A%F0%9F%87%AD%F0%9F%87%B0_%F0%9F%92%BC_github.com%2FRuk1ng001_3133316339323936
-  max_speed: N/A
-  password: asd123456
-- name: 🇨🇳 002
-  type: ss
-  server: 14.18.106.88
-  port: 6100
-  cipher: aes-256-gcm
-  id: 13
-  latency_ms: 0
-  link: ss://YWVzLTI1Ni1nY206MTIz@14.18.106.88:6100#%F0%9F%9F%A1_%F0%9F%87%A8%F0%9F%87%B3_%F0%9F%93%B6_github.com%2FRuk1ng001_3165323762303130
-  max_speed: N/A
-  password: '123'
-- name: 🇰🇷 005
-  type: ss
-  server: 168.126.234.247
-  port: 51978
-  cipher: aes-256-cfb
-  id: 15
-  latency_ms: 0
-  link: ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@168.126.234.247:51978#%F0%9F%9F%A1_%F0%9F%87%B0%F0%9F%87%B7_%F0%9F%93%B6_github.com%2FRuk1ng001_3134663630366636
-  max_speed: 1.6MB
+  link: ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@121.170.203.148:11815#%F0%9F%9F%A1_%F0%9F%87%B0%F0%9F%87%B7_%F0%9F%93%B6_github.com%2FRuk1ng001_6462353363656465
+  max_speed: 6.2MB
   password: qwerREWQ@@
-- name: 🇰🇷 006
-  type: ss
-  server: 221.168.44.72
-  port: 32063
-  cipher: aes-256-cfb
-  id: 16
-  latency_ms: 0
-  link: ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@221.168.44.72:32063#%F0%9F%9F%A1_%F0%9F%87%B0%F0%9F%87%B7_%F0%9F%93%B6_github.com%2FRuk1ng001_6134396466363131
-  max_speed: N/A
-  password: qwerREWQ@@
-- name: 🇰🇷 007
-  type: ss
-  server: 168.126.234.230
-  port: 44112
-  cipher: aes-256-cfb
-  id: 17
-  latency_ms: 0
-  link: ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@168.126.234.230:44112#%F0%9F%9F%A1_%F0%9F%87%B0%F0%9F%87%B7_%F0%9F%93%B6_github.com%2FRuk1ng001_3838643763353361
-  max_speed: 302.3KB
-  password: qwerREWQ@@
-- name: ❓ 002
-  type: ss
-  server: liubu9.singdns.com
-  port: 17459
-  cipher: aes-128-gcm
-  id: 18
-  latency_ms: 0
-  link: ss://YWVzLTEyOC1nY206NTdiYzBjMDQtODE4NC00OGY1LTkwNmItODk3ZDA5NWVkNDQ1@liubu9.singdns.com:17459#github.com%2FRuk1ng001_3666343861386363
-  max_speed: 132.6KB
-  password: 57bc0c04-8184-48f5-906b-897d095ed445
-- name: 🇷🇺 002
-  type: ss
-  server: 45.147.200.79
-  port: 10081
-  cipher: aes-256-gcm
-  id: 20
-  latency_ms: 0
-  link: ss://YWVzLTI1Ni1nY206ZDk4OWZmM2Q0NmE2M2Y2Mw==@45.147.200.79:10081#%F0%9F%9F%A0_%F0%9F%87%B7%F0%9F%87%BA_%F0%9F%92%BB_github.com%2FRuk1ng001_6465343762626339
-  max_speed: 13.8MB
-  password: d989ff3d46a63f63
-- name: 🇺🇸 005
-  type: ss
-  server: 185.193.48.157
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  id: 21
-  latency_ms: 0
-  link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6d0JMTTZiQkU1WXh2d3ZuS2d4QXEzRXJYcHFNWXYyMA==@185.193.48.157:443#%E2%9D%93_%F0%9F%87%BA%F0%9F%87%B8_%F0%9F%92%BB_github.com%2FRuk1ng001_3739636533356363
-  max_speed: N/A
-  password: zwBLM6bBE5YxvwvnKgxAq3ErXpqMYv20
-- name: ❓ 003
-  type: ss
-  server: 91.106.109.74
-  port: 11201
-  cipher: chacha20-ietf-poly1305
-  id: 24
-  latency_ms: 0
-  link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMWJmMDU0ZGNjMDM0MmNk@91.106.109.74:11201#%E2%9D%93_%F0%9F%87%AF%F0%9F%87%B4_%F0%9F%93%B6_github.com%2FRuk1ng001_6330613735623130
-  max_speed: 24.9MB
-  password: 11bf054dcc0342cd
 - name: ❓ 004
   type: ss
-  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.358.onl
-  port: 18017
+  server: 85.90.207.104
+  port: 18792
   cipher: chacha20-ietf-poly1305
-  id: 26
+  id: 11
   latency_ms: 0
-  link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplNjExMDI3YS03YjU1LTRmNjQtYjhkZi0yNThmMmQ3ZWY5NWM=@e4d7a1c2f3b80976a5e2c1d4b3f0a987.358.onl:18017#github.com%2FRuk1ng001_6330343130363862
-  max_speed: N/A
-  password: e611027a-7b55-4f64-b8df-258f2d7ef95c
-- name: 🇰🇷 008
-  type: ss
-  server: 218.38.103.150
-  port: 39502
-  cipher: aes-256-cfb
-  id: 27
-  latency_ms: 0
-  link: ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@218.38.103.150:39502#%E2%9D%93_%F0%9F%87%B0%F0%9F%87%B7_%F0%9F%93%B6_github.com%2FRuk1ng001_3733633166636637
-  max_speed: N/A
-  password: qwerREWQ@@
-- name: 🇰🇷 009
-  type: ss
-  server: 125.141.31.100
-  port: 18590
-  cipher: aes-256-cfb
-  id: 28
-  latency_ms: 0
-  link: ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@125.141.31.100:18590#%F0%9F%9F%A1_%F0%9F%87%B0%F0%9F%87%B7_%F0%9F%93%B6_github.com%2FRuk1ng001_3137666462633236
-  max_speed: N/A
-  password: qwerREWQ@@
-- name: 🇰🇷 010
-  type: ss
-  server: 203.234.238.140
-  port: 29731
-  cipher: aes-256-cfb
-  id: 29
-  latency_ms: 0
-  link: ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@203.234.238.140:29731#%F0%9F%9F%A1_%F0%9F%87%B0%F0%9F%87%B7_%F0%9F%93%B6_github.com%2FRuk1ng001_3131373361323832
-  max_speed: N/A
-  password: qwerREWQ@@
-- name: 🇷🇺 003
-  type: ss
-  server: 195.133.5.38
-  port: 1012
-  cipher: aes-256-gcm
-  id: 30
-  latency_ms: 0
-  link: ss://YWVzLTI1Ni1nY206N2FlNGU2OGNmNzdmNjA4OQ==@195.133.5.38:1012#%F0%9F%9F%A0_%F0%9F%87%B7%F0%9F%87%BA_%F0%9F%92%BB_github.com%2FRuk1ng001_3833316637383536
-  max_speed: 18.3MB
-  password: 7ae4e68cf77f6089
-- name: 🇷🇺 004
-  type: ss
-  server: 194.87.68.7
-  port: 20219
-  cipher: aes-256-gcm
-  id: 31
-  latency_ms: 0
-  link: ss://YWVzLTI1Ni1nY206ODNhY2Y2OWVkYjRlNTQ1Mw==@194.87.68.7:20219#%F0%9F%94%B4_%F0%9F%87%B7%F0%9F%87%BA_%F0%9F%92%BB_github.com%2FRuk1ng001_3832633464313535
-  max_speed: N/A
-  password: 83acf69edb4e5453
-- name: 🇵🇹 001
-  type: ss
-  server: 185.231.233.112
-  port: 989
-  cipher: aes-256-cfb
-  id: 33
-  latency_ms: 0
-  link: ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw==@185.231.233.112:989#%F0%9F%9F%A0_%F0%9F%87%B5%F0%9F%87%B9_%F0%9F%92%BB_github.com%2FRuk1ng001_6239313761366362
-  max_speed: 50.9KB
-  password: f8f7aCzcPKbsF8p3
-- name: 🇰🇷 011
-  type: ss
-  server: 203.32.26.157
-  port: 30112
-  cipher: aes-256-gcm
-  id: 34
-  latency_ms: 0
-  link: ss://YWVzLTI1Ni1nY206NjNkN2MxNzUwNmQxZjQ4Yg==@203.32.26.157:30112#github.com%2FRuk1ng001_6566323462366237
-  max_speed: N/A
-  password: 63d7c17506d1f48b
-- name: 🇰🇷 012
-  type: ss
-  server: 125.141.26.12
-  port: 52713
-  cipher: aes-256-cfb
-  id: 35
-  latency_ms: 0
-  link: ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@125.141.26.12:52713#%F0%9F%9F%A1_%F0%9F%87%B0%F0%9F%87%B7_%F0%9F%93%B6_github.com%2FRuk1ng001_3462333835376466
-  max_speed: N/A
-  password: qwerREWQ@@
-- name: 🇰🇷 013
-  type: ss
-  server: 218.234.149.9
-  port: 4483
-  cipher: aes-256-cfb
-  id: 37
-  latency_ms: 0
-  link: ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@218.234.149.9:4483#%E2%9D%93_%F0%9F%87%B0%F0%9F%87%B7_%F0%9F%93%B6_github.com%2FRuk1ng001_6630393561343834
-  max_speed: 6.1MB
-  password: qwerREWQ@@
-- name: 🇷🇺 005
-  type: ss
-  server: 45.140.168.42
-  port: 1281
-  cipher: aes-256-gcm
-  id: 39
-  latency_ms: 0
-  link: ss://YWVzLTI1Ni1nY206ZjM0NTc5ZDAxNDhiMjU4MQ==@45.140.168.42:1281#%F0%9F%9F%A0_%F0%9F%87%B7%F0%9F%87%BA_%F0%9F%92%BB_github.com%2FRuk1ng001_3236373131633934
-  max_speed: 18.4MB
-  password: f34579d0148b2581
+  link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplNzE2ZDdiYmFlNGJkZDE0@85.90.207.104:18792#github.com%2FRuk1ng001_3336343063626134
+  max_speed: 844.0KB
+  password: e716d7bbae4bdd14
 - name: 🇯🇵 001
   type: ss
   server: 167.17.179.197
   port: 10201
   cipher: aes-256-gcm
-  id: 40
+  id: 13
   latency_ms: 0
   link: ss://YWVzLTI1Ni1nY206MDY5MDY1OTc0Njk4MGM0Ng==@167.17.179.197:10201#github.com%2FRuk1ng001_3439663734636638
-  max_speed: 172.3KB
+  max_speed: 206.9KB
   password: 0690659746980c46
-- name: 🇳🇱 002
+- name: 🇨🇳 002
   type: ss
-  server: 82.38.31.217
-  port: 8080
+  server: 14.18.106.88
+  port: 6100
+  cipher: aes-256-gcm
+  id: 15
+  latency_ms: 0
+  link: ss://YWVzLTI1Ni1nY206MTIz@14.18.106.88:6100#%F0%9F%9F%A1_%F0%9F%87%A8%F0%9F%87%B3_%F0%9F%93%B6_github.com%2FRuk1ng001_3165323762303130
+  max_speed: N/A
+  password: '123'
+- name: 🇭🇰 004
+  type: trojan
+  server: 112.118.116.123
+  port: 443
+  id: 16
+  latency_ms: 0
+  link: trojan://61d8077bfb174e171b8283f155a555ad@112.118.116.123:443?allowInsecure=1&sni=www.nintendogames.net#github.com%2FRuk1ng001_3832336237353830
+  max_speed: 18.8MB
+  password: /61d8077bfb174e171b8283f155a555ad
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+- name: ❓ 006
+  type: trojan
+  server: green2.cdntencentmusic.com
+  port: 31103
+  id: 17
+  latency_ms: 0
+  link: trojan://2cfd8fb6-1f17-4d33-a3b9-448b1d723723@green2.cdntencentmusic.com:31103?allowInsecure=1&sni=green2.cdntencentmusic.com#github.com%2FRuk1ng001_6666383931366563
+  max_speed: N/A
+  password: /2cfd8fb6-1f17-4d33-a3b9-448b1d723723
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+- name: ❓ 009
+  type: ss
+  server: 85.90.207.104
+  port: 18793
   cipher: chacha20-ietf-poly1305
-  id: 45
+  id: 20
   latency_ms: 0
-  link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.217:8080#%E2%9D%93_%F0%9F%87%B3%F0%9F%87%B1_%F0%9F%92%BB_github.com%2FRuk1ng001_3230326432633439
-  max_speed: 47.2MB
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇵🇱 001
+  link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplNzE2ZDdiYmFlNGJkZDE0@85.90.207.104:18793#github.com%2FRuk1ng001_3338626630333362
+  max_speed: N/A
+  password: e716d7bbae4bdd14
+- name: ❓ 010
   type: ss
-  server: 89.223.93.176
-  port: 41348
-  cipher: chacha20-ietf-poly1305
-  id: 48
+  server: liubu9.singdns.com
+  port: 17459
+  cipher: aes-128-gcm
+  id: 21
   latency_ms: 0
-  link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpWbXNmMDZZVE1xdEFZZGh3TXFkU3VHcWdkVmttMHlkZGk0a1lhQUVWUVdZajlpSEE=@89.223.93.176:41348#%F0%9F%9F%A1_%F0%9F%87%B5%F0%9F%87%B1_%F0%9F%92%BB_github.com%2FRuk1ng001_3463626634636234
-  max_speed: 20.7MB
-  password: Vmsf06YTMqtAYdhwMqdSuGqgdVkm0yddi4kYaAEVQWYj9iHA
-- name: 🇰🇷 014
+  link: ss://YWVzLTEyOC1nY206NTdiYzBjMDQtODE4NC00OGY1LTkwNmItODk3ZDA5NWVkNDQ1@liubu9.singdns.com:17459#github.com%2FRuk1ng001_3666343861386363
+  max_speed: 135.2KB
+  password: 57bc0c04-8184-48f5-906b-897d095ed445
+- name: 🇭🇰 005
   type: ss
-  server: 221.139.79.20
-  port: 45833
+  server: 103.149.182.158
+  port: 8388
+  cipher: chacha20-ietf
+  id: 23
+  latency_ms: 0
+  link: ss://Y2hhY2hhMjAtaWV0Zjphc2QxMjM0NTY=@103.149.182.158:8388#%F0%9F%9F%A0_%F0%9F%87%A8%F0%9F%87%B3%3A%F0%9F%87%AD%F0%9F%87%B0_%F0%9F%92%BC_github.com%2FRuk1ng001_3166363139363337
+  max_speed: N/A
+  password: asd123456
+- name: 🇰🇷 003
+  type: ss
+  server: 125.141.26.12
+  port: 52713
   cipher: aes-256-cfb
-  id: 49
+  id: 24
   latency_ms: 0
-  link: ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@221.139.79.20:45833#%E2%9D%93_%F0%9F%87%B0%F0%9F%87%B7_%F0%9F%93%B6_github.com%2FRuk1ng001_3839646238376433
-  max_speed: 1.6MB
-  password: qwerREWQ@@
-- name: 🇰🇷 015
-  type: ss
-  server: 121.170.203.148
-  port: 11815
-  cipher: aes-256-cfb
-  id: 51
-  latency_ms: 0
-  link: ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@121.170.203.148:11815#%F0%9F%9F%A1_%F0%9F%87%B0%F0%9F%87%B7_%F0%9F%93%B6_github.com%2FRuk1ng001_6462353363656465
-  max_speed: 4.2MB
+  link: ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@125.141.26.12:52713#%F0%9F%9F%A1_%F0%9F%87%B0%F0%9F%87%B7_%F0%9F%93%B6_github.com%2FRuk1ng001_3462333835376466
+  max_speed: N/A
   password: qwerREWQ@@
 - name: 🇨🇳 003
   type: ss
-  server: 103.109.23.165
-  port: 33007
-  cipher: chacha20-ietf-poly1305
-  id: 52
-  latency_ms: 0
-  link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpzeG5DUEtiNzBER1JvNjItZ29YRlZIcmp6Ri01b01iRA==@103.109.23.165:33007#github.com%2FRuk1ng001_34356265303331
-  max_speed: N/A
-  password: sxnCPKb70DGRo62-goXFVHrjzF-5oMbD
-- name: 🇰🇷 016
-  type: ss
-  server: 125.141.31.76
-  port: 41563
-  cipher: aes-256-cfb
-  id: 53
-  latency_ms: 0
-  link: ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@125.141.31.76:41563#%F0%9F%9F%A1_%F0%9F%87%B0%F0%9F%87%B7_%F0%9F%93%B6_github.com%2FRuk1ng001_3664613231616161
-  max_speed: N/A
-  password: qwerREWQ@@
-- name: 🇷🇺 006
-  type: ss
-  server: 195.58.49.100
-  port: 10912
+  server: 212.192.15.59
+  port: 50521
   cipher: aes-256-gcm
-  id: 54
+  id: 28
   latency_ms: 0
-  link: ss://YWVzLTI1Ni1nY206OWYzZDFhNmQzMTQ2ODU5OQ==@195.58.49.100:10912#%F0%9F%94%B4_%F0%9F%87%B7%F0%9F%87%BA_%F0%9F%92%BB_github.com%2FRuk1ng001_3831626232363932
-  max_speed: 880.0KB
-  password: 9f3d1a6d31468599
-- name: 🇰🇷 017
+  link: ss://YWVzLTI1Ni1nY206N2UxZGQ0YzU1YmY4NWRhNQ==@212.192.15.59:50521#%F0%9F%94%B4_%F0%9F%87%A8%F0%9F%87%B3%3A%F0%9F%87%AD%F0%9F%87%B0_%F0%9F%92%BB_github.com%2FRuk1ng001_3866613863623335
+  max_speed: 688.0KB
+  password: 7e1dd4c55bf85da5
+- name: 🇰🇷 004
   type: ss
-  server: 221.139.79.57
-  port: 13979
+  server: 168.126.234.230
+  port: 44112
   cipher: aes-256-cfb
+  id: 29
+  latency_ms: 0
+  link: ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@168.126.234.230:44112#%F0%9F%9F%A1_%F0%9F%87%B0%F0%9F%87%B7_%F0%9F%93%B6_github.com%2FRuk1ng001_3838643763353361
+  max_speed: 4.8MB
+  password: qwerREWQ@@
+- name: ❓ 014
+  type: trojan
+  server: green2.cdntencentmusic.com
+  port: 31102
+  id: 35
+  latency_ms: 0
+  link: trojan://f272b771-49f1-48f0-8ac4-ab7cd1a5c343@green2.cdntencentmusic.com:31102?allowInsecure=1&sni=green2.cdntencentmusic.com#github.com%2FRuk1ng001_3865613463373863
+  max_speed: N/A
+  password: /f272b771-49f1-48f0-8ac4-ab7cd1a5c343
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+- name: 🇭🇰 006
+  type: ss
+  server: 103.149.183.200
+  port: 8388
+  cipher: chacha20-ietf
+  id: 36
+  latency_ms: 0
+  link: ss://Y2hhY2hhMjAtaWV0Zjphc2QxMjM0NTY=@103.149.183.200:8388#%F0%9F%9F%A0_%F0%9F%87%A8%F0%9F%87%B3%3A%F0%9F%87%AD%F0%9F%87%B0_%F0%9F%92%BC_github.com%2FRuk1ng001_3133316339323936
+  max_speed: N/A
+  password: asd123456
+- name: 🇰🇷 005
+  type: ss
+  server: 156.244.20.53
+  port: 11201
+  cipher: chacha20-ietf-poly1305
+  id: 40
+  latency_ms: 0
+  link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjOGYxMWUyYmE2MzE4MWVh@156.244.20.53:11201#github.com%2FRuk1ng001_3938313139363566
+  max_speed: 2.6MB
+  password: c8f11e2ba63181ea
+- name: ❓ 017
+  type: ss
+  server: 85.90.207.104
+  port: 18794
+  cipher: chacha20-ietf-poly1305
+  id: 43
+  latency_ms: 0
+  link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplNzE2ZDdiYmFlNGJkZDE0@85.90.207.104:18794#github.com%2FRuk1ng001_6561656433336632
+  max_speed: 613.2KB
+  password: e716d7bbae4bdd14
+- name: 🇯🇵 002
+  type: trojan
+  server: 3.112.254.143
+  port: 3579
+  id: 44
+  latency_ms: 0
+  link: trojan://BxceQaOe@3.112.254.143:3579?allowInsecure=1&sni=t.me%252Fripaojiedian#github.com%2FRuk1ng001_3433383533326666
+  max_speed: N/A
+  password: /BxceQaOe
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+- name: ❓ 018
+  type: ss
+  server: 85.90.207.104
+  port: 18791
+  cipher: chacha20-ietf-poly1305
+  id: 45
+  latency_ms: 0
+  link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplNzE2ZDdiYmFlNGJkZDE0@85.90.207.104:18791#github.com%2FRuk1ng001_6433666535353264
+  max_speed: 595.7KB
+  password: e716d7bbae4bdd14
+- name: 🇺🇸 005
+  type: ss
+  server: 185.193.48.157
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  id: 50
+  latency_ms: 0
+  link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6d0JMTTZiQkU1WXh2d3ZuS2d4QXEzRXJYcHFNWXYyMA==@185.193.48.157:443#%E2%9D%93_%F0%9F%87%BA%F0%9F%87%B8_%F0%9F%92%BB_github.com%2FRuk1ng001_3739636533356363
+  max_speed: N/A
+  password: zwBLM6bBE5YxvwvnKgxAq3ErXpqMYv20
+- name: ❓ 022
+  type: ss
+  server: 85.90.207.104
+  port: 18790
+  cipher: rc4-md5
   id: 55
   latency_ms: 0
-  link: ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@221.139.79.57:13979#%E2%9D%93_%F0%9F%87%B0%F0%9F%87%B7_%F0%9F%93%B6_github.com%2FRuk1ng001_3936623539623764
-  max_speed: 174.9KB
+  link: ss://cmM0LW1kNTo2YzMyNTQzNWIyMTc2YzJk@85.90.207.104:18790#%F0%9F%9F%A0_%F0%9F%87%A6%F0%9F%87%B2_%F0%9F%92%BB_github.com%2FRuk1ng001_3236663235396230
+  max_speed: 826.2KB
+  password: 6c325435b2176c2d
+- name: 🇰🇷 006
+  type: ss
+  server: 168.126.234.247
+  port: 51978
+  cipher: aes-256-cfb
+  id: 56
+  latency_ms: 0
+  link: ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@168.126.234.247:51978#%F0%9F%9F%A1_%F0%9F%87%B0%F0%9F%87%B7_%F0%9F%93%B6_github.com%2FRuk1ng001_3134663630366636
+  max_speed: 10.7MB
   password: qwerREWQ@@
-- name: 🇰🇷 018
+- name: 🇰🇷 007
   type: ss
   server: 221.150.109.89
   port: 43231
@@ -438,6 +364,16 @@ proxies:
   id: 0
   latency_ms: 0
   link: ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@221.150.109.89:43231#%F0%9F%87%B0%F0%9F%87%B7_KR_%E9%9F%A9%E5%9B%BD
+  max_speed: N/A
+  password: qwerREWQ@@
+- name: 🇰🇷 008
+  type: ss
+  server: 168.126.234.233
+  port: 28860
+  cipher: aes-256-cfb
+  id: 1
+  latency_ms: 0
+  link: ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@168.126.234.233:28860#%F0%9F%87%B0%F0%9F%87%B7_KR_%E9%9F%A9%E5%9B%BD_1
   max_speed: N/A
   password: qwerREWQ@@
 - name: 🇺🇸 006
@@ -449,7 +385,27 @@ proxies:
   link: trojan://er668@kfjdi.pages.dev:443?security=tls#%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_2
   max_speed: N/A
   password: /er668
-- name: 🇰🇷 022
+- name: 🇰🇷 009
+  type: ss
+  server: 218.38.103.150
+  port: 39502
+  cipher: aes-256-cfb
+  id: 3
+  latency_ms: 0
+  link: ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@218.38.103.150:39502#%F0%9F%87%B0%F0%9F%87%B7_KR_%E9%9F%A9%E5%9B%BD_2
+  max_speed: N/A
+  password: qwerREWQ@@
+- name: 🇰🇷 010
+  type: ss
+  server: 121.170.203.147
+  port: 61417
+  cipher: aes-256-cfb
+  id: 4
+  latency_ms: 0
+  link: ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@121.170.203.147:61417#%F0%9F%87%B0%F0%9F%87%B7_KR_%E9%9F%A9%E5%9B%BD_3
+  max_speed: N/A
+  password: qwerREWQ@@
+- name: 🇰🇷 011
   type: ss
   server: 211.201.169.70
   port: 19307
@@ -459,7 +415,17 @@ proxies:
   link: ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@211.201.169.70:19307#%F0%9F%87%B0%F0%9F%87%B7_KR_%E9%9F%A9%E5%9B%BD_4
   max_speed: N/A
   password: qwerREWQ@@
-- name: 🇳🇱 003
+- name: 🇰🇷 012
+  type: ss
+  server: 218.234.149.9
+  port: 4483
+  cipher: aes-256-cfb
+  id: 6
+  latency_ms: 0
+  link: ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@218.234.149.9:4483#%F0%9F%87%B0%F0%9F%87%B7_KR_%E9%9F%A9%E5%9B%BD_5
+  max_speed: N/A
+  password: qwerREWQ@@
+- name: 🇳🇱 002
   type: ss
   server: fl3.cowjuice.me
   port: 9443
@@ -467,7 +433,7 @@ proxies:
   id: 8
   latency_ms: 0
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYMzZUSWk0QzNOSDZPbG4zVGRHeWpn@fl3.cowjuice.me:9443#%F0%9F%87%B3%F0%9F%87%B1_NL_%E8%8D%B7%E5%85%B0_1
-  max_speed: 38.2MB
+  max_speed: N/A
   password: X36TIi4C3NH6Oln3TdGyjg
 - name: 🇭🇺 001
   type: ss
@@ -475,10 +441,20 @@ proxies:
   port: 11201
   cipher: chacha20-ietf-poly1305
   id: 9
-  latency_ms: 215
+  latency_ms: 0
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTowMWRjMGQ3Y2JiNjUwYmMz@109.61.39.150:11201#%F0%9F%87%AD%F0%9F%87%BA_HU_%E5%8C%88%E7%89%99%E5%88%A9
-  max_speed: 7.4MB
+  max_speed: N/A
   password: 01dc0d7cbb650bc3
+- name: ❓ 024
+  type: ss
+  server: 91.106.109.74
+  port: 11201
+  cipher: chacha20-ietf-poly1305
+  id: 10
+  latency_ms: 0
+  link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMWJmMDU0ZGNjMDM0MmNk@91.106.109.74:11201#%F0%9F%87%AF%F0%9F%87%B4_JO_%E7%BA%A6%E6%97%A6
+  max_speed: N/A
+  password: 11bf054dcc0342cd
 - name: 🇬🇧 001
   type: ss
   server: 185.108.105.129
@@ -618,7 +594,7 @@ proxies:
   link: ss://YWVzLTI1Ni1nY206SjlZMm5jcmRQRUMzOGd3eWRORkZHQm5h@198.8.92.84:35294#adi%7C0703+-+ip1+2
   max_speed: N/A
   password: J9Y2ncrdPEC38gwydNFFGBna
-- name: 🇳🇱 004
+- name: 🇳🇱 003
   type: ss
   server: 81.19.208.107
   port: 50168
@@ -698,16 +674,6 @@ proxies:
   link: ss://YWVzLTI1Ni1nY206V0N1ejd5cmZaU0NRUVhTTnJ0R1B6MkhU@66.115.175.37:50168#%F0%9F%87%BA%F0%9F%87%B8+adi%7C0703+-+US_4984
   max_speed: N/A
   password: WCuz7yrfZSCQQXSNrtGPz2HT
-- name: 🇹🇼 001
-  type: trojan
-  server: green2.cdntencentmusic.com
-  port: 31103
-  id: 2
-  latency_ms: 0
-  link: trojan://7d22382e-1358-4669-9334-d1f8d54a9be6@green2.cdntencentmusic.com:31103?security=tls&sni=green2.cdntencentmusic.com#%E5%8F%B0%E6%B9%BE%28yudou789.top+%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29
-  max_speed: N/A
-  password: /7d22382e-1358-4669-9334-d1f8d54a9be6
-  sni: green2.cdntencentmusic.com
 - name: 🇹🇼 002
   type: trojan
   server: green2.cdntencentmusic.com
@@ -726,7 +692,7 @@ proxies:
   id: 16
   latency_ms: 0
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ==@45.15.185.70:990#%E6%BE%B3%E6%B4%B2%28yudou789.top+%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29
-  max_speed: 9.5MB
+  max_speed: 11.9MB
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
 - name: 🇨🇳 005
   type: ss
@@ -738,7 +704,7 @@ proxies:
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmZWFmYzJlZi1kNWZkLTRmNmQtODAzYi1mYWQ0YTVjYzFmMGU=@120.232.89.240:19822#%E7%BE%8E%E5%9B%BD%28yudou789.top+%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29_32
   max_speed: N/A
   password: feafc2ef-d5fd-4f6d-803b-fad4a5cc1f0e
-- name: 🇭🇰 005
+- name: 🇭🇰 008
   type: ss
   server: switcher-nick-croquet.freesocks.work
   port: 443
@@ -746,19 +712,9 @@ proxies:
   id: 19
   latency_ms: 0
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp3d3pWbjJabkhmcVlhNmw4RVdoM2VZ@switcher-nick-croquet.freesocks.work:443#%E9%A6%99%E6%B8%AF%28yudou789.top+%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29_1
-  max_speed: N/A
+  max_speed: 50.8KB
   password: wwzVn2ZnHfqYa6l8EWh3eY
-- name: 🇭🇰 008
-  type: trojan
-  server: green2.cdntencentmusic.com
-  port: 31102
-  id: 45
-  latency_ms: 0
-  link: trojan://7d22382e-1358-4669-9334-d1f8d54a9be6@green2.cdntencentmusic.com:31102?security=tls&sni=green2.cdntencentmusic.com#%E9%A6%99%E6%B8%AF%28yudou789.top+%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29_11
-  max_speed: N/A
-  password: /7d22382e-1358-4669-9334-d1f8d54a9be6
-  sni: green2.cdntencentmusic.com
-- name: 🇳🇱 005
+- name: 🇳🇱 004
   type: ss
   server: 82.38.31.190
   port: 8080
@@ -766,7 +722,7 @@ proxies:
   id: 51
   latency_ms: 0
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.190:8080#%E7%BE%8E%E5%9B%BD%28yudou789.top+%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29_66
-  max_speed: 50.2MB
+  max_speed: 35.4MB
   password: k1dBOmOB4oqi7Ump37a1bQ
 - name: 🇨🇳 006
   type: ss
@@ -806,7 +762,7 @@ proxies:
   id: 113
   latency_ms: 0
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ==@103.97.203.227:990#%E7%BE%8E%E5%9B%BD%28yudou789.top+%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29_121
-  max_speed: 31.5KB
+  max_speed: 80.5KB
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
 - name: 🇺🇸 018
   type: trojan
@@ -851,7 +807,7 @@ proxies:
   link: ss://YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU=@63.180.254.10:443#8%E5%85%83%E8%80%81%E7%89%8C%E4%B8%93%E7%BA%BF%E6%9C%BA%E5%9C%BA%EF%BC%9Acczzuu.top
   max_speed: N/A
   password: amazonskr05
-- name: 🇭🇰 018
+- name: 🇭🇰 021
   type: trojan
   server: 58.152.18.48
   port: 443
@@ -861,7 +817,7 @@ proxies:
   max_speed: N/A
   password: /381f2e86233720eacda26d50e9aa26da
   sni: www.nintendogames.net
-- name: 🇭🇰 019
+- name: 🇭🇰 022
   type: trojan
   server: 58.152.25.86
   port: 443
@@ -872,18 +828,18 @@ proxies:
   password: /BxceQaOe
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
-- name: 🇭🇰 020
+- name: 🇭🇰 023
   type: trojan
   server: 58.152.25.236
   port: 443
   id: 4
   latency_ms: 0
   link: trojan://BxceQaOe@58.152.25.236:443?allowInsecure=1&sni=t.me%2Fripaojiedian#%F0%9F%87%AD%F0%9F%87%B0+%E9%A6%99%E6%B8%AF5%7C%40stairnode
-  max_speed: 20.1MB
+  max_speed: 22.9MB
   password: /BxceQaOe
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
-- name: 🇯🇵 002
+- name: 🇯🇵 003
   type: trojan
   server: 54.199.47.127
   port: 26378
@@ -894,7 +850,7 @@ proxies:
   password: /BxceQaOe
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
-- name: 🇯🇵 003
+- name: 🇯🇵 004
   type: trojan
   server: 54.199.47.127
   port: 4006
@@ -904,7 +860,7 @@ proxies:
   max_speed: N/A
   password: /381f2e86233720eacda26d50e9aa26da
   sni: www.nintendogames.net
-- name: 🇯🇵 004
+- name: 🇯🇵 005
   type: trojan
   server: 54.199.47.127
   port: 1933
@@ -914,7 +870,7 @@ proxies:
   max_speed: N/A
   password: /381f2e86233720eacda26d50e9aa26da
   sni: www.nintendogames.net
-- name: 🇯🇵 005
+- name: 🇯🇵 006
   type: ss
   server: 103.106.228.247
   port: 990
@@ -922,9 +878,9 @@ proxies:
   id: 8
   latency_ms: 0
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ==@103.106.228.247:990#%F0%9F%87%AF%F0%9F%87%B5+%E6%97%A5%E6%9C%AC4%7C%40stairnode
-  max_speed: 2.0MB
+  max_speed: N/A
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-- name: 🇰🇷 024
+- name: 🇰🇷 013
   type: ss
   server: 221.150.109.90
   port: 7747
@@ -934,7 +890,7 @@ proxies:
   link: ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@221.150.109.90:7747#%F0%9F%87%B0%F0%9F%87%B7+%E9%9F%A9%E5%9B%BD%7C%40stairnode
   max_speed: N/A
   password: qwerREWQ@@
-- name: 🇯🇵 006
+- name: 🇯🇵 007
   type: trojan
   server: 52.198.241.226
   port: 3901
@@ -944,7 +900,7 @@ proxies:
   max_speed: N/A
   password: /381f2e86233720eacda26d50e9aa26da
   sni: www.nintendogames.net
-- name: 🇯🇵 007
+- name: 🇯🇵 008
   type: trojan
   server: 54.199.47.127
   port: 3901
@@ -954,7 +910,7 @@ proxies:
   max_speed: N/A
   password: /381f2e86233720eacda26d50e9aa26da
   sni: www.nintendogames.net
-- name: 🇯🇵 008
+- name: 🇯🇵 009
   type: trojan
   server: 54.249.149.192
   port: 3127
@@ -965,7 +921,7 @@ proxies:
   password: /BxceQaOe
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
-- name: 🇯🇵 009
+- name: 🇯🇵 010
   type: trojan
   server: 54.199.47.127
   port: 1281
@@ -975,7 +931,7 @@ proxies:
   max_speed: N/A
   password: /381f2e86233720eacda26d50e9aa26da
   sni: www.nintendogames.net
-- name: 🇯🇵 010
+- name: 🇯🇵 011
   type: trojan
   server: 153.121.44.99
   port: 1281
@@ -985,7 +941,7 @@ proxies:
   max_speed: N/A
   password: /381f2e86233720eacda26d50e9aa26da
   sni: www.nintendogames.net
-- name: 🇯🇵 011
+- name: 🇯🇵 012
   type: trojan
   server: 18.181.195.198
   port: 1112
@@ -1024,7 +980,7 @@ proxies:
   id: 3
   latency_ms: 0
   link: ss://YWVzLTI1Ni1nY206a0RXdlhZWm9UQmNHa0M0@38.180.152.210:8881#%E6%9C%AA%E7%9F%A5+SS-15+%7C+free-nodes
-  max_speed: 4.2MB
+  max_speed: 7.9MB
   password: kDWvXYZoTBcGkC4
 - name: 🇫🇷 002
   type: trojan
@@ -1035,7 +991,7 @@ proxies:
   link: trojan://telegram-id-privatevpns@13.39.97.24:22222?security=tls#%F0%9F%87%AB%F0%9F%87%B7+FR+TROJAN-20+%7C+free-nodes
   max_speed: N/A
   password: /telegram-id-privatevpns
-- name: 🇯🇵 012
+- name: 🇯🇵 013
   type: trojan
   server: 54.238.144.17
   port: 3194
@@ -1055,7 +1011,7 @@ proxies:
   link: trojan://nYzYreUpD4dDjzjFcgf6Fe3oaw4QFN@trunker.cc:8080?security=tls#TR+TROJAN-26+%7C+free-nodes
   max_speed: N/A
   password: /nYzYreUpD4dDjzjFcgf6Fe3oaw4QFN
-- name: 🇭🇰 023
+- name: 🇭🇰 026
   type: trojan
   server: 58.152.18.147
   port: 443
@@ -1065,7 +1021,7 @@ proxies:
   max_speed: N/A
   password: /f36f4495b4b26cc2fe346cfa23e05b1b
   sni: www.nintendogames.net
-- name: 🇯🇵 013
+- name: 🇯🇵 014
   type: trojan
   server: 160.16.150.76
   port: 1933
@@ -1075,7 +1031,7 @@ proxies:
   max_speed: N/A
   password: /f36f4495b4b26cc2fe346cfa23e05b1b
   sni: www.nintendogames.net
-- name: 🇯🇵 014
+- name: 🇯🇵 015
   type: trojan
   server: 160.16.68.250
   port: 4006
@@ -1095,7 +1051,7 @@ proxies:
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo2YTg1YjI0OTI4NmE3NGE5@196.240.57.74:57456#%F0%9F%87%A9%F0%9F%87%AA+DE+SS-43+%7C+free-nodes
   max_speed: N/A
   password: 6a85b249286a74a9
-- name: 🇷🇺 007
+- name: 🇷🇺 002
   type: trojan
   server: ru2.nnvpn.io
   port: 443
@@ -1105,7 +1061,7 @@ proxies:
   max_speed: N/A
   password: /yUHNMwWvenoHBaN5CtqKPwt1CTzXgW
   sni: ru2.nnvpn.io
-- name: ❓ 007
+- name: ❓ 026
   type: ss
   server: 169.150.242.77
   port: 990
@@ -1113,7 +1069,7 @@ proxies:
   id: 17
   latency_ms: 0
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ==@169.150.242.77:990#%E6%9C%AA%E7%9F%A5+SS-58+%7C+free-nodes
-  max_speed: 27.1MB
+  max_speed: 21.1MB
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
 - name: 🇩🇪 004
   type: ss
@@ -1125,7 +1081,7 @@ proxies:
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpGQjVSUW9ad3RFSXgzY1VzSmVHeGoy@193.43.104.125:15983#%F0%9F%87%A9%F0%9F%87%AA+DE+SS-60+%7C+free-nodes
   max_speed: N/A
   password: FB5RQoZwtEIx3cUsJeGxj2
-- name: 🇯🇵 015
+- name: 🇯🇵 016
   type: trojan
   server: 160.16.144.208
   port: 3901
@@ -1153,9 +1109,9 @@ proxies:
   id: 22
   latency_ms: 0
   link: ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@185.123.101.64:2376#TR+SS-93+%7C+free-nodes
-  max_speed: N/A
+  max_speed: 21.8MB
   password: faBAoD54k87UJG7
-- name: 🇳🇱 007
+- name: 🇳🇱 006
   type: ss
   server: 178.173.250.47
   port: 56033
@@ -1163,7 +1119,7 @@ proxies:
   id: 23
   latency_ms: 0
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo1TEQ4NzRvUzM5alEyNmNUOTdOYUFv@178.173.250.47:56033#%E6%9C%AA%E7%9F%A5+SS-95+%7C+free-nodes
-  max_speed: 45.0MB
+  max_speed: 33.9MB
   password: 5LD874oS39jQ26cT97NaAo
 - name: 🇸🇬 001
   type: ss
@@ -1173,7 +1129,7 @@ proxies:
   id: 24
   latency_ms: 0
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ==@38.247.64.176:990#%F0%9F%87%B8%F0%9F%87%AC+SG+SS-104+%7C+free-nodes
-  max_speed: 361.9KB
+  max_speed: 2.2MB
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
 - name: 🇦🇹 001
   type: ss
@@ -1185,7 +1141,7 @@ proxies:
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo2YTg1YjI0OTI4NmE3NGE5@196.245.238.34:57456#%E6%9C%AA%E7%9F%A5+SS-105+%7C+free-nodes
   max_speed: N/A
   password: 6a85b249286a74a9
-- name: ❓ 008
+- name: ❓ 027
   type: ss
   server: backup.fleetfoxi.link
   port: 44884
@@ -1193,7 +1149,7 @@ proxies:
   id: 26
   latency_ms: 0
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyREdxM2p2VlJnNW4zQ2N4bXlzR0sya21yZ0plU05vZjEyQTc2Y1p2VnhxUHBldHlDMVhFY2lDRnVmcTV4S3ZSV0dHbktWZW1icFRodVVTUWhiWjdHTXNaWTRVVnhFQnc=@backup.fleetfoxi.link:44884#%E6%9C%AA%E7%9F%A5+SS-116+%7C+free-nodes
-  max_speed: 59.1KB
+  max_speed: 224.0KB
   password: 2DGq3jvVRg5n3CcxmysGK2kmrgJeSNof12A76cZvVxqPpetyC1XEciCFufq5xKvRWGGnKVembpThuUSQhbZ7GMsZY4UVxEBw
 - name: 🇨🇦 012
   type: ss
@@ -1203,7 +1159,7 @@ proxies:
   id: 27
   latency_ms: 0
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpTNmpVSzlGdzVmTUhnTnFscVhPYkhaV3Y4VGY0bkVrbQ==@193.203.203.66:443#%F0%9F%87%A8%F0%9F%87%A6+CA+SS-118+%7C+free-nodes
-  max_speed: 93.4MB
+  max_speed: 8.3MB
   password: S6jUK9Fw5fMHgNqlqXObHZWv8Tf4nEkm
 - name: 🇺🇸 042
   type: ss
@@ -1213,7 +1169,7 @@ proxies:
   id: 28
   latency_ms: 0
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpTUzJRdmJDOW5xTHAyc1hYWm8wQlZ5NHNsY0VyUnVDdA==@103.35.189.136:443#%F0%9F%87%BA%F0%9F%87%B8+US+SS-123+%7C+free-nodes
-  max_speed: 231.5MB
+  max_speed: 95.9MB
   password: SS2QvbC9nqLp2sXXZo0BVy4slcErRuCt
 - name: 🇨🇦 013
   type: ss
@@ -1223,7 +1179,7 @@ proxies:
   id: 29
   latency_ms: 0
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ==@79.127.200.169:990#%F0%9F%87%A8%F0%9F%87%A6+CA+SS-125+%7C+free-nodes
-  max_speed: 122.1MB
+  max_speed: 113.7MB
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
 - name: 🇹🇭 001
   type: ss
@@ -1233,7 +1189,7 @@ proxies:
   id: 31
   latency_ms: 0
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpyTmE3NTNCY1V1UEJMOFl4WHg5Qng1YjRkZlZGdTQ1UWt6b3J3cVppelRsNkFmM04=@103.253.74.94:31348#%E6%9C%AA%E7%9F%A5+SS-129+%7C+free-nodes
-  max_speed: 7.9MB
+  max_speed: 6.8MB
   password: rNa753BcUuPBL8YxXx9Bx5b4dfVFu45QkzorwqZizTl6Af3N
 - name: 🇮🇹 003
   type: trojan
@@ -1244,7 +1200,7 @@ proxies:
   link: trojan://OdgHycGphesfLmPMYolUF@172.238.229.254:14051?security=tls#TR+TROJAN-130+%7C+free-nodes
   max_speed: N/A
   password: /OdgHycGphesfLmPMYolUF
-- name: ❓ 009
+- name: ❓ 028
   type: ss
   server: google.com
   port: 443
