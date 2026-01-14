@@ -9,7 +9,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "k1dBOmOB4oqi7Ump37a1bQ",
     "latency_ms": 0,
-    "max_speed": "29.7MB"
+    "max_speed": "37.5MB"
   },
   {
     "name": "\ud83c\uddf3\ud83c\uddf1_NL_\u8377\u5170",
@@ -21,7 +21,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "uo7EbtqIwgZXXHmMv5LbLcOxptyPlNkh",
     "latency_ms": 0,
-    "max_speed": "26.6MB"
+    "max_speed": "1.4MB"
   },
   {
     "name": "\ud83c\uddfa\ud83c\uddf8_US_\u7f8e\u56fd_1",
@@ -33,7 +33,7 @@
     "cipher": "aes-128-gcm",
     "password": "shadowsocks",
     "latency_ms": 0,
-    "max_speed": "231.5MB"
+    "max_speed": "77.0MB"
   },
   {
     "name": "\ud83c\udde8\ud83c\uddf3_CN_\u4e2d\u56fd",
@@ -58,7 +58,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "HaNqw9pIE4jcx98sg7UQgHeGNTM4R2pk",
     "latency_ms": 0,
-    "max_speed": "8.4MB"
+    "max_speed": "8.5MB"
   },
   {
     "name": "\ud83c\uddee\ud83c\uddf7_IR_\u4f0a\u6717",
@@ -94,7 +94,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "f8f7aCzcPKbsF8p3",
     "latency_ms": 0,
-    "max_speed": "365.8KB"
+    "max_speed": "1.1MB"
   },
   {
     "name": "\ud83c\udde8\ud83c\uddf3_CN_\u4e2d\u56fd_2",
@@ -106,145 +106,118 @@
     "cipher": "chacha20-ietf",
     "password": "asd123456",
     "latency_ms": 0,
-    "max_speed": "384.0KB"
+    "max_speed": "830.1KB"
   },
   {
-    "name": "\ud83d\udfe1_\ud83c\udde8\ud83c\uddf3:\ud83c\udded\ud83c\uddf0_\ud83d\udcf6_github.com/Ruk1ng001_6435343065356537",
-    "type": "trojan",
-    "server": "58.152.46.60",
-    "port": 443,
+    "name": "\ud83d\udfe1_\ud83c\udde8\ud83c\uddf3_\ud83d\udcf6_github.com/Ruk1ng001_3165323762303130",
+    "type": "ss",
+    "server": "14.18.106.88",
+    "port": 6100,
     "id": 0,
-    "link": "trojan://BxceQaOe@58.152.46.60:443?allowInsecure=1&sni=t.me/ripaojiedian#%F0%9F%9F%A1_%F0%9F%87%A8%F0%9F%87%B3%3A%F0%9F%87%AD%F0%9F%87%B0_%F0%9F%93%B6_github.com%2FRuk1ng001_6435343065356537",
-    "password": "/BxceQaOe",
-    "skip-cert-verify": true,
-    "sni": "t.me/ripaojiedian",
-    "latency_ms": 0,
-    "max_speed": "7.5MB"
-  },
-  {
-    "name": "\ud83d\udfe0_\ud83c\uddf5\ud83c\udded_\ud83d\udcbb_github.com/Ruk1ng001_3663626139626334",
-    "type": "http",
-    "server": "38.54.87.34",
-    "port": 10881,
-    "id": 1,
-    "link": "http://Ejtp4SfY82@38.54.87.34:10881?tls=false&username=09ahaEWmXn#%F0%9F%9F%A0_%F0%9F%87%B5%F0%9F%87%AD_%F0%9F%92%BB_github.com%2FRuk1ng001_3663626139626334",
+    "link": "ss://YWVzLTI1Ni1nY206MTIz@14.18.106.88:6100#%F0%9F%9F%A1_%F0%9F%87%A8%F0%9F%87%B3_%F0%9F%93%B6_github.com%2FRuk1ng001_3165323762303130",
+    "cipher": "aes-256-gcm",
+    "password": "123",
     "latency_ms": 0,
     "max_speed": "N/A"
   },
   {
-    "name": "\ud83d\udfe1_\ud83c\udde8\ud83c\uddf3:\ud83c\udded\ud83c\uddf0_\ud83d\udcf6_github.com/Ruk1ng001_6634633430623562",
+    "name": "github.com/Ruk1ng001_3963613963616239",
     "type": "trojan",
-    "server": "58.152.46.60",
-    "port": 443,
-    "id": 2,
-    "link": "trojan://BxceQaOe@58.152.46.60:443?allowInsecure=1&sni=t.me%2Fripaojiedian#%F0%9F%9F%A1_%F0%9F%87%A8%F0%9F%87%B3%3A%F0%9F%87%AD%F0%9F%87%B0_%F0%9F%93%B6_github.com%2FRuk1ng001_6634633430623562",
-    "password": "/BxceQaOe",
-    "skip-cert-verify": true,
-    "sni": "t.me%2Fripaojiedian",
-    "latency_ms": 0,
-    "max_speed": "13.6MB"
-  },
-  {
-    "name": "\ud83d\udd34_\ud83c\uddf2\ud83c\udde9_\ud83d\udcbc_github.com/Ruk1ng001_65373938613838",
-    "type": "ss",
-    "server": "185.153.197.5",
-    "port": 989,
+    "server": "green2.cdntencentmusic.com",
+    "port": 31102,
     "id": 3,
-    "link": "ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw==@185.153.197.5:989#%F0%9F%94%B4_%F0%9F%87%B2%F0%9F%87%A9_%F0%9F%92%BC_github.com%2FRuk1ng001_65373938613838",
-    "cipher": "aes-256-cfb",
-    "password": "f8f7aCzcPKbsF8p3",
+    "link": "trojan://b7aa4e87-d990-4f2d-8880-73b206953efc@green2.cdntencentmusic.com:31102?allowInsecure=1&sni=green2.cdntencentmusic.com#github.com%2FRuk1ng001_3963613963616239",
+    "password": "/b7aa4e87-d990-4f2d-8880-73b206953efc",
+    "skip-cert-verify": true,
+    "sni": "green2.cdntencentmusic.com",
     "latency_ms": 0,
     "max_speed": "N/A"
   },
   {
-    "name": "github.com/Ruk1ng001_3666343861386363",
-    "type": "ss",
-    "server": "liubu9.singdns.com",
-    "port": 17459,
-    "id": 11,
-    "link": "ss://YWVzLTEyOC1nY206NTdiYzBjMDQtODE4NC00OGY1LTkwNmItODk3ZDA5NWVkNDQ1@liubu9.singdns.com:17459#github.com%2FRuk1ng001_3666343861386363",
-    "cipher": "aes-128-gcm",
-    "password": "57bc0c04-8184-48f5-906b-897d095ed445",
+    "name": "github.com/Ruk1ng001_6464316338656134",
+    "type": "trojan",
+    "server": "160.16.89.176",
+    "port": 4006,
+    "id": 4,
+    "link": "trojan://61d8077bfb174e171b8283f155a555ad@160.16.89.176:4006?security=tls&sni=www.nintendogames.net#github.com%2FRuk1ng001_6464316338656134",
+    "password": "/61d8077bfb174e171b8283f155a555ad",
+    "sni": "www.nintendogames.net",
     "latency_ms": 0,
-    "max_speed": "244.1KB"
-  },
-  {
-    "name": "\ud83d\udfe0_\ud83c\udde8\ud83c\uddf3:\ud83c\udded\ud83c\uddf0_\ud83d\udcbc_github.com/Ruk1ng001_3133316339323936",
-    "type": "ss",
-    "server": "103.149.183.200",
-    "port": 8388,
-    "id": 12,
-    "link": "ss://Y2hhY2hhMjAtaWV0Zjphc2QxMjM0NTY=@103.149.183.200:8388#%F0%9F%9F%A0_%F0%9F%87%A8%F0%9F%87%B3%3A%F0%9F%87%AD%F0%9F%87%B0_%F0%9F%92%BC_github.com%2FRuk1ng001_3133316339323936",
-    "cipher": "chacha20-ietf",
-    "password": "asd123456",
-    "latency_ms": 0,
-    "max_speed": "N/A"
-  },
-  {
-    "name": "\u2753_\ud83c\uddfa\ud83c\uddf8_\ud83d\udcbb_github.com/Ruk1ng001_3739636533356363",
-    "type": "ss",
-    "server": "185.193.48.157",
-    "port": 443,
-    "id": 14,
-    "link": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6d0JMTTZiQkU1WXh2d3ZuS2d4QXEzRXJYcHFNWXYyMA==@185.193.48.157:443#%E2%9D%93_%F0%9F%87%BA%F0%9F%87%B8_%F0%9F%92%BB_github.com%2FRuk1ng001_3739636533356363",
-    "cipher": "chacha20-ietf-poly1305",
-    "password": "zwBLM6bBE5YxvwvnKgxAq3ErXpqMYv20",
-    "latency_ms": 0,
-    "max_speed": "15.5KB"
+    "max_speed": "11.9MB"
   },
   {
     "name": "\ud83d\udfe0_\ud83c\uddf5\ud83c\uddf9_\ud83d\udcbb_github.com/Ruk1ng001_6239313761366362",
     "type": "ss",
     "server": "185.231.233.112",
     "port": 989,
-    "id": 16,
+    "id": 5,
     "link": "ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw==@185.231.233.112:989#%F0%9F%9F%A0_%F0%9F%87%B5%F0%9F%87%B9_%F0%9F%92%BB_github.com%2FRuk1ng001_6239313761366362",
     "cipher": "aes-256-cfb",
     "password": "f8f7aCzcPKbsF8p3",
     "latency_ms": 0,
-    "max_speed": "47.5KB"
+    "max_speed": "50.9KB"
   },
   {
-    "name": "\ud83d\udfe1_\ud83c\udde8\ud83c\uddf3:\ud83c\udded\ud83c\uddf0_\ud83d\udcf6_github.com/Ruk1ng001_3432303430383363",
+    "name": "\ud83d\udfe1_\ud83c\udde8\ud83c\uddf3:\ud83c\udded\ud83c\uddf0_\ud83d\udcf6_github.com/Ruk1ng001_3234646533663463",
     "type": "trojan",
-    "server": "112.118.116.123",
+    "server": "58.152.25.130",
     "port": 443,
-    "id": 18,
-    "link": "trojan://61d8077bfb174e171b8283f155a555ad@112.118.116.123:443?security=tls&sni=www.nintendogames.net#%F0%9F%9F%A1_%F0%9F%87%A8%F0%9F%87%B3%3A%F0%9F%87%AD%F0%9F%87%B0_%F0%9F%93%B6_github.com%2FRuk1ng001_3432303430383363",
-    "password": "/61d8077bfb174e171b8283f155a555ad",
-    "sni": "www.nintendogames.net",
+    "id": 6,
+    "link": "trojan://BxceQaOe@58.152.25.130:443?allowInsecure=1&sni=t.me/ripaojiedian#%F0%9F%9F%A1_%F0%9F%87%A8%F0%9F%87%B3%3A%F0%9F%87%AD%F0%9F%87%B0_%F0%9F%93%B6_github.com%2FRuk1ng001_3234646533663463",
+    "password": "/BxceQaOe",
+    "skip-cert-verify": true,
+    "sni": "t.me/ripaojiedian",
     "latency_ms": 0,
     "max_speed": "N/A"
   },
   {
-    "name": "\u2753_\ud83c\uddfa\ud83c\uddf8_\ud83d\udcbb_github.com/Ruk1ng001_6638623562336563",
-    "type": "http",
-    "server": "154.26.192.123",
-    "port": 10988,
-    "id": 19,
-    "link": "http://gs4BXwT6SW@154.26.192.123:10988?tls=false&username=fQ67Dpe5dU#%E2%9D%93_%F0%9F%87%BA%F0%9F%87%B8_%F0%9F%92%BB_github.com%2FRuk1ng001_6638623562336563",
+    "name": "\ud83d\udfe1_\ud83c\udde8\ud83c\uddf3:\ud83c\udded\ud83c\uddf0_\ud83d\udcf6_github.com/Ruk1ng001_6435343065356537",
+    "type": "trojan",
+    "server": "58.152.46.60",
+    "port": 443,
+    "id": 8,
+    "link": "trojan://BxceQaOe@58.152.46.60:443?allowInsecure=1&sni=t.me/ripaojiedian#%F0%9F%9F%A1_%F0%9F%87%A8%F0%9F%87%B3%3A%F0%9F%87%AD%F0%9F%87%B0_%F0%9F%93%B6_github.com%2FRuk1ng001_6435343065356537",
+    "password": "/BxceQaOe",
+    "skip-cert-verify": true,
+    "sni": "t.me/ripaojiedian",
     "latency_ms": 0,
     "max_speed": "N/A"
   },
   {
-    "name": "github.com/Ruk1ng001_34356265303331",
+    "name": "github.com/Ruk1ng001_3535393436383432",
+    "type": "trojan",
+    "server": "13.113.239.128",
+    "port": 1112,
+    "id": 9,
+    "link": "trojan://BxceQaOe@13.113.239.128:1112?allowInsecure=1&sni=t.me%2Fripaojiedian#github.com%2FRuk1ng001_3535393436383432",
+    "password": "/BxceQaOe",
+    "skip-cert-verify": true,
+    "sni": "t.me%2Fripaojiedian",
+    "latency_ms": 0,
+    "max_speed": "N/A"
+  },
+  {
+    "name": "\ud83d\udfe1_\ud83c\uddf0\ud83c\uddf7_\ud83d\udcf6_github.com/Ruk1ng001_3838643763353361",
     "type": "ss",
-    "server": "103.109.23.165",
-    "port": 33007,
-    "id": 20,
-    "link": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpzeG5DUEtiNzBER1JvNjItZ29YRlZIcmp6Ri01b01iRA==@103.109.23.165:33007#github.com%2FRuk1ng001_34356265303331",
-    "cipher": "chacha20-ietf-poly1305",
-    "password": "sxnCPKb70DGRo62-goXFVHrjzF-5oMbD",
+    "server": "168.126.234.230",
+    "port": 44112,
+    "id": 11,
+    "link": "ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@168.126.234.230:44112#%F0%9F%9F%A1_%F0%9F%87%B0%F0%9F%87%B7_%F0%9F%93%B6_github.com%2FRuk1ng001_3838643763353361",
+    "cipher": "aes-256-cfb",
+    "password": "qwerREWQ@@",
     "latency_ms": 0,
-    "max_speed": "N/A"
+    "max_speed": "7.3MB"
   },
   {
-    "name": "github.com/Ruk1ng001_3361653366346138",
-    "type": "http",
-    "server": "testkr3.ssv.vc",
-    "port": 30446,
-    "id": 21,
-    "link": "http://test.+@testkr3.ssv.vc:30446?tls=true&username=test&allowInsecure=1#github.com%2FRuk1ng001_3361653366346138",
+    "name": "\ud83d\udfe1_\ud83c\udde8\ud83c\uddf3:\ud83c\udded\ud83c\uddf0_\ud83d\udcf6_github.com/Ruk1ng001_6634633430623562",
+    "type": "trojan",
+    "server": "58.152.46.60",
+    "port": 443,
+    "id": 12,
+    "link": "trojan://BxceQaOe@58.152.46.60:443?allowInsecure=1&sni=t.me%2Fripaojiedian#%F0%9F%9F%A1_%F0%9F%87%A8%F0%9F%87%B3%3A%F0%9F%87%AD%F0%9F%87%B0_%F0%9F%93%B6_github.com%2FRuk1ng001_6634633430623562",
+    "password": "/BxceQaOe",
+    "skip-cert-verify": true,
+    "sni": "t.me%2Fripaojiedian",
     "latency_ms": 0,
     "max_speed": "N/A"
   },
@@ -253,131 +226,224 @@
     "type": "ss",
     "server": "221.139.79.20",
     "port": 45833,
-    "id": 22,
+    "id": 13,
     "link": "ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@221.139.79.20:45833#%E2%9D%93_%F0%9F%87%B0%F0%9F%87%B7_%F0%9F%93%B6_github.com%2FRuk1ng001_3839646238376433",
     "cipher": "aes-256-cfb",
     "password": "qwerREWQ@@",
     "latency_ms": 0,
-    "max_speed": "841.7KB"
+    "max_speed": "802.3KB"
   },
   {
-    "name": "\ud83d\udfe1_\ud83c\uddf0\ud83c\uddf7_\ud83d\udcf6_github.com/Ruk1ng001_3838643763353361",
-    "type": "ss",
-    "server": "168.126.234.230",
-    "port": 44112,
-    "id": 23,
-    "link": "ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@168.126.234.230:44112#%F0%9F%9F%A1_%F0%9F%87%B0%F0%9F%87%B7_%F0%9F%93%B6_github.com%2FRuk1ng001_3838643763353361",
-    "cipher": "aes-256-cfb",
-    "password": "qwerREWQ@@",
-    "latency_ms": 0,
-    "max_speed": "2.8MB"
-  },
-  {
-    "name": "\ud83d\udd34_\ud83c\udde6\ud83c\uddf9_\ud83d\udcbb_github.com/Ruk1ng001_6330393839323536",
-    "type": "ss",
-    "server": "5.181.21.246",
-    "port": 443,
-    "id": 24,
-    "link": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpnS1l5Z1RjUlloYzNza2MyeDZ0WjA3M2xZejBEbmllWA==@5.181.21.246:443#%F0%9F%94%B4_%F0%9F%87%A6%F0%9F%87%B9_%F0%9F%92%BB_github.com%2FRuk1ng001_6330393839323536",
-    "cipher": "chacha20-ietf-poly1305",
-    "password": "gKYygTcRYhc3skc2x6tZ073lYz0DnieX",
-    "latency_ms": 0,
-    "max_speed": "1.0MB"
-  },
-  {
-    "name": "github.com/Ruk1ng001_6431613839373233",
-    "type": "trojan",
-    "server": "tuntro006.instconn.com",
-    "port": 443,
-    "id": 25,
-    "link": "trojan://469c8135-8aea-4c7f-8ec2-c5fdfa980b48@tuntro006.instconn.com:443?allowInsecure=1&sni=torontorm1.686911.xyz#github.com%2FRuk1ng001_6431613839373233",
-    "password": "/469c8135-8aea-4c7f-8ec2-c5fdfa980b48",
-    "skip-cert-verify": true,
-    "sni": "torontorm1.686911.xyz",
-    "latency_ms": 0,
-    "max_speed": "5.6MB"
-  },
-  {
-    "name": "\u2753_\ud83c\uddf0\ud83c\uddf7_\ud83d\udcf6_github.com/Ruk1ng001_3136666634653738",
-    "type": "ss",
-    "server": "221.139.79.41",
-    "port": 41240,
-    "id": 26,
-    "link": "ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@221.139.79.41:41240#%E2%9D%93_%F0%9F%87%B0%F0%9F%87%B7_%F0%9F%93%B6_github.com%2FRuk1ng001_3136666634653738",
-    "cipher": "aes-256-cfb",
-    "password": "qwerREWQ@@",
+    "name": "\ud83d\udfe0_\ud83c\udde8\ud83c\uddf3:\ud83c\udded\ud83c\uddf0_\ud83d\udcbc_github.com/Ruk1ng001_3735636234363038",
+    "type": "http",
+    "server": "8.210.248.133",
+    "port": 45631,
+    "id": 14,
+    "link": "http://@8.210.248.133:45631?tls=false#%F0%9F%9F%A0_%F0%9F%87%A8%F0%9F%87%B3%3A%F0%9F%87%AD%F0%9F%87%B0_%F0%9F%92%BC_github.com%2FRuk1ng001_3735636234363038",
     "latency_ms": 0,
     "max_speed": "N/A"
   },
   {
-    "name": "\u2753_\ud83c\uddf0\ud83c\uddf7_\ud83d\udcf6_github.com/Ruk1ng001_3936623539623764",
-    "type": "ss",
-    "server": "221.139.79.57",
-    "port": 13979,
-    "id": 27,
-    "link": "ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@221.139.79.57:13979#%E2%9D%93_%F0%9F%87%B0%F0%9F%87%B7_%F0%9F%93%B6_github.com%2FRuk1ng001_3936623539623764",
-    "cipher": "aes-256-cfb",
-    "password": "qwerREWQ@@",
+    "name": "github.com/Ruk1ng001_3130333565376462",
+    "type": "trojan",
+    "server": "58.152.53.219",
+    "port": 443,
+    "id": 16,
+    "link": "trojan://BxceQaOe@58.152.53.219:443?allowInsecure=1&sni=t.me%2Fripaojiedian#github.com%2FRuk1ng001_3130333565376462",
+    "password": "/BxceQaOe",
+    "skip-cert-verify": true,
+    "sni": "t.me%2Fripaojiedian",
     "latency_ms": 0,
-    "max_speed": "800.0KB"
+    "max_speed": "16.3MB"
+  },
+  {
+    "name": "\ud83d\udfe1_\ud83c\udde8\ud83c\uddf3_\ud83d\udcf6_github.com/Ruk1ng001_38303062613633",
+    "type": "ss",
+    "server": "223.95.183.132",
+    "port": 47116,
+    "id": 17,
+    "link": "ss://YWVzLTEyOC1nY206YjYzN2YyZTQ3Yjc4MjdiMzA4ZWJmMzk5MDA4MDc1ZDI=@223.95.183.132:47116#%F0%9F%9F%A1_%F0%9F%87%A8%F0%9F%87%B3_%F0%9F%93%B6_github.com%2FRuk1ng001_38303062613633",
+    "cipher": "aes-128-gcm",
+    "password": "b637f2e47b7827b308ebf399008075d2",
+    "latency_ms": 0,
+    "max_speed": "N/A"
+  },
+  {
+    "name": "github.com/Ruk1ng001_3865326531636464",
+    "type": "trojan",
+    "server": "220.130.58.136",
+    "port": 31102,
+    "id": 20,
+    "link": "trojan://b7aa4e87-d990-4f2d-8880-73b206953efc@220.130.58.136:31102?allowInsecure=1&sni=green2.cdntencentmusic.com#github.com%2FRuk1ng001_3865326531636464",
+    "password": "/b7aa4e87-d990-4f2d-8880-73b206953efc",
+    "skip-cert-verify": true,
+    "sni": "green2.cdntencentmusic.com",
+    "latency_ms": 0,
+    "max_speed": "N/A"
+  },
+  {
+    "name": "github.com/Ruk1ng001_34356265303331",
+    "type": "ss",
+    "server": "103.109.23.165",
+    "port": 33007,
+    "id": 23,
+    "link": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpzeG5DUEtiNzBER1JvNjItZ29YRlZIcmp6Ri01b01iRA==@103.109.23.165:33007#github.com%2FRuk1ng001_34356265303331",
+    "cipher": "chacha20-ietf-poly1305",
+    "password": "sxnCPKb70DGRo62-goXFVHrjzF-5oMbD",
+    "latency_ms": 0,
+    "max_speed": "N/A"
+  },
+  {
+    "name": "\ud83d\udfe0_\ud83c\udde8\ud83c\uddf3:\ud83c\udded\ud83c\uddf0_\ud83d\udcbc_github.com/Ruk1ng001_3166363139363337",
+    "type": "ss",
+    "server": "103.149.182.158",
+    "port": 8388,
+    "id": 24,
+    "link": "ss://Y2hhY2hhMjAtaWV0Zjphc2QxMjM0NTY=@103.149.182.158:8388#%F0%9F%9F%A0_%F0%9F%87%A8%F0%9F%87%B3%3A%F0%9F%87%AD%F0%9F%87%B0_%F0%9F%92%BC_github.com%2FRuk1ng001_3166363139363337",
+    "cipher": "chacha20-ietf",
+    "password": "asd123456",
+    "latency_ms": 0,
+    "max_speed": "6.1MB"
+  },
+  {
+    "name": "\ud83d\udfe0_\ud83c\udde8\ud83c\uddf3:\ud83c\udded\ud83c\uddf0_\ud83d\udcbc_github.com/Ruk1ng001_33376633623231",
+    "type": "ss",
+    "server": "103.149.182.105",
+    "port": 8388,
+    "id": 25,
+    "link": "ss://Y2hhY2hhMjAtaWV0Zjphc2QxMjM0NTY=@103.149.182.105:8388#%F0%9F%9F%A0_%F0%9F%87%A8%F0%9F%87%B3%3A%F0%9F%87%AD%F0%9F%87%B0_%F0%9F%92%BC_github.com%2FRuk1ng001_33376633623231",
+    "cipher": "chacha20-ietf",
+    "password": "asd123456",
+    "latency_ms": 0,
+    "max_speed": "846.9KB"
+  },
+  {
+    "name": "\ud83d\udfe1_\ud83c\udde8\ud83c\uddf3_\ud83d\udcf6_github.com/Ruk1ng001_3835653037613635",
+    "type": "ss",
+    "server": "223.95.183.132",
+    "port": 25819,
+    "id": 26,
+    "link": "ss://YWVzLTEyOC1nY206YjYzN2YyZTQ3Yjc4MjdiMzA4ZWJmMzk5MDA4MDc1ZDI=@223.95.183.132:25819#%F0%9F%9F%A1_%F0%9F%87%A8%F0%9F%87%B3_%F0%9F%93%B6_github.com%2FRuk1ng001_3835653037613635",
+    "cipher": "aes-128-gcm",
+    "password": "b637f2e47b7827b308ebf399008075d2",
+    "latency_ms": 0,
+    "max_speed": "N/A"
+  },
+  {
+    "name": "github.com/Ruk1ng001_3539313231333566",
+    "type": "trojan",
+    "server": "green2.cdntencentmusic.com",
+    "port": 31103,
+    "id": 27,
+    "link": "trojan://9f879bc7-3ac6-4ddd-8f7d-18d9f431f6a3@green2.cdntencentmusic.com:31103?allowInsecure=1&sni=green2.cdntencentmusic.com#github.com%2FRuk1ng001_3539313231333566",
+    "password": "/9f879bc7-3ac6-4ddd-8f7d-18d9f431f6a3",
+    "skip-cert-verify": true,
+    "sni": "green2.cdntencentmusic.com",
+    "latency_ms": 0,
+    "max_speed": "N/A"
+  },
+  {
+    "name": "github.com/Ruk1ng001_3231633335663665",
+    "type": "trojan",
+    "server": "green2.cdntencentmusic.com",
+    "port": 31102,
+    "id": 30,
+    "link": "trojan://9f879bc7-3ac6-4ddd-8f7d-18d9f431f6a3@green2.cdntencentmusic.com:31102?allowInsecure=1&sni=green2.cdntencentmusic.com#github.com%2FRuk1ng001_3231633335663665",
+    "password": "/9f879bc7-3ac6-4ddd-8f7d-18d9f431f6a3",
+    "skip-cert-verify": true,
+    "sni": "green2.cdntencentmusic.com",
+    "latency_ms": 0,
+    "max_speed": "N/A"
   },
   {
     "name": "github.com/Ruk1ng001_3261373933353430",
     "type": "ss",
     "server": "liubu9.singdns.com",
     "port": 17459,
-    "id": 28,
+    "id": 33,
     "link": "ss://YWVzLTEyOC1nY206NTdiYzBjMDQtODE4NC00OGY1LTkwNmItODk3ZDA5NWVkNDQ1@liubu9.singdns.com:17459#github.com%2FRuk1ng001_3261373933353430",
     "cipher": "aes-128-gcm",
     "password": "57bc0c04-8184-48f5-906b-897d095ed445",
     "latency_ms": 0,
-    "max_speed": "385.7KB"
-  },
-  {
-    "name": "\ud83d\udfe0_\ud83c\udde8\ud83c\uddf3:\ud83c\udded\ud83c\uddf0_\ud83d\udcbc_github.com/Ruk1ng001_6263313830633839",
-    "type": "http",
-    "server": "47.242.192.233",
-    "port": 53919,
-    "id": 29,
-    "link": "http://@47.242.192.233:53919?tls=false#%F0%9F%9F%A0_%F0%9F%87%A8%F0%9F%87%B3%3A%F0%9F%87%AD%F0%9F%87%B0_%F0%9F%92%BC_github.com%2FRuk1ng001_6263313830633839",
-    "latency_ms": 0,
     "max_speed": "N/A"
   },
   {
-    "name": "github.com/Ruk1ng001_333162653738",
-    "type": "trojan",
-    "server": "tuntro003.instconn.com",
-    "port": 443,
-    "id": 30,
-    "link": "trojan://469c8135-8aea-4c7f-8ec2-c5fdfa980b48@tuntro003.instconn.com:443?allowInsecure=1&sni=login-staticjpc.jasmine-douyin.top#github.com%2FRuk1ng001_333162653738",
-    "password": "/469c8135-8aea-4c7f-8ec2-c5fdfa980b48",
-    "skip-cert-verify": true,
-    "sni": "login-staticjpc.jasmine-douyin.top",
-    "latency_ms": 0,
-    "max_speed": "6.8MB"
-  },
-  {
-    "name": "\ud83d\udfe1_\ud83c\udde8\ud83c\uddf3:\ud83c\udded\ud83c\uddf0_\ud83d\udcf6_github.com/Ruk1ng001_3832336237353830",
-    "type": "trojan",
-    "server": "112.118.116.123",
-    "port": 443,
-    "id": 32,
-    "link": "trojan://61d8077bfb174e171b8283f155a555ad@112.118.116.123:443?allowInsecure=1&sni=www.nintendogames.net#%F0%9F%9F%A1_%F0%9F%87%A8%F0%9F%87%B3%3A%F0%9F%87%AD%F0%9F%87%B0_%F0%9F%93%B6_github.com%2FRuk1ng001_3832336237353830",
-    "password": "/61d8077bfb174e171b8283f155a555ad",
-    "skip-cert-verify": true,
-    "sni": "www.nintendogames.net",
-    "latency_ms": 0,
-    "max_speed": "N/A"
-  },
-  {
-    "name": "\ud83d\udfe1_\ud83c\udde8\ud83c\uddf3_\ud83d\udcf6_github.com/Ruk1ng001_3165323762303130",
+    "name": "github.com/Ruk1ng001_3666343861386363",
     "type": "ss",
-    "server": "14.18.106.88",
-    "port": 6100,
-    "id": 33,
-    "link": "ss://YWVzLTI1Ni1nY206MTIz@14.18.106.88:6100#%F0%9F%9F%A1_%F0%9F%87%A8%F0%9F%87%B3_%F0%9F%93%B6_github.com%2FRuk1ng001_3165323762303130",
-    "cipher": "aes-256-gcm",
-    "password": "123",
+    "server": "liubu9.singdns.com",
+    "port": 17459,
+    "id": 34,
+    "link": "ss://YWVzLTEyOC1nY206NTdiYzBjMDQtODE4NC00OGY1LTkwNmItODk3ZDA5NWVkNDQ1@liubu9.singdns.com:17459#github.com%2FRuk1ng001_3666343861386363",
+    "cipher": "aes-128-gcm",
+    "password": "57bc0c04-8184-48f5-906b-897d095ed445",
+    "latency_ms": 0,
+    "max_speed": "N/A"
+  },
+  {
+    "name": "github.com/Ruk1ng001_3136383335666333",
+    "type": "trojan",
+    "server": "green2.cdntencentmusic.com",
+    "port": 31103,
+    "id": 35,
+    "link": "trojan://9f879bc7-3ac6-4ddd-8f7d-18d9f431f6a3@green2.cdntencentmusic.com:31103?allowInsecure=1&sni=green2.cdntencentmusic.com#github.com%2FRuk1ng001_3136383335666333",
+    "password": "/9f879bc7-3ac6-4ddd-8f7d-18d9f431f6a3",
+    "skip-cert-verify": true,
+    "sni": "green2.cdntencentmusic.com",
+    "latency_ms": 0,
+    "max_speed": "N/A"
+  },
+  {
+    "name": "\ud83d\udfe1_\ud83c\udde8\ud83c\uddf3:\ud83c\udded\ud83c\uddf0_\ud83d\udcf6_github.com/Ruk1ng001_38633034613037",
+    "type": "trojan",
+    "server": "58.152.53.219",
+    "port": 443,
+    "id": 36,
+    "link": "trojan://BxceQaOe@58.152.53.219:443?allowInsecure=1&sni=t.me%2Fripaojiedian#%F0%9F%9F%A1_%F0%9F%87%A8%F0%9F%87%B3%3A%F0%9F%87%AD%F0%9F%87%B0_%F0%9F%93%B6_github.com%2FRuk1ng001_38633034613037",
+    "password": "/BxceQaOe",
+    "skip-cert-verify": true,
+    "sni": "t.me%2Fripaojiedian",
+    "latency_ms": 0,
+    "max_speed": "16.3MB"
+  },
+  {
+    "name": "\u2753_\ud83c\uddf0\ud83c\uddf7_\ud83d\udcf6_github.com/Ruk1ng001_3936623539623764",
+    "type": "ss",
+    "server": "221.139.79.57",
+    "port": 13979,
+    "id": 37,
+    "link": "ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@221.139.79.57:13979#%E2%9D%93_%F0%9F%87%B0%F0%9F%87%B7_%F0%9F%93%B6_github.com%2FRuk1ng001_3936623539623764",
+    "cipher": "aes-256-cfb",
+    "password": "qwerREWQ@@",
+    "latency_ms": 0,
+    "max_speed": "4.7MB"
+  },
+  {
+    "name": "\u2753_\ud83c\uddfa\ud83c\uddf8_\ud83d\udcbb_github.com/Ruk1ng001_6638623562336563",
+    "type": "http",
+    "server": "154.26.192.123",
+    "port": 10988,
+    "id": 38,
+    "link": "http://gs4BXwT6SW@154.26.192.123:10988?tls=false&username=fQ67Dpe5dU#%E2%9D%93_%F0%9F%87%BA%F0%9F%87%B8_%F0%9F%92%BB_github.com%2FRuk1ng001_6638623562336563",
+    "latency_ms": 0,
+    "max_speed": "N/A"
+  },
+  {
+    "name": "\ud83d\udfe0_\ud83c\uddf5\ud83c\udded_\ud83d\udcbb_github.com/Ruk1ng001_3663626139626334",
+    "type": "http",
+    "server": "38.54.87.34",
+    "port": 10881,
+    "id": 39,
+    "link": "http://Ejtp4SfY82@38.54.87.34:10881?tls=false&username=09ahaEWmXn#%F0%9F%9F%A0_%F0%9F%87%B5%F0%9F%87%AD_%F0%9F%92%BB_github.com%2FRuk1ng001_3663626139626334",
+    "latency_ms": 0,
+    "max_speed": "N/A"
+  },
+  {
+    "name": "github.com/Ruk1ng001_3361653366346138",
+    "type": "http",
+    "server": "testkr3.ssv.vc",
+    "port": 30446,
+    "id": 41,
+    "link": "http://test.+@testkr3.ssv.vc:30446?tls=true&username=test&allowInsecure=1#github.com%2FRuk1ng001_3361653366346138",
     "latency_ms": 0,
     "max_speed": "N/A"
   },
@@ -848,7 +914,7 @@
     "skip-cert-verify": true,
     "sni": " [By DukeMehdi] trojan-HK ",
     "latency_ms": 0,
-    "max_speed": "10.3MB"
+    "max_speed": "N/A"
   },
   {
     "name": "HK_1",
@@ -861,7 +927,7 @@
     "skip-cert-verify": true,
     "sni": " [By DukeMehdi] b2n.ir/v2ray-configs | 934 ",
     "latency_ms": 0,
-    "max_speed": "6.0MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u9999\u6e2f_3",
@@ -874,7 +940,7 @@
     "skip-cert-verify": true,
     "sni": " [By EbraSha] b2n.ir/v2ray-configs | 83 ",
     "latency_ms": 0,
-    "max_speed": "12.4MB"
+    "max_speed": "N/A"
   },
   {
     "name": "TW_1",
@@ -913,7 +979,7 @@
     "skip-cert-verify": true,
     "sni": "t.me/ripaojiedian",
     "latency_ms": 0,
-    "max_speed": "8.7MB"
+    "max_speed": "N/A"
   },
   {
     "name": "TW_3",
@@ -939,7 +1005,7 @@
     "skip-cert-verify": true,
     "sni": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd [By EbraSha] b2n.ir/v2ray-configs | 868 ",
     "latency_ms": 0,
-    "max_speed": "11.0MB"
+    "max_speed": "N/A"
   },
   {
     "name": "HK_3",
@@ -952,7 +1018,7 @@
     "skip-cert-verify": true,
     "sni": "t.me%2Fripaojiedian",
     "latency_ms": 0,
-    "max_speed": "10.1MB"
+    "max_speed": "N/A"
   },
   {
     "name": "HK_4",
@@ -991,7 +1057,7 @@
     "skip-cert-verify": true,
     "sni": " [By EbraSha] b2n.ir/v2ray-configs | 761 ",
     "latency_ms": 0,
-    "max_speed": "11.9MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u9999\u6e2f_7",
@@ -1004,7 +1070,7 @@
     "skip-cert-verify": true,
     "sni": " [By DukeMehdi] trojan-HK ",
     "latency_ms": 0,
-    "max_speed": "10.0MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u9999\u6e2f_8",
@@ -1017,7 +1083,7 @@
     "skip-cert-verify": true,
     "sni": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd [By DukeMehdi] trojan-HK ",
     "latency_ms": 0,
-    "max_speed": "18.3MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u9999\u6e2f_9",
@@ -1030,7 +1096,7 @@
     "skip-cert-verify": true,
     "sni": " [By EbraSha] b2n.ir/v2ray-configs | 761 ",
     "latency_ms": 0,
-    "max_speed": "9.5MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u9999\u6e2f_10",
@@ -1043,7 +1109,7 @@
     "skip-cert-verify": true,
     "sni": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd [By DukeMehdi] b2n.ir/v2ray-configs | 382 ",
     "latency_ms": 0,
-    "max_speed": "14.9MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u9999\u6e2f_11",
@@ -1056,7 +1122,7 @@
     "skip-cert-verify": true,
     "sni": " [By DukeMehdi] b2n.ir/v2ray-configs | 402 ",
     "latency_ms": 0,
-    "max_speed": "9.5MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u9999\u6e2f_12",
@@ -1069,7 +1135,7 @@
     "skip-cert-verify": true,
     "sni": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd [By EbraSha] trojan-HK ",
     "latency_ms": 0,
-    "max_speed": "14.1MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u7f8e\u570b_15",
@@ -1095,7 +1161,7 @@
     "skip-cert-verify": true,
     "sni": " [By EbraSha] trojan-HK ",
     "latency_ms": 0,
-    "max_speed": "13.9MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u9999\u6e2f_14",
@@ -1108,7 +1174,7 @@
     "skip-cert-verify": true,
     "sni": "\ud83d\udd12 [By DukeMehdi] b2n.ir/v2ray-configs | 178 ",
     "latency_ms": 0,
-    "max_speed": "8.2MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u9999\u6e2f_15",
@@ -1121,7 +1187,7 @@
     "skip-cert-verify": true,
     "sni": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd [By DukeMehdi] b2n.ir/v2ray-configs | 160 ",
     "latency_ms": 0,
-    "max_speed": "7.1MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u9999\u6e2f_16",
@@ -1134,7 +1200,7 @@
     "skip-cert-verify": true,
     "sni": "\ufffd [By DukeMehdi] b2n.ir/v2ray-configs | 17 ",
     "latency_ms": 0,
-    "max_speed": "12.4MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u9999\u6e2f_17",
@@ -1147,7 +1213,7 @@
     "skip-cert-verify": true,
     "sni": " [By DukeMehdi] trojan-HK ",
     "latency_ms": 0,
-    "max_speed": "10.6MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u9999\u6e2f_18",
@@ -1160,7 +1226,7 @@
     "skip-cert-verify": true,
     "sni": "\ud83d\udd12 [By EbraSha] b2n.ir/v2ray-configs | 54 ",
     "latency_ms": 0,
-    "max_speed": "16.8MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u9999\u6e2f_19",
@@ -1173,7 +1239,7 @@
     "skip-cert-verify": true,
     "sni": " [By DukeMehdi] trojan-HK ",
     "latency_ms": 0,
-    "max_speed": "14.0MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u9999\u6e2f_20",
@@ -1186,7 +1252,7 @@
     "skip-cert-verify": true,
     "sni": " [By EbraSha] trojan-HK ",
     "latency_ms": 0,
-    "max_speed": "7.0MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u9999\u6e2f_21",
@@ -1199,7 +1265,7 @@
     "skip-cert-verify": true,
     "sni": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd [By EbraSha] b2n.ir/v2ray-configs | 166 ",
     "latency_ms": 0,
-    "max_speed": "2.0MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u9999\u6e2f_22",
@@ -1212,7 +1278,7 @@
     "skip-cert-verify": true,
     "sni": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd [By DukeMehdi] b2n.ir/v2ray-configs | 17 ",
     "latency_ms": 0,
-    "max_speed": "12.5MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u9999\u6e2f_23",
@@ -1225,7 +1291,7 @@
     "skip-cert-verify": true,
     "sni": " [By EbraSha] trojan-HK ",
     "latency_ms": 0,
-    "max_speed": "14.4MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u9999\u6e2f_24",
@@ -1238,7 +1304,7 @@
     "skip-cert-verify": true,
     "sni": "\ud83d\udd12 [By DukeMehdi] b2n.ir/v2ray-configs | 783 ",
     "latency_ms": 0,
-    "max_speed": "13.4MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u52a0\u62ff\u5927",
@@ -1264,7 +1330,7 @@
     "skip-cert-verify": true,
     "sni": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd [By DukeMehdi] b2n.ir/v2ray-configs | 166 ",
     "latency_ms": 0,
-    "max_speed": "22.2MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u9999\u6e2f_26",
@@ -1277,7 +1343,7 @@
     "skip-cert-verify": true,
     "sni": "\ufffd [By EbraSha] trojan-HK ",
     "latency_ms": 0,
-    "max_speed": "14.5MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u7f8e\u570b_16",
@@ -1303,7 +1369,7 @@
     "skip-cert-verify": true,
     "sni": " [By EbraSha] b2n.ir/v2ray-configs ",
     "latency_ms": 0,
-    "max_speed": "14.2MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u9999\u6e2f_28",
@@ -1329,7 +1395,7 @@
     "skip-cert-verify": true,
     "sni": " [By EbraSha] b2n.ir/v2ray-configs ",
     "latency_ms": 0,
-    "max_speed": "16.7MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u9999\u6e2f_30",
@@ -1342,7 +1408,7 @@
     "skip-cert-verify": true,
     "sni": " [By DukeMehdi] b2n.ir/v2ray-configs | 166 ",
     "latency_ms": 0,
-    "max_speed": "7.1MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u9999\u6e2f_31",
@@ -1355,7 +1421,7 @@
     "skip-cert-verify": true,
     "sni": "t.me/ripaojiedian",
     "latency_ms": 0,
-    "max_speed": "10.3MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u9999\u6e2f_32",
@@ -1368,7 +1434,7 @@
     "skip-cert-verify": true,
     "sni": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd [By EbraSha] trojan-HK ",
     "latency_ms": 0,
-    "max_speed": "5.6MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u585e\u6d66\u8def\u65af_2",
@@ -1394,7 +1460,7 @@
     "skip-cert-verify": true,
     "sni": " [By EbraSha] b2n.ir/v2ray-configs | 449 ",
     "latency_ms": 0,
-    "max_speed": "5.9MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u9999\u6e2f_34",
@@ -1407,7 +1473,7 @@
     "skip-cert-verify": true,
     "sni": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd [By DukeMehdi] b2n.ir/v2ray-configs | 868 ",
     "latency_ms": 0,
-    "max_speed": "14.2MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u9999\u6e2f_35",
@@ -1420,7 +1486,7 @@
     "skip-cert-verify": true,
     "sni": "\ud83d\udd12",
     "latency_ms": 0,
-    "max_speed": "14.0MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u9999\u6e2f_36",
@@ -1432,7 +1498,7 @@
     "password": "/BxceQaOe",
     "skip-cert-verify": true,
     "latency_ms": 0,
-    "max_speed": "15.1MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u53f0\u7063_1",
@@ -1471,7 +1537,7 @@
     "skip-cert-verify": true,
     "sni": " [By DukeMehdi] b2n.ir/v2ray-configs | 945 ",
     "latency_ms": 0,
-    "max_speed": "17.6MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u53f0\u7063_3",
@@ -1549,7 +1615,7 @@
     "skip-cert-verify": true,
     "sni": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd [By EbraSha] b2n.ir/v2ray-configs ",
     "latency_ms": 0,
-    "max_speed": "17.2MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u9999\u6e2f_39",
@@ -1562,7 +1628,7 @@
     "skip-cert-verify": true,
     "sni": " [By EbraSha] trojan-HK ",
     "latency_ms": 0,
-    "max_speed": "11.0MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u9999\u6e2f_40",
@@ -1575,7 +1641,7 @@
     "skip-cert-verify": true,
     "sni": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd [By DukeMehdi] b2n.ir/v2ray-configs | 934 ",
     "latency_ms": 0,
-    "max_speed": "14.9MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u9999\u6e2f_41",
@@ -1588,7 +1654,7 @@
     "skip-cert-verify": true,
     "sni": "\ud83d\udd12 [By DukeMehdi] b2n.ir/v2ray-configs | 945 ",
     "latency_ms": 0,
-    "max_speed": "16.6MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u53f0\u7063_8",
@@ -1627,7 +1693,7 @@
     "skip-cert-verify": true,
     "sni": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd [By EbraSha] b2n.ir/v2ray-configs | 166 ",
     "latency_ms": 0,
-    "max_speed": "19.3MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u9999\u6e2f_43",
@@ -1640,7 +1706,7 @@
     "skip-cert-verify": true,
     "sni": " [By EbraSha] b2n.ir/v2ray-configs | 54 ",
     "latency_ms": 0,
-    "max_speed": "15.2MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u9999\u6e2f_44",
@@ -1653,7 +1719,7 @@
     "skip-cert-verify": true,
     "sni": "\ud83d\udd12 [By DukeMehdi] b2n.ir/v2ray-configs | 88 ",
     "latency_ms": 0,
-    "max_speed": "11.5MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\u9999\u6e2f_45",
@@ -1666,7 +1732,7 @@
     "skip-cert-verify": true,
     "sni": " ",
     "latency_ms": 0,
-    "max_speed": "9.8MB"
+    "max_speed": "N/A"
   },
   {
     "name": "JP",
@@ -1679,7 +1745,7 @@
     "skip-cert-verify": true,
     "sni": "login-staticjpc.jasmine-douyin.top",
     "latency_ms": 0,
-    "max_speed": "5.3MB"
+    "max_speed": "N/A"
   },
   {
     "name": "CN_1",
@@ -1965,7 +2031,7 @@
     "skip-cert-verify": true,
     "sni": "hkip5.686911.xyz",
     "latency_ms": 0,
-    "max_speed": "520.9KB"
+    "max_speed": "N/A"
   },
   {
     "name": "TW_15",
@@ -2107,7 +2173,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "wwzVn2ZnHfqYa6l8EWh3eY",
     "latency_ms": 0,
-    "max_speed": "306.3KB"
+    "max_speed": "158.6KB"
   },
   {
     "name": "TW\u53f0\u6e7e(mibei77.com+\u7c73\u8d1d\u8282\u70b9\u5206\u4eab)",
@@ -2181,7 +2247,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "RFK38Cg7APneSB5cWDcpbm",
     "latency_ms": 0,
-    "max_speed": "380.9KB"
+    "max_speed": "151.1KB"
   },
   {
     "name": "TW\u53f0\u6e7e(mibei77.com+\u7c73\u8d1d\u8282\u70b9\u5206\u4eab)+2",
@@ -2193,7 +2259,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "9tqhMdIrTkgQ46PvhyAtMH",
     "latency_ms": 0,
-    "max_speed": "285.6KB"
+    "max_speed": "91.5KB"
   },
   {
     "name": "\u897f\u73ed\u7259(mibei77.com+\u7c73\u8d1d\u8282\u70b9\u5206\u4eab)+2",
@@ -2267,7 +2333,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "9tqhMdIrTkgQ46PvhyAtMH",
     "latency_ms": 0,
-    "max_speed": "128.0KB"
+    "max_speed": "94.7KB"
   },
   {
     "name": "TW\u53f0\u6e7e(mibei77.com+\u7c73\u8d1d\u8282\u70b9\u5206\u4eab)+5",
@@ -2304,7 +2370,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "wwzVn2ZnHfqYa6l8EWh3eY",
     "latency_ms": 0,
-    "max_speed": "111.4KB"
+    "max_speed": "111.2KB"
   },
   {
     "name": "TW\u53f0\u6e7e(mibei77.com+\u7c73\u8d1d\u8282\u70b9\u5206\u4eab)+6",
@@ -2521,7 +2587,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "RFK38Cg7APneSB5cWDcpbm",
     "latency_ms": 0,
-    "max_speed": "133.1KB"
+    "max_speed": "67.6KB"
   },
   {
     "name": "TW\u53f0\u6e7e(mibei77.com+\u7c73\u8d1d\u8282\u70b9\u5206\u4eab)+20",
@@ -2623,7 +2689,7 @@
     "cipher": "aes-128-gcm",
     "password": "57bc0c04-8184-48f5-906b-897d095ed445",
     "latency_ms": 0,
-    "max_speed": "132.6KB"
+    "max_speed": "192.0KB"
   },
   {
     "name": "US\u7f8e\u56fd(mibei77.com+\u7c73\u8d1d\u8282\u70b9\u5206\u4eab)+38",
@@ -2846,7 +2912,7 @@
     "password": "/61d8077bfb174e171b8283f155a555ad",
     "sni": "www.nintendogames.net",
     "latency_ms": 0,
-    "max_speed": "11.0MB"
+    "max_speed": "13.4MB"
   },
   {
     "name": "\ud83c\uddef\ud83c\uddf5+\u65e5\u672c3|@stairnode",
@@ -2858,7 +2924,7 @@
     "password": "/61d8077bfb174e171b8283f155a555ad",
     "sni": "www.nintendogames.net",
     "latency_ms": 0,
-    "max_speed": "N/A"
+    "max_speed": "10.8MB"
   },
   {
     "name": "\ud83c\uddf0\ud83c\uddf7+\u97e9\u56fd|@stairnode",
@@ -2882,7 +2948,7 @@
     "password": "/61d8077bfb174e171b8283f155a555ad",
     "sni": "www.nintendogames.net",
     "latency_ms": 0,
-    "max_speed": "12.9MB"
+    "max_speed": "12.1MB"
   },
   {
     "name": "\ud83c\uddf8\ud83c\uddec+\u65b0\u52a0\u57612|@stairnode",
@@ -2894,7 +2960,7 @@
     "password": "/61d8077bfb174e171b8283f155a555ad",
     "sni": "www.nintendogames.net",
     "latency_ms": 0,
-    "max_speed": "13.4MB"
+    "max_speed": "8.2MB"
   },
   {
     "name": "\ud83c\uddf8\ud83c\uddec+\u65b0\u52a0\u57613|@stairnode",
@@ -3148,7 +3214,7 @@
     "skip-cert-verify": true,
     "sni": "www.nintendogames.net",
     "latency_ms": 0,
-    "max_speed": "12.1MB"
+    "max_speed": "12.6MB"
   },
   {
     "name": "\ud83c\udded\ud83c\uddf0+HK+TROJAN-15+|+free-nodes",
@@ -3185,7 +3251,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "6b9737450ab7fc98",
     "latency_ms": 0,
-    "max_speed": "11.2MB"
+    "max_speed": "11.3MB"
   },
   {
     "name": "\u672a\u77e5+SS-21+|+free-nodes",
@@ -3197,7 +3263,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "638bb05eab35adec",
     "latency_ms": 0,
-    "max_speed": "15.4MB"
+    "max_speed": "15.3MB"
   },
   {
     "name": "\u672a\u77e5+SS-24+|+free-nodes",
@@ -3221,7 +3287,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "2602101eff2c9250",
     "latency_ms": 0,
-    "max_speed": "9.6MB"
+    "max_speed": "5.2MB"
   },
   {
     "name": "TR+TROJAN-32+|+free-nodes",
@@ -3233,7 +3299,7 @@
     "password": "/tSk5LQoJr7F.WnRsUM4hT",
     "sni": "binaryboots.algorithmblanket.click",
     "latency_ms": 0,
-    "max_speed": "6.2MB"
+    "max_speed": "5.2MB"
   },
   {
     "name": "\u672a\u77e5+SS-33+|+free-nodes",
@@ -3245,7 +3311,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "652e423c559eefd4",
     "latency_ms": 0,
-    "max_speed": "2.7MB"
+    "max_speed": "2.9MB"
   },
   {
     "name": "\ud83c\uddf8\ud83c\uddec+SG+SS-42+|+free-nodes",
@@ -3257,7 +3323,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "42d2b47181a32de7",
     "latency_ms": 0,
-    "max_speed": "1.0MB"
+    "max_speed": "1.3MB"
   },
   {
     "name": "\u672a\u77e5+SS-45+|+free-nodes",
@@ -3269,7 +3335,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "7bc8eeffd0325141",
     "latency_ms": 0,
-    "max_speed": "9.0MB"
+    "max_speed": "14.8MB"
   },
   {
     "name": "\u672a\u77e5+SS-46+|+free-nodes",
@@ -3293,7 +3359,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "4df2be7c6eef0ed6",
     "latency_ms": 0,
-    "max_speed": "13.3MB"
+    "max_speed": "16.3MB"
   },
   {
     "name": "\ud83c\udde9\ud83c\uddea+DE+SS-48+|+free-nodes",
@@ -3305,7 +3371,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "333c4cae01f8bacf",
     "latency_ms": 0,
-    "max_speed": "11.5MB"
+    "max_speed": "11.3MB"
   },
   {
     "name": "\u672a\u77e5+SS-49+|+free-nodes",
@@ -3317,7 +3383,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "6ff1423f61ffe673",
     "latency_ms": 0,
-    "max_speed": "13.5MB"
+    "max_speed": "11.5MB"
   },
   {
     "name": "\ud83c\udde9\ud83c\uddea+DE+SS-50+|+free-nodes",
@@ -3329,7 +3395,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "d6b0973401858b29",
     "latency_ms": 0,
-    "max_speed": "11.2MB"
+    "max_speed": "12.9MB"
   },
   {
     "name": "\ud83c\udde9\ud83c\uddea+DE+SS-51+|+free-nodes",
@@ -3341,7 +3407,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "cbbcbfd5330475d1",
     "latency_ms": 0,
-    "max_speed": "11.0MB"
+    "max_speed": "7.0MB"
   },
   {
     "name": "\u672a\u77e5+SS-52+|+free-nodes",
@@ -3353,7 +3419,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "6134494027689bbb",
     "latency_ms": 0,
-    "max_speed": "656.1KB"
+    "max_speed": "302.1KB"
   },
   {
     "name": "\ud83c\udde9\ud83c\uddea+DE+SS-53+|+free-nodes",
@@ -3365,7 +3431,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "54c303c2866c8399",
     "latency_ms": 0,
-    "max_speed": "12.1MB"
+    "max_speed": "11.3MB"
   },
   {
     "name": "\ud83c\udde9\ud83c\uddea+DE+SS-54+|+free-nodes",
@@ -3377,7 +3443,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "1b5d1bff76cae87c",
     "latency_ms": 0,
-    "max_speed": "12.2MB"
+    "max_speed": "12.1MB"
   },
   {
     "name": "\ud83c\udde9\ud83c\uddea+DE+SS-55+|+free-nodes",
@@ -3389,7 +3455,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "8e3c75581ade471d",
     "latency_ms": 0,
-    "max_speed": "12.8MB"
+    "max_speed": "10.9MB"
   },
   {
     "name": "\ud83c\uddf0\ud83c\uddf7+KR+SS-56+|+free-nodes",
@@ -3425,7 +3491,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "ce1dfbefd0addc9c",
     "latency_ms": 0,
-    "max_speed": "16.5MB"
+    "max_speed": "15.8MB"
   },
   {
     "name": "\u672a\u77e5+SS-62+|+free-nodes",
@@ -3461,7 +3527,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "a46a7f1876472552",
     "latency_ms": 0,
-    "max_speed": "15.1MB"
+    "max_speed": "15.9MB"
   },
   {
     "name": "\ud83c\uddec\ud83c\udde7+GB+SS-65+|+free-nodes",
@@ -3485,7 +3551,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "5bbe7bf7a282ad8b",
     "latency_ms": 0,
-    "max_speed": "7.9MB"
+    "max_speed": "5.8MB"
   },
   {
     "name": "\ud83c\udde9\ud83c\uddea+DE+SS-67+|+free-nodes",
@@ -3497,7 +3563,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "420946afc5918c49",
     "latency_ms": 0,
-    "max_speed": "9.5MB"
+    "max_speed": "5.7MB"
   },
   {
     "name": "\ud83c\udde9\ud83c\uddea+DE+SS-68+|+free-nodes",
@@ -3509,7 +3575,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "78c2e39121c820fb",
     "latency_ms": 0,
-    "max_speed": "12.0MB"
+    "max_speed": "7.3MB"
   },
   {
     "name": "\ud83c\udde8\ud83c\udde6+CA+SS-69+|+free-nodes",
@@ -3521,7 +3587,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "b27bc0b4fad33e46",
     "latency_ms": 0,
-    "max_speed": "5.2MB"
+    "max_speed": "9.9MB"
   },
   {
     "name": "\u672a\u77e5+SS-70+|+free-nodes",
@@ -3533,7 +3599,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "4f26d8bb593a5fc5",
     "latency_ms": 0,
-    "max_speed": "7.1MB"
+    "max_speed": "6.1MB"
   },
   {
     "name": "\u672a\u77e5+SS-72+|+free-nodes",
@@ -3545,7 +3611,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "32a9a16d8a041c98",
     "latency_ms": 0,
-    "max_speed": "20.4MB"
+    "max_speed": "21.9MB"
   },
   {
     "name": "\u672a\u77e5+SS-73+|+free-nodes",
@@ -3557,7 +3623,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "a94f0b6916f67bdc",
     "latency_ms": 0,
-    "max_speed": "16.1MB"
+    "max_speed": "13.5MB"
   },
   {
     "name": "\ud83c\uddef\ud83c\uddf5+JP+SS-74+|+free-nodes",
@@ -3569,7 +3635,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "303ac65e30f28b0b",
     "latency_ms": 0,
-    "max_speed": "10.6MB"
+    "max_speed": "11.4MB"
   },
   {
     "name": "\u672a\u77e5+SS-75+|+free-nodes",
@@ -3581,7 +3647,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "d121385f700a6915",
     "latency_ms": 0,
-    "max_speed": "21.2MB"
+    "max_speed": "14.4MB"
   },
   {
     "name": "\ud83c\udded\ud83c\uddf0+HK+SS-76+|+free-nodes",
@@ -3593,7 +3659,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "3ff6d2f0563891a4",
     "latency_ms": 0,
-    "max_speed": "15.1MB"
+    "max_speed": "15.8MB"
   },
   {
     "name": "\ud83c\udde9\ud83c\uddea+DE+SS-77+|+free-nodes",
@@ -3605,7 +3671,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "caac660070728d6c",
     "latency_ms": 0,
-    "max_speed": "10.4MB"
+    "max_speed": "12.7MB"
   },
   {
     "name": "\u672a\u77e5+SS-78+|+free-nodes",
@@ -3617,7 +3683,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "317f13c5c2ebdea3",
     "latency_ms": 0,
-    "max_speed": "23.1MB"
+    "max_speed": "26.4MB"
   },
   {
     "name": "\ud83c\uddec\ud83c\udde7+GB+SS-79+|+free-nodes",
@@ -3629,7 +3695,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "82f3a83f1556c0e3",
     "latency_ms": 0,
-    "max_speed": "23.9MB"
+    "max_speed": "33.6MB"
   },
   {
     "name": "\ud83c\uddfa\ud83c\uddf8+US+SS-81+|+free-nodes",
@@ -3641,7 +3707,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "ef33c53f6e9e3c1b",
     "latency_ms": 0,
-    "max_speed": "22.2MB"
+    "max_speed": "10.7MB"
   },
   {
     "name": "\u672a\u77e5+SS-82+|+free-nodes",
@@ -3665,7 +3731,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "913fcc3aeb16eba3",
     "latency_ms": 0,
-    "max_speed": "9.9MB"
+    "max_speed": "5.7MB"
   },
   {
     "name": "\u672a\u77e5+SS-84+|+free-nodes",
@@ -3677,7 +3743,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "d27faed8a9b98bd0",
     "latency_ms": 0,
-    "max_speed": "16.8MB"
+    "max_speed": "23.7MB"
   },
   {
     "name": "TR+SS-85+|+free-nodes",
@@ -3689,7 +3755,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "bed61f51dfec961a",
     "latency_ms": 0,
-    "max_speed": "18.6MB"
+    "max_speed": "21.1MB"
   },
   {
     "name": "\ud83c\uddf8\ud83c\uddec+SG+SS-86+|+free-nodes",
@@ -3701,7 +3767,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "7afa39016d5a409c",
     "latency_ms": 0,
-    "max_speed": "1.1MB"
+    "max_speed": "1.4MB"
   },
   {
     "name": "\u672a\u77e5+SS-87+|+free-nodes",
@@ -3713,7 +3779,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "f1584199f4cb3ca6",
     "latency_ms": 0,
-    "max_speed": "14.4MB"
+    "max_speed": "15.0MB"
   },
   {
     "name": "\u672a\u77e5+SS-88+|+free-nodes",
@@ -3725,7 +3791,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "ac81d5eb1ee96e1e",
     "latency_ms": 0,
-    "max_speed": "10.4MB"
+    "max_speed": "5.2MB"
   },
   {
     "name": "\ud83c\udde9\ud83c\uddea+DE+SS-89+|+free-nodes",
@@ -3737,7 +3803,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "c0fb2805ee931691",
     "latency_ms": 0,
-    "max_speed": "11.7MB"
+    "max_speed": "11.3MB"
   },
   {
     "name": "\ud83c\udde9\ud83c\uddea+DE+SS-90+|+free-nodes",
@@ -3749,7 +3815,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "75782921a8e70802",
     "latency_ms": 0,
-    "max_speed": "20.9MB"
+    "max_speed": "21.6MB"
   },
   {
     "name": "\ud83c\uddeb\ud83c\uddf7+FR+SS-91+|+free-nodes",
@@ -3761,7 +3827,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "jP4Z9J3S6tAldCaSdCtaZR7gZtV7rQg0",
     "latency_ms": 0,
-    "max_speed": "7.9MB"
+    "max_speed": "10.7MB"
   },
   {
     "name": "\u672a\u77e5+SS-92+|+free-nodes",
@@ -3773,7 +3839,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "8d90009fa5023cfa",
     "latency_ms": 0,
-    "max_speed": "11.5MB"
+    "max_speed": "10.0MB"
   },
   {
     "name": "\ud83c\udde9\ud83c\uddea+DE+SS-94+|+free-nodes",
@@ -3797,7 +3863,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "a3027c931ae07bce",
     "latency_ms": 0,
-    "max_speed": "24.5MB"
+    "max_speed": "30.5MB"
   },
   {
     "name": "\ud83c\uddfa\ud83c\uddf8+US+SS-98+|+free-nodes",
@@ -3809,7 +3875,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "a586ae8d773f250f",
     "latency_ms": 0,
-    "max_speed": "11.4MB"
+    "max_speed": "22.4MB"
   },
   {
     "name": "\ud83c\uddfa\ud83c\uddf8+US+SS-99+|+free-nodes",
@@ -3821,7 +3887,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "98f7aedd8adda6fe",
     "latency_ms": 0,
-    "max_speed": "254.5KB"
+    "max_speed": "2.5MB"
   },
   {
     "name": "\ud83c\uddfa\ud83c\uddf8+US+SS-100+|+free-nodes",
@@ -3833,7 +3899,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "f96d6b42e30595dc",
     "latency_ms": 0,
-    "max_speed": "11.0MB"
+    "max_speed": "10.4MB"
   },
   {
     "name": "\u672a\u77e5+SS-101+|+free-nodes",
@@ -3845,7 +3911,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "a1f740989a878073",
     "latency_ms": 0,
-    "max_speed": "12.7MB"
+    "max_speed": "12.9MB"
   },
   {
     "name": "\u672a\u77e5+SS-102+|+free-nodes",
@@ -3869,7 +3935,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "a792ff4b517fdf1c",
     "latency_ms": 0,
-    "max_speed": "9.2MB"
+    "max_speed": "10.2MB"
   },
   {
     "name": "\ud83c\uddec\ud83c\udde7+GB+SS-104+|+free-nodes",
@@ -3881,7 +3947,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "7a63df1a001759bf",
     "latency_ms": 0,
-    "max_speed": "11.7MB"
+    "max_speed": "13.2MB"
   },
   {
     "name": "\ud83c\uddec\ud83c\udde7+GB+SS-105+|+free-nodes",
@@ -3893,7 +3959,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "15b0573830081d01",
     "latency_ms": 0,
-    "max_speed": "11.2MB"
+    "max_speed": "12.8MB"
   },
   {
     "name": "\u672a\u77e5+SS-106+|+free-nodes",
@@ -3905,7 +3971,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "47509ba3679b9df9",
     "latency_ms": 0,
-    "max_speed": "7.6MB"
+    "max_speed": "8.0MB"
   },
   {
     "name": "\ud83c\udde9\ud83c\uddea+DE+SS-109+|+free-nodes",
@@ -3917,7 +3983,7 @@
     "cipher": "aes-256-gcm",
     "password": "RexnBgU7EV5ADxG",
     "latency_ms": 0,
-    "max_speed": "22.5MB"
+    "max_speed": "24.6MB"
   },
   {
     "name": "\ud83c\uddec\ud83c\udde7+GB+SS-110+|+free-nodes",
@@ -3929,7 +3995,7 @@
     "cipher": "aes-256-gcm",
     "password": "RexnBgU7EV5ADxG",
     "latency_ms": 0,
-    "max_speed": "26.3MB"
+    "max_speed": "33.5MB"
   },
   {
     "name": "\ud83c\uddfa\ud83c\uddf8+US+SS-111+|+free-nodes",
@@ -3941,7 +4007,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "fc343864d4064051",
     "latency_ms": 0,
-    "max_speed": "10.8MB"
+    "max_speed": "10.5MB"
   },
   {
     "name": "\ud83c\uddfa\ud83c\uddf8+US+SS-112+|+free-nodes",
@@ -3953,7 +4019,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "5d96ab54a20f4e4e",
     "latency_ms": 0,
-    "max_speed": "20.7MB"
+    "max_speed": "20.2MB"
   },
   {
     "name": "\ud83c\uddfa\ud83c\uddf8+US+SS-113+|+free-nodes",
@@ -3965,7 +4031,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "e9983c0bf58bc749",
     "latency_ms": 0,
-    "max_speed": "2.7MB"
+    "max_speed": "5.9MB"
   },
   {
     "name": "TR+SS-114+|+free-nodes",
@@ -3977,7 +4043,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "71807718f593d3e6",
     "latency_ms": 0,
-    "max_speed": "11.3MB"
+    "max_speed": "16.0MB"
   },
   {
     "name": "\u672a\u77e5+SS-115+|+free-nodes",
@@ -3989,7 +4055,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "312ee9bcc9570095",
     "latency_ms": 0,
-    "max_speed": "20.6MB"
+    "max_speed": "14.7MB"
   },
   {
     "name": "\u672a\u77e5+SS-116+|+free-nodes",
@@ -4013,7 +4079,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "11e520ccbe7365eb",
     "latency_ms": 0,
-    "max_speed": "24.8MB"
+    "max_speed": "28.9MB"
   },
   {
     "name": "\u672a\u77e5+SS-118+|+free-nodes",
@@ -4025,7 +4091,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "bddd79c7386646d6",
     "latency_ms": 0,
-    "max_speed": "20.4MB"
+    "max_speed": "21.9MB"
   },
   {
     "name": "\ud83c\uddec\ud83c\udde7+GB+SS-119+|+free-nodes",
@@ -4037,7 +4103,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "a42c27bea19fc4db",
     "latency_ms": 0,
-    "max_speed": "4.6MB"
+    "max_speed": "5.0MB"
   },
   {
     "name": "\ud83c\uddeb\ud83c\uddf7+FR+SS-120+|+free-nodes",
@@ -4049,7 +4115,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "f19e359a2f0c4f5f",
     "latency_ms": 0,
-    "max_speed": "11.3MB"
+    "max_speed": "10.9MB"
   },
   {
     "name": "\ud83c\udde9\ud83c\uddea+DE+SS-121+|+free-nodes",
@@ -4061,7 +4127,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "267514960a86907d",
     "latency_ms": 0,
-    "max_speed": "11.2MB"
+    "max_speed": "12.5MB"
   },
   {
     "name": "\ud83c\udde9\ud83c\uddea+DE+SS-122+|+free-nodes",
@@ -4073,7 +4139,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "865bc80919a484a5",
     "latency_ms": 0,
-    "max_speed": "11.3MB"
+    "max_speed": "11.2MB"
   },
   {
     "name": "\ud83c\udde9\ud83c\uddea+DE+SS-123+|+free-nodes",
@@ -4085,7 +4151,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "3f7693931fd1f9f8",
     "latency_ms": 0,
-    "max_speed": "7.5MB"
+    "max_speed": "11.4MB"
   },
   {
     "name": "\ud83c\udde9\ud83c\uddea+DE+SS-124+|+free-nodes",
@@ -4109,7 +4175,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "59fa5541d1d9ccce",
     "latency_ms": 0,
-    "max_speed": "10.5MB"
+    "max_speed": "11.0MB"
   },
   {
     "name": "\u672a\u77e5+SS-126+|+free-nodes",
@@ -4121,7 +4187,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "a7c205642b302c20",
     "latency_ms": 0,
-    "max_speed": "7.7MB"
+    "max_speed": "6.3MB"
   },
   {
     "name": "\u672a\u77e5+SS-127+|+free-nodes",
@@ -4133,7 +4199,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "78322e4b934870b6",
     "latency_ms": 0,
-    "max_speed": "7.4MB"
+    "max_speed": "11.5MB"
   },
   {
     "name": "\u672a\u77e5+SS-128+|+free-nodes",
@@ -4157,7 +4223,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "41d6655d3625fd14",
     "latency_ms": 0,
-    "max_speed": "19.2MB"
+    "max_speed": "17.8MB"
   },
   {
     "name": "\u672a\u77e5+SS-130+|+free-nodes",
@@ -4169,7 +4235,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "d954bd6dd74a7f48",
     "latency_ms": 0,
-    "max_speed": "11.7MB"
+    "max_speed": "11.1MB"
   },
   {
     "name": "\ud83c\udde9\ud83c\uddea+DE+SS-131+|+free-nodes",
@@ -4181,7 +4247,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "10f90af92b6c1a74",
     "latency_ms": 0,
-    "max_speed": "11.3MB"
+    "max_speed": "12.8MB"
   },
   {
     "name": "\ud83c\udde9\ud83c\uddea+DE+SS-132+|+free-nodes",
@@ -4193,7 +4259,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "85d3d8ccba287d3e",
     "latency_ms": 0,
-    "max_speed": "22.1MB"
+    "max_speed": "28.7MB"
   },
   {
     "name": "\ud83c\uddfa\ud83c\uddf8+US+SS-133+|+free-nodes",
@@ -4205,7 +4271,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "7f9cb9aef317f096",
     "latency_ms": 0,
-    "max_speed": "10.7MB"
+    "max_speed": "8.8MB"
   },
   {
     "name": "\ud83c\udde9\ud83c\uddea+DE+SS-134+|+free-nodes",
@@ -4217,7 +4283,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "4f032d993dfec318",
     "latency_ms": 0,
-    "max_speed": "11.4MB"
+    "max_speed": "10.4MB"
   },
   {
     "name": "\ud83c\uddeb\ud83c\uddf7+FR+SS-135+|+free-nodes",
@@ -4229,7 +4295,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "d5b878cbb46f3e33",
     "latency_ms": 0,
-    "max_speed": "9.7MB"
+    "max_speed": "10.4MB"
   },
   {
     "name": "\ud83c\udde9\ud83c\uddea+DE+SS-136+|+free-nodes",
@@ -4241,7 +4307,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "f54cdee10f8b25ce",
     "latency_ms": 0,
-    "max_speed": "11.2MB"
+    "max_speed": "11.3MB"
   },
   {
     "name": "\ud83c\uddeb\ud83c\uddf7+FR+SS-137+|+free-nodes",
@@ -4253,7 +4319,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "74918bc801d53a4b",
     "latency_ms": 0,
-    "max_speed": "26.1MB"
+    "max_speed": "29.0MB"
   },
   {
     "name": "\ud83c\uddeb\ud83c\uddf7+FR+SS-138+|+free-nodes",
@@ -4265,7 +4331,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "4b4763efefa95114",
     "latency_ms": 0,
-    "max_speed": "1.5MB"
+    "max_speed": "4.3MB"
   },
   {
     "name": "\ud83c\uddec\ud83c\udde7+GB+SS-139+|+free-nodes",
@@ -4277,7 +4343,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "e5c3f903e81d5d4e",
     "latency_ms": 0,
-    "max_speed": "25.9MB"
+    "max_speed": "32.4MB"
   },
   {
     "name": "\ud83c\udde8\ud83c\udde6+CA+SS-140+|+free-nodes",
@@ -4289,7 +4355,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "9f99180fc9211c40",
     "latency_ms": 0,
-    "max_speed": "19.5MB"
+    "max_speed": "25.2MB"
   },
   {
     "name": "\ud83c\udde9\ud83c\uddea+DE+SS-141+|+free-nodes",
@@ -4301,7 +4367,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "ca5efd5cf9e947ad",
     "latency_ms": 0,
-    "max_speed": "10.7MB"
+    "max_speed": "11.3MB"
   },
   {
     "name": "\u672a\u77e5+SS-142+|+free-nodes",
@@ -4313,7 +4379,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "9bfee1388e960537",
     "latency_ms": 0,
-    "max_speed": "11.5MB"
+    "max_speed": "11.6MB"
   },
   {
     "name": "\ud83c\uddeb\ud83c\uddf7+FR+SS-143+|+free-nodes",
@@ -4325,7 +4391,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "d974573beb3f30d4",
     "latency_ms": 0,
-    "max_speed": "10.3MB"
+    "max_speed": "11.1MB"
   },
   {
     "name": "\u672a\u77e5+SS-144+|+free-nodes",
