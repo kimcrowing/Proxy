@@ -7,10 +7,9 @@ import time
 import json
 import os
 
-# 定义要下载的 YAML 配置文件 URLs（最近经常更新的Clash订阅源）
+# 定义要下载的 YAML 配置文件 URLs（最近经常更新的Clash订阅源）"https://raw.githubusercontent.com/Ruk1ng001/freeSub/main/clash.yaml",
 urls = [
     "https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/wenode.yaml",
-    "https://raw.githubusercontent.com/Ruk1ng001/freeSub/main/clash.yaml",
     "https://raw.githubusercontent.com/SnapdragonLee/SystemProxy/master/dist/clash_config.yaml",
     "https://raw.githubusercontent.com/firefoxmmx2/v2rayshare_subcription/main/subscription/clash_sub.yaml",
     "https://raw.githubusercontent.com/adiwzx/freenode/main/adispeed.yml"
