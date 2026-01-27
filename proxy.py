@@ -13,6 +13,7 @@ urls = [
     "https://raw.githubusercontent.com/SnapdragonLee/SystemProxy/master/dist/clash_config.yaml",
     "https://raw.githubusercontent.com/firefoxmmx2/v2rayshare_subcription/main/subscription/clash_sub.yaml",
     "https://github.com/telegeam/freenode/blob/master/clash.yaml",
+    "https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/c.yaml",
     "https://raw.githubusercontent.com/adiwzx/freenode/main/adispeed.yml"
 ]
 
