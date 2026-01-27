@@ -98,6 +98,57 @@ proxies:
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMWJmMDU0ZGNjMDM0MmNk@91.106.109.74:11201#%F0%9F%87%AF%F0%9F%87%B4_JO_%E7%BA%A6%E6%97%A6
   max_speed: N/A
   password: 11bf054dcc0342cd
+- name: ❓ 003
+  type: trojan
+  server: tuntro000.instconn.com
+  port: 443
+  id: 0
+  latency_ms: 0
+  link: trojan://30077070-596e-48ea-9400-14c8ed07bd97@tuntro000.instconn.com:443?security=tls&sni=hkip5.686911.xyz#%E6%AF%8F%E5%A4%A9%E6%9B%B4%E6%96%B0%EF%BC%8C%E8%AF%B7%E5%8A%A0%E7%94%B5%E6%8A%A5%E7%BE%A4%E9%98%B2%E6%AD%A2%E5%A4%B1%E8%81%94
+  max_speed: N/A
+  password: /30077070-596e-48ea-9400-14c8ed07bd97
+  sni: hkip5.686911.xyz
+- name: 🇨🇦 001
+  type: trojan
+  server: tuntro006.instconn.com
+  port: 443
+  id: 1
+  latency_ms: 0
+  link: trojan://30077070-596e-48ea-9400-14c8ed07bd97@tuntro006.instconn.com:443?security=tls&sni=torontorm1.686911.xyz#%F0%9F%87%A8%F0%9F%87%A6_%E5%8A%A0%E6%8B%BF%E5%A4%A7
+  max_speed: N/A
+  password: /30077070-596e-48ea-9400-14c8ed07bd97
+  sni: torontorm1.686911.xyz
+- name: 🇯🇵 001
+  type: trojan
+  server: tuntro003.instconn.com
+  port: 443
+  id: 2
+  latency_ms: 0
+  link: trojan://30077070-596e-48ea-9400-14c8ed07bd97@tuntro003.instconn.com:443?security=tls&sni=login-staticjpc.jasmine-douyin.top#%F0%9F%87%AF%F0%9F%87%B5_%E6%97%A5%E6%9C%AC
+  max_speed: N/A
+  password: /30077070-596e-48ea-9400-14c8ed07bd97
+  sni: login-staticjpc.jasmine-douyin.top
+- name: 🇭🇰 001
+  type: trojan
+  server: 219.76.135.98
+  port: 443
+  id: 29
+  latency_ms: 0
+  link: trojan://BxceQaOe@219.76.135.98:443?allowInsecure=1&sni=219.76.135.98#%F0%9F%87%AD%F0%9F%87%B0_%E9%A6%99%E6%B8%AF_2
+  max_speed: N/A
+  password: /BxceQaOe
+  skip-cert-verify: true
+  sni: 219.76.135.98
+- name: 🇺🇸 003
+  type: trojan
+  server: 167.68.4.199
+  port: 2053
+  id: 31
+  latency_ms: 0
+  link: trojan://Aimer@167.68.4.199:2053?security=tls&sni=epge.muarua.filegear-sg.me#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_39
+  max_speed: N/A
+  password: /Aimer
+  sni: epge.muarua.filegear-sg.me
 - name: 🇬🇧 001
   type: ss
   server: 185.108.105.129
@@ -128,7 +179,7 @@ proxies:
   link: ss://YWVzLTI1Ni1nY206V0N1ejd5cmZaU0NRUVhTTnJ0R1B6MkhU@86.106.136.125:50168#%F0%9F%87%B7%F0%9F%87%B4+adi%7C0622+-+%E7%BD%97%E9%A9%AC%E5%B0%BC%E4%BA%9A+2
   max_speed: N/A
   password: WCuz7yrfZSCQQXSNrtGPz2HT
-- name: 🇨🇦 001
+- name: 🇨🇦 002
   type: ss
   server: 198.8.92.84
   port: 40220
@@ -147,7 +198,7 @@ proxies:
   link: trojan://ba4fedf8c217c146@120.236.197.205:3389?security=tls#adi%7C0703+-+ip3
   max_speed: N/A
   password: /ba4fedf8c217c146
-- name: 🇺🇸 003
+- name: 🇺🇸 006
   type: ss
   server: 154.17.2.112
   port: 18335
@@ -157,7 +208,7 @@ proxies:
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpOMEtTRlI2YWxTeGpncDdUOEFhOUNlOERuQ2FBT1lxejVsRlp4ZTNPMkkzdXljWVpYRURwM1MzNFJ5Q0R3Qg==@154.17.2.112:18335#%F0%9F%87%BA%F0%9F%87%B8+adi%7C0703+-+%E7%BE%8E%E5%9B%BDDMIT10
   max_speed: N/A
   password: N0KSFR6alSxjgp7T8Aa9Ce8DnCaAOYqz5lFZxe3O2I3uycYZXEDp3S34RyCDwB
-- name: 🇺🇸 004
+- name: 🇺🇸 007
   type: ss
   server: 154.17.5.184
   port: 18331
@@ -167,7 +218,7 @@ proxies:
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpaM1lTMEt4Qjh1NWpncDczNmU4MzR5M0RhWHdTT1l6eGxGREZxcE5DYWFsREE5Q0VJUmNlWk9DQW5SMnlUUw==@154.17.5.184:18331#%F0%9F%87%BA%F0%9F%87%B8+adi%7C0703+-+%E7%BE%8E%E5%9B%BDDMIT14
   max_speed: N/A
   password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS
-- name: 🇺🇸 005
+- name: 🇺🇸 008
   type: ss
   server: 154.17.2.31
   port: 18333
@@ -187,7 +238,7 @@ proxies:
   link: ss://YWVzLTI1Ni1nY206OG42cHdBY3JydjJwajZ0RlkycDNUYlE2@82.102.26.117:33992#adi%7C0703+-+IT_2539
   max_speed: N/A
   password: 8n6pwAcrrv2pj6tFY2p3TbQ6
-- name: 🇨🇦 002
+- name: 🇨🇦 003
   type: ss
   server: 138.197.174.245
   port: 56443
@@ -227,7 +278,7 @@ proxies:
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpIR0JkT0tkY0llcjU=@167.99.192.30:3567#%F0%9F%87%AC%F0%9F%87%A7+adi%7C0703+-+UK
   max_speed: N/A
   password: HGBdOKdcIer5
-- name: 🇨🇦 003
+- name: 🇨🇦 004
   type: ss
   server: 198.8.92.84
   port: 35294
@@ -247,7 +298,7 @@ proxies:
   link: ss://YWVzLTI1Ni1nY206V0N1ejd5cmZaU0NRUVhTTnJ0R1B6MkhU@81.19.208.107:50168#adi%7C0703+-+GB_2044
   max_speed: N/A
   password: WCuz7yrfZSCQQXSNrtGPz2HT
-- name: 🇨🇦 004
+- name: 🇨🇦 005
   type: ss
   server: 198.8.92.84
   port: 44945
@@ -257,7 +308,7 @@ proxies:
   link: ss://YWVzLTI1Ni1nY206RjViS2tiOWdna0x4NEpiUXJiTG43TGpa@198.8.92.84:44945#adi%7C0703+-+ip1+3
   max_speed: N/A
   password: F5bKkb9ggkLx4JbQrbLn7LjZ
-- name: 🇺🇸 006
+- name: 🇺🇸 009
   type: ss
   server: 154.17.2.153
   port: 18334
@@ -267,7 +318,7 @@ proxies:
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpaM1lTMEt4Qjh1NWpncDczNmU4MzR5M0RhWHdTT1l6eGxGREZxcE5DYWFsREE5Q0VJUmNlWk9DQW5SMnlUUw==@154.17.2.153:18334#%F0%9F%87%BA%F0%9F%87%B8+adi%7C0703+-+%E7%BE%8E%E5%9B%BDDMIT11
   max_speed: N/A
   password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS
-- name: 🇨🇦 005
+- name: 🇨🇦 006
   type: ss
   server: 198.8.92.84
   port: 38620
@@ -277,7 +328,7 @@ proxies:
   link: ss://YWVzLTI1Ni1nY206S3F1djVVaHZaWE5NZW1BUXk4RHhaN3Fu@198.8.92.84:38620#%F0%9F%87%BA%F0%9F%87%B8+adi%7C0703+-+US
   max_speed: N/A
   password: Kquv5UhvZXNMemAQy8DxZ7qn
-- name: 🇨🇦 006
+- name: 🇨🇦 007
   type: ss
   server: 198.8.92.84
   port: 49396
@@ -287,7 +338,7 @@ proxies:
   link: ss://YWVzLTI1Ni1nY206QmRSV0MzOEw1SlVETVRZTk54SkdjVXdC@198.8.92.84:49396#%F0%9F%87%BA%F0%9F%87%B8+adi%7C0703+-+US+2
   max_speed: N/A
   password: BdRWC38L5JUDMTYNNxJGcUwB
-- name: 🇺🇸 007
+- name: 🇺🇸 010
   type: ss
   server: 198.147.22.87
   port: 33998
@@ -297,7 +348,7 @@ proxies:
   link: ss://YWVzLTI1Ni1nY206Tkh3UVRQTENmYVRNU3FUblUzbWpjU3hl@198.147.22.87:33998#adi%7C0703+-+198.147.22.87%3A33998
   max_speed: N/A
   password: NHwQTPLCfaTMSqTnU3mjcSxe
-- name: 🇺🇸 008
+- name: 🇺🇸 011
   type: ss
   server: 154.17.1.251
   port: 18334
@@ -307,7 +358,7 @@ proxies:
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpaM1lTMEt4Qjh1NWpncDczNmU4MzR5M0RhWHdTT1l6eGxGREZxcE5DYWFsREE5Q0VJUmNlWk9DQW5SMnlUUw==@154.17.1.251:18334#adi%7C0703+-+154.17.1.251%3A18334
   max_speed: N/A
   password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS
-- name: 🇺🇸 009
+- name: 🇺🇸 012
   type: ss
   server: 66.115.175.37
   port: 50168
@@ -317,7 +368,7 @@ proxies:
   link: ss://YWVzLTI1Ni1nY206V0N1ejd5cmZaU0NRUVhTTnJ0R1B6MkhU@66.115.175.37:50168#%F0%9F%87%BA%F0%9F%87%B8+adi%7C0703+-+US_4984
   max_speed: N/A
   password: WCuz7yrfZSCQQXSNrtGPz2HT
-- name: 🇭🇰 001
+- name: 🇭🇰 002
   type: trojan
   server: 58.152.25.130
   port: 443
@@ -328,39 +379,7 @@ proxies:
   password: /BxceQaOe
   skip-cert-verify: true
   sni: t.me/ripaojiedian
-- name: 🇭🇰 002
-  type: trojan
-  server: tuntro000.instconn.com
-  port: 443
-  id: 2
-  latency_ms: 0
-  link: trojan://30077070-596e-48ea-9400-14c8ed07bd97@tuntro000.instconn.com:443?allowInsecure=1&sni=hkip5.686911.xyz#%E9%A6%99%E6%B8%AF_2
-  max_speed: N/A
-  password: /30077070-596e-48ea-9400-14c8ed07bd97
-  skip-cert-verify: true
-  sni: hkip5.686911.xyz
-- name: 🇯🇵 001
-  type: trojan
-  server: tuntro003.instconn.com
-  port: 443
-  id: 1
-  latency_ms: 0
-  link: trojan://30077070-596e-48ea-9400-14c8ed07bd97@tuntro003.instconn.com:443?allowInsecure=1&sni=tuntro003.instconn.com#JP%E6%97%A5%E6%9C%AC%28mibei77.com+%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29
-  max_speed: N/A
-  password: /30077070-596e-48ea-9400-14c8ed07bd97
-  skip-cert-verify: true
-  sni: tuntro003.instconn.com
-- name: 🇺🇸 010
-  type: trojan
-  server: 167.68.4.199
-  port: 2053
-  id: 2
-  latency_ms: 0
-  link: trojan://Aimer@167.68.4.199:2053?allowInsecure=1#TW%E5%8F%B0%E6%B9%BE%28mibei77.com+%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29
-  max_speed: N/A
-  password: /Aimer
-  skip-cert-verify: true
-- name: 🇺🇸 011
+- name: 🇺🇸 014
   type: ss
   server: switcher-nick-croquet.freesocks.work
   port: 443
@@ -400,7 +419,7 @@ proxies:
   max_speed: N/A
   password: /trojan
   skip-cert-verify: true
-- name: 🇺🇸 019
+- name: 🇺🇸 022
   type: trojan
   server: green2.cdntencentmusic.com
   port: 31101
@@ -411,7 +430,7 @@ proxies:
   password: /655a3e72-788e-41c1-8c23-6032490c64a0
   skip-cert-verify: true
   sni: green2.cdntencentmusic.com
-- name: 🇺🇸 020
+- name: 🇺🇸 023
   type: ss
   server: 185.193.48.157
   port: 443
@@ -431,7 +450,7 @@ proxies:
   link: ss://YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU=@63.180.254.10:443#8%E5%85%83%E8%80%81%E7%89%8C%E4%B8%93%E7%BA%BF%E6%9C%BA%E5%9C%BA%EF%BC%9Acczzuu.top
   max_speed: N/A
   password: amazonskr05
-- name: 🇭🇰 006
+- name: 🇭🇰 007
   type: trojan
   server: 58.152.110.193
   port: 443
@@ -441,7 +460,7 @@ proxies:
   max_speed: N/A
   password: /869e9086806483ca4744a4cb0f3d6e16
   sni: www.nintendogames.net
-- name: 🇭🇰 007
+- name: 🇭🇰 008
   type: trojan
   server: 58.152.53.45
   port: 443
@@ -452,7 +471,7 @@ proxies:
   password: /BxceQaOe
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
-- name: 🇭🇰 008
+- name: 🇭🇰 009
   type: trojan
   server: 43.199.45.223
   port: 432
@@ -463,7 +482,7 @@ proxies:
   password: /BxceQaOe
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
-- name: 🇯🇵 002
+- name: 🇯🇵 003
   type: trojan
   server: 18.176.57.17
   port: 2762
@@ -474,7 +493,7 @@ proxies:
   password: /BxceQaOe
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
-- name: 🇯🇵 003
+- name: 🇯🇵 004
   type: trojan
   server: 160.16.132.38
   port: 3423
@@ -484,7 +503,7 @@ proxies:
   max_speed: N/A
   password: /869e9086806483ca4744a4cb0f3d6e16
   sni: www.nintendogames.net
-- name: 🇯🇵 004
+- name: 🇯🇵 005
   type: trojan
   server: 160.16.132.38
   port: 4006
@@ -494,7 +513,7 @@ proxies:
   max_speed: N/A
   password: /869e9086806483ca4744a4cb0f3d6e16
   sni: www.nintendogames.net
-- name: 🇯🇵 005
+- name: 🇯🇵 006
   type: trojan
   server: 160.16.72.33
   port: 544
@@ -504,7 +523,7 @@ proxies:
   max_speed: N/A
   password: /869e9086806483ca4744a4cb0f3d6e16
   sni: www.nintendogames.net
-- name: 🇯🇵 006
+- name: 🇯🇵 007
   type: trojan
   server: 160.16.72.33
   port: 3901
@@ -514,7 +533,7 @@ proxies:
   max_speed: N/A
   password: /869e9086806483ca4744a4cb0f3d6e16
   sni: www.nintendogames.net
-- name: 🇭🇰 009
+- name: 🇭🇰 010
   type: trojan
   server: 43.198.102.247
   port: 1691
@@ -525,7 +544,7 @@ proxies:
   password: /BxceQaOe
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
-- name: 🇯🇵 007
+- name: 🇯🇵 008
   type: trojan
   server: 160.16.132.38
   port: 5076
@@ -535,7 +554,7 @@ proxies:
   max_speed: N/A
   password: /869e9086806483ca4744a4cb0f3d6e16
   sni: www.nintendogames.net
-- name: 🇯🇵 008
+- name: 🇯🇵 009
   type: trojan
   server: 160.16.72.33
   port: 5076
@@ -545,7 +564,7 @@ proxies:
   max_speed: N/A
   password: /869e9086806483ca4744a4cb0f3d6e16
   sni: www.nintendogames.net
-- name: 🇭🇰 010
+- name: 🇭🇰 011
   type: trojan
   server: 43.198.102.247
   port: 3159
@@ -585,17 +604,6 @@ proxies:
   max_speed: N/A
   password: /nodes-b211f28a
   sni: node-id-1.v2sv.top
-- name: 🇭🇰 011
-  type: trojan
-  server: 219.76.135.98
-  port: 443
-  id: 3
-  latency_ms: 0
-  link: trojan://BxceQaOe@219.76.135.98:443?allowInsecure=1&sni=219.76.135.98#TR+TROJAN-23+%7C+free-nodes
-  max_speed: N/A
-  password: /BxceQaOe
-  skip-cert-verify: true
-  sni: 219.76.135.98
 - name: 🇩🇪 003
   type: trojan
   server: cdn.turbooserver.com
@@ -624,16 +632,6 @@ proxies:
   link: trojan://x.8ur1QiCyzlRHXeaB5UwoDfgZ04s@45.32.158.138:20994?security=tls#%F0%9F%87%A9%F0%9F%87%AA+DE+TROJAN-68+%7C+free-nodes
   max_speed: N/A
   password: /x.8ur1QiCyzlRHXeaB5UwoDfgZ04s
-- name: 🇨🇦 007
-  type: trojan
-  server: tuntro006.instconn.com
-  port: 443
-  id: 9
-  latency_ms: 0
-  link: trojan://30077070-596e-48ea-9400-14c8ed07bd97@tuntro006.instconn.com:443?security=tls&sni=torontorm1.686911.xyz#%F0%9F%87%A8%F0%9F%87%A6+CA+TROJAN-69+%7C+free-nodes
-  max_speed: N/A
-  password: /30077070-596e-48ea-9400-14c8ed07bd97
-  sni: torontorm1.686911.xyz
 - name: 🇬🇷 001
   type: ss
   server: 38.54.29.18
@@ -684,7 +682,7 @@ proxies:
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0MzFlODhiMDM4NDIyODY3@141.95.102.29:11201#%F0%9F%87%A9%F0%9F%87%AA+DE+SS-83+%7C+free-nodes
   max_speed: N/A
   password: 431e88b038422867
-- name: 🇺🇸 022
+- name: 🇺🇸 025
   type: ss
   server: 216.105.168.18
   port: 443
@@ -694,7 +692,7 @@ proxies:
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpNR0g4b2xjdVVZaTlDekN3bVVSbDhk@216.105.168.18:443#%F0%9F%87%BA%F0%9F%87%B8+US+SS-85+%7C+free-nodes
   max_speed: N/A
   password: MGH8olcuUYi9CzCwmURl8d
-- name: 🇯🇵 009
+- name: 🇯🇵 010
   type: trojan
   server: 160.16.72.205
   port: 544
@@ -704,7 +702,7 @@ proxies:
   max_speed: N/A
   password: /869e9086806483ca4744a4cb0f3d6e16
   sni: www.nintendogames.net
-- name: ❓ 004
+- name: ❓ 005
   type: ss
   server: 193.135.174.135
   port: 990
@@ -714,7 +712,7 @@ proxies:
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ==@193.135.174.135:990#%E6%9C%AA%E7%9F%A5+SS-87+%7C+free-nodes
   max_speed: N/A
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-- name: 🇯🇵 010
+- name: 🇯🇵 011
   type: trojan
   server: 160.16.124.17
   port: 3076
@@ -835,7 +833,7 @@ proxies:
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjYmJjYmZkNTMzMDQ3NWQx@141.95.106.215:11201#%F0%9F%87%A9%F0%9F%87%AA+DE+SS-108+%7C+free-nodes
   max_speed: N/A
   password: cbbcbfd5330475d1
-- name: ❓ 005
+- name: ❓ 006
   type: ss
   server: 92.223.62.214
   port: 11201
@@ -875,7 +873,7 @@ proxies:
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo4ZTNjNzU1ODFhZGU0NzFk@141.95.101.202:11201#%F0%9F%87%A9%F0%9F%87%AA+DE+SS-112+%7C+free-nodes
   max_speed: N/A
   password: 8e3c75581ade471d
-- name: 🇭🇰 013
+- name: 🇭🇰 014
   type: ss
   server: 38.60.203.155
   port: 11201
@@ -905,7 +903,7 @@ proxies:
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3OGMyZTM5MTIxYzgyMGZi@51.89.10.72:11201#%E6%9C%AA%E7%9F%A5+SS-116+%7C+free-nodes
   max_speed: N/A
   password: 78c2e39121c820fb
-- name: 🇨🇦 008
+- name: 🇨🇦 009
   type: ss
   server: 148.113.138.47
   port: 48704
@@ -925,7 +923,7 @@ proxies:
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0ZjI2ZDhiYjU5M2E1ZmM1@154.205.154.200:11201#%E6%9C%AA%E7%9F%A5+SS-118+%7C+free-nodes
   max_speed: N/A
   password: 4f26d8bb593a5fc5
-- name: ❓ 006
+- name: ❓ 007
   type: ss
   server: 163.171.181.30
   port: 11201
@@ -955,7 +953,7 @@ proxies:
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpkMTIxMzg1ZjcwMGE2OTE1@163.171.213.46:11201#%E6%9C%AA%E7%9F%A5+SS-122+%7C+free-nodes
   max_speed: N/A
   password: d121385f700a6915
-- name: 🇭🇰 014
+- name: 🇭🇰 015
   type: ss
   server: 38.54.85.242
   port: 11201
@@ -975,7 +973,7 @@ proxies:
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo4MmYzYTgzZjE1NTZjMGUz@57.129.129.247:29757#%F0%9F%87%AC%F0%9F%87%A7+GB+SS-124+%7C+free-nodes
   max_speed: N/A
   password: 82f3a83f1556c0e3
-- name: 🇺🇸 023
+- name: 🇺🇸 026
   type: ss
   server: 85.239.232.127
   port: 10026
@@ -1025,7 +1023,7 @@ proxies:
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpqUDRaOUozUzZ0QWxkQ2FTZEN0YVpSN2dadFY3clFnMA==@64.31.63.92:443#%F0%9F%87%AB%F0%9F%87%B7+FR+SS-129+%7C+free-nodes
   max_speed: N/A
   password: jP4Z9J3S6tAldCaSdCtaZR7gZtV7rQg0
-- name: 🇨🇦 009
+- name: 🇨🇦 010
   type: ss
   server: 148.113.143.102
   port: 11201
@@ -1055,7 +1053,7 @@ proxies:
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTphMzAyN2M5MzFhZTA3YmNl@57.129.69.122:27130#%F0%9F%87%A9%F0%9F%87%AA+DE+SS-132+%7C+free-nodes
   max_speed: N/A
   password: a3027c931ae07bce
-- name: 🇺🇸 024
+- name: 🇺🇸 027
   type: ss
   server: 217.77.3.68
   port: 28954
@@ -1105,7 +1103,7 @@ proxies:
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxNWIwNTczODMwMDgxZDAx@51.89.119.213:11201#%F0%9F%87%AC%F0%9F%87%A7+GB+SS-137+%7C+free-nodes
   max_speed: N/A
   password: 15b0573830081d01
-- name: ❓ 007
+- name: ❓ 008
   type: ss
   server: 154.205.145.37
   port: 11201
@@ -1115,7 +1113,7 @@ proxies:
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0NzUwOWJhMzY3OWI5ZGY5@154.205.145.37:11201#%E6%9C%AA%E7%9F%A5+SS-138+%7C+free-nodes
   max_speed: N/A
   password: 47509ba3679b9df9
-- name: ❓ 008
+- name: ❓ 009
   type: ss
   server: www.ccgfw.top
   port: 443
