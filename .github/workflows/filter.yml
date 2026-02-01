@@ -1,0 +1,127 @@
+name: Auto Process and Test Proxies with LiteSpeedTest
+
+on:
+  schedule:
+    - cron: '15 22 * * *'  # 每天 UTC 00:00 运行
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码库
+        uses: actions/checkout@v4
+
+      - name: 设置 Python 环境
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: 安装 Python 依赖
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests pyyaml
+
+      - name: 安装 jq（用于 JSON 过滤）
+        run: sudo apt-get update && sudo apt-get install -y jq
+
+      - name: 运行代理处理脚本（收集 URL 和代理）
+        run: python proxy.py
+
+      - name: 设置 Go 环境并构建 LiteSpeedTest
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.23'
+      - name: 构建 LiteSpeedTest 从源代码
+        run: |
+          git clone https://github.com/xxf098/LiteSpeedTest.git
+          cd LiteSpeedTest
+          go mod tidy
+          go build -o lite .
+          cd ..
+
+          # 验证构建
+          if [ -f "LiteSpeedTest/lite" ]; then
+            chmod +x LiteSpeedTest/lite
+            ./LiteSpeedTest/lite -v || { echo "构建的二进制兼容性检查失败"; ls -l LiteSpeedTest/; exit 1; }
+            mv LiteSpeedTest/lite .  # 移动到当前目录
+            echo "LiteSpeedTest 从源代码构建成功"
+          else
+            echo "构建失败，未找到 'lite'"
+            exit 1
+          fi
+
+      - name: 使用 LiteSpeedTest 测试代理
+        run: |
+          cat > config.json << EOF
+          {
+            "group": "test",
+            "mode": 1,
+            "pingmethod": 1,
+            "sort": 1,
+            "concurrency": 5,
+            "testmode": 2,
+            "timeout": 160,
+            "speedlimit": 0.5,
+            "outputMode": 3,
+            "unique": true
+          }
+          EOF
+          echo '[]' > lite_valid_proxies.json
+          while IFS= read -r url; do
+            if [ -n "$url" ]; then
+              echo "测试 URL: $url"
+              # 检查 URL 内容（前500字符）
+              echo "URL 内容预览:"
+              curl -s "$url" | head -c 500 || echo "URL 为空或访问失败"
+              echo "---"
+              # 运行 LiteSpeedTest，重定向 stdout + stderr
+              ./lite --config config.json --test "$url" > raw_output.txt 2>&1 || true
+              # 调试：保存 raw_output.txt 全文到 debug_raw.txt
+              cat raw_output.txt > debug_raw.txt || echo "debug_raw.txt 为空"
+              echo "原始输出预览 (前10行):"
+              head -n 10 raw_output.txt || echo "raw_output.txt 为空"
+              echo "raw_output.txt 行数:"
+              wc -l raw_output.txt || echo "0"
+              # Python 过滤 JSON 事件
+              python filter_json.py
+              echo "过滤后事件数:"
+              jq 'length' test_result.json 2>/dev/null || echo "0"
+              echo "过滤后 test_result.json 内容 (前3事件):"
+              jq '.[0:3]' test_result.json 2>/dev/null || cat test_result.json
+              # 先筛选输出节点
+              python process_json.py "$url"
+              echo "当前 lite_valid_proxies.json (前2):"
+              jq '.[0:2]' lite_valid_proxies.json 2>/dev/null || cat lite_valid_proxies.json
+              sleep 5
+            fi
+          done < node_urls.txt
+
+      - name: 处理有效代理（国家查询和重命名）
+        run: python proxy.py
+
+      - name: 提交并推送更改
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config core.ignorecase false
+          git add valid_proxies.yaml node_urls.txt lite_valid_proxies.json test_result.json raw_output.txt debug_raw.txt filter_json.py
+          git commit -m "更新代理配置" || echo "没有更改需要提交"
+          git pull --rebase origin master || echo "Pull failed (possible conflict), but continuing with push"
+          git push || echo "推送失败 - 检查仓库权限 (Settings > Actions > Workflow permissions)"
+
+      - name: 上传产物
+        uses: actions/upload-artifact@v4
+        with:
+          name: proxy-files
+          path: |
+            valid_proxies.yaml
+            lite_valid_proxies.json
+            node_urls.txt
+            test_result.json
+            raw_output.txt
+            debug_raw.txt
+
+      - name: 失败时通知
+        if: failure()
+        run: echo "代理处理或测试失败 - 请检查日志（JSON 过滤、Go 构建或 IP 查询）。"

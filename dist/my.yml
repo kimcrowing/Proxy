@@ -1,0 +1,218 @@
+mixed-port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: 0.0.0.0:9090
+proxy-providers:
+  provider:
+    type: http
+    url: https://raw.fastgit.org/anaer/Sub/main/clash.yaml
+    interval: 1800
+  provider1:
+    type: http
+    url: https://ghproxy.com/raw.githubusercontent.com/kimcrowing/Proxy/master/dist/clash.config.yaml
+    interval: 100
+
+proxy-groups:
+- name: PROXY
+  type: select
+  proxies:
+  - LOAD-BALANCE
+  - FALLBACK
+  - URL-TEST
+  - SELECT
+  - URL-TEST1
+- name: DEBUG
+  type: select
+  proxies:
+  - LOAD-BALANCE
+  - FALLBACK
+  - URL-TEST
+  - SELECT
+- name: SELECT
+  type: select
+  url: http://www.v2ex.com/generate_204
+  interval: 300
+  use:
+  - provider
+- name: URL-TEST
+  type: url-test
+  url: http://www.v2ex.com/generate_204
+  interval: 300
+  use:
+  - provider
+- name: URL-TEST1
+  type: select
+  url: http://www.v2ex.com/generate_204
+  interval: 300
+  use:
+  - provider1
+- name: FALLBACK
+  type: fallback
+  url: http://www.v2ex.com/generate_204
+  interval: 300
+  use:
+  - provider
+- name: LOAD-BALANCE
+  type: load-balance
+  url: http://www.v2ex.com/generate_204
+  interval: 300
+  strategy: round-robin
+  use:
+  - provider
+rules:
+  - RULE-SET,applications,DIRECT
+  - RULE-SET,private,DIRECT
+  - RULE-SET,reject,REJECT
+  - RULE-SET,icloud,DIRECT
+  - RULE-SET,apple,DIRECT
+  - RULE-SET,google,DIRECT
+  - RULE-SET,proxy,PROXY
+  - RULE-SET,direct,DIRECT
+  - RULE-SET,lancidr,DIRECT
+  - RULE-SET,cncidr,DIRECT
+  - RULE-SET,telegramcidr,PROXY
+  - GEOIP,LAN,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,PROXY
+
+rule-providers:
+  reject:
+    type: http
+    behavior: domain
+    url: "https://ghproxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt"
+    path: ./ruleset/reject.yaml
+    interval: 86400
+
+  icloud:
+    type: http
+    behavior: domain
+    url: "https://ghproxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/icloud.txt"
+    path: ./ruleset/icloud.yaml
+    interval: 86400
+
+  apple:
+    type: http
+    behavior: domain
+    url: "https://ghproxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/apple.txt"
+    path: ./ruleset/apple.yaml
+    interval: 86400
+
+  google:
+    type: http
+    behavior: domain
+    url: "https://ghproxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/google.txt"
+    path: ./ruleset/google.yaml
+    interval: 86400
+
+  proxy:
+    type: http
+    behavior: domain
+    url: "https://ghproxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/proxy.txt"
+    path: ./ruleset/proxy.yaml
+    interval: 86400
+
+  direct:
+    type: http
+    behavior: domain
+    url: "https://ghproxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt"
+    path: ./ruleset/direct.yaml
+    interval: 86400
+
+  private:
+    type: http
+    behavior: domain
+    url: "https://ghproxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/private.txt"
+    path: ./ruleset/private.yaml
+    interval: 86400
+
+  gfw:
+    type: http
+    behavior: domain
+    url: "https://ghproxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/gfw.txt"
+    path: ./ruleset/gfw.yaml
+    interval: 86400
+
+  greatfire:
+    type: http
+    behavior: domain
+    url: "https://ghproxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/greatfire.txt"
+    path: ./ruleset/greatfire.yaml
+    interval: 86400
+
+  tld-not-cn:
+    type: http
+    behavior: domain
+    url: "https://ghproxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/tld-not-cn.txt"
+    path: ./ruleset/tld-not-cn.yaml
+    interval: 86400
+
+  telegramcidr:
+    type: http
+    behavior: ipcidr
+    url: "https://ghproxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/telegramcidr.txt"
+    path: ./ruleset/telegramcidr.yaml
+    interval: 86400
+
+  cncidr:
+    type: http
+    behavior: ipcidr
+    url: "https://ghproxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/cncidr.txt"
+    path: ./ruleset/cncidr.yaml
+    interval: 86400
+
+  lancidr:
+    type: http
+    behavior: ipcidr
+    url: "https://ghproxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/lancidr.txt"
+    path: ./ruleset/lancidr.yaml
+    interval: 86400
+
+  applications:
+    type: http
+    behavior: classical
+    url: "https://ghproxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/applications.txt"
+    path: ./ruleset/applications.yaml
+    interval: 86400
+
+
+script:
+  code: |
+    def main(ctx, metadata):
+      # 规则列表定义(规则名:代理规则), 便于调整处理顺序
+      ruleList = {
+        "reject":"REJECT",
+        "proxy":"PROXY",
+        "telegramcidr":"PROXY",
+        "applications":"DIRECT",
+        "private":"DIRECT",
+        "icloud":"DIRECT",
+        "apple":"DIRECT",
+        "google":"DIRECT",
+        "direct":"DIRECT",
+        "lancidr":"DIRECT",
+        "cncidr":"DIRECT"
+      }
+
+      # 解析host->ip赋值到metadata中 用于后续判断
+      ip = ctx.resolve_ip(metadata["host"])
+      if ip == "":
+        return "DIRECT"
+
+      metadata["dst_ip"] = ip
+
+      # 遍历规则策略, 有命中即返回
+      for rule,policy in ruleList.items():
+        if ctx.rule_providers[rule].match(metadata):
+          ctx.log("[match] {host} matched rule [{rule}] use {policy}".format(host=metadata["host"],rule=rule,policy=policy))
+          return policy
+
+      # 判断ip是否局域网以及中国, 是则直连
+      code = ctx.geoip(ip)
+      # ctx.log('[geoip] {host} {ip} {code}'.format(host=metadata["host"],ip=ip,code=code))
+      if code == "LAN" or code == "CN":
+        return "DIRECT"
+
+      # 漏网之鱼走代理
+      return "PROXY"

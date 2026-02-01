@@ -1,0 +1,42 @@
+name: Sync combined_proxies.yaml to iptv directory
+
+on:
+  schedule:
+    - cron: '58 22 * * *'  # 每天零点触发，可根据需要修改调度时间
+  workflow_dispatch:     # 允许手动触发
+
+jobs:
+  sync-file:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. 检出当前 Proxy 仓库代码
+      - name: Checkout Proxy repository
+        uses: actions/checkout@v3
+
+      # 2. 克隆目标仓库（kimcrowing.github.io），需要在 Proxy 仓库的 Secrets 中配置具有写入权限的 Token（例如 GITHUB_TOKEN_DEST）
+      - name: Clone destination repository
+        run: |
+          git clone https://x-access-token:${{ secrets.ACTIONS_GITHUB_TOKEN }}@github.com/kimcrowing/kimcrowing.github.io.git
+
+      # 3. 如果目标目录 iptv 不存在，则创建目录
+      - name: Ensure iptv directory exists
+        run: mkdir -p kimcrowing.github.io/iptv
+
+      # 4. 将 combined_proxies.yaml 文件复制到目标目录
+      - name: Copy combined_proxies.yaml to iptv directory
+        run: cp combined_proxies.yaml kimcrowing.github.io/iptv/combined_proxies.yaml
+
+      # 4. 将 valid_proxies.yaml 文件复制到目标目录
+      - name: Copy combined_proxies.yaml to iptv directory
+        run: cp valid_proxies.yaml kimcrowing.github.io/iptv/valid_proxies.yaml
+        
+      # 5. 在目标仓库中提交并推送更改
+      - name: Commit and push changes
+        run: |
+          cd kimcrowing.github.io
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add iptv/combined_proxies.yaml
+          git add iptv/valid_proxies.yaml
+          git commit -m "Update combined_proxies.yaml from Proxy repository" || echo "No changes to commit"
+          git push
