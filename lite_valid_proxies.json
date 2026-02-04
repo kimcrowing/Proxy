@@ -164,67 +164,118 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "kaQH3hGdcP80XEDI",
     "latency_ms": 0,
-    "max_speed": "42.0MB"
+    "max_speed": "1.2MB"
   },
   {
-    "name": "\u514d\u8d39VPN\uff1ahttps://tt.vg/gwaAy",
+    "name": "\ud83c\uddf9\ud83c\uddf7_\u571f\u8033\u5176",
     "type": "trojan",
-    "server": "219.76.135.98",
-    "port": 443,
+    "server": "tr-1.stunnel.cc",
+    "port": 8441,
     "id": 0,
-    "link": "trojan://BxceQaOe@219.76.135.98:443?allowInsecure=1#%E5%85%8D%E8%B4%B9VPN%EF%BC%9Ahttps%3A%2F%2Ftt.vg%2FgwaAy",
-    "password": "/BxceQaOe",
+    "link": "trojan://tunnel-freepersianet@tr-1.stunnel.cc:8441?allowInsecure=1&sni=creativecommons.org#%F0%9F%87%B9%F0%9F%87%B7_%E5%9C%9F%E8%80%B3%E5%85%B6",
+    "password": "/tunnel-freepersianet",
     "skip-cert-verify": true,
+    "sni": "creativecommons.org",
     "latency_ms": 0,
-    "max_speed": "9.6MB"
-  },
-  {
-    "name": "\ud83c\udded\ud83c\uddf0_\u9999\u6e2f",
-    "type": "trojan",
-    "server": "58.152.53.45",
-    "port": 443,
-    "id": 2,
-    "link": "trojan://BxceQaOe@58.152.53.45:443?allowInsecure=1&sni=t.me/ripaojiedian#%F0%9F%87%AD%F0%9F%87%B0_%E9%A6%99%E6%B8%AF",
-    "password": "/BxceQaOe",
-    "skip-cert-verify": true,
-    "sni": "t.me/ripaojiedian",
-    "latency_ms": 0,
-    "max_speed": "19.7MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\ud83c\udde8\ud83c\udde6_\u52a0\u62ff\u5927",
     "type": "trojan",
     "server": "tuntro006.instconn.com",
     "port": 443,
-    "id": 3,
-    "link": "trojan://63b21d86-a49c-4936-a634-0b5af3e30433@tuntro006.instconn.com:443?allowInsecure=1&sni=torontorm1.686911.xyz#%F0%9F%87%A8%F0%9F%87%A6_%E5%8A%A0%E6%8B%BF%E5%A4%A7",
-    "password": "/63b21d86-a49c-4936-a634-0b5af3e30433",
-    "skip-cert-verify": true,
+    "id": 1,
+    "link": "trojan://30077070-596e-48ea-9400-14c8ed07bd97@tuntro006.instconn.com:443?security=tls&sni=torontorm1.686911.xyz#%F0%9F%87%A8%F0%9F%87%A6_%E5%8A%A0%E6%8B%BF%E5%A4%A7",
+    "password": "/30077070-596e-48ea-9400-14c8ed07bd97",
     "sni": "torontorm1.686911.xyz",
-    "latency_ms": 203,
-    "max_speed": "1.0MB"
-  },
-  {
-    "name": "_\u672a\u77e5_5",
-    "type": "trojan",
-    "server": "104.18.1.196",
-    "port": 443,
-    "id": 78,
-    "link": "trojan://a9570330-769d-11ef-90dc-1577c1651679@104.18.1.196:443?security=tls&sni=sg-trojan.andfree.my.id#_%E6%9C%AA%E7%9F%A5_5",
-    "password": "/a9570330-769d-11ef-90dc-1577c1651679",
-    "sni": "sg-trojan.andfree.my.id",
     "latency_ms": 0,
     "max_speed": "N/A"
   },
   {
-    "name": "\ud83c\uddfa\ud83c\uddf8_\u7f8e\u56fd_8",
+    "name": "\ud83c\udded\ud83c\uddf0_\u9999\u6e2f_2",
     "type": "trojan",
-    "server": "v1.dabache.top",
-    "port": 8443,
-    "id": 79,
-    "link": "trojan://T9BpZIVMNv@v1.dabache.top:8443?security=tls&sni=sweden.vmaxpanel.com#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_8",
-    "password": "/T9BpZIVMNv",
-    "sni": "sweden.vmaxpanel.com",
+    "server": "58.152.25.130",
+    "port": 443,
+    "id": 3,
+    "link": "trojan://BxceQaOe@58.152.25.130:443?allowInsecure=1&sni=t.me/ripaojiedian#%F0%9F%87%AD%F0%9F%87%B0_%E9%A6%99%E6%B8%AF_2",
+    "password": "/BxceQaOe",
+    "skip-cert-verify": true,
+    "sni": "t.me/ripaojiedian",
+    "latency_ms": 0,
+    "max_speed": "N/A"
+  },
+  {
+    "name": "\ud83c\uddf9\ud83c\uddfc_\u4e2d\u56fd\u53f0\u6e7e\u7701",
+    "type": "trojan",
+    "server": "green2.cdntencentmusic.com",
+    "port": 31103,
+    "id": 7,
+    "link": "trojan://0e1a4026-89b4-4f9c-b7c4-8fb2933c30db@green2.cdntencentmusic.com:31103?security=tls&sni=green2.cdntencentmusic.com#%F0%9F%87%B9%F0%9F%87%BC_%E4%B8%AD%E5%9B%BD%E5%8F%B0%E6%B9%BE%E7%9C%81",
+    "password": "/0e1a4026-89b4-4f9c-b7c4-8fb2933c30db",
+    "sni": "green2.cdntencentmusic.com",
+    "latency_ms": 0,
+    "max_speed": "N/A"
+  },
+  {
+    "name": "\ud83c\udded\ud83c\uddf0_\u9999\u6e2f_3",
+    "type": "trojan",
+    "server": "219.76.135.98",
+    "port": 443,
+    "id": 10,
+    "link": "trojan://BxceQaOe@219.76.135.98:443?allowInsecure=1&sni=t.me/ripaojiedian#%F0%9F%87%AD%F0%9F%87%B0_%E9%A6%99%E6%B8%AF_3",
+    "password": "/BxceQaOe",
+    "skip-cert-verify": true,
+    "sni": "t.me/ripaojiedian",
+    "latency_ms": 0,
+    "max_speed": "8.7MB"
+  },
+  {
+    "name": "\ud83c\udde8\ud83c\udde6_\u52a0\u62ff\u5927_1",
+    "type": "trojan",
+    "server": "tuntro006.instconn.com",
+    "port": 443,
+    "id": 11,
+    "link": "trojan://63b21d86-a49c-4936-a634-0b5af3e30433@tuntro006.instconn.com:443?allowInsecure=1&sni=torontorm1.686911.xyz#%F0%9F%87%A8%F0%9F%87%A6_%E5%8A%A0%E6%8B%BF%E5%A4%A7_1",
+    "password": "/63b21d86-a49c-4936-a634-0b5af3e30433",
+    "skip-cert-verify": true,
+    "sni": "torontorm1.686911.xyz",
+    "latency_ms": 0,
+    "max_speed": "191.0KB"
+  },
+  {
+    "name": "\ud83c\udded\ud83c\uddf0_\u9999\u6e2f_4",
+    "type": "trojan",
+    "server": "58.152.53.45",
+    "port": 443,
+    "id": 12,
+    "link": "trojan://BxceQaOe@58.152.53.45:443?allowInsecure=1&sni=t.me%2Fripaojiedian#%F0%9F%87%AD%F0%9F%87%B0_%E9%A6%99%E6%B8%AF_4",
+    "password": "/BxceQaOe",
+    "skip-cert-verify": true,
+    "sni": "t.me%2Fripaojiedian",
+    "latency_ms": 0,
+    "max_speed": "21.2MB"
+  },
+  {
+    "name": "_\u672a\u77e5",
+    "type": "trojan",
+    "server": "blackshadow.dpdns.org",
+    "port": 443,
+    "id": 19,
+    "link": "trojan://2bcfbfba-b446-4ad5-93ad-72af9e008f61@blackshadow.dpdns.org:443?security=tls&sni=blackshadow.dpdns.org#_%E6%9C%AA%E7%9F%A5",
+    "password": "/2bcfbfba-b446-4ad5-93ad-72af9e008f61",
+    "sni": "blackshadow.dpdns.org",
+    "latency_ms": 0,
+    "max_speed": "N/A"
+  },
+  {
+    "name": "_\u672a\u77e5_1",
+    "type": "trojan",
+    "server": "nmk.288288.shop",
+    "port": 443,
+    "id": 21,
+    "link": "trojan://5cccb4da-8aee-4b01-be84-2056265e52dc@nmk.288288.shop:443?security=tls&sni=nMk.288288.sHOP#_%E6%9C%AA%E7%9F%A5_1",
+    "password": "/5cccb4da-8aee-4b01-be84-2056265e52dc",
+    "sni": "nMk.288288.sHOP",
     "latency_ms": 0,
     "max_speed": "N/A"
   },
@@ -233,7 +284,7 @@
     "type": "trojan",
     "server": "167.68.4.199",
     "port": 2053,
-    "id": 80,
+    "id": 23,
     "link": "trojan://Aimer@167.68.4.199:2053?security=tls&sni=epge.muarua.filegear-sg.me#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_11",
     "password": "/Aimer",
     "sni": "epge.muarua.filegear-sg.me",
@@ -241,210 +292,292 @@
     "max_speed": "N/A"
   },
   {
-    "name": "_\u672a\u77e5_11",
+    "name": "_\u672a\u77e5_7",
     "type": "trojan",
-    "server": "blackshadow.dpdns.org",
+    "server": "mmmhu.huangshang.online",
     "port": 443,
-    "id": 83,
-    "link": "trojan://2bcfbfba-b446-4ad5-93ad-72af9e008f61@blackshadow.dpdns.org:443?security=tls&sni=blackshadow.dpdns.org#_%E6%9C%AA%E7%9F%A5_11",
-    "password": "/2bcfbfba-b446-4ad5-93ad-72af9e008f61",
-    "sni": "blackshadow.dpdns.org",
+    "id": 31,
+    "link": "trojan://5cccb4da-8aee-4b01-be84-2056265e52dc@mmmhu.huangshang.online:443?security=tls&sni=mMMhU.HUangSHANG.onlIne#_%E6%9C%AA%E7%9F%A5_7",
+    "password": "/5cccb4da-8aee-4b01-be84-2056265e52dc",
+    "sni": "mMMhU.HUangSHANG.onlIne",
     "latency_ms": 0,
     "max_speed": "N/A"
   },
   {
-    "name": "_\u672a\u77e5_29",
+    "name": "_\u672a\u77e5_9",
     "type": "trojan",
-    "server": "vip1.kaixincloud.top",
-    "port": 8443,
-    "id": 91,
-    "link": "trojan://T9BpZIVMNv@vip1.kaixincloud.top:8443?security=tls&sni=sweden.vmaxpanel.com#_%E6%9C%AA%E7%9F%A5_29",
-    "password": "/T9BpZIVMNv",
-    "sni": "sweden.vmaxpanel.com",
-    "latency_ms": 0,
-    "max_speed": "N/A"
-  },
-  {
-    "name": "\ud83c\uddfa\ud83c\uddf8_\u7f8e\u56fd_27",
-    "type": "trojan",
-    "server": "6c00bf1f-a569-4d54-9f71-a13611801867.661.qzz.io",
+    "server": "ggghj.www890604.dpdns.org",
     "port": 443,
-    "id": 96,
-    "link": "trojan://0c6b96bc-5e3a-4500-8497-6dead1965609@6c00bf1f-a569-4d54-9f71-a13611801867.661.qzz.io:443?security=tls&sni=6c00bf1f-a569-4d54-9f71-a13611801867.661.qzz.io#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_27",
-    "password": "/0c6b96bc-5e3a-4500-8497-6dead1965609",
-    "sni": "6c00bf1f-a569-4d54-9f71-a13611801867.661.qzz.io",
+    "id": 32,
+    "link": "trojan://5cccb4da-8aee-4b01-be84-2056265e52dc@ggghj.www890604.dpdns.org:443?security=tls&sni=ggghj.www890604.dpdns.org#_%E6%9C%AA%E7%9F%A5_9",
+    "password": "/5cccb4da-8aee-4b01-be84-2056265e52dc",
+    "sni": "ggghj.www890604.dpdns.org",
     "latency_ms": 0,
     "max_speed": "N/A"
   },
   {
-    "name": "\ud83c\uddfa\ud83c\uddf8_\u7f8e\u56fd_28",
+    "name": "\ud83c\uddfa\ud83c\uddf8_\u7f8e\u56fd_33",
+    "type": "trojan",
+    "server": "kkko9.191288.xyz",
+    "port": 443,
+    "id": 36,
+    "link": "trojan://5cccb4da-8aee-4b01-be84-2056265e52dc@kkko9.191288.xyz:443?security=tls&sni=kKko9.191288.xyz#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_33",
+    "password": "/5cccb4da-8aee-4b01-be84-2056265e52dc",
+    "sni": "kKko9.191288.xyz",
+    "latency_ms": 0,
+    "max_speed": "N/A"
+  },
+  {
+    "name": "\ud83c\uddfa\ud83c\uddf8_\u7f8e\u56fd_48",
+    "type": "trojan",
+    "server": "mmmk.288288.shop",
+    "port": 443,
+    "id": 50,
+    "link": "trojan://5cccb4da-8aee-4b01-be84-2056265e52dc@mmmk.288288.shop:443?security=tls&sni=Mmmk.288288.shoP#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_48",
+    "password": "/5cccb4da-8aee-4b01-be84-2056265e52dc",
+    "sni": "Mmmk.288288.shoP",
+    "latency_ms": 0,
+    "max_speed": "N/A"
+  },
+  {
+    "name": "\ud83c\uddfa\ud83c\uddf8_\u7f8e\u56fd_50",
+    "type": "trojan",
+    "server": "kkko9.191288.xyz",
+    "port": 443,
+    "id": 51,
+    "link": "trojan://5cccb4da-8aee-4b01-be84-2056265e52dc@kkko9.191288.xyz:443?security=tls&sni=kKko9.191288.xyz#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_50",
+    "password": "/5cccb4da-8aee-4b01-be84-2056265e52dc",
+    "sni": "kKko9.191288.xyz",
+    "latency_ms": 0,
+    "max_speed": "N/A"
+  },
+  {
+    "name": "_\u672a\u77e5_37",
+    "type": "trojan",
+    "server": "mmkk.www890604.dpdns.org",
+    "port": 443,
+    "id": 53,
+    "link": "trojan://5cccb4da-8aee-4b01-be84-2056265e52dc@mmkk.www890604.dpdns.org:443?security=tls&sni=mMKK.WwW890604.DpdNS.OrG#_%E6%9C%AA%E7%9F%A5_37",
+    "password": "/5cccb4da-8aee-4b01-be84-2056265e52dc",
+    "sni": "mMKK.WwW890604.DpdNS.OrG",
+    "latency_ms": 0,
+    "max_speed": "N/A"
+  },
+  {
+    "name": "_\u672a\u77e5_39",
+    "type": "trojan",
+    "server": "ooiuyt.890699.xyz",
+    "port": 443,
+    "id": 55,
+    "link": "trojan://98b419ef-83a2-4d1b-a23d-566b7f24477b@ooiuyt.890699.xyz:443?security=tls&sni=OOIuyT.890699.xYZ#_%E6%9C%AA%E7%9F%A5_39",
+    "password": "/98b419ef-83a2-4d1b-a23d-566b7f24477b",
+    "sni": "OOIuyT.890699.xYZ",
+    "latency_ms": 0,
+    "max_speed": "N/A"
+  },
+  {
+    "name": "\ud83c\uddfa\ud83c\uddf8_\u7f8e\u56fd_56",
     "type": "trojan",
     "server": "jjji.2030.pp.ua",
     "port": 443,
-    "id": 98,
-    "link": "trojan://fc3704d6-8e5e-443a-bd5b-20ec7cfbe990@jjji.2030.pp.ua:443?security=tls&sni=jjji.2030.pp.ua#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_28",
+    "id": 57,
+    "link": "trojan://fc3704d6-8e5e-443a-bd5b-20ec7cfbe990@jjji.2030.pp.ua:443?security=tls&sni=jjji.2030.pp.ua#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_56",
     "password": "/fc3704d6-8e5e-443a-bd5b-20ec7cfbe990",
     "sni": "jjji.2030.pp.ua",
     "latency_ms": 0,
     "max_speed": "N/A"
   },
   {
-    "name": "_\u672a\u77e5_48",
+    "name": "\ud83c\uddfa\ud83c\uddf8_\u7f8e\u56fd_59",
     "type": "trojan",
-    "server": "60a22220-8a8f-46e7-82ba-76d42df68c34.661.qzz.io",
+    "server": "bbbbbb.taiwan2028.indevs.in",
     "port": 443,
-    "id": 103,
-    "link": "trojan://0c6b96bc-5e3a-4500-8497-6dead1965609@60a22220-8a8f-46e7-82ba-76d42df68c34.661.qzz.io:443?security=tls&sni=60a22220-8A8f-46e7-82bA-76D42Df68c34.661.qZZ.Io#_%E6%9C%AA%E7%9F%A5_48",
-    "password": "/0c6b96bc-5e3a-4500-8497-6dead1965609",
-    "sni": "60a22220-8A8f-46e7-82bA-76D42Df68c34.661.qZZ.Io",
+    "id": 59,
+    "link": "trojan://5cccb4da-8aee-4b01-be84-2056265e52dc@bbbbbb.taiwan2028.indevs.in:443?security=tls&sni=bbbBbb.taiwAN2028.INDevs.iN#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_59",
+    "password": "/5cccb4da-8aee-4b01-be84-2056265e52dc",
+    "sni": "bbbBbb.taiwAN2028.INDevs.iN",
     "latency_ms": 0,
     "max_speed": "N/A"
   },
   {
-    "name": "_\u672a\u77e5_59",
+    "name": "_\u672a\u77e5_46",
     "type": "trojan",
-    "server": "rrrrrrr5.191262.xyz",
+    "server": "yyyyu.taiwan2026.indevs.in",
     "port": 443,
-    "id": 109,
-    "link": "trojan://fc3704d6-8e5e-443a-bd5b-20ec7cfbe990@rrrrrrr5.191262.xyz:443?security=tls&sni=rrrrrrr5.191262.xyz#_%E6%9C%AA%E7%9F%A5_59",
+    "id": 61,
+    "link": "trojan://fc3704d6-8e5e-443a-bd5b-20ec7cfbe990@yyyyu.taiwan2026.indevs.in:443?security=tls&sni=yyyyu.taiwan2026.indevs.in#_%E6%9C%AA%E7%9F%A5_46",
     "password": "/fc3704d6-8e5e-443a-bd5b-20ec7cfbe990",
-    "sni": "rrrrrrr5.191262.xyz",
+    "sni": "yyyyu.taiwan2026.indevs.in",
     "latency_ms": 0,
     "max_speed": "N/A"
   },
   {
-    "name": "_\u672a\u77e5_71",
-    "type": "trojan",
-    "server": "eed4.7777125.xyz",
-    "port": 443,
-    "id": 112,
-    "link": "trojan://fc3704d6-8e5e-443a-bd5b-20ec7cfbe990@eed4.7777125.xyz:443?security=tls&sni=eed4.7777125.xyz#_%E6%9C%AA%E7%9F%A5_71",
-    "password": "/fc3704d6-8e5e-443a-bd5b-20ec7cfbe990",
-    "sni": "eed4.7777125.xyz",
-    "latency_ms": 0,
-    "max_speed": "N/A"
-  },
-  {
-    "name": "\ud83c\uddfa\ud83c\uddf8_\u7f8e\u56fd_37",
+    "name": "_\u672a\u77e5_50",
     "type": "trojan",
     "server": "bbbnhju.huangshang.online",
     "port": 443,
-    "id": 114,
-    "link": "trojan://b9bb332d-5e0d-41af-adac-49362dde8661@bbbnhju.huangshang.online:443?security=tls&sni=bbbnhju.huangshang.online#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_37",
+    "id": 64,
+    "link": "trojan://b9bb332d-5e0d-41af-adac-49362dde8661@bbbnhju.huangshang.online:443?security=tls&sni=bbbnhju.huangshang.online#_%E6%9C%AA%E7%9F%A5_50",
     "password": "/b9bb332d-5e0d-41af-adac-49362dde8661",
     "sni": "bbbnhju.huangshang.online",
     "latency_ms": 0,
     "max_speed": "N/A"
   },
   {
-    "name": "_\u672a\u77e5_76",
+    "name": "_\u672a\u77e5_57",
     "type": "trojan",
-    "server": "vip2.kaixincloud.top",
-    "port": 8443,
-    "id": 115,
-    "link": "trojan://T9BpZIVMNv@vip2.kaixincloud.top:8443?security=tls&sni=sweden.vmaxpanel.com#_%E6%9C%AA%E7%9F%A5_76",
-    "password": "/T9BpZIVMNv",
-    "sni": "sweden.vmaxpanel.com",
-    "latency_ms": 0,
-    "max_speed": "N/A"
-  },
-  {
-    "name": "_\u672a\u77e5_82",
-    "type": "trojan",
-    "server": "vip3.kaixincloud.top",
-    "port": 8443,
-    "id": 116,
-    "link": "trojan://T9BpZIVMNv@vip3.kaixincloud.top:8443?security=tls&sni=sweden.vmaxpanel.com#_%E6%9C%AA%E7%9F%A5_82",
-    "password": "/T9BpZIVMNv",
-    "sni": "sweden.vmaxpanel.com",
-    "latency_ms": 0,
-    "max_speed": "N/A"
-  },
-  {
-    "name": "_\u672a\u77e5_89",
-    "type": "trojan",
-    "server": "60a22220-8a8f-46e7-82ba-76d42df68c34.661.qzz.io",
+    "server": "mmmhu.huangshang.online",
     "port": 443,
-    "id": 119,
-    "link": "trojan://0c6b96bc-5e3a-4500-8497-6dead1965609@60a22220-8a8f-46e7-82ba-76d42df68c34.661.qzz.io:443?security=tls&sni=60a22220-8A8f-46e7-82bA-76D42Df68c34.661.qZZ.Io#_%E6%9C%AA%E7%9F%A5_89",
-    "password": "/0c6b96bc-5e3a-4500-8497-6dead1965609",
-    "sni": "60a22220-8A8f-46e7-82bA-76D42Df68c34.661.qZZ.Io",
+    "id": 65,
+    "link": "trojan://5cccb4da-8aee-4b01-be84-2056265e52dc@mmmhu.huangshang.online:443?security=tls&sni=mMMhU.HUangSHANG.onlIne#_%E6%9C%AA%E7%9F%A5_57",
+    "password": "/5cccb4da-8aee-4b01-be84-2056265e52dc",
+    "sni": "mMMhU.HUangSHANG.onlIne",
     "latency_ms": 0,
     "max_speed": "N/A"
   },
   {
-    "name": "_\u672a\u77e5_90",
-    "type": "trojan",
-    "server": "104.21.40.34",
-    "port": 443,
-    "id": 120,
-    "link": "trojan://humanity@104.21.40.34:443?security=tls&sni=www.gossipglove.com#_%E6%9C%AA%E7%9F%A5_90",
-    "password": "/humanity",
-    "sni": "www.gossipglove.com",
-    "latency_ms": 0,
-    "max_speed": "N/A"
-  },
-  {
-    "name": "\ud83c\uddfa\ud83c\uddf8_\u7f8e\u56fd_42",
+    "name": "\ud83c\uddfa\ud83c\uddf8_\u7f8e\u56fd_70",
     "type": "trojan",
     "server": "v3.dabache.top",
     "port": 8443,
-    "id": 121,
-    "link": "trojan://T9BpZIVMNv@v3.dabache.top:8443?security=tls&sni=sweden.vmaxpanel.com#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_42",
+    "id": 66,
+    "link": "trojan://T9BpZIVMNv@v3.dabache.top:8443?security=tls&sni=sweden.vmaxpanel.com#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_70",
     "password": "/T9BpZIVMNv",
     "sni": "sweden.vmaxpanel.com",
     "latency_ms": 0,
     "max_speed": "N/A"
   },
   {
-    "name": "\ud83c\uddfa\ud83c\uddf8_\u7f8e\u56fd_46",
+    "name": "_\u672a\u77e5_62",
+    "type": "trojan",
+    "server": "lll9.7777198.xyz",
+    "port": 443,
+    "id": 68,
+    "link": "trojan://b9bb332d-5e0d-41af-adac-49362dde8661@lll9.7777198.xyz:443?security=tls&sni=lll9.7777198.xyz#_%E6%9C%AA%E7%9F%A5_62",
+    "password": "/b9bb332d-5e0d-41af-adac-49362dde8661",
+    "sni": "lll9.7777198.xyz",
+    "latency_ms": 0,
+    "max_speed": "N/A"
+  },
+  {
+    "name": "_\u672a\u77e5_64",
+    "type": "trojan",
+    "server": "eed4.7777125.xyz",
+    "port": 443,
+    "id": 69,
+    "link": "trojan://fc3704d6-8e5e-443a-bd5b-20ec7cfbe990@eed4.7777125.xyz:443?security=tls&sni=eed4.7777125.xyz#_%E6%9C%AA%E7%9F%A5_64",
+    "password": "/fc3704d6-8e5e-443a-bd5b-20ec7cfbe990",
+    "sni": "eed4.7777125.xyz",
+    "latency_ms": 0,
+    "max_speed": "N/A"
+  },
+  {
+    "name": "_\u672a\u77e5_68",
+    "type": "trojan",
+    "server": "vip3.kaixincloud.top",
+    "port": 8443,
+    "id": 70,
+    "link": "trojan://T9BpZIVMNv@vip3.kaixincloud.top:8443?security=tls&sni=sweden.vmaxpanel.com#_%E6%9C%AA%E7%9F%A5_68",
+    "password": "/T9BpZIVMNv",
+    "sni": "sweden.vmaxpanel.com",
+    "latency_ms": 0,
+    "max_speed": "N/A"
+  },
+  {
+    "name": "_\u672a\u77e5_69",
+    "type": "trojan",
+    "server": "vip1.kaixincloud.top",
+    "port": 8443,
+    "id": 71,
+    "link": "trojan://T9BpZIVMNv@vip1.kaixincloud.top:8443?security=tls&sni=sweden.vmaxpanel.com#_%E6%9C%AA%E7%9F%A5_69",
+    "password": "/T9BpZIVMNv",
+    "sni": "sweden.vmaxpanel.com",
+    "latency_ms": 0,
+    "max_speed": "N/A"
+  },
+  {
+    "name": "_\u672a\u77e5_73",
+    "type": "trojan",
+    "server": "rrrrrrr5.191262.xyz",
+    "port": 443,
+    "id": 78,
+    "link": "trojan://fc3704d6-8e5e-443a-bd5b-20ec7cfbe990@rrrrrrr5.191262.xyz:443?security=tls&sni=rrrrrrr5.191262.xyz#_%E6%9C%AA%E7%9F%A5_73",
+    "password": "/fc3704d6-8e5e-443a-bd5b-20ec7cfbe990",
+    "sni": "rrrrrrr5.191262.xyz",
+    "latency_ms": 0,
+    "max_speed": "N/A"
+  },
+  {
+    "name": "\ud83c\uddfa\ud83c\uddf8_\u7f8e\u56fd_79",
+    "type": "trojan",
+    "server": "eett.taiwan2026.indevs.in",
+    "port": 443,
+    "id": 79,
+    "link": "trojan://fc3704d6-8e5e-443a-bd5b-20ec7cfbe990@eett.taiwan2026.indevs.in:443?security=tls&sni=eett.taiwan2026.indevs.in#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_79",
+    "password": "/fc3704d6-8e5e-443a-bd5b-20ec7cfbe990",
+    "sni": "eett.taiwan2026.indevs.in",
+    "latency_ms": 0,
+    "max_speed": "N/A"
+  },
+  {
+    "name": "_\u672a\u77e5_74",
+    "type": "trojan",
+    "server": "bbbnmkl.taiwan2028.indevs.in",
+    "port": 443,
+    "id": 80,
+    "link": "trojan://5cccb4da-8aee-4b01-be84-2056265e52dc@bbbnmkl.taiwan2028.indevs.in:443?security=tls&sni=bBbNmKl.TAIwAn2028.IndEvs.In#_%E6%9C%AA%E7%9F%A5_74",
+    "password": "/5cccb4da-8aee-4b01-be84-2056265e52dc",
+    "sni": "bBbNmKl.TAIwAn2028.IndEvs.In",
+    "latency_ms": 0,
+    "max_speed": "N/A"
+  },
+  {
+    "name": "_\u672a\u77e5_75",
+    "type": "trojan",
+    "server": "mk.huangshang.online",
+    "port": 443,
+    "id": 81,
+    "link": "trojan://5cccb4da-8aee-4b01-be84-2056265e52dc@mk.huangshang.online:443?security=tls&sni=mK.huAngshanG.OnlINe#_%E6%9C%AA%E7%9F%A5_75",
+    "password": "/5cccb4da-8aee-4b01-be84-2056265e52dc",
+    "sni": "mK.huAngshanG.OnlINe",
+    "latency_ms": 0,
+    "max_speed": "N/A"
+  },
+  {
+    "name": "_\u672a\u77e5_78",
+    "type": "trojan",
+    "server": "vip2.kaixincloud.top",
+    "port": 8443,
+    "id": 83,
+    "link": "trojan://T9BpZIVMNv@vip2.kaixincloud.top:8443?security=tls&sni=sweden.vmaxpanel.com#_%E6%9C%AA%E7%9F%A5_78",
+    "password": "/T9BpZIVMNv",
+    "sni": "sweden.vmaxpanel.com",
+    "latency_ms": 0,
+    "max_speed": "N/A"
+  },
+  {
+    "name": "\ud83c\uddfa\ud83c\uddf8_\u7f8e\u56fd_81",
+    "type": "trojan",
+    "server": "nmk.288288.shop",
+    "port": 443,
+    "id": 85,
+    "link": "trojan://5cccb4da-8aee-4b01-be84-2056265e52dc@nmk.288288.shop:443?security=tls&sni=nMk.288288.sHOP#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_81",
+    "password": "/5cccb4da-8aee-4b01-be84-2056265e52dc",
+    "sni": "nMk.288288.sHOP",
+    "latency_ms": 0,
+    "max_speed": "N/A"
+  },
+  {
+    "name": "\ud83c\uddfa\ud83c\uddf8_\u7f8e\u56fd_83",
     "type": "trojan",
     "server": "bpbg.anguswen.top",
     "port": 8443,
-    "id": 123,
-    "link": "trojan://123456@bpbg.anguswen.top:8443?security=tls&sni=BpBg.ANGusWeN.top#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_46",
+    "id": 91,
+    "link": "trojan://123456@bpbg.anguswen.top:8443?security=tls&sni=BpBg.ANGusWeN.top#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_83",
     "password": "/123456",
     "sni": "BpBg.ANGusWeN.top",
     "latency_ms": 0,
     "max_speed": "N/A"
-  },
-  {
-    "name": "\ud83c\udded\ud83c\uddf0_\u9999\u6e2f_6",
-    "type": "trojan",
-    "server": "219.76.135.98",
-    "port": 443,
-    "id": 133,
-    "link": "trojan://BxceQaOe@219.76.135.98:443?allowInsecure=1&sni=t.me%2Fripaojiedian#%F0%9F%87%AD%F0%9F%87%B0_%E9%A6%99%E6%B8%AF_6",
-    "password": "/BxceQaOe",
-    "skip-cert-verify": true,
-    "sni": "t.me%2Fripaojiedian",
-    "latency_ms": 0,
-    "max_speed": "9.7MB"
-  },
-  {
-    "name": "\ud83c\udded\ud83c\uddf0_\u9999\u6e2f_7",
-    "type": "trojan",
-    "server": "58.152.53.45",
-    "port": 443,
-    "id": 134,
-    "link": "trojan://BxceQaOe@58.152.53.45:443?allowInsecure=1#%F0%9F%87%AD%F0%9F%87%B0_%E9%A6%99%E6%B8%AF_7",
-    "password": "/BxceQaOe",
-    "skip-cert-verify": true,
-    "latency_ms": 0,
-    "max_speed": "14.6MB"
-  },
-  {
-    "name": "\ud83c\udded\ud83c\uddf0_\u9999\u6e2f_8",
-    "type": "trojan",
-    "server": "58.152.53.45",
-    "port": 443,
-    "id": 135,
-    "link": "trojan://BxceQaOe@58.152.53.45:443?allowInsecure=1&sni=58.152.53.45#%F0%9F%87%AD%F0%9F%87%B0_%E9%A6%99%E6%B8%AF_8",
-    "password": "/BxceQaOe",
-    "skip-cert-verify": true,
-    "sni": "58.152.53.45",
-    "latency_ms": 0,
-    "max_speed": "17.7MB"
   },
   {
     "name": "adi|0622+-+\u57c3\u53ca",
@@ -782,7 +915,7 @@
     "skip-cert-verify": true,
     "sni": "t.me/ripaojiedian",
     "latency_ms": 0,
-    "max_speed": "15.6MB"
+    "max_speed": "21.8MB"
   },
   {
     "name": "\u82f1\u570b_1",
@@ -805,7 +938,7 @@
     "link": "trojan://03e8e998-903d-4833-ac15-17778e830635@xiaozhu1.kkieo555.cn:41275?allowInsecure=1#%E8%8B%B1%E5%9C%8B_2",
     "password": "/03e8e998-903d-4833-ac15-17778e830635",
     "skip-cert-verify": true,
-    "latency_ms": 586,
+    "latency_ms": 0,
     "max_speed": "N/A"
   },
   {
@@ -818,8 +951,8 @@
     "password": "/BxceQaOe",
     "skip-cert-verify": true,
     "sni": "t.me%2Fripaojiedian",
-    "latency_ms": 0,
-    "max_speed": "9.9MB"
+    "latency_ms": 351,
+    "max_speed": "21.6MB"
   },
   {
     "name": "\u9999\u6e2f_12",
@@ -832,7 +965,7 @@
     "skip-cert-verify": true,
     "sni": "t.me%2Fripaojiedian",
     "latency_ms": 0,
-    "max_speed": "5.9MB"
+    "max_speed": "8.4MB"
   },
   {
     "name": "\u82f1\u570b_3",
@@ -869,7 +1002,7 @@
     "skip-cert-verify": true,
     "sni": "torontorm1.686911.xyz",
     "latency_ms": 0,
-    "max_speed": "326.3KB"
+    "max_speed": "326.1KB"
   },
   {
     "name": "\u82f1\u570b_5",
@@ -894,7 +1027,7 @@
     "skip-cert-verify": true,
     "sni": "58.152.53.45",
     "latency_ms": 0,
-    "max_speed": "18.5MB"
+    "max_speed": "20.5MB"
   },
   {
     "name": "\u9999\u6e2f_14",
@@ -907,7 +1040,7 @@
     "skip-cert-verify": true,
     "sni": "t.me/ripaojiedian",
     "latency_ms": 0,
-    "max_speed": "12.6MB"
+    "max_speed": "21.9MB"
   },
   {
     "name": "\u9999\u6e2f_15",
@@ -920,7 +1053,7 @@
     "skip-cert-verify": true,
     "sni": "t.me/ripaojiedian",
     "latency_ms": 0,
-    "max_speed": "10.8MB"
+    "max_speed": "7.7MB"
   },
   {
     "name": "\u9999\u6e2f_16",
@@ -933,7 +1066,7 @@
     "skip-cert-verify": true,
     "sni": "219.76.135.98",
     "latency_ms": 0,
-    "max_speed": "9.3MB"
+    "max_speed": "6.5MB"
   },
   {
     "name": "\u9999\u6e2f_17",
@@ -945,7 +1078,7 @@
     "password": "/BxceQaOe",
     "skip-cert-verify": true,
     "latency_ms": 0,
-    "max_speed": "12.4MB"
+    "max_speed": "5.5MB"
   },
   {
     "name": "\u9999\u6e2f_18",
@@ -957,7 +1090,7 @@
     "password": "/BxceQaOe",
     "skip-cert-verify": true,
     "latency_ms": 0,
-    "max_speed": "14.9MB"
+    "max_speed": "21.7MB"
   },
   {
     "name": "\u9999\u6e2f_19",
@@ -970,7 +1103,7 @@
     "skip-cert-verify": true,
     "sni": "t.me/ripaojiedian",
     "latency_ms": 0,
-    "max_speed": "9.4MB"
+    "max_speed": "8.3MB"
   },
   {
     "name": "\u82f1\u570b_6",
@@ -1031,7 +1164,7 @@
     "skip-cert-verify": true,
     "sni": "hkip5.686911.xyz",
     "latency_ms": 0,
-    "max_speed": "525.0KB"
+    "max_speed": "2.1MB"
   },
   {
     "name": "\u82f1\u570b_10",
@@ -1108,7 +1241,7 @@
     "skip-cert-verify": true,
     "sni": "cntwbta.686911.xyz",
     "latency_ms": 0,
-    "max_speed": "317.2KB"
+    "max_speed": "1.4MB"
   },
   {
     "name": "US\u7f8e\u56fd(mibei77.com+\u7c73\u8d1d\u8282\u70b9\u5206\u4eab)+5",
@@ -1144,7 +1277,7 @@
     "cipher": "chacha20-ietf-poly1305",
     "password": "k1dBOmOB4oqi7Ump37a1bQ",
     "latency_ms": 0,
-    "max_speed": "35.9MB"
+    "max_speed": "37.3MB"
   },
   {
     "name": "JP\u65e5\u672c(mibei77.com+\u7c73\u8d1d\u8282\u70b9\u5206\u4eab)",
@@ -1204,7 +1337,7 @@
     "password": "/c1d83c0c7d57cead4379ba14a82df69b",
     "sni": "www.nintendogames.net",
     "latency_ms": 0,
-    "max_speed": "21.4MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\ud83c\udded\ud83c\uddf0+\u9999\u6e2f4|@stairnode",
@@ -1216,7 +1349,7 @@
     "password": "/BxceQaOe",
     "skip-cert-verify": true,
     "sni": "t.me%2Fripaojiedian",
-    "latency_ms": 291,
+    "latency_ms": 0,
     "max_speed": "N/A"
   },
   {
@@ -1255,7 +1388,7 @@
     "password": "/c1d83c0c7d57cead4379ba14a82df69b",
     "sni": "www.nintendogames.net",
     "latency_ms": 0,
-    "max_speed": "14.1MB"
+    "max_speed": "N/A"
   },
   {
     "name": "\ud83c\uddef\ud83c\uddf5+\u65e5\u672c3|@stairnode",
@@ -1279,7 +1412,7 @@
     "password": "/c1d83c0c7d57cead4379ba14a82df69b",
     "sni": "www.nintendogames.net",
     "latency_ms": 0,
-    "max_speed": "11.2MB"
+    "max_speed": "10.8MB"
   },
   {
     "name": "\ud83c\uddf8\ud83c\uddec+\u65b0\u52a0\u57612|@stairnode",
@@ -1291,7 +1424,7 @@
     "password": "/c1d83c0c7d57cead4379ba14a82df69b",
     "sni": "www.nintendogames.net",
     "latency_ms": 0,
-    "max_speed": "11.7MB"
+    "max_speed": "12.4MB"
   },
   {
     "name": "\ud83c\uddf8\ud83c\uddec+\u65b0\u52a0\u57613|@stairnode",
@@ -1316,7 +1449,7 @@
     "password": "/c1d83c0c7d57cead4379ba14a82df69b",
     "sni": "www.nintendogames.net",
     "latency_ms": 0,
-    "max_speed": "9.5MB"
+    "max_speed": "5.6MB"
   },
   {
     "name": "\ud83c\uddfa\ud83c\uddf8+\u7f8e\u56fd2|@stairnode",
@@ -1328,7 +1461,7 @@
     "password": "/c1d83c0c7d57cead4379ba14a82df69b",
     "sni": "www.nintendogames.net",
     "latency_ms": 0,
-    "max_speed": "90.6KB"
+    "max_speed": "856.6KB"
   },
   {
     "name": "\ud83c\uddfa\ud83c\uddf8+\u7f8e\u56fd3|@stairnode",
