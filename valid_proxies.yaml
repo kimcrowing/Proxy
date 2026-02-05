@@ -116,79 +116,87 @@ proxies:
   id: 5
   latency_ms: 0
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprYVFIM2hHZGNQODBYRURJ@admin.c2.havij.co:443#%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_4
-  max_speed: 1.2MB
+  max_speed: 19.7MB
   password: kaQH3hGdcP80XEDI
-- name: 🇹🇷 001
+- name: 🇭🇰 001
   type: trojan
-  server: tr-1.stunnel.cc
-  port: 8441
-  id: 0
+  server: 219.76.135.98
+  port: 443
+  id: 1
   latency_ms: 0
-  link: trojan://tunnel-freepersianet@tr-1.stunnel.cc:8441?allowInsecure=1&sni=creativecommons.org#%F0%9F%87%B9%F0%9F%87%B7_%E5%9C%9F%E8%80%B3%E5%85%B6
+  link: trojan://BxceQaOe@219.76.135.98:443?allowInsecure=1&sni=t.me%2Fripaojiedian#%E6%AF%8F%E5%A4%A9%E6%9B%B4%E6%96%B0%EF%BC%8C%E8%AF%B7%E5%8A%A0%E7%94%B5%E6%8A%A5%E7%BE%A4%E9%98%B2%E6%AD%A2%E5%A4%B1%E8%81%94
   max_speed: N/A
-  password: /tunnel-freepersianet
+  password: /BxceQaOe
   skip-cert-verify: true
-  sni: creativecommons.org
+  sni: t.me%2Fripaojiedian
+- name: 🇭🇰 002
+  type: trojan
+  server: 58.152.53.45
+  port: 443
+  id: 2
+  latency_ms: 0
+  link: trojan://BxceQaOe@58.152.53.45:443?allowInsecure=1#%E6%97%A5%E6%9C%9F%EF%BC%9A02-05
+  max_speed: 21.2MB
+  password: /BxceQaOe
+  skip-cert-verify: true
 - name: 🇨🇦 001
   type: trojan
   server: tuntro006.instconn.com
   port: 443
-  id: 1
+  id: 8
   latency_ms: 0
-  link: trojan://30077070-596e-48ea-9400-14c8ed07bd97@tuntro006.instconn.com:443?security=tls&sni=torontorm1.686911.xyz#%F0%9F%87%A8%F0%9F%87%A6_%E5%8A%A0%E6%8B%BF%E5%A4%A7
-  max_speed: N/A
-  password: /30077070-596e-48ea-9400-14c8ed07bd97
-  sni: torontorm1.686911.xyz
-- name: 🇭🇰 001
-  type: trojan
-  server: 58.152.25.130
-  port: 443
-  id: 3
-  latency_ms: 0
-  link: trojan://BxceQaOe@58.152.25.130:443?allowInsecure=1&sni=t.me/ripaojiedian#%F0%9F%87%AD%F0%9F%87%B0_%E9%A6%99%E6%B8%AF_2
-  max_speed: N/A
-  password: /BxceQaOe
+  link: trojan://63b21d86-a49c-4936-a634-0b5af3e30433@tuntro006.instconn.com:443?allowInsecure=1&sni=torontorm1.686911.xyz#%F0%9F%87%A8%F0%9F%87%A6_%E5%8A%A0%E6%8B%BF%E5%A4%A7
+  max_speed: 588.7KB
+  password: /63b21d86-a49c-4936-a634-0b5af3e30433
   skip-cert-verify: true
-  sni: t.me/ripaojiedian
-- name: 🇨🇳 001
+  sni: torontorm1.686911.xyz
+- name: ❓ 002
   type: trojan
   server: green2.cdntencentmusic.com
   port: 31103
-  id: 7
+  id: 11
   latency_ms: 0
-  link: trojan://0e1a4026-89b4-4f9c-b7c4-8fb2933c30db@green2.cdntencentmusic.com:31103?security=tls&sni=green2.cdntencentmusic.com#%F0%9F%87%B9%F0%9F%87%BC_%E4%B8%AD%E5%9B%BD%E5%8F%B0%E6%B9%BE%E7%9C%81
+  link: trojan://0e1a4026-89b4-4f9c-b7c4-8fb2933c30db@green2.cdntencentmusic.com:31103?security=tls&sni=green2.cdntencentmusic.com#_%E6%9C%AA%E7%9F%A5
   max_speed: N/A
   password: /0e1a4026-89b4-4f9c-b7c4-8fb2933c30db
   sni: green2.cdntencentmusic.com
-- name: 🇭🇰 002
+- name: 🇹🇼 001
   type: trojan
-  server: 219.76.135.98
-  port: 443
-  id: 10
+  server: 220.130.58.136
+  port: 35501
+  id: 14
   latency_ms: 0
-  link: trojan://BxceQaOe@219.76.135.98:443?allowInsecure=1&sni=t.me/ripaojiedian#%F0%9F%87%AD%F0%9F%87%B0_%E9%A6%99%E6%B8%AF_3
-  max_speed: 8.7MB
-  password: /BxceQaOe
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-- name: 🇭🇰 003
+  link: trojan://223c2f69-6b95-4555-9f68-14b14d72b7ea@220.130.58.136:35501?security=tls&sni=green2.cdntencentmusic.com#%F0%9F%87%B9%F0%9F%87%BC_%E4%B8%AD%E5%9B%BD%E5%8F%B0%E6%B9%BE%E7%9C%81
+  max_speed: 130.5KB
+  password: /223c2f69-6b95-4555-9f68-14b14d72b7ea
+  sni: green2.cdntencentmusic.com
+- name: 🇨🇦 002
   type: trojan
-  server: 58.152.53.45
+  server: 104.18.1.196
   port: 443
-  id: 12
+  id: 21
   latency_ms: 0
-  link: trojan://BxceQaOe@58.152.53.45:443?allowInsecure=1&sni=t.me%2Fripaojiedian#%F0%9F%87%AD%F0%9F%87%B0_%E9%A6%99%E6%B8%AF_4
-  max_speed: 21.2MB
-  password: /BxceQaOe
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-- name: ❓ 002
+  link: trojan://a9570330-769d-11ef-90dc-1577c1651679@104.18.1.196:443?security=tls&sni=sg-trojan.andfree.my.id#_%E6%9C%AA%E7%9F%A5_11
+  max_speed: N/A
+  password: /a9570330-769d-11ef-90dc-1577c1651679
+  sni: sg-trojan.andfree.my.id
+- name: 🇺🇸 003
+  type: trojan
+  server: v1.dabache.top
+  port: 8443
+  id: 23
+  latency_ms: 0
+  link: trojan://T9BpZIVMNv@v1.dabache.top:8443?security=tls&sni=sweden.vmaxpanel.com#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_15
+  max_speed: N/A
+  password: /T9BpZIVMNv
+  sni: sweden.vmaxpanel.com
+- name: 🇺🇸 004
   type: trojan
   server: blackshadow.dpdns.org
   port: 443
-  id: 19
+  id: 24
   latency_ms: 0
-  link: trojan://2bcfbfba-b446-4ad5-93ad-72af9e008f61@blackshadow.dpdns.org:443?security=tls&sni=blackshadow.dpdns.org#_%E6%9C%AA%E7%9F%A5
+  link: trojan://2bcfbfba-b446-4ad5-93ad-72af9e008f61@blackshadow.dpdns.org:443?security=tls&sni=blackshadow.dpdns.org#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_17
   max_speed: N/A
   password: /2bcfbfba-b446-4ad5-93ad-72af9e008f61
   sni: blackshadow.dpdns.org
@@ -196,19 +204,19 @@ proxies:
   type: trojan
   server: nmk.288288.shop
   port: 443
-  id: 21
+  id: 26
   latency_ms: 0
-  link: trojan://5cccb4da-8aee-4b01-be84-2056265e52dc@nmk.288288.shop:443?security=tls&sni=nMk.288288.sHOP#_%E6%9C%AA%E7%9F%A5_1
+  link: trojan://5cccb4da-8aee-4b01-be84-2056265e52dc@nmk.288288.shop:443?security=tls&sni=nMk.288288.sHOP#_%E6%9C%AA%E7%9F%A5_18
   max_speed: N/A
   password: /5cccb4da-8aee-4b01-be84-2056265e52dc
   sni: nMk.288288.sHOP
-- name: 🇺🇸 003
+- name: 🇺🇸 005
   type: trojan
   server: 167.68.4.199
   port: 2053
-  id: 23
+  id: 28
   latency_ms: 0
-  link: trojan://Aimer@167.68.4.199:2053?security=tls&sni=epge.muarua.filegear-sg.me#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_11
+  link: trojan://Aimer@167.68.4.199:2053?security=tls&sni=epge.muarua.filegear-sg.me#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_20
   max_speed: N/A
   password: /Aimer
   sni: epge.muarua.filegear-sg.me
@@ -216,9 +224,9 @@ proxies:
   type: trojan
   server: mmmhu.huangshang.online
   port: 443
-  id: 31
+  id: 36
   latency_ms: 0
-  link: trojan://5cccb4da-8aee-4b01-be84-2056265e52dc@mmmhu.huangshang.online:443?security=tls&sni=mMMhU.HUangSHANG.onlIne#_%E6%9C%AA%E7%9F%A5_7
+  link: trojan://5cccb4da-8aee-4b01-be84-2056265e52dc@mmmhu.huangshang.online:443?security=tls&sni=mMMhU.HUangSHANG.onlIne#_%E6%9C%AA%E7%9F%A5_24
   max_speed: N/A
   password: /5cccb4da-8aee-4b01-be84-2056265e52dc
   sni: mMMhU.HUangSHANG.onlIne
@@ -226,199 +234,199 @@ proxies:
   type: trojan
   server: ggghj.www890604.dpdns.org
   port: 443
-  id: 32
+  id: 37
   latency_ms: 0
-  link: trojan://5cccb4da-8aee-4b01-be84-2056265e52dc@ggghj.www890604.dpdns.org:443?security=tls&sni=ggghj.www890604.dpdns.org#_%E6%9C%AA%E7%9F%A5_9
+  link: trojan://5cccb4da-8aee-4b01-be84-2056265e52dc@ggghj.www890604.dpdns.org:443?security=tls&sni=ggghj.www890604.dpdns.org#_%E6%9C%AA%E7%9F%A5_26
   max_speed: N/A
   password: /5cccb4da-8aee-4b01-be84-2056265e52dc
   sni: ggghj.www890604.dpdns.org
-- name: 🇺🇸 004
+- name: 🇺🇸 006
   type: trojan
   server: kkko9.191288.xyz
   port: 443
-  id: 36
+  id: 41
   latency_ms: 0
-  link: trojan://5cccb4da-8aee-4b01-be84-2056265e52dc@kkko9.191288.xyz:443?security=tls&sni=kKko9.191288.xyz#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_33
+  link: trojan://5cccb4da-8aee-4b01-be84-2056265e52dc@kkko9.191288.xyz:443?security=tls&sni=kKko9.191288.xyz#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_37
   max_speed: N/A
   password: /5cccb4da-8aee-4b01-be84-2056265e52dc
   sni: kKko9.191288.xyz
-- name: 🇺🇸 005
+- name: 🇺🇸 007
   type: trojan
   server: mmmk.288288.shop
   port: 443
-  id: 50
+  id: 55
   latency_ms: 0
-  link: trojan://5cccb4da-8aee-4b01-be84-2056265e52dc@mmmk.288288.shop:443?security=tls&sni=Mmmk.288288.shoP#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_48
+  link: trojan://5cccb4da-8aee-4b01-be84-2056265e52dc@mmmk.288288.shop:443?security=tls&sni=Mmmk.288288.shoP#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_52
   max_speed: N/A
   password: /5cccb4da-8aee-4b01-be84-2056265e52dc
   sni: Mmmk.288288.shoP
-- name: ❓ 006
+- name: 🇺🇸 008
   type: trojan
   server: mmkk.www890604.dpdns.org
   port: 443
-  id: 53
+  id: 58
   latency_ms: 0
-  link: trojan://5cccb4da-8aee-4b01-be84-2056265e52dc@mmkk.www890604.dpdns.org:443?security=tls&sni=mMKK.WwW890604.DpdNS.OrG#_%E6%9C%AA%E7%9F%A5_37
+  link: trojan://5cccb4da-8aee-4b01-be84-2056265e52dc@mmkk.www890604.dpdns.org:443?security=tls&sni=mMKK.WwW890604.DpdNS.OrG#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_56
   max_speed: N/A
   password: /5cccb4da-8aee-4b01-be84-2056265e52dc
   sni: mMKK.WwW890604.DpdNS.OrG
-- name: ❓ 007
+- name: 🇺🇸 009
   type: trojan
   server: ooiuyt.890699.xyz
   port: 443
-  id: 55
+  id: 60
   latency_ms: 0
-  link: trojan://98b419ef-83a2-4d1b-a23d-566b7f24477b@ooiuyt.890699.xyz:443?security=tls&sni=OOIuyT.890699.xYZ#_%E6%9C%AA%E7%9F%A5_39
+  link: trojan://98b419ef-83a2-4d1b-a23d-566b7f24477b@ooiuyt.890699.xyz:443?security=tls&sni=OOIuyT.890699.xYZ#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_58
   max_speed: N/A
   password: /98b419ef-83a2-4d1b-a23d-566b7f24477b
   sni: OOIuyT.890699.xYZ
-- name: 🇺🇸 007
+- name: ❓ 007
   type: trojan
   server: jjji.2030.pp.ua
   port: 443
-  id: 57
+  id: 62
   latency_ms: 0
-  link: trojan://fc3704d6-8e5e-443a-bd5b-20ec7cfbe990@jjji.2030.pp.ua:443?security=tls&sni=jjji.2030.pp.ua#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_56
+  link: trojan://fc3704d6-8e5e-443a-bd5b-20ec7cfbe990@jjji.2030.pp.ua:443?security=tls&sni=jjji.2030.pp.ua#_%E6%9C%AA%E7%9F%A5_66
   max_speed: N/A
   password: /fc3704d6-8e5e-443a-bd5b-20ec7cfbe990
   sni: jjji.2030.pp.ua
-- name: 🇺🇸 008
+- name: 🇺🇸 010
   type: trojan
   server: bbbbbb.taiwan2028.indevs.in
   port: 443
-  id: 59
+  id: 64
   latency_ms: 0
-  link: trojan://5cccb4da-8aee-4b01-be84-2056265e52dc@bbbbbb.taiwan2028.indevs.in:443?security=tls&sni=bbbBbb.taiwAN2028.INDevs.iN#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_59
+  link: trojan://5cccb4da-8aee-4b01-be84-2056265e52dc@bbbbbb.taiwan2028.indevs.in:443?security=tls&sni=bbbBbb.taiwAN2028.INDevs.iN#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_63
   max_speed: N/A
   password: /5cccb4da-8aee-4b01-be84-2056265e52dc
   sni: bbbBbb.taiwAN2028.INDevs.iN
-- name: ❓ 008
+- name: 🇺🇸 011
   type: trojan
   server: yyyyu.taiwan2026.indevs.in
   port: 443
-  id: 61
+  id: 66
   latency_ms: 0
-  link: trojan://fc3704d6-8e5e-443a-bd5b-20ec7cfbe990@yyyyu.taiwan2026.indevs.in:443?security=tls&sni=yyyyu.taiwan2026.indevs.in#_%E6%9C%AA%E7%9F%A5_46
+  link: trojan://fc3704d6-8e5e-443a-bd5b-20ec7cfbe990@yyyyu.taiwan2026.indevs.in:443?security=tls&sni=yyyyu.taiwan2026.indevs.in#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_66
   max_speed: N/A
   password: /fc3704d6-8e5e-443a-bd5b-20ec7cfbe990
   sni: yyyyu.taiwan2026.indevs.in
-- name: ❓ 009
+- name: ❓ 008
   type: trojan
   server: bbbnhju.huangshang.online
   port: 443
-  id: 64
+  id: 69
   latency_ms: 0
-  link: trojan://b9bb332d-5e0d-41af-adac-49362dde8661@bbbnhju.huangshang.online:443?security=tls&sni=bbbnhju.huangshang.online#_%E6%9C%AA%E7%9F%A5_50
+  link: trojan://b9bb332d-5e0d-41af-adac-49362dde8661@bbbnhju.huangshang.online:443?security=tls&sni=bbbnhju.huangshang.online#_%E6%9C%AA%E7%9F%A5_72
   max_speed: N/A
   password: /b9bb332d-5e0d-41af-adac-49362dde8661
   sni: bbbnhju.huangshang.online
-- name: 🇺🇸 009
+- name: 🇺🇸 013
   type: trojan
   server: v3.dabache.top
   port: 8443
-  id: 66
+  id: 71
   latency_ms: 0
-  link: trojan://T9BpZIVMNv@v3.dabache.top:8443?security=tls&sni=sweden.vmaxpanel.com#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_70
+  link: trojan://T9BpZIVMNv@v3.dabache.top:8443?security=tls&sni=sweden.vmaxpanel.com#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_73
+  max_speed: N/A
+  password: /T9BpZIVMNv
+  sni: sweden.vmaxpanel.com
+- name: ❓ 009
+  type: trojan
+  server: lll9.7777198.xyz
+  port: 443
+  id: 73
+  latency_ms: 0
+  link: trojan://b9bb332d-5e0d-41af-adac-49362dde8661@lll9.7777198.xyz:443?security=tls&sni=lll9.7777198.xyz#_%E6%9C%AA%E7%9F%A5_86
+  max_speed: N/A
+  password: /b9bb332d-5e0d-41af-adac-49362dde8661
+  sni: lll9.7777198.xyz
+- name: 🇺🇸 014
+  type: trojan
+  server: eed4.7777125.xyz
+  port: 443
+  id: 74
+  latency_ms: 0
+  link: trojan://fc3704d6-8e5e-443a-bd5b-20ec7cfbe990@eed4.7777125.xyz:443?security=tls&sni=eed4.7777125.xyz#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_76
+  max_speed: N/A
+  password: /fc3704d6-8e5e-443a-bd5b-20ec7cfbe990
+  sni: eed4.7777125.xyz
+- name: ❓ 010
+  type: trojan
+  server: vip3.kaixincloud.top
+  port: 8443
+  id: 75
+  latency_ms: 0
+  link: trojan://T9BpZIVMNv@vip3.kaixincloud.top:8443?security=tls&sni=sweden.vmaxpanel.com#_%E6%9C%AA%E7%9F%A5_92
   max_speed: N/A
   password: /T9BpZIVMNv
   sni: sweden.vmaxpanel.com
 - name: ❓ 011
   type: trojan
-  server: lll9.7777198.xyz
-  port: 443
-  id: 68
-  latency_ms: 0
-  link: trojan://b9bb332d-5e0d-41af-adac-49362dde8661@lll9.7777198.xyz:443?security=tls&sni=lll9.7777198.xyz#_%E6%9C%AA%E7%9F%A5_62
-  max_speed: N/A
-  password: /b9bb332d-5e0d-41af-adac-49362dde8661
-  sni: lll9.7777198.xyz
-- name: ❓ 012
-  type: trojan
-  server: eed4.7777125.xyz
-  port: 443
-  id: 69
-  latency_ms: 0
-  link: trojan://fc3704d6-8e5e-443a-bd5b-20ec7cfbe990@eed4.7777125.xyz:443?security=tls&sni=eed4.7777125.xyz#_%E6%9C%AA%E7%9F%A5_64
-  max_speed: N/A
-  password: /fc3704d6-8e5e-443a-bd5b-20ec7cfbe990
-  sni: eed4.7777125.xyz
-- name: ❓ 013
-  type: trojan
-  server: vip3.kaixincloud.top
+  server: vip1.kaixincloud.top
   port: 8443
-  id: 70
+  id: 76
   latency_ms: 0
-  link: trojan://T9BpZIVMNv@vip3.kaixincloud.top:8443?security=tls&sni=sweden.vmaxpanel.com#_%E6%9C%AA%E7%9F%A5_68
+  link: trojan://T9BpZIVMNv@vip1.kaixincloud.top:8443?security=tls&sni=sweden.vmaxpanel.com#_%E6%9C%AA%E7%9F%A5_93
   max_speed: N/A
   password: /T9BpZIVMNv
   sni: sweden.vmaxpanel.com
+- name: ❓ 012
+  type: trojan
+  server: rrrrrrr5.191262.xyz
+  port: 443
+  id: 83
+  latency_ms: 0
+  link: trojan://fc3704d6-8e5e-443a-bd5b-20ec7cfbe990@rrrrrrr5.191262.xyz:443?security=tls&sni=rrrrrrr5.191262.xyz#_%E6%9C%AA%E7%9F%A5_97
+  max_speed: N/A
+  password: /fc3704d6-8e5e-443a-bd5b-20ec7cfbe990
+  sni: rrrrrrr5.191262.xyz
+- name: 🇺🇸 015
+  type: trojan
+  server: eett.taiwan2026.indevs.in
+  port: 443
+  id: 84
+  latency_ms: 0
+  link: trojan://fc3704d6-8e5e-443a-bd5b-20ec7cfbe990@eett.taiwan2026.indevs.in:443?security=tls&sni=eett.taiwan2026.indevs.in#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_83
+  max_speed: N/A
+  password: /fc3704d6-8e5e-443a-bd5b-20ec7cfbe990
+  sni: eett.taiwan2026.indevs.in
+- name: ❓ 013
+  type: trojan
+  server: bbbnmkl.taiwan2028.indevs.in
+  port: 443
+  id: 85
+  latency_ms: 0
+  link: trojan://5cccb4da-8aee-4b01-be84-2056265e52dc@bbbnmkl.taiwan2028.indevs.in:443?security=tls&sni=bBbNmKl.TAIwAn2028.IndEvs.In#_%E6%9C%AA%E7%9F%A5_98
+  max_speed: N/A
+  password: /5cccb4da-8aee-4b01-be84-2056265e52dc
+  sni: bBbNmKl.TAIwAn2028.IndEvs.In
+- name: 🇺🇸 016
+  type: trojan
+  server: mk.huangshang.online
+  port: 443
+  id: 86
+  latency_ms: 0
+  link: trojan://5cccb4da-8aee-4b01-be84-2056265e52dc@mk.huangshang.online:443?security=tls&sni=mK.huAngshanG.OnlINe#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_84
+  max_speed: N/A
+  password: /5cccb4da-8aee-4b01-be84-2056265e52dc
+  sni: mK.huAngshanG.OnlINe
 - name: ❓ 014
   type: trojan
-  server: vip1.kaixincloud.top
+  server: vip2.kaixincloud.top
   port: 8443
-  id: 71
+  id: 88
   latency_ms: 0
-  link: trojan://T9BpZIVMNv@vip1.kaixincloud.top:8443?security=tls&sni=sweden.vmaxpanel.com#_%E6%9C%AA%E7%9F%A5_69
+  link: trojan://T9BpZIVMNv@vip2.kaixincloud.top:8443?security=tls&sni=sweden.vmaxpanel.com#_%E6%9C%AA%E7%9F%A5_102
   max_speed: N/A
   password: /T9BpZIVMNv
   sni: sweden.vmaxpanel.com
 - name: ❓ 015
   type: trojan
-  server: rrrrrrr5.191262.xyz
-  port: 443
-  id: 78
-  latency_ms: 0
-  link: trojan://fc3704d6-8e5e-443a-bd5b-20ec7cfbe990@rrrrrrr5.191262.xyz:443?security=tls&sni=rrrrrrr5.191262.xyz#_%E6%9C%AA%E7%9F%A5_73
-  max_speed: N/A
-  password: /fc3704d6-8e5e-443a-bd5b-20ec7cfbe990
-  sni: rrrrrrr5.191262.xyz
-- name: 🇺🇸 010
-  type: trojan
-  server: eett.taiwan2026.indevs.in
-  port: 443
-  id: 79
-  latency_ms: 0
-  link: trojan://fc3704d6-8e5e-443a-bd5b-20ec7cfbe990@eett.taiwan2026.indevs.in:443?security=tls&sni=eett.taiwan2026.indevs.in#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_79
-  max_speed: N/A
-  password: /fc3704d6-8e5e-443a-bd5b-20ec7cfbe990
-  sni: eett.taiwan2026.indevs.in
-- name: ❓ 016
-  type: trojan
-  server: bbbnmkl.taiwan2028.indevs.in
-  port: 443
-  id: 80
-  latency_ms: 0
-  link: trojan://5cccb4da-8aee-4b01-be84-2056265e52dc@bbbnmkl.taiwan2028.indevs.in:443?security=tls&sni=bBbNmKl.TAIwAn2028.IndEvs.In#_%E6%9C%AA%E7%9F%A5_74
-  max_speed: N/A
-  password: /5cccb4da-8aee-4b01-be84-2056265e52dc
-  sni: bBbNmKl.TAIwAn2028.IndEvs.In
-- name: ❓ 017
-  type: trojan
-  server: mk.huangshang.online
-  port: 443
-  id: 81
-  latency_ms: 0
-  link: trojan://5cccb4da-8aee-4b01-be84-2056265e52dc@mk.huangshang.online:443?security=tls&sni=mK.huAngshanG.OnlINe#_%E6%9C%AA%E7%9F%A5_75
-  max_speed: N/A
-  password: /5cccb4da-8aee-4b01-be84-2056265e52dc
-  sni: mK.huAngshanG.OnlINe
-- name: ❓ 018
-  type: trojan
-  server: vip2.kaixincloud.top
-  port: 8443
-  id: 83
-  latency_ms: 0
-  link: trojan://T9BpZIVMNv@vip2.kaixincloud.top:8443?security=tls&sni=sweden.vmaxpanel.com#_%E6%9C%AA%E7%9F%A5_78
-  max_speed: N/A
-  password: /T9BpZIVMNv
-  sni: sweden.vmaxpanel.com
-- name: 🇺🇸 012
-  type: trojan
   server: bpbg.anguswen.top
   port: 8443
-  id: 91
+  id: 96
   latency_ms: 0
-  link: trojan://123456@bpbg.anguswen.top:8443?security=tls&sni=BpBg.ANGusWeN.top#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD_83
+  link: trojan://123456@bpbg.anguswen.top:8443?security=tls&sni=BpBg.ANGusWeN.top#_%E6%9C%AA%E7%9F%A5_105
   max_speed: N/A
   password: /123456
   sni: BpBg.ANGusWeN.top
@@ -462,7 +470,7 @@ proxies:
   link: ss://YWVzLTI1Ni1nY206dWd5QmtTRUZ4VkVtVVlTSHl2eG1XTmo5@198.8.92.84:40220#adi%7C0701+-+ip1
   max_speed: N/A
   password: ugyBkSEFxVEmUYSHyvxmWNj9
-- name: 🇨🇳 002
+- name: 🇨🇳 001
   type: trojan
   server: 120.236.197.205
   port: 3389
@@ -471,7 +479,7 @@ proxies:
   link: trojan://ba4fedf8c217c146@120.236.197.205:3389?security=tls#adi%7C0703+-+ip3
   max_speed: N/A
   password: /ba4fedf8c217c146
-- name: 🇺🇸 013
+- name: 🇺🇸 018
   type: ss
   server: 154.17.2.112
   port: 18335
@@ -481,7 +489,7 @@ proxies:
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpOMEtTRlI2YWxTeGpncDdUOEFhOUNlOERuQ2FBT1lxejVsRlp4ZTNPMkkzdXljWVpYRURwM1MzNFJ5Q0R3Qg==@154.17.2.112:18335#%F0%9F%87%BA%F0%9F%87%B8+adi%7C0703+-+%E7%BE%8E%E5%9B%BDDMIT10
   max_speed: N/A
   password: N0KSFR6alSxjgp7T8Aa9Ce8DnCaAOYqz5lFZxe3O2I3uycYZXEDp3S34RyCDwB
-- name: 🇺🇸 014
+- name: 🇺🇸 019
   type: ss
   server: 154.17.5.184
   port: 18331
@@ -491,7 +499,7 @@ proxies:
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpaM1lTMEt4Qjh1NWpncDczNmU4MzR5M0RhWHdTT1l6eGxGREZxcE5DYWFsREE5Q0VJUmNlWk9DQW5SMnlUUw==@154.17.5.184:18331#%F0%9F%87%BA%F0%9F%87%B8+adi%7C0703+-+%E7%BE%8E%E5%9B%BDDMIT14
   max_speed: N/A
   password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS
-- name: 🇺🇸 015
+- name: 🇺🇸 020
   type: ss
   server: 154.17.2.31
   port: 18333
@@ -581,7 +589,7 @@ proxies:
   link: ss://YWVzLTI1Ni1nY206RjViS2tiOWdna0x4NEpiUXJiTG43TGpa@198.8.92.84:44945#adi%7C0703+-+ip1+3
   max_speed: N/A
   password: F5bKkb9ggkLx4JbQrbLn7LjZ
-- name: 🇺🇸 016
+- name: 🇺🇸 021
   type: ss
   server: 154.17.2.153
   port: 18334
@@ -611,7 +619,7 @@ proxies:
   link: ss://YWVzLTI1Ni1nY206QmRSV0MzOEw1SlVETVRZTk54SkdjVXdC@198.8.92.84:49396#%F0%9F%87%BA%F0%9F%87%B8+adi%7C0703+-+US+2
   max_speed: N/A
   password: BdRWC38L5JUDMTYNNxJGcUwB
-- name: 🇺🇸 017
+- name: 🇺🇸 022
   type: ss
   server: 198.147.22.87
   port: 33998
@@ -621,7 +629,7 @@ proxies:
   link: ss://YWVzLTI1Ni1nY206Tkh3UVRQTENmYVRNU3FUblUzbWpjU3hl@198.147.22.87:33998#adi%7C0703+-+198.147.22.87%3A33998
   max_speed: N/A
   password: NHwQTPLCfaTMSqTnU3mjcSxe
-- name: 🇺🇸 018
+- name: 🇺🇸 023
   type: ss
   server: 154.17.1.251
   port: 18334
@@ -631,7 +639,7 @@ proxies:
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpaM1lTMEt4Qjh1NWpncDczNmU4MzR5M0RhWHdTT1l6eGxGREZxcE5DYWFsREE5Q0VJUmNlWk9DQW5SMnlUUw==@154.17.1.251:18334#adi%7C0703+-+154.17.1.251%3A18334
   max_speed: N/A
   password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS
-- name: 🇺🇸 019
+- name: 🇺🇸 024
   type: ss
   server: 66.115.175.37
   port: 50168
@@ -658,11 +666,11 @@ proxies:
   id: 21
   latency_ms: 0
   link: trojan://63b21d86-a49c-4936-a634-0b5af3e30433@tuntro000.instconn.com:443?allowInsecure=1&sni=hkip5.686911.xyz#%E6%97%A5%E6%9C%AC
-  max_speed: 2.1MB
+  max_speed: N/A
   password: /63b21d86-a49c-4936-a634-0b5af3e30433
   skip-cert-verify: true
   sni: hkip5.686911.xyz
-- name: 🇭🇰 014
+- name: 🇭🇰 016
   type: trojan
   server: green2.cdntencentmusic.com
   port: 31101
@@ -680,11 +688,11 @@ proxies:
   id: 27
   latency_ms: 0
   link: trojan://63b21d86-a49c-4936-a634-0b5af3e30433@tuntro011.instconn.com:40130?allowInsecure=1&sni=cntwbta.686911.xyz#SG
-  max_speed: 1.4MB
+  max_speed: 572.6KB
   password: /63b21d86-a49c-4936-a634-0b5af3e30433
   skip-cert-verify: true
   sni: cntwbta.686911.xyz
-- name: 🇺🇸 020
+- name: 🇺🇸 025
   type: ss
   server: chengbai02.ascwt179.com
   port: 13223
@@ -694,7 +702,7 @@ proxies:
   link: ss://YWVzLTEyOC1nY206SlZyc0xMTjF0a044b1haTw==@chengbai02.ascwt179.com:13223#US%E7%BE%8E%E5%9B%BD%28mibei77.com+%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29+5
   max_speed: N/A
   password: JVrsLLN1tkN8oXZO
-- name: 🇺🇸 021
+- name: 🇺🇸 026
   type: ss
   server: liubu9.singdns.com
   port: 17459
@@ -712,9 +720,9 @@ proxies:
   id: 30
   latency_ms: 0
   link: ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.208:8080#US%E7%BE%8E%E5%9B%BD%28mibei77.com+%E7%B1%B3%E8%B4%9D%E8%8A%82%E7%82%B9%E5%88%86%E4%BA%AB%29+19
-  max_speed: 37.3MB
+  max_speed: 44.9MB
   password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇺🇸 022
+- name: 🇺🇸 027
   type: ss
   server: 185.193.48.157
   port: 443
@@ -744,7 +752,7 @@ proxies:
   link: ss://YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU=@63.180.254.10:443#8%E5%85%83%E8%80%81%E7%89%8C%E4%B8%93%E7%BA%BF%E6%9C%BA%E5%9C%BA%EF%BC%9Acczzuu.top
   max_speed: N/A
   password: amazonskr05
-- name: 🇭🇰 016
+- name: 🇭🇰 018
   type: trojan
   server: 203.198.122.20
   port: 443
@@ -754,7 +762,7 @@ proxies:
   max_speed: N/A
   password: /c1d83c0c7d57cead4379ba14a82df69b
   sni: www.nintendogames.net
-- name: 🇭🇰 017
+- name: 🇭🇰 019
   type: trojan
   server: 43.198.83.39
   port: 2266
@@ -814,7 +822,7 @@ proxies:
   id: 8
   latency_ms: 0
   link: trojan://c1d83c0c7d57cead4379ba14a82df69b@160.16.144.208:3076?security=tls&sni=www.nintendogames.net#%F0%9F%87%B8%F0%9F%87%AC+%E6%96%B0%E5%8A%A0%E5%9D%A1%7C%40stairnode
-  max_speed: 10.8MB
+  max_speed: N/A
   password: /c1d83c0c7d57cead4379ba14a82df69b
   sni: www.nintendogames.net
 - name: 🇯🇵 008
@@ -824,7 +832,7 @@ proxies:
   id: 9
   latency_ms: 0
   link: trojan://c1d83c0c7d57cead4379ba14a82df69b@160.16.124.17:3076?security=tls&sni=www.nintendogames.net#%F0%9F%87%B8%F0%9F%87%AC+%E6%96%B0%E5%8A%A0%E5%9D%A12%7C%40stairnode
-  max_speed: 12.4MB
+  max_speed: N/A
   password: /c1d83c0c7d57cead4379ba14a82df69b
   sni: www.nintendogames.net
 - name: 🇯🇵 009
@@ -845,7 +853,7 @@ proxies:
   id: 11
   latency_ms: 0
   link: trojan://c1d83c0c7d57cead4379ba14a82df69b@160.16.72.205:5076?security=tls&sni=www.nintendogames.net#%F0%9F%87%BA%F0%9F%87%B8+%E7%BE%8E%E5%9B%BD%7C%40stairnode
-  max_speed: 5.6MB
+  max_speed: N/A
   password: /c1d83c0c7d57cead4379ba14a82df69b
   sni: www.nintendogames.net
 - name: 🇯🇵 011
@@ -855,10 +863,10 @@ proxies:
   id: 12
   latency_ms: 0
   link: trojan://c1d83c0c7d57cead4379ba14a82df69b@160.16.72.205:491?security=tls&sni=www.nintendogames.net#%F0%9F%87%BA%F0%9F%87%B8+%E7%BE%8E%E5%9B%BD2%7C%40stairnode
-  max_speed: 856.6KB
+  max_speed: N/A
   password: /c1d83c0c7d57cead4379ba14a82df69b
   sni: www.nintendogames.net
-- name: 🇭🇰 018
+- name: 🇭🇰 020
   type: trojan
   server: 43.198.83.39
   port: 2173
@@ -879,7 +887,7 @@ proxies:
   link: ss://YWVzLTI1Ni1jZmI6cXdlclJFV1FAQA==@221.150.109.19:13832#%F0%9F%87%B0%F0%9F%87%B7+%E9%9F%A9%E5%9B%BD%7C%40stairnode
   max_speed: N/A
   password: qwerREWQ@@
-- name: 🇺🇸 026
+- name: 🇺🇸 031
   type: trojan
   server: www.calmlunch.com
   port: 443
