@@ -4,8 +4,13 @@ import socket
 from ipaddress import ip_address
 from collections import defaultdict
 import hashlib
-import sys
 from typing import List, Dict
+
+# ================= 新依赖：geoip2 =================
+try:
+    import geoip2.database
+except ImportError:
+    geoip2 = None
 
 # ================= 配置区 =================
 CONFIG_URLS = [
@@ -15,25 +20,35 @@ CONFIG_URLS = [
     # "https://another.source/sub3.yaml",
 ]
 
-# 如果你想用本地文件（Actions checkout 后），可以用文件路径代替 URL
-# CONFIG_FILES = ["config1.yaml", "config2.yaml"]
+# 数据库路径（Actions 会下载到此路径）
+MMDB_PATH = "GeoLite2-Country.mmdb"
 
-GEO_API = "GEO_API = "https://ip-api.com/line/{ip}?fields=countryCode""  # 返回国家代码如 "HK", "US"；备用：https://ipinfo.io/{ip}/country
+# 域名规则（优先匹配，针对你的节点）
+DOMAIN_RULES = {
+    "hk": "HK",      # hk 开头的域名 → 香港
+    "tw": "TW",      # tw 开头的域名 → 台湾
+    "us": "US",      # us 开头的域名 → 美国
+    # 可继续加其他模式，例如 "jp": "JP" 等
+}
 
-TIMEOUT = 6
-# ================= 配置区结束 =================
+reader = None
+if geoip2:
+    try:
+        reader = geoip2.database.Reader(MMDB_PATH)
+        print("GeoLite2 数据库加载成功")
+    except Exception as e:
+        print(f"GeoLite2 加载失败: {e}，将 fallback 到域名规则或 XX")
 
+# ================= 国旗 & 名称 =================
 def country_code_to_flag(code: str) -> str:
-    """将 ISO 3166-1 alpha-2 代码转为旗帜 emoji，例如 'US' → '🇺🇸'"""
     if not code or len(code) != 2:
-        return ""
+        return "🇽🇽"
     code = code.upper()
-    # 区域指示符字母 A-Z 的 Unicode 起点是 U+1F1E6 (🇦)
     offset = 0x1F1E6 - ord('A')
     try:
         return chr(ord(code[0]) + offset) + chr(ord(code[1]) + offset)
     except:
-        return ""
+        return "🇽🇽"
 
 country_names = {
     'US': '美国',    'CA': '加拿大',   'GB': '英国',     'AU': '澳大利亚',
@@ -49,22 +64,35 @@ country_names = {
     'CZ': '捷克',    'HU': '匈牙利',   'SK': '斯洛伐克', 'HK': '香港',
     'TW': '台湾',    'MO': '澳门',     'PL': '波兰',     'UA': '乌克兰',
     'RO': '罗马尼亚','RS': '塞尔维亚',
-    # 可继续补充，例如：
     'XX': '未知',
 }
 
-def get_country(ip: str) -> str:
-    try:
-        resp = requests.get(GEO_API.format(ip=ip), timeout=TIMEOUT)
-        if resp.status_code == 200:
-            cc = resp.text.strip()
-            return cc if cc and len(cc) == 2 else "XX"
-    except:
-        pass
+# ================= 函数 =================
+def get_country(ip: str, server: str = "") -> str:
+    server_lower = server.lower()
+    
+    # 步骤1: 域名规则匹配
+    for key, cc in DOMAIN_RULES.items():
+        if key in server_lower:
+            print(f"域名匹配: {server} → {cc}")
+            return cc.upper()
+    
+    # 步骤2: GeoLite2 离线查询
+    if reader:
+        try:
+            response = reader.country(ip)
+            cc = response.country.iso_code
+            if cc:
+                print(f"GeoLite2 查询: {ip} → {cc}")
+                return cc.upper()
+        except Exception as e:
+            print(f"GeoLite2 查询失败 for {ip}: {e}")
+    
+    # 最终 fallback
+    print(f"未知: {server} / {ip}")
     return "XX"
 
 def normalize_proxy_key(proxy: Dict) -> str:
-    """生成节点的唯一标识，用于去重"""
     key_fields = ["type", "server", "port"]
     if proxy.get("type") in ["vmess", "vless"]:
         key_fields.append("uuid")
@@ -84,11 +112,12 @@ def fetch_config(source) -> Dict:
         with open(source, encoding="utf-8") as f:
             return yaml.safe_load(f)
 
+# ================= 主逻辑 =================
 # 收集所有 proxies
 all_proxies = []
 seen_keys = set()
 
-for src in CONFIG_URLS:  # 或 CONFIG_FILES
+for src in CONFIG_URLS:
     print(f"处理: {src}")
     try:
         config = fetch_config(src)
@@ -112,19 +141,18 @@ for proxy in all_proxies:
         continue
 
     try:
-        ip = ip_address(server)
+        ip = str(ip_address(server))
     except ValueError:
         try:
             ip = socket.gethostbyname(server)
         except Exception:
             print(f"域名解析失败: {server}")
-            country = "XX"
             ip = None
-
-    if 'ip' in locals() and ip:
-        country = get_country(str(ip))
+            country = "XX"
+        else:
+            country = get_country(ip, server=server)
     else:
-        country = "XX"
+        country = get_country(ip, server=server)
 
     country_groups[country].append(proxy)
 
@@ -136,33 +164,28 @@ counters = {c: 1 for c in sorted_countries}
 
 for country in sorted_countries:
     flag = country_code_to_flag(country)
-    display_name = country_names.get(country, country)  # 找不到就用代码本身
+    display_name = country_names.get(country, country)
     display_prefix = f"{flag}{display_name}" if flag else f"{country}"
 
     for proxy in country_groups[country]:
         old_name = proxy["name"]
-        # 编号用两位数，方便排序：01、02...
         new_name = f"{display_prefix}-{counters[country]:02d}"
         proxy["name"] = new_name
         name_mapping[old_name] = new_name
         new_proxies.append(proxy)
         counters[country] += 1
 
-# 创建基础 config（以第一个文件为基础，或新建）
+# 创建基础 config
 base_config = fetch_config(CONFIG_URLS[0]) if CONFIG_URLS else {}
 base_config["proxies"] = new_proxies
 
-# 更新 proxy-groups 中的 proxies 名称
+# 更新 proxy-groups
 if "proxy-groups" in base_config:
     for group in base_config["proxy-groups"]:
         if "proxies" in group and isinstance(group["proxies"], list):
             group["proxies"] = [
                 name_mapping.get(name, name) for name in group["proxies"]
             ]
-
-# 可选：清空或重置部分字段（如 rules、rule-providers 如果需要统一管理）
-# base_config.pop("rules", None)
-# base_config.pop("rule-providers", None)
 
 # 输出
 with open("merged-clash.yaml", "w", encoding="utf-8") as f:
