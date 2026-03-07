@@ -1,6 +1,6 @@
 name: Auto Process and Test Proxies with LiteSpeedTest
 
-on:
+#on:
   schedule:
     - cron: '15 22 * * *'  # 每天 UTC 00:00 运行
   workflow_dispatch:  # 允许手动触发
