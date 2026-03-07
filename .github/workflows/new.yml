@@ -2,7 +2,7 @@ name: Merge and Process Clash Subscriptions
 
 on:
   schedule:
-    - cron: '30 8 * * *'          # 每天 UTC 08:30 执行（北京时间 16:30）
+    - cron: '15 22 * * *'          # 每天 UTC 08:30 执行（北京时间 16:30）
   workflow_dispatch:              # 支持手动触发
 
 jobs:
