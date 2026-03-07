@@ -60,11 +60,11 @@ print("=== Acquired Clash Subscription URLs ===")
 for i, url in enumerate(urls, 1):
     print(f"URL {i}: {url}")
 latest_hongkongclash_urls = get_latest_hongkongclash_yaml()
-if latest_hongkongclash_urls:
-    urls.extend(latest_hongkongclash_urls)
-    for i, url in enumerate(latest_hongkongclash_urls, len(urls) - len(latest_hongkongclash_urls) + 1):
-        print(f"URL {i}: {url}")
-print(f"Total URLs: {len(urls)}")
+# if latest_hongkongclash_urls:
+#    urls.extend(latest_hongkongclash_urls)
+#    for i, url in enumerate(latest_hongkongclash_urls, len(urls) - len(latest_hongkongclash_urls) + 1):
+#        print(f"URL {i}: {url}")
+# print(f"Total URLs: {len(urls)}")
 print("======================================")
 
 # 输出所有节点文件链接到 node_urls.txt
