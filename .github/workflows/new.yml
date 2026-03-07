@@ -46,6 +46,6 @@ jobs:
           git add merged-clash.yaml
           git diff --staged --quiet && echo "No changes to commit" && exit 0
           git commit -m "chore: auto update merged-clash.yaml $(date '+%Y-%m-%d %H:%M UTC')"
-          git push origin HEAD:main
+          git push origin HEAD:master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
