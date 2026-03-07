@@ -1,0 +1,51 @@
+name: Merge and Process Clash Subscriptions
+
+on:
+  schedule:
+    - cron: '30 8 * * *'          # 每天 UTC 08:30 执行（北京时间 16:30）
+  workflow_dispatch:              # 支持手动触发（在 GitHub → Actions 页面点 Run workflow）
+
+jobs:
+  merge-and-commit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write             # 非常重要！允许 workflow 推送代码回仓库
+
+    steps:
+      # 1. 检出仓库代码
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0           # 需要完整历史才能 commit
+
+      # 2. 设置 Python 环境
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # 3. 安装依赖
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests pyyaml
+
+      # 4. 执行合并脚本
+      - name: Run Clash merge script
+        run: python merge_clash.py
+
+      # 5. 配置 git 用户信息（必须）
+      - name: Configure git user
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+
+      # 6. 添加、提交、推送变更
+      - name: Commit and push merged file
+        run: |
+          git add merged-clash.yaml
+          git diff --staged --quiet && echo "No changes to commit" && exit 0
+          git commit -m "chore: auto update merged-clash.yaml $(date '+%Y-%m-%d %H:%M UTC')"
+          git push origin HEAD:main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
