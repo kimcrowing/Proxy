@@ -6,6 +6,7 @@ from typing import Dict
 
 import requests
 import yaml
+import re
 
 # ================= 第三方依赖（geoip2） =================
 try:
@@ -22,37 +23,6 @@ CONFIG_URLS = [
 ]
 
 MMDB_PATH = "GeoLite2-Country.mmdb"
-
-# Cloudflare IP 前缀（基于网上常见范围，注册地多为 US）
-CLOUDFLARE_PREFIXES = [
-    "104.16.", "104.17.", "104.18.", "104.19.", "104.20.", "104.21.", "104.22.", "104.23.", "104.24.", "104.25.",
-    "104.26.", "104.27.", "104.28.", "104.29.", "104.30.", "104.31.",
-    "162.158.", "162.159.",
-    "172.64.", "172.65.", "172.66.", "172.67.", "172.68.", "172.69.", "172.70.", "172.71.",
-    "173.245.48.", "173.245.49.", "173.245.50.", "173.245.51.", "173.245.52.", "173.245.53.", "173.245.54.", "173.245.55.",
-    "173.245.56.", "173.245.57.", "173.245.58.", "173.245.59.", "173.245.60.", "173.245.61.", "173.245.62.", "173.245.63.",
-    "188.114.96.", "188.114.97.", "188.114.98.", "188.114.99.", "188.114.100.", "188.114.101.", "188.114.102.", "188.114.103.",
-    "188.114.104.", "188.114.105.", "188.114.106.", "188.114.107.", "188.114.108.", "188.114.109.", "188.114.110.", "188.114.111.",
-    "190.93.240.", "190.93.241.", "190.93.242.", "190.93.243.", "190.93.244.", "190.93.245.", "190.93.246.", "190.93.247.",
-    "190.93.248.", "190.93.249.", "190.93.250.", "190.93.251.", "190.93.252.", "190.93.253.", "190.93.254.", "190.93.255.",
-    "197.234.240.", "197.234.241.", "197.234.242.", "197.234.243.",
-    "198.41.128.", "198.41.129.", "198.41.130.", "198.41.131.", "198.41.132.", "198.41.133.", "198.41.134.", "198.41.135.",
-    "198.41.136.", "198.41.137.", "198.41.138.", "198.41.139.", "198.41.140.", "198.41.141.", "198.41.142.", "198.41.143.",
-    "198.41.144.", "198.41.145.", "198.41.146.", "198.41.147.", "198.41.148.", "198.41.149.", "198.41.150.", "198.41.151.",
-    "198.41.152.", "198.41.153.", "198.41.154.", "198.41.155.", "198.41.156.", "198.41.157.", "198.41.158.", "198.41.159.",
-    "198.41.160.", "198.41.161.", "198.41.162.", "198.41.163.", "198.41.164.", "198.41.165.", "198.41.166.", "198.41.167.",
-    "198.41.168.", "198.41.169.", "198.41.170.", "198.41.171.", "198.41.172.", "198.41.173.", "198.41.174.", "198.41.175.",
-    "198.41.176.", "198.41.177.", "198.41.178.", "198.41.179.", "198.41.180.", "198.41.181.", "198.41.182.", "198.41.183.",
-    "198.41.184.", "198.41.185.", "198.41.186.", "198.41.187.", "198.41.188.", "198.41.189.", "198.41.190.", "198.41.191.",
-    "198.41.192.", "198.41.193.", "198.41.194.", "198.41.195.", "198.41.196.", "198.41.197.", "198.41.198.", "198.41.199.",
-    "198.41.200.", "198.41.201.", "198.41.202.", "198.41.203.", "198.41.204.", "198.41.205.", "198.41.206.", "198.41.207.",
-    "198.41.208.", "198.41.209.", "198.41.210.", "198.41.211.", "198.41.212.", "198.41.213.", "198.41.214.", "198.41.215.",
-    "198.41.216.", "198.41.217.", "198.41.218.", "198.41.219.", "198.41.220.", "198.41.221.", "198.41.222.", "198.41.223.",
-    "198.41.224.", "198.41.225.", "198.41.226.", "198.41.227.", "198.41.228.", "198.41.229.", "198.41.230.", "198.41.231.",
-    "198.41.232.", "198.41.233.", "198.41.234.", "198.41.235.", "198.41.236.", "198.41.237.", "198.41.238.", "198.41.239.",
-    "198.41.240.", "198.41.241.", "198.41.242.", "198.41.243.", "198.41.244.", "198.41.245.", "198.41.246.", "198.41.247.",
-    "198.41.248.", "198.41.249.", "198.41.250.", "198.41.251.", "198.41.252.", "198.41.253.", "198.41.254.", "198.41.255.",
-]
 
 # 域名规则（优先匹配，根据常见节点特征设置）
 DOMAIN_RULES = {
@@ -72,7 +42,7 @@ DOMAIN_RULES = {
     "206353.xyz": "HK",
     "206355.xyz": "HK",
 
-    # 常见CDN/伪装关键词（可根据实际效果继续调整）
+    # 常见CDN/伪装关键词
     "cloudflare": "US",
     "akamai": "US",
     "fastly": "US",
@@ -88,6 +58,17 @@ DOMAIN_RULES = {
     "dpdns.org": "US",
     "db-link.in": "US",
 }
+
+# Cloudflare IP 前缀（注册地多为 US）
+CLOUDFLARE_PREFIXES = [
+    "104.16.", "104.17.", "104.18.", "104.19.", "104.20.", "104.21.", "104.22.", "104.23.", "104.24.", "104.25.",
+    "104.26.", "104.27.", "104.28.", "104.29.", "104.30.", "104.31.",
+    "162.158.", "162.159.",
+    "172.64.", "172.65.", "172.66.", "172.67.", "172.68.", "172.69.", "172.70.", "172.71.",
+    "173.245.48.", "173.245.49.", "173.245.50.", "173.245.51.", "173.245.52.", "173.245.53.", "173.245.54.", "173.245.55.",
+    "173.245.56.", "173.245.57.", "173.245.58.", "173.245.59.", "173.245.60.", "173.245.61.", "173.245.62.", "173.245.63.",
+    "188.114.96.", "188.114.97.", "188.114.98.", "188.114.99.", "188.114.100.", "188.114.101.", "188.114.102.", "188.114.103.",
+]
 
 # 国旗 emoji 生成
 def country_code_to_flag(code: str) -> str:
@@ -132,26 +113,74 @@ if geoip2:
         reader = geoip2.database.Reader(MMDB_PATH)
         print("GeoLite2 数据库加载成功")
     except Exception as e:
-        print(f"GeoLite2 加载失败: {e}，将仅依赖域名规则")
+        print(f"GeoLite2 加载失败: {e}，将仅依赖规则判断")
 
 # ================= 核心函数 =================
-def get_country(ip: str, server: str = "") -> str:
-    """获取国家代码：优先域名规则 → Cloudflare IP → GeoLite2 → XX"""
+def extract_country_from_name(name: str) -> str | None:
+    """
+    从原有节点名称中提取国家/地区代码（最常见写法）
+    支持的格式示例：
+    - [HK] xxx
+    - HK-01
+    - 香港-1
+    - 🇭🇰 HongKong Node
+    - US New York
+    - 🇺🇸美国-03
+    """
+    name_upper = name.upper()
+
+    # 常见国家/地区代码（2字母）
+    common_codes = list(country_names.keys()) + ['UK', 'UK', 'KOREA', 'KOR', 'JAPAN', 'JPN']
+    for code in common_codes:
+        if code in name_upper:
+            # 避免误判（如 "US" 在 "trust" 中）
+            pattern = r'\b' + re.escape(code) + r'\b'
+            if re.search(pattern, name_upper):
+                return code.upper()
+
+    # 中文国家名称
+    for code, cn_name in country_names.items():
+        if cn_name in name:
+            return code
+
+    # 国旗 emoji → 代码
+    flag_pattern = r'[\U0001F1E6-\U0001F1FF]{2}'
+    flags = re.findall(flag_pattern, name)
+    if flags:
+        # 国旗 emoji 转代码（区域指示符）
+        for flag in flags:
+            code = chr(ord(flag[0]) - 0x1F1E6 + ord('A')) + chr(ord(flag[1]) - 0x1F1E6 + ord('A'))
+            if code in country_names:
+                return code
+
+    return None
+
+
+def get_country(ip: str, server: str = "", original_name: str = "") -> str:
+    """获取国家代码：优先原有名称 → 域名规则 → Cloudflare IP → GeoLite2 → XX"""
+
+    # 最高优先级：原有节点名称中包含的国家信息
+    if original_name:
+        code_from_name = extract_country_from_name(original_name)
+        if code_from_name:
+            print(f"从原名称提取: {original_name} → {code_from_name}")
+            return code_from_name
+
     server_lower = server.lower()
 
-    # 优先：域名规则匹配
+    # 次优先：域名规则匹配
     for key, cc in DOMAIN_RULES.items():
         if key in server_lower:
             print(f"域名匹配: {server} → {cc}")
             return cc.upper()
 
-    # 次选：Cloudflare IP 范围匹配（最高概率为 US）
+    # Cloudflare IP 范围匹配（注册地多为 US）
     for prefix in CLOUDFLARE_PREFIXES:
         if ip.startswith(prefix):
             print(f"Cloudflare IP 匹配: {ip} → US")
-            return "US"  # 基于数据库返回，设为 US；如果实际节点为亚洲，可改 "HK" 或 "SG"
+            return "US"
 
-    # 三选：GeoLite2 查询
+    # GeoLite2 查询
     if reader:
         try:
             response = reader.country(ip)
@@ -195,7 +224,6 @@ def fetch_config(source: str) -> Dict:
 
 
 # ================= 主逻辑 =================
-# 1. 收集并去重所有 proxies
 all_proxies = []
 seen_keys = set()
 
@@ -214,30 +242,33 @@ for src in CONFIG_URLS:
 
 print(f"去重后有效节点总数：{len(all_proxies)}")
 
-# 2. 查询国家并分组
+# 查询国家并分组
 country_groups = defaultdict(list)
 
 for proxy in all_proxies:
-    server = proxy.get("server")
-    if not server:
-        continue
+    server = proxy.get("server", "")
+    original_name = proxy.get("name", "")
 
-    try:
-        ip = str(ip_address(server))
-    except ValueError:
-        try:
-            ip = socket.gethostbyname(server)
-        except Exception:
-            print(f"域名解析失败: {server}")
-            country = "XX"
-        else:
-            country = get_country(ip, server)
+    if not server:
+        country = "XX"
     else:
-        country = get_country(ip, server)
+        try:
+            ip = str(ip_address(server))
+        except ValueError:
+            try:
+                ip = socket.gethostbyname(server)
+            except Exception:
+                print(f"域名解析失败: {server}")
+                ip = ""
+                country = "XX"
+            else:
+                country = get_country(ip, server, original_name)
+        else:
+            country = get_country(ip, server, original_name)
 
     country_groups[country].append(proxy)
 
-# 3. 按国家排序 & 重命名
+# 按国家排序 & 重命名
 sorted_countries = sorted(country_groups.keys())
 new_proxies = []
 name_mapping = {}
@@ -256,7 +287,7 @@ for country in sorted_countries:
         new_proxies.append(proxy)
         counters[country] += 1
 
-# 4. 构建新配置
+# 构建新配置
 base_config = fetch_config(CONFIG_URLS[0]) if CONFIG_URLS else {}
 base_config["proxies"] = new_proxies
 
@@ -268,7 +299,7 @@ if "proxy-groups" in base_config:
                 name_mapping.get(name, name) for name in group["proxies"]
             ]
 
-# 5. 保存结果
+# 保存结果
 with open("merged-clash.yaml", "w", encoding="utf-8") as f:
     yaml.safe_dump(base_config, f, allow_unicode=True, sort_keys=False)
 
