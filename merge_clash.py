@@ -18,7 +18,7 @@ CONFIG_URLS = [
 # 如果你想用本地文件（Actions checkout 后），可以用文件路径代替 URL
 # CONFIG_FILES = ["config1.yaml", "config2.yaml"]
 
-GEO_API = "GEO_API = "httpss://ip-api.com/line/{ip}?fields=countryCode""  # 返回国家代码如 "HK", "US"；备用：https://ipinfo.io/{ip}/country
+GEO_API = "GEO_API = "https://ip-api.com/line/{ip}?fields=countryCode""  # 返回国家代码如 "HK", "US"；备用：https://ipinfo.io/{ip}/country
 
 TIMEOUT = 6
 # ================= 配置区结束 =================
