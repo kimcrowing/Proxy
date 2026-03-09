@@ -3,6 +3,7 @@ import socket
 from collections import defaultdict
 from ipaddress import ip_address
 import re
+from typing import Dict  # 添加此导入以修复 Dict 类型提示
 
 import requests
 import yaml
