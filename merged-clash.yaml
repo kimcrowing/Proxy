@@ -47,6 +47,55 @@ tun:
   - 1.0.0.1
 proxies:
 - name: 🇦🇹奥地利-01
+  type: vless
+  server: 193.233.232.56
+  port: 443
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  network: ws
+  servername: 3-9sp.pages.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: 3-9sp.pages.dev
+- name: 🇦🇹奥地利-02
+  type: vless
+  server: 193.233.233.105
+  port: 443
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  network: ws
+  servername: 3-7gj.pages.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: 3-7gj.pages.dev
+- name: 🇦🇹奥地利-03
+  type: vless
+  server: 193.233.232.9
+  port: 443
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  network: ws
+  servername: czvjaheuiweghruiwegfbldsafsdgaryreygnxvbhsfgretgreyhthsfgj.pages.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: czvjaheuiweghruiwegfbldsafsdgaryreygnxvbhsfgretgreyhthsfgj.pages.dev
+- name: 🇦🇹奥地利-04
+  type: trojan
+  server: 152.53.200.98
+  port: 8444
+  password: trojan
+  sni: jflsjlaf.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+- name: 🇦🇹奥地利-05
   type: trojan
   server: 152.53.60.198
   port: 8444
@@ -56,7 +105,9 @@ proxies:
   tls: true
   ws-opts:
     path: /
-- name: 🇦🇹奥地利-02
+    headers:
+      Host: jflsjlaf.pages.dev
+- name: 🇦🇹奥地利-06
   type: trojan
   server: 152.53.45.251
   port: 8888
@@ -65,22 +116,10 @@ proxies:
   skip-cert-verify: true
   tls: true
   ws-opts:
-    path: /
-    headers:
-      Host: jflsjlaf.pages.dev
-- name: 🇦🇹奥地利-03
-  type: trojan
-  server: 152.53.200.98
-  port: 8444
-  password: trojan
-  sni: jflsjlaf.pages.dev
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
     path: //
     headers:
       Host: jflsjlaf.pages.dev
-- name: 🇦🇹奥地利-04
+- name: 🇦🇹奥地利-07
   type: trojan
   server: 152.53.200.167
   port: 8444
@@ -92,142 +131,57 @@ proxies:
     path: /
     headers:
       Host: jflsjlaf.pages.dev
-- name: 🇨🇦加拿大-01
-  type: trojan
-  server: 23.227.38.166
-  port: 443
-  password: 89e44895-1fe7-4305-b81b-56f118fcec23
-  sni: ni5qwas2a6ysde23.usgogo202510.top
-  skip-cert-verify: false
-  tls: true
-- name: 🇨🇦加拿大-02
-  type: trojan
-  server: 23.227.38.113
-  port: 443
-  password: 89e44895-1fe7-4305-b81b-56f118fcec23
-  sni: ni5qwas2a6ysde23.usgogo202510.top
-  skip-cert-verify: false
-  tls: true
-- name: 🇨🇦加拿大-03
-  type: trojan
-  server: 23.227.38.33
-  port: 443
-  password: 89e44895-1fe7-4305-b81b-56f118fcec23
-  sni: bjbx8xu6iih7zht5.jptimecsgo.xyz
-  skip-cert-verify: false
-  tls: true
-- name: 🇨🇦加拿大-04
-  type: trojan
-  server: 23.227.38.72
-  port: 443
-  password: 89e44895-1fe7-4305-b81b-56f118fcec23
-  sni: light.bpsg2026.top
-  skip-cert-verify: false
-  tls: true
-- name: 🇨🇦加拿大-05
-  type: trojan
-  server: 23.227.38.178
-  port: 443
-  password: 89e44895-1fe7-4305-b81b-56f118fcec23
-  sni: q6clkp794liy3y90.hktimecsgo.xyz
-  skip-cert-verify: false
-  tls: true
-- name: 🇨🇦加拿大-06
-  type: trojan
-  server: 23.227.38.84
-  port: 443
-  password: 89e44895-1fe7-4305-b81b-56f118fcec23
-  sni: 9l3ysxf7rj3nz549.tkgogocsgo.top
-  skip-cert-verify: false
-  tls: true
-- name: 🇨🇦加拿大-07
-  type: trojan
-  server: 23.227.38.43
-  port: 443
-  password: 89e44895-1fe7-4305-b81b-56f118fcec23
-  sni: ukmp1pz6n5doe90u.tkgogocsgo.top
-  skip-cert-verify: false
-  tls: true
-- name: 🇨🇦加拿大-08
-  type: trojan
-  server: 23.227.38.212
-  port: 443
-  password: 89e44895-1fe7-4305-b81b-56f118fcec23
-  sni: fast.usfaster.top
-  skip-cert-verify: false
-  tls: true
-- name: 🇨🇦加拿大-09
-  type: trojan
-  server: 23.227.38.33
-  port: 443
-  password: ac246072-3078-4cd2-ba8a-8c91d4eb3570
-  sni: bjbx8xu6iih7zht5.jptimecsgo.xyz
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /images
-    headers:
-      Host: bjbx8xu6iih7zht5.jptimecsgo.xyz
-- name: 🇨🇦加拿大-10
-  type: trojan
-  server: 23.227.38.72
-  port: 443
-  password: ac246072-3078-4cd2-ba8a-8c91d4eb3570
-  sni: light.bpsg2026.top
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /images
-    headers:
-      Host: light.bpsg2026.top
-- name: 🇨🇦加拿大-11
-  type: trojan
-  server: 23.227.38.43
-  port: 443
-  password: ac246072-3078-4cd2-ba8a-8c91d4eb3570
-  sni: ukmp1pz6n5doe90u.tkgogocsgo.top
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /images
-    headers:
-      Host: ukmp1pz6n5doe90u.tkgogocsgo.top
-- name: 🇨🇦加拿大-12
-  type: trojan
-  server: 23.227.38.212
-  port: 443
-  password: ac246072-3078-4cd2-ba8a-8c91d4eb3570
-  sni: fast.usfaster.top
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /images
-    headers:
-      Host: fast.usfaster.top
-- name: 🇨🇦加拿大-13
-  type: trojan
-  server: 23.227.38.178
-  port: 443
-  password: ac246072-3078-4cd2-ba8a-8c91d4eb3570
-  sni: q6clkp794liy3y90.hktimecsgo.xyz
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /images
-    headers:
-      Host: q6clkp794liy3y90.hktimecsgo.xyz
-- name: 🇨🇿捷克-01
+- name: 🇦🇺澳大利亚-01
   type: vless
-  server: in-nl-1c.ray-balance.space
+  server: 5.34.209.231
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.navy
+  tls: true
+  ws-opts:
+    path: /?ed=2560&telegram🇨🇳@wangcai2
+    headers:
+      Host: sni.111000.v6.navy
+- name: 🇧🇪比利时-01
+  type: vless
+  server: 128.127.180.105
   port: 443
-  uuid: 0eca1f22-e5a1-4888-a0fa-c2345e87cf2f
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  network: ws
+  servername: 3-2h8.pages.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: 3-2h8.pages.dev
+- name: 🇧🇷巴西-01
+  type: vless
+  server: 132.226.163.224
+  port: 2053
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  network: ws
+  servername: 3-7ny.pages.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: 3-7ny.pages.dev
+- name: 🇩🇪德国-01
+  type: vless
+  server: 144.31.94.4
+  port: 42428
+  uuid: 27d0c642-693c-4070-83b4-0e9803ba71b3
   servername: eh.vk.com
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   reality-opts:
-    public-key: 1Hr3vZv1JC7PuvH8iGfA7LyMHi2afnvp9y_q507I0Ew
-- name: 🇩🇪德国-01
+    public-key: ccICtTNR2BXmdCzazGcyci16c7O1kJIv6ugDM6xY2XY
+    short-id: 24adcebe
+- name: 🇩🇪德国-02
   type: vless
   server: 45.153.245.222
   port: 19002
@@ -238,16 +192,6 @@ proxies:
   client-fingerprint: firefox
   reality-opts:
     public-key: bITbm8a-MK3pmsZLIaT75x9YWeilkfhvobJYaRcr6zs
-- name: 🇩🇪德国-02
-  type: vless
-  server: 89.58.40.177
-  port: 8443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.v6.navy
-  tls: true
-  ws-opts:
-    path: /
 - name: 🇩🇪德国-03
   type: vless
   server: 89.58.32.115
@@ -257,22 +201,22 @@ proxies:
   servername: sni.111000.v6.navy
   tls: true
   ws-opts:
-    path: /?ed=2560&Telegram🇨🇳+@WangCai2
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
     headers:
       Host: sni.111000.v6.navy
-- name: 🇪🇸西班牙-01
-  type: trojan
-  server: 109.234.211.66
-  port: 2087
-  password: trojan
-  sni: store.timimi.dpdns.org
-  skip-cert-verify: false
+- name: 🇩🇪德国-04
+  type: vless
+  server: 89.58.40.177
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.navy
   tls: true
   ws-opts:
     path: /
     headers:
-      Host: store.timimi.dpdns.org
-- name: 🇪🇸西班牙-02
+      Host: sni.111000.v6.navy
+- name: 🇪🇸西班牙-01
   type: vless
   server: 188.130.207.92
   port: 8443
@@ -285,19 +229,69 @@ proxies:
     path: /?ed=2560&Telegram🇨🇳+@WangCai2
     headers:
       Host: sni.111000.v6.navy
+- name: 🇪🇸西班牙-02
+  type: vless
+  server: 185.236.26.30
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+- name: 🇪🇸西班牙-03
+  type: trojan
+  server: 109.234.211.66
+  port: 8443
+  password: trojan
+  sni: store.timimi.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: store.timimi.dpdns.org
+- name: 🇪🇸西班牙-04
+  type: trojan
+  server: 109.234.211.66
+  port: 2087
+  password: trojan
+  sni: store.timimi.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: store.timimi.dpdns.org
 - name: 🇫🇷法国-01
   type: vless
-  server: nl1.samovargate.com
-  port: 443
-  uuid: 82b5b465-3307-4a25-acef-abd1649bbedf
-  servername: www.microsoft.com
+  server: 217.60.252.232
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.navy
   tls: true
-  flow: xtls-rprx-vision
   client-fingerprint: chrome
-  reality-opts:
-    public-key: gwuAehnMX6e-n1fxIenfjx43j3qXXi7Cb4wfnW5VyBQ
-    short-id: f04729f65b9ea261
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.v6.navy
 - name: 🇫🇷法国-02
+  type: vless
+  server: 103.102.228.113
+  port: 443
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  network: ws
+  servername: p-6fa.pages.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: p-6fa.pages.dev
+- name: 🇫🇷法国-03
   type: vless
   server: 94.183.186.27
   port: 443
@@ -306,344 +300,10 @@ proxies:
   servername: sni.111000.v6.navy
   tls: true
   ws-opts:
-    path: /?ed=2560&telegram🇨🇳@wangcai2
-    headers:
-      Host: sni.111000.v6.navy
-- name: 🇫🇷法国-03
-  type: vmess
-  server: t.cnmjcn.cyou
-  port: 16617
-  uuid: c6e0db22-c963-4c99-9f7d-ee8a39f64a07
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
     path: /
     headers:
-      Host: fc05e62e9e82b8264faaba517868b9e8.mobgslb.tbcache.com
+      Host: sni.111000.v6.navy
 - name: 🇫🇷法国-04
-  type: vmess
-  server: m.cnmjin.net
-  port: 16644
-  uuid: c6e0db22-c963-4c99-9f7d-ee8a39f64a07
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fc05e62e9e82b8264faaba517868b9e8.mobgslb.tbcache.com
-- name: 🇫🇷法国-05
-  type: vless
-  server: 217.60.252.232
-  port: 2053
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.v6.navy
-  tls: true
-  ws-opts:
-    path: /?ed=2560&telegram🇨🇳@wangcai2
-    headers:
-      Host: sni.111000.v6.navy
-- name: 🇫🇷法国-06
-  type: vmess
-  server: planb.mojcn.com
-  port: 16617
-  uuid: c6e0db22-c963-4c99-9f7d-ee8a39f64a07
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fc05e62e9e82b8264faaba517868b9e8.mobgslb.tbcache.com
-- name: 🇫🇷法国-07
-  type: vmess
-  server: planb.mojcn.com
-  port: 16622
-  uuid: c6e0db22-c963-4c99-9f7d-ee8a39f64a07
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fc05e62e9e82b8264faaba517868b9e8.mobgslb.tbcache.com
-- name: 🇫🇷法国-08
-  type: vmess
-  server: t.cnmjcn.cyou
-  port: 16648
-  uuid: c6e0db22-c963-4c99-9f7d-ee8a39f64a07
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fc05e62e9e82b8264faaba517868b9e8.mobgslb.tbcache.com
-- name: 🇫🇷法国-09
-  type: vmess
-  server: t.cnmjcn.cyou
-  port: 16618
-  uuid: c6e0db22-c963-4c99-9f7d-ee8a39f64a07
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fc05e62e9e82b8264faaba517868b9e8.mobgslb.tbcache.com
-- name: 🇫🇷法国-10
-  type: vmess
-  server: m.cnmjin.net
-  port: 16617
-  uuid: c6e0db22-c963-4c99-9f7d-ee8a39f64a07
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fc05e62e9e82b8264faaba517868b9e8.mobgslb.tbcache.com
-- name: 🇫🇷法国-11
-  type: vmess
-  server: planb.mojcn.com
-  port: 16626
-  uuid: c6e0db22-c963-4c99-9f7d-ee8a39f64a07
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fc05e62e9e82b8264faaba517868b9e8.mobgslb.tbcache.com
-- name: 🇫🇷法国-12
-  type: vmess
-  server: m.cnmjin.net
-  port: 16632
-  uuid: c6e0db22-c963-4c99-9f7d-ee8a39f64a07
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fc05e62e9e82b8264faaba517868b9e8.mobgslb.tbcache.com
-- name: 🇫🇷法国-13
-  type: vmess
-  server: m.cnmjin.net
-  port: 16622
-  uuid: c6e0db22-c963-4c99-9f7d-ee8a39f64a07
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fc05e62e9e82b8264faaba517868b9e8.mobgslb.tbcache.com
-- name: 🇫🇷法国-14
-  type: vmess
-  server: t.cnmjcn.cyou
-  port: 16622
-  uuid: c6e0db22-c963-4c99-9f7d-ee8a39f64a07
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fc05e62e9e82b8264faaba517868b9e8.mobgslb.tbcache.com
-- name: 🇫🇷法国-15
-  type: vmess
-  server: m.cnmjin.net
-  port: 16645
-  uuid: c6e0db22-c963-4c99-9f7d-ee8a39f64a07
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fc05e62e9e82b8264faaba517868b9e8.mobgslb.tbcache.com
-- name: 🇫🇷法国-16
-  type: vmess
-  server: t.cnmjcn.cyou
-  port: 16616
-  uuid: c6e0db22-c963-4c99-9f7d-ee8a39f64a07
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fc05e62e9e82b8264faaba517868b9e8.mobgslb.tbcache.com
-- name: 🇫🇷法国-17
-  type: vmess
-  server: m.cnmjin.net
-  port: 16648
-  uuid: c6e0db22-c963-4c99-9f7d-ee8a39f64a07
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fc05e62e9e82b8264faaba517868b9e8.mobgslb.tbcache.com
-- name: 🇫🇷法国-18
-  type: vmess
-  server: m.cnmjin.net
-  port: 16618
-  uuid: c6e0db22-c963-4c99-9f7d-ee8a39f64a07
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fc05e62e9e82b8264faaba517868b9e8.mobgslb.tbcache.com
-- name: 🇫🇷法国-19
-  type: vmess
-  server: t.cnmjcn.cyou
-  port: 16632
-  uuid: c6e0db22-c963-4c99-9f7d-ee8a39f64a07
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fc05e62e9e82b8264faaba517868b9e8.mobgslb.tbcache.com
-- name: 🇫🇷法国-20
-  type: vmess
-  server: m.cnmjin.net
-  port: 16616
-  uuid: c6e0db22-c963-4c99-9f7d-ee8a39f64a07
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fc05e62e9e82b8264faaba517868b9e8.mobgslb.tbcache.com
-- name: 🇫🇷法国-21
-  type: vmess
-  server: planb.mojcn.com
-  port: 16645
-  uuid: c6e0db22-c963-4c99-9f7d-ee8a39f64a07
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fc05e62e9e82b8264faaba517868b9e8.mobgslb.tbcache.com
-- name: 🇫🇷法国-22
-  type: vmess
-  server: planb.mojcn.com
-  port: 16632
-  uuid: c6e0db22-c963-4c99-9f7d-ee8a39f64a07
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fc05e62e9e82b8264faaba517868b9e8.mobgslb.tbcache.com
-- name: 🇫🇷法国-23
-  type: vmess
-  server: m.cnmjin.net
-  port: 16641
-  uuid: c6e0db22-c963-4c99-9f7d-ee8a39f64a07
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fc05e62e9e82b8264faaba517868b9e8.mobgslb.tbcache.com
-- name: 🇫🇷法国-24
-  type: vmess
-  server: planb.mojcn.com
-  port: 16641
-  uuid: c6e0db22-c963-4c99-9f7d-ee8a39f64a07
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fc05e62e9e82b8264faaba517868b9e8.mobgslb.tbcache.com
-- name: 🇫🇷法国-25
-  type: vmess
-  server: planb.mojcn.com
-  port: 16644
-  uuid: c6e0db22-c963-4c99-9f7d-ee8a39f64a07
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fc05e62e9e82b8264faaba517868b9e8.mobgslb.tbcache.com
-- name: 🇫🇷法国-26
-  type: vmess
-  server: 2001:bc8:32d7:302::15
-  port: 44579
-  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-    headers:
-      Host: TURK.NET
-- name: 🇫🇷法国-27
   type: vmess
   server: 2001:bc8:32d7:302::10
   port: 44579
@@ -654,8 +314,10 @@ proxies:
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
-- name: 🇫🇷法国-28
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+    headers:
+      Host: TURK1.NET.NET
+- name: 🇫🇷法国-05
   type: vmess
   server: 2001:bc8:32d7:302::17
   port: 44579
@@ -669,9 +331,9 @@ proxies:
     path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
     headers:
       Host: AZERB.NET
-- name: 🇫🇷法国-29
+- name: 🇫🇷法国-06
   type: vmess
-  server: 2001:bc8:32d7:302::16
+  server: 2001:bc8:32d7:302::15
   port: 44579
   uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
   alterId: 0
@@ -682,22 +344,8 @@ proxies:
   ws-opts:
     path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
     headers:
-      Host: AZERB.NET
-- name: 🇫🇷法国-30
-  type: vmess
-  server: 2001:bc8:32d7:302::11
-  port: 44579
-  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-    headers:
-      Host: Azerb.NET
-- name: 🇫🇷法国-31
+      Host: TURK.NET
+- name: 🇫🇷法国-07
   type: vmess
   server: 2001:bc8:32d7:302::14
   port: 44579
@@ -711,1192 +359,34 @@ proxies:
     path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
     headers:
       Host: TABRIZ.NET
-- name: 🇫🇷法国-32
+- name: 🇫🇷法国-08
   type: vmess
-  server: planb.mojcn.com
-  port: 16618
-  uuid: c6e0db22-c963-4c99-9f7d-ee8a39f64a07
+  server: 2001:bc8:32d7:302::16
+  port: 44579
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
     headers:
-      Host: fc05e62e9e82b8264faaba517868b9e8.mobgslb.tbcache.com
-- name: 🇫🇷法国-33
-  type: trojan
-  server: cnamefuckxxs.yuchen.icu
-  port: 443
-  password: b58b997c-1629-412a-93e4-cb6d4baccac3
-  sni: juzi.qea.ccwu.cc
-  alpn:
-  - h3
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: juzi.qea.ccwu.cc
-- name: 🇫🇷法国-34
-  type: vless
-  server: 146.59.230.8
-  port: 8443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.v6.navy
-  tls: true
-  ws-opts:
-    path: /
-- name: 🇫🇷法国-35
-  type: vmess
-  server: planb.mojcn.com
-  port: 16648
-  uuid: c6e0db22-c963-4c99-9f7d-ee8a39f64a07
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fc05e62e9e82b8264faaba517868b9e8.mobgslb.tbcache.com
-- name: 🇫🇷法国-36
-  type: vmess
-  server: planb.mojcn.com
-  port: 16617
-  uuid: 46d25c9d-2ef6-4abd-972c-60d7916144b6
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: e8b8e774c860237c2404383038697654.mobgslb.tbcache.com
-- name: 🇫🇷法国-37
-  type: vmess
-  server: m.cnmjin.net
-  port: 16617
-  uuid: 46d25c9d-2ef6-4abd-972c-60d7916144b6
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: e8b8e774c860237c2404383038697654.mobgslb.tbcache.com
-- name: 🇫🇷法国-38
-  type: vmess
-  server: t.cnmjcn.cyou
-  port: 16617
-  uuid: 46d25c9d-2ef6-4abd-972c-60d7916144b6
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: e8b8e774c860237c2404383038697654.mobgslb.tbcache.com
-- name: 🇫🇷法国-39
-  type: vmess
-  server: planb.mojcn.com
-  port: 16618
-  uuid: 46d25c9d-2ef6-4abd-972c-60d7916144b6
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: e8b8e774c860237c2404383038697654.mobgslb.tbcache.com
-- name: 🇫🇷法国-40
-  type: vmess
-  server: m.cnmjin.net
-  port: 16618
-  uuid: 46d25c9d-2ef6-4abd-972c-60d7916144b6
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: e8b8e774c860237c2404383038697654.mobgslb.tbcache.com
-- name: 🇫🇷法国-41
-  type: vmess
-  server: t.cnmjcn.cyou
-  port: 16618
-  uuid: 46d25c9d-2ef6-4abd-972c-60d7916144b6
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: e8b8e774c860237c2404383038697654.mobgslb.tbcache.com
-- name: 🇫🇷法国-42
-  type: vmess
-  server: planb.mojcn.com
-  port: 16632
-  uuid: 46d25c9d-2ef6-4abd-972c-60d7916144b6
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: e8b8e774c860237c2404383038697654.mobgslb.tbcache.com
-- name: 🇫🇷法国-43
-  type: vmess
-  server: m.cnmjin.net
-  port: 16632
-  uuid: 46d25c9d-2ef6-4abd-972c-60d7916144b6
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: e8b8e774c860237c2404383038697654.mobgslb.tbcache.com
-- name: 🇫🇷法国-44
-  type: vmess
-  server: t.cnmjcn.cyou
-  port: 16632
-  uuid: 46d25c9d-2ef6-4abd-972c-60d7916144b6
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: e8b8e774c860237c2404383038697654.mobgslb.tbcache.com
-- name: 🇫🇷法国-45
-  type: vmess
-  server: planb.mojcn.com
-  port: 16622
-  uuid: 46d25c9d-2ef6-4abd-972c-60d7916144b6
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: e8b8e774c860237c2404383038697654.mobgslb.tbcache.com
-- name: 🇫🇷法国-46
-  type: vmess
-  server: m.cnmjin.net
-  port: 16622
-  uuid: 46d25c9d-2ef6-4abd-972c-60d7916144b6
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: e8b8e774c860237c2404383038697654.mobgslb.tbcache.com
-- name: 🇫🇷法国-47
-  type: vmess
-  server: t.cnmjcn.cyou
-  port: 16622
-  uuid: 46d25c9d-2ef6-4abd-972c-60d7916144b6
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: e8b8e774c860237c2404383038697654.mobgslb.tbcache.com
-- name: 🇫🇷法国-48
-  type: vmess
-  server: planb.mojcn.com
-  port: 16626
-  uuid: 46d25c9d-2ef6-4abd-972c-60d7916144b6
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: e8b8e774c860237c2404383038697654.mobgslb.tbcache.com
-- name: 🇫🇷法国-49
-  type: vmess
-  server: planb.mojcn.com
-  port: 16616
-  uuid: 46d25c9d-2ef6-4abd-972c-60d7916144b6
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: e8b8e774c860237c2404383038697654.mobgslb.tbcache.com
-- name: 🇫🇷法国-50
-  type: vmess
-  server: m.cnmjin.net
-  port: 16616
-  uuid: 46d25c9d-2ef6-4abd-972c-60d7916144b6
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: e8b8e774c860237c2404383038697654.mobgslb.tbcache.com
-- name: 🇫🇷法国-51
-  type: vmess
-  server: t.cnmjcn.cyou
-  port: 16616
-  uuid: 46d25c9d-2ef6-4abd-972c-60d7916144b6
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: e8b8e774c860237c2404383038697654.mobgslb.tbcache.com
-- name: 🇫🇷法国-52
-  type: vmess
-  server: planb.mojcn.com
-  port: 16648
-  uuid: 46d25c9d-2ef6-4abd-972c-60d7916144b6
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: e8b8e774c860237c2404383038697654.mobgslb.tbcache.com
-- name: 🇫🇷法国-53
-  type: vmess
-  server: m.cnmjin.net
-  port: 16648
-  uuid: 46d25c9d-2ef6-4abd-972c-60d7916144b6
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: e8b8e774c860237c2404383038697654.mobgslb.tbcache.com
-- name: 🇫🇷法国-54
-  type: vmess
-  server: t.cnmjcn.cyou
-  port: 16648
-  uuid: 46d25c9d-2ef6-4abd-972c-60d7916144b6
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: e8b8e774c860237c2404383038697654.mobgslb.tbcache.com
-- name: 🇫🇷法国-55
-  type: vmess
-  server: planb.mojcn.com
-  port: 16641
-  uuid: 46d25c9d-2ef6-4abd-972c-60d7916144b6
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: e8b8e774c860237c2404383038697654.mobgslb.tbcache.com
-- name: 🇫🇷法国-56
-  type: vmess
-  server: m.cnmjin.net
-  port: 16641
-  uuid: 46d25c9d-2ef6-4abd-972c-60d7916144b6
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: e8b8e774c860237c2404383038697654.mobgslb.tbcache.com
-- name: 🇫🇷法国-57
-  type: vmess
-  server: t.cnmjcn.cyou
-  port: 16641
-  uuid: 46d25c9d-2ef6-4abd-972c-60d7916144b6
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: e8b8e774c860237c2404383038697654.mobgslb.tbcache.com
-- name: 🇫🇷法国-58
-  type: vmess
-  server: planb.mojcn.com
-  port: 16644
-  uuid: 46d25c9d-2ef6-4abd-972c-60d7916144b6
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: e8b8e774c860237c2404383038697654.mobgslb.tbcache.com
-- name: 🇫🇷法国-59
-  type: vmess
-  server: m.cnmjin.net
-  port: 16644
-  uuid: 46d25c9d-2ef6-4abd-972c-60d7916144b6
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: e8b8e774c860237c2404383038697654.mobgslb.tbcache.com
-- name: 🇫🇷法国-60
-  type: vmess
-  server: planb.mojcn.com
-  port: 16645
-  uuid: 46d25c9d-2ef6-4abd-972c-60d7916144b6
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: e8b8e774c860237c2404383038697654.mobgslb.tbcache.com
-- name: 🇫🇷法国-61
-  type: vmess
-  server: m.cnmjin.net
-  port: 16645
-  uuid: 46d25c9d-2ef6-4abd-972c-60d7916144b6
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: e8b8e774c860237c2404383038697654.mobgslb.tbcache.com
-- name: 🇫🇷法国-62
-  type: vmess
-  server: t.cnmjcn.cyou
-  port: 16645
-  uuid: 46d25c9d-2ef6-4abd-972c-60d7916144b6
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: e8b8e774c860237c2404383038697654.mobgslb.tbcache.com
-- name: 🇫🇷法国-63
-  type: vmess
-  server: planb.mojcn.com
-  port: 16617
-  uuid: f0350e75-1e57-42c3-b4cf-57c190a1a8d8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cc9afa6ee277e0ea6f1d6dac4d4a7e15.mobgslb.tbcache.com
-- name: 🇫🇷法国-64
-  type: vmess
-  server: m.cnmjin.net
-  port: 16617
-  uuid: f0350e75-1e57-42c3-b4cf-57c190a1a8d8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cc9afa6ee277e0ea6f1d6dac4d4a7e15.mobgslb.tbcache.com
-- name: 🇫🇷法国-65
-  type: vmess
-  server: t.cnmjcn.cyou
-  port: 16617
-  uuid: f0350e75-1e57-42c3-b4cf-57c190a1a8d8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cc9afa6ee277e0ea6f1d6dac4d4a7e15.mobgslb.tbcache.com
-- name: 🇫🇷法国-66
-  type: vmess
-  server: planb.mojcn.com
-  port: 16618
-  uuid: f0350e75-1e57-42c3-b4cf-57c190a1a8d8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cc9afa6ee277e0ea6f1d6dac4d4a7e15.mobgslb.tbcache.com
-- name: 🇫🇷法国-67
-  type: vmess
-  server: m.cnmjin.net
-  port: 16618
-  uuid: f0350e75-1e57-42c3-b4cf-57c190a1a8d8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cc9afa6ee277e0ea6f1d6dac4d4a7e15.mobgslb.tbcache.com
-- name: 🇫🇷法国-68
-  type: vmess
-  server: t.cnmjcn.cyou
-  port: 16618
-  uuid: f0350e75-1e57-42c3-b4cf-57c190a1a8d8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cc9afa6ee277e0ea6f1d6dac4d4a7e15.mobgslb.tbcache.com
-- name: 🇫🇷法国-69
-  type: vmess
-  server: planb.mojcn.com
-  port: 16632
-  uuid: f0350e75-1e57-42c3-b4cf-57c190a1a8d8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cc9afa6ee277e0ea6f1d6dac4d4a7e15.mobgslb.tbcache.com
-- name: 🇫🇷法国-70
-  type: vmess
-  server: m.cnmjin.net
-  port: 16632
-  uuid: f0350e75-1e57-42c3-b4cf-57c190a1a8d8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cc9afa6ee277e0ea6f1d6dac4d4a7e15.mobgslb.tbcache.com
-- name: 🇫🇷法国-71
-  type: vmess
-  server: t.cnmjcn.cyou
-  port: 16632
-  uuid: f0350e75-1e57-42c3-b4cf-57c190a1a8d8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cc9afa6ee277e0ea6f1d6dac4d4a7e15.mobgslb.tbcache.com
-- name: 🇫🇷法国-72
-  type: vmess
-  server: planb.mojcn.com
-  port: 16622
-  uuid: f0350e75-1e57-42c3-b4cf-57c190a1a8d8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cc9afa6ee277e0ea6f1d6dac4d4a7e15.mobgslb.tbcache.com
-- name: 🇫🇷法国-73
-  type: vmess
-  server: m.cnmjin.net
-  port: 16622
-  uuid: f0350e75-1e57-42c3-b4cf-57c190a1a8d8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cc9afa6ee277e0ea6f1d6dac4d4a7e15.mobgslb.tbcache.com
-- name: 🇫🇷法国-74
-  type: vmess
-  server: t.cnmjcn.cyou
-  port: 16622
-  uuid: f0350e75-1e57-42c3-b4cf-57c190a1a8d8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cc9afa6ee277e0ea6f1d6dac4d4a7e15.mobgslb.tbcache.com
-- name: 🇫🇷法国-75
-  type: vmess
-  server: planb.mojcn.com
-  port: 16626
-  uuid: f0350e75-1e57-42c3-b4cf-57c190a1a8d8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cc9afa6ee277e0ea6f1d6dac4d4a7e15.mobgslb.tbcache.com
-- name: 🇫🇷法国-76
-  type: vmess
-  server: planb.mojcn.com
-  port: 16616
-  uuid: f0350e75-1e57-42c3-b4cf-57c190a1a8d8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cc9afa6ee277e0ea6f1d6dac4d4a7e15.mobgslb.tbcache.com
-- name: 🇫🇷法国-77
-  type: vmess
-  server: m.cnmjin.net
-  port: 16616
-  uuid: f0350e75-1e57-42c3-b4cf-57c190a1a8d8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cc9afa6ee277e0ea6f1d6dac4d4a7e15.mobgslb.tbcache.com
-- name: 🇫🇷法国-78
-  type: vmess
-  server: t.cnmjcn.cyou
-  port: 16616
-  uuid: f0350e75-1e57-42c3-b4cf-57c190a1a8d8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cc9afa6ee277e0ea6f1d6dac4d4a7e15.mobgslb.tbcache.com
-- name: 🇫🇷法国-79
-  type: vmess
-  server: planb.mojcn.com
-  port: 16648
-  uuid: f0350e75-1e57-42c3-b4cf-57c190a1a8d8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cc9afa6ee277e0ea6f1d6dac4d4a7e15.mobgslb.tbcache.com
-- name: 🇫🇷法国-80
-  type: vmess
-  server: m.cnmjin.net
-  port: 16648
-  uuid: f0350e75-1e57-42c3-b4cf-57c190a1a8d8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cc9afa6ee277e0ea6f1d6dac4d4a7e15.mobgslb.tbcache.com
-- name: 🇫🇷法国-81
-  type: vmess
-  server: t.cnmjcn.cyou
-  port: 16648
-  uuid: f0350e75-1e57-42c3-b4cf-57c190a1a8d8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cc9afa6ee277e0ea6f1d6dac4d4a7e15.mobgslb.tbcache.com
-- name: 🇫🇷法国-82
-  type: vmess
-  server: planb.mojcn.com
-  port: 16641
-  uuid: f0350e75-1e57-42c3-b4cf-57c190a1a8d8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cc9afa6ee277e0ea6f1d6dac4d4a7e15.mobgslb.tbcache.com
-- name: 🇫🇷法国-83
-  type: vmess
-  server: m.cnmjin.net
-  port: 16641
-  uuid: f0350e75-1e57-42c3-b4cf-57c190a1a8d8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cc9afa6ee277e0ea6f1d6dac4d4a7e15.mobgslb.tbcache.com
-- name: 🇫🇷法国-84
-  type: vmess
-  server: t.cnmjcn.cyou
-  port: 16641
-  uuid: f0350e75-1e57-42c3-b4cf-57c190a1a8d8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cc9afa6ee277e0ea6f1d6dac4d4a7e15.mobgslb.tbcache.com
-- name: 🇫🇷法国-85
-  type: vmess
-  server: planb.mojcn.com
-  port: 16644
-  uuid: f0350e75-1e57-42c3-b4cf-57c190a1a8d8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cc9afa6ee277e0ea6f1d6dac4d4a7e15.mobgslb.tbcache.com
-- name: 🇫🇷法国-86
-  type: vmess
-  server: m.cnmjin.net
-  port: 16644
-  uuid: f0350e75-1e57-42c3-b4cf-57c190a1a8d8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cc9afa6ee277e0ea6f1d6dac4d4a7e15.mobgslb.tbcache.com
-- name: 🇫🇷法国-87
-  type: vmess
-  server: planb.mojcn.com
-  port: 16645
-  uuid: f0350e75-1e57-42c3-b4cf-57c190a1a8d8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cc9afa6ee277e0ea6f1d6dac4d4a7e15.mobgslb.tbcache.com
-- name: 🇫🇷法国-88
-  type: vmess
-  server: m.cnmjin.net
-  port: 16645
-  uuid: f0350e75-1e57-42c3-b4cf-57c190a1a8d8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cc9afa6ee277e0ea6f1d6dac4d4a7e15.mobgslb.tbcache.com
-- name: 🇫🇷法国-89
-  type: vmess
-  server: t.cnmjcn.cyou
-  port: 16645
-  uuid: f0350e75-1e57-42c3-b4cf-57c190a1a8d8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cc9afa6ee277e0ea6f1d6dac4d4a7e15.mobgslb.tbcache.com
-- name: 🇫🇷法国-90
-  type: vmess
-  server: planb.mojcn.com
-  port: 16617
-  uuid: 855c57a0-640f-4036-81bb-f2881ce4b2c8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 26e20fd7983c94ddbec2c10b8852cb2e.mobgslb.tbcache.com
-- name: 🇫🇷法国-91
-  type: vmess
-  server: m.cnmjin.net
-  port: 16617
-  uuid: 855c57a0-640f-4036-81bb-f2881ce4b2c8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 26e20fd7983c94ddbec2c10b8852cb2e.mobgslb.tbcache.com
-- name: 🇫🇷法国-92
-  type: vmess
-  server: t.cnmjcn.cyou
-  port: 16617
-  uuid: 855c57a0-640f-4036-81bb-f2881ce4b2c8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 26e20fd7983c94ddbec2c10b8852cb2e.mobgslb.tbcache.com
-- name: 🇫🇷法国-93
-  type: vmess
-  server: planb.mojcn.com
-  port: 16618
-  uuid: 855c57a0-640f-4036-81bb-f2881ce4b2c8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 26e20fd7983c94ddbec2c10b8852cb2e.mobgslb.tbcache.com
-- name: 🇫🇷法国-94
-  type: vmess
-  server: m.cnmjin.net
-  port: 16618
-  uuid: 855c57a0-640f-4036-81bb-f2881ce4b2c8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 26e20fd7983c94ddbec2c10b8852cb2e.mobgslb.tbcache.com
-- name: 🇫🇷法国-95
-  type: vmess
-  server: t.cnmjcn.cyou
-  port: 16618
-  uuid: 855c57a0-640f-4036-81bb-f2881ce4b2c8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 26e20fd7983c94ddbec2c10b8852cb2e.mobgslb.tbcache.com
-- name: 🇫🇷法国-96
-  type: vmess
-  server: planb.mojcn.com
-  port: 16632
-  uuid: 855c57a0-640f-4036-81bb-f2881ce4b2c8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 26e20fd7983c94ddbec2c10b8852cb2e.mobgslb.tbcache.com
-- name: 🇫🇷法国-97
-  type: vmess
-  server: m.cnmjin.net
-  port: 16632
-  uuid: 855c57a0-640f-4036-81bb-f2881ce4b2c8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 26e20fd7983c94ddbec2c10b8852cb2e.mobgslb.tbcache.com
-- name: 🇫🇷法国-98
-  type: vmess
-  server: t.cnmjcn.cyou
-  port: 16632
-  uuid: 855c57a0-640f-4036-81bb-f2881ce4b2c8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 26e20fd7983c94ddbec2c10b8852cb2e.mobgslb.tbcache.com
-- name: 🇫🇷法国-99
-  type: vmess
-  server: planb.mojcn.com
-  port: 16622
-  uuid: 855c57a0-640f-4036-81bb-f2881ce4b2c8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 26e20fd7983c94ddbec2c10b8852cb2e.mobgslb.tbcache.com
-- name: 🇫🇷法国-100
-  type: vmess
-  server: m.cnmjin.net
-  port: 16622
-  uuid: 855c57a0-640f-4036-81bb-f2881ce4b2c8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 26e20fd7983c94ddbec2c10b8852cb2e.mobgslb.tbcache.com
-- name: 🇫🇷法国-101
-  type: vmess
-  server: t.cnmjcn.cyou
-  port: 16622
-  uuid: 855c57a0-640f-4036-81bb-f2881ce4b2c8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 26e20fd7983c94ddbec2c10b8852cb2e.mobgslb.tbcache.com
-- name: 🇫🇷法国-102
-  type: vmess
-  server: planb.mojcn.com
-  port: 16626
-  uuid: 855c57a0-640f-4036-81bb-f2881ce4b2c8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 26e20fd7983c94ddbec2c10b8852cb2e.mobgslb.tbcache.com
-- name: 🇫🇷法国-103
-  type: vmess
-  server: planb.mojcn.com
-  port: 16616
-  uuid: 855c57a0-640f-4036-81bb-f2881ce4b2c8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 26e20fd7983c94ddbec2c10b8852cb2e.mobgslb.tbcache.com
-- name: 🇫🇷法国-104
-  type: vmess
-  server: m.cnmjin.net
-  port: 16616
-  uuid: 855c57a0-640f-4036-81bb-f2881ce4b2c8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 26e20fd7983c94ddbec2c10b8852cb2e.mobgslb.tbcache.com
-- name: 🇫🇷法国-105
-  type: vmess
-  server: t.cnmjcn.cyou
-  port: 16616
-  uuid: 855c57a0-640f-4036-81bb-f2881ce4b2c8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 26e20fd7983c94ddbec2c10b8852cb2e.mobgslb.tbcache.com
-- name: 🇫🇷法国-106
-  type: vmess
-  server: planb.mojcn.com
-  port: 16648
-  uuid: 855c57a0-640f-4036-81bb-f2881ce4b2c8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 26e20fd7983c94ddbec2c10b8852cb2e.mobgslb.tbcache.com
-- name: 🇫🇷法国-107
-  type: vmess
-  server: m.cnmjin.net
-  port: 16648
-  uuid: 855c57a0-640f-4036-81bb-f2881ce4b2c8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 26e20fd7983c94ddbec2c10b8852cb2e.mobgslb.tbcache.com
-- name: 🇫🇷法国-108
-  type: vmess
-  server: t.cnmjcn.cyou
-  port: 16648
-  uuid: 855c57a0-640f-4036-81bb-f2881ce4b2c8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 26e20fd7983c94ddbec2c10b8852cb2e.mobgslb.tbcache.com
-- name: 🇫🇷法国-109
-  type: vmess
-  server: planb.mojcn.com
-  port: 16641
-  uuid: 855c57a0-640f-4036-81bb-f2881ce4b2c8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 26e20fd7983c94ddbec2c10b8852cb2e.mobgslb.tbcache.com
-- name: 🇫🇷法国-110
-  type: vmess
-  server: m.cnmjin.net
-  port: 16641
-  uuid: 855c57a0-640f-4036-81bb-f2881ce4b2c8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 26e20fd7983c94ddbec2c10b8852cb2e.mobgslb.tbcache.com
-- name: 🇫🇷法国-111
-  type: vmess
-  server: t.cnmjcn.cyou
-  port: 16641
-  uuid: 855c57a0-640f-4036-81bb-f2881ce4b2c8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 26e20fd7983c94ddbec2c10b8852cb2e.mobgslb.tbcache.com
-- name: 🇫🇷法国-112
-  type: vmess
-  server: planb.mojcn.com
-  port: 16644
-  uuid: 855c57a0-640f-4036-81bb-f2881ce4b2c8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 26e20fd7983c94ddbec2c10b8852cb2e.mobgslb.tbcache.com
-- name: 🇫🇷法国-113
-  type: vmess
-  server: m.cnmjin.net
-  port: 16644
-  uuid: 855c57a0-640f-4036-81bb-f2881ce4b2c8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 26e20fd7983c94ddbec2c10b8852cb2e.mobgslb.tbcache.com
-- name: 🇫🇷法国-114
-  type: vmess
-  server: planb.mojcn.com
-  port: 16645
-  uuid: 855c57a0-640f-4036-81bb-f2881ce4b2c8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 26e20fd7983c94ddbec2c10b8852cb2e.mobgslb.tbcache.com
-- name: 🇫🇷法国-115
-  type: vmess
-  server: m.cnmjin.net
-  port: 16645
-  uuid: 855c57a0-640f-4036-81bb-f2881ce4b2c8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 26e20fd7983c94ddbec2c10b8852cb2e.mobgslb.tbcache.com
-- name: 🇫🇷法国-116
+      Host: AZERB.NET
+- name: 🇫🇷法国-09
   type: vmess
-  server: t.cnmjcn.cyou
-  port: 16645
-  uuid: 855c57a0-640f-4036-81bb-f2881ce4b2c8
+  server: 2001:bc8:32d7:302::11
+  port: 44579
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
     headers:
-      Host: 26e20fd7983c94ddbec2c10b8852cb2e.mobgslb.tbcache.com
+      Host: Azerb.NET
 - name: 🇬🇧英国-01
   type: vmess
   server: 82.198.246.97
@@ -1926,6 +416,32 @@ proxies:
   skip-cert-verify: false
 - name: 🇬🇧英国-04
   type: vless
+  server: 185.75.243.102
+  port: 443
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  network: ws
+  servername: 3-9sp.pages.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: 3-9sp.pages.dev
+- name: 🇬🇧英国-05
+  type: vless
+  server: 104.239.87.213
+  port: 2053
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  network: ws
+  servername: 177-e06.pages.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: 177-e06.pages.dev
+- name: 🇬🇧英国-06
+  type: vless
   server: 91.84.101.164
   port: 8443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
@@ -1936,7 +452,19 @@ proxies:
     path: /?ed=2560&telegram🇨🇳@wangcai2
     headers:
       Host: sni.111000.v6.navy
-- name: 🇬🇧英国-05
+- name: 🇬🇧英国-07
+  type: vless
+  server: 45.43.76.184
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.navy
+  tls: true
+  ws-opts:
+    path: /?ed=2560&telegram🇨🇳@wangcai2
+    headers:
+      Host: sni.111000.v6.navy
+- name: 🇬🇧英国-08
   type: vless
   server: 82.117.245.125
   port: 2053
@@ -1945,16 +473,6 @@ proxies:
   servername: sni.111000.v6.navy
   tls: true
   client-fingerprint: chrome
-  ws-opts:
-    path: /
-- name: 🇬🇧英国-06
-  type: vless
-  server: 45.43.76.184
-  port: 2053
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.v6.navy
-  tls: true
   ws-opts:
     path: /
     headers:
@@ -1972,81 +490,16 @@ proxies:
     headers:
       Host: 1-cw6.pages.dev
 - name: 🇭🇰香港-01
-  type: vless
-  server: 222.167.202.35
-  port: 7443
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  network: ws
-  servername: 2026.hhhhh.eu.org
-  tls: true
-  ws-opts:
-    path: /222.167.202.35:7443
-    headers:
-      Host: 2026.hhhhh.eu.org
-- name: 🇭🇰香港-02
-  type: vless
-  server: 222.167.202.26
-  port: 7443
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  network: ws
-  servername: 2026.hhhhh.eu.org
-  tls: true
-  ws-opts:
-    path: /222.167.202.26:7443
-    headers:
-      Host: 2026.hhhhh.eu.org
-- name: 🇭🇰香港-03
-  type: vmess
-  server: v12.hdacd.com
-  port: 30812
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-- name: 🇭🇰香港-04
-  type: vmess
-  server: v30.hdacd.com
-  port: 30830
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-- name: 🇭🇰香港-05
-  type: trojan
-  server: 18.162.243.187
-  port: 39507
-  password: BxceQaOe
-  skip-cert-verify: true
-  tls: true
-- name: 🇭🇰香港-06
-  type: trojan
-  server: 16.163.129.49
-  port: 14919
-  password: BxceQaOe
-  skip-cert-verify: true
-  tls: true
-- name: 🇭🇰香港-07
   type: trojan
   server: 58.152.25.253
   port: 443
   password: BxceQaOe
-  sni: 58.152.25.253
+  sni: t.me/ripaojiedian
   skip-cert-verify: true
   tls: true
-- name: 🇭🇰香港-08
-  type: vmess
-  server: 151.242.180.91
-  port: 30812
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-- name: 🇭🇰香港-09
+- name: 🇭🇰香港-02
   type: vless
-  server: 222.167.202.6
+  server: 222.167.202.47
   port: 7443
   uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
   network: ws
@@ -2054,55 +507,10 @@ proxies:
   tls: true
   client-fingerprint: chrome
   ws-opts:
-    path: /222.167.202.6:7443
+    path: /222.167.202.47:7443
     headers:
       Host: 2026.hhhhh.eu.org
-- name: 🇭🇰香港-10
-  type: vless
-  server: 222.167.202.31
-  port: 7443
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  network: ws
-  servername: 2026.hhhhh.eu.org
-  tls: true
-  ws-opts:
-    path: /222.167.202.31:7443
-    headers:
-      Host: 2026.hhhhh.eu.org
-- name: 🇭🇰香港-11
-  type: vless
-  server: 222.167.202.2
-  port: 7443
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  network: ws
-  servername: 2026.hhhhh.eu.org
-  tls: true
-  ws-opts:
-    path: /222.167.202.2:7443
-- name: 🇭🇰香港-12
-  type: vless
-  server: 222.167.202.33
-  port: 7443
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  network: ws
-  servername: 2026.hhhhh.eu.org
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /222.167.202.33:7443
-    headers:
-      Host: 2026.hhhhh.eu.org
-- name: 🇭🇰香港-13
-  type: vless
-  server: 222.167.202.50
-  port: 7443
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  network: ws
-  servername: 2026.hhhhh.eu.org
-  tls: true
-  ws-opts:
-    path: /222.167.202.50:7443
-- name: 🇭🇰香港-14
+- name: 🇭🇰香港-03
   type: vless
   server: 222.167.202.23
   port: 7443
@@ -2115,39 +523,83 @@ proxies:
     path: /222.167.202.23:7443
     headers:
       Host: 2026.hhhhh.eu.org
-- name: 🇭🇰香港-15
+- name: 🇭🇰香港-04
   type: vless
-  server: 222.167.202.21
+  server: 222.167.202.16
   port: 7443
   uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
   network: ws
   servername: 2026.hhhhh.eu.org
   tls: true
   ws-opts:
-    path: /222.167.202.21:7443
-- name: 🇭🇰香港-16
+    path: /222.167.202.16:7443
+- name: 🇭🇰香港-05
   type: vless
-  server: 222.167.202.15
+  server: 222.167.202.26
   port: 7443
   uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
   network: ws
   servername: 2026.hhhhh.eu.org
   tls: true
   ws-opts:
-    path: /222.167.202.15:7443
+    path: /222.167.202.26:7443
+- name: 🇭🇰香港-06
+  type: vless
+  server: 222.167.202.31
+  port: 7443
+  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  network: ws
+  servername: 2026.hhhhh.eu.org
+  tls: true
+  ws-opts:
+    path: /222.167.202.31:7443
+- name: 🇭🇰香港-07
+  type: vless
+  server: 222.167.202.70
+  port: 7443
+  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  network: ws
+  servername: 2026.hhhhh.eu.org
+  tls: true
+  ws-opts:
+    path: /222.167.202.70:7443
+- name: 🇭🇰香港-08
+  type: vless
+  server: 222.167.202.52
+  port: 7443
+  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  network: ws
+  servername: 2026.hhhhh.eu.org
+  tls: true
+  ws-opts:
+    path: /222.167.202.52:7443
     headers:
       Host: 2026.hhhhh.eu.org
-- name: 🇭🇰香港-17
+- name: 🇭🇰香港-09
   type: vless
-  server: 222.167.202.47
+  server: 222.167.202.22
   port: 7443
   uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
   network: ws
   servername: 2026.hhhhh.eu.org
   tls: true
   ws-opts:
-    path: /222.167.202.47:7443
-- name: 🇭🇰香港-18
+    path: /222.167.202.22:7443
+    headers:
+      Host: 2026.hhhhh.eu.org
+- name: 🇭🇰香港-10
+  type: vless
+  server: 222.167.202.2
+  port: 7443
+  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  network: ws
+  servername: 2026.hhhhh.eu.org
+  tls: true
+  ws-opts:
+    path: /222.167.202.2:7443
+    headers:
+      Host: 2026.hhhhh.eu.org
+- name: 🇭🇰香港-11
   type: vless
   server: 222.167.202.60
   port: 7443
@@ -2160,7 +612,7 @@ proxies:
     path: /222.167.202.60:7443
     headers:
       Host: 2026.hhhhh.eu.org
-- name: 🇭🇰香港-19
+- name: 🇭🇰香港-12
   type: vless
   server: 222.167.202.32
   port: 7443
@@ -2172,7 +624,39 @@ proxies:
     path: /222.167.202.32:7443
     headers:
       Host: 2026.hhhhh.eu.org
-- name: 🇭🇰香港-20
+- name: 🇭🇰香港-13
+  type: vless
+  server: 222.167.202.14
+  port: 7443
+  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  network: ws
+  servername: 2026.hhhhh.eu.org
+  tls: true
+  ws-opts:
+    path: /222.167.202.14:7443
+- name: 🇭🇰香港-14
+  type: vless
+  server: 222.167.202.4
+  port: 7443
+  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  network: ws
+  servername: 2026.hhhhh.eu.org
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /222.167.202.4:7443
+- name: 🇭🇰香港-15
+  type: vless
+  server: 222.167.202.35
+  port: 7443
+  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  network: ws
+  servername: 2026.hhhhh.eu.org
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /222.167.202.35:7443
+- name: 🇭🇰香港-16
   type: vless
   server: 222.167.202.45
   port: 7443
@@ -2185,59 +669,21 @@ proxies:
     path: /222.167.202.45:7443
     headers:
       Host: 2026.hhhhh.eu.org
-- name: 🇭🇰香港-21
+- name: 🇭🇰香港-17
   type: vless
-  server: 222.167.202.70
+  server: 222.167.202.21
   port: 7443
   uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
   network: ws
   servername: 2026.hhhhh.eu.org
   tls: true
   ws-opts:
-    path: /222.167.202.70:7443
-- name: 🇭🇰香港-22
+    path: /222.167.202.21:7443
+    headers:
+      Host: 2026.hhhhh.eu.org
+- name: 🇭🇰香港-18
   type: vless
-  server: 222.167.202.22
-  port: 7443
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  network: ws
-  servername: 2026.hhhhh.eu.org
-  tls: true
-  ws-opts:
-    path: /222.167.202.22:7443
-- name: 🇭🇰香港-23
-  type: vless
-  server: 222.167.202.52
-  port: 7443
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  network: ws
-  servername: 2026.hhhhh.eu.org
-  tls: true
-  ws-opts:
-    path: /222.167.202.52:7443
-- name: 🇭🇰香港-24
-  type: vless
-  server: 222.167.202.16
-  port: 7443
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  network: ws
-  servername: 2026.hhhhh.eu.org
-  tls: true
-  ws-opts:
-    path: /222.167.202.16:7443
-- name: 🇭🇰香港-25
-  type: vless
-  server: 222.167.202.14
-  port: 7443
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  network: ws
-  servername: 2026.hhhhh.eu.org
-  tls: true
-  ws-opts:
-    path: /222.167.202.14:7443
-- name: 🇭🇰香港-26
-  type: vless
-  server: 222.167.202.4
+  server: 222.167.202.33
   port: 7443
   uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
   network: ws
@@ -2245,8 +691,30 @@ proxies:
   tls: true
   client-fingerprint: chrome
   ws-opts:
-    path: /222.167.202.4:7443
-- name: 🇭🇰香港-27
+    path: /222.167.202.33:7443
+    headers:
+      Host: 2026.hhhhh.eu.org
+- name: 🇭🇰香港-19
+  type: vless
+  server: 222.167.202.15
+  port: 7443
+  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  network: ws
+  servername: 2026.hhhhh.eu.org
+  tls: true
+  ws-opts:
+    path: /222.167.202.15:7443
+- name: 🇭🇰香港-20
+  type: vless
+  server: 222.167.202.6
+  port: 7443
+  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  network: ws
+  servername: 2026.hhhhh.eu.org
+  tls: true
+  ws-opts:
+    path: /222.167.202.6:7443
+- name: 🇭🇰香港-21
   type: vless
   server: 222.167.202.10
   port: 7443
@@ -2256,7 +724,7 @@ proxies:
   tls: true
   ws-opts:
     path: /222.167.202.10:7443
-- name: 🇭🇰香港-28
+- name: 🇭🇰香港-22
   type: vless
   server: 222.167.202.3
   port: 7443
@@ -2264,9 +732,10 @@ proxies:
   network: ws
   servername: 2026.hhhhh.eu.org
   tls: true
+  client-fingerprint: chrome
   ws-opts:
     path: /222.167.202.3:7443
-- name: 🇭🇰香港-29
+- name: 🇭🇰香港-23
   type: vless
   server: 222.167.202.36
   port: 7443
@@ -2276,18 +745,90 @@ proxies:
   tls: true
   ws-opts:
     path: /222.167.202.36:7443
-- name: 🇰🇷韩国-01
+- name: 🇭🇰香港-24
   type: vless
-  server: krp01.jumperservice.com
-  port: 19001
-  uuid: 6eeb820e-89ef-4b60-9060-ddcaea0580f0
-  servername: addons.mozilla.org
+  server: 222.167.202.50
+  port: 7443
+  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  network: ws
+  servername: 2026.hhhhh.eu.org
   tls: true
-  flow: xtls-rprx-vision
+  ws-opts:
+    path: /222.167.202.50:7443
+    headers:
+      Host: 2026.hhhhh.eu.org
+- name: 🇮🇳印度-01
+  type: vless
+  server: 103.90.75.41
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.indevs.in
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.indevs.in
+- name: 🇮🇹意大利-01
+  type: vless
+  server: 89.150.40.152
+  port: 443
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  network: ws
+  servername: 3-7ny.pages.dev
+  tls: true
+  ws-opts:
+    path: /proxyip=ProxyIP.DE.owg.dpdns.org
+    headers:
+      Host: 3-7ny.pages.dev
+- name: 🇯🇵日本-01
+  type: trojan
+  server: 13.193.221.106
+  port: 4019
+  password: 1a98450e6f743b1b66a8bebfe3ea93e9
+  sni: www.nintendogames.net
+  skip-cert-verify: false
+  tls: true
+- name: 🇯🇵日本-02
+  type: trojan
+  server: 13.193.221.106
+  port: 4674
+  password: 1a98450e6f743b1b66a8bebfe3ea93e9
+  sni: www.nintendogames.net
+  skip-cert-verify: false
+  tls: true
+- name: 🇯🇵日本-03
+  type: trojan
+  server: 52.199.231.68
+  port: 4674
+  password: 1a98450e6f743b1b66a8bebfe3ea93e9
+  sni: www.nintendogames.net
+  skip-cert-verify: false
+  tls: true
+- name: 🇯🇵日本-04
+  type: vless
+  server: 176.97.73.155
+  port: 443
+  uuid: 0b277abf-e0d6-44d8-85c6-f6c7afc0aec5
+  servername: navi.bankrate.com
+  tls: true
   client-fingerprint: chrome
   reality-opts:
-    public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM
-- name: 🇰🇷韩国-02
+    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
+    short-id: 2da72ce6
+- name: 🇯🇵日本-05
+  type: vless
+  server: 202.84.53.85
+  port: 19999
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+- name: 🇰🇷韩国-01
   type: vless
   server: krp01.jumperservice.com
   port: 19001
@@ -2298,31 +839,30 @@ proxies:
   client-fingerprint: firefox
   reality-opts:
     public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM
-- name: 🇱🇻LV-01
+- name: 🇰🇷韩国-02
   type: vless
-  server: 5.34.209.231
-  port: 8443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.v6.navy
+  server: krp01.jumperservice.com
+  port: 19001
+  uuid: 6eeb820e-89ef-4b60-9060-ddcaea0580f0
+  servername: addons.mozilla.org
   tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.v6.navy
-- name: 🇱🇻LV-02
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM
+- name: 🇰🇷韩国-03
   type: vless
-  server: 185.135.86.217
-  port: 8443
+  server: 116.44.53.251
+  port: 12126
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
-  servername: sni.111000.v6.navy
+  servername: sni.111000.dynv6.net
   tls: true
   ws-opts:
     path: /?ed=2560&Telegram🇨🇳@WangCai2
     headers:
-      Host: sni.111000.v6.navy
-- name: 🇱🇻LV-03
+      Host: sni.111000.dynv6.net
+- name: 🇱🇻LV-01
   type: vless
   server: 185.82.126.185
   port: 2053
@@ -2335,16 +875,68 @@ proxies:
     path: /
     headers:
       Host: sni.111000.v6.navy
-- name: 🇲🇽墨西哥-01
-  type: vmess
-  server: 216.238.86.158
-  port: 34460
-  uuid: 90be214d-048c-4ea2-a602-b8e4d4e51e36
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
+- name: 🇱🇻LV-02
+  type: vless
+  server: 195.135.252.244
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.indevs.in
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.indevs.in
+- name: 🇱🇻LV-03
+  type: vless
+  server: 185.135.86.217
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.navy
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.v6.navy
+- name: 🇲🇩MD-01
+  type: vless
+  server: 103.106.0.123
+  port: 443
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  network: ws
+  servername: 1-bhn.pages.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: 1-bhn.pages.dev
 - name: 🇳🇱荷兰-01
+  type: vless
+  server: nl.pfvpn.cfd
+  port: 443
+  uuid: 4cc545b9-1343-48fd-b5e2-aaf37216f48d
+  servername: max.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: ZhjnYVxJjlHqRng99rliQCf1kYo--OF7DvEiNzNpTys
+    short-id: 3a3023cac1da
+- name: 🇳🇱荷兰-02
+  type: vless
+  server: 188.114.98.0
+  port: 2087
+  uuid: eedf896c-2b4b-485b-86c3-8d4b29cd1ac9
+  network: ws
+  servername: cdn.harchihast.com
+  tls: true
+  ws-opts:
+    path: //ws?ed=2560
+    headers:
+      Host: cdn.harchihast.com
+- name: 🇳🇱荷兰-03
   type: vless
   server: 185.36.140.105
   port: 443
@@ -2358,39 +950,62 @@ proxies:
       Host: 3-7ny.pages.dev
 - name: 🇷🇴罗马尼亚-01
   type: vless
+  server: 91.199.50.37
+  port: 443
+  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+  servername: www.alibaba.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: kkRsTNjRh_XrrTM6eZllllldzoL5Z9IqlBkDtmYLMhw
+    short-id: c906f73d3ba8211f
+- name: 🇷🇴罗马尼亚-02
+  type: vless
   server: 188.241.241.29
   port: 2053
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
   servername: sni.111000.v6.navy
   tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.v6.navy
-- name: 🇸🇪瑞典-01
-  type: vless
-  server: 109.120.132.6
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.v6.navy
-  tls: true
+  client-fingerprint: chrome
   ws-opts:
     path: /?Telegram🇨🇳+@WangCai2=
     headers:
       Host: sni.111000.v6.navy
+- name: 🇷🇴罗马尼亚-03
+  type: vless
+  server: 188.241.241.123
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.indevs.in
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.indevs.in
 - name: 🇸🇬新加坡-01
   type: vless
-  server: dongjing1.zqjsqapi.com
+  server: canada.speedwarp.sbs
+  port: 443
+  uuid: 3c60db8b-f2cc-4cf4-92da-caa9169534f9
+  network: ws
+  servername: canada.speedwarp.sbs
+  tls: true
+  ws-opts:
+    path: /jss
+- name: 🇸🇬新加坡-02
+  type: vless
+  server: mangu1.zqjsqapi.com
   port: 443
   uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
   network: ws
-  servername: dongjing1.zqjsqapi.com
+  servername: mangu1.zqjsqapi.com
   tls: true
   ws-opts:
     path: /proxy
-- name: 🇸🇬新加坡-02
+- name: 🇸🇬新加坡-03
   type: vless
   server: dongjing3.zqjsqapi.com
   port: 443
@@ -2402,7 +1017,17 @@ proxies:
     path: /proxy
     headers:
       Host: dongjing3.zqjsqapi.com
-- name: 🇸🇬新加坡-03
+- name: 🇸🇬新加坡-04
+  type: vless
+  server: dongjing1.zqjsqapi.com
+  port: 443
+  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
+  network: ws
+  servername: dongjing1.zqjsqapi.com
+  tls: true
+  ws-opts:
+    path: /proxy
+- name: 🇸🇬新加坡-05
   type: vless
   server: xinjiapo1.zqjsqapi.com
   port: 443
@@ -2410,11 +1035,22 @@ proxies:
   network: ws
   servername: xinjiapo1.zqjsqapi.com
   tls: true
+  client-fingerprint: chrome
   ws-opts:
     path: /proxy
     headers:
       Host: xinjiapo1.zqjsqapi.com
-- name: 🇸🇬新加坡-04
+- name: 🇸🇬新加坡-06
+  type: vless
+  server: 43.160.204.190
+  port: 443
+  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
+  network: ws
+  servername: xinjiapo1.zqjsqapi.com
+  tls: true
+  ws-opts:
+    path: /proxy
+- name: 🇸🇬新加坡-07
   type: vless
   server: 43.165.174.229
   port: 443
@@ -2426,7 +1062,7 @@ proxies:
     path: /proxy
     headers:
       Host: dongjing1.zqjsqapi.com
-- name: 🇸🇬新加坡-05
+- name: 🇸🇬新加坡-08
   type: vless
   server: dongjing2.zqjsqapi.com
   port: 443
@@ -2439,16 +1075,26 @@ proxies:
     path: /proxy
     headers:
       Host: dongjing2.zqjsqapi.com
-- name: 🇸🇬新加坡-06
+- name: 🇸🇬新加坡-09
   type: vless
-  server: 43.160.204.190
+  server: turkey.speedwarp.sbs
   port: 443
-  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
+  uuid: 9081da91-204d-4f94-92df-31d902a9956d
   network: ws
-  servername: xinjiapo1.zqjsqapi.com
+  servername: turkey.speedwarp.sbs
   tls: true
   ws-opts:
-    path: /proxy
+    path: /jss
+- name: 🇸🇬新加坡-10
+  type: vless
+  server: germany.speedwarp.sbs
+  port: 443
+  uuid: 9081da91-204d-4f94-92df-31d902a9956d
+  network: ws
+  servername: germany.speedwarp.sbs
+  tls: true
+  ws-opts:
+    path: /jss
 - name: 🇹🇼台湾-01
   type: vless
   server: 60.248.139.106
@@ -2459,56 +1105,68 @@ proxies:
   tls: true
   ws-opts:
     path: /60.248.139.106:18081
-    headers:
-      Host: 2026.hhhhh.eu.org
 - name: 🇺🇸美国-01
   type: vless
-  server: 144.31.94.4
-  port: 42428
-  uuid: 27d0c642-693c-4070-83b4-0e9803ba71b3
-  servername: eh.vk.com
+  server: 107.197.181.148
+  port: 443
+  uuid: 39c72576-8e0a-4249-ab37-0c89ce6a8e93
+  servername: www.apple.com
   tls: true
-  flow: xtls-rprx-vision
   client-fingerprint: chrome
   reality-opts:
-    public-key: ccICtTNR2BXmdCzazGcyci16c7O1kJIv6ugDM6xY2XY
-    short-id: 24adcebe
+    public-key: H6i2nA8Pm4b5Wb9UxP3GOQ_1WAEdlqUg5WDCBDdxtFo
 - name: 🇺🇸美国-02
-  type: trojan
-  server: 141.193.213.60
+  type: vless
+  server: 209.102.207.120
   port: 443
-  password: 89e44895-1fe7-4305-b81b-56f118fcec23
-  sni: 5qfg26y3xj2zjlmr.catimecsgo.xyz
-  skip-cert-verify: false
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.navy
   tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.v6.navy
 - name: 🇺🇸美国-03
-  type: trojan
-  server: 141.193.213.107
+  type: vless
+  server: 135.84.74.43
   port: 443
-  password: 89e44895-1fe7-4305-b81b-56f118fcec23
-  sni: light.bpsg2026.top
-  skip-cert-verify: false
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.navy
   tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.v6.navy
 - name: 🇺🇸美国-04
-  type: trojan
-  server: 141.193.213.199
+  type: vless
+  server: 135.84.74.155
   port: 443
-  password: 89e44895-1fe7-4305-b81b-56f118fcec23
-  sni: ukmp1pz6n5doe90u.tkgogocsgo.top
-  skip-cert-verify: false
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.navy
   tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?Telegram🇨🇳+@WangCai2=
+    headers:
+      Host: sni.111000.v6.navy
 - name: 🇺🇸美国-05
   type: vless
-  server: 156.229.161.107
-  port: 10001
-  uuid: 9c79aceb-4649-44ea-9698-b5e9ecf6d6da
-  servername: www.icloud.com
+  server: 192.200.160.19
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.navy
   tls: true
-  flow: xtls-rprx-vision
   client-fingerprint: chrome
-  reality-opts:
-    public-key: 4jNz4Bw-FZlaX-WtfAdwK0hegY28W_k8AttGd-7hZn4
-    short-id: fb2c6678
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.v6.navy
 - name: 🇺🇸美国-06
   type: vless
   server: freeyx.cloudflare88.eu.org
@@ -2537,6 +1195,84 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
 - name: 🇺🇸美国-08
+  type: vless
+  server: 94.131.101.135
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.navy
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.v6.navy
+- name: 🇺🇸美国-09
+  type: vless
+  server: cnamefuckxxs.yuchen.icu
+  port: 443
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  network: ws
+  servername: juzi.qea.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: juzi.qea.ccwu.cc
+- name: 🇺🇸美国-10
+  type: vless
+  server: 129.212.236.160
+  port: 443
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  network: ws
+  servername: 3-vud.pages.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: 3-vud.pages.dev
+- name: 🇺🇸美国-11
+  type: vless
+  server: love.zshabai.top
+  port: 443
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  network: ws
+  servername: 1-brc.pages.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: 1-brc.pages.dev
+- name: 🇺🇸美国-12
+  type: vless
+  server: cf.0sm.com
+  port: 443
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  network: ws
+  servername: juzi.qea.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: juzi.qea.ccwu.cc
+- name: 🇺🇸美国-13
+  type: vless
+  server: 172.66.3.201
+  port: 443
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  network: ws
+  servername: juzi.qea.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: juzi.qea.ccwu.cc
+- name: 🇺🇸美国-14
   type: vmess
   server: vc.fly.dev
   port: 443
@@ -2551,7 +1287,7 @@ proxies:
     path: /vc
     headers:
       Host: vc.fly.dev
-- name: 🇺🇸美国-09
+- name: 🇺🇸美国-15
   type: trojan
   server: 167.68.4.199
   port: 2053
@@ -2560,364 +1296,48 @@ proxies:
   skip-cert-verify: false
   tls: true
   ws-opts:
-    path: /?ed=2560&proxyip=ts.hpc.tw
+    path: /
     headers:
       Host: epge.muarua.filegear-sg.me
-- name: 🇺🇸美国-10
-  type: vless
-  server: 94.131.101.135
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.v6.navy
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.v6.navy
-- name: 🇺🇸美国-11
-  type: trojan
-  server: 141.193.213.199
-  port: 443
-  password: ac246072-3078-4cd2-ba8a-8c91d4eb3570
-  sni: ukmp1pz6n5doe90u.tkgogocsgo.top
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /images
-    headers:
-      Host: ukmp1pz6n5doe90u.tkgogocsgo.top
-- name: 🇺🇸美国-12
-  type: vless
-  server: 69.84.182.13
-  port: 443
-  uuid: 340dee85-bfd7-4395-8d2e-87dbc2781a13
-  network: ws
-  servername: jp1-jp1.aiopen.sbs
-  tls: true
-  ws-opts:
-    path: /kbjc/jp1
-    headers:
-      Host: jp1-jp1.aiopen.sbs
-- name: 🇺🇸美国-13
-  type: trojan
-  server: cloudflare-ip.mofashi.ltd
-  port: 443
-  password: b58b997c-1629-412a-93e4-cb6d4baccac3
-  sni: juzi.qea.ccwu.cc
-  alpn:
-  - h3
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: juzi.qea.ccwu.cc
-- name: 🇺🇸美国-14
-  type: vless
-  server: 192.200.160.19
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.v6.navy
-  tls: true
-  ws-opts:
-    path: /
-- name: 🇺🇸美国-15
-  type: vless
-  server: 135.84.74.155
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.v6.navy
-  tls: true
-  ws-opts:
-    path: /?Telegram🇨🇳+@WangCai2=
-    headers:
-      Host: sni.111000.v6.navy
 - name: 🇺🇸美国-16
   type: vless
-  server: 135.84.74.43
+  server: blackshadow.dpdns.org
+  port: 443
+  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  network: ws
+  servername: blackshadow.dpdns.org
+  tls: true
+  ws-opts:
+    path: /44.209.52.7-443
+    headers:
+      Host: blackshadow.dpdns.org
+- name: 🇺🇸美国-17
+  type: vless
+  server: 135.84.64.74
   port: 443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
-  servername: sni.111000.v6.navy
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.v6.navy
-- name: 🇺🇸美国-17
-  type: trojan
-  server: 172.64.34.15
-  port: 443
-  password: b58b997c-1629-412a-93e4-cb6d4baccac3
-  sni: juzi.qea.ccwu.cc
-  alpn:
-  - h3
-  skip-cert-verify: true
+  servername: sni.111000.dynv6.net
   tls: true
   ws-opts:
-    path: /?ed=2048
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
     headers:
-      Host: juzi.qea.ccwu.cc
+      Host: sni.111000.dynv6.net
 - name: 🇺🇸美国-18
   type: vless
-  server: 172.64.34.15
+  server: 135.84.74.90
   port: 443
-  uuid: b58b997c-1629-412a-93e4-cb6d4baccac3
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
-  servername: juzi.qea.ccwu.cc
+  servername: sni.111000.dynv6.net
   tls: true
-  client-fingerprint: chrome
   ws-opts:
-    path: /?ed=2048
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
     headers:
-      Host: juzi.qea.ccwu.cc
+      Host: sni.111000.dynv6.net
 - name: 🇺🇸美国-19
   type: vless
-  server: 209.102.207.120
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.v6.navy
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.v6.navy
-- name: 🇺🇸美国-20
-  type: vless
-  server: xn--b6gac.eu.org
-  port: 443
-  uuid: b58b997c-1629-412a-93e4-cb6d4baccac3
-  network: ws
-  servername: juzi.qea.ccwu.cc
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: juzi.qea.ccwu.cc
-- name: 🇽🇽未知-01
-  type: trojan
-  server: speed.cloudflare.182682.xyz
-  port: 443
-  password: 89e44895-1fe7-4305-b81b-56f118fcec23
-  sni: ni5qwas2a6ysde23.usgogo202510.top
-  skip-cert-verify: false
-  tls: true
-- name: 🇽🇽未知-02
-  type: trojan
-  server: cloudflare.182682.xyz
-  port: 443
-  password: 89e44895-1fe7-4305-b81b-56f118fcec23
-  sni: 5qfg26y3xj2zjlmr.catimecsgo.xyz
-  skip-cert-verify: false
-  tls: true
-- name: 🇽🇽未知-03
-  type: trojan
-  server: 666.cloudflare.182682.xyz
-  port: 443
-  password: 89e44895-1fe7-4305-b81b-56f118fcec23
-  sni: light.bpsg2026.top
-  skip-cert-verify: false
-  tls: true
-- name: 🇽🇽未知-04
-  type: trojan
-  server: er11.cloudflare.182682.xyz
-  port: 443
-  password: 89e44895-1fe7-4305-b81b-56f118fcec23
-  sni: help.bper2026.top
-  skip-cert-verify: false
-  tls: true
-- name: 🇽🇽未知-05
-  type: trojan
-  server: er22.cloudflare.182682.xyz
-  port: 443
-  password: 89e44895-1fe7-4305-b81b-56f118fcec23
-  sni: help.bper2026.top
-  skip-cert-verify: false
-  tls: true
-- name: 🇽🇽未知-06
-  type: trojan
-  server: er33.cloudflare.182682.xyz
-  port: 443
-  password: 89e44895-1fe7-4305-b81b-56f118fcec23
-  sni: help.bper2026.top
-  skip-cert-verify: false
-  tls: true
-- name: 🇽🇽未知-07
-  type: trojan
-  server: malaia.cloudflare.182682.xyz
-  port: 443
-  password: 89e44895-1fe7-4305-b81b-56f118fcec23
-  sni: thank.bpmalai2026.top
-  skip-cert-verify: false
-  tls: true
-- name: 🇽🇽未知-08
-  type: trojan
-  server: 111.cloudflare.182682.xyz
-  port: 443
-  password: 89e44895-1fe7-4305-b81b-56f118fcec23
-  sni: fast.usfaster.top
-  skip-cert-verify: false
-  tls: true
-- name: 🇽🇽未知-09
-  type: trojan
-  server: digitalocean.com
-  port: 443
-  password: 89e44895-1fe7-4305-b81b-56f118fcec23
-  sni: fast.usfaster.top
-  skip-cert-verify: false
-  tls: true
-- name: 🇽🇽未知-10
-  type: trojan
-  server: 104.19.174.68
-  port: 443
-  password: 89e44895-1fe7-4305-b81b-56f118fcec23
-  sni: fast.usfaster.top
-  skip-cert-verify: false
-  tls: true
-- name: 🇽🇽未知-11
-  type: trojan
-  server: 104.19.173.68
-  port: 443
-  password: 89e44895-1fe7-4305-b81b-56f118fcec23
-  sni: fast.usfaster.top
-  skip-cert-verify: false
-  tls: true
-- name: 🇽🇽未知-12
-  type: trojan
-  server: 555.cloudflare.182682.xyz
-  port: 443
-  password: 89e44895-1fe7-4305-b81b-56f118fcec23
-  sni: fast.usfaster.top
-  skip-cert-verify: false
-  tls: true
-- name: 🇽🇽未知-13
-  type: trojan
-  server: 777.cloudflare.182682.xyz
-  port: 443
-  password: 89e44895-1fe7-4305-b81b-56f118fcec23
-  sni: fast.usfaster.top
-  skip-cert-verify: false
-  tls: true
-- name: 🇽🇽未知-14
-  type: trojan
-  server: 888.cloudflare.182682.xyz
-  port: 443
-  password: 89e44895-1fe7-4305-b81b-56f118fcec23
-  sni: fast.usfaster.top
-  skip-cert-verify: false
-  tls: true
-- name: 🇽🇽未知-15
-  type: trojan
-  server: 999.cloudflare.182682.xyz
-  port: 443
-  password: 89e44895-1fe7-4305-b81b-56f118fcec23
-  sni: fast.usfaster.top
-  skip-cert-verify: false
-  tls: true
-- name: 🇽🇽未知-16
-  type: trojan
-  server: saas.sin.fan
-  port: 443
-  password: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  sni: sni.111000.dynv6.net
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&proxyip=ip.111000.de5.net:443
-    headers:
-      Host: sni.111000.dynv6.net
-- name: 🇽🇽未知-17
-  type: trojan
-  server: jp.111000.cc.cd
-  port: 443
-  password: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  sni: sni.111000.dynv6.net
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&proxyip=ip.111000.de5.net:443
-    headers:
-      Host: sni.111000.dynv6.net
-- name: 🇽🇽未知-18
-  type: trojan
-  server: bestcf.030101.xyz
-  port: 443
-  password: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  sni: sni.111000.dynv6.net
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2560&proxyip=ip.111000.de5.net:443
-    headers:
-      Host: sni.111000.dynv6.net
-- name: 🇽🇽未知-19
-  type: vless
-  server: jp.111000.cc.cd
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&proxyip=ip.111000.de5.net:443
-    headers:
-      Host: sni.111000.dynv6.net
-- name: 🇽🇽未知-20
-  type: vless
-  server: saas.sin.fan
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&proxyip=ip.111000.de5.net:443
-    headers:
-      Host: sni.111000.dynv6.net
-- name: 🇽🇽未知-21
-  type: vless
-  server: bestcf.030101.xyz
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560&proxyip=ip.111000.de5.net:443
-    headers:
-      Host: sni.111000.dynv6.net
-- name: 🇽🇽未知-22
-  type: vmess
-  server: cloudflare-dns.com
-  port: 80
-  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: q.ikez.dpdns.org
-- name: 🇽🇽未知-23
-  type: vless
-  server: 104.17.152.254
+  server: sss.yaml7.ggff.net
   port: 80
   uuid: 5aa7d17e-7dc2-46dd-9acf-c3c97440259b
   network: ws
@@ -2926,18 +1346,407 @@ proxies:
     path: /?ed=2048
     headers:
       Host: sss.yaml7.ggff.net
-- name: 🇽🇽未知-24
+- name: 🇺🇸美国-20
   type: vless
-  server: 104.17.152.254
-  port: 80
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
+  server: 69.84.182.13
+  port: 443
+  uuid: 340dee85-bfd7-4395-8d2e-87dbc2781a13
   network: ws
-  tls: false
+  servername: jp1-jp1.aiopen.sbs
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /kbjc/jp1
+    headers:
+      Host: jp1-jp1.aiopen.sbs
+- name: 🇺🇸美国-21
+  type: trojan
+  server: bpbg.anguswen.top
+  port: 443
+  password: '123456'
+  sni: bPbG.ANguswen.tOP
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /eyJqdW5rIjoidmNzMWVlWHpNTVh4M2siLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyJicGIueW91c2VmLmlzZWdhcm8uY29tIl19?ed=2560
+- name: 🇺🇸美国-22
+  type: trojan
+  server: bpbg.anguswen.top
+  port: 8443
+  password: '123456'
+  sni: BpBg.ANGusWeN.top
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /eyJqdW5rIjoiTUp4VFNoMTRLbSIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbImJwYi55b3VzZWYuaXNlZ2Fyby5jb20iXX0=?ed=2560
+- name: 🇺🇸美国-23
+  type: trojan
+  server: bpbg.anguswen.top
+  port: 2053
+  password: '123456'
+  sni: Bpbg.aNGuSweN.top
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /eyJqdW5rIjoiYWJZUDZ0Z2RMTSIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbImJwYi55b3VzZWYuaXNlZ2Fyby5jb20iXX0=?ed=2560
+- name: 🇺🇸美国-24
+  type: vless
+  server: 172.66.40.139
+  port: 443
+  uuid: 1679af35-6dd6-4c09-ae3b-18f239217f3e
+  network: ws
+  servername: rAyAn-007.pArViN.DpDnS.OrG
+  tls: true
   ws-opts:
     path: /
     headers:
-      Host: vip.yaml7.ggff.net
+      Host: rAyAn-007.pArViN.DpDnS.OrG
+- name: 🇽🇽未知-01
+  type: trojan
+  server: jp.111000.cc.cd
+  port: 443
+  password: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  sni: sni.111000.dynv6.net
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    path: /?ed=2560&proxyip=ip.111000.de5.net:443
+    headers:
+      Host: sni.111000.dynv6.net
+- name: 🇽🇽未知-02
+  type: vless
+  server: saas.sin.fan
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&proxyip=ip.111000.de5.net:443
+    headers:
+      Host: sni.111000.dynv6.net
+- name: 🇽🇽未知-03
+  type: trojan
+  server: saas.sin.fan
+  port: 443
+  password: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  sni: sni.111000.dynv6.net
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    path: /?ed=2560&proxyip=ip.111000.de5.net:443
+    headers:
+      Host: sni.111000.dynv6.net
+- name: 🇽🇽未知-04
+  type: vless
+  server: bestcf.030101.xyz
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&proxyip=ip.111000.de5.net:443
+    headers:
+      Host: sni.111000.dynv6.net
+- name: 🇽🇽未知-05
+  type: trojan
+  server: bestcf.030101.xyz
+  port: 443
+  password: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  sni: sni.111000.dynv6.net
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    path: /?ed=2560&proxyip=ip.111000.de5.net:443
+    headers:
+      Host: sni.111000.dynv6.net
+- name: 🇽🇽未知-06
+  type: vless
+  server: jp.111000.cc.cd
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&proxyip=ip.111000.de5.net:443
+    headers:
+      Host: sni.111000.dynv6.net
+- name: 🇽🇽未知-07
+  type: vless
+  server: 198.41.219.116
+  port: 443
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  network: ws
+  servername: juzi.qea.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: juzi.qea.ccwu.cc
+- name: 🇽🇽未知-08
+  type: vless
+  server: xn--b6gac.eu.org
+  port: 443
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  network: ws
+  servername: juzi.qea.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: juzi.qea.ccwu.cc
+- name: 🇽🇽未知-09
+  type: vless
+  server: cdn.tzpro.xyz
+  port: 443
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  network: ws
+  servername: juzi.qea.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: juzi.qea.ccwu.cc
+- name: 🇽🇽未知-10
+  type: vless
+  server: 104.25.245.127
+  port: 443
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  network: ws
+  servername: juzi.qea.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: juzi.qea.ccwu.cc
+- name: 🇽🇽未知-11
+  type: vless
+  server: 104.25.242.61
+  port: 443
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  network: ws
+  servername: juzi.qea.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: juzi.qea.ccwu.cc
+- name: 🇽🇽未知-12
+  type: vless
+  server: 104.25.252.37
+  port: 443
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  network: ws
+  servername: juzi.qea.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: juzi.qea.ccwu.cc
+- name: 🇽🇽未知-13
+  type: vless
+  server: cf.877771.xyz
+  port: 443
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  network: ws
+  servername: juzi.qea.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: juzi.qea.ccwu.cc
+- name: 🇽🇽未知-14
+  type: vless
+  server: ip.sb
+  port: 443
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  network: ws
+  servername: 177-e06.pages.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: 177-e06.pages.dev
+- name: 🇽🇽未知-15
+  type: vless
+  server: time.is
+  port: 443
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  network: ws
+  servername: 3-deu.pages.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: 3-deu.pages.dev
+- name: 🇽🇽未知-16
+  type: vless
+  server: 104.25.242.55
+  port: 443
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  network: ws
+  servername: juzi.qea.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: juzi.qea.ccwu.cc
+- name: 🇽🇽未知-17
+  type: vless
+  server: 104.17.150.241
+  port: 443
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  network: ws
+  servername: juzi.qea.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: juzi.qea.ccwu.cc
+- name: 🇽🇽未知-18
+  type: vless
+  server: 104.17.156.197
+  port: 443
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  network: ws
+  servername: juzi.qea.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: juzi.qea.ccwu.cc
+- name: 🇽🇽未知-19
+  type: vless
+  server: 162.159.13.206
+  port: 443
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  network: ws
+  servername: juzi.qea.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: juzi.qea.ccwu.cc
+- name: 🇽🇽未知-20
+  type: vless
+  server: 162.159.17.189
+  port: 443
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  network: ws
+  servername: juzi.qea.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: juzi.qea.ccwu.cc
+- name: 🇽🇽未知-21
+  type: vless
+  server: 162.159.18.105
+  port: 443
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  network: ws
+  servername: juzi.qea.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: juzi.qea.ccwu.cc
+- name: 🇽🇽未知-22
+  type: vless
+  server: 162.159.13.20
+  port: 443
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  network: ws
+  servername: juzi.qea.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: juzi.qea.ccwu.cc
+- name: 🇽🇽未知-23
+  type: vless
+  server: tajikistan.mfa.gov.ua
+  port: 443
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  network: ws
+  servername: p-6fa.pages.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: p-6fa.pages.dev
+- name: 🇽🇽未知-24
+  type: vless
+  server: 162.159.13.245
+  port: 443
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  network: ws
+  servername: juzi.qea.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: juzi.qea.ccwu.cc
 - name: 🇽🇽未知-25
+  type: vless
+  server: wangcai115.cloudflare.182682.xyz
+  port: 8880
+  uuid: 7890ce31-9a25-4fd4-90e7-80e5823ff510
+  network: ws
+  servername: Telegram-channel-WangCai2
+  tls: false
+  ws-opts:
+    path: /Telegram🇨🇳@WangCai2/?ed=2560
+    headers:
+      Host: frejd.11258.workers.dev
+- name: 🇽🇽未知-26
+  type: vless
+  server: wangcai139.cloudflare.182682.xyz
+  port: 8880
+  uuid: 7890ce31-9a25-4fd4-90e7-80e5823ff510
+  network: ws
+  servername: Telegram-channel-WangCai2
+  tls: false
+  ws-opts:
+    path: /Telegram🇨🇳@WangCai2/?ed=2560
+    headers:
+      Host: frejd.11258.workers.dev
+- name: 🇽🇽未知-27
   type: vless
   server: wangcai15.cloudflare.182682.xyz
   port: 8880
@@ -2949,254 +1758,46 @@ proxies:
     path: /Telegram🇨🇳@WangCai2/?ed=2560
     headers:
       Host: frejd.11258.workers.dev
-- name: 🇽🇽未知-26
-  type: trojan
-  server: www.gossipglove.com
-  port: 443
-  password: humanity
-  sni: www.gossipglove.com
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /assignment
-- name: 🇽🇽未知-27
-  type: trojan
-  server: 104.18.82.172
-  port: 443
-  password: b58b997c-1629-412a-93e4-cb6d4baccac3
-  sni: juzi.qea.ccwu.cc
-  alpn:
-  - h3
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: juzi.qea.ccwu.cc
 - name: 🇽🇽未知-28
   type: vless
-  server: 104.17.152.135
-  port: 443
-  uuid: b58b997c-1629-412a-93e4-cb6d4baccac3
+  server: wangcai157.cloudflare.182682.xyz
+  port: 8880
+  uuid: 7890ce31-9a25-4fd4-90e7-80e5823ff510
   network: ws
-  servername: juzi.qea.ccwu.cc
-  tls: true
-  client-fingerprint: chrome
+  servername: Telegram-channel-WangCai2
+  tls: false
   ws-opts:
-    path: /?ed=2048
+    path: /Telegram🇨🇳@WangCai2/?ed=2560
     headers:
-      Host: juzi.qea.ccwu.cc
+      Host: frejd.11258.workers.dev
 - name: 🇽🇽未知-29
-  type: trojan
-  server: 104.17.144.239
+  type: vless
+  server: 104.20.50.17
   port: 443
-  password: b58b997c-1629-412a-93e4-cb6d4baccac3
-  sni: juzi.qea.ccwu.cc
-  alpn:
-  - h3
-  skip-cert-verify: false
+  uuid: 5aa7d17e-7dc2-46dd-9acf-c3c97440259b
+  network: ws
+  servername: sss.yaml7.ggff.net
   tls: true
   ws-opts:
     path: /?ed=2048
     headers:
-      Host: juzi.qea.ccwu.cc
+      Host: sss.yaml7.ggff.net
 - name: 🇽🇽未知-30
-  type: trojan
-  server: 198.41.219.104
+  type: vless
+  server: s1.db-link.in
   port: 443
-  password: b58b997c-1629-412a-93e4-cb6d4baccac3
-  sni: juzi.qea.ccwu.cc
-  alpn:
-  - h3
-  skip-cert-verify: false
+  uuid: d2efa18a-9e8a-3057-91fe-90c8e620e49f
+  network: ws
+  servername: s6.oboob.cn
   tls: true
   ws-opts:
-    path: /?ed=2048
+    path: /db10242a4797a252
     headers:
-      Host: juzi.qea.ccwu.cc
+      Host: s6.oboob.cn
 - name: 🇽🇽未知-31
-  type: trojan
-  server: 104.18.84.66
-  port: 443
-  password: b58b997c-1629-412a-93e4-cb6d4baccac3
-  sni: juzi.qea.ccwu.cc
-  alpn:
-  - h3
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: juzi.qea.ccwu.cc
-- name: 🇽🇽未知-32
-  type: trojan
-  server: 104.17.131.141
-  port: 443
-  password: b58b997c-1629-412a-93e4-cb6d4baccac3
-  sni: juzi.qea.ccwu.cc
-  alpn:
-  - h3
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: juzi.qea.ccwu.cc
-- name: 🇽🇽未知-33
-  type: trojan
-  server: 104.17.148.252
-  port: 443
-  password: b58b997c-1629-412a-93e4-cb6d4baccac3
-  sni: juzi.qea.ccwu.cc
-  alpn:
-  - h3
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: juzi.qea.ccwu.cc
-- name: 🇽🇽未知-34
-  type: trojan
-  server: 104.17.152.135
-  port: 443
-  password: b58b997c-1629-412a-93e4-cb6d4baccac3
-  sni: juzi.qea.ccwu.cc
-  alpn:
-  - h3
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: juzi.qea.ccwu.cc
-- name: 🇽🇽未知-35
-  type: trojan
-  server: cf.877771.xyz
-  port: 443
-  password: b58b997c-1629-412a-93e4-cb6d4baccac3
-  sni: juzi.qea.ccwu.cc
-  alpn:
-  - h3
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: juzi.qea.ccwu.cc
-- name: 🇽🇽未知-36
-  type: trojan
-  server: 104.18.82.27
-  port: 443
-  password: b58b997c-1629-412a-93e4-cb6d4baccac3
-  sni: juzi.qea.ccwu.cc
-  alpn:
-  - h3
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: juzi.qea.ccwu.cc
-- name: 🇽🇽未知-37
-  type: trojan
-  server: 104.17.178.112
-  port: 443
-  password: b58b997c-1629-412a-93e4-cb6d4baccac3
-  sni: juzi.qea.ccwu.cc
-  alpn:
-  - h3
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: juzi.qea.ccwu.cc
-- name: 🇽🇽未知-38
   type: vless
-  server: 162.159.16.202
+  server: 162.159.44.198
   port: 443
-  uuid: b58b997c-1629-412a-93e4-cb6d4baccac3
-  network: ws
-  servername: juzi.qea.ccwu.cc
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: juzi.qea.ccwu.cc
-- name: 🇽🇽未知-39
-  type: trojan
-  server: 162.159.17.167
-  port: 443
-  password: b58b997c-1629-412a-93e4-cb6d4baccac3
-  sni: juzi.qea.ccwu.cc
-  alpn:
-  - h3
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: juzi.qea.ccwu.cc
-- name: 🇽🇽未知-40
-  type: vless
-  server: 162.159.17.167
-  port: 443
-  uuid: b58b997c-1629-412a-93e4-cb6d4baccac3
-  network: ws
-  servername: juzi.qea.ccwu.cc
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: juzi.qea.ccwu.cc
-- name: 🇽🇽未知-41
-  type: trojan
-  server: 162.159.8.221
-  port: 443
-  password: b58b997c-1629-412a-93e4-cb6d4baccac3
-  sni: juzi.qea.ccwu.cc
-  alpn:
-  - h3
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: juzi.qea.ccwu.cc
-- name: 🇽🇽未知-42
-  type: vless
-  server: 162.159.27.113
-  port: 443
-  uuid: b58b997c-1629-412a-93e4-cb6d4baccac3
-  network: ws
-  servername: juzi.qea.ccwu.cc
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: juzi.qea.ccwu.cc
-- name: 🇽🇽未知-43
-  type: trojan
-  server: 162.159.27.113
-  port: 443
-  password: b58b997c-1629-412a-93e4-cb6d4baccac3
-  sni: juzi.qea.ccwu.cc
-  alpn:
-  - h3
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: juzi.qea.ccwu.cc
-- name: 🇽🇽未知-44
-  type: vless
-  server: 162.159.45.175
-  port: 2053
   uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
   network: ws
   servername: fu.baiproxy.us.ci
@@ -3205,7 +1806,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: fu.baiproxy.us.ci
-- name: 🇽🇽未知-45
+- name: 🇽🇽未知-32
   type: vless
   server: 162.159.44.66
   port: 2053
@@ -3217,79 +1818,31 @@ proxies:
     path: /?ed=2560
     headers:
       Host: fu.baiproxy.us.ci
-- name: 🇽🇽未知-46
-  type: trojan
-  server: 888.cloudflare.182682.xyz
-  port: 443
-  password: ac246072-3078-4cd2-ba8a-8c91d4eb3570
-  sni: fast.usfaster.top
-  skip-cert-verify: true
+- name: 🇽🇽未知-33
+  type: vless
+  server: 162.159.45.175
+  port: 2053
+  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+  network: ws
+  servername: fu.baiproxy.us.ci
   tls: true
   ws-opts:
-    path: /images
+    path: /?ed=2560
     headers:
-      Host: fast.usfaster.top
-- name: 🇽🇽未知-47
-  type: trojan
-  server: 111.cloudflare.182682.xyz
-  port: 443
-  password: ac246072-3078-4cd2-ba8a-8c91d4eb3570
-  sni: fast.usfaster.top
-  skip-cert-verify: true
+      Host: fu.baiproxy.us.ci
+- name: 🇽🇽未知-34
+  type: vless
+  server: 162.159.44.100
+  port: 2087
+  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+  network: ws
+  servername: fu.baiproxy.us.ci
   tls: true
   ws-opts:
-    path: /images
+    path: /?ed=2560
     headers:
-      Host: fast.usfaster.top
-- name: 🇽🇽未知-48
-  type: trojan
-  server: 555.cloudflare.182682.xyz
-  port: 443
-  password: ac246072-3078-4cd2-ba8a-8c91d4eb3570
-  sni: fast.usfaster.top
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /images
-    headers:
-      Host: fast.usfaster.top
-- name: 🇽🇽未知-49
-  type: trojan
-  server: 777.cloudflare.182682.xyz
-  port: 443
-  password: ac246072-3078-4cd2-ba8a-8c91d4eb3570
-  sni: fast.usfaster.top
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /images
-    headers:
-      Host: fast.usfaster.top
-- name: 🇽🇽未知-50
-  type: trojan
-  server: cloudflare.182682.xyz
-  port: 443
-  password: ac246072-3078-4cd2-ba8a-8c91d4eb3570
-  sni: 5qfg26y3xj2zjlmr.catimecsgo.xyz
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /images
-    headers:
-      Host: 5qfg26y3xj2zjlmr.catimecsgo.xyz
-- name: 🇽🇽未知-51
-  type: trojan
-  server: er33.cloudflare.182682.xyz
-  port: 443
-  password: ac246072-3078-4cd2-ba8a-8c91d4eb3570
-  sni: help.bper2026.top
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /images
-    headers:
-      Host: help.bper2026.top
-- name: 🇽🇽未知-52
+      Host: fu.baiproxy.us.ci
+- name: 🇽🇽未知-35
   type: vless
   server: 104.19.58.118
   port: 443
@@ -3301,212 +1854,168 @@ proxies:
     path: /kbjc/us1
     headers:
       Host: us1-us1.aiopen.sbs
-- name: 🇽🇽未知-53
-  type: trojan
-  server: cloudflare.182682.xyz
-  port: 443
-  password: b58b997c-1629-412a-93e4-cb6d4baccac3
-  sni: juzi.qea.ccwu.cc
-  alpn:
-  - h3
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: juzi.qea.ccwu.cc
-- name: 🇽🇽未知-54
-  type: trojan
-  server: xn--b6gac.eu.org
-  port: 443
-  password: b58b997c-1629-412a-93e4-cb6d4baccac3
-  sni: juzi.qea.ccwu.cc
-  alpn:
-  - h3
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: juzi.qea.ccwu.cc
-- name: 🇽🇽未知-55
-  type: trojan
-  server: cdn.tzpro.xyz
-  port: 443
-  password: b58b997c-1629-412a-93e4-cb6d4baccac3
-  sni: juzi.qea.ccwu.cc
-  alpn:
-  - h3
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: juzi.qea.ccwu.cc
-- name: 🇽🇽未知-56
-  type: trojan
-  server: 104.17.106.149
-  port: 443
-  password: b58b997c-1629-412a-93e4-cb6d4baccac3
-  sni: juzi.qea.ccwu.cc
-  alpn:
-  - h3
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: juzi.qea.ccwu.cc
-- name: 🇽🇽未知-57
+- name: 🇽🇽未知-36
   type: vless
-  server: 162.159.8.221
+  server: 162.159.45.189
   port: 443
-  uuid: b58b997c-1629-412a-93e4-cb6d4baccac3
+  uuid: 19d38874-94cb-4a82-a6db-c32c7872e712
   network: ws
-  servername: juzi.qea.ccwu.cc
+  servername: g1.nzjlerhb.icu
+  tls: true
+  ws-opts:
+    path: /app/hk7
+    headers:
+      Host: g1.nzjlerhb.icu
+- name: 🇽🇽未知-37
+  type: vless
+  server: mfa.gov.ua
+  port: 443
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  network: ws
+  servername: 3-vud.pages.dev
   tls: true
   client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: juzi.qea.ccwu.cc
-- name: 🇽🇽未知-58
-  type: trojan
-  server: 162.159.16.202
-  port: 443
-  password: b58b997c-1629-412a-93e4-cb6d4baccac3
-  sni: juzi.qea.ccwu.cc
-  alpn:
-  - h3
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: juzi.qea.ccwu.cc
-- name: 🇽🇽未知-59
-  type: trojan
-  server: cf.0sm.com
-  port: 443
-  password: b58b997c-1629-412a-93e4-cb6d4baccac3
-  sni: juzi.qea.ccwu.cc
-  alpn:
-  - h3
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: juzi.qea.ccwu.cc
-- name: 🇽🇽未知-60
-  type: vless
-  server: 104.17.131.141
-  port: 443
-  uuid: b58b997c-1629-412a-93e4-cb6d4baccac3
-  network: ws
-  servername: juzi.qea.ccwu.cc
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: juzi.qea.ccwu.cc
-- name: 🇽🇽未知-61
-  type: vmess
-  server: 1.1.1.1
-  port: 443
-  uuid: 89e44895-1fe7-4305-b81b-56f118fcec23
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  servername: www.bing.com
-  network: ws
   ws-opts:
     path: /
     headers:
-      Host: www.bing.com
+      Host: 3-vud.pages.dev
+- name: 🇽🇽未知-38
+  type: vless
+  server: 104.16.158.162
+  port: 80
+  uuid: a7444b2b-20fb-461f-9840-63e5c8c7d883
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed
+    headers:
+      Host: mute-violet-c674.poviy66273.workers.dev
 proxy-groups:
 - name: 🚀 节点选择
   type: select
   proxies:
-  - 🇱🇻LV-01
-  - 🇸🇪瑞典-01
-  - 🇭🇰香港-01
-  - 🇭🇰香港-02
-  - 🇬🇧英国-01
-  - 🇭🇰香港-03
-  - 🇭🇰香港-04
-  - 🇭🇰香港-05
-  - 🇭🇰香港-06
-  - 🇬🇧英国-02
-  - 🇺🇸美国-01
-  - 🇭🇰香港-07
-  - 🇭🇰香港-08
-  - 🇬🇧英国-03
-  - 🇲🇽墨西哥-01
+  - 🇯🇵日本-01
+  - 🇯🇵日本-02
+  - 🇯🇵日本-03
   - 🇩🇪德国-01
+  - 🇭🇰香港-01
+  - 🇬🇧英国-01
+  - 🇬🇧英国-02
+  - 🇬🇧英国-03
   - 🇰🇷韩国-01
   - 🇰🇷韩国-02
-  - 🇽🇽未知-01
-  - 🇨🇦加拿大-01
-  - 🇨🇦加拿大-02
-  - 🇨🇦加拿大-03
-  - 🇽🇽未知-02
+  - 🇩🇪德国-02
+  - 🇳🇱荷兰-01
+  - 🇺🇸美国-01
+  - 🇷🇴罗马尼亚-01
+  - 🇯🇵日本-04
   - 🇺🇸美国-02
-  - 🇨🇦加拿大-04
-  - 🇽🇽未知-03
+  - 🇫🇷法国-01
+  - 🇽🇽未知-01
   - 🇺🇸美国-03
+  - 🇺🇸美国-04
+  - 🇺🇸美国-05
+  - 🇺🇸美国-06
+  - 🇽🇽未知-02
+  - 🇷🇴罗马尼亚-02
+  - 🇽🇽未知-03
   - 🇽🇽未知-04
+  - 🇺🇸美国-07
+  - 🇱🇻LV-01
   - 🇽🇽未知-05
   - 🇽🇽未知-06
-  - 🇨🇦加拿大-05
-  - 🇨🇦加拿大-06
-  - 🇨🇦加拿大-07
-  - 🇺🇸美国-04
+  - 🇺🇸美国-08
+  - 🇪🇸西班牙-01
+  - 🇦🇹奥地利-01
+  - 🇺🇸美国-09
+  - 🇦🇹奥地利-02
   - 🇽🇽未知-07
+  - 🇧🇷巴西-01
+  - 🇬🇧英国-04
+  - 🇧🇪比利时-01
+  - 🇲🇩MD-01
+  - 🇫🇷法国-02
+  - 🇦🇹奥地利-03
   - 🇽🇽未知-08
+  - 🇸🇬新加坡-01
+  - 🇺🇸美国-10
+  - 🇬🇧英国-05
+  - 🇺🇸美国-11
   - 🇽🇽未知-09
   - 🇽🇽未知-10
   - 🇽🇽未知-11
   - 🇽🇽未知-12
-  - 🇨🇦加拿大-08
   - 🇽🇽未知-13
+  - 🇳🇱荷兰-02
   - 🇽🇽未知-14
   - 🇽🇽未知-15
-  - 🇫🇷法国-01
-  - 🇺🇸美国-05
-  - 🇨🇿捷克-01
   - 🇽🇽未知-16
   - 🇽🇽未知-17
-  - 🇺🇸美国-06
+  - 🇺🇸美国-12
   - 🇽🇽未知-18
-  - 🇺🇸美国-07
   - 🇽🇽未知-19
   - 🇽🇽未知-20
   - 🇽🇽未知-21
-  - 🇪🇸西班牙-01
   - 🇽🇽未知-22
   - 🇽🇽未知-23
-  - 🇸🇬新加坡-01
-  - 🇸🇬新加坡-02
   - 🇽🇽未知-24
-  - 🇸🇬新加坡-03
-  - 🇺🇸美国-08
-  - 🇫🇷法国-02
-  - 🇽🇽未知-25
-  - 🇸🇬新加坡-04
-  - 🇹🇼台湾-01
-  - 🇽🇽未知-26
-  - 🇺🇸美国-09
+  - 🇺🇸美国-13
+  - 🇺🇸美国-14
+  - 🇮🇳印度-01
+  - 🇺🇸美国-15
   - 🇪🇸西班牙-02
+  - 🇺🇸美国-16
+  - 🇽🇽未知-25
+  - 🇽🇽未知-26
   - 🇽🇽未知-27
-  - 🇫🇷法国-03
   - 🇽🇽未知-28
+  - 🇷🇴罗马尼亚-03
   - 🇽🇽未知-29
+  - 🇬🇧英国-06
+  - 🇺🇸美国-17
+  - 🇺🇸美国-18
+  - 🇩🇪德国-03
+  - 🇩🇪德国-04
   - 🇽🇽未知-30
-  - 🇬🇷希腊-01
+  - 🇯🇵日本-05
+  - 🇽🇽未知-31
+  - 🇽🇽未知-32
+  - 🇽🇽未知-33
   - 🇱🇻LV-02
+  - 🇦🇺澳大利亚-01
+  - 🇬🇧英国-07
+  - 🇰🇷韩国-03
+  - 🇺🇸美国-19
+  - 🇱🇻LV-03
+  - 🇫🇷法国-03
+  - 🇽🇽未知-34
+  - 🇺🇸美国-20
+  - 🇽🇽未知-35
+  - 🇸🇬新加坡-02
+  - 🇸🇬新加坡-03
+  - 🇸🇬新加坡-04
+  - 🇫🇷法国-04
+  - 🇫🇷法国-05
+  - 🇫🇷法国-06
+  - 🇫🇷法国-07
+  - 🇫🇷法国-08
+  - 🇫🇷法国-09
+  - 🇦🇹奥地利-04
+  - 🇳🇱荷兰-03
+  - 🇺🇸美国-21
+  - 🇺🇸美国-22
+  - 🇦🇹奥地利-05
+  - 🇪🇸西班牙-03
+  - 🇦🇹奥地利-06
+  - 🇺🇸美国-23
+  - 🇦🇹奥地利-07
+  - 🇭🇰香港-02
+  - 🇭🇰香港-03
+  - 🇭🇰香港-04
+  - 🇭🇰香港-05
+  - 🇭🇰香港-06
+  - 🇭🇰香港-07
+  - 🇭🇰香港-08
   - 🇭🇰香港-09
   - 🇭🇰香港-10
   - 🇭🇰香港-11
@@ -3516,272 +2025,153 @@ proxy-groups:
   - 🇭🇰香港-15
   - 🇭🇰香港-16
   - 🇭🇰香港-17
+  - 🇮🇹意大利-01
   - 🇭🇰香港-18
   - 🇭🇰香港-19
   - 🇭🇰香港-20
   - 🇭🇰香港-21
   - 🇭🇰香港-22
-  - 🇫🇷法国-04
-  - 🇺🇸美国-10
-  - 🇱🇻LV-03
-  - 🇫🇷法国-05
-  - 🇷🇴罗马尼亚-01
-  - 🇽🇽未知-31
-  - 🇽🇽未知-32
-  - 🇽🇽未知-33
-  - 🇽🇽未知-34
-  - 🇽🇽未知-35
-  - 🇽🇽未知-36
-  - 🇽🇽未知-37
-  - 🇫🇷法国-06
-  - 🇽🇽未知-38
-  - 🇽🇽未知-39
-  - 🇽🇽未知-40
-  - 🇽🇽未知-41
-  - 🇽🇽未知-42
-  - 🇽🇽未知-43
-  - 🇽🇽未知-44
-  - 🇫🇷法国-07
-  - 🇽🇽未知-45
-  - 🇽🇽未知-46
-  - 🇽🇽未知-47
-  - 🇫🇷法国-08
-  - 🇫🇷法国-09
-  - 🇽🇽未知-48
-  - 🇫🇷法国-10
-  - 🇫🇷法国-11
-  - 🇽🇽未知-49
-  - 🇫🇷法国-12
-  - 🇫🇷法国-13
-  - 🇫🇷法国-14
-  - 🇫🇷法国-15
-  - 🇫🇷法国-16
-  - 🇫🇷法国-17
-  - 🇫🇷法国-18
-  - 🇫🇷法国-19
-  - 🇽🇽未知-50
-  - 🇽🇽未知-51
-  - 🇫🇷法国-20
-  - 🇫🇷法国-21
-  - 🇫🇷法国-22
-  - 🇸🇬新加坡-05
-  - 🇺🇸美国-11
-  - 🇫🇷法国-23
-  - 🇫🇷法国-24
-  - 🇽🇽未知-52
-  - 🇨🇦加拿大-09
-  - 🇫🇷法国-25
-  - 🇫🇷法国-26
-  - 🇫🇷法国-27
-  - 🇺🇸美国-12
-  - 🇨🇦加拿大-10
-  - 🇫🇷法国-28
-  - 🇫🇷法国-29
-  - 🇨🇦加拿大-11
-  - 🇨🇦加拿大-12
-  - 🇫🇷法国-30
-  - 🇫🇷法国-31
-  - 🇸🇬新加坡-06
-  - 🇨🇦加拿大-13
-  - 🇽🇽未知-53
-  - 🇫🇷法国-32
-  - 🇺🇸美国-13
-  - 🇺🇸美国-14
-  - 🇺🇸美国-15
-  - 🇺🇸美国-16
-  - 🇬🇧英国-04
-  - 🇩🇪德国-02
-  - 🇩🇪德国-03
-  - 🇺🇸美国-17
-  - 🇽🇽未知-54
-  - 🇽🇽未知-55
-  - 🇦🇹奥地利-01
-  - 🇳🇱荷兰-01
-  - 🇽🇽未知-56
-  - 🇫🇷法国-33
-  - 🇺🇸美国-18
-  - 🇽🇽未知-57
-  - 🇦🇹奥地利-02
-  - 🇽🇽未知-58
-  - 🇺🇸美国-19
-  - 🇬🇧英国-05
-  - 🇫🇷法国-34
-  - 🇦🇹奥地利-03
-  - 🇦🇹奥地利-04
-  - 🇫🇷法国-35
-  - 🇬🇧英国-06
   - 🇭🇰香港-23
-  - 🇺🇸美国-20
-  - 🇽🇽未知-59
   - 🇭🇰香港-24
-  - 🇭🇰香港-25
-  - 🇭🇰香港-26
-  - 🇭🇰香港-27
-  - 🇭🇰香港-28
-  - 🇭🇰香港-29
-  - 🇽🇽未知-60
-  - 🇽🇽未知-61
-  - 🇫🇷法国-36
-  - 🇫🇷法国-37
-  - 🇫🇷法国-38
-  - 🇫🇷法国-39
-  - 🇫🇷法国-40
-  - 🇫🇷法国-41
-  - 🇫🇷法国-42
-  - 🇫🇷法国-43
-  - 🇫🇷法国-44
-  - 🇫🇷法国-45
-  - 🇫🇷法国-46
-  - 🇫🇷法国-47
-  - 🇫🇷法国-48
-  - 🇫🇷法国-49
-  - 🇫🇷法国-50
-  - 🇫🇷法国-51
-  - 🇫🇷法国-52
-  - 🇫🇷法国-53
-  - 🇫🇷法国-54
-  - 🇫🇷法国-55
-  - 🇫🇷法国-56
-  - 🇫🇷法国-57
-  - 🇫🇷法国-58
-  - 🇫🇷法国-59
-  - 🇫🇷法国-60
-  - 🇫🇷法国-61
-  - 🇫🇷法国-62
-  - 🇫🇷法国-63
-  - 🇫🇷法国-64
-  - 🇫🇷法国-65
-  - 🇫🇷法国-66
-  - 🇫🇷法国-67
-  - 🇫🇷法国-68
-  - 🇫🇷法国-69
-  - 🇫🇷法国-70
-  - 🇫🇷法国-71
-  - 🇫🇷法国-72
-  - 🇫🇷法国-73
-  - 🇫🇷法国-74
-  - 🇫🇷法国-75
-  - 🇫🇷法国-76
-  - 🇫🇷法国-77
-  - 🇫🇷法国-78
-  - 🇫🇷法国-79
-  - 🇫🇷法国-80
-  - 🇫🇷法国-81
-  - 🇫🇷法国-82
-  - 🇫🇷法国-83
-  - 🇫🇷法国-84
-  - 🇫🇷法国-85
-  - 🇫🇷法国-86
-  - 🇫🇷法国-87
-  - 🇫🇷法国-88
-  - 🇫🇷法国-89
-  - 🇫🇷法国-90
-  - 🇫🇷法国-91
-  - 🇫🇷法国-92
-  - 🇫🇷法国-93
-  - 🇫🇷法国-94
-  - 🇫🇷法国-95
-  - 🇫🇷法国-96
-  - 🇫🇷法国-97
-  - 🇫🇷法国-98
-  - 🇫🇷法国-99
-  - 🇫🇷法国-100
-  - 🇫🇷法国-101
-  - 🇫🇷法国-102
-  - 🇫🇷法国-103
-  - 🇫🇷法国-104
-  - 🇫🇷法国-105
-  - 🇫🇷法国-106
-  - 🇫🇷法国-107
-  - 🇫🇷法国-108
-  - 🇫🇷法国-109
-  - 🇫🇷法国-110
-  - 🇫🇷法国-111
-  - 🇫🇷法国-112
-  - 🇫🇷法国-113
-  - 🇫🇷法国-114
-  - 🇫🇷法国-115
-  - 🇫🇷法国-116
+  - 🇬🇷希腊-01
+  - 🇪🇸西班牙-04
+  - 🇸🇬新加坡-05
+  - 🇹🇼台湾-01
+  - 🇸🇬新加坡-06
+  - 🇸🇬新加坡-07
+  - 🇽🇽未知-36
+  - 🇸🇬新加坡-08
+  - 🇸🇬新加坡-09
+  - 🇸🇬新加坡-10
+  - 🇽🇽未知-37
+  - 🇺🇸美国-24
+  - 🇽🇽未知-38
+  - 🇬🇧英国-08
 - name: ♻️ 自动选择
   type: url-test
   proxies:
-  - 🇱🇻LV-01
-  - 🇸🇪瑞典-01
-  - 🇭🇰香港-01
-  - 🇭🇰香港-02
-  - 🇬🇧英国-01
-  - 🇭🇰香港-03
-  - 🇭🇰香港-04
-  - 🇭🇰香港-05
-  - 🇭🇰香港-06
-  - 🇬🇧英国-02
-  - 🇺🇸美国-01
-  - 🇭🇰香港-07
-  - 🇭🇰香港-08
-  - 🇬🇧英国-03
-  - 🇲🇽墨西哥-01
+  - 🇯🇵日本-01
+  - 🇯🇵日本-02
+  - 🇯🇵日本-03
   - 🇩🇪德国-01
+  - 🇭🇰香港-01
+  - 🇬🇧英国-01
+  - 🇬🇧英国-02
+  - 🇬🇧英国-03
   - 🇰🇷韩国-01
   - 🇰🇷韩国-02
-  - 🇽🇽未知-01
-  - 🇨🇦加拿大-01
-  - 🇨🇦加拿大-02
-  - 🇨🇦加拿大-03
-  - 🇽🇽未知-02
+  - 🇩🇪德国-02
+  - 🇳🇱荷兰-01
+  - 🇺🇸美国-01
+  - 🇷🇴罗马尼亚-01
+  - 🇯🇵日本-04
   - 🇺🇸美国-02
-  - 🇨🇦加拿大-04
-  - 🇽🇽未知-03
+  - 🇫🇷法国-01
+  - 🇽🇽未知-01
   - 🇺🇸美国-03
+  - 🇺🇸美国-04
+  - 🇺🇸美国-05
+  - 🇺🇸美国-06
+  - 🇽🇽未知-02
+  - 🇷🇴罗马尼亚-02
+  - 🇽🇽未知-03
   - 🇽🇽未知-04
+  - 🇺🇸美国-07
+  - 🇱🇻LV-01
   - 🇽🇽未知-05
   - 🇽🇽未知-06
-  - 🇨🇦加拿大-05
-  - 🇨🇦加拿大-06
-  - 🇨🇦加拿大-07
-  - 🇺🇸美国-04
+  - 🇺🇸美国-08
+  - 🇪🇸西班牙-01
+  - 🇦🇹奥地利-01
+  - 🇺🇸美国-09
+  - 🇦🇹奥地利-02
   - 🇽🇽未知-07
+  - 🇧🇷巴西-01
+  - 🇬🇧英国-04
+  - 🇧🇪比利时-01
+  - 🇲🇩MD-01
+  - 🇫🇷法国-02
+  - 🇦🇹奥地利-03
   - 🇽🇽未知-08
+  - 🇸🇬新加坡-01
+  - 🇺🇸美国-10
+  - 🇬🇧英国-05
+  - 🇺🇸美国-11
   - 🇽🇽未知-09
   - 🇽🇽未知-10
   - 🇽🇽未知-11
   - 🇽🇽未知-12
-  - 🇨🇦加拿大-08
   - 🇽🇽未知-13
+  - 🇳🇱荷兰-02
   - 🇽🇽未知-14
   - 🇽🇽未知-15
-  - 🇫🇷法国-01
-  - 🇺🇸美国-05
-  - 🇨🇿捷克-01
   - 🇽🇽未知-16
   - 🇽🇽未知-17
-  - 🇺🇸美国-06
+  - 🇺🇸美国-12
   - 🇽🇽未知-18
-  - 🇺🇸美国-07
   - 🇽🇽未知-19
   - 🇽🇽未知-20
   - 🇽🇽未知-21
-  - 🇪🇸西班牙-01
   - 🇽🇽未知-22
   - 🇽🇽未知-23
-  - 🇸🇬新加坡-01
-  - 🇸🇬新加坡-02
   - 🇽🇽未知-24
-  - 🇸🇬新加坡-03
-  - 🇺🇸美国-08
-  - 🇫🇷法国-02
-  - 🇽🇽未知-25
-  - 🇸🇬新加坡-04
-  - 🇹🇼台湾-01
-  - 🇽🇽未知-26
-  - 🇺🇸美国-09
+  - 🇺🇸美国-13
+  - 🇺🇸美国-14
+  - 🇮🇳印度-01
+  - 🇺🇸美国-15
   - 🇪🇸西班牙-02
+  - 🇺🇸美国-16
+  - 🇽🇽未知-25
+  - 🇽🇽未知-26
   - 🇽🇽未知-27
-  - 🇫🇷法国-03
   - 🇽🇽未知-28
+  - 🇷🇴罗马尼亚-03
   - 🇽🇽未知-29
+  - 🇬🇧英国-06
+  - 🇺🇸美国-17
+  - 🇺🇸美国-18
+  - 🇩🇪德国-03
+  - 🇩🇪德国-04
   - 🇽🇽未知-30
-  - 🇬🇷希腊-01
+  - 🇯🇵日本-05
+  - 🇽🇽未知-31
+  - 🇽🇽未知-32
+  - 🇽🇽未知-33
   - 🇱🇻LV-02
+  - 🇦🇺澳大利亚-01
+  - 🇬🇧英国-07
+  - 🇰🇷韩国-03
+  - 🇺🇸美国-19
+  - 🇱🇻LV-03
+  - 🇫🇷法国-03
+  - 🇽🇽未知-34
+  - 🇺🇸美国-20
+  - 🇽🇽未知-35
+  - 🇸🇬新加坡-02
+  - 🇸🇬新加坡-03
+  - 🇸🇬新加坡-04
+  - 🇫🇷法国-04
+  - 🇫🇷法国-05
+  - 🇫🇷法国-06
+  - 🇫🇷法国-07
+  - 🇫🇷法国-08
+  - 🇫🇷法国-09
+  - 🇦🇹奥地利-04
+  - 🇳🇱荷兰-03
+  - 🇺🇸美国-21
+  - 🇺🇸美国-22
+  - 🇦🇹奥地利-05
+  - 🇪🇸西班牙-03
+  - 🇦🇹奥地利-06
+  - 🇺🇸美国-23
+  - 🇦🇹奥地利-07
+  - 🇭🇰香港-02
+  - 🇭🇰香港-03
+  - 🇭🇰香港-04
+  - 🇭🇰香港-05
+  - 🇭🇰香港-06
+  - 🇭🇰香港-07
+  - 🇭🇰香港-08
   - 🇭🇰香港-09
   - 🇭🇰香港-10
   - 🇭🇰香港-11
@@ -3791,275 +2181,156 @@ proxy-groups:
   - 🇭🇰香港-15
   - 🇭🇰香港-16
   - 🇭🇰香港-17
+  - 🇮🇹意大利-01
   - 🇭🇰香港-18
   - 🇭🇰香港-19
   - 🇭🇰香港-20
   - 🇭🇰香港-21
   - 🇭🇰香港-22
-  - 🇫🇷法国-04
-  - 🇺🇸美国-10
-  - 🇱🇻LV-03
-  - 🇫🇷法国-05
-  - 🇷🇴罗马尼亚-01
-  - 🇽🇽未知-31
-  - 🇽🇽未知-32
-  - 🇽🇽未知-33
-  - 🇽🇽未知-34
-  - 🇽🇽未知-35
-  - 🇽🇽未知-36
-  - 🇽🇽未知-37
-  - 🇫🇷法国-06
-  - 🇽🇽未知-38
-  - 🇽🇽未知-39
-  - 🇽🇽未知-40
-  - 🇽🇽未知-41
-  - 🇽🇽未知-42
-  - 🇽🇽未知-43
-  - 🇽🇽未知-44
-  - 🇫🇷法国-07
-  - 🇽🇽未知-45
-  - 🇽🇽未知-46
-  - 🇽🇽未知-47
-  - 🇫🇷法国-08
-  - 🇫🇷法国-09
-  - 🇽🇽未知-48
-  - 🇫🇷法国-10
-  - 🇫🇷法国-11
-  - 🇽🇽未知-49
-  - 🇫🇷法国-12
-  - 🇫🇷法国-13
-  - 🇫🇷法国-14
-  - 🇫🇷法国-15
-  - 🇫🇷法国-16
-  - 🇫🇷法国-17
-  - 🇫🇷法国-18
-  - 🇫🇷法国-19
-  - 🇽🇽未知-50
-  - 🇽🇽未知-51
-  - 🇫🇷法国-20
-  - 🇫🇷法国-21
-  - 🇫🇷法国-22
-  - 🇸🇬新加坡-05
-  - 🇺🇸美国-11
-  - 🇫🇷法国-23
-  - 🇫🇷法国-24
-  - 🇽🇽未知-52
-  - 🇨🇦加拿大-09
-  - 🇫🇷法国-25
-  - 🇫🇷法国-26
-  - 🇫🇷法国-27
-  - 🇺🇸美国-12
-  - 🇨🇦加拿大-10
-  - 🇫🇷法国-28
-  - 🇫🇷法国-29
-  - 🇨🇦加拿大-11
-  - 🇨🇦加拿大-12
-  - 🇫🇷法国-30
-  - 🇫🇷法国-31
-  - 🇸🇬新加坡-06
-  - 🇨🇦加拿大-13
-  - 🇽🇽未知-53
-  - 🇫🇷法国-32
-  - 🇺🇸美国-13
-  - 🇺🇸美国-14
-  - 🇺🇸美国-15
-  - 🇺🇸美国-16
-  - 🇬🇧英国-04
-  - 🇩🇪德国-02
-  - 🇩🇪德国-03
-  - 🇺🇸美国-17
-  - 🇽🇽未知-54
-  - 🇽🇽未知-55
-  - 🇦🇹奥地利-01
-  - 🇳🇱荷兰-01
-  - 🇽🇽未知-56
-  - 🇫🇷法国-33
-  - 🇺🇸美国-18
-  - 🇽🇽未知-57
-  - 🇦🇹奥地利-02
-  - 🇽🇽未知-58
-  - 🇺🇸美国-19
-  - 🇬🇧英国-05
-  - 🇫🇷法国-34
-  - 🇦🇹奥地利-03
-  - 🇦🇹奥地利-04
-  - 🇫🇷法国-35
-  - 🇬🇧英国-06
   - 🇭🇰香港-23
-  - 🇺🇸美国-20
-  - 🇽🇽未知-59
   - 🇭🇰香港-24
-  - 🇭🇰香港-25
-  - 🇭🇰香港-26
-  - 🇭🇰香港-27
-  - 🇭🇰香港-28
-  - 🇭🇰香港-29
-  - 🇽🇽未知-60
-  - 🇽🇽未知-61
-  - 🇫🇷法国-36
-  - 🇫🇷法国-37
-  - 🇫🇷法国-38
-  - 🇫🇷法国-39
-  - 🇫🇷法国-40
-  - 🇫🇷法国-41
-  - 🇫🇷法国-42
-  - 🇫🇷法国-43
-  - 🇫🇷法国-44
-  - 🇫🇷法国-45
-  - 🇫🇷法国-46
-  - 🇫🇷法国-47
-  - 🇫🇷法国-48
-  - 🇫🇷法国-49
-  - 🇫🇷法国-50
-  - 🇫🇷法国-51
-  - 🇫🇷法国-52
-  - 🇫🇷法国-53
-  - 🇫🇷法国-54
-  - 🇫🇷法国-55
-  - 🇫🇷法国-56
-  - 🇫🇷法国-57
-  - 🇫🇷法国-58
-  - 🇫🇷法国-59
-  - 🇫🇷法国-60
-  - 🇫🇷法国-61
-  - 🇫🇷法国-62
-  - 🇫🇷法国-63
-  - 🇫🇷法国-64
-  - 🇫🇷法国-65
-  - 🇫🇷法国-66
-  - 🇫🇷法国-67
-  - 🇫🇷法国-68
-  - 🇫🇷法国-69
-  - 🇫🇷法国-70
-  - 🇫🇷法国-71
-  - 🇫🇷法国-72
-  - 🇫🇷法国-73
-  - 🇫🇷法国-74
-  - 🇫🇷法国-75
-  - 🇫🇷法国-76
-  - 🇫🇷法国-77
-  - 🇫🇷法国-78
-  - 🇫🇷法国-79
-  - 🇫🇷法国-80
-  - 🇫🇷法国-81
-  - 🇫🇷法国-82
-  - 🇫🇷法国-83
-  - 🇫🇷法国-84
-  - 🇫🇷法国-85
-  - 🇫🇷法国-86
-  - 🇫🇷法国-87
-  - 🇫🇷法国-88
-  - 🇫🇷法国-89
-  - 🇫🇷法国-90
-  - 🇫🇷法国-91
-  - 🇫🇷法国-92
-  - 🇫🇷法国-93
-  - 🇫🇷法国-94
-  - 🇫🇷法国-95
-  - 🇫🇷法国-96
-  - 🇫🇷法国-97
-  - 🇫🇷法国-98
-  - 🇫🇷法国-99
-  - 🇫🇷法国-100
-  - 🇫🇷法国-101
-  - 🇫🇷法国-102
-  - 🇫🇷法国-103
-  - 🇫🇷法国-104
-  - 🇫🇷法国-105
-  - 🇫🇷法国-106
-  - 🇫🇷法国-107
-  - 🇫🇷法国-108
-  - 🇫🇷法国-109
-  - 🇫🇷法国-110
-  - 🇫🇷法国-111
-  - 🇫🇷法国-112
-  - 🇫🇷法国-113
-  - 🇫🇷法国-114
-  - 🇫🇷法国-115
-  - 🇫🇷法国-116
+  - 🇬🇷希腊-01
+  - 🇪🇸西班牙-04
+  - 🇸🇬新加坡-05
+  - 🇹🇼台湾-01
+  - 🇸🇬新加坡-06
+  - 🇸🇬新加坡-07
+  - 🇽🇽未知-36
+  - 🇸🇬新加坡-08
+  - 🇸🇬新加坡-09
+  - 🇸🇬新加坡-10
+  - 🇽🇽未知-37
+  - 🇺🇸美国-24
+  - 🇽🇽未知-38
+  - 🇬🇧英国-08
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
 - name: 🌍 国外媒体
   type: select
   proxies:
-  - 🇱🇻LV-01
-  - 🇸🇪瑞典-01
-  - 🇭🇰香港-01
-  - 🇭🇰香港-02
-  - 🇬🇧英国-01
-  - 🇭🇰香港-03
-  - 🇭🇰香港-04
-  - 🇭🇰香港-05
-  - 🇭🇰香港-06
-  - 🇬🇧英国-02
-  - 🇺🇸美国-01
-  - 🇭🇰香港-07
-  - 🇭🇰香港-08
-  - 🇬🇧英国-03
-  - 🇲🇽墨西哥-01
+  - 🇯🇵日本-01
+  - 🇯🇵日本-02
+  - 🇯🇵日本-03
   - 🇩🇪德国-01
+  - 🇭🇰香港-01
+  - 🇬🇧英国-01
+  - 🇬🇧英国-02
+  - 🇬🇧英国-03
   - 🇰🇷韩国-01
   - 🇰🇷韩国-02
-  - 🇽🇽未知-01
-  - 🇨🇦加拿大-01
-  - 🇨🇦加拿大-02
-  - 🇨🇦加拿大-03
-  - 🇽🇽未知-02
+  - 🇩🇪德国-02
+  - 🇳🇱荷兰-01
+  - 🇺🇸美国-01
+  - 🇷🇴罗马尼亚-01
+  - 🇯🇵日本-04
   - 🇺🇸美国-02
-  - 🇨🇦加拿大-04
-  - 🇽🇽未知-03
+  - 🇫🇷法国-01
+  - 🇽🇽未知-01
   - 🇺🇸美国-03
+  - 🇺🇸美国-04
+  - 🇺🇸美国-05
+  - 🇺🇸美国-06
+  - 🇽🇽未知-02
+  - 🇷🇴罗马尼亚-02
+  - 🇽🇽未知-03
   - 🇽🇽未知-04
+  - 🇺🇸美国-07
+  - 🇱🇻LV-01
   - 🇽🇽未知-05
   - 🇽🇽未知-06
-  - 🇨🇦加拿大-05
-  - 🇨🇦加拿大-06
-  - 🇨🇦加拿大-07
-  - 🇺🇸美国-04
+  - 🇺🇸美国-08
+  - 🇪🇸西班牙-01
+  - 🇦🇹奥地利-01
+  - 🇺🇸美国-09
+  - 🇦🇹奥地利-02
   - 🇽🇽未知-07
+  - 🇧🇷巴西-01
+  - 🇬🇧英国-04
+  - 🇧🇪比利时-01
+  - 🇲🇩MD-01
+  - 🇫🇷法国-02
+  - 🇦🇹奥地利-03
   - 🇽🇽未知-08
+  - 🇸🇬新加坡-01
+  - 🇺🇸美国-10
+  - 🇬🇧英国-05
+  - 🇺🇸美国-11
   - 🇽🇽未知-09
   - 🇽🇽未知-10
   - 🇽🇽未知-11
   - 🇽🇽未知-12
-  - 🇨🇦加拿大-08
   - 🇽🇽未知-13
+  - 🇳🇱荷兰-02
   - 🇽🇽未知-14
   - 🇽🇽未知-15
-  - 🇫🇷法国-01
-  - 🇺🇸美国-05
-  - 🇨🇿捷克-01
   - 🇽🇽未知-16
   - 🇽🇽未知-17
-  - 🇺🇸美国-06
+  - 🇺🇸美国-12
   - 🇽🇽未知-18
-  - 🇺🇸美国-07
   - 🇽🇽未知-19
   - 🇽🇽未知-20
   - 🇽🇽未知-21
-  - 🇪🇸西班牙-01
   - 🇽🇽未知-22
   - 🇽🇽未知-23
-  - 🇸🇬新加坡-01
-  - 🇸🇬新加坡-02
   - 🇽🇽未知-24
-  - 🇸🇬新加坡-03
-  - 🇺🇸美国-08
-  - 🇫🇷法国-02
-  - 🇽🇽未知-25
-  - 🇸🇬新加坡-04
-  - 🇹🇼台湾-01
-  - 🇽🇽未知-26
-  - 🇺🇸美国-09
+  - 🇺🇸美国-13
+  - 🇺🇸美国-14
+  - 🇮🇳印度-01
+  - 🇺🇸美国-15
   - 🇪🇸西班牙-02
+  - 🇺🇸美国-16
+  - 🇽🇽未知-25
+  - 🇽🇽未知-26
   - 🇽🇽未知-27
-  - 🇫🇷法国-03
   - 🇽🇽未知-28
+  - 🇷🇴罗马尼亚-03
   - 🇽🇽未知-29
+  - 🇬🇧英国-06
+  - 🇺🇸美国-17
+  - 🇺🇸美国-18
+  - 🇩🇪德国-03
+  - 🇩🇪德国-04
   - 🇽🇽未知-30
-  - 🇬🇷希腊-01
+  - 🇯🇵日本-05
+  - 🇽🇽未知-31
+  - 🇽🇽未知-32
+  - 🇽🇽未知-33
   - 🇱🇻LV-02
+  - 🇦🇺澳大利亚-01
+  - 🇬🇧英国-07
+  - 🇰🇷韩国-03
+  - 🇺🇸美国-19
+  - 🇱🇻LV-03
+  - 🇫🇷法国-03
+  - 🇽🇽未知-34
+  - 🇺🇸美国-20
+  - 🇽🇽未知-35
+  - 🇸🇬新加坡-02
+  - 🇸🇬新加坡-03
+  - 🇸🇬新加坡-04
+  - 🇫🇷法国-04
+  - 🇫🇷法国-05
+  - 🇫🇷法国-06
+  - 🇫🇷法国-07
+  - 🇫🇷法国-08
+  - 🇫🇷法国-09
+  - 🇦🇹奥地利-04
+  - 🇳🇱荷兰-03
+  - 🇺🇸美国-21
+  - 🇺🇸美国-22
+  - 🇦🇹奥地利-05
+  - 🇪🇸西班牙-03
+  - 🇦🇹奥地利-06
+  - 🇺🇸美国-23
+  - 🇦🇹奥地利-07
+  - 🇭🇰香港-02
+  - 🇭🇰香港-03
+  - 🇭🇰香港-04
+  - 🇭🇰香港-05
+  - 🇭🇰香港-06
+  - 🇭🇰香港-07
+  - 🇭🇰香港-08
   - 🇭🇰香港-09
   - 🇭🇰香港-10
   - 🇭🇰香港-11
@@ -4069,272 +2340,153 @@ proxy-groups:
   - 🇭🇰香港-15
   - 🇭🇰香港-16
   - 🇭🇰香港-17
+  - 🇮🇹意大利-01
   - 🇭🇰香港-18
   - 🇭🇰香港-19
   - 🇭🇰香港-20
   - 🇭🇰香港-21
   - 🇭🇰香港-22
-  - 🇫🇷法国-04
-  - 🇺🇸美国-10
-  - 🇱🇻LV-03
-  - 🇫🇷法国-05
-  - 🇷🇴罗马尼亚-01
-  - 🇽🇽未知-31
-  - 🇽🇽未知-32
-  - 🇽🇽未知-33
-  - 🇽🇽未知-34
-  - 🇽🇽未知-35
-  - 🇽🇽未知-36
-  - 🇽🇽未知-37
-  - 🇫🇷法国-06
-  - 🇽🇽未知-38
-  - 🇽🇽未知-39
-  - 🇽🇽未知-40
-  - 🇽🇽未知-41
-  - 🇽🇽未知-42
-  - 🇽🇽未知-43
-  - 🇽🇽未知-44
-  - 🇫🇷法国-07
-  - 🇽🇽未知-45
-  - 🇽🇽未知-46
-  - 🇽🇽未知-47
-  - 🇫🇷法国-08
-  - 🇫🇷法国-09
-  - 🇽🇽未知-48
-  - 🇫🇷法国-10
-  - 🇫🇷法国-11
-  - 🇽🇽未知-49
-  - 🇫🇷法国-12
-  - 🇫🇷法国-13
-  - 🇫🇷法国-14
-  - 🇫🇷法国-15
-  - 🇫🇷法国-16
-  - 🇫🇷法国-17
-  - 🇫🇷法国-18
-  - 🇫🇷法国-19
-  - 🇽🇽未知-50
-  - 🇽🇽未知-51
-  - 🇫🇷法国-20
-  - 🇫🇷法国-21
-  - 🇫🇷法国-22
-  - 🇸🇬新加坡-05
-  - 🇺🇸美国-11
-  - 🇫🇷法国-23
-  - 🇫🇷法国-24
-  - 🇽🇽未知-52
-  - 🇨🇦加拿大-09
-  - 🇫🇷法国-25
-  - 🇫🇷法国-26
-  - 🇫🇷法国-27
-  - 🇺🇸美国-12
-  - 🇨🇦加拿大-10
-  - 🇫🇷法国-28
-  - 🇫🇷法国-29
-  - 🇨🇦加拿大-11
-  - 🇨🇦加拿大-12
-  - 🇫🇷法国-30
-  - 🇫🇷法国-31
-  - 🇸🇬新加坡-06
-  - 🇨🇦加拿大-13
-  - 🇽🇽未知-53
-  - 🇫🇷法国-32
-  - 🇺🇸美国-13
-  - 🇺🇸美国-14
-  - 🇺🇸美国-15
-  - 🇺🇸美国-16
-  - 🇬🇧英国-04
-  - 🇩🇪德国-02
-  - 🇩🇪德国-03
-  - 🇺🇸美国-17
-  - 🇽🇽未知-54
-  - 🇽🇽未知-55
-  - 🇦🇹奥地利-01
-  - 🇳🇱荷兰-01
-  - 🇽🇽未知-56
-  - 🇫🇷法国-33
-  - 🇺🇸美国-18
-  - 🇽🇽未知-57
-  - 🇦🇹奥地利-02
-  - 🇽🇽未知-58
-  - 🇺🇸美国-19
-  - 🇬🇧英国-05
-  - 🇫🇷法国-34
-  - 🇦🇹奥地利-03
-  - 🇦🇹奥地利-04
-  - 🇫🇷法国-35
-  - 🇬🇧英国-06
   - 🇭🇰香港-23
-  - 🇺🇸美国-20
-  - 🇽🇽未知-59
   - 🇭🇰香港-24
-  - 🇭🇰香港-25
-  - 🇭🇰香港-26
-  - 🇭🇰香港-27
-  - 🇭🇰香港-28
-  - 🇭🇰香港-29
-  - 🇽🇽未知-60
-  - 🇽🇽未知-61
-  - 🇫🇷法国-36
-  - 🇫🇷法国-37
-  - 🇫🇷法国-38
-  - 🇫🇷法国-39
-  - 🇫🇷法国-40
-  - 🇫🇷法国-41
-  - 🇫🇷法国-42
-  - 🇫🇷法国-43
-  - 🇫🇷法国-44
-  - 🇫🇷法国-45
-  - 🇫🇷法国-46
-  - 🇫🇷法国-47
-  - 🇫🇷法国-48
-  - 🇫🇷法国-49
-  - 🇫🇷法国-50
-  - 🇫🇷法国-51
-  - 🇫🇷法国-52
-  - 🇫🇷法国-53
-  - 🇫🇷法国-54
-  - 🇫🇷法国-55
-  - 🇫🇷法国-56
-  - 🇫🇷法国-57
-  - 🇫🇷法国-58
-  - 🇫🇷法国-59
-  - 🇫🇷法国-60
-  - 🇫🇷法国-61
-  - 🇫🇷法国-62
-  - 🇫🇷法国-63
-  - 🇫🇷法国-64
-  - 🇫🇷法国-65
-  - 🇫🇷法国-66
-  - 🇫🇷法国-67
-  - 🇫🇷法国-68
-  - 🇫🇷法国-69
-  - 🇫🇷法国-70
-  - 🇫🇷法国-71
-  - 🇫🇷法国-72
-  - 🇫🇷法国-73
-  - 🇫🇷法国-74
-  - 🇫🇷法国-75
-  - 🇫🇷法国-76
-  - 🇫🇷法国-77
-  - 🇫🇷法国-78
-  - 🇫🇷法国-79
-  - 🇫🇷法国-80
-  - 🇫🇷法国-81
-  - 🇫🇷法国-82
-  - 🇫🇷法国-83
-  - 🇫🇷法国-84
-  - 🇫🇷法国-85
-  - 🇫🇷法国-86
-  - 🇫🇷法国-87
-  - 🇫🇷法国-88
-  - 🇫🇷法国-89
-  - 🇫🇷法国-90
-  - 🇫🇷法国-91
-  - 🇫🇷法国-92
-  - 🇫🇷法国-93
-  - 🇫🇷法国-94
-  - 🇫🇷法国-95
-  - 🇫🇷法国-96
-  - 🇫🇷法国-97
-  - 🇫🇷法国-98
-  - 🇫🇷法国-99
-  - 🇫🇷法国-100
-  - 🇫🇷法国-101
-  - 🇫🇷法国-102
-  - 🇫🇷法国-103
-  - 🇫🇷法国-104
-  - 🇫🇷法国-105
-  - 🇫🇷法国-106
-  - 🇫🇷法国-107
-  - 🇫🇷法国-108
-  - 🇫🇷法国-109
-  - 🇫🇷法国-110
-  - 🇫🇷法国-111
-  - 🇫🇷法国-112
-  - 🇫🇷法国-113
-  - 🇫🇷法国-114
-  - 🇫🇷法国-115
-  - 🇫🇷法国-116
+  - 🇬🇷希腊-01
+  - 🇪🇸西班牙-04
+  - 🇸🇬新加坡-05
+  - 🇹🇼台湾-01
+  - 🇸🇬新加坡-06
+  - 🇸🇬新加坡-07
+  - 🇽🇽未知-36
+  - 🇸🇬新加坡-08
+  - 🇸🇬新加坡-09
+  - 🇸🇬新加坡-10
+  - 🇽🇽未知-37
+  - 🇺🇸美国-24
+  - 🇽🇽未知-38
+  - 🇬🇧英国-08
 - name: 📲 电报信息
   type: select
   proxies:
-  - 🇱🇻LV-01
-  - 🇸🇪瑞典-01
-  - 🇭🇰香港-01
-  - 🇭🇰香港-02
-  - 🇬🇧英国-01
-  - 🇭🇰香港-03
-  - 🇭🇰香港-04
-  - 🇭🇰香港-05
-  - 🇭🇰香港-06
-  - 🇬🇧英国-02
-  - 🇺🇸美国-01
-  - 🇭🇰香港-07
-  - 🇭🇰香港-08
-  - 🇬🇧英国-03
-  - 🇲🇽墨西哥-01
+  - 🇯🇵日本-01
+  - 🇯🇵日本-02
+  - 🇯🇵日本-03
   - 🇩🇪德国-01
+  - 🇭🇰香港-01
+  - 🇬🇧英国-01
+  - 🇬🇧英国-02
+  - 🇬🇧英国-03
   - 🇰🇷韩国-01
   - 🇰🇷韩国-02
-  - 🇽🇽未知-01
-  - 🇨🇦加拿大-01
-  - 🇨🇦加拿大-02
-  - 🇨🇦加拿大-03
-  - 🇽🇽未知-02
+  - 🇩🇪德国-02
+  - 🇳🇱荷兰-01
+  - 🇺🇸美国-01
+  - 🇷🇴罗马尼亚-01
+  - 🇯🇵日本-04
   - 🇺🇸美国-02
-  - 🇨🇦加拿大-04
-  - 🇽🇽未知-03
+  - 🇫🇷法国-01
+  - 🇽🇽未知-01
   - 🇺🇸美国-03
+  - 🇺🇸美国-04
+  - 🇺🇸美国-05
+  - 🇺🇸美国-06
+  - 🇽🇽未知-02
+  - 🇷🇴罗马尼亚-02
+  - 🇽🇽未知-03
   - 🇽🇽未知-04
+  - 🇺🇸美国-07
+  - 🇱🇻LV-01
   - 🇽🇽未知-05
   - 🇽🇽未知-06
-  - 🇨🇦加拿大-05
-  - 🇨🇦加拿大-06
-  - 🇨🇦加拿大-07
-  - 🇺🇸美国-04
+  - 🇺🇸美国-08
+  - 🇪🇸西班牙-01
+  - 🇦🇹奥地利-01
+  - 🇺🇸美国-09
+  - 🇦🇹奥地利-02
   - 🇽🇽未知-07
+  - 🇧🇷巴西-01
+  - 🇬🇧英国-04
+  - 🇧🇪比利时-01
+  - 🇲🇩MD-01
+  - 🇫🇷法国-02
+  - 🇦🇹奥地利-03
   - 🇽🇽未知-08
+  - 🇸🇬新加坡-01
+  - 🇺🇸美国-10
+  - 🇬🇧英国-05
+  - 🇺🇸美国-11
   - 🇽🇽未知-09
   - 🇽🇽未知-10
   - 🇽🇽未知-11
   - 🇽🇽未知-12
-  - 🇨🇦加拿大-08
   - 🇽🇽未知-13
+  - 🇳🇱荷兰-02
   - 🇽🇽未知-14
   - 🇽🇽未知-15
-  - 🇫🇷法国-01
-  - 🇺🇸美国-05
-  - 🇨🇿捷克-01
   - 🇽🇽未知-16
   - 🇽🇽未知-17
-  - 🇺🇸美国-06
+  - 🇺🇸美国-12
   - 🇽🇽未知-18
-  - 🇺🇸美国-07
   - 🇽🇽未知-19
   - 🇽🇽未知-20
   - 🇽🇽未知-21
-  - 🇪🇸西班牙-01
   - 🇽🇽未知-22
   - 🇽🇽未知-23
-  - 🇸🇬新加坡-01
-  - 🇸🇬新加坡-02
   - 🇽🇽未知-24
-  - 🇸🇬新加坡-03
-  - 🇺🇸美国-08
-  - 🇫🇷法国-02
-  - 🇽🇽未知-25
-  - 🇸🇬新加坡-04
-  - 🇹🇼台湾-01
-  - 🇽🇽未知-26
-  - 🇺🇸美国-09
+  - 🇺🇸美国-13
+  - 🇺🇸美国-14
+  - 🇮🇳印度-01
+  - 🇺🇸美国-15
   - 🇪🇸西班牙-02
+  - 🇺🇸美国-16
+  - 🇽🇽未知-25
+  - 🇽🇽未知-26
   - 🇽🇽未知-27
-  - 🇫🇷法国-03
   - 🇽🇽未知-28
+  - 🇷🇴罗马尼亚-03
   - 🇽🇽未知-29
+  - 🇬🇧英国-06
+  - 🇺🇸美国-17
+  - 🇺🇸美国-18
+  - 🇩🇪德国-03
+  - 🇩🇪德国-04
   - 🇽🇽未知-30
-  - 🇬🇷希腊-01
+  - 🇯🇵日本-05
+  - 🇽🇽未知-31
+  - 🇽🇽未知-32
+  - 🇽🇽未知-33
   - 🇱🇻LV-02
+  - 🇦🇺澳大利亚-01
+  - 🇬🇧英国-07
+  - 🇰🇷韩国-03
+  - 🇺🇸美国-19
+  - 🇱🇻LV-03
+  - 🇫🇷法国-03
+  - 🇽🇽未知-34
+  - 🇺🇸美国-20
+  - 🇽🇽未知-35
+  - 🇸🇬新加坡-02
+  - 🇸🇬新加坡-03
+  - 🇸🇬新加坡-04
+  - 🇫🇷法国-04
+  - 🇫🇷法国-05
+  - 🇫🇷法国-06
+  - 🇫🇷法国-07
+  - 🇫🇷法国-08
+  - 🇫🇷法国-09
+  - 🇦🇹奥地利-04
+  - 🇳🇱荷兰-03
+  - 🇺🇸美国-21
+  - 🇺🇸美国-22
+  - 🇦🇹奥地利-05
+  - 🇪🇸西班牙-03
+  - 🇦🇹奥地利-06
+  - 🇺🇸美国-23
+  - 🇦🇹奥地利-07
+  - 🇭🇰香港-02
+  - 🇭🇰香港-03
+  - 🇭🇰香港-04
+  - 🇭🇰香港-05
+  - 🇭🇰香港-06
+  - 🇭🇰香港-07
+  - 🇭🇰香港-08
   - 🇭🇰香港-09
   - 🇭🇰香港-10
   - 🇭🇰香港-11
@@ -4344,272 +2496,153 @@ proxy-groups:
   - 🇭🇰香港-15
   - 🇭🇰香港-16
   - 🇭🇰香港-17
+  - 🇮🇹意大利-01
   - 🇭🇰香港-18
   - 🇭🇰香港-19
   - 🇭🇰香港-20
   - 🇭🇰香港-21
   - 🇭🇰香港-22
-  - 🇫🇷法国-04
-  - 🇺🇸美国-10
-  - 🇱🇻LV-03
-  - 🇫🇷法国-05
-  - 🇷🇴罗马尼亚-01
-  - 🇽🇽未知-31
-  - 🇽🇽未知-32
-  - 🇽🇽未知-33
-  - 🇽🇽未知-34
-  - 🇽🇽未知-35
-  - 🇽🇽未知-36
-  - 🇽🇽未知-37
-  - 🇫🇷法国-06
-  - 🇽🇽未知-38
-  - 🇽🇽未知-39
-  - 🇽🇽未知-40
-  - 🇽🇽未知-41
-  - 🇽🇽未知-42
-  - 🇽🇽未知-43
-  - 🇽🇽未知-44
-  - 🇫🇷法国-07
-  - 🇽🇽未知-45
-  - 🇽🇽未知-46
-  - 🇽🇽未知-47
-  - 🇫🇷法国-08
-  - 🇫🇷法国-09
-  - 🇽🇽未知-48
-  - 🇫🇷法国-10
-  - 🇫🇷法国-11
-  - 🇽🇽未知-49
-  - 🇫🇷法国-12
-  - 🇫🇷法国-13
-  - 🇫🇷法国-14
-  - 🇫🇷法国-15
-  - 🇫🇷法国-16
-  - 🇫🇷法国-17
-  - 🇫🇷法国-18
-  - 🇫🇷法国-19
-  - 🇽🇽未知-50
-  - 🇽🇽未知-51
-  - 🇫🇷法国-20
-  - 🇫🇷法国-21
-  - 🇫🇷法国-22
-  - 🇸🇬新加坡-05
-  - 🇺🇸美国-11
-  - 🇫🇷法国-23
-  - 🇫🇷法国-24
-  - 🇽🇽未知-52
-  - 🇨🇦加拿大-09
-  - 🇫🇷法国-25
-  - 🇫🇷法国-26
-  - 🇫🇷法国-27
-  - 🇺🇸美国-12
-  - 🇨🇦加拿大-10
-  - 🇫🇷法国-28
-  - 🇫🇷法国-29
-  - 🇨🇦加拿大-11
-  - 🇨🇦加拿大-12
-  - 🇫🇷法国-30
-  - 🇫🇷法国-31
-  - 🇸🇬新加坡-06
-  - 🇨🇦加拿大-13
-  - 🇽🇽未知-53
-  - 🇫🇷法国-32
-  - 🇺🇸美国-13
-  - 🇺🇸美国-14
-  - 🇺🇸美国-15
-  - 🇺🇸美国-16
-  - 🇬🇧英国-04
-  - 🇩🇪德国-02
-  - 🇩🇪德国-03
-  - 🇺🇸美国-17
-  - 🇽🇽未知-54
-  - 🇽🇽未知-55
-  - 🇦🇹奥地利-01
-  - 🇳🇱荷兰-01
-  - 🇽🇽未知-56
-  - 🇫🇷法国-33
-  - 🇺🇸美国-18
-  - 🇽🇽未知-57
-  - 🇦🇹奥地利-02
-  - 🇽🇽未知-58
-  - 🇺🇸美国-19
-  - 🇬🇧英国-05
-  - 🇫🇷法国-34
-  - 🇦🇹奥地利-03
-  - 🇦🇹奥地利-04
-  - 🇫🇷法国-35
-  - 🇬🇧英国-06
   - 🇭🇰香港-23
-  - 🇺🇸美国-20
-  - 🇽🇽未知-59
   - 🇭🇰香港-24
-  - 🇭🇰香港-25
-  - 🇭🇰香港-26
-  - 🇭🇰香港-27
-  - 🇭🇰香港-28
-  - 🇭🇰香港-29
-  - 🇽🇽未知-60
-  - 🇽🇽未知-61
-  - 🇫🇷法国-36
-  - 🇫🇷法国-37
-  - 🇫🇷法国-38
-  - 🇫🇷法国-39
-  - 🇫🇷法国-40
-  - 🇫🇷法国-41
-  - 🇫🇷法国-42
-  - 🇫🇷法国-43
-  - 🇫🇷法国-44
-  - 🇫🇷法国-45
-  - 🇫🇷法国-46
-  - 🇫🇷法国-47
-  - 🇫🇷法国-48
-  - 🇫🇷法国-49
-  - 🇫🇷法国-50
-  - 🇫🇷法国-51
-  - 🇫🇷法国-52
-  - 🇫🇷法国-53
-  - 🇫🇷法国-54
-  - 🇫🇷法国-55
-  - 🇫🇷法国-56
-  - 🇫🇷法国-57
-  - 🇫🇷法国-58
-  - 🇫🇷法国-59
-  - 🇫🇷法国-60
-  - 🇫🇷法国-61
-  - 🇫🇷法国-62
-  - 🇫🇷法国-63
-  - 🇫🇷法国-64
-  - 🇫🇷法国-65
-  - 🇫🇷法国-66
-  - 🇫🇷法国-67
-  - 🇫🇷法国-68
-  - 🇫🇷法国-69
-  - 🇫🇷法国-70
-  - 🇫🇷法国-71
-  - 🇫🇷法国-72
-  - 🇫🇷法国-73
-  - 🇫🇷法国-74
-  - 🇫🇷法国-75
-  - 🇫🇷法国-76
-  - 🇫🇷法国-77
-  - 🇫🇷法国-78
-  - 🇫🇷法国-79
-  - 🇫🇷法国-80
-  - 🇫🇷法国-81
-  - 🇫🇷法国-82
-  - 🇫🇷法国-83
-  - 🇫🇷法国-84
-  - 🇫🇷法国-85
-  - 🇫🇷法国-86
-  - 🇫🇷法国-87
-  - 🇫🇷法国-88
-  - 🇫🇷法国-89
-  - 🇫🇷法国-90
-  - 🇫🇷法国-91
-  - 🇫🇷法国-92
-  - 🇫🇷法国-93
-  - 🇫🇷法国-94
-  - 🇫🇷法国-95
-  - 🇫🇷法国-96
-  - 🇫🇷法国-97
-  - 🇫🇷法国-98
-  - 🇫🇷法国-99
-  - 🇫🇷法国-100
-  - 🇫🇷法国-101
-  - 🇫🇷法国-102
-  - 🇫🇷法国-103
-  - 🇫🇷法国-104
-  - 🇫🇷法国-105
-  - 🇫🇷法国-106
-  - 🇫🇷法国-107
-  - 🇫🇷法国-108
-  - 🇫🇷法国-109
-  - 🇫🇷法国-110
-  - 🇫🇷法国-111
-  - 🇫🇷法国-112
-  - 🇫🇷法国-113
-  - 🇫🇷法国-114
-  - 🇫🇷法国-115
-  - 🇫🇷法国-116
+  - 🇬🇷希腊-01
+  - 🇪🇸西班牙-04
+  - 🇸🇬新加坡-05
+  - 🇹🇼台湾-01
+  - 🇸🇬新加坡-06
+  - 🇸🇬新加坡-07
+  - 🇽🇽未知-36
+  - 🇸🇬新加坡-08
+  - 🇸🇬新加坡-09
+  - 🇸🇬新加坡-10
+  - 🇽🇽未知-37
+  - 🇺🇸美国-24
+  - 🇽🇽未知-38
+  - 🇬🇧英国-08
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
-  - 🇱🇻LV-01
-  - 🇸🇪瑞典-01
-  - 🇭🇰香港-01
-  - 🇭🇰香港-02
-  - 🇬🇧英国-01
-  - 🇭🇰香港-03
-  - 🇭🇰香港-04
-  - 🇭🇰香港-05
-  - 🇭🇰香港-06
-  - 🇬🇧英国-02
-  - 🇺🇸美国-01
-  - 🇭🇰香港-07
-  - 🇭🇰香港-08
-  - 🇬🇧英国-03
-  - 🇲🇽墨西哥-01
+  - 🇯🇵日本-01
+  - 🇯🇵日本-02
+  - 🇯🇵日本-03
   - 🇩🇪德国-01
+  - 🇭🇰香港-01
+  - 🇬🇧英国-01
+  - 🇬🇧英国-02
+  - 🇬🇧英国-03
   - 🇰🇷韩国-01
   - 🇰🇷韩国-02
-  - 🇽🇽未知-01
-  - 🇨🇦加拿大-01
-  - 🇨🇦加拿大-02
-  - 🇨🇦加拿大-03
-  - 🇽🇽未知-02
+  - 🇩🇪德国-02
+  - 🇳🇱荷兰-01
+  - 🇺🇸美国-01
+  - 🇷🇴罗马尼亚-01
+  - 🇯🇵日本-04
   - 🇺🇸美国-02
-  - 🇨🇦加拿大-04
-  - 🇽🇽未知-03
+  - 🇫🇷法国-01
+  - 🇽🇽未知-01
   - 🇺🇸美国-03
+  - 🇺🇸美国-04
+  - 🇺🇸美国-05
+  - 🇺🇸美国-06
+  - 🇽🇽未知-02
+  - 🇷🇴罗马尼亚-02
+  - 🇽🇽未知-03
   - 🇽🇽未知-04
+  - 🇺🇸美国-07
+  - 🇱🇻LV-01
   - 🇽🇽未知-05
   - 🇽🇽未知-06
-  - 🇨🇦加拿大-05
-  - 🇨🇦加拿大-06
-  - 🇨🇦加拿大-07
-  - 🇺🇸美国-04
+  - 🇺🇸美国-08
+  - 🇪🇸西班牙-01
+  - 🇦🇹奥地利-01
+  - 🇺🇸美国-09
+  - 🇦🇹奥地利-02
   - 🇽🇽未知-07
+  - 🇧🇷巴西-01
+  - 🇬🇧英国-04
+  - 🇧🇪比利时-01
+  - 🇲🇩MD-01
+  - 🇫🇷法国-02
+  - 🇦🇹奥地利-03
   - 🇽🇽未知-08
+  - 🇸🇬新加坡-01
+  - 🇺🇸美国-10
+  - 🇬🇧英国-05
+  - 🇺🇸美国-11
   - 🇽🇽未知-09
   - 🇽🇽未知-10
   - 🇽🇽未知-11
   - 🇽🇽未知-12
-  - 🇨🇦加拿大-08
   - 🇽🇽未知-13
+  - 🇳🇱荷兰-02
   - 🇽🇽未知-14
   - 🇽🇽未知-15
-  - 🇫🇷法国-01
-  - 🇺🇸美国-05
-  - 🇨🇿捷克-01
   - 🇽🇽未知-16
   - 🇽🇽未知-17
-  - 🇺🇸美国-06
+  - 🇺🇸美国-12
   - 🇽🇽未知-18
-  - 🇺🇸美国-07
   - 🇽🇽未知-19
   - 🇽🇽未知-20
   - 🇽🇽未知-21
-  - 🇪🇸西班牙-01
   - 🇽🇽未知-22
   - 🇽🇽未知-23
-  - 🇸🇬新加坡-01
-  - 🇸🇬新加坡-02
   - 🇽🇽未知-24
-  - 🇸🇬新加坡-03
-  - 🇺🇸美国-08
-  - 🇫🇷法国-02
-  - 🇽🇽未知-25
-  - 🇸🇬新加坡-04
-  - 🇹🇼台湾-01
-  - 🇽🇽未知-26
-  - 🇺🇸美国-09
+  - 🇺🇸美国-13
+  - 🇺🇸美国-14
+  - 🇮🇳印度-01
+  - 🇺🇸美国-15
   - 🇪🇸西班牙-02
+  - 🇺🇸美国-16
+  - 🇽🇽未知-25
+  - 🇽🇽未知-26
   - 🇽🇽未知-27
-  - 🇫🇷法国-03
   - 🇽🇽未知-28
+  - 🇷🇴罗马尼亚-03
   - 🇽🇽未知-29
+  - 🇬🇧英国-06
+  - 🇺🇸美国-17
+  - 🇺🇸美国-18
+  - 🇩🇪德国-03
+  - 🇩🇪德国-04
   - 🇽🇽未知-30
-  - 🇬🇷希腊-01
+  - 🇯🇵日本-05
+  - 🇽🇽未知-31
+  - 🇽🇽未知-32
+  - 🇽🇽未知-33
   - 🇱🇻LV-02
+  - 🇦🇺澳大利亚-01
+  - 🇬🇧英国-07
+  - 🇰🇷韩国-03
+  - 🇺🇸美国-19
+  - 🇱🇻LV-03
+  - 🇫🇷法国-03
+  - 🇽🇽未知-34
+  - 🇺🇸美国-20
+  - 🇽🇽未知-35
+  - 🇸🇬新加坡-02
+  - 🇸🇬新加坡-03
+  - 🇸🇬新加坡-04
+  - 🇫🇷法国-04
+  - 🇫🇷法国-05
+  - 🇫🇷法国-06
+  - 🇫🇷法国-07
+  - 🇫🇷法国-08
+  - 🇫🇷法国-09
+  - 🇦🇹奥地利-04
+  - 🇳🇱荷兰-03
+  - 🇺🇸美国-21
+  - 🇺🇸美国-22
+  - 🇦🇹奥地利-05
+  - 🇪🇸西班牙-03
+  - 🇦🇹奥地利-06
+  - 🇺🇸美国-23
+  - 🇦🇹奥地利-07
+  - 🇭🇰香港-02
+  - 🇭🇰香港-03
+  - 🇭🇰香港-04
+  - 🇭🇰香港-05
+  - 🇭🇰香港-06
+  - 🇭🇰香港-07
+  - 🇭🇰香港-08
   - 🇭🇰香港-09
   - 🇭🇰香港-10
   - 🇭🇰香港-11
@@ -4619,272 +2652,153 @@ proxy-groups:
   - 🇭🇰香港-15
   - 🇭🇰香港-16
   - 🇭🇰香港-17
+  - 🇮🇹意大利-01
   - 🇭🇰香港-18
   - 🇭🇰香港-19
   - 🇭🇰香港-20
   - 🇭🇰香港-21
   - 🇭🇰香港-22
-  - 🇫🇷法国-04
-  - 🇺🇸美国-10
-  - 🇱🇻LV-03
-  - 🇫🇷法国-05
-  - 🇷🇴罗马尼亚-01
-  - 🇽🇽未知-31
-  - 🇽🇽未知-32
-  - 🇽🇽未知-33
-  - 🇽🇽未知-34
-  - 🇽🇽未知-35
-  - 🇽🇽未知-36
-  - 🇽🇽未知-37
-  - 🇫🇷法国-06
-  - 🇽🇽未知-38
-  - 🇽🇽未知-39
-  - 🇽🇽未知-40
-  - 🇽🇽未知-41
-  - 🇽🇽未知-42
-  - 🇽🇽未知-43
-  - 🇽🇽未知-44
-  - 🇫🇷法国-07
-  - 🇽🇽未知-45
-  - 🇽🇽未知-46
-  - 🇽🇽未知-47
-  - 🇫🇷法国-08
-  - 🇫🇷法国-09
-  - 🇽🇽未知-48
-  - 🇫🇷法国-10
-  - 🇫🇷法国-11
-  - 🇽🇽未知-49
-  - 🇫🇷法国-12
-  - 🇫🇷法国-13
-  - 🇫🇷法国-14
-  - 🇫🇷法国-15
-  - 🇫🇷法国-16
-  - 🇫🇷法国-17
-  - 🇫🇷法国-18
-  - 🇫🇷法国-19
-  - 🇽🇽未知-50
-  - 🇽🇽未知-51
-  - 🇫🇷法国-20
-  - 🇫🇷法国-21
-  - 🇫🇷法国-22
-  - 🇸🇬新加坡-05
-  - 🇺🇸美国-11
-  - 🇫🇷法国-23
-  - 🇫🇷法国-24
-  - 🇽🇽未知-52
-  - 🇨🇦加拿大-09
-  - 🇫🇷法国-25
-  - 🇫🇷法国-26
-  - 🇫🇷法国-27
-  - 🇺🇸美国-12
-  - 🇨🇦加拿大-10
-  - 🇫🇷法国-28
-  - 🇫🇷法国-29
-  - 🇨🇦加拿大-11
-  - 🇨🇦加拿大-12
-  - 🇫🇷法国-30
-  - 🇫🇷法国-31
-  - 🇸🇬新加坡-06
-  - 🇨🇦加拿大-13
-  - 🇽🇽未知-53
-  - 🇫🇷法国-32
-  - 🇺🇸美国-13
-  - 🇺🇸美国-14
-  - 🇺🇸美国-15
-  - 🇺🇸美国-16
-  - 🇬🇧英国-04
-  - 🇩🇪德国-02
-  - 🇩🇪德国-03
-  - 🇺🇸美国-17
-  - 🇽🇽未知-54
-  - 🇽🇽未知-55
-  - 🇦🇹奥地利-01
-  - 🇳🇱荷兰-01
-  - 🇽🇽未知-56
-  - 🇫🇷法国-33
-  - 🇺🇸美国-18
-  - 🇽🇽未知-57
-  - 🇦🇹奥地利-02
-  - 🇽🇽未知-58
-  - 🇺🇸美国-19
-  - 🇬🇧英国-05
-  - 🇫🇷法国-34
-  - 🇦🇹奥地利-03
-  - 🇦🇹奥地利-04
-  - 🇫🇷法国-35
-  - 🇬🇧英国-06
   - 🇭🇰香港-23
-  - 🇺🇸美国-20
-  - 🇽🇽未知-59
   - 🇭🇰香港-24
-  - 🇭🇰香港-25
-  - 🇭🇰香港-26
-  - 🇭🇰香港-27
-  - 🇭🇰香港-28
-  - 🇭🇰香港-29
-  - 🇽🇽未知-60
-  - 🇽🇽未知-61
-  - 🇫🇷法国-36
-  - 🇫🇷法国-37
-  - 🇫🇷法国-38
-  - 🇫🇷法国-39
-  - 🇫🇷法国-40
-  - 🇫🇷法国-41
-  - 🇫🇷法国-42
-  - 🇫🇷法国-43
-  - 🇫🇷法国-44
-  - 🇫🇷法国-45
-  - 🇫🇷法国-46
-  - 🇫🇷法国-47
-  - 🇫🇷法国-48
-  - 🇫🇷法国-49
-  - 🇫🇷法国-50
-  - 🇫🇷法国-51
-  - 🇫🇷法国-52
-  - 🇫🇷法国-53
-  - 🇫🇷法国-54
-  - 🇫🇷法国-55
-  - 🇫🇷法国-56
-  - 🇫🇷法国-57
-  - 🇫🇷法国-58
-  - 🇫🇷法国-59
-  - 🇫🇷法国-60
-  - 🇫🇷法国-61
-  - 🇫🇷法国-62
-  - 🇫🇷法国-63
-  - 🇫🇷法国-64
-  - 🇫🇷法国-65
-  - 🇫🇷法国-66
-  - 🇫🇷法国-67
-  - 🇫🇷法国-68
-  - 🇫🇷法国-69
-  - 🇫🇷法国-70
-  - 🇫🇷法国-71
-  - 🇫🇷法国-72
-  - 🇫🇷法国-73
-  - 🇫🇷法国-74
-  - 🇫🇷法国-75
-  - 🇫🇷法国-76
-  - 🇫🇷法国-77
-  - 🇫🇷法国-78
-  - 🇫🇷法国-79
-  - 🇫🇷法国-80
-  - 🇫🇷法国-81
-  - 🇫🇷法国-82
-  - 🇫🇷法国-83
-  - 🇫🇷法国-84
-  - 🇫🇷法国-85
-  - 🇫🇷法国-86
-  - 🇫🇷法国-87
-  - 🇫🇷法国-88
-  - 🇫🇷法国-89
-  - 🇫🇷法国-90
-  - 🇫🇷法国-91
-  - 🇫🇷法国-92
-  - 🇫🇷法国-93
-  - 🇫🇷法国-94
-  - 🇫🇷法国-95
-  - 🇫🇷法国-96
-  - 🇫🇷法国-97
-  - 🇫🇷法国-98
-  - 🇫🇷法国-99
-  - 🇫🇷法国-100
-  - 🇫🇷法国-101
-  - 🇫🇷法国-102
-  - 🇫🇷法国-103
-  - 🇫🇷法国-104
-  - 🇫🇷法国-105
-  - 🇫🇷法国-106
-  - 🇫🇷法国-107
-  - 🇫🇷法国-108
-  - 🇫🇷法国-109
-  - 🇫🇷法国-110
-  - 🇫🇷法国-111
-  - 🇫🇷法国-112
-  - 🇫🇷法国-113
-  - 🇫🇷法国-114
-  - 🇫🇷法国-115
-  - 🇫🇷法国-116
+  - 🇬🇷希腊-01
+  - 🇪🇸西班牙-04
+  - 🇸🇬新加坡-05
+  - 🇹🇼台湾-01
+  - 🇸🇬新加坡-06
+  - 🇸🇬新加坡-07
+  - 🇽🇽未知-36
+  - 🇸🇬新加坡-08
+  - 🇸🇬新加坡-09
+  - 🇸🇬新加坡-10
+  - 🇽🇽未知-37
+  - 🇺🇸美国-24
+  - 🇽🇽未知-38
+  - 🇬🇧英国-08
 - name: 🍎 苹果服务
   type: select
   proxies:
-  - 🇱🇻LV-01
-  - 🇸🇪瑞典-01
-  - 🇭🇰香港-01
-  - 🇭🇰香港-02
-  - 🇬🇧英国-01
-  - 🇭🇰香港-03
-  - 🇭🇰香港-04
-  - 🇭🇰香港-05
-  - 🇭🇰香港-06
-  - 🇬🇧英国-02
-  - 🇺🇸美国-01
-  - 🇭🇰香港-07
-  - 🇭🇰香港-08
-  - 🇬🇧英国-03
-  - 🇲🇽墨西哥-01
+  - 🇯🇵日本-01
+  - 🇯🇵日本-02
+  - 🇯🇵日本-03
   - 🇩🇪德国-01
+  - 🇭🇰香港-01
+  - 🇬🇧英国-01
+  - 🇬🇧英国-02
+  - 🇬🇧英国-03
   - 🇰🇷韩国-01
   - 🇰🇷韩国-02
-  - 🇽🇽未知-01
-  - 🇨🇦加拿大-01
-  - 🇨🇦加拿大-02
-  - 🇨🇦加拿大-03
-  - 🇽🇽未知-02
+  - 🇩🇪德国-02
+  - 🇳🇱荷兰-01
+  - 🇺🇸美国-01
+  - 🇷🇴罗马尼亚-01
+  - 🇯🇵日本-04
   - 🇺🇸美国-02
-  - 🇨🇦加拿大-04
-  - 🇽🇽未知-03
+  - 🇫🇷法国-01
+  - 🇽🇽未知-01
   - 🇺🇸美国-03
+  - 🇺🇸美国-04
+  - 🇺🇸美国-05
+  - 🇺🇸美国-06
+  - 🇽🇽未知-02
+  - 🇷🇴罗马尼亚-02
+  - 🇽🇽未知-03
   - 🇽🇽未知-04
+  - 🇺🇸美国-07
+  - 🇱🇻LV-01
   - 🇽🇽未知-05
   - 🇽🇽未知-06
-  - 🇨🇦加拿大-05
-  - 🇨🇦加拿大-06
-  - 🇨🇦加拿大-07
-  - 🇺🇸美国-04
+  - 🇺🇸美国-08
+  - 🇪🇸西班牙-01
+  - 🇦🇹奥地利-01
+  - 🇺🇸美国-09
+  - 🇦🇹奥地利-02
   - 🇽🇽未知-07
+  - 🇧🇷巴西-01
+  - 🇬🇧英国-04
+  - 🇧🇪比利时-01
+  - 🇲🇩MD-01
+  - 🇫🇷法国-02
+  - 🇦🇹奥地利-03
   - 🇽🇽未知-08
+  - 🇸🇬新加坡-01
+  - 🇺🇸美国-10
+  - 🇬🇧英国-05
+  - 🇺🇸美国-11
   - 🇽🇽未知-09
   - 🇽🇽未知-10
   - 🇽🇽未知-11
   - 🇽🇽未知-12
-  - 🇨🇦加拿大-08
   - 🇽🇽未知-13
+  - 🇳🇱荷兰-02
   - 🇽🇽未知-14
   - 🇽🇽未知-15
-  - 🇫🇷法国-01
-  - 🇺🇸美国-05
-  - 🇨🇿捷克-01
   - 🇽🇽未知-16
   - 🇽🇽未知-17
-  - 🇺🇸美国-06
+  - 🇺🇸美国-12
   - 🇽🇽未知-18
-  - 🇺🇸美国-07
   - 🇽🇽未知-19
   - 🇽🇽未知-20
   - 🇽🇽未知-21
-  - 🇪🇸西班牙-01
   - 🇽🇽未知-22
   - 🇽🇽未知-23
-  - 🇸🇬新加坡-01
-  - 🇸🇬新加坡-02
   - 🇽🇽未知-24
-  - 🇸🇬新加坡-03
-  - 🇺🇸美国-08
-  - 🇫🇷法国-02
-  - 🇽🇽未知-25
-  - 🇸🇬新加坡-04
-  - 🇹🇼台湾-01
-  - 🇽🇽未知-26
-  - 🇺🇸美国-09
+  - 🇺🇸美国-13
+  - 🇺🇸美国-14
+  - 🇮🇳印度-01
+  - 🇺🇸美国-15
   - 🇪🇸西班牙-02
+  - 🇺🇸美国-16
+  - 🇽🇽未知-25
+  - 🇽🇽未知-26
   - 🇽🇽未知-27
-  - 🇫🇷法国-03
   - 🇽🇽未知-28
+  - 🇷🇴罗马尼亚-03
   - 🇽🇽未知-29
+  - 🇬🇧英国-06
+  - 🇺🇸美国-17
+  - 🇺🇸美国-18
+  - 🇩🇪德国-03
+  - 🇩🇪德国-04
   - 🇽🇽未知-30
-  - 🇬🇷希腊-01
+  - 🇯🇵日本-05
+  - 🇽🇽未知-31
+  - 🇽🇽未知-32
+  - 🇽🇽未知-33
   - 🇱🇻LV-02
+  - 🇦🇺澳大利亚-01
+  - 🇬🇧英国-07
+  - 🇰🇷韩国-03
+  - 🇺🇸美国-19
+  - 🇱🇻LV-03
+  - 🇫🇷法国-03
+  - 🇽🇽未知-34
+  - 🇺🇸美国-20
+  - 🇽🇽未知-35
+  - 🇸🇬新加坡-02
+  - 🇸🇬新加坡-03
+  - 🇸🇬新加坡-04
+  - 🇫🇷法国-04
+  - 🇫🇷法国-05
+  - 🇫🇷法国-06
+  - 🇫🇷法国-07
+  - 🇫🇷法国-08
+  - 🇫🇷法国-09
+  - 🇦🇹奥地利-04
+  - 🇳🇱荷兰-03
+  - 🇺🇸美国-21
+  - 🇺🇸美国-22
+  - 🇦🇹奥地利-05
+  - 🇪🇸西班牙-03
+  - 🇦🇹奥地利-06
+  - 🇺🇸美国-23
+  - 🇦🇹奥地利-07
+  - 🇭🇰香港-02
+  - 🇭🇰香港-03
+  - 🇭🇰香港-04
+  - 🇭🇰香港-05
+  - 🇭🇰香港-06
+  - 🇭🇰香港-07
+  - 🇭🇰香港-08
   - 🇭🇰香港-09
   - 🇭🇰香港-10
   - 🇭🇰香港-11
@@ -4894,192 +2808,28 @@ proxy-groups:
   - 🇭🇰香港-15
   - 🇭🇰香港-16
   - 🇭🇰香港-17
+  - 🇮🇹意大利-01
   - 🇭🇰香港-18
   - 🇭🇰香港-19
   - 🇭🇰香港-20
   - 🇭🇰香港-21
   - 🇭🇰香港-22
-  - 🇫🇷法国-04
-  - 🇺🇸美国-10
-  - 🇱🇻LV-03
-  - 🇫🇷法国-05
-  - 🇷🇴罗马尼亚-01
-  - 🇽🇽未知-31
-  - 🇽🇽未知-32
-  - 🇽🇽未知-33
-  - 🇽🇽未知-34
-  - 🇽🇽未知-35
-  - 🇽🇽未知-36
-  - 🇽🇽未知-37
-  - 🇫🇷法国-06
-  - 🇽🇽未知-38
-  - 🇽🇽未知-39
-  - 🇽🇽未知-40
-  - 🇽🇽未知-41
-  - 🇽🇽未知-42
-  - 🇽🇽未知-43
-  - 🇽🇽未知-44
-  - 🇫🇷法国-07
-  - 🇽🇽未知-45
-  - 🇽🇽未知-46
-  - 🇽🇽未知-47
-  - 🇫🇷法国-08
-  - 🇫🇷法国-09
-  - 🇽🇽未知-48
-  - 🇫🇷法国-10
-  - 🇫🇷法国-11
-  - 🇽🇽未知-49
-  - 🇫🇷法国-12
-  - 🇫🇷法国-13
-  - 🇫🇷法国-14
-  - 🇫🇷法国-15
-  - 🇫🇷法国-16
-  - 🇫🇷法国-17
-  - 🇫🇷法国-18
-  - 🇫🇷法国-19
-  - 🇽🇽未知-50
-  - 🇽🇽未知-51
-  - 🇫🇷法国-20
-  - 🇫🇷法国-21
-  - 🇫🇷法国-22
-  - 🇸🇬新加坡-05
-  - 🇺🇸美国-11
-  - 🇫🇷法国-23
-  - 🇫🇷法国-24
-  - 🇽🇽未知-52
-  - 🇨🇦加拿大-09
-  - 🇫🇷法国-25
-  - 🇫🇷法国-26
-  - 🇫🇷法国-27
-  - 🇺🇸美国-12
-  - 🇨🇦加拿大-10
-  - 🇫🇷法国-28
-  - 🇫🇷法国-29
-  - 🇨🇦加拿大-11
-  - 🇨🇦加拿大-12
-  - 🇫🇷法国-30
-  - 🇫🇷法国-31
-  - 🇸🇬新加坡-06
-  - 🇨🇦加拿大-13
-  - 🇽🇽未知-53
-  - 🇫🇷法国-32
-  - 🇺🇸美国-13
-  - 🇺🇸美国-14
-  - 🇺🇸美国-15
-  - 🇺🇸美国-16
-  - 🇬🇧英国-04
-  - 🇩🇪德国-02
-  - 🇩🇪德国-03
-  - 🇺🇸美国-17
-  - 🇽🇽未知-54
-  - 🇽🇽未知-55
-  - 🇦🇹奥地利-01
-  - 🇳🇱荷兰-01
-  - 🇽🇽未知-56
-  - 🇫🇷法国-33
-  - 🇺🇸美国-18
-  - 🇽🇽未知-57
-  - 🇦🇹奥地利-02
-  - 🇽🇽未知-58
-  - 🇺🇸美国-19
-  - 🇬🇧英国-05
-  - 🇫🇷法国-34
-  - 🇦🇹奥地利-03
-  - 🇦🇹奥地利-04
-  - 🇫🇷法国-35
-  - 🇬🇧英国-06
   - 🇭🇰香港-23
-  - 🇺🇸美国-20
-  - 🇽🇽未知-59
   - 🇭🇰香港-24
-  - 🇭🇰香港-25
-  - 🇭🇰香港-26
-  - 🇭🇰香港-27
-  - 🇭🇰香港-28
-  - 🇭🇰香港-29
-  - 🇽🇽未知-60
-  - 🇽🇽未知-61
-  - 🇫🇷法国-36
-  - 🇫🇷法国-37
-  - 🇫🇷法国-38
-  - 🇫🇷法国-39
-  - 🇫🇷法国-40
-  - 🇫🇷法国-41
-  - 🇫🇷法国-42
-  - 🇫🇷法国-43
-  - 🇫🇷法国-44
-  - 🇫🇷法国-45
-  - 🇫🇷法国-46
-  - 🇫🇷法国-47
-  - 🇫🇷法国-48
-  - 🇫🇷法国-49
-  - 🇫🇷法国-50
-  - 🇫🇷法国-51
-  - 🇫🇷法国-52
-  - 🇫🇷法国-53
-  - 🇫🇷法国-54
-  - 🇫🇷法国-55
-  - 🇫🇷法国-56
-  - 🇫🇷法国-57
-  - 🇫🇷法国-58
-  - 🇫🇷法国-59
-  - 🇫🇷法国-60
-  - 🇫🇷法国-61
-  - 🇫🇷法国-62
-  - 🇫🇷法国-63
-  - 🇫🇷法国-64
-  - 🇫🇷法国-65
-  - 🇫🇷法国-66
-  - 🇫🇷法国-67
-  - 🇫🇷法国-68
-  - 🇫🇷法国-69
-  - 🇫🇷法国-70
-  - 🇫🇷法国-71
-  - 🇫🇷法国-72
-  - 🇫🇷法国-73
-  - 🇫🇷法国-74
-  - 🇫🇷法国-75
-  - 🇫🇷法国-76
-  - 🇫🇷法国-77
-  - 🇫🇷法国-78
-  - 🇫🇷法国-79
-  - 🇫🇷法国-80
-  - 🇫🇷法国-81
-  - 🇫🇷法国-82
-  - 🇫🇷法国-83
-  - 🇫🇷法国-84
-  - 🇫🇷法国-85
-  - 🇫🇷法国-86
-  - 🇫🇷法国-87
-  - 🇫🇷法国-88
-  - 🇫🇷法国-89
-  - 🇫🇷法国-90
-  - 🇫🇷法国-91
-  - 🇫🇷法国-92
-  - 🇫🇷法国-93
-  - 🇫🇷法国-94
-  - 🇫🇷法国-95
-  - 🇫🇷法国-96
-  - 🇫🇷法国-97
-  - 🇫🇷法国-98
-  - 🇫🇷法国-99
-  - 🇫🇷法国-100
-  - 🇫🇷法国-101
-  - 🇫🇷法国-102
-  - 🇫🇷法国-103
-  - 🇫🇷法国-104
-  - 🇫🇷法国-105
-  - 🇫🇷法国-106
-  - 🇫🇷法国-107
-  - 🇫🇷法国-108
-  - 🇫🇷法国-109
-  - 🇫🇷法国-110
-  - 🇫🇷法国-111
-  - 🇫🇷法国-112
-  - 🇫🇷法国-113
-  - 🇫🇷法国-114
-  - 🇫🇷法国-115
-  - 🇫🇷法国-116
+  - 🇬🇷希腊-01
+  - 🇪🇸西班牙-04
+  - 🇸🇬新加坡-05
+  - 🇹🇼台湾-01
+  - 🇸🇬新加坡-06
+  - 🇸🇬新加坡-07
+  - 🇽🇽未知-36
+  - 🇸🇬新加坡-08
+  - 🇸🇬新加坡-09
+  - 🇸🇬新加坡-10
+  - 🇽🇽未知-37
+  - 🇺🇸美国-24
+  - 🇽🇽未知-38
+  - 🇬🇧英国-08
 - name: 🎯 全球直连
   type: select
   proxies: []
@@ -5092,83 +2842,128 @@ proxy-groups:
 - name: 🐟 漏网之鱼
   type: select
   proxies:
-  - 🇱🇻LV-01
-  - 🇸🇪瑞典-01
-  - 🇭🇰香港-01
-  - 🇭🇰香港-02
-  - 🇬🇧英国-01
-  - 🇭🇰香港-03
-  - 🇭🇰香港-04
-  - 🇭🇰香港-05
-  - 🇭🇰香港-06
-  - 🇬🇧英国-02
-  - 🇺🇸美国-01
-  - 🇭🇰香港-07
-  - 🇭🇰香港-08
-  - 🇬🇧英国-03
-  - 🇲🇽墨西哥-01
+  - 🇯🇵日本-01
+  - 🇯🇵日本-02
+  - 🇯🇵日本-03
   - 🇩🇪德国-01
+  - 🇭🇰香港-01
+  - 🇬🇧英国-01
+  - 🇬🇧英国-02
+  - 🇬🇧英国-03
   - 🇰🇷韩国-01
   - 🇰🇷韩国-02
-  - 🇽🇽未知-01
-  - 🇨🇦加拿大-01
-  - 🇨🇦加拿大-02
-  - 🇨🇦加拿大-03
-  - 🇽🇽未知-02
+  - 🇩🇪德国-02
+  - 🇳🇱荷兰-01
+  - 🇺🇸美国-01
+  - 🇷🇴罗马尼亚-01
+  - 🇯🇵日本-04
   - 🇺🇸美国-02
-  - 🇨🇦加拿大-04
-  - 🇽🇽未知-03
+  - 🇫🇷法国-01
+  - 🇽🇽未知-01
   - 🇺🇸美国-03
+  - 🇺🇸美国-04
+  - 🇺🇸美国-05
+  - 🇺🇸美国-06
+  - 🇽🇽未知-02
+  - 🇷🇴罗马尼亚-02
+  - 🇽🇽未知-03
   - 🇽🇽未知-04
+  - 🇺🇸美国-07
+  - 🇱🇻LV-01
   - 🇽🇽未知-05
   - 🇽🇽未知-06
-  - 🇨🇦加拿大-05
-  - 🇨🇦加拿大-06
-  - 🇨🇦加拿大-07
-  - 🇺🇸美国-04
+  - 🇺🇸美国-08
+  - 🇪🇸西班牙-01
+  - 🇦🇹奥地利-01
+  - 🇺🇸美国-09
+  - 🇦🇹奥地利-02
   - 🇽🇽未知-07
+  - 🇧🇷巴西-01
+  - 🇬🇧英国-04
+  - 🇧🇪比利时-01
+  - 🇲🇩MD-01
+  - 🇫🇷法国-02
+  - 🇦🇹奥地利-03
   - 🇽🇽未知-08
+  - 🇸🇬新加坡-01
+  - 🇺🇸美国-10
+  - 🇬🇧英国-05
+  - 🇺🇸美国-11
   - 🇽🇽未知-09
   - 🇽🇽未知-10
   - 🇽🇽未知-11
   - 🇽🇽未知-12
-  - 🇨🇦加拿大-08
   - 🇽🇽未知-13
+  - 🇳🇱荷兰-02
   - 🇽🇽未知-14
   - 🇽🇽未知-15
-  - 🇫🇷法国-01
-  - 🇺🇸美国-05
-  - 🇨🇿捷克-01
   - 🇽🇽未知-16
   - 🇽🇽未知-17
-  - 🇺🇸美国-06
+  - 🇺🇸美国-12
   - 🇽🇽未知-18
-  - 🇺🇸美国-07
   - 🇽🇽未知-19
   - 🇽🇽未知-20
   - 🇽🇽未知-21
-  - 🇪🇸西班牙-01
   - 🇽🇽未知-22
   - 🇽🇽未知-23
-  - 🇸🇬新加坡-01
-  - 🇸🇬新加坡-02
   - 🇽🇽未知-24
-  - 🇸🇬新加坡-03
-  - 🇺🇸美国-08
-  - 🇫🇷法国-02
-  - 🇽🇽未知-25
-  - 🇸🇬新加坡-04
-  - 🇹🇼台湾-01
-  - 🇽🇽未知-26
-  - 🇺🇸美国-09
+  - 🇺🇸美国-13
+  - 🇺🇸美国-14
+  - 🇮🇳印度-01
+  - 🇺🇸美国-15
   - 🇪🇸西班牙-02
+  - 🇺🇸美国-16
+  - 🇽🇽未知-25
+  - 🇽🇽未知-26
   - 🇽🇽未知-27
-  - 🇫🇷法国-03
   - 🇽🇽未知-28
+  - 🇷🇴罗马尼亚-03
   - 🇽🇽未知-29
+  - 🇬🇧英国-06
+  - 🇺🇸美国-17
+  - 🇺🇸美国-18
+  - 🇩🇪德国-03
+  - 🇩🇪德国-04
   - 🇽🇽未知-30
-  - 🇬🇷希腊-01
+  - 🇯🇵日本-05
+  - 🇽🇽未知-31
+  - 🇽🇽未知-32
+  - 🇽🇽未知-33
   - 🇱🇻LV-02
+  - 🇦🇺澳大利亚-01
+  - 🇬🇧英国-07
+  - 🇰🇷韩国-03
+  - 🇺🇸美国-19
+  - 🇱🇻LV-03
+  - 🇫🇷法国-03
+  - 🇽🇽未知-34
+  - 🇺🇸美国-20
+  - 🇽🇽未知-35
+  - 🇸🇬新加坡-02
+  - 🇸🇬新加坡-03
+  - 🇸🇬新加坡-04
+  - 🇫🇷法国-04
+  - 🇫🇷法国-05
+  - 🇫🇷法国-06
+  - 🇫🇷法国-07
+  - 🇫🇷法国-08
+  - 🇫🇷法国-09
+  - 🇦🇹奥地利-04
+  - 🇳🇱荷兰-03
+  - 🇺🇸美国-21
+  - 🇺🇸美国-22
+  - 🇦🇹奥地利-05
+  - 🇪🇸西班牙-03
+  - 🇦🇹奥地利-06
+  - 🇺🇸美国-23
+  - 🇦🇹奥地利-07
+  - 🇭🇰香港-02
+  - 🇭🇰香港-03
+  - 🇭🇰香港-04
+  - 🇭🇰香港-05
+  - 🇭🇰香港-06
+  - 🇭🇰香港-07
+  - 🇭🇰香港-08
   - 🇭🇰香港-09
   - 🇭🇰香港-10
   - 🇭🇰香港-11
@@ -5178,192 +2973,28 @@ proxy-groups:
   - 🇭🇰香港-15
   - 🇭🇰香港-16
   - 🇭🇰香港-17
+  - 🇮🇹意大利-01
   - 🇭🇰香港-18
   - 🇭🇰香港-19
   - 🇭🇰香港-20
   - 🇭🇰香港-21
   - 🇭🇰香港-22
-  - 🇫🇷法国-04
-  - 🇺🇸美国-10
-  - 🇱🇻LV-03
-  - 🇫🇷法国-05
-  - 🇷🇴罗马尼亚-01
-  - 🇽🇽未知-31
-  - 🇽🇽未知-32
-  - 🇽🇽未知-33
-  - 🇽🇽未知-34
-  - 🇽🇽未知-35
-  - 🇽🇽未知-36
-  - 🇽🇽未知-37
-  - 🇫🇷法国-06
-  - 🇽🇽未知-38
-  - 🇽🇽未知-39
-  - 🇽🇽未知-40
-  - 🇽🇽未知-41
-  - 🇽🇽未知-42
-  - 🇽🇽未知-43
-  - 🇽🇽未知-44
-  - 🇫🇷法国-07
-  - 🇽🇽未知-45
-  - 🇽🇽未知-46
-  - 🇽🇽未知-47
-  - 🇫🇷法国-08
-  - 🇫🇷法国-09
-  - 🇽🇽未知-48
-  - 🇫🇷法国-10
-  - 🇫🇷法国-11
-  - 🇽🇽未知-49
-  - 🇫🇷法国-12
-  - 🇫🇷法国-13
-  - 🇫🇷法国-14
-  - 🇫🇷法国-15
-  - 🇫🇷法国-16
-  - 🇫🇷法国-17
-  - 🇫🇷法国-18
-  - 🇫🇷法国-19
-  - 🇽🇽未知-50
-  - 🇽🇽未知-51
-  - 🇫🇷法国-20
-  - 🇫🇷法国-21
-  - 🇫🇷法国-22
-  - 🇸🇬新加坡-05
-  - 🇺🇸美国-11
-  - 🇫🇷法国-23
-  - 🇫🇷法国-24
-  - 🇽🇽未知-52
-  - 🇨🇦加拿大-09
-  - 🇫🇷法国-25
-  - 🇫🇷法国-26
-  - 🇫🇷法国-27
-  - 🇺🇸美国-12
-  - 🇨🇦加拿大-10
-  - 🇫🇷法国-28
-  - 🇫🇷法国-29
-  - 🇨🇦加拿大-11
-  - 🇨🇦加拿大-12
-  - 🇫🇷法国-30
-  - 🇫🇷法国-31
-  - 🇸🇬新加坡-06
-  - 🇨🇦加拿大-13
-  - 🇽🇽未知-53
-  - 🇫🇷法国-32
-  - 🇺🇸美国-13
-  - 🇺🇸美国-14
-  - 🇺🇸美国-15
-  - 🇺🇸美国-16
-  - 🇬🇧英国-04
-  - 🇩🇪德国-02
-  - 🇩🇪德国-03
-  - 🇺🇸美国-17
-  - 🇽🇽未知-54
-  - 🇽🇽未知-55
-  - 🇦🇹奥地利-01
-  - 🇳🇱荷兰-01
-  - 🇽🇽未知-56
-  - 🇫🇷法国-33
-  - 🇺🇸美国-18
-  - 🇽🇽未知-57
-  - 🇦🇹奥地利-02
-  - 🇽🇽未知-58
-  - 🇺🇸美国-19
-  - 🇬🇧英国-05
-  - 🇫🇷法国-34
-  - 🇦🇹奥地利-03
-  - 🇦🇹奥地利-04
-  - 🇫🇷法国-35
-  - 🇬🇧英国-06
   - 🇭🇰香港-23
-  - 🇺🇸美国-20
-  - 🇽🇽未知-59
   - 🇭🇰香港-24
-  - 🇭🇰香港-25
-  - 🇭🇰香港-26
-  - 🇭🇰香港-27
-  - 🇭🇰香港-28
-  - 🇭🇰香港-29
-  - 🇽🇽未知-60
-  - 🇽🇽未知-61
-  - 🇫🇷法国-36
-  - 🇫🇷法国-37
-  - 🇫🇷法国-38
-  - 🇫🇷法国-39
-  - 🇫🇷法国-40
-  - 🇫🇷法国-41
-  - 🇫🇷法国-42
-  - 🇫🇷法国-43
-  - 🇫🇷法国-44
-  - 🇫🇷法国-45
-  - 🇫🇷法国-46
-  - 🇫🇷法国-47
-  - 🇫🇷法国-48
-  - 🇫🇷法国-49
-  - 🇫🇷法国-50
-  - 🇫🇷法国-51
-  - 🇫🇷法国-52
-  - 🇫🇷法国-53
-  - 🇫🇷法国-54
-  - 🇫🇷法国-55
-  - 🇫🇷法国-56
-  - 🇫🇷法国-57
-  - 🇫🇷法国-58
-  - 🇫🇷法国-59
-  - 🇫🇷法国-60
-  - 🇫🇷法国-61
-  - 🇫🇷法国-62
-  - 🇫🇷法国-63
-  - 🇫🇷法国-64
-  - 🇫🇷法国-65
-  - 🇫🇷法国-66
-  - 🇫🇷法国-67
-  - 🇫🇷法国-68
-  - 🇫🇷法国-69
-  - 🇫🇷法国-70
-  - 🇫🇷法国-71
-  - 🇫🇷法国-72
-  - 🇫🇷法国-73
-  - 🇫🇷法国-74
-  - 🇫🇷法国-75
-  - 🇫🇷法国-76
-  - 🇫🇷法国-77
-  - 🇫🇷法国-78
-  - 🇫🇷法国-79
-  - 🇫🇷法国-80
-  - 🇫🇷法国-81
-  - 🇫🇷法国-82
-  - 🇫🇷法国-83
-  - 🇫🇷法国-84
-  - 🇫🇷法国-85
-  - 🇫🇷法国-86
-  - 🇫🇷法国-87
-  - 🇫🇷法国-88
-  - 🇫🇷法国-89
-  - 🇫🇷法国-90
-  - 🇫🇷法国-91
-  - 🇫🇷法国-92
-  - 🇫🇷法国-93
-  - 🇫🇷法国-94
-  - 🇫🇷法国-95
-  - 🇫🇷法国-96
-  - 🇫🇷法国-97
-  - 🇫🇷法国-98
-  - 🇫🇷法国-99
-  - 🇫🇷法国-100
-  - 🇫🇷法国-101
-  - 🇫🇷法国-102
-  - 🇫🇷法国-103
-  - 🇫🇷法国-104
-  - 🇫🇷法国-105
-  - 🇫🇷法国-106
-  - 🇫🇷法国-107
-  - 🇫🇷法国-108
-  - 🇫🇷法国-109
-  - 🇫🇷法国-110
-  - 🇫🇷法国-111
-  - 🇫🇷法国-112
-  - 🇫🇷法国-113
-  - 🇫🇷法国-114
-  - 🇫🇷法国-115
-  - 🇫🇷法国-116
+  - 🇬🇷希腊-01
+  - 🇪🇸西班牙-04
+  - 🇸🇬新加坡-05
+  - 🇹🇼台湾-01
+  - 🇸🇬新加坡-06
+  - 🇸🇬新加坡-07
+  - 🇽🇽未知-36
+  - 🇸🇬新加坡-08
+  - 🇸🇬新加坡-09
+  - 🇸🇬新加坡-10
+  - 🇽🇽未知-37
+  - 🇺🇸美国-24
+  - 🇽🇽未知-38
+  - 🇬🇧英国-08
 rule-providers:
   LocalAreaNetwork:
     type: http
