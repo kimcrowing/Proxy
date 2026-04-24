@@ -81,7 +81,7 @@ with open('valid_proxies.yaml', 'w', encoding='utf-8') as outfile:
 def valid_proxy(proxy):
     name = proxy.get('name', '')
     proxy_type = proxy.get('type', '').lower()
-    banned_keywords = ['CN', 'AE','File']
+    banned_keywords = ['CN', 'AE', 'GB', 'DE','File']
     banned_types = ['http']
     
     required_fields = {
