@@ -40,7 +40,7 @@ CLOUDFLARE_PREFIXES = [
 ]
 
 # 排除的国家代码
-EXCLUDED_COUNTRIES = ["CN", "RU"]
+EXCLUDED_COUNTRIES = ["CN", "RU","DE"]
 
 # 国旗生成
 def country_code_to_flag(code: str) -> str:
