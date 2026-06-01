@@ -17,142 +17,27 @@ dns:
   - https://dns.alidns.com/dns-query
   - https://doh.pub/dns-query
 proxies:
-- name: 🇦🇪阿联酋-01
-  type: vless
-  server: 212.100.171.194
-  port: 17567
-  uuid: 04b6249e-7375-4263-b47c-6a9e7ad01b54
-  servername: www.speedtest.net
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 4aKrDEJaWz_lNRA02ltvjqzh1GvI5wzB-ZPhANYYYU8
-    short-id: 9891d7
-  udp: true
-- name: 🇦🇱AL-01
+- name: 🇦🇷阿根廷-01
   type: trojan
-  server: 78.159.131.12
-  port: 28259
-  password: MeaDiUmPlkWbZJ2BON8tz
-  sni: ads.x5.ru
-  skip-cert-verify: true
+  server: 130.94.107.171
+  port: 443
+  password: s.wRSE4ANZp4=4h.=B_9Qbetw6XUc0V1SV
+  sni: www.logger-guard.click
+  skip-cert-verify: false
   tls: true
-  udp: true
-- name: 🇦🇹奥地利-01
-  type: vless
-  server: 185.224.3.41
-  port: 10443
-  uuid: f6431ff1-dec0-4a6c-be4a-ce917913b589
-  servername: www.cloudflare.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: WeShDM0MdunM6N8btrY8tXlL0GT1Ah-0jcplNQf9FEo
-  udp: true
-- name: 🇦🇹奥地利-02
-  type: trojan
-  server: 104.143.0.117
-  port: 8443
-  password: 433e785b-2077-47f7-a43d-985f63dd18d1
-  sni: vpn.rnmcnm.com
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /trojan
   udp: true
 - name: 🇦🇺澳大利亚-01
-  type: vless
-  server: 54.253.37.164
-  port: 23951
-  uuid: 3e62a6f1-f8cb-40eb-9c33-fc4ed39a080e
-  servername: www.tesla.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: FGnWfD70nPQhiMZUQETB_mKaR-J_2DonpOpy9eqQ_F0
-    short-id: 8c4907b7884b31
-  udp: true
-- name: 🇦🇺澳大利亚-02
-  type: vless
-  server: 3.106.214.88
-  port: 31318
-  uuid: 3c7961e6-6ce7-4e55-8b8a-01a5d663efd4
-  servername: www.tesla.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: uAhNpK_fDxgKKNtYtUs2uB79V28pjFv1-Mh7D4PTaW8
-    short-id: 1b665f78655294
-  udp: true
-- name: 🇦🇺澳大利亚-03
   type: trojan
   server: 125.7.24.251
   port: 443
   password: rYuChHcwQZskq9E0zdoR
   sni: vpn5.rnmcnm.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   ws-opts:
     path: /ws-79dffb8106db
     headers:
       Host: vpn5.rnmcnm.com
-  udp: true
-- name: 🇧🇬BG-01
-  type: vless
-  server: 87.229.34.23
-  port: 443
-  uuid: 8bb2d0ca-259b-46d0-8055-d6ecbb36f306
-  servername: www.samsung.com
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: OZVjfQBboTDTBw0baMFqzVPsVUI4FNQmspTEb0b0zW4
-  udp: true
-- name: 🇧🇷巴西-01
-  type: vmess
-  server: 172.233.17.76
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇨🇦加拿大-01
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇨🇦加拿大-02
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇨🇦加拿大-03
-  type: vless
-  server: 15.223.121.250
-  port: 41087
-  uuid: 57d94cf7-ca36-4c2a-bec5-90cf38588cda
-  servername: www.tesla.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: aoGL5vNnsEuKoBXQFXyHTxjvcdAn3SxT4qUgV6aJxnw
-    short-id: 190d259bbd40d4c3
   udp: true
 - name: 🇨🇭瑞士-01
   type: vless
@@ -162,138 +47,64 @@ proxies:
   network: ws
   servername: 69565ce3109804e7813f98ee.mmdbay.blog
   tls: true
+  client-fingerprint: chrome
   ws-opts:
     path: /graphql
     headers:
       Host: 69565ce3109804e7813f98ee.mmdbay.blog
   udp: true
-- name: 🇨🇾CY-01
+- name: 🇨🇭瑞士-02
   type: vless
-  server: 2.56.172.83
-  port: 8443
-  uuid: e033ef6e-ab4b-47d4-a523-ff568d2c8dbb
-  servername: tradingview.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: TH8C9sgNuMRVR3o5QehXPgYw8PWjoHrH2rVQF4JWwGI
-  udp: true
-- name: 🇨🇾CY-02
-  type: vless
-  server: 45.12.136.81
+  server: 138.124.244.248
   port: 443
-  uuid: ea484535-0170-4ec8-bb3c-a9dbaa7412d7
-  servername: cdp.x5.ru
+  uuid: 476caa1d-7c04-48ab-8de5-2c1af0d13a66
+  servername: yahoo.com
   tls: true
-  flow: xtls-rprx-vision
   client-fingerprint: chrome
   reality-opts:
-    public-key: GsKY4XpP6sr905aHvCrj0JEHhgcAD5aEcmbjyLSNjAU
-    short-id: 8ae24275272f
+    public-key: PYX0lu3m0L_h28eW4186s63gRFHXoTc3K9wKeFewDUQ
+    short-id: e9a8
   udp: true
-- name: 🇨🇾CY-03
+- name: 🇨🇭瑞士-03
   type: vless
-  server: 132.243.231.122
-  port: 8443
-  uuid: 7625adbb-52f7-4ff4-95f8-677471071a77
-  servername: io.ozone.ru
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: A9jwrodyycJJV-apFQ91_rrh1vfJ_hSzZGNP9GBPGCM
-    short-id: 92d0c4089b6c1da3
-  udp: true
-- name: 🇨🇾CY-04
-  type: vless
-  server: 45.15.178.124
-  port: 80
-  uuid: 75e1fde7-6bf6-48ef-ba43-400e960e185b
-  network: ws
-  tls: false
-  ws-opts:
-    path: /vless/
-  udp: true
-- name: 🇨🇿捷克-01
-  type: vless
-  server: cz.krevetkavpn.ru
-  port: 443
-  uuid: 729d3d1e-ee1a-4c42-84bc-2ff331518221
-  servername: www.nvidia.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Aak3FEVpJGzxzVz4wWkNpFA9dANDnvQg15X4eYNr_hw
-    short-id: 6ba8f65dee6e
-  udp: true
-- name: 🇨🇿捷克-02
-  type: vless
-  server: 2.26.160.79
-  port: 443
-  uuid: 729d3d1e-ee1a-4c42-84bc-2ff331518221
-  servername: www.nvidia.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Aak3FEVpJGzxzVz4wWkNpFA9dANDnvQg15X4eYNr_hw
-    short-id: 6ba8f65dee6e
-  udp: true
-- name: 🇩🇰丹麦-01
-  type: vless
-  server: den.n1etwork.prostosetup.org
+  server: pro.online.prostosetup.org
   port: 443
   uuid: 1b43419a-b711-40d4-a0ee-eb5c73e60c92
-  servername: github.com
+  servername: pro.online.prostosetup.org
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   reality-opts:
-    public-key: K1pl5IAOi7N5MUQIvv-35fQcpxgz9uLW5Dv45a2tmRc
-    short-id: '50'
+    public-key: qBTTzM-_JJ5NDPfJc8_4StCYqeK4DpiZWEjxCf3KYXA
+    short-id: a96e9c98e60fd8d5
   udp: true
-- name: 🇩🇰丹麦-02
-  type: trojan
-  server: 193.180.209.21
+- name: 🇨🇭瑞士-04
+  type: vless
+  server: 138.124.63.126
   port: 443
-  password: rYuChHcwQZskq9E0zdoR
-  sni: vpn5.rnmcnm.com
-  skip-cert-verify: false
+  uuid: 1b43419a-b711-40d4-a0ee-eb5c73e60c92
+  servername: pro.online.prostosetup.org
   tls: true
-  ws-opts:
-    path: /ws-79dffb8106db
-    headers:
-      Host: vpn5.rnmcnm.com
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: qBTTzM-_JJ5NDPfJc8_4StCYqeK4DpiZWEjxCf3KYXA
+    short-id: a96e9c98e60fd8d5
   udp: true
 - name: 🇪🇪EE-01
   type: vless
-  server: 95.85.228.146
-  port: 8443
-  uuid: a67e3045-626c-42c9-8cc0-a5afa6b18b05
-  servername: io.ozone.ru
+  server: 95.85.228.212
+  port: 443
+  uuid: f85f6c65-1b35-4c56-b766-80c5a4457b3e
+  servername: est.hatvpn.org
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   reality-opts:
-    public-key: A9jwrodyycJJV-apFQ91_rrh1vfJ_hSzZGNP9GBPGCM
-    short-id: 92d0c4089b6c1da3
+    public-key: 0aGTmSxEW21dFVomobDSRjUWnPptI4yT_eL-0PCf-h0
+    short-id: 5a7216aec1371894
   udp: true
 - name: 🇪🇸西班牙-01
-  type: vless
-  server: 185.121.12.178
-  port: 8443
-  uuid: 37e45bbc-89f8-4f73-bcf7-7a3c677964e9
-  servername: www.cloudflare.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: iiYXNFuSOyiZlFnu702mHg10w1QjczHtfNiIyuV44g4
-    short-id: a1b2c3d4e5f6a7b8
-  udp: true
-- name: 🇪🇸西班牙-02
   type: trojan
   server: 103.45.245.208
   port: 2053
@@ -306,251 +117,71 @@ proxies:
     headers:
       Host: vpn5.rnmcnm.com
   udp: true
-- name: 🇫🇮芬兰-01
-  type: vless
-  server: 185.242.247.206
-  port: 8443
-  uuid: c931f737-cafe-4e4f-998a-a65517941256
-  servername: cdnjs.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Ubibgn_MlW_zHo9LwjNH_b6SLNWwTJFwq7wW2ggLtUs
-    short-id: 88ce6b586fcaf681
-  udp: true
-- name: 🇫🇮芬兰-02
-  type: vless
-  server: node-fi.dostup-est.info
-  port: 8443
-  uuid: c931f737-cafe-4e4f-998a-a65517941256
-  servername: cdnjs.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Ubibgn_MlW_zHo9LwjNH_b6SLNWwTJFwq7wW2ggLtUs
-    short-id: 88ce6b586fcaf681
-  udp: true
-- name: 🇫🇮芬兰-03
-  type: vless
-  server: 193.164.155.121
-  port: 34572
-  uuid: abcd6b4c-2d85-4de5-be7f-62791b0f5085
-  servername: cloudflare.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 8PkeN5hkQBkoBt0I2JdcDC865gUXui86897Th8DaDlY
-    short-id: 88acba
-  udp: true
-- name: 🇫🇮芬兰-04
-  type: vless
-  server: fi.gryaz-vpn.com
-  port: 34572
-  uuid: abcd6b4c-2d85-4de5-be7f-62791b0f5085
-  servername: cloudflare.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 8PkeN5hkQBkoBt0I2JdcDC865gUXui86897Th8DaDlY
-    short-id: 88acba
-  udp: true
-- name: 🇫🇮芬兰-05
-  type: vless
-  server: 2.26.3.148
-  port: 443
-  uuid: d511e429-e32b-46a7-ac07-a0fffa9b634c
-  servername: www.deepl.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU
-    short-id: 67ccfc02
-  udp: true
-- name: 🇫🇮芬兰-06
-  type: vless
-  server: 185.228.232.215
-  port: 443
-  uuid: 3ea2d8f2-12c1-4189-8cc5-91d0ee9f5ca0
-  servername: queuev4.vk.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: C1hW1bTA9WOacIK-fHHg-HLkDZ3FY7FhEhAyldMSUEA
-    short-id: a1b2c3d4e5f6
-  udp: true
-- name: 🇫🇮芬兰-07
-  type: vless
-  server: 193.233.23.121
-  port: 40611
-  uuid: f5a25ee5-ff24-41b0-80e8-ccafdc866614
-  tls: false
-  udp: true
-- name: 🇫🇮芬兰-08
-  type: vless
-  server: fl-3-direct.djarbnet.ru
-  port: 443
-  uuid: 4259cd49-5ad0-432d-a078-29159dc999d0
-  network: ws
-  servername: fl-3-direct.djarbnet.ru
-  tls: true
-  ws-opts:
-    path: /getupdates
-    headers:
-      Host: fl-3-direct.djarbnet.ru
-  udp: true
 - name: 🇫🇷法国-01
-  type: vmess
-  server: de5.taskflowhub.org
-  port: 2053
-  uuid: ca58b165-0f7d-49aa-9fae-a017e8a0f884
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 194.226.169.36
+  port: 443
+  uuid: 4706d9c3-eec0-4666-9d84-e608a200e872
+  servername: yahoo.com
   tls: true
-  skip-cert-verify: false
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: i4Mx_tDND0Xxac3WyA7HgT9rvXdZlXpm5m1EGiQF-Uk
+    short-id: b8aa
   udp: true
 - name: 🇫🇷法国-02
   type: vless
-  server: cdg-1.fromblancwithlove.com
-  port: 8443
-  uuid: 55f7d143-a594-4a91-b030-f227039f85ef
-  servername: cdg-1.fromblancwithlove.com
-  tls: true
-  client-fingerprint: chrome
-  udp: true
-- name: 🇫🇷法国-03
-  type: vless
-  server: 217.179.6.84
+  server: 194.226.169.36
   port: 443
-  uuid: d78c12c4-6927-40b8-8550-ed9be00334da
-  servername: France1cxc.chickenkiller.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: UJSYKOEr3a3V1P_obd9zNBq4Pr3Vbd_a2nHE7-rstRk
-    short-id: 6089640857a72237
-  udp: true
-- name: 🇫🇷法国-04
-  type: vless
-  server: 79.127.196.11
-  port: 8443
-  uuid: 55f7d143-a594-4a91-b030-f227039f85ef
-  servername: cdg-1.fromblancwithlove.com
-  tls: true
-  udp: true
-- name: 🇫🇷法国-05
-  type: trojan
-  server: 217.69.2.107
-  port: 443
-  password: YGWIMlg.W1wRWQkRDcKfjZY7sng09aC=Yh
-  sni: www.weavenet.click
-  skip-cert-verify: false
-  tls: true
-  udp: true
-- name: 🇫🇷法国-06
-  type: vless
-  server: 152.89.253.239
-  port: 7443
-  uuid: 54a54ea0-4409-4030-ad9b-44c45849c05a
-  servername: ya.ru
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
-  udp: true
-- name: 🇫🇷法国-07
-  type: vless
-  server: 62.210.91.2
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  servername: fuck.rkn
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  udp: true
-- name: 🇫🇷法国-08
-  type: vless
-  server: 51.44.16.107
-  port: 31413
-  uuid: 5454343b-541b-4c96-8c2a-52e81079d124
+  uuid: fae3277c-0541-4ae9-bbbb-8247453ea652
   servername: yahoo.com
   tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
   reality-opts:
-    public-key: nMlxwhP34_5wFPscbso_hOfRDmsj9DonMpDSXUrnJR8
-    short-id: ead3d6f82a9d
+    public-key: i4Mx_tDND0Xxac3WyA7HgT9rvXdZlXpm5m1EGiQF-Uk
+    short-id: b8aa
   udp: true
 - name: 🇬🇧英国-01
   type: vless
-  server: uk1.fromblancwithlove.com
-  port: 8443
-  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-  servername: uk1.fromblancwithlove.com
-  tls: true
-  client-fingerprint: chrome
+  server: 185.193.30.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: vms.lifetime09.workers.dev
+  tls: false
+  ws-opts:
+    path: /
   udp: true
 - name: 🇬🇧英国-02
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 194.36.55.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: vms.lifetime50.workers.dev
   tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇬🇧英国-03
-  type: vless
-  server: 152.233.28.196
-  port: 8443
-  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-  servername: uk1.fromblancwithlove.com
-  tls: true
-  client-fingerprint: chrome
-  udp: true
-- name: 🇬🇧英国-04
-  type: vless
-  server: 152.233.28.198
-  port: 8443
-  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-  servername: uk1.fromblancwithlove.com
-  tls: true
-  client-fingerprint: chrome
-  udp: true
-- name: 🇬🇧英国-05
-  type: vless
-  server: 140.238.100.35
-  port: 40721
-  uuid: bf3e8944-8d26-47de-8748-b9aa74cce974
-  servername: yahoo.com
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: TUZgwzcTvoROSbgnqMh3WorXVMxQNIF2zsEM39FQbyk
-    short-id: df8611c07d
+  ws-opts:
+    path: /
   udp: true
 - name: 🇭🇰香港-01
-  type: vmess
-  server: 103.181.164.145
-  port: 51556
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
+  type: vless
+  server: cf.008500.xyz
+  port: 443
+  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
+  network: ws
+  servername: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
   udp: true
 - name: 🇭🇰香港-02
+  type: vless
+  server: 8.218.24.35
+  port: 443
+  uuid: im-rootface
+  tls: false
+  udp: true
+- name: 🇭🇰香港-03
   type: vmess
   server: 103.181.164.145
   port: 54022
@@ -560,40 +191,50 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: 🇭🇰香港-03
-  type: vmess
-  server: v10.hdacd.com
-  port: 30807
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
 - name: 🇭🇰香港-04
-  type: vless
-  server: lv-geo.dataload-cdn.ru
-  port: 8443
-  uuid: 69a2af58-d74a-44ca-864a-e09b493f4274
-  servername: www.vk.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: mgIiNnujl3pahea0WW3bCFqmdwofldk85e9XD3rQcQc
-    short-id: d8d900
-  udp: true
-- name: 🇭🇰香港-05
   type: vmess
-  server: 213.156.141.52
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 103.181.164.145
+  port: 51556
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: false
   udp: true
+- name: 🇭🇰香港-05
+  type: vless
+  server: 103.123.162.50
+  port: 10011
+  uuid: 17011a43-97e2-44b0-b0da-a2ea151ad75c
+  servername: www.microsoft.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 82bbZIdU-0s8fydncIhp9_sNDYQQH9ZY_7RVI5apXnk
+    short-id: 447f3a05ace2b748
+  udp: true
 - name: 🇭🇰香港-06
+  type: vless
+  server: s306.okgg.top
+  port: 443
+  uuid: bc7c7c10-8f24-332e-b303-fb3c8943c24f
+  servername: u712927ue788s306.okgg.top
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: random
+  udp: true
+- name: 🇭🇰香港-07
+  type: vless
+  server: s298.okgg.top
+  port: 443
+  uuid: bc7c7c10-8f24-332e-b303-fb3c8943c24f
+  servername: u712927u3556s298.okgg.top
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: random
+  udp: true
+- name: 🇭🇰香港-08
   type: vmess
   server: world.t.51guangtaobao.com
   port: 2510
@@ -603,183 +244,78 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: 🇭🇰香港-07
-  type: vless
-  server: 84.17.37.19
-  port: 8443
-  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-  servername: hkg1.fromblancwithlove.com
-  tls: true
-  client-fingerprint: chrome
-  udp: true
-- name: 🇭🇰香港-08
-  type: vless
-  server: 47.82.87.196
-  port: 50724
-  uuid: 47030ea3-4e8c-4dd6-b440-418a7a54c1a0
+- name: 🇮🇩印尼-01
+  type: vmess
+  server: v29.hdacd.com
+  port: 30829
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
   tls: false
+  skip-cert-verify: false
   udp: true
-- name: 🇭🇰香港-09
-  type: vless
-  server: 47.83.153.19
-  port: 59750
-  uuid: 9e76cfb8-b7a6-40f6-c2aa-9905aa19f31b
-  servername: www.amd.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: W9BjX6YmCIVsjhKMlz233Yoe0xcf0SVHfvPKqbf3vCg
+- name: 🇮🇩印尼-02
+  type: vmess
+  server: v35.hdacd.com
+  port: 30835
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
   udp: true
-- name: 🇭🇰香港-10
+- name: 🇮🇩印尼-03
+  type: vmess
+  server: v33.hdacd.com
+  port: 30833
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: 🇮🇩印尼-04
+  type: vmess
+  server: v45.hdacd.com
+  port: 30845
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: 🇮🇲IM-01
   type: vless
-  server: nexacdn79.x-upload.org
-  port: 2053
-  uuid: b811b3e2-f39d-47b1-8465-1d849e4545df
+  server: 185.162.230.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
-  servername: nexacdn79.x-upload.org
-  tls: true
-  client-fingerprint: chrome
+  servername: vms.lifetime02.workers.dev
+  tls: false
   ws-opts:
     path: /
   udp: true
-- name: 🇭🇰香港-11
-  type: vless
-  server: cf.9999669.xyz
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  network: ws
-  servername: fgnix832fx.fx6hsv0.ccwu.cc
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: fgnix832fx.fx6hsv0.ccwu.cc
-  udp: true
-- name: 🇭🇰香港-12
-  type: vless
-  server: www.speedtest.net
-  port: 443
-  uuid: 8a36be1d-7c78-4885-8a1f-bedf5ba7db1c
-  network: ws
-  servername: luCky-LAB-AC6D.CAveyi8071.WoRkeRS.DEV
-  tls: true
-  client-fingerprint: randomized
-  ws-opts:
-    path: /rN50nmm9L1DeY73C?ed=2560
-    headers:
-      Host: lucky-lab-ac6d.caveyi8071.workers.dev
-  udp: true
-- name: 🇮🇱以色列-01
-  type: vless
-  server: 193.203.10.86
-  port: 443
-  uuid: f0ea76e9-c3c4-4e2c-b2f9-a97d65cc2907
-  servername: yahoo.com
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: _XwzsH6EuV-UnQbXblD4XK46wxaWQcF-0GQ-nAkj3Xo
-    short-id: '8735'
-  udp: true
-- name: 🇮🇱以色列-02
-  type: vless
-  server: 64.176.166.143
-  port: 443
-  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
-  servername: store.steampowered.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: tboI265nKvT77HoZPyA6bgZNuLap_Jy-XvAx2-4Rcwk
-    short-id: 0c1553316a645758
-  udp: true
-- name: 🇮🇳印度-01
+- name: 🇮🇶IQ-01
   type: trojan
-  server: 65.20.90.225
+  server: 130.94.97.11
   port: 443
-  password: Tu1fZjElnkRg0ECRj0sI0u54PY8ptUmATg
-  sni: www.sandbox-cloud.click
-  skip-cert-verify: false
+  password: Z3_=ewk_+l1U4OT4usQ5=o2vFfk95yfy1V
+  sni: www.selectnet.click
+  skip-cert-verify: true
   tls: true
-  udp: true
-- name: 🇮🇳印度-02
-  type: vmess
-  server: 172.232.103.186
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇮🇳印度-03
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-  udp: true
-- name: 🇮🇷IR-01
-  type: trojan
-  server: 193.151.128.35
-  port: 40443
-  password: humanity
-  sni: www.ignitelimit.com
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /assignment
-  udp: true
-- name: 🇮🇹意大利-01
-  type: vmess
-  server: 45.92.70.236
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
   udp: true
 - name: 🇯🇵日本-01
-  type: vmess
-  server: 153.121.73.175
-  port: 49803
-  uuid: cd3dacbc-2b7b-4718-83ad-ab870f87e12e
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
+  type: vless
+  server: 45.129.8.65
+  port: 30000
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  network: ws
+  servername: fx.222395.xyz
+  tls: true
+  ws-opts:
+    path: /
   udp: true
 - name: 🇯🇵日本-02
-  type: vmess
-  server: 172.104.80.66
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇯🇵日本-03
-  type: vmess
-  server: 153.121.73.175
-  port: 32221
-  uuid: b06054ae-f249-438e-998a-8e67bd8df653
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇯🇵日本-04
   type: vmess
   server: 2a02:6ea0:d32f::f8fe:349b
   port: 24202
@@ -792,50 +328,91 @@ proxies:
   ws-opts:
     path: /github.com/Alvin9999-newpac/fanqiang
   udp: true
-- name: 🇯🇵日本-05
-  type: vmess
-  server: jp02.a0a.xyz
-  port: 25686
-  uuid: 6733c357-ba11-4e9f-f00f-7d87f2776ff9
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
+- name: 🇯🇵日本-03
+  type: trojan
+  server: ojpa.zjf2610.top
+  port: 29993
+  password: HmMS4bod1s4pwVO0nfHsfs1LTSTSmX3fRVIcS886
+  sni: ojpa.zjf2610.top
+  skip-cert-verify: true
+  tls: true
   ws-opts:
-    path: /cctv13.m3u8
+    path: /ojpa
     headers:
-      Host: jp02.a0a.xyz
+      Host: ojpa.zjf2610.top
+  udp: true
+- name: 🇯🇵日本-04
+  type: trojan
+  server: ojpa.zjf2610.top
+  port: 29991
+  password: HmMS4bod1s4pwVO0nfHsfs1LTSTSmX3fRVIcS886
+  sni: ojpa.zjf2610.top
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /ojpa
+    headers:
+      Host: ojpa.zjf2610.top
+  udp: true
+- name: 🇯🇵日本-05
+  type: trojan
+  server: ojpb.zjf2610.top
+  port: 29992
+  password: fuJx8vYbDbv3IMKxdbrU9imDq4Pj0p2kNrhRFOEZ
+  sni: ojpb.zjf2610.top
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /ojpb
+    headers:
+      Host: ojpb.zjf2610.top
   udp: true
 - name: 🇯🇵日本-06
-  type: vmess
-  server: 168.138.43.75
-  port: 80
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
+  type: trojan
+  server: ojpb.zjf2610.top
+  port: 29993
+  password: fuJx8vYbDbv3IMKxdbrU9imDq4Pj0p2kNrhRFOEZ
+  sni: ojpb.zjf2610.top
+  skip-cert-verify: true
+  tls: true
   ws-opts:
-    path: /cctv13.m3u8
+    path: /ojpb
     headers:
-      Host: jp01.a0a.xyz
+      Host: ojpb.zjf2610.top
+  udp: true
+- name: 🇯🇵日本-07
+  type: trojan
+  server: 130.94.65.52
+  port: 443
+  password: IbezlLAYfrLRwFn9.mHn5FDwk1asLi599U
+  sni: www.static-cast.click
+  skip-cert-verify: true
+  tls: true
   udp: true
 - name: 🇰🇷韩国-01
   type: vless
-  server: 43.203.249.214
-  port: 39295
-  uuid: 06a1719f-417e-46f0-8a7d-e2b13ecf893a
-  servername: www.icloud.com
+  server: 103.133.240.115
+  port: 17416
+  uuid: 00000000-0000-4000-8000-000000000000
+  network: ws
+  servername: rolaqoubhqt.bpd67081tsq.ddns-ip.net
   tls: true
-  flow: xtls-rprx-vision
   client-fingerprint: chrome
-  reality-opts:
-    public-key: CKyy_gy40xRlKa3sBbCg759CMC7vDMjZKqsiuC5BtWU
-    short-id: 88a32a0e9853b9
+  ws-opts:
+    path: /
   udp: true
 - name: 🇰🇷韩国-02
+  type: trojan
+  server: 175.192.103.88
+  port: 18080
+  password: 433e785b-2077-47f7-a43d-985f63dd18d1
+  sni: vpn.rnmcnm.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trojan
+  udp: true
+- name: 🇰🇷韩国-03
   type: vless
   server: 222.113.18.214
   port: 11310
@@ -845,73 +422,50 @@ proxies:
   tls: true
   ws-opts:
     path: /ray
-    headers:
-      Host: vpn2.rnmcnm.com
-  udp: true
-- name: 🇰🇷韩国-03
-  type: trojan
-  server: 121.154.96.50
-  port: 18000
-  password: 433e785b-2077-47f7-a43d-985f63dd18d1
-  sni: vpn.rnmcnm.com
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /trojan
-    headers:
-      Host: vpn.rnmcnm.com
   udp: true
 - name: 🇰🇷韩国-04
   type: trojan
-  server: 121.191.33.84
-  port: 30303
+  server: 218.152.227.25
+  port: 12000
   password: 433e785b-2077-47f7-a43d-985f63dd18d1
   sni: vpn.rnmcnm.com
   skip-cert-verify: false
   tls: true
   ws-opts:
     path: /trojan
-    headers:
-      Host: vpn.rnmcnm.com
-  udp: true
-- name: 🇰🇷韩国-05
-  type: vless
-  server: 211.221.8.71
-  port: 11300
-  uuid: b2b62085-f202-4c49-9f19-a44676a3d76d
-  network: ws
-  servername: vpn2.rnmcnm.com
-  tls: true
-  ws-opts:
-    path: /ray
-  udp: true
-- name: 🇰🇷韩国-06
-  type: vmess
-  server: 152.67.218.38
-  port: 443
-  uuid: b5e9480a-b7aa-40a4-f9a7-5299b5e363b4
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.67.218.38
   udp: true
 - name: 🇱🇹LT-01
   type: vless
-  server: 93.115.25.153
-  port: 443
-  uuid: 31969cf4-c1bb-4a3e-b42b-574dfb271c73
-  servername: googdas.scroogethebest.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: xwUK0ffpbKZ5_o_vXhZ8ErRDqvw2iVnRVSlZ-Vonkxo
-    short-id: 132c271e21324e36
+  server: 45.153.7.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: vms.lifetime11.workers.dev
+  tls: false
+  ws-opts:
+    path: /
+  udp: true
+- name: 🇱🇹LT-02
+  type: vless
+  server: 45.153.7.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: vms.lifetime11.workers.dev
+  tls: false
+  ws-opts:
+    path: /
+  udp: true
+- name: 🇱🇹LT-03
+  type: vless
+  server: 45.153.7.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: vms.lifetime11.workers.dev
+  tls: false
+  ws-opts:
+    path: /
   udp: true
 - name: 🇱🇻LV-01
   type: vless
@@ -925,93 +479,7 @@ proxies:
     public-key: T66pm2f_PN4Hya_A_5K0X1HQb717SUCODyoUO7Gk3Ws
     short-id: 9e
   udp: true
-- name: 🇱🇻LV-02
-  type: vless
-  server: 194.76.155.12
-  port: 8443
-  uuid: 69a2af58-d74a-44ca-864a-e09b493f4274
-  servername: www.vk.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: mgIiNnujl3pahea0WW3bCFqmdwofldk85e9XD3rQcQc
-    short-id: d8d900
-  udp: true
-- name: 🇱🇻LV-03
-  type: vless
-  server: 83.222.20.64
-  port: 17910
-  uuid: 079c1b04-7ef9-4c49-8a7a-849a18ba7b9b
-  servername: yahoo.com
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: KUhrhiJBplVCVCrAKP2KjIA_asOgkkvEEAxUJVofjgc
-    short-id: 8c09fb78b12f
-  udp: true
-- name: 🇱🇻LV-04
-  type: vless
-  server: 77.73.238.191
-  port: 16622
-  uuid: f2e9df1b-e0ba-4b37-a301-6aab8662c926
-  servername: yahoo.com
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: E5N_ckakvqgTOjiQ6Rmuwz1fchiT1-J3tH4cbzcH_GQ
-    short-id: 1c01d60ea915
-  udp: true
 - name: 🇲🇩MD-01
-  type: vless
-  server: 185.237.223.36
-  port: 13295
-  uuid: 85f15b9d-74da-4ea0-9ffd-5fc0bb03e3d5
-  servername: yandex.ru
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Hq4RlJdGl8UN0KO3kNj03pjToLF7fnCHdZfQ1qmDLho
-    short-id: '98'
-  udp: true
-- name: 🇲🇩MD-02
-  type: vless
-  server: 94.131.8.19
-  port: 45448
-  uuid: 96fcf8cc-535d-46c4-b8f9-76058df48e3b
-  servername: yahoo.com
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: MmEVCRy11fz67vYJQWyA2a_ZPMBzv2le2cus1XSSI0E
-    short-id: 958639bf55e679
-  udp: true
-- name: 🇲🇩MD-03
-  type: vless
-  server: 91.225.217.27
-  port: 443
-  uuid: 8b0f3ccd-5f6a-4c08-b7da-042d00965d7d
-  servername: yahoo.com
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 66I_EZijZ-HoERv8Xzmv5KydHjz4dp81Grb8CJpIy38
-    short-id: cb89
-  udp: true
-- name: 🇲🇩MD-04
-  type: vless
-  server: 91.225.217.26
-  port: 443
-  uuid: 0dc22208-cea4-4423-b3c3-a36957e23233
-  servername: yahoo.com
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Zd5BqaW-kyJqZANUH2cIARr466QZw09pNngYjsEK1w8
-    short-id: 30fa
-  udp: true
-- name: 🇲🇩MD-05
   type: vless
   server: 91.225.217.28
   port: 443
@@ -1023,7 +491,30 @@ proxies:
     public-key: CnFVrSvJ1Mhl_6QqKCCvXtEdlaJjN4MXWBkSswJ_gX0
     short-id: 106c
   udp: true
-- name: 🇲🇩MD-06
+- name: 🇲🇩MD-02
+  type: vmess
+  server: 62.3.12.140
+  port: 2087
+  uuid: 90a7a201-de71-4696-be44-f2c04aa36348
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: 🇲🇩MD-03
+  type: vless
+  server: 94.103.0.230
+  port: 443
+  uuid: 1b43419a-b711-40d4-a0ee-eb5c73e60c92
+  servername: pl.prostosetup.org
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: ps7eCLLKAqgSGPFRQl1-R1PhzUeO1Z1EwNl02Ac63UA
+    short-id: 514d02a2addd6476
+  udp: true
+- name: 🇲🇩MD-04
   type: vless
   server: pl.prostosetup.org
   port: 443
@@ -1036,31 +527,7 @@ proxies:
     public-key: ps7eCLLKAqgSGPFRQl1-R1PhzUeO1Z1EwNl02Ac63UA
     short-id: 514d02a2addd6476
   udp: true
-- name: 🇲🇽墨西哥-01
-  type: vless
-  server: ul-mexico1.09vpn.com
-  port: 8443
-  uuid: a6d20e79-d326-42c1-bc20-f4cecc6dc42d
-  network: ws
-  servername: ul-mexico1.09vpn.com
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ul-mexico1.09vpn.com
-  udp: true
 - name: 🇲🇾马来西亚-01
-  type: vmess
-  server: v29.hdacd.com
-  port: 30829
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇲🇾马来西亚-02
   type: vmess
   server: v24.hdacd.com
   port: 30824
@@ -1070,7 +537,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: 🇲🇾马来西亚-03
+- name: 🇲🇾马来西亚-02
   type: vmess
   server: v36.hdacd.com
   port: 30836
@@ -1080,458 +547,88 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: 🇲🇾马来西亚-04
-  type: vmess
-  server: v33.hdacd.com
-  port: 30833
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇲🇾马来西亚-05
-  type: vmess
-  server: v9.hdacd.com
-  port: 30809
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇲🇾马来西亚-06
-  type: vmess
-  server: 47.250.135.244
-  port: 10000
-  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇲🇾马来西亚-07
+- name: 🇲🇾马来西亚-03
   type: trojan
-  server: 130.94.68.100
-  port: 443
-  password: l64tlWoGT6USQr=3WnjWedzvVSHXn8TNTE
-  sni: www.rolll.click
+  server: a.twodnwnpoe.xyz
+  port: 40015
+  password: da292191-b895-3264-b41c-200512b8f965
+  sni: 1.lossyesterday.xyz
   skip-cert-verify: true
   tls: true
   udp: true
-- name: 🇲🇾马来西亚-08
-  type: vmess
-  server: v35.hdacd.com
-  port: 30835
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
+- name: 🇲🇾马来西亚-04
+  type: trojan
+  server: a.twodnwnpoe.xyz
+  port: 52225
+  password: da292191-b895-3264-b41c-200512b8f965
+  sni: i.comfortableyou.top
+  skip-cert-verify: true
+  tls: true
   udp: true
-- name: 🇲🇾马来西亚-09
-  type: vmess
-  server: 47.250.149.51
-  port: 50018
-  uuid: 9665280c-a3d1-4aab-ef9f-a3a497337d91
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /9665280c
+- name: 🇲🇾马来西亚-05
+  type: trojan
+  server: a.twodnwnpoe.xyz
+  port: 40017
+  password: da292191-b895-3264-b41c-200512b8f965
+  sni: water.waittomorrow.top
+  skip-cert-verify: true
+  tls: true
   udp: true
 - name: 🇳🇱荷兰-01
   type: vless
-  server: 51.158.206.97
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  servername: fuck.rkn
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
+  server: 45.131.4.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: vms.lifetime59.workers.dev
+  tls: false
+  ws-opts:
+    path: /
   udp: true
 - name: 🇳🇱荷兰-02
   type: vless
-  server: 51.158.206.93
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  servername: fuck.rkn
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
+  server: 45.131.209.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: vms.lifetime04.workers.dev
+  tls: false
+  ws-opts:
+    path: /
   udp: true
 - name: 🇳🇱荷兰-03
   type: vless
-  server: 185.31.200.224
-  port: 5980
-  uuid: b01c7e1f-a82e-4610-95b8-6a6edf8d6381
-  servername: surfvpn24.ru
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: cwqkZmmI9pDPzKCCcqNxw3G68FFv4tkXFhSozmYfrgU
-    short-id: beefcafe
+  server: 45.131.7.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: vms.lifetime02.workers.dev
+  tls: false
+  ws-opts:
+    path: /
   udp: true
 - name: 🇳🇱荷兰-04
   type: vless
-  server: download.spectrum.vu
-  port: 443
-  uuid: 76713d07-5a6b-49c2-abd8-bc450a2fa7fc
-  servername: download.spectrum.vu
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: sXC7sPCzHG_uYfvk3GSUdYQKfHAwirOVWMhO50Y9Pn8
-    short-id: d1e9faa1b2c3
+  server: 5.253.59.220
+  port: 449
+  uuid: 0b1ad92f-59e5-4003-b4d3-731fa73939ab
+  network: ws
+  tls: false
+  ws-opts:
+    path: /api
   udp: true
 - name: 🇳🇱荷兰-05
   type: vless
-  server: 195.181.173.199
-  port: 8443
-  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-  servername: ams1.fromblancwithlove.com
-  tls: true
-  udp: true
-- name: 🇳🇱荷兰-06
-  type: vless
-  server: 51.158.206.12
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  servername: fuck.rkn
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  udp: true
-- name: 🇳🇱荷兰-07
-  type: vless
-  server: v546965.hosted-by-vdsina.com
-  port: 8443
-  uuid: 1cb91b20-49cc-59ff-8393-91808a4deede
-  servername: www.ozon.ru
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: bVhVy1hZY_iw-sljlaeVbTBBa6SPvMm0Kg0tCC8CKHM
-    short-id: ffffffffff
-  udp: true
-- name: 🇳🇱荷兰-08
-  type: vless
-  server: nl.omuvpn.tech
-  port: 18443
-  uuid: 6db7ea14-ed33-4591-a9b1-f1e91b1c0ff5
-  servername: www.miro.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: YoVxvwAP6l4vRG9HZmePBcHxy9oaRyWKmp1fIXVzPAY
-    short-id: '16'
-  udp: true
-- name: 🇳🇱荷兰-09
-  type: vless
-  server: 51.158.206.98
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  servername: fuck.rkn
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  udp: true
-- name: 🇳🇱荷兰-10
-  type: vless
-  server: 51.158.206.34
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  servername: fuck.rkn
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  udp: true
-- name: 🇳🇱荷兰-11
-  type: vless
-  server: 144.31.157.56
+  server: nider01.lumixvpn.org
   port: 443
-  uuid: 3e0c34a4-1c38-4d93-88c6-5155e81f8b52
-  servername: saorg.ir
+  uuid: 107d9e9e-5634-44ef-a90b-c5118832fae6
+  servername: nider01.lumixvpn.org
   tls: true
   flow: xtls-rprx-vision
-  client-fingerprint: chrome
+  client-fingerprint: qq
   reality-opts:
-    public-key: D-7qX4fqUFKDS2dQWFgGT4fXJnABnpM6IkU8SDHLMC0
-    short-id: 6ba85179e30d4fc2
-  udp: true
-- name: 🇳🇱荷兰-12
-  type: vless
-  server: midorinote.ru
-  port: 8443
-  uuid: a5e746f7-328f-4b65-a65f-e2e2a4a5b1a9
-  servername: tradingview.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: wNcFqVd4_PkgJbfgJJeouSU6Pn_Swuce4q4Chw5T0hY
-    short-id: f7aa9e61197d3ac6
-  udp: true
-- name: 🇳🇱荷兰-13
-  type: vless
-  server: nl-5.srv.vpnza300.org
-  port: 443
-  uuid: d0b60427-ccb0-4026-aeec-d095b6b7dd08
-  servername: nl-5.srv.vpnza300.org
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 4Y1wdeQGqDecReK5UrA5RV7Dcq9QnfuArtSzujdJbXo
-    short-id: 6eda877655137aff
-  udp: true
-- name: 🇳🇱荷兰-14
-  type: vless
-  server: 51.158.206.86
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  servername: fuck.rkn
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  udp: true
-- name: 🇳🇱荷兰-15
-  type: vless
-  server: 88.210.9.69
-  port: 443
-  uuid: ccbbd3a3-db22-4f82-956e-d65178de2743
-  servername: images.apple.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: aQdv6gDmsVZc5dO1WmmEQ6Q_puJhNUurND-TJJjtCSs
-    short-id: 8f2c0e7a15bd
-  udp: true
-- name: 🇳🇱荷兰-16
-  type: vless
-  server: 162.217.249.72
-  port: 443
-  uuid: d78c12c4-6927-40b8-8550-ed9be00334da
-  servername: nether1cxc.chickenkiller.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: MFedImeNi-4keZx_rkV8WL6jjY6sLncSaXgNjpUBPGo
-    short-id: 8917bfb9900788d5
-  udp: true
-- name: 🇳🇱荷兰-17
-  type: vless
-  server: g10.steptofsvo.com
-  port: 443
-  uuid: 279828c6-13f2-439c-9a4e-ea7d4f470fa4
-  servername: g10.steptofsvo.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk
-    short-id: 6d6f13013d3e1d0c
-  udp: true
-- name: 🇳🇱荷兰-18
-  type: vless
-  server: 77.246.109.191
-  port: 34045
-  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
-    short-id: e8ab71d0
-  udp: true
-- name: 🇳🇱荷兰-19
-  type: vless
-  server: 51.158.206.96
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  servername: fuck.rkn
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  udp: true
-- name: 🇳🇱荷兰-20
-  type: vless
-  server: 193.56.3.125
-  port: 8443
-  uuid: 0e3a9376-1bf0-4b9e-a328-f28083bf6c34
-  servername: nl1.skysafe.online
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: f1kpVFY3EHaR41TCKGqSWzZq7HG-WpyE2g_tlMm2US0
-    short-id: 844dfa3681e4c4
-  udp: true
-- name: 🇳🇱荷兰-21
-  type: vless
-  server: 51.158.206.87
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  servername: fuck.rkn
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  udp: true
-- name: 🇳🇱荷兰-22
-  type: vless
-  server: 185.214.74.210
-  port: 443
-  uuid: 6fd9f786-d974-49d0-b5c4-397678de69a2
-  servername: www.cybo.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
-  udp: true
-- name: 🇳🇱荷兰-23
-  type: vless
-  server: 150.241.94.160
-  port: 33199
-  uuid: 327bf8a4-52ec-4fc1-afab-fc37ecec8be9
-  servername: web.max.ru
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 0paB9-U-QzEBoSQiOP161BPvc2PhWrfQ_5nbfk2AezM
-    short-id: a9766c
-  udp: true
-- name: 🇳🇱荷兰-24
-  type: vless
-  server: 51.158.206.20
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  servername: fuck.rkn
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  udp: true
-- name: 🇳🇱荷兰-25
-  type: vless
-  server: 51.158.206.26
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  servername: fuck.rkn
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  udp: true
-- name: 🇳🇱荷兰-26
-  type: vless
-  server: 51.158.206.103
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  servername: fuck.rkn
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  udp: true
-- name: 🇳🇱荷兰-27
-  type: vless
-  server: 144.31.157.163
-  port: 443
-  uuid: d511e429-e32b-46a7-ac07-a0fffa9b634c
-  servername: www.deepl.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU
-  udp: true
-- name: 🇳🇱荷兰-28
-  type: vless
-  server: 144.31.111.182
-  port: 8443
-  uuid: 6796459d-b50f-441f-8aa4-258f91e33ddd
-  servername: www.google.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: CpfMtuNgYbRyYO78Chs0hsyv0L6i4Tyz4NCY9dJY3zY
-  udp: true
-- name: 🇳🇱荷兰-29
-  type: vless
-  server: 51.158.206.8
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  servername: fuck.rkn
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  udp: true
-- name: 🇳🇱荷兰-30
-  type: vless
-  server: 51.158.206.29
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  servername: fuck.rkn
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  udp: true
-- name: 🇳🇴挪威-01
-  type: vless
-  server: 89.185.81.68
-  port: 443
-  uuid: 9bbc4303-c291-42b8-8eb4-38923f4b6cdd
-  servername: yahoo.com
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: VKnmZTvFbnmlCDWFpZiLw8054w02QOmXmXVCFFG7T2U
-    short-id: d5d0
+    public-key: IQ3026lP53IQEqYiIqQXhyImHFt9VbPRDGOcFDTVmD4
+    short-id: ac956cdfcdbc35af
   udp: true
 - name: 🇳🇿新西兰-01
   type: vless
@@ -1544,162 +641,54 @@ proxies:
   client-fingerprint: chrome
   ws-opts:
     path: /id-tksi
-    headers:
-      Host: m.udemy.com.cyylr.eu.cc
-  udp: true
-- name: 🇳🇿新西兰-02
-  type: vless
-  server: 202.37.33.80
-  port: 443
-  uuid: cc752a3e-1537-4e86-bb50-1b897bf7b33c
-  network: ws
-  servername: cyylr.eu.cc
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: cyylr.eu.cc
   udp: true
 - name: 🇵🇱波兰-01
-  type: trojan
-  server: 64.176.65.85
-  port: 443
-  password: iGccGWTMHtoXtBhGYK4mogg7iIUhGbcvCf
-  sni: 64.176.65.85
-  skip-cert-verify: false
-  tls: true
-  udp: true
-- name: 🇵🇱波兰-02
   type: vless
-  server: pl.fantoff.online
+  server: poland-1.bexum.fun
   port: 443
-  uuid: b95dd8e5-2758-408f-be99-9362eecee609
-  servername: yahoo.com
+  uuid: ae5ba4be-7262-4199-bd62-210ed8999b9f
+  servername: poland-1.bexum.fun
   tls: true
   flow: xtls-rprx-vision
-  client-fingerprint: chrome
+  client-fingerprint: randomized
   reality-opts:
-    public-key: BoWKSM1aSfcTRgKX_kZYPlauG0jLIqku3zPBAiHpUgs
-    short-id: 5ea7e22e889dabc5
+    public-key: j97RCvxVfMu5XWcXuAc4s8TnBTdl8PQrNFrZDQpAkng
+    short-id: 5dd747e98058584b
   udp: true
 - name: 🇸🇨SC-01
-  type: trojan
-  server: 45.130.125.76
-  port: 443
-  password: humanity
-  sni: www.calmlunch.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  tls: true
+  type: vless
+  server: 154.197.64.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: vms.lifetime36.workers.dev
+  tls: false
   ws-opts:
-    path: /assignment
+    path: /
   udp: true
 - name: 🇸🇨SC-02
-  type: trojan
-  server: 45.130.125.69
-  port: 443
-  password: humanity
-  sni: www.calmloud.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /assignment
-  udp: true
-- name: 🇸🇪瑞典-01
   type: vless
-  server: 144.31.235.62
-  port: 443
-  uuid: d511e429-e32b-46a7-ac07-a0fffa9b634c
-  servername: www.deepl.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU
-    short-id: 0123456789abcdef
-  udp: true
-- name: 🇸🇪瑞典-02
-  type: vless
-  server: swe-8t.freeonline.pro
-  port: 443
-  uuid: 980231fb-4372-5c81-b696-20aa34d33af0
-  servername: www.microsoft.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 978-Yxgtd3AWTVfiXEQqCstdwrT1qgsgleGPIRGQDl8
-    short-id: bdac121c7debdaba
-  udp: true
-- name: 🇸🇪瑞典-03
-  type: vless
-  server: 89.22.236.213
-  port: 54346
-  uuid: 1e865d4f-dfc3-5cae-bc29-344e2c971900
+  server: 154.197.75.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: vms.lifetime37.workers.dev
   tls: false
+  ws-opts:
+    path: /
   udp: true
-- name: 🇸🇪瑞典-04
+- name: 🇸🇨SC-03
   type: vless
-  server: 148.253.211.237
-  port: 443
-  uuid: 980231fb-4372-5c81-b696-20aa34d33af0
-  servername: www.microsoft.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 978-Yxgtd3AWTVfiXEQqCstdwrT1qgsgleGPIRGQDl8
-    short-id: bdac121c7debdaba
+  server: 154.197.75.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: vms.lifetime37.workers.dev
+  tls: false
+  ws-opts:
+    path: /
   udp: true
 - name: 🇸🇬新加坡-01
-  type: vmess
-  server: v4.hdacd.com
-  port: 30804
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇸🇬新加坡-02
-  type: vless
-  server: 18.141.49.252
-  port: 35308
-  uuid: 779d227c-f7be-4b9d-a4a9-1197c734b4e7
-  servername: www.tesla.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 4g1kpdmdbN6aNxeBYMj9WherunH9JSXsI_nKZTDiewE
-    short-id: fef8dcb8cafe30
-  udp: true
-- name: 🇸🇬新加坡-03
-  type: vless
-  server: 18.143.151.84
-  port: 38967
-  uuid: 20ae58df-d562-40b3-908c-21b4881315d4
-  servername: www.icloud.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: TFAGMtH1LB503O0SJadbPxBs8S_LACshWQpEIAyuS1g
-    short-id: 9b1cdc34dd5664
-  udp: true
-- name: 🇸🇬新加坡-04
-  type: vless
-  server: 159.89.194.243
-  port: 22539
-  uuid: d6d7e024-0a49-483d-bcd7-048c4d30eca6
-  servername: node1.nanonet.host
-  tls: true
-  udp: true
-- name: 🇸🇬新加坡-05
   type: vmess
   server: 6654c734ccab8f440ff0825eb443dc7f.qos.onl
   port: 10034
@@ -1714,10 +703,10 @@ proxies:
     headers:
       Host: v2pr9feoh0z86anj2gz9onnjg9viuev0j.mobgslb.tbcache.com
   udp: true
-- name: 🇸🇬新加坡-06
+- name: 🇸🇬新加坡-02
   type: vmess
-  server: 1b267619c4812cc46ee281747884ca50.qos.onl
-  port: 10034
+  server: 6654c734ccab8f440ff0825eb443dc7f.qos.onl
+  port: 10020
   uuid: 52f9cbfb-5bb3-3dd3-b947-725e365c59f3
   alterId: 0
   cipher: auto
@@ -1729,614 +718,402 @@ proxies:
     headers:
       Host: v2pr9feoh0z86anj2gz9onnjg9viuev0j.mobgslb.tbcache.com
   udp: true
-- name: 🇸🇰斯洛伐克-01
+- name: 🇸🇬新加坡-03
   type: vless
-  server: 45.66.161.10
-  port: 8443
-  uuid: 69a2af58-d74a-44ca-864a-e09b493f4274
-  servername: ya.ru
+  server: 43.160.201.33
+  port: 666
+  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
+  network: ws
+  servername: 43.160.201.33
   tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: ZxJt0FNyLrIrrd4c1Uehe86Iqk0BBbKjbP1kEJxOAAg
-    short-id: 0f26cb0528
+  ws-opts:
+    path: /proxy
+  udp: true
+- name: 🇸🇬新加坡-04
+  type: vless
+  server: 192.124.176.37
+  port: 666
+  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
+  network: ws
+  servername: 192.124.176.37
+  tls: true
+  ws-opts:
+    path: /proxy
   udp: true
 - name: 🇹🇭泰国-01
   type: vless
-  server: 47.81.39.100
-  port: 443
-  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-  servername: api.digital-help-prd.autodesk.com
+  server: 43.164.1.152
+  port: 666
+  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
+  network: ws
+  servername: 43.164.1.152
   tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
+  ws-opts:
+    path: /proxy
   udp: true
 - name: 🇹🇭泰国-02
   type: vless
-  server: 47.81.36.237
-  port: 443
-  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-  servername: api.digital-help-prd.autodesk.com
+  server: 43.164.0.59
+  port: 666
+  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
+  network: ws
+  servername: 43.164.0.59
   tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
+  ws-opts:
+    path: /proxy
   udp: true
 - name: 🇹🇷土耳其-01
   type: vless
-  server: 185.226.95.155
-  port: 80
-  uuid: a4b4dbc4-c9c5-4360-9e9c-d6019118e318
-  tls: false
-  udp: true
-- name: 🇹🇷土耳其-02
-  type: vless
-  server: 107.161.174.68
-  port: 7443
-  uuid: e4ec0319-a924-42eb-84a5-9bff93d91d60
-  servername: www.microsoft.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
-    short-id: be0ce047
-  udp: true
-- name: 🇹🇷土耳其-03
-  type: vless
-  server: 185.255.95.247
-  port: 27265
-  uuid: 1f01e53a-f9d1-48a3-8b35-6f10b9be0736
+  server: 78.135.93.239
+  port: 666
+  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
   network: ws
-  servername: 185.255.95.247
-  tls: false
+  servername: 78.135.93.239
+  tls: true
   ws-opts:
-    path: /ws
-    headers:
-      Host: 185.255.95.247
+    path: /proxy
   udp: true
 - name: 🇹🇼台湾-01
-  type: trojan
-  server: 211.76.176.98
-  port: 19128
-  password: gcuCpQfaiVeDBdWG
-  sni: yazhou10.dynu.net
-  skip-cert-verify: false
-  tls: true
-  udp: true
-- name: 🇹🇼台湾-02
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇹🇼台湾-03
   type: trojan
   server: jpbgp.netvigor.cc
   port: 19128
   password: gcuCpQfaiVeDBdWG
   sni: yazhou10.dynu.net
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   udp: true
-- name: 🇺🇦乌克兰-01
-  type: vless
-  server: 95.164.44.237
-  port: 49790
-  uuid: 99210efd-1a49-4085-add3-d1d2e4fdd6c2
-  servername: yahoo.com
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Xj6-HabAfXfu2dIz1orkRH5rAlbGMs0YMc7Zo4aARlU
-    short-id: 9d90d7ada8
+- name: 🇹🇼台湾-02
+  type: vmess
+  server: v11.zgtfqs.click
+  port: 30811
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
   udp: true
 - name: 🇺🇸美国-01
   type: trojan
-  server: 90081bb25c.node.tro.cac.cab
-  port: 48697
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: gh.01.naiun.bilibili.com
+  server: 104.17.56.54
+  port: 80
+  password: d8bc8425-5e80-4c26-bd93-af634c033e2d
+  sni: purnet.gmijcp.workers.dev
   skip-cert-verify: true
   tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: purnet.gmijcp.workers.dev
   udp: true
 - name: 🇺🇸美国-02
-  type: vmess
-  server: 104.233.214.176
-  port: 13581
-  uuid: d4d715a6-0a2e-4304-df2f-d5efd85a5a5d
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
+  type: vless
+  server: 104.17.144.235
+  port: 443
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  network: ws
+  servername: hhlfy.twiladaphne.ndjp.net
+  tls: true
+  client-fingerprint: random
+  ws-opts:
+    path: /
   udp: true
 - name: 🇺🇸美国-03
-  type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇺🇸美国-04
-  type: vless
-  server: 38.55.146.153
-  port: 13000
-  uuid: b852270a-1283-4ea8-8a2f-5bae8e644a3e
-  tls: false
-  udp: true
-- name: 🇺🇸美国-05
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇺🇸美国-06
-  type: vless
-  server: 15.204.97.219
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  servername: fuck.rkn
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  udp: true
-- name: 🇺🇸美国-07
-  type: vmess
-  server: 38.114.123.42
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇺🇸美国-08
-  type: vless
-  server: 134.33.73.249
-  port: 54254
-  uuid: acba684c-4098-4eca-f519-828b09f96464
-  servername: apple.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: HFEz9fAOugljXea_ZVOUHMju08su8h0P9RANNcHP2y4
-    short-id: db35ffdc
-  udp: true
-- name: 🇺🇸美国-09
-  type: vless
-  server: 15.204.97.206
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  servername: fuck.rkn
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  udp: true
-- name: 🇺🇸美国-10
   type: trojan
-  server: link.honghongai.top
-  port: 8443
-  password: 8f3a2b1c9d4e5f6a7b8c9d0e1f2a3b4c
-  sni: link.honghongai.top
-  skip-cert-verify: false
-  tls: true
-  udp: true
-- name: 🇺🇸美国-11
-  type: vmess
-  server: 67.220.72.237
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇺🇸美国-12
-  type: vmess
-  server: 169.197.142.22
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇺🇸美国-13
-  type: trojan
-  server: 64.94.95.118
-  port: 57142
-  password: kkzh2prsyr2ik47as615
-  sni: 64.94.95.118
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇺🇸美国-14
-  type: vmess
-  server: 216.106.185.141
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇺🇸美国-15
-  type: vless
-  server: 15.204.97.214
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  servername: fuck.rkn
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  udp: true
-- name: 🇺🇸美国-16
-  type: vmess
-  server: 57.151.100.27
-  port: 10086
-  uuid: 550e8400-e29b-41d4-a716-446655440000
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇺🇸美国-17
-  type: vless
-  server: 15.204.97.195
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  servername: fuck.rkn
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  udp: true
-- name: 🇺🇸美国-18
-  type: trojan
-  server: 23.227.193.173
-  port: 443
-  password: AZWY=WAZk5TeVYmMUudr2xmeb00I3ymeMQ
-  sni: www.dataset-logger.click
-  skip-cert-verify: false
-  tls: true
-  udp: true
-- name: 🇺🇸美国-19
-  type: vmess
-  server: 129.146.143.80
-  port: 48111
-  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇺🇸美国-20
-  type: vless
-  server: 15.204.97.198
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  servername: fuck.rkn
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  udp: true
-- name: 🇺🇸美国-21
-  type: vless
-  server: 170.205.37.59
-  port: 443
-  uuid: d98e6ac5-e873-402a-bcce-78e2887c936b
-  servername: www.yahoo.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: zvRguC1cm7gKkQpNarOCaAUAvcSXUWH10-pUEfneYSI
-    short-id: 014c3d76dee82247
-  udp: true
-- name: 🇺🇸美国-22
-  type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇺🇸美国-23
-  type: vless
-  server: us.gryaz-vpn.com
-  port: 19131
-  uuid: 3275a667-4a67-4d43-b0ba-54da2d1145dd
-  servername: cloudflare.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: yxRy8t-W5pCOglMeGNTeen8vQPK1SG0sM49vL6GLpjo
-    short-id: 0a8a84dcb5
-  udp: true
-- name: 🇺🇸美国-24
-  type: vless
-  server: 96.47.238.103
-  port: 443
-  uuid: 6b2bd003-b3fd-4208-83f3-197f9a4d2297
-  servername: www.cloudflare.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: EaaPtT7jhK6wTiZKklE7uHMjlege0ZN6TBqgojca2yg
-    short-id: 5a626ceb
-  udp: true
-- name: 🇺🇸美国-25
-  type: trojan
-  server: 172.237.145.189
-  port: 443
-  password: A3uIh_5NqMg3hFa.gDYWT.afz0UuJ6=VIM
-  sni: 172.237.145.189
-  skip-cert-verify: false
-  tls: true
-  udp: true
-- name: 🇺🇸美国-26
-  type: vmess
-  server: 67.220.85.46
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇺🇸美国-27
-  type: vless
-  server: 137.184.218.169
-  port: 36925
-  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
-  servername: www.cloudflare.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
-  udp: true
-- name: 🇺🇸美国-28
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇺🇸美国-29
-  type: vless
-  server: de-on-demand.not-a-projects.xyz
-  port: 47518
-  uuid: 25263c14-6cb5-499b-b462-dd498deecfe7
-  tls: false
-  udp: true
-- name: 🇺🇸美国-30
-  type: vless
-  server: 31.76.53.0
-  port: 443
-  uuid: 749a5df1-2d12-45cf-80f3-f85ea6b2e405
-  servername: google.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: random
-  reality-opts:
-    public-key: Fp0-VrMBeaQe9xOrehDYHt0mqTZL-5CdfuMEzoXkOE8
-  udp: true
-- name: 🇺🇸美国-31
-  type: vless
-  server: 72.56.59.177
-  port: 22231
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-  servername: r1.mizulina.top
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  udp: true
-- name: 🇺🇸美国-32
-  type: vmess
-  server: 155.254.126.249
-  port: 6001
-  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇺🇸美国-33
-  type: trojan
-  server: 90081bb25c.node.tro.cac.cab
-  port: 46424
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: de.01.naiun.bilibili.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇺🇸美国-34
-  type: trojan
-  server: 90081bb25c.node.tro.cac.cab
-  port: 41943
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: az.01.naiun.bilibili.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇺🇸美国-35
-  type: trojan
-  server: 90081bb25c.node.tro.cac.cab
-  port: 45553
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: ch.01.naiun.bilibili.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇺🇸美国-36
-  type: vless
-  server: 45.136.129.70
-  port: 64080
-  uuid: f00b0c6b-955c-4769-858e-e240f13ee0e1
-  servername: mozilla.org
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: _-8yXon5_iwa8dGhDhQ5WaI8lHG5UhJvJuXRxyq-8Ec
-    short-id: '77'
-  udp: true
-- name: 🇺🇸美国-37
-  type: vless
-  server: 72.56.59.223
-  port: 22231
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-  servername: r1.mizulina.top
-  tls: true
-  client-fingerprint: chrome
-  udp: true
-- name: 🇺🇸美国-38
-  type: trojan
-  server: 90081bb25c.node.tro.cac.cab
-  port: 45619
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: fr.01.naiun.bilibili.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇺🇸美国-39
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇺🇸美国-40
-  type: vmess
-  server: gtm-sg-cc54q7d1q01.365cloud0285.com
-  port: 6003
-  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇺🇸美国-41
-  type: vless
-  server: 155.117.127.137
-  port: 443
-  uuid: 5a20b5d0-3a98-4792-9559-95f4e24277ec
-  tls: false
-  udp: true
-- name: 🇺🇸美国-42
-  type: vmess
-  server: gtm-sg-cc54q7d1q01.365cloud0285.com
-  port: 6001
-  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇺🇸美国-43
-  type: vmess
-  server: 155.254.126.249
-  port: 6004
-  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇺🇸美国-44
-  type: vmess
-  server: gtm-sg-cc54q7d1q01.365cloud0285.com
-  port: 6004
-  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇺🇸美国-45
-  type: vless
-  server: 15.204.97.197
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  servername: fuck.rkn
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  udp: true
-- name: 🇺🇸美国-46
-  type: trojan
-  server: 90081bb25c.node.tro.cac.cab
-  port: 47909
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: is.01.naiun.bilibili.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇺🇸美国-47
-  type: vless
-  server: 104.129.164.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?https://t.me/YouTube@小青科学网🇨🇳
-    headers:
-      Host: vms.lifetime40.workers.dev
-  udp: true
-- name: 🇺🇸美国-48
-  type: trojan
-  server: www.ignitelimit.com
+  server: 104.17.121.71
   port: 443
   password: humanity
+  sni: www.creationlong.org
   skip-cert-verify: false
   tls: true
   ws-opts:
     path: /assignment
+    headers:
+      Host: www.creationlong.orghttp/1.1
   udp: true
-- name: 🇺🇸美国-49
+- name: 🇺🇸美国-04
+  type: trojan
+  server: 104.19.47.96
+  port: 80
+  password: d8bc8425-5e80-4c26-bd93-af634c033e2d
+  sni: purnet.gmijcp.workers.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: purnet.gmijcp.workers.dev
+  udp: true
+- name: 🇺🇸美国-05
+  type: vless
+  server: 104.17.156.197
+  port: 443
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  network: ws
+  servername: juzi.qea.ccwu.cc
+  tls: true
+  ws-opts:
+    path: /
+  udp: true
+- name: 🇺🇸美国-06
+  type: trojan
+  server: 104.17.176.228
+  port: 80
+  password: d8bc8425-5e80-4c26-bd93-af634c033e2d
+  sni: purnet.gmijcp.workers.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: purnet.gmijcp.workers.dev
+  udp: true
+- name: 🇺🇸美国-07
+  type: vless
+  server: 104.16.248.48
+  port: 443
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  network: ws
+  servername: hhlfy.twiladaphne.ndjp.net
+  tls: true
+  client-fingerprint: random
+  ws-opts:
+    path: /
+  udp: true
+- name: 🇺🇸美国-08
+  type: trojan
+  server: 104.17.121.37
+  port: 443
+  password: humanity
+  sni: www.gossipglove.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.gossipglove.comhttp/1.1
+  udp: true
+- name: 🇺🇸美国-09
+  type: trojan
+  server: 104.17.119.28
+  port: 80
+  password: d8bc8425-5e80-4c26-bd93-af634c033e2d
+  sni: purnet.gmijcp.workers.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: purnet.gmijcp.workers.dev
+  udp: true
+- name: 🇺🇸美国-10
+  type: trojan
+  server: 104.17.112.200
+  port: 80
+  password: d8bc8425-5e80-4c26-bd93-af634c033e2d
+  sni: purnet.gmijcp.workers.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: purnet.gmijcp.workers.dev
+  udp: true
+- name: 🇺🇸美国-11
+  type: trojan
+  server: 141.193.213.21
+  port: 443
+  password: humanity
+  sni: www.calmloud.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmloud.comhttp/1.1
+  udp: true
+- name: 🇺🇸美国-12
+  type: vless
+  server: 63.141.128.5
+  port: 2083
+  uuid: 41f37ced-2021-4111-93a8-82d57ff2eb5b
+  network: ws
+  servername: mzaxmc.lizardshop.org
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed
+  udp: true
+- name: 🇺🇸美国-13
+  type: trojan
+  server: 141.193.213.30
+  port: 443
+  password: humanity
+  sni: www.calmloud.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmloud.comhttp/1.1
+  udp: true
+- name: 🇺🇸美国-14
+  type: vless
+  server: 172.67.74.19
+  port: 443
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  network: ws
+  servername: ems.arc-time.workers.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /y3grpt0pkndz
+  udp: true
+- name: 🇺🇸美国-15
+  type: trojan
+  server: 104.21.23.135
+  port: 443
+  password: Nova-Proxy
+  sni: spring-tooth-7fa3.ahmadrj.workers.dev
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    path: /
+  udp: true
+- name: 🇺🇸美国-16
+  type: trojan
+  server: 104.18.0.55
+  port: 443
+  password: humanity
+  sni: www.gossipglove.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /assignment
+  udp: true
+- name: 🇺🇸美国-17
+  type: trojan
+  server: www.multiplydose.com
+  port: 443
+  password: humanity
+  sni: www.multiplydose.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.multiplydose.com
+  udp: true
+- name: 🇺🇸美国-18
+  type: trojan
+  server: www.calmlunch.com
+  port: 443
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+  udp: true
+- name: 🇺🇸美国-19
+  type: trojan
+  server: 104.17.135.199
+  port: 80
+  password: d8bc8425-5e80-4c26-bd93-af634c033e2d
+  sni: purnet.gmijcp.workers.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: purnet.gmijcp.workers.dev
+  udp: true
+- name: 🇺🇸美国-20
+  type: trojan
+  server: 104.18.155.119
+  port: 443
+  password: 988sR-269PKCKlb&3pMrFTEr
+  sni: LetiRanbrEaTh-7RrkEvFu2HJBIs5UHCXWztz24T5Vp6trF1oka8Dkrw0n.HE3fmQ6z0mfSZSK3Xy2E.wOrkers.deV
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: letiranbreath-7rrkevfu2hjbis5uhcxwztz24t5vp6trf1oka8dkrw0n.he3fmq6z0mfszsk3xy2e.workers.devhttp/1.1
+  udp: true
+- name: 🇺🇸美国-21
+  type: trojan
+  server: 104.18.32.37
+  port: 443
+  password: humanity
+  sni: www.gossipglove.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /assignment
+  udp: true
+- name: 🇺🇸美国-22
+  type: trojan
+  server: 172.64.35.196
+  port: 80
+  password: f05ee819-5f42-44b6-bd2a-bf4917cbf38e
+  sni: hidden-pine-8798.amon-morningstar01.workers.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: hidden-pine-8798.amon-morningstar01.workers.dev
+  udp: true
+- name: 🇺🇸美国-23
+  type: vless
+  server: 155.46.213.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: vms.lifetime51.workers.dev
+  tls: false
+  ws-opts:
+    path: /
+  udp: true
+- name: 🇺🇸美国-24
+  type: vless
+  server: 162.159.253.41
+  port: 8443
+  uuid: bf116897-eca4-459c-9f97-4019fa0ace7f
+  network: ws
+  servername: focalin.adaspoloandco.com
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /RizZrAcK
+  udp: true
+- name: 🇺🇸美国-25
+  type: vless
+  server: 43.162.115.192
+  port: 666
+  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
+  network: ws
+  servername: 43.162.115.192
+  tls: true
+  ws-opts:
+    path: /proxy
+  udp: true
+- name: 🇺🇸美国-26
+  type: trojan
+  server: 104.18.185.26
+  port: 443
+  password: humanity
+  sni: www.gossipglove.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.gossipglove.com
+  udp: true
+- name: 🇺🇸美国-27
   type: trojan
   server: 172.64.152.23
   port: 443
@@ -2349,288 +1126,7 @@ proxies:
     headers:
       Host: www.calmlunch.com
   udp: true
-- name: 🇺🇸美国-50
-  type: vless
-  server: a1-tss.pages.dev
-  port: 443
-  uuid: f86f5a03-3872-46b5-bf03-a50388a0261d
-  network: ws
-  servername: a1-tss.pages.dev
-  tls: true
-  ws-opts:
-    path: /
-  udp: true
-- name: 🇺🇸美国-51
-  type: vmess
-  server: skk.moe
-  port: 80
-  uuid: 65b17c0b-0a52-4b54-9bc9-60e31397b841
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /65b17c0b-0a52-4b54-9bc9-60e31397b841-vmess
-    headers:
-      Host: accklsj.bufu.us.ci
-  udp: true
-- name: 🇺🇸美国-52
-  type: trojan
-  server: www.multiplydose.com
-  port: 443
-  password: humanity
-  sni: www.multiplydose.com
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.multiplydose.com
-  udp: true
-- name: 🇺🇸美国-53
-  type: trojan
-  server: sourceforge.net
-  port: 443
-  password: humanity
-  sni: www.calmloud.com
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmloud.com
-  udp: true
-- name: 🇺🇸美国-54
-  type: vless
-  server: up2-df6.pages.dev
-  port: 443
-  uuid: ce69190e-935a-4394-9e5e-2ab2872ba242
-  network: ws
-  servername: up2-df6.pages.dev
-  tls: true
-  ws-opts:
-    path: /uTZSXPBI2IfoxF86
-  udp: true
-- name: 🇺🇸美国-55
-  type: vless
-  server: 63.141.128.5
-  port: 2083
-  uuid: 41f37ced-2021-4111-93a8-82d57ff2eb5b
-  network: ws
-  servername: mzaxmc.lizardshop.org
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed
-  udp: true
-- name: 🇺🇸美国-56
-  type: trojan
-  server: irancell.buzzmuzzpanel.online
-  port: 443
-  password: A4u^p(_UR*F6
-  sni: 027.eLECTROcelLCO-cf-027.WorKerS.Dev
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /eyJqdW5rIjoidDJ0UDljR2ZIaVBQakg2byIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-  udp: true
-- name: 🇺🇸美国-57
-  type: vless
-  server: chatgpt.com
-  port: 443
-  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
-  network: ws
-  servername: powered-by-surena.user68f797c2f3e1b.workers.dev
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed
-    headers:
-      Host: powered-by-surena.user68f797c2f3e1b.workers.dev
-  udp: true
-- name: 🇺🇸美国-58
-  type: vless
-  server: 162.159.13.206
-  port: 443
-  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
-  network: ws
-  servername: juzi.qea.ccwu.cc
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: juzi.qea.ccwu.cc
-  udp: true
-- name: 🇺🇸美国-59
-  type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-  udp: true
-- name: 🇺🇸美国-60
-  type: vless
-  server: 172.66.3.201
-  port: 443
-  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
-  network: ws
-  servername: juzi.qea.ccwu.cc
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: juzi.qea.ccwu.cc
-  udp: true
-- name: 🇺🇸美国-61
-  type: vmess
-  server: 172.236.244.171
-  port: 2053
-  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  servername: usaapp1.jisuyun.top
-  network: ws
-  ws-opts:
-    path: /usavm
-    headers:
-      Host: usaapp1.jisuyun.top
-  udp: true
-- name: 🇺🇸美国-62
-  type: trojan
-  server: cloudflare-ip.mofashi.ltd
-  port: 443
-  password: 2399fe0a-b359-40a9-a3f0-b70c3c177a01
-  sni: aa.beijng.dpdns.org
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /?ed=2048
-  udp: true
-- name: 🇺🇸美国-63
-  type: vless
-  server: 104.17.74.206
-  port: 2096
-  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
-  network: ws
-  servername: INdex.HArmony702.WoRkeRS.Dev
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /axcp1cm75o7digvt
-    headers:
-      Host: index.harmony702.workers.dev
-  udp: true
-- name: 🇺🇸美国-64
-  type: vless
-  server: 162.159.17.189
-  port: 443
-  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
-  network: ws
-  servername: juzi.qea.ccwu.cc
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: juzi.qea.ccwu.cc
-  udp: true
-- name: 🇺🇸美国-65
-  type: vless
-  server: support.zoom.us.cyylr.eu.cc
-  port: 443
-  uuid: cc752a3e-1537-4e86-bb50-1b897bf7b33c
-  network: ws
-  servername: support.zoom.us.cyylr.eu.cc
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: support.zoom.us.cyylr.eu.cc
-  udp: true
-- name: 🇺🇸美国-66
-  type: vless
-  server: 104.17.138.107
-  port: 443
-  uuid: fe273991-0514-4a16-8ec4-b15ae861c000
-  network: ws
-  servername: zyzzzoao.xn--fiqv8j.eu.org
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: zyzzzoao.xn--fiqv8j.eu.org
-  udp: true
-- name: 🇺🇸美国-67
-  type: vless
-  server: 104.20.6.134
-  port: 443
-  uuid: 2088ef0d-4d2c-43b3-874b-b6a03531c81b
-  network: ws
-  servername: r.meDiASHOPPp.sbS
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoiVVpPeXNodUFQMHNVcU12aCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: r.mediashoppp.sbs
-  udp: true
-- name: 🇺🇸美国-68
-  type: vless
-  server: 162.159.13.20
-  port: 443
-  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
-  network: ws
-  servername: juzi.qea.ccwu.cc
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: juzi.qea.ccwu.cc
-  udp: true
-- name: 🇺🇸美国-69
-  type: vless
-  server: dx.mmhh.eu.cc
-  port: 443
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  network: ws
-  servername: hhlfy.twiladaphne.ndjp.net
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /fp=random
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-  udp: true
-- name: 🇺🇸美国-70
-  type: vmess
-  server: 66.154.106.185
-  port: 48060
-  uuid: f60ecc88-d704-489c-e3b9-082805317e7b
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-  udp: true
-- name: 🇺🇸美国-71
+- name: 🇺🇸美国-28
   type: vless
   server: 104.19.229.21
   port: 443
@@ -2641,331 +1137,383 @@ proxies:
   client-fingerprint: chrome
   ws-opts:
     path: /sg-melbi
-    headers:
-      Host: cyylr.eu.cc
   udp: true
-- name: 🇺🇸美国-72
-  type: vmess
-  server: usaapp1.jisuyun.top
-  port: 2053
-  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  servername: usaapp1.jisuyun.top
-  network: ws
-  ws-opts:
-    path: /usavm
-    headers:
-      Host: usaapp1.jisuyun.top
-  udp: true
-- name: 🇺🇸美国-73
+- name: 🇺🇸美国-29
   type: vless
-  server: 172.67.187.117
-  port: 443
-  uuid: 40afa553-1745-4f62-a380-4163c7bb4870
+  server: 104.16.9.24
+  port: 80
+  uuid: 2ac6e527-6410-48ce-b9ba-cc8135ee2a3b
   network: ws
-  servername: restless-dew-894b.amirhost4.workers.dev
-  tls: true
-  client-fingerprint: chrome
+  servername: fragrant-recipe-09f4.wopecuyubak61.workers.dev
+  tls: false
   ws-opts:
     path: /
-    headers:
-      Host: restless-dew-894b.amirhost4.workers.dev
   udp: true
-- name: 🇺🇸美国-74
+- name: 🇺🇸美国-30
   type: vless
-  server: 002.inc-electrocell-001-002.workers.dev
-  port: 443
-  uuid: 36a857e4-f3d4-43aa-8b90-d7da849da989
+  server: 80.93.202.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
-  servername: 002.Inc-ElectROcElL-001-002.WoRKERS.DEV
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoib0RnakxTZUZvOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: 002.inc-electrocell-001-002.workers.dev
-  udp: true
-- name: 🇺🇸美国-75
-  type: vless
-  server: 129.6.29.253
-  port: 443
-  uuid: 41d480fd-1dcc-4766-8e01-a67e7faa5934
-  network: ws
-  servername: investors.spotify.com.cyylr.eu.cc
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /id-amz
-    headers:
-      Host: investors.spotify.com.cyylr.eu.cc
-  udp: true
-- name: 🇺🇸美国-76
-  type: vless
-  server: 172.64.145.202
-  port: 2083
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  network: ws
-  servername: newwk1.f1w.de5.net
-  tls: true
-  client-fingerprint: chrome
+  servername: vms.lifetime02.workers.dev
+  tls: false
   ws-opts:
     path: /
-    headers:
-      Host: newwk1.f1w.de5.net
   udp: true
-- name: 🇺🇸美国-77
-  type: trojan
-  server: 104.18.32.47
-  port: 443
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  tls: true
-  ws-opts:
-    path: /assignment
-  udp: true
-- name: 🇺🇸美国-78
+- name: 🇺🇸美国-31
   type: vless
-  server: 162.159.18.105
+  server: a1-tss.pages.dev
   port: 443
-  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  uuid: f86f5a03-3872-46b5-bf03-a50388a0261d
   network: ws
-  servername: juzi.qea.ccwu.cc
+  servername: a1-tss.pages.dev
   tls: true
-  client-fingerprint: chrome
   ws-opts:
     path: /
-    headers:
-      Host: juzi.qea.ccwu.cc
   udp: true
-- name: 🇺🇸美国-79
+- name: 🇺🇸美国-32
   type: vless
-  server: 173.245.58.75
-  port: 443
-  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+  server: 162.159.61.158
+  port: 80
+  uuid: 97ddf9a6-de5b-4229-bc41-4627321eff43
   network: ws
-  servername: octopusss4.com
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /tsghdws
-    headers:
-      Host: octopusss4.com
-  udp: true
-- name: 🇺🇸美国-80
-  type: vless
-  server: 170.114.46.28
-  port: 443
-  uuid: c8e2ba30-a6de-4660-8c62-5bf5cc9318f3
-  network: ws
-  servername: enquiries-commands-div-medal.trycloudflare.com
-  tls: true
-  client-fingerprint: chrome
+  servername: potifar.kravend4.workers.dev
+  tls: false
   ws-opts:
     path: /
-    headers:
-      Host: enquiries-commands-div-medal.trycloudflare.com
   udp: true
-- name: 🇺🇸美国-81
-  type: trojan
-  server: 104.17.121.71
+- name: 🇺🇸美国-33
+  type: vless
+  server: 173.245.49.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: vms.lifetime36.workers.dev
+  tls: false
+  ws-opts:
+    path: /
+  udp: true
+- name: 🇺🇸美国-34
+  type: vless
+  server: 104.19.64.105
+  port: 8443
+  uuid: a47c49ec-6eaa-44ce-9108-8427426a1123
+  network: ws
+  servername: ratatouille.adaspoloandco.com
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /admin.php
+  udp: true
+- name: 🇺🇸美国-35
+  type: vless
+  server: 173.245.59.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: vms.lifetime37.workers.dev
+  tls: false
+  ws-opts:
+    path: /
+  udp: true
+- name: 🇺🇸美国-36
+  type: vless
+  server: 172.67.186.114
+  port: 80
+  uuid: eb295cd7-a389-4cde-9598-ce126b0910bc
+  network: ws
+  servername: v2configlab.v2configlab2.workers.dev
+  tls: false
+  ws-opts:
+    path: /
+  udp: true
+- name: 🇺🇸美国-37
+  type: vless
+  server: 172.67.185.178
   port: 443
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  network: ws
+  servername: hhlfy.twiladaphne.ndjp.net
   tls: true
   ws-opts:
-    path: /assignment
+    path: /
   udp: true
-- name: 🇺🇸美国-82
+- name: 🇺🇸美国-38
   type: trojan
   server: 104.20.42.250
   port: 443
   password: humanity
   sni: www.calmloud.com
-  alpn:
-  - http/1.1
   skip-cert-verify: false
   tls: true
   ws-opts:
     path: /assignment
+    headers:
+      Host: www.calmloud.comhttp/1.1
   udp: true
-- name: 🇺🇸美国-83
+- name: 🇺🇸美国-39
   type: vless
-  server: 172.67.163.213
-  port: 2096
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  server: 43.162.85.247
+  port: 666
+  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
   network: ws
-  servername: EMS.Arc-Time.Workers.DEV
+  servername: 43.162.85.247
+  tls: true
+  ws-opts:
+    path: /proxy
+  udp: true
+- name: 🇺🇸美国-40
+  type: vless
+  server: cf.tencentapp.cn
+  port: 443
+  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  network: ws
+  servername: tianshu13.pages.dev
+  tls: true
+  ws-opts:
+    path: /
+  udp: true
+- name: 🇺🇸美国-41
+  type: trojan
+  server: busa.zjf2610.top
+  port: 29992
+  password: 6sA8bmTaIrk5SlUyJnX07PN5Ynje5tIs1xLCm3F0
+  sni: busa.zjf2610.top
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /busa
+    headers:
+      Host: busa.zjf2610.top
+  udp: true
+- name: 🇺🇸美国-42
+  type: trojan
+  server: busa.zjf2610.top
+  port: 29991
+  password: 6sA8bmTaIrk5SlUyJnX07PN5Ynje5tIs1xLCm3F0
+  sni: busa.zjf2610.top
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /busa
+    headers:
+      Host: busa.zjf2610.top
+  udp: true
+- name: 🇺🇸美国-43
+  type: trojan
+  server: busa.zjf2610.top
+  port: 29993
+  password: 6sA8bmTaIrk5SlUyJnX07PN5Ynje5tIs1xLCm3F0
+  sni: busa.zjf2610.top
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /busa
+    headers:
+      Host: busa.zjf2610.top
+  udp: true
+- name: 🇺🇸美国-44
+  type: vless
+  server: 192.9.228.70
+  port: 14123
+  uuid: a1bb5fa0-3b1e-4fbc-f1b6-686a35796849
+  network: ws
+  servername: us2.wxgqlfx.xyz
   tls: true
   client-fingerprint: chrome
   ws-opts:
-    path: /88ailh3l64gh
+    path: /TG@wxgqlfx
     headers:
-      Host: ems.arc-time.workers.dev
+      Host: us2.wxgqlfx.xyz
   udp: true
-- name: 🇺🇸美国-84
+- name: 🇺🇸美国-45
+  type: vmess
+  server: heu83ujieiwoeu83j2ewjehuwehu8.dentiscan.ca
+  port: 80
+  uuid: e2923bc6-8204-4768-98ea-379d48ea8a7a
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  servername: heu83ujieiwoeu83j2ewjehuwehu8.dentiscan.ca
+  network: ws
+  ws-opts:
+    path: /1awNzxRSwKsdkPVKP0ZQqlHjt10sp
+    headers:
+      Host: heu83ujieiwoeu83j2ewjehuwehu8.dentiscan.ca
+  udp: true
+- name: 🇺🇸美国-46
   type: trojan
-  server: 104.20.6.134
+  server: 90081bb25c.node.tro.cac.cab
+  port: 41943
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: az.01.naiun.bilibili.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇺🇸美国-47
+  type: trojan
+  server: 90081bb25c.node.tro.cac.cab
+  port: 47909
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: is.01.naiun.bilibili.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇺🇸美国-48
+  type: trojan
+  server: 90081bb25c.node.tro.cac.cab
+  port: 45619
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: fr.01.naiun.bilibili.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇺🇸美国-49
+  type: vless
+  server: 134.33.73.249
+  port: 54254
+  uuid: acba684c-4098-4eca-f519-828b09f96464
+  servername: apple.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: HFEz9fAOugljXea_ZVOUHMju08su8h0P9RANNcHP2y4
+    short-id: db35ffdc
+  udp: true
+- name: 🇺🇸美国-50
+  type: vmess
+  server: 38.80.188.69
+  port: 50997
+  uuid: 7350d615-d1a5-4a5b-a004-18aafee8e1d8
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: 🇺🇸美国-51
+  type: vless
+  server: 193.23.222.99
+  port: 55152
+  uuid: 827466ba-0910-4c48-b156-2f37fdbda362
+  servername: cloudflare.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: fX2XkujtqhnkQDy-Lwgqm_OofDs1qO5ytvVNM6aV4C4
+    short-id: ddcac8ed
+  udp: true
+- name: 🇺🇸美国-52
+  type: trojan
+  server: 172.235.63.252
   port: 443
-  password: humanity
-  sni: www.calmloud.com
-  alpn:
-  - http/1.1
+  password: bX_lNHWoW6ywq82mI=KUr+8i__VSp0Hs_E
+  sni: 172.235.63.252
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇺🇸美国-53
+  type: vless
+  server: 194.154.27.103
+  port: 2026
+  uuid: 9287f532-4150-48ff-a755-64b21e30e9c3
+  servername: api.vk.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: cH-LYLxYIolfsrn2V3wqkhw-hkVPPDW7ljE9KqcuJX4
+  udp: true
+- name: 🇺🇸美国-54
+  type: vmess
+  server: gtm-sg-cc54q7d1q01.365cloud0285.com
+  port: 6003
+  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: 🇺🇸美国-55
+  type: vmess
+  server: gtm-sg-cc54q7d1q01.365cloud0285.com
+  port: 6001
+  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: 🇺🇸美国-56
+  type: trojan
+  server: 149.104.87.182
+  port: 443
+  password: PtRV8to08i8FMsY.Uw7=yMuIaR3eVTGmvA
+  sni: www.jewelapp.click
   skip-cert-verify: false
   tls: true
-  ws-opts:
-    path: /assignment
   udp: true
-- name: 🇺🇸美国-85
+- name: 🇺🇸美国-57
   type: trojan
-  server: 104.18.139.67
+  server: 172.237.145.189
   port: 443
-  password: humanity
-  sni: www.creationlong.org
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /assignment
-  udp: true
-- name: 🇺🇸美国-86
-  type: trojan
-  server: 104.16.7.70
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
+  password: A3uIh_5NqMg3hFa.gDYWT.afz0UuJ6=VIM
+  sni: 172.237.145.189
   skip-cert-verify: false
   tls: true
-  ws-opts:
-    path: /assignment
   udp: true
-- name: 🇺🇸美国-87
+- name: 🇺🇸美国-58
   type: trojan
-  server: 165.215.250.14
+  server: 45.79.8.17
   port: 443
-  password: humanity
-  sni: www.calmlunch.com
+  password: rXyShM8Jni+5Sbq3k4gkyr5Lq0zOMRL2Uf
+  sni: 45.79.8.17
   skip-cert-verify: true
   tls: true
-  ws-opts:
-    path: /assignment
   udp: true
-- name: 🇺🇸美国-88
+- name: 🇺🇸美国-59
   type: trojan
-  server: 208.103.161.110
-  port: 443
-  password: humanity
-  sni: www.creationlong.org
+  server: 90081bb25c.node.tro.cac.cab
+  port: 45553
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: ch.01.naiun.bilibili.com
   skip-cert-verify: true
   tls: true
-  ws-opts:
-    path: /assignment
   udp: true
-- name: 🇺🇸美国-89
+- name: 🇺🇸美国-60
   type: trojan
-  server: www.gossipglove.com
-  port: 443
-  password: humanity
-  sni: www.gossipglove.com
+  server: 90081bb25c.node.tro.cac.cab
+  port: 46424
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: de.01.naiun.bilibili.com
   skip-cert-verify: true
   tls: true
-  ws-opts:
-    path: /assignment
   udp: true
-- name: 🇺🇸美国-90
-  type: trojan
-  server: 104.18.11.110
+- name: 🇺🇸美国-61
+  type: vless
+  server: 150.241.83.60
   port: 443
-  password: humanity
-  sni: www.multiplydose.com
-  skip-cert-verify: false
+  uuid: ec13d921-3072-4e16-b2cd-af709f7f7894
+  servername: www.icloud.com
   tls: true
-  ws-opts:
-    path: /assignment
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: xDFXqfhZ7-IQiFwXpXltNe2Axo5O33k4LAqDfAVtyz4
+    short-id: 7b
   udp: true
-- name: 🇺🇸美国-91
+- name: 🇺🇸美国-62
   type: trojan
-  server: 162.159.17.189
-  port: 443
-  password: humanity
-  sni: www.multiplydose.com
+  server: 90081bb25c.node.tro.cac.cab
+  port: 48697
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: gh.01.naiun.bilibili.com
   skip-cert-verify: true
   tls: true
-  ws-opts:
-    path: /assignment
   udp: true
 - name: 🇽🇽未知-01
-  type: vless
-  server: 104.25.242.61
-  port: 443
-  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
-  network: ws
-  servername: juzi.qea.ccwu.cc
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: juzi.qea.ccwu.cc
-  udp: true
-- name: 🇽🇽未知-02
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: mitivpn
-  sni: mitivpn.ws-ws-ws.workers.dev
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
-  udp: true
-- name: 🇽🇽未知-03
-  type: vless
-  server: mybb.com
-  port: 443
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
-  network: ws
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: rayan-007.nastaran.dpdns.org
-  udp: true
-- name: 🇽🇽未知-04
-  type: vless
-  server: 104.25.252.37
-  port: 443
-  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
-  network: ws
-  servername: juzi.qea.ccwu.cc
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: juzi.qea.ccwu.cc
-  udp: true
-- name: 🇽🇽未知-05
-  type: vless
-  server: 198.41.223.121
-  port: 443
-  uuid: d555dac9-27cb-4ddb-89f5-6a1d8d1e4798
-  network: ws
-  servername: momi.timoreyhaneh.workers.dev
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: momi.timoreyhaneh.workers.dev
-  udp: true
-- name: 🇽🇽未知-06
   type: vless
   server: 104.25.242.55
   port: 443
@@ -2975,107 +1523,86 @@ proxies:
   tls: true
   ws-opts:
     path: /
-    headers:
-      Host: juzi.qea.ccwu.cc
   udp: true
-- name: 🇽🇽未知-07
+- name: 🇽🇽未知-02
   type: vless
-  server: 198.41.223.60
-  port: 2083
-  uuid: 12cb0a24-0438-4980-8617-9c93205895fa
-  network: ws
-  servername: yellow-field-6ce5.kakoolnews.workers.dev
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: yellow-field-6ce5.kakoolnews.workers.dev
-  udp: true
-- name: 🇽🇽未知-08
-  type: vless
-  server: 104.26.5.134
-  port: 2096
-  uuid: 7f50ec42-4673-41e2-94be-ae6253909def
-  network: ws
-  servername: joey.freen1.de5.net
-  tls: true
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: joey.freen1.de5.net
-  udp: true
-- name: 🇽🇽未知-09
-  type: vless
-  server: 108.162.192.236
+  server: mybb.com
   port: 443
-  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
   network: ws
-  servername: powered-by-surena.configfarsi6982dd6e0355e.workers.dev
+  servername: rayan-007.nastaran.dpdns.org
   tls: true
   client-fingerprint: chrome
   ws-opts:
     path: /
-    headers:
-      Host: powered-by-surena.configfarsi6982dd6e0355e.workers.dev
   udp: true
-- name: 🇽🇽未知-10
+- name: 🇽🇽未知-03
+  type: vless
+  server: 108.162.196.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: vms.lifetime59.workers.dev
+  tls: false
+  ws-opts:
+    path: /
+  udp: true
+- name: 🇽🇽未知-04
+  type: vless
+  server: 104.24.0.123
+  port: 80
+  uuid: d78cf1b7-14b9-404f-b136-a77505b60dc8
+  network: ws
+  servername: fsbe22ekepdrlovc-79fyu4gbcinax4x.ganggamer6789.workers.dev
+  tls: false
+  ws-opts:
+    path: /eyJqdW5rIjoiSktxQm9NdVdIWVYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
+  udp: true
+- name: 🇽🇽未知-05
   type: trojan
-  server: 188.114.96.4
+  server: 188.114.97.6
   port: 443
-  password: humanity
-  sni: www.calmloud.com
-  alpn:
-  - http/1.1
+  password: mitivpn
+  sni: mitivpn.ws-ws-ws.workers.dev
   skip-cert-verify: true
   tls: true
   ws-opts:
-    path: /assignment
+    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
+    headers:
+      Host: mitivpn.ws-ws-ws.workers.devhttp/1.1
   udp: true
-- name: 🇽🇽未知-11
+- name: 🇽🇽未知-06
   type: trojan
-  server: 8.6.112.6
+  server: 188.114.96.3
   port: 443
   password: humanity
-  sni: www.calmloud.com
-  alpn:
-  - http/1.1
+  sni: www.calmlunch.com
   skip-cert-verify: false
   tls: true
   ws-opts:
     path: /assignment
+    headers:
+      Host: www.calmlunch.com
   udp: true
-- name: 🇽🇽未知-12
+- name: 🇽🇽未知-07
   type: vless
-  server: 141.101.121.196
+  server: 198.41.223.61
   port: 443
-  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  uuid: 7f3faff8-41db-403d-8329-6b9072aaabe2
   network: ws
-  servername: blackshadow.dpdns.org
+  servername: edgetunnell-1dc.pages.dev
   tls: true
   client-fingerprint: chrome
   ws-opts:
-    path: /44.209.52.7-443
-    headers:
-      Host: blackshadow.dpdns.org
+    path: /
   udp: true
 proxy-groups:
 - name: 🚀 节点选择
   type: select
   proxies:
-  - 🇸🇬新加坡-01
-  - 🇲🇾马来西亚-01
-  - 🇭🇰香港-01
-  - 🇹🇼台湾-01
-  - 🇭🇰香港-02
-  - 🇲🇾马来西亚-02
-  - 🇭🇰香港-03
-  - 🇲🇾马来西亚-03
-  - 🇲🇾马来西亚-04
-  - 🇲🇾马来西亚-05
   - 🇺🇸美国-01
-  - 🇱🇻LV-01
-  - 🇹🇭泰国-01
+  - 🇸🇬新加坡-01
+  - 🇸🇬新加坡-02
   - 🇺🇸美国-02
   - 🇺🇸美国-03
   - 🇺🇸美国-04
@@ -3085,257 +1612,138 @@ proxy-groups:
   - 🇺🇸美国-08
   - 🇺🇸美国-09
   - 🇺🇸美国-10
+  - 🇸🇬新加坡-03
+  - 🇽🇽未知-01
+  - 🇰🇷韩国-01
+  - 🇰🇷韩国-02
+  - 🇹🇭泰国-01
+  - 🇹🇭泰国-02
+  - 🇰🇷韩国-03
   - 🇺🇸美国-11
   - 🇺🇸美国-12
+  - 🇳🇿新西兰-01
   - 🇺🇸美国-13
+  - 🇹🇷土耳其-01
+  - 🇦🇺澳大利亚-01
   - 🇺🇸美国-14
+  - 🇪🇸西班牙-01
   - 🇺🇸美国-15
+  - 🇽🇽未知-02
+  - 🇯🇵日本-01
+  - 🇨🇭瑞士-01
   - 🇺🇸美国-16
   - 🇺🇸美国-17
   - 🇺🇸美国-18
+  - 🇱🇹LT-01
+  - 🇭🇰香港-01
   - 🇺🇸美国-19
   - 🇺🇸美国-20
+  - 🇽🇽未知-03
+  - 🇳🇱荷兰-01
+  - 🇸🇨SC-01
   - 🇺🇸美国-21
+  - 🇬🇧英国-01
   - 🇺🇸美国-22
+  - 🇽🇽未知-04
+  - 🇬🇧英国-02
   - 🇺🇸美国-23
+  - 🇸🇨SC-02
+  - 🇳🇱荷兰-02
+  - 🇮🇲IM-01
   - 🇺🇸美国-24
   - 🇺🇸美国-25
+  - 🇱🇹LT-02
+  - 🇸🇨SC-03
   - 🇺🇸美国-26
-  - 🇨🇦加拿大-01
   - 🇺🇸美国-27
-  - 🇨🇦加拿大-02
-  - 🇺🇸美国-28
-  - 🇨🇦加拿大-03
-  - 🇯🇵日本-01
-  - 🇹🇼台湾-02
-  - 🇯🇵日本-02
-  - 🇬🇧英国-01
-  - 🇳🇱荷兰-01
-  - 🇳🇱荷兰-02
-  - 🇳🇱荷兰-03
-  - 🇳🇱荷兰-04
-  - 🇯🇵日本-03
-  - 🇳🇱荷兰-05
-  - 🇫🇷法国-01
-  - 🇦🇺澳大利亚-01
-  - 🇫🇷法国-02
-  - 🇦🇱AL-01
-  - 🇳🇱荷兰-06
-  - 🇳🇱荷兰-07
-  - 🇦🇺澳大利亚-02
-  - 🇳🇱荷兰-08
-  - 🇳🇱荷兰-09
-  - 🇭🇰香港-04
-  - 🇳🇱荷兰-10
-  - 🇫🇷法国-03
-  - 🇺🇸美国-29
-  - 🇫🇷法国-04
-  - 🇫🇷法国-05
-  - 🇵🇱波兰-01
-  - 🇳🇱荷兰-11
-  - 🇰🇷韩国-01
-  - 🇫🇷法国-06
-  - 🇳🇱荷兰-12
-  - 🇳🇱荷兰-13
-  - 🇸🇬新加坡-02
-  - 🇳🇱荷兰-14
-  - 🇫🇮芬兰-01
-  - 🇫🇷法国-07
-  - 🇳🇱荷兰-15
-  - 🇸🇰斯洛伐克-01
-  - 🇳🇱荷兰-16
-  - 🇭🇰香港-05
-  - 🇺🇸美国-30
-  - 🇫🇷法国-08
-  - 🇸🇪瑞典-01
-  - 🇳🇱荷兰-17
-  - 🇫🇮芬兰-02
-  - 🇱🇻LV-02
-  - 🇳🇱荷兰-18
-  - 🇳🇱荷兰-19
-  - 🇺🇸美国-31
-  - 🇳🇱荷兰-20
-  - 🇲🇩MD-01
-  - 🇳🇱荷兰-21
-  - 🇳🇱荷兰-22
-  - 🇳🇱荷兰-23
-  - 🇺🇸美国-32
-  - 🇳🇱荷兰-24
-  - 🇭🇰香港-06
-  - 🇩🇰丹麦-01
-  - 🇺🇸美国-33
-  - 🇺🇸美国-34
-  - 🇫🇮芬兰-03
-  - 🇳🇱荷兰-25
-  - 🇪🇪EE-01
-  - 🇸🇪瑞典-02
-  - 🇺🇸美国-35
-  - 🇧🇬BG-01
-  - 🇮🇱以色列-01
-  - 🇸🇬新加坡-03
-  - 🇬🇧英国-02
-  - 🇺🇸美国-36
-  - 🇲🇩MD-02
-  - 🇳🇱荷兰-26
-  - 🇬🇧英国-03
-  - 🇺🇸美国-37
-  - 🇺🇸美国-38
-  - 🇲🇾马来西亚-06
-  - 🇳🇱荷兰-27
-  - 🇵🇱波兰-02
   - 🇸🇬新加坡-04
-  - 🇳🇱荷兰-28
-  - 🇨🇾CY-01
-  - 🇱🇹LT-01
-  - 🇫🇮芬兰-04
-  - 🇳🇱荷兰-29
-  - 🇭🇰香港-07
-  - 🇧🇷巴西-01
-  - 🇸🇪瑞典-03
-  - 🇲🇾马来西亚-07
-  - 🇺🇸美国-39
-  - 🇮🇱以色列-02
-  - 🇨🇾CY-02
-  - 🇮🇳印度-01
-  - 🇺🇸美国-40
-  - 🇨🇾CY-03
-  - 🇪🇸西班牙-01
-  - 🇮🇳印度-02
-  - 🇱🇻LV-03
-  - 🇦🇪阿联酋-01
-  - 🇹🇭泰国-02
-  - 🇲🇩MD-03
-  - 🇭🇰香港-08
-  - 🇺🇸美国-41
-  - 🇺🇸美国-42
-  - 🇬🇧英国-04
-  - 🇺🇸美国-43
-  - 🇺🇸美国-44
-  - 🇸🇪瑞典-04
-  - 🇫🇮芬兰-05
-  - 🇺🇦乌克兰-01
-  - 🇹🇷土耳其-01
-  - 🇫🇮芬兰-06
-  - 🇱🇻LV-04
-  - 🇨🇿捷克-01
-  - 🇺🇸美国-45
-  - 🇳🇱荷兰-30
-  - 🇲🇩MD-04
-  - 🇫🇮芬兰-07
-  - 🇬🇧英国-05
-  - 🇦🇹奥地利-01
-  - 🇲🇩MD-05
-  - 🇳🇴挪威-01
-  - 🇨🇿捷克-02
-  - 🇮🇹意大利-01
-  - 🇲🇾马来西亚-08
-  - 🇲🇩MD-06
-  - 🇭🇰香港-09
-  - 🇺🇸美国-46
-  - 🇹🇷土耳其-02
-  - 🇹🇼台湾-03
-  - 🇦🇺澳大利亚-03
-  - 🇺🇸美国-47
-  - 🇺🇸美国-48
-  - 🇸🇬新加坡-05
-  - 🇺🇸美国-49
-  - 🇰🇷韩国-02
-  - 🇯🇵日本-04
-  - 🇩🇰丹麦-02
-  - 🇺🇸美国-50
-  - 🇺🇸美国-51
-  - 🇸🇬新加坡-06
-  - 🇰🇷韩国-03
-  - 🇺🇸美国-52
-  - 🇺🇸美国-53
-  - 🇺🇸美国-54
   - 🇰🇷韩国-04
-  - 🇭🇰香港-10
-  - 🇺🇸美国-55
-  - 🇨🇭瑞士-01
-  - 🇹🇷土耳其-03
-  - 🇪🇸西班牙-02
-  - 🇦🇹奥地利-02
-  - 🇰🇷韩国-05
-  - 🇺🇸美国-56
-  - 🇭🇰香港-11
-  - 🇳🇿新西兰-01
-  - 🇽🇽未知-01
-  - 🇺🇸美国-57
-  - 🇺🇸美国-58
-  - 🇺🇸美国-59
-  - 🇭🇰香港-12
-  - 🇺🇸美国-60
-  - 🇺🇸美国-61
-  - 🇺🇸美国-62
-  - 🇺🇸美国-63
-  - 🇽🇽未知-02
-  - 🇺🇸美国-64
-  - 🇺🇸美国-65
-  - 🇺🇸美国-66
-  - 🇺🇸美国-67
-  - 🇺🇸美国-68
-  - 🇽🇽未知-03
-  - 🇲🇽墨西哥-01
-  - 🇽🇽未知-04
-  - 🇺🇸美国-69
-  - 🇺🇸美国-70
-  - 🇳🇿新西兰-02
-  - 🇺🇸美国-71
+  - 🇺🇸美国-28
+  - 🇺🇸美国-29
   - 🇽🇽未知-05
   - 🇽🇽未知-06
+  - 🇳🇱荷兰-03
+  - 🇺🇸美国-30
+  - 🇺🇸美国-31
+  - 🇺🇸美国-32
+  - 🇺🇸美国-33
+  - 🇺🇸美国-34
   - 🇽🇽未知-07
-  - 🇺🇸美国-72
-  - 🇽🇽未知-08
-  - 🇺🇸美国-73
-  - 🇺🇸美国-74
-  - 🇽🇽未知-09
-  - 🇺🇸美国-75
-  - 🇺🇸美国-76
+  - 🇺🇸美国-35
+  - 🇺🇸美国-36
+  - 🇺🇸美国-37
+  - 🇱🇹LT-03
+  - 🇺🇸美国-38
+  - 🇺🇸美国-39
+  - 🇺🇸美国-40
+  - 🇯🇵日本-02
+  - 🇳🇱荷兰-04
+  - 🇺🇸美国-41
+  - 🇺🇸美国-42
+  - 🇺🇸美国-43
+  - 🇯🇵日本-03
+  - 🇯🇵日本-04
+  - 🇺🇸美国-44
   - 🇯🇵日本-05
   - 🇯🇵日本-06
-  - 🇺🇸美国-77
-  - 🇸🇨SC-01
-  - 🇺🇸美国-78
-  - 🇺🇸美国-79
-  - 🇰🇷韩国-06
-  - 🇮🇷IR-01
-  - 🇺🇸美国-80
-  - 🇺🇸美国-81
-  - 🇺🇸美国-82
-  - 🇺🇸美国-83
-  - 🇺🇸美国-84
-  - 🇺🇸美国-85
-  - 🇽🇽未知-10
-  - 🇲🇾马来西亚-09
-  - 🇺🇸美国-86
-  - 🇨🇾CY-04
-  - 🇫🇮芬兰-08
-  - 🇺🇸美国-87
-  - 🇮🇳印度-03
-  - 🇽🇽未知-11
-  - 🇺🇸美国-88
-  - 🇽🇽未知-12
-  - 🇸🇨SC-02
-  - 🇺🇸美国-89
-  - 🇺🇸美国-90
-  - 🇺🇸美国-91
+  - 🇺🇸美国-45
+  - 🇭🇰香港-02
+  - 🇹🇼台湾-01
+  - 🇮🇩印尼-01
+  - 🇯🇵日本-07
+  - 🇺🇸美国-46
+  - 🇺🇸美国-47
+  - 🇺🇸美国-48
+  - 🇲🇾马来西亚-01
+  - 🇲🇾马来西亚-02
+  - 🇭🇰香港-03
+  - 🇮🇩印尼-02
+  - 🇮🇩印尼-03
+  - 🇺🇸美国-49
+  - 🇫🇷法国-01
+  - 🇫🇷法国-02
+  - 🇨🇭瑞士-02
+  - 🇺🇸美国-50
+  - 🇺🇸美国-51
+  - 🇱🇻LV-01
+  - 🇺🇸美国-52
+  - 🇨🇭瑞士-03
+  - 🇳🇱荷兰-05
+  - 🇮🇶IQ-01
+  - 🇲🇩MD-01
+  - 🇺🇸美国-53
+  - 🇭🇰香港-04
+  - 🇭🇰香港-05
+  - 🇺🇸美国-54
+  - 🇺🇸美国-55
+  - 🇺🇸美国-56
+  - 🇺🇸美国-57
+  - 🇦🇷阿根廷-01
+  - 🇺🇸美国-58
+  - 🇲🇾马来西亚-03
+  - 🇲🇾马来西亚-04
+  - 🇭🇰香港-06
+  - 🇲🇩MD-02
+  - 🇵🇱波兰-01
+  - 🇭🇰香港-07
+  - 🇲🇩MD-03
+  - 🇲🇩MD-04
+  - 🇲🇾马来西亚-05
+  - 🇪🇪EE-01
+  - 🇺🇸美国-59
+  - 🇺🇸美国-60
+  - 🇭🇰香港-08
+  - 🇨🇭瑞士-04
+  - 🇹🇼台湾-02
+  - 🇺🇸美国-61
+  - 🇺🇸美国-62
+  - 🇮🇩印尼-04
 - name: ♻️ 自动选择
   type: url-test
   proxies:
-  - 🇸🇬新加坡-01
-  - 🇲🇾马来西亚-01
-  - 🇭🇰香港-01
-  - 🇹🇼台湾-01
-  - 🇭🇰香港-02
-  - 🇲🇾马来西亚-02
-  - 🇭🇰香港-03
-  - 🇲🇾马来西亚-03
-  - 🇲🇾马来西亚-04
-  - 🇲🇾马来西亚-05
   - 🇺🇸美国-01
-  - 🇱🇻LV-01
-  - 🇹🇭泰国-01
+  - 🇸🇬新加坡-01
+  - 🇸🇬新加坡-02
   - 🇺🇸美国-02
   - 🇺🇸美国-03
   - 🇺🇸美国-04
@@ -3345,260 +1753,141 @@ proxy-groups:
   - 🇺🇸美国-08
   - 🇺🇸美国-09
   - 🇺🇸美国-10
+  - 🇸🇬新加坡-03
+  - 🇽🇽未知-01
+  - 🇰🇷韩国-01
+  - 🇰🇷韩国-02
+  - 🇹🇭泰国-01
+  - 🇹🇭泰国-02
+  - 🇰🇷韩国-03
   - 🇺🇸美国-11
   - 🇺🇸美国-12
+  - 🇳🇿新西兰-01
   - 🇺🇸美国-13
+  - 🇹🇷土耳其-01
+  - 🇦🇺澳大利亚-01
   - 🇺🇸美国-14
+  - 🇪🇸西班牙-01
   - 🇺🇸美国-15
+  - 🇽🇽未知-02
+  - 🇯🇵日本-01
+  - 🇨🇭瑞士-01
   - 🇺🇸美国-16
   - 🇺🇸美国-17
   - 🇺🇸美国-18
+  - 🇱🇹LT-01
+  - 🇭🇰香港-01
   - 🇺🇸美国-19
   - 🇺🇸美国-20
+  - 🇽🇽未知-03
+  - 🇳🇱荷兰-01
+  - 🇸🇨SC-01
   - 🇺🇸美国-21
+  - 🇬🇧英国-01
   - 🇺🇸美国-22
+  - 🇽🇽未知-04
+  - 🇬🇧英国-02
   - 🇺🇸美国-23
+  - 🇸🇨SC-02
+  - 🇳🇱荷兰-02
+  - 🇮🇲IM-01
   - 🇺🇸美国-24
   - 🇺🇸美国-25
+  - 🇱🇹LT-02
+  - 🇸🇨SC-03
   - 🇺🇸美国-26
-  - 🇨🇦加拿大-01
   - 🇺🇸美国-27
-  - 🇨🇦加拿大-02
-  - 🇺🇸美国-28
-  - 🇨🇦加拿大-03
-  - 🇯🇵日本-01
-  - 🇹🇼台湾-02
-  - 🇯🇵日本-02
-  - 🇬🇧英国-01
-  - 🇳🇱荷兰-01
-  - 🇳🇱荷兰-02
-  - 🇳🇱荷兰-03
-  - 🇳🇱荷兰-04
-  - 🇯🇵日本-03
-  - 🇳🇱荷兰-05
-  - 🇫🇷法国-01
-  - 🇦🇺澳大利亚-01
-  - 🇫🇷法国-02
-  - 🇦🇱AL-01
-  - 🇳🇱荷兰-06
-  - 🇳🇱荷兰-07
-  - 🇦🇺澳大利亚-02
-  - 🇳🇱荷兰-08
-  - 🇳🇱荷兰-09
-  - 🇭🇰香港-04
-  - 🇳🇱荷兰-10
-  - 🇫🇷法国-03
-  - 🇺🇸美国-29
-  - 🇫🇷法国-04
-  - 🇫🇷法国-05
-  - 🇵🇱波兰-01
-  - 🇳🇱荷兰-11
-  - 🇰🇷韩国-01
-  - 🇫🇷法国-06
-  - 🇳🇱荷兰-12
-  - 🇳🇱荷兰-13
-  - 🇸🇬新加坡-02
-  - 🇳🇱荷兰-14
-  - 🇫🇮芬兰-01
-  - 🇫🇷法国-07
-  - 🇳🇱荷兰-15
-  - 🇸🇰斯洛伐克-01
-  - 🇳🇱荷兰-16
-  - 🇭🇰香港-05
-  - 🇺🇸美国-30
-  - 🇫🇷法国-08
-  - 🇸🇪瑞典-01
-  - 🇳🇱荷兰-17
-  - 🇫🇮芬兰-02
-  - 🇱🇻LV-02
-  - 🇳🇱荷兰-18
-  - 🇳🇱荷兰-19
-  - 🇺🇸美国-31
-  - 🇳🇱荷兰-20
-  - 🇲🇩MD-01
-  - 🇳🇱荷兰-21
-  - 🇳🇱荷兰-22
-  - 🇳🇱荷兰-23
-  - 🇺🇸美国-32
-  - 🇳🇱荷兰-24
-  - 🇭🇰香港-06
-  - 🇩🇰丹麦-01
-  - 🇺🇸美国-33
-  - 🇺🇸美国-34
-  - 🇫🇮芬兰-03
-  - 🇳🇱荷兰-25
-  - 🇪🇪EE-01
-  - 🇸🇪瑞典-02
-  - 🇺🇸美国-35
-  - 🇧🇬BG-01
-  - 🇮🇱以色列-01
-  - 🇸🇬新加坡-03
-  - 🇬🇧英国-02
-  - 🇺🇸美国-36
-  - 🇲🇩MD-02
-  - 🇳🇱荷兰-26
-  - 🇬🇧英国-03
-  - 🇺🇸美国-37
-  - 🇺🇸美国-38
-  - 🇲🇾马来西亚-06
-  - 🇳🇱荷兰-27
-  - 🇵🇱波兰-02
   - 🇸🇬新加坡-04
-  - 🇳🇱荷兰-28
-  - 🇨🇾CY-01
-  - 🇱🇹LT-01
-  - 🇫🇮芬兰-04
-  - 🇳🇱荷兰-29
-  - 🇭🇰香港-07
-  - 🇧🇷巴西-01
-  - 🇸🇪瑞典-03
-  - 🇲🇾马来西亚-07
-  - 🇺🇸美国-39
-  - 🇮🇱以色列-02
-  - 🇨🇾CY-02
-  - 🇮🇳印度-01
-  - 🇺🇸美国-40
-  - 🇨🇾CY-03
-  - 🇪🇸西班牙-01
-  - 🇮🇳印度-02
-  - 🇱🇻LV-03
-  - 🇦🇪阿联酋-01
-  - 🇹🇭泰国-02
-  - 🇲🇩MD-03
-  - 🇭🇰香港-08
-  - 🇺🇸美国-41
-  - 🇺🇸美国-42
-  - 🇬🇧英国-04
-  - 🇺🇸美国-43
-  - 🇺🇸美国-44
-  - 🇸🇪瑞典-04
-  - 🇫🇮芬兰-05
-  - 🇺🇦乌克兰-01
-  - 🇹🇷土耳其-01
-  - 🇫🇮芬兰-06
-  - 🇱🇻LV-04
-  - 🇨🇿捷克-01
-  - 🇺🇸美国-45
-  - 🇳🇱荷兰-30
-  - 🇲🇩MD-04
-  - 🇫🇮芬兰-07
-  - 🇬🇧英国-05
-  - 🇦🇹奥地利-01
-  - 🇲🇩MD-05
-  - 🇳🇴挪威-01
-  - 🇨🇿捷克-02
-  - 🇮🇹意大利-01
-  - 🇲🇾马来西亚-08
-  - 🇲🇩MD-06
-  - 🇭🇰香港-09
-  - 🇺🇸美国-46
-  - 🇹🇷土耳其-02
-  - 🇹🇼台湾-03
-  - 🇦🇺澳大利亚-03
-  - 🇺🇸美国-47
-  - 🇺🇸美国-48
-  - 🇸🇬新加坡-05
-  - 🇺🇸美国-49
-  - 🇰🇷韩国-02
-  - 🇯🇵日本-04
-  - 🇩🇰丹麦-02
-  - 🇺🇸美国-50
-  - 🇺🇸美国-51
-  - 🇸🇬新加坡-06
-  - 🇰🇷韩国-03
-  - 🇺🇸美国-52
-  - 🇺🇸美国-53
-  - 🇺🇸美国-54
   - 🇰🇷韩国-04
-  - 🇭🇰香港-10
-  - 🇺🇸美国-55
-  - 🇨🇭瑞士-01
-  - 🇹🇷土耳其-03
-  - 🇪🇸西班牙-02
-  - 🇦🇹奥地利-02
-  - 🇰🇷韩国-05
-  - 🇺🇸美国-56
-  - 🇭🇰香港-11
-  - 🇳🇿新西兰-01
-  - 🇽🇽未知-01
-  - 🇺🇸美国-57
-  - 🇺🇸美国-58
-  - 🇺🇸美国-59
-  - 🇭🇰香港-12
-  - 🇺🇸美国-60
-  - 🇺🇸美国-61
-  - 🇺🇸美国-62
-  - 🇺🇸美国-63
-  - 🇽🇽未知-02
-  - 🇺🇸美国-64
-  - 🇺🇸美国-65
-  - 🇺🇸美国-66
-  - 🇺🇸美国-67
-  - 🇺🇸美国-68
-  - 🇽🇽未知-03
-  - 🇲🇽墨西哥-01
-  - 🇽🇽未知-04
-  - 🇺🇸美国-69
-  - 🇺🇸美国-70
-  - 🇳🇿新西兰-02
-  - 🇺🇸美国-71
+  - 🇺🇸美国-28
+  - 🇺🇸美国-29
   - 🇽🇽未知-05
   - 🇽🇽未知-06
+  - 🇳🇱荷兰-03
+  - 🇺🇸美国-30
+  - 🇺🇸美国-31
+  - 🇺🇸美国-32
+  - 🇺🇸美国-33
+  - 🇺🇸美国-34
   - 🇽🇽未知-07
-  - 🇺🇸美国-72
-  - 🇽🇽未知-08
-  - 🇺🇸美国-73
-  - 🇺🇸美国-74
-  - 🇽🇽未知-09
-  - 🇺🇸美国-75
-  - 🇺🇸美国-76
+  - 🇺🇸美国-35
+  - 🇺🇸美国-36
+  - 🇺🇸美国-37
+  - 🇱🇹LT-03
+  - 🇺🇸美国-38
+  - 🇺🇸美国-39
+  - 🇺🇸美国-40
+  - 🇯🇵日本-02
+  - 🇳🇱荷兰-04
+  - 🇺🇸美国-41
+  - 🇺🇸美国-42
+  - 🇺🇸美国-43
+  - 🇯🇵日本-03
+  - 🇯🇵日本-04
+  - 🇺🇸美国-44
   - 🇯🇵日本-05
   - 🇯🇵日本-06
-  - 🇺🇸美国-77
-  - 🇸🇨SC-01
-  - 🇺🇸美国-78
-  - 🇺🇸美国-79
-  - 🇰🇷韩国-06
-  - 🇮🇷IR-01
-  - 🇺🇸美国-80
-  - 🇺🇸美国-81
-  - 🇺🇸美国-82
-  - 🇺🇸美国-83
-  - 🇺🇸美国-84
-  - 🇺🇸美国-85
-  - 🇽🇽未知-10
-  - 🇲🇾马来西亚-09
-  - 🇺🇸美国-86
-  - 🇨🇾CY-04
-  - 🇫🇮芬兰-08
-  - 🇺🇸美国-87
-  - 🇮🇳印度-03
-  - 🇽🇽未知-11
-  - 🇺🇸美国-88
-  - 🇽🇽未知-12
-  - 🇸🇨SC-02
-  - 🇺🇸美国-89
-  - 🇺🇸美国-90
-  - 🇺🇸美国-91
+  - 🇺🇸美国-45
+  - 🇭🇰香港-02
+  - 🇹🇼台湾-01
+  - 🇮🇩印尼-01
+  - 🇯🇵日本-07
+  - 🇺🇸美国-46
+  - 🇺🇸美国-47
+  - 🇺🇸美国-48
+  - 🇲🇾马来西亚-01
+  - 🇲🇾马来西亚-02
+  - 🇭🇰香港-03
+  - 🇮🇩印尼-02
+  - 🇮🇩印尼-03
+  - 🇺🇸美国-49
+  - 🇫🇷法国-01
+  - 🇫🇷法国-02
+  - 🇨🇭瑞士-02
+  - 🇺🇸美国-50
+  - 🇺🇸美国-51
+  - 🇱🇻LV-01
+  - 🇺🇸美国-52
+  - 🇨🇭瑞士-03
+  - 🇳🇱荷兰-05
+  - 🇮🇶IQ-01
+  - 🇲🇩MD-01
+  - 🇺🇸美国-53
+  - 🇭🇰香港-04
+  - 🇭🇰香港-05
+  - 🇺🇸美国-54
+  - 🇺🇸美国-55
+  - 🇺🇸美国-56
+  - 🇺🇸美国-57
+  - 🇦🇷阿根廷-01
+  - 🇺🇸美国-58
+  - 🇲🇾马来西亚-03
+  - 🇲🇾马来西亚-04
+  - 🇭🇰香港-06
+  - 🇲🇩MD-02
+  - 🇵🇱波兰-01
+  - 🇭🇰香港-07
+  - 🇲🇩MD-03
+  - 🇲🇩MD-04
+  - 🇲🇾马来西亚-05
+  - 🇪🇪EE-01
+  - 🇺🇸美国-59
+  - 🇺🇸美国-60
+  - 🇭🇰香港-08
+  - 🇨🇭瑞士-04
+  - 🇹🇼台湾-02
+  - 🇺🇸美国-61
+  - 🇺🇸美国-62
+  - 🇮🇩印尼-04
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
 - name: 🌍 国外媒体
   type: select
   proxies:
-  - 🇸🇬新加坡-01
-  - 🇲🇾马来西亚-01
-  - 🇭🇰香港-01
-  - 🇹🇼台湾-01
-  - 🇭🇰香港-02
-  - 🇲🇾马来西亚-02
-  - 🇭🇰香港-03
-  - 🇲🇾马来西亚-03
-  - 🇲🇾马来西亚-04
-  - 🇲🇾马来西亚-05
   - 🇺🇸美国-01
-  - 🇱🇻LV-01
-  - 🇹🇭泰国-01
+  - 🇸🇬新加坡-01
+  - 🇸🇬新加坡-02
   - 🇺🇸美国-02
   - 🇺🇸美国-03
   - 🇺🇸美国-04
@@ -3608,257 +1897,138 @@ proxy-groups:
   - 🇺🇸美国-08
   - 🇺🇸美国-09
   - 🇺🇸美国-10
+  - 🇸🇬新加坡-03
+  - 🇽🇽未知-01
+  - 🇰🇷韩国-01
+  - 🇰🇷韩国-02
+  - 🇹🇭泰国-01
+  - 🇹🇭泰国-02
+  - 🇰🇷韩国-03
   - 🇺🇸美国-11
   - 🇺🇸美国-12
+  - 🇳🇿新西兰-01
   - 🇺🇸美国-13
+  - 🇹🇷土耳其-01
+  - 🇦🇺澳大利亚-01
   - 🇺🇸美国-14
+  - 🇪🇸西班牙-01
   - 🇺🇸美国-15
+  - 🇽🇽未知-02
+  - 🇯🇵日本-01
+  - 🇨🇭瑞士-01
   - 🇺🇸美国-16
   - 🇺🇸美国-17
   - 🇺🇸美国-18
+  - 🇱🇹LT-01
+  - 🇭🇰香港-01
   - 🇺🇸美国-19
   - 🇺🇸美国-20
+  - 🇽🇽未知-03
+  - 🇳🇱荷兰-01
+  - 🇸🇨SC-01
   - 🇺🇸美国-21
+  - 🇬🇧英国-01
   - 🇺🇸美国-22
+  - 🇽🇽未知-04
+  - 🇬🇧英国-02
   - 🇺🇸美国-23
+  - 🇸🇨SC-02
+  - 🇳🇱荷兰-02
+  - 🇮🇲IM-01
   - 🇺🇸美国-24
   - 🇺🇸美国-25
+  - 🇱🇹LT-02
+  - 🇸🇨SC-03
   - 🇺🇸美国-26
-  - 🇨🇦加拿大-01
   - 🇺🇸美国-27
-  - 🇨🇦加拿大-02
-  - 🇺🇸美国-28
-  - 🇨🇦加拿大-03
-  - 🇯🇵日本-01
-  - 🇹🇼台湾-02
-  - 🇯🇵日本-02
-  - 🇬🇧英国-01
-  - 🇳🇱荷兰-01
-  - 🇳🇱荷兰-02
-  - 🇳🇱荷兰-03
-  - 🇳🇱荷兰-04
-  - 🇯🇵日本-03
-  - 🇳🇱荷兰-05
-  - 🇫🇷法国-01
-  - 🇦🇺澳大利亚-01
-  - 🇫🇷法国-02
-  - 🇦🇱AL-01
-  - 🇳🇱荷兰-06
-  - 🇳🇱荷兰-07
-  - 🇦🇺澳大利亚-02
-  - 🇳🇱荷兰-08
-  - 🇳🇱荷兰-09
-  - 🇭🇰香港-04
-  - 🇳🇱荷兰-10
-  - 🇫🇷法国-03
-  - 🇺🇸美国-29
-  - 🇫🇷法国-04
-  - 🇫🇷法国-05
-  - 🇵🇱波兰-01
-  - 🇳🇱荷兰-11
-  - 🇰🇷韩国-01
-  - 🇫🇷法国-06
-  - 🇳🇱荷兰-12
-  - 🇳🇱荷兰-13
-  - 🇸🇬新加坡-02
-  - 🇳🇱荷兰-14
-  - 🇫🇮芬兰-01
-  - 🇫🇷法国-07
-  - 🇳🇱荷兰-15
-  - 🇸🇰斯洛伐克-01
-  - 🇳🇱荷兰-16
-  - 🇭🇰香港-05
-  - 🇺🇸美国-30
-  - 🇫🇷法国-08
-  - 🇸🇪瑞典-01
-  - 🇳🇱荷兰-17
-  - 🇫🇮芬兰-02
-  - 🇱🇻LV-02
-  - 🇳🇱荷兰-18
-  - 🇳🇱荷兰-19
-  - 🇺🇸美国-31
-  - 🇳🇱荷兰-20
-  - 🇲🇩MD-01
-  - 🇳🇱荷兰-21
-  - 🇳🇱荷兰-22
-  - 🇳🇱荷兰-23
-  - 🇺🇸美国-32
-  - 🇳🇱荷兰-24
-  - 🇭🇰香港-06
-  - 🇩🇰丹麦-01
-  - 🇺🇸美国-33
-  - 🇺🇸美国-34
-  - 🇫🇮芬兰-03
-  - 🇳🇱荷兰-25
-  - 🇪🇪EE-01
-  - 🇸🇪瑞典-02
-  - 🇺🇸美国-35
-  - 🇧🇬BG-01
-  - 🇮🇱以色列-01
-  - 🇸🇬新加坡-03
-  - 🇬🇧英国-02
-  - 🇺🇸美国-36
-  - 🇲🇩MD-02
-  - 🇳🇱荷兰-26
-  - 🇬🇧英国-03
-  - 🇺🇸美国-37
-  - 🇺🇸美国-38
-  - 🇲🇾马来西亚-06
-  - 🇳🇱荷兰-27
-  - 🇵🇱波兰-02
   - 🇸🇬新加坡-04
-  - 🇳🇱荷兰-28
-  - 🇨🇾CY-01
-  - 🇱🇹LT-01
-  - 🇫🇮芬兰-04
-  - 🇳🇱荷兰-29
-  - 🇭🇰香港-07
-  - 🇧🇷巴西-01
-  - 🇸🇪瑞典-03
-  - 🇲🇾马来西亚-07
-  - 🇺🇸美国-39
-  - 🇮🇱以色列-02
-  - 🇨🇾CY-02
-  - 🇮🇳印度-01
-  - 🇺🇸美国-40
-  - 🇨🇾CY-03
-  - 🇪🇸西班牙-01
-  - 🇮🇳印度-02
-  - 🇱🇻LV-03
-  - 🇦🇪阿联酋-01
-  - 🇹🇭泰国-02
-  - 🇲🇩MD-03
-  - 🇭🇰香港-08
-  - 🇺🇸美国-41
-  - 🇺🇸美国-42
-  - 🇬🇧英国-04
-  - 🇺🇸美国-43
-  - 🇺🇸美国-44
-  - 🇸🇪瑞典-04
-  - 🇫🇮芬兰-05
-  - 🇺🇦乌克兰-01
-  - 🇹🇷土耳其-01
-  - 🇫🇮芬兰-06
-  - 🇱🇻LV-04
-  - 🇨🇿捷克-01
-  - 🇺🇸美国-45
-  - 🇳🇱荷兰-30
-  - 🇲🇩MD-04
-  - 🇫🇮芬兰-07
-  - 🇬🇧英国-05
-  - 🇦🇹奥地利-01
-  - 🇲🇩MD-05
-  - 🇳🇴挪威-01
-  - 🇨🇿捷克-02
-  - 🇮🇹意大利-01
-  - 🇲🇾马来西亚-08
-  - 🇲🇩MD-06
-  - 🇭🇰香港-09
-  - 🇺🇸美国-46
-  - 🇹🇷土耳其-02
-  - 🇹🇼台湾-03
-  - 🇦🇺澳大利亚-03
-  - 🇺🇸美国-47
-  - 🇺🇸美国-48
-  - 🇸🇬新加坡-05
-  - 🇺🇸美国-49
-  - 🇰🇷韩国-02
-  - 🇯🇵日本-04
-  - 🇩🇰丹麦-02
-  - 🇺🇸美国-50
-  - 🇺🇸美国-51
-  - 🇸🇬新加坡-06
-  - 🇰🇷韩国-03
-  - 🇺🇸美国-52
-  - 🇺🇸美国-53
-  - 🇺🇸美国-54
   - 🇰🇷韩国-04
-  - 🇭🇰香港-10
-  - 🇺🇸美国-55
-  - 🇨🇭瑞士-01
-  - 🇹🇷土耳其-03
-  - 🇪🇸西班牙-02
-  - 🇦🇹奥地利-02
-  - 🇰🇷韩国-05
-  - 🇺🇸美国-56
-  - 🇭🇰香港-11
-  - 🇳🇿新西兰-01
-  - 🇽🇽未知-01
-  - 🇺🇸美国-57
-  - 🇺🇸美国-58
-  - 🇺🇸美国-59
-  - 🇭🇰香港-12
-  - 🇺🇸美国-60
-  - 🇺🇸美国-61
-  - 🇺🇸美国-62
-  - 🇺🇸美国-63
-  - 🇽🇽未知-02
-  - 🇺🇸美国-64
-  - 🇺🇸美国-65
-  - 🇺🇸美国-66
-  - 🇺🇸美国-67
-  - 🇺🇸美国-68
-  - 🇽🇽未知-03
-  - 🇲🇽墨西哥-01
-  - 🇽🇽未知-04
-  - 🇺🇸美国-69
-  - 🇺🇸美国-70
-  - 🇳🇿新西兰-02
-  - 🇺🇸美国-71
+  - 🇺🇸美国-28
+  - 🇺🇸美国-29
   - 🇽🇽未知-05
   - 🇽🇽未知-06
+  - 🇳🇱荷兰-03
+  - 🇺🇸美国-30
+  - 🇺🇸美国-31
+  - 🇺🇸美国-32
+  - 🇺🇸美国-33
+  - 🇺🇸美国-34
   - 🇽🇽未知-07
-  - 🇺🇸美国-72
-  - 🇽🇽未知-08
-  - 🇺🇸美国-73
-  - 🇺🇸美国-74
-  - 🇽🇽未知-09
-  - 🇺🇸美国-75
-  - 🇺🇸美国-76
+  - 🇺🇸美国-35
+  - 🇺🇸美国-36
+  - 🇺🇸美国-37
+  - 🇱🇹LT-03
+  - 🇺🇸美国-38
+  - 🇺🇸美国-39
+  - 🇺🇸美国-40
+  - 🇯🇵日本-02
+  - 🇳🇱荷兰-04
+  - 🇺🇸美国-41
+  - 🇺🇸美国-42
+  - 🇺🇸美国-43
+  - 🇯🇵日本-03
+  - 🇯🇵日本-04
+  - 🇺🇸美国-44
   - 🇯🇵日本-05
   - 🇯🇵日本-06
-  - 🇺🇸美国-77
-  - 🇸🇨SC-01
-  - 🇺🇸美国-78
-  - 🇺🇸美国-79
-  - 🇰🇷韩国-06
-  - 🇮🇷IR-01
-  - 🇺🇸美国-80
-  - 🇺🇸美国-81
-  - 🇺🇸美国-82
-  - 🇺🇸美国-83
-  - 🇺🇸美国-84
-  - 🇺🇸美国-85
-  - 🇽🇽未知-10
-  - 🇲🇾马来西亚-09
-  - 🇺🇸美国-86
-  - 🇨🇾CY-04
-  - 🇫🇮芬兰-08
-  - 🇺🇸美国-87
-  - 🇮🇳印度-03
-  - 🇽🇽未知-11
-  - 🇺🇸美国-88
-  - 🇽🇽未知-12
-  - 🇸🇨SC-02
-  - 🇺🇸美国-89
-  - 🇺🇸美国-90
-  - 🇺🇸美国-91
+  - 🇺🇸美国-45
+  - 🇭🇰香港-02
+  - 🇹🇼台湾-01
+  - 🇮🇩印尼-01
+  - 🇯🇵日本-07
+  - 🇺🇸美国-46
+  - 🇺🇸美国-47
+  - 🇺🇸美国-48
+  - 🇲🇾马来西亚-01
+  - 🇲🇾马来西亚-02
+  - 🇭🇰香港-03
+  - 🇮🇩印尼-02
+  - 🇮🇩印尼-03
+  - 🇺🇸美国-49
+  - 🇫🇷法国-01
+  - 🇫🇷法国-02
+  - 🇨🇭瑞士-02
+  - 🇺🇸美国-50
+  - 🇺🇸美国-51
+  - 🇱🇻LV-01
+  - 🇺🇸美国-52
+  - 🇨🇭瑞士-03
+  - 🇳🇱荷兰-05
+  - 🇮🇶IQ-01
+  - 🇲🇩MD-01
+  - 🇺🇸美国-53
+  - 🇭🇰香港-04
+  - 🇭🇰香港-05
+  - 🇺🇸美国-54
+  - 🇺🇸美国-55
+  - 🇺🇸美国-56
+  - 🇺🇸美国-57
+  - 🇦🇷阿根廷-01
+  - 🇺🇸美国-58
+  - 🇲🇾马来西亚-03
+  - 🇲🇾马来西亚-04
+  - 🇭🇰香港-06
+  - 🇲🇩MD-02
+  - 🇵🇱波兰-01
+  - 🇭🇰香港-07
+  - 🇲🇩MD-03
+  - 🇲🇩MD-04
+  - 🇲🇾马来西亚-05
+  - 🇪🇪EE-01
+  - 🇺🇸美国-59
+  - 🇺🇸美国-60
+  - 🇭🇰香港-08
+  - 🇨🇭瑞士-04
+  - 🇹🇼台湾-02
+  - 🇺🇸美国-61
+  - 🇺🇸美国-62
+  - 🇮🇩印尼-04
 - name: 📲 电报信息
   type: select
   proxies:
-  - 🇸🇬新加坡-01
-  - 🇲🇾马来西亚-01
-  - 🇭🇰香港-01
-  - 🇹🇼台湾-01
-  - 🇭🇰香港-02
-  - 🇲🇾马来西亚-02
-  - 🇭🇰香港-03
-  - 🇲🇾马来西亚-03
-  - 🇲🇾马来西亚-04
-  - 🇲🇾马来西亚-05
   - 🇺🇸美国-01
-  - 🇱🇻LV-01
-  - 🇹🇭泰国-01
+  - 🇸🇬新加坡-01
+  - 🇸🇬新加坡-02
   - 🇺🇸美国-02
   - 🇺🇸美国-03
   - 🇺🇸美国-04
@@ -3868,257 +2038,138 @@ proxy-groups:
   - 🇺🇸美国-08
   - 🇺🇸美国-09
   - 🇺🇸美国-10
+  - 🇸🇬新加坡-03
+  - 🇽🇽未知-01
+  - 🇰🇷韩国-01
+  - 🇰🇷韩国-02
+  - 🇹🇭泰国-01
+  - 🇹🇭泰国-02
+  - 🇰🇷韩国-03
   - 🇺🇸美国-11
   - 🇺🇸美国-12
+  - 🇳🇿新西兰-01
   - 🇺🇸美国-13
+  - 🇹🇷土耳其-01
+  - 🇦🇺澳大利亚-01
   - 🇺🇸美国-14
+  - 🇪🇸西班牙-01
   - 🇺🇸美国-15
+  - 🇽🇽未知-02
+  - 🇯🇵日本-01
+  - 🇨🇭瑞士-01
   - 🇺🇸美国-16
   - 🇺🇸美国-17
   - 🇺🇸美国-18
+  - 🇱🇹LT-01
+  - 🇭🇰香港-01
   - 🇺🇸美国-19
   - 🇺🇸美国-20
+  - 🇽🇽未知-03
+  - 🇳🇱荷兰-01
+  - 🇸🇨SC-01
   - 🇺🇸美国-21
+  - 🇬🇧英国-01
   - 🇺🇸美国-22
+  - 🇽🇽未知-04
+  - 🇬🇧英国-02
   - 🇺🇸美国-23
+  - 🇸🇨SC-02
+  - 🇳🇱荷兰-02
+  - 🇮🇲IM-01
   - 🇺🇸美国-24
   - 🇺🇸美国-25
+  - 🇱🇹LT-02
+  - 🇸🇨SC-03
   - 🇺🇸美国-26
-  - 🇨🇦加拿大-01
   - 🇺🇸美国-27
-  - 🇨🇦加拿大-02
-  - 🇺🇸美国-28
-  - 🇨🇦加拿大-03
-  - 🇯🇵日本-01
-  - 🇹🇼台湾-02
-  - 🇯🇵日本-02
-  - 🇬🇧英国-01
-  - 🇳🇱荷兰-01
-  - 🇳🇱荷兰-02
-  - 🇳🇱荷兰-03
-  - 🇳🇱荷兰-04
-  - 🇯🇵日本-03
-  - 🇳🇱荷兰-05
-  - 🇫🇷法国-01
-  - 🇦🇺澳大利亚-01
-  - 🇫🇷法国-02
-  - 🇦🇱AL-01
-  - 🇳🇱荷兰-06
-  - 🇳🇱荷兰-07
-  - 🇦🇺澳大利亚-02
-  - 🇳🇱荷兰-08
-  - 🇳🇱荷兰-09
-  - 🇭🇰香港-04
-  - 🇳🇱荷兰-10
-  - 🇫🇷法国-03
-  - 🇺🇸美国-29
-  - 🇫🇷法国-04
-  - 🇫🇷法国-05
-  - 🇵🇱波兰-01
-  - 🇳🇱荷兰-11
-  - 🇰🇷韩国-01
-  - 🇫🇷法国-06
-  - 🇳🇱荷兰-12
-  - 🇳🇱荷兰-13
-  - 🇸🇬新加坡-02
-  - 🇳🇱荷兰-14
-  - 🇫🇮芬兰-01
-  - 🇫🇷法国-07
-  - 🇳🇱荷兰-15
-  - 🇸🇰斯洛伐克-01
-  - 🇳🇱荷兰-16
-  - 🇭🇰香港-05
-  - 🇺🇸美国-30
-  - 🇫🇷法国-08
-  - 🇸🇪瑞典-01
-  - 🇳🇱荷兰-17
-  - 🇫🇮芬兰-02
-  - 🇱🇻LV-02
-  - 🇳🇱荷兰-18
-  - 🇳🇱荷兰-19
-  - 🇺🇸美国-31
-  - 🇳🇱荷兰-20
-  - 🇲🇩MD-01
-  - 🇳🇱荷兰-21
-  - 🇳🇱荷兰-22
-  - 🇳🇱荷兰-23
-  - 🇺🇸美国-32
-  - 🇳🇱荷兰-24
-  - 🇭🇰香港-06
-  - 🇩🇰丹麦-01
-  - 🇺🇸美国-33
-  - 🇺🇸美国-34
-  - 🇫🇮芬兰-03
-  - 🇳🇱荷兰-25
-  - 🇪🇪EE-01
-  - 🇸🇪瑞典-02
-  - 🇺🇸美国-35
-  - 🇧🇬BG-01
-  - 🇮🇱以色列-01
-  - 🇸🇬新加坡-03
-  - 🇬🇧英国-02
-  - 🇺🇸美国-36
-  - 🇲🇩MD-02
-  - 🇳🇱荷兰-26
-  - 🇬🇧英国-03
-  - 🇺🇸美国-37
-  - 🇺🇸美国-38
-  - 🇲🇾马来西亚-06
-  - 🇳🇱荷兰-27
-  - 🇵🇱波兰-02
   - 🇸🇬新加坡-04
-  - 🇳🇱荷兰-28
-  - 🇨🇾CY-01
-  - 🇱🇹LT-01
-  - 🇫🇮芬兰-04
-  - 🇳🇱荷兰-29
-  - 🇭🇰香港-07
-  - 🇧🇷巴西-01
-  - 🇸🇪瑞典-03
-  - 🇲🇾马来西亚-07
-  - 🇺🇸美国-39
-  - 🇮🇱以色列-02
-  - 🇨🇾CY-02
-  - 🇮🇳印度-01
-  - 🇺🇸美国-40
-  - 🇨🇾CY-03
-  - 🇪🇸西班牙-01
-  - 🇮🇳印度-02
-  - 🇱🇻LV-03
-  - 🇦🇪阿联酋-01
-  - 🇹🇭泰国-02
-  - 🇲🇩MD-03
-  - 🇭🇰香港-08
-  - 🇺🇸美国-41
-  - 🇺🇸美国-42
-  - 🇬🇧英国-04
-  - 🇺🇸美国-43
-  - 🇺🇸美国-44
-  - 🇸🇪瑞典-04
-  - 🇫🇮芬兰-05
-  - 🇺🇦乌克兰-01
-  - 🇹🇷土耳其-01
-  - 🇫🇮芬兰-06
-  - 🇱🇻LV-04
-  - 🇨🇿捷克-01
-  - 🇺🇸美国-45
-  - 🇳🇱荷兰-30
-  - 🇲🇩MD-04
-  - 🇫🇮芬兰-07
-  - 🇬🇧英国-05
-  - 🇦🇹奥地利-01
-  - 🇲🇩MD-05
-  - 🇳🇴挪威-01
-  - 🇨🇿捷克-02
-  - 🇮🇹意大利-01
-  - 🇲🇾马来西亚-08
-  - 🇲🇩MD-06
-  - 🇭🇰香港-09
-  - 🇺🇸美国-46
-  - 🇹🇷土耳其-02
-  - 🇹🇼台湾-03
-  - 🇦🇺澳大利亚-03
-  - 🇺🇸美国-47
-  - 🇺🇸美国-48
-  - 🇸🇬新加坡-05
-  - 🇺🇸美国-49
-  - 🇰🇷韩国-02
-  - 🇯🇵日本-04
-  - 🇩🇰丹麦-02
-  - 🇺🇸美国-50
-  - 🇺🇸美国-51
-  - 🇸🇬新加坡-06
-  - 🇰🇷韩国-03
-  - 🇺🇸美国-52
-  - 🇺🇸美国-53
-  - 🇺🇸美国-54
   - 🇰🇷韩国-04
-  - 🇭🇰香港-10
-  - 🇺🇸美国-55
-  - 🇨🇭瑞士-01
-  - 🇹🇷土耳其-03
-  - 🇪🇸西班牙-02
-  - 🇦🇹奥地利-02
-  - 🇰🇷韩国-05
-  - 🇺🇸美国-56
-  - 🇭🇰香港-11
-  - 🇳🇿新西兰-01
-  - 🇽🇽未知-01
-  - 🇺🇸美国-57
-  - 🇺🇸美国-58
-  - 🇺🇸美国-59
-  - 🇭🇰香港-12
-  - 🇺🇸美国-60
-  - 🇺🇸美国-61
-  - 🇺🇸美国-62
-  - 🇺🇸美国-63
-  - 🇽🇽未知-02
-  - 🇺🇸美国-64
-  - 🇺🇸美国-65
-  - 🇺🇸美国-66
-  - 🇺🇸美国-67
-  - 🇺🇸美国-68
-  - 🇽🇽未知-03
-  - 🇲🇽墨西哥-01
-  - 🇽🇽未知-04
-  - 🇺🇸美国-69
-  - 🇺🇸美国-70
-  - 🇳🇿新西兰-02
-  - 🇺🇸美国-71
+  - 🇺🇸美国-28
+  - 🇺🇸美国-29
   - 🇽🇽未知-05
   - 🇽🇽未知-06
+  - 🇳🇱荷兰-03
+  - 🇺🇸美国-30
+  - 🇺🇸美国-31
+  - 🇺🇸美国-32
+  - 🇺🇸美国-33
+  - 🇺🇸美国-34
   - 🇽🇽未知-07
-  - 🇺🇸美国-72
-  - 🇽🇽未知-08
-  - 🇺🇸美国-73
-  - 🇺🇸美国-74
-  - 🇽🇽未知-09
-  - 🇺🇸美国-75
-  - 🇺🇸美国-76
+  - 🇺🇸美国-35
+  - 🇺🇸美国-36
+  - 🇺🇸美国-37
+  - 🇱🇹LT-03
+  - 🇺🇸美国-38
+  - 🇺🇸美国-39
+  - 🇺🇸美国-40
+  - 🇯🇵日本-02
+  - 🇳🇱荷兰-04
+  - 🇺🇸美国-41
+  - 🇺🇸美国-42
+  - 🇺🇸美国-43
+  - 🇯🇵日本-03
+  - 🇯🇵日本-04
+  - 🇺🇸美国-44
   - 🇯🇵日本-05
   - 🇯🇵日本-06
-  - 🇺🇸美国-77
-  - 🇸🇨SC-01
-  - 🇺🇸美国-78
-  - 🇺🇸美国-79
-  - 🇰🇷韩国-06
-  - 🇮🇷IR-01
-  - 🇺🇸美国-80
-  - 🇺🇸美国-81
-  - 🇺🇸美国-82
-  - 🇺🇸美国-83
-  - 🇺🇸美国-84
-  - 🇺🇸美国-85
-  - 🇽🇽未知-10
-  - 🇲🇾马来西亚-09
-  - 🇺🇸美国-86
-  - 🇨🇾CY-04
-  - 🇫🇮芬兰-08
-  - 🇺🇸美国-87
-  - 🇮🇳印度-03
-  - 🇽🇽未知-11
-  - 🇺🇸美国-88
-  - 🇽🇽未知-12
-  - 🇸🇨SC-02
-  - 🇺🇸美国-89
-  - 🇺🇸美国-90
-  - 🇺🇸美国-91
+  - 🇺🇸美国-45
+  - 🇭🇰香港-02
+  - 🇹🇼台湾-01
+  - 🇮🇩印尼-01
+  - 🇯🇵日本-07
+  - 🇺🇸美国-46
+  - 🇺🇸美国-47
+  - 🇺🇸美国-48
+  - 🇲🇾马来西亚-01
+  - 🇲🇾马来西亚-02
+  - 🇭🇰香港-03
+  - 🇮🇩印尼-02
+  - 🇮🇩印尼-03
+  - 🇺🇸美国-49
+  - 🇫🇷法国-01
+  - 🇫🇷法国-02
+  - 🇨🇭瑞士-02
+  - 🇺🇸美国-50
+  - 🇺🇸美国-51
+  - 🇱🇻LV-01
+  - 🇺🇸美国-52
+  - 🇨🇭瑞士-03
+  - 🇳🇱荷兰-05
+  - 🇮🇶IQ-01
+  - 🇲🇩MD-01
+  - 🇺🇸美国-53
+  - 🇭🇰香港-04
+  - 🇭🇰香港-05
+  - 🇺🇸美国-54
+  - 🇺🇸美国-55
+  - 🇺🇸美国-56
+  - 🇺🇸美国-57
+  - 🇦🇷阿根廷-01
+  - 🇺🇸美国-58
+  - 🇲🇾马来西亚-03
+  - 🇲🇾马来西亚-04
+  - 🇭🇰香港-06
+  - 🇲🇩MD-02
+  - 🇵🇱波兰-01
+  - 🇭🇰香港-07
+  - 🇲🇩MD-03
+  - 🇲🇩MD-04
+  - 🇲🇾马来西亚-05
+  - 🇪🇪EE-01
+  - 🇺🇸美国-59
+  - 🇺🇸美国-60
+  - 🇭🇰香港-08
+  - 🇨🇭瑞士-04
+  - 🇹🇼台湾-02
+  - 🇺🇸美国-61
+  - 🇺🇸美国-62
+  - 🇮🇩印尼-04
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
-  - 🇸🇬新加坡-01
-  - 🇲🇾马来西亚-01
-  - 🇭🇰香港-01
-  - 🇹🇼台湾-01
-  - 🇭🇰香港-02
-  - 🇲🇾马来西亚-02
-  - 🇭🇰香港-03
-  - 🇲🇾马来西亚-03
-  - 🇲🇾马来西亚-04
-  - 🇲🇾马来西亚-05
   - 🇺🇸美国-01
-  - 🇱🇻LV-01
-  - 🇹🇭泰国-01
+  - 🇸🇬新加坡-01
+  - 🇸🇬新加坡-02
   - 🇺🇸美国-02
   - 🇺🇸美国-03
   - 🇺🇸美国-04
@@ -4128,257 +2179,138 @@ proxy-groups:
   - 🇺🇸美国-08
   - 🇺🇸美国-09
   - 🇺🇸美国-10
+  - 🇸🇬新加坡-03
+  - 🇽🇽未知-01
+  - 🇰🇷韩国-01
+  - 🇰🇷韩国-02
+  - 🇹🇭泰国-01
+  - 🇹🇭泰国-02
+  - 🇰🇷韩国-03
   - 🇺🇸美国-11
   - 🇺🇸美国-12
+  - 🇳🇿新西兰-01
   - 🇺🇸美国-13
+  - 🇹🇷土耳其-01
+  - 🇦🇺澳大利亚-01
   - 🇺🇸美国-14
+  - 🇪🇸西班牙-01
   - 🇺🇸美国-15
+  - 🇽🇽未知-02
+  - 🇯🇵日本-01
+  - 🇨🇭瑞士-01
   - 🇺🇸美国-16
   - 🇺🇸美国-17
   - 🇺🇸美国-18
+  - 🇱🇹LT-01
+  - 🇭🇰香港-01
   - 🇺🇸美国-19
   - 🇺🇸美国-20
+  - 🇽🇽未知-03
+  - 🇳🇱荷兰-01
+  - 🇸🇨SC-01
   - 🇺🇸美国-21
+  - 🇬🇧英国-01
   - 🇺🇸美国-22
+  - 🇽🇽未知-04
+  - 🇬🇧英国-02
   - 🇺🇸美国-23
+  - 🇸🇨SC-02
+  - 🇳🇱荷兰-02
+  - 🇮🇲IM-01
   - 🇺🇸美国-24
   - 🇺🇸美国-25
+  - 🇱🇹LT-02
+  - 🇸🇨SC-03
   - 🇺🇸美国-26
-  - 🇨🇦加拿大-01
   - 🇺🇸美国-27
-  - 🇨🇦加拿大-02
-  - 🇺🇸美国-28
-  - 🇨🇦加拿大-03
-  - 🇯🇵日本-01
-  - 🇹🇼台湾-02
-  - 🇯🇵日本-02
-  - 🇬🇧英国-01
-  - 🇳🇱荷兰-01
-  - 🇳🇱荷兰-02
-  - 🇳🇱荷兰-03
-  - 🇳🇱荷兰-04
-  - 🇯🇵日本-03
-  - 🇳🇱荷兰-05
-  - 🇫🇷法国-01
-  - 🇦🇺澳大利亚-01
-  - 🇫🇷法国-02
-  - 🇦🇱AL-01
-  - 🇳🇱荷兰-06
-  - 🇳🇱荷兰-07
-  - 🇦🇺澳大利亚-02
-  - 🇳🇱荷兰-08
-  - 🇳🇱荷兰-09
-  - 🇭🇰香港-04
-  - 🇳🇱荷兰-10
-  - 🇫🇷法国-03
-  - 🇺🇸美国-29
-  - 🇫🇷法国-04
-  - 🇫🇷法国-05
-  - 🇵🇱波兰-01
-  - 🇳🇱荷兰-11
-  - 🇰🇷韩国-01
-  - 🇫🇷法国-06
-  - 🇳🇱荷兰-12
-  - 🇳🇱荷兰-13
-  - 🇸🇬新加坡-02
-  - 🇳🇱荷兰-14
-  - 🇫🇮芬兰-01
-  - 🇫🇷法国-07
-  - 🇳🇱荷兰-15
-  - 🇸🇰斯洛伐克-01
-  - 🇳🇱荷兰-16
-  - 🇭🇰香港-05
-  - 🇺🇸美国-30
-  - 🇫🇷法国-08
-  - 🇸🇪瑞典-01
-  - 🇳🇱荷兰-17
-  - 🇫🇮芬兰-02
-  - 🇱🇻LV-02
-  - 🇳🇱荷兰-18
-  - 🇳🇱荷兰-19
-  - 🇺🇸美国-31
-  - 🇳🇱荷兰-20
-  - 🇲🇩MD-01
-  - 🇳🇱荷兰-21
-  - 🇳🇱荷兰-22
-  - 🇳🇱荷兰-23
-  - 🇺🇸美国-32
-  - 🇳🇱荷兰-24
-  - 🇭🇰香港-06
-  - 🇩🇰丹麦-01
-  - 🇺🇸美国-33
-  - 🇺🇸美国-34
-  - 🇫🇮芬兰-03
-  - 🇳🇱荷兰-25
-  - 🇪🇪EE-01
-  - 🇸🇪瑞典-02
-  - 🇺🇸美国-35
-  - 🇧🇬BG-01
-  - 🇮🇱以色列-01
-  - 🇸🇬新加坡-03
-  - 🇬🇧英国-02
-  - 🇺🇸美国-36
-  - 🇲🇩MD-02
-  - 🇳🇱荷兰-26
-  - 🇬🇧英国-03
-  - 🇺🇸美国-37
-  - 🇺🇸美国-38
-  - 🇲🇾马来西亚-06
-  - 🇳🇱荷兰-27
-  - 🇵🇱波兰-02
   - 🇸🇬新加坡-04
-  - 🇳🇱荷兰-28
-  - 🇨🇾CY-01
-  - 🇱🇹LT-01
-  - 🇫🇮芬兰-04
-  - 🇳🇱荷兰-29
-  - 🇭🇰香港-07
-  - 🇧🇷巴西-01
-  - 🇸🇪瑞典-03
-  - 🇲🇾马来西亚-07
-  - 🇺🇸美国-39
-  - 🇮🇱以色列-02
-  - 🇨🇾CY-02
-  - 🇮🇳印度-01
-  - 🇺🇸美国-40
-  - 🇨🇾CY-03
-  - 🇪🇸西班牙-01
-  - 🇮🇳印度-02
-  - 🇱🇻LV-03
-  - 🇦🇪阿联酋-01
-  - 🇹🇭泰国-02
-  - 🇲🇩MD-03
-  - 🇭🇰香港-08
-  - 🇺🇸美国-41
-  - 🇺🇸美国-42
-  - 🇬🇧英国-04
-  - 🇺🇸美国-43
-  - 🇺🇸美国-44
-  - 🇸🇪瑞典-04
-  - 🇫🇮芬兰-05
-  - 🇺🇦乌克兰-01
-  - 🇹🇷土耳其-01
-  - 🇫🇮芬兰-06
-  - 🇱🇻LV-04
-  - 🇨🇿捷克-01
-  - 🇺🇸美国-45
-  - 🇳🇱荷兰-30
-  - 🇲🇩MD-04
-  - 🇫🇮芬兰-07
-  - 🇬🇧英国-05
-  - 🇦🇹奥地利-01
-  - 🇲🇩MD-05
-  - 🇳🇴挪威-01
-  - 🇨🇿捷克-02
-  - 🇮🇹意大利-01
-  - 🇲🇾马来西亚-08
-  - 🇲🇩MD-06
-  - 🇭🇰香港-09
-  - 🇺🇸美国-46
-  - 🇹🇷土耳其-02
-  - 🇹🇼台湾-03
-  - 🇦🇺澳大利亚-03
-  - 🇺🇸美国-47
-  - 🇺🇸美国-48
-  - 🇸🇬新加坡-05
-  - 🇺🇸美国-49
-  - 🇰🇷韩国-02
-  - 🇯🇵日本-04
-  - 🇩🇰丹麦-02
-  - 🇺🇸美国-50
-  - 🇺🇸美国-51
-  - 🇸🇬新加坡-06
-  - 🇰🇷韩国-03
-  - 🇺🇸美国-52
-  - 🇺🇸美国-53
-  - 🇺🇸美国-54
   - 🇰🇷韩国-04
-  - 🇭🇰香港-10
-  - 🇺🇸美国-55
-  - 🇨🇭瑞士-01
-  - 🇹🇷土耳其-03
-  - 🇪🇸西班牙-02
-  - 🇦🇹奥地利-02
-  - 🇰🇷韩国-05
-  - 🇺🇸美国-56
-  - 🇭🇰香港-11
-  - 🇳🇿新西兰-01
-  - 🇽🇽未知-01
-  - 🇺🇸美国-57
-  - 🇺🇸美国-58
-  - 🇺🇸美国-59
-  - 🇭🇰香港-12
-  - 🇺🇸美国-60
-  - 🇺🇸美国-61
-  - 🇺🇸美国-62
-  - 🇺🇸美国-63
-  - 🇽🇽未知-02
-  - 🇺🇸美国-64
-  - 🇺🇸美国-65
-  - 🇺🇸美国-66
-  - 🇺🇸美国-67
-  - 🇺🇸美国-68
-  - 🇽🇽未知-03
-  - 🇲🇽墨西哥-01
-  - 🇽🇽未知-04
-  - 🇺🇸美国-69
-  - 🇺🇸美国-70
-  - 🇳🇿新西兰-02
-  - 🇺🇸美国-71
+  - 🇺🇸美国-28
+  - 🇺🇸美国-29
   - 🇽🇽未知-05
   - 🇽🇽未知-06
+  - 🇳🇱荷兰-03
+  - 🇺🇸美国-30
+  - 🇺🇸美国-31
+  - 🇺🇸美国-32
+  - 🇺🇸美国-33
+  - 🇺🇸美国-34
   - 🇽🇽未知-07
-  - 🇺🇸美国-72
-  - 🇽🇽未知-08
-  - 🇺🇸美国-73
-  - 🇺🇸美国-74
-  - 🇽🇽未知-09
-  - 🇺🇸美国-75
-  - 🇺🇸美国-76
+  - 🇺🇸美国-35
+  - 🇺🇸美国-36
+  - 🇺🇸美国-37
+  - 🇱🇹LT-03
+  - 🇺🇸美国-38
+  - 🇺🇸美国-39
+  - 🇺🇸美国-40
+  - 🇯🇵日本-02
+  - 🇳🇱荷兰-04
+  - 🇺🇸美国-41
+  - 🇺🇸美国-42
+  - 🇺🇸美国-43
+  - 🇯🇵日本-03
+  - 🇯🇵日本-04
+  - 🇺🇸美国-44
   - 🇯🇵日本-05
   - 🇯🇵日本-06
-  - 🇺🇸美国-77
-  - 🇸🇨SC-01
-  - 🇺🇸美国-78
-  - 🇺🇸美国-79
-  - 🇰🇷韩国-06
-  - 🇮🇷IR-01
-  - 🇺🇸美国-80
-  - 🇺🇸美国-81
-  - 🇺🇸美国-82
-  - 🇺🇸美国-83
-  - 🇺🇸美国-84
-  - 🇺🇸美国-85
-  - 🇽🇽未知-10
-  - 🇲🇾马来西亚-09
-  - 🇺🇸美国-86
-  - 🇨🇾CY-04
-  - 🇫🇮芬兰-08
-  - 🇺🇸美国-87
-  - 🇮🇳印度-03
-  - 🇽🇽未知-11
-  - 🇺🇸美国-88
-  - 🇽🇽未知-12
-  - 🇸🇨SC-02
-  - 🇺🇸美国-89
-  - 🇺🇸美国-90
-  - 🇺🇸美国-91
+  - 🇺🇸美国-45
+  - 🇭🇰香港-02
+  - 🇹🇼台湾-01
+  - 🇮🇩印尼-01
+  - 🇯🇵日本-07
+  - 🇺🇸美国-46
+  - 🇺🇸美国-47
+  - 🇺🇸美国-48
+  - 🇲🇾马来西亚-01
+  - 🇲🇾马来西亚-02
+  - 🇭🇰香港-03
+  - 🇮🇩印尼-02
+  - 🇮🇩印尼-03
+  - 🇺🇸美国-49
+  - 🇫🇷法国-01
+  - 🇫🇷法国-02
+  - 🇨🇭瑞士-02
+  - 🇺🇸美国-50
+  - 🇺🇸美国-51
+  - 🇱🇻LV-01
+  - 🇺🇸美国-52
+  - 🇨🇭瑞士-03
+  - 🇳🇱荷兰-05
+  - 🇮🇶IQ-01
+  - 🇲🇩MD-01
+  - 🇺🇸美国-53
+  - 🇭🇰香港-04
+  - 🇭🇰香港-05
+  - 🇺🇸美国-54
+  - 🇺🇸美国-55
+  - 🇺🇸美国-56
+  - 🇺🇸美国-57
+  - 🇦🇷阿根廷-01
+  - 🇺🇸美国-58
+  - 🇲🇾马来西亚-03
+  - 🇲🇾马来西亚-04
+  - 🇭🇰香港-06
+  - 🇲🇩MD-02
+  - 🇵🇱波兰-01
+  - 🇭🇰香港-07
+  - 🇲🇩MD-03
+  - 🇲🇩MD-04
+  - 🇲🇾马来西亚-05
+  - 🇪🇪EE-01
+  - 🇺🇸美国-59
+  - 🇺🇸美国-60
+  - 🇭🇰香港-08
+  - 🇨🇭瑞士-04
+  - 🇹🇼台湾-02
+  - 🇺🇸美国-61
+  - 🇺🇸美国-62
+  - 🇮🇩印尼-04
 - name: 🍎 苹果服务
   type: select
   proxies:
-  - 🇸🇬新加坡-01
-  - 🇲🇾马来西亚-01
-  - 🇭🇰香港-01
-  - 🇹🇼台湾-01
-  - 🇭🇰香港-02
-  - 🇲🇾马来西亚-02
-  - 🇭🇰香港-03
-  - 🇲🇾马来西亚-03
-  - 🇲🇾马来西亚-04
-  - 🇲🇾马来西亚-05
   - 🇺🇸美国-01
-  - 🇱🇻LV-01
-  - 🇹🇭泰国-01
+  - 🇸🇬新加坡-01
+  - 🇸🇬新加坡-02
   - 🇺🇸美国-02
   - 🇺🇸美国-03
   - 🇺🇸美国-04
@@ -4388,241 +2320,132 @@ proxy-groups:
   - 🇺🇸美国-08
   - 🇺🇸美国-09
   - 🇺🇸美国-10
+  - 🇸🇬新加坡-03
+  - 🇽🇽未知-01
+  - 🇰🇷韩国-01
+  - 🇰🇷韩国-02
+  - 🇹🇭泰国-01
+  - 🇹🇭泰国-02
+  - 🇰🇷韩国-03
   - 🇺🇸美国-11
   - 🇺🇸美国-12
+  - 🇳🇿新西兰-01
   - 🇺🇸美国-13
+  - 🇹🇷土耳其-01
+  - 🇦🇺澳大利亚-01
   - 🇺🇸美国-14
+  - 🇪🇸西班牙-01
   - 🇺🇸美国-15
+  - 🇽🇽未知-02
+  - 🇯🇵日本-01
+  - 🇨🇭瑞士-01
   - 🇺🇸美国-16
   - 🇺🇸美国-17
   - 🇺🇸美国-18
+  - 🇱🇹LT-01
+  - 🇭🇰香港-01
   - 🇺🇸美国-19
   - 🇺🇸美国-20
+  - 🇽🇽未知-03
+  - 🇳🇱荷兰-01
+  - 🇸🇨SC-01
   - 🇺🇸美国-21
+  - 🇬🇧英国-01
   - 🇺🇸美国-22
+  - 🇽🇽未知-04
+  - 🇬🇧英国-02
   - 🇺🇸美国-23
+  - 🇸🇨SC-02
+  - 🇳🇱荷兰-02
+  - 🇮🇲IM-01
   - 🇺🇸美国-24
   - 🇺🇸美国-25
+  - 🇱🇹LT-02
+  - 🇸🇨SC-03
   - 🇺🇸美国-26
-  - 🇨🇦加拿大-01
   - 🇺🇸美国-27
-  - 🇨🇦加拿大-02
-  - 🇺🇸美国-28
-  - 🇨🇦加拿大-03
-  - 🇯🇵日本-01
-  - 🇹🇼台湾-02
-  - 🇯🇵日本-02
-  - 🇬🇧英国-01
-  - 🇳🇱荷兰-01
-  - 🇳🇱荷兰-02
-  - 🇳🇱荷兰-03
-  - 🇳🇱荷兰-04
-  - 🇯🇵日本-03
-  - 🇳🇱荷兰-05
-  - 🇫🇷法国-01
-  - 🇦🇺澳大利亚-01
-  - 🇫🇷法国-02
-  - 🇦🇱AL-01
-  - 🇳🇱荷兰-06
-  - 🇳🇱荷兰-07
-  - 🇦🇺澳大利亚-02
-  - 🇳🇱荷兰-08
-  - 🇳🇱荷兰-09
-  - 🇭🇰香港-04
-  - 🇳🇱荷兰-10
-  - 🇫🇷法国-03
-  - 🇺🇸美国-29
-  - 🇫🇷法国-04
-  - 🇫🇷法国-05
-  - 🇵🇱波兰-01
-  - 🇳🇱荷兰-11
-  - 🇰🇷韩国-01
-  - 🇫🇷法国-06
-  - 🇳🇱荷兰-12
-  - 🇳🇱荷兰-13
-  - 🇸🇬新加坡-02
-  - 🇳🇱荷兰-14
-  - 🇫🇮芬兰-01
-  - 🇫🇷法国-07
-  - 🇳🇱荷兰-15
-  - 🇸🇰斯洛伐克-01
-  - 🇳🇱荷兰-16
-  - 🇭🇰香港-05
-  - 🇺🇸美国-30
-  - 🇫🇷法国-08
-  - 🇸🇪瑞典-01
-  - 🇳🇱荷兰-17
-  - 🇫🇮芬兰-02
-  - 🇱🇻LV-02
-  - 🇳🇱荷兰-18
-  - 🇳🇱荷兰-19
-  - 🇺🇸美国-31
-  - 🇳🇱荷兰-20
-  - 🇲🇩MD-01
-  - 🇳🇱荷兰-21
-  - 🇳🇱荷兰-22
-  - 🇳🇱荷兰-23
-  - 🇺🇸美国-32
-  - 🇳🇱荷兰-24
-  - 🇭🇰香港-06
-  - 🇩🇰丹麦-01
-  - 🇺🇸美国-33
-  - 🇺🇸美国-34
-  - 🇫🇮芬兰-03
-  - 🇳🇱荷兰-25
-  - 🇪🇪EE-01
-  - 🇸🇪瑞典-02
-  - 🇺🇸美国-35
-  - 🇧🇬BG-01
-  - 🇮🇱以色列-01
-  - 🇸🇬新加坡-03
-  - 🇬🇧英国-02
-  - 🇺🇸美国-36
-  - 🇲🇩MD-02
-  - 🇳🇱荷兰-26
-  - 🇬🇧英国-03
-  - 🇺🇸美国-37
-  - 🇺🇸美国-38
-  - 🇲🇾马来西亚-06
-  - 🇳🇱荷兰-27
-  - 🇵🇱波兰-02
   - 🇸🇬新加坡-04
-  - 🇳🇱荷兰-28
-  - 🇨🇾CY-01
-  - 🇱🇹LT-01
-  - 🇫🇮芬兰-04
-  - 🇳🇱荷兰-29
-  - 🇭🇰香港-07
-  - 🇧🇷巴西-01
-  - 🇸🇪瑞典-03
-  - 🇲🇾马来西亚-07
-  - 🇺🇸美国-39
-  - 🇮🇱以色列-02
-  - 🇨🇾CY-02
-  - 🇮🇳印度-01
-  - 🇺🇸美国-40
-  - 🇨🇾CY-03
-  - 🇪🇸西班牙-01
-  - 🇮🇳印度-02
-  - 🇱🇻LV-03
-  - 🇦🇪阿联酋-01
-  - 🇹🇭泰国-02
-  - 🇲🇩MD-03
-  - 🇭🇰香港-08
-  - 🇺🇸美国-41
-  - 🇺🇸美国-42
-  - 🇬🇧英国-04
-  - 🇺🇸美国-43
-  - 🇺🇸美国-44
-  - 🇸🇪瑞典-04
-  - 🇫🇮芬兰-05
-  - 🇺🇦乌克兰-01
-  - 🇹🇷土耳其-01
-  - 🇫🇮芬兰-06
-  - 🇱🇻LV-04
-  - 🇨🇿捷克-01
-  - 🇺🇸美国-45
-  - 🇳🇱荷兰-30
-  - 🇲🇩MD-04
-  - 🇫🇮芬兰-07
-  - 🇬🇧英国-05
-  - 🇦🇹奥地利-01
-  - 🇲🇩MD-05
-  - 🇳🇴挪威-01
-  - 🇨🇿捷克-02
-  - 🇮🇹意大利-01
-  - 🇲🇾马来西亚-08
-  - 🇲🇩MD-06
-  - 🇭🇰香港-09
-  - 🇺🇸美国-46
-  - 🇹🇷土耳其-02
-  - 🇹🇼台湾-03
-  - 🇦🇺澳大利亚-03
-  - 🇺🇸美国-47
-  - 🇺🇸美国-48
-  - 🇸🇬新加坡-05
-  - 🇺🇸美国-49
-  - 🇰🇷韩国-02
-  - 🇯🇵日本-04
-  - 🇩🇰丹麦-02
-  - 🇺🇸美国-50
-  - 🇺🇸美国-51
-  - 🇸🇬新加坡-06
-  - 🇰🇷韩国-03
-  - 🇺🇸美国-52
-  - 🇺🇸美国-53
-  - 🇺🇸美国-54
   - 🇰🇷韩国-04
-  - 🇭🇰香港-10
-  - 🇺🇸美国-55
-  - 🇨🇭瑞士-01
-  - 🇹🇷土耳其-03
-  - 🇪🇸西班牙-02
-  - 🇦🇹奥地利-02
-  - 🇰🇷韩国-05
-  - 🇺🇸美国-56
-  - 🇭🇰香港-11
-  - 🇳🇿新西兰-01
-  - 🇽🇽未知-01
-  - 🇺🇸美国-57
-  - 🇺🇸美国-58
-  - 🇺🇸美国-59
-  - 🇭🇰香港-12
-  - 🇺🇸美国-60
-  - 🇺🇸美国-61
-  - 🇺🇸美国-62
-  - 🇺🇸美国-63
-  - 🇽🇽未知-02
-  - 🇺🇸美国-64
-  - 🇺🇸美国-65
-  - 🇺🇸美国-66
-  - 🇺🇸美国-67
-  - 🇺🇸美国-68
-  - 🇽🇽未知-03
-  - 🇲🇽墨西哥-01
-  - 🇽🇽未知-04
-  - 🇺🇸美国-69
-  - 🇺🇸美国-70
-  - 🇳🇿新西兰-02
-  - 🇺🇸美国-71
+  - 🇺🇸美国-28
+  - 🇺🇸美国-29
   - 🇽🇽未知-05
   - 🇽🇽未知-06
+  - 🇳🇱荷兰-03
+  - 🇺🇸美国-30
+  - 🇺🇸美国-31
+  - 🇺🇸美国-32
+  - 🇺🇸美国-33
+  - 🇺🇸美国-34
   - 🇽🇽未知-07
-  - 🇺🇸美国-72
-  - 🇽🇽未知-08
-  - 🇺🇸美国-73
-  - 🇺🇸美国-74
-  - 🇽🇽未知-09
-  - 🇺🇸美国-75
-  - 🇺🇸美国-76
+  - 🇺🇸美国-35
+  - 🇺🇸美国-36
+  - 🇺🇸美国-37
+  - 🇱🇹LT-03
+  - 🇺🇸美国-38
+  - 🇺🇸美国-39
+  - 🇺🇸美国-40
+  - 🇯🇵日本-02
+  - 🇳🇱荷兰-04
+  - 🇺🇸美国-41
+  - 🇺🇸美国-42
+  - 🇺🇸美国-43
+  - 🇯🇵日本-03
+  - 🇯🇵日本-04
+  - 🇺🇸美国-44
   - 🇯🇵日本-05
   - 🇯🇵日本-06
-  - 🇺🇸美国-77
-  - 🇸🇨SC-01
-  - 🇺🇸美国-78
-  - 🇺🇸美国-79
-  - 🇰🇷韩国-06
-  - 🇮🇷IR-01
-  - 🇺🇸美国-80
-  - 🇺🇸美国-81
-  - 🇺🇸美国-82
-  - 🇺🇸美国-83
-  - 🇺🇸美国-84
-  - 🇺🇸美国-85
-  - 🇽🇽未知-10
-  - 🇲🇾马来西亚-09
-  - 🇺🇸美国-86
-  - 🇨🇾CY-04
-  - 🇫🇮芬兰-08
-  - 🇺🇸美国-87
-  - 🇮🇳印度-03
-  - 🇽🇽未知-11
-  - 🇺🇸美国-88
-  - 🇽🇽未知-12
-  - 🇸🇨SC-02
-  - 🇺🇸美国-89
-  - 🇺🇸美国-90
-  - 🇺🇸美国-91
+  - 🇺🇸美国-45
+  - 🇭🇰香港-02
+  - 🇹🇼台湾-01
+  - 🇮🇩印尼-01
+  - 🇯🇵日本-07
+  - 🇺🇸美国-46
+  - 🇺🇸美国-47
+  - 🇺🇸美国-48
+  - 🇲🇾马来西亚-01
+  - 🇲🇾马来西亚-02
+  - 🇭🇰香港-03
+  - 🇮🇩印尼-02
+  - 🇮🇩印尼-03
+  - 🇺🇸美国-49
+  - 🇫🇷法国-01
+  - 🇫🇷法国-02
+  - 🇨🇭瑞士-02
+  - 🇺🇸美国-50
+  - 🇺🇸美国-51
+  - 🇱🇻LV-01
+  - 🇺🇸美国-52
+  - 🇨🇭瑞士-03
+  - 🇳🇱荷兰-05
+  - 🇮🇶IQ-01
+  - 🇲🇩MD-01
+  - 🇺🇸美国-53
+  - 🇭🇰香港-04
+  - 🇭🇰香港-05
+  - 🇺🇸美国-54
+  - 🇺🇸美国-55
+  - 🇺🇸美国-56
+  - 🇺🇸美国-57
+  - 🇦🇷阿根廷-01
+  - 🇺🇸美国-58
+  - 🇲🇾马来西亚-03
+  - 🇲🇾马来西亚-04
+  - 🇭🇰香港-06
+  - 🇲🇩MD-02
+  - 🇵🇱波兰-01
+  - 🇭🇰香港-07
+  - 🇲🇩MD-03
+  - 🇲🇩MD-04
+  - 🇲🇾马来西亚-05
+  - 🇪🇪EE-01
+  - 🇺🇸美国-59
+  - 🇺🇸美国-60
+  - 🇭🇰香港-08
+  - 🇨🇭瑞士-04
+  - 🇹🇼台湾-02
+  - 🇺🇸美国-61
+  - 🇺🇸美国-62
+  - 🇮🇩印尼-04
 - name: 🎯 全球直连
   type: select
   proxies: []
@@ -4635,19 +2458,9 @@ proxy-groups:
 - name: 🐟 漏网之鱼
   type: select
   proxies:
-  - 🇸🇬新加坡-01
-  - 🇲🇾马来西亚-01
-  - 🇭🇰香港-01
-  - 🇹🇼台湾-01
-  - 🇭🇰香港-02
-  - 🇲🇾马来西亚-02
-  - 🇭🇰香港-03
-  - 🇲🇾马来西亚-03
-  - 🇲🇾马来西亚-04
-  - 🇲🇾马来西亚-05
   - 🇺🇸美国-01
-  - 🇱🇻LV-01
-  - 🇹🇭泰国-01
+  - 🇸🇬新加坡-01
+  - 🇸🇬新加坡-02
   - 🇺🇸美国-02
   - 🇺🇸美国-03
   - 🇺🇸美国-04
@@ -4657,241 +2470,132 @@ proxy-groups:
   - 🇺🇸美国-08
   - 🇺🇸美国-09
   - 🇺🇸美国-10
+  - 🇸🇬新加坡-03
+  - 🇽🇽未知-01
+  - 🇰🇷韩国-01
+  - 🇰🇷韩国-02
+  - 🇹🇭泰国-01
+  - 🇹🇭泰国-02
+  - 🇰🇷韩国-03
   - 🇺🇸美国-11
   - 🇺🇸美国-12
+  - 🇳🇿新西兰-01
   - 🇺🇸美国-13
+  - 🇹🇷土耳其-01
+  - 🇦🇺澳大利亚-01
   - 🇺🇸美国-14
+  - 🇪🇸西班牙-01
   - 🇺🇸美国-15
+  - 🇽🇽未知-02
+  - 🇯🇵日本-01
+  - 🇨🇭瑞士-01
   - 🇺🇸美国-16
   - 🇺🇸美国-17
   - 🇺🇸美国-18
+  - 🇱🇹LT-01
+  - 🇭🇰香港-01
   - 🇺🇸美国-19
   - 🇺🇸美国-20
+  - 🇽🇽未知-03
+  - 🇳🇱荷兰-01
+  - 🇸🇨SC-01
   - 🇺🇸美国-21
+  - 🇬🇧英国-01
   - 🇺🇸美国-22
+  - 🇽🇽未知-04
+  - 🇬🇧英国-02
   - 🇺🇸美国-23
+  - 🇸🇨SC-02
+  - 🇳🇱荷兰-02
+  - 🇮🇲IM-01
   - 🇺🇸美国-24
   - 🇺🇸美国-25
+  - 🇱🇹LT-02
+  - 🇸🇨SC-03
   - 🇺🇸美国-26
-  - 🇨🇦加拿大-01
   - 🇺🇸美国-27
-  - 🇨🇦加拿大-02
-  - 🇺🇸美国-28
-  - 🇨🇦加拿大-03
-  - 🇯🇵日本-01
-  - 🇹🇼台湾-02
-  - 🇯🇵日本-02
-  - 🇬🇧英国-01
-  - 🇳🇱荷兰-01
-  - 🇳🇱荷兰-02
-  - 🇳🇱荷兰-03
-  - 🇳🇱荷兰-04
-  - 🇯🇵日本-03
-  - 🇳🇱荷兰-05
-  - 🇫🇷法国-01
-  - 🇦🇺澳大利亚-01
-  - 🇫🇷法国-02
-  - 🇦🇱AL-01
-  - 🇳🇱荷兰-06
-  - 🇳🇱荷兰-07
-  - 🇦🇺澳大利亚-02
-  - 🇳🇱荷兰-08
-  - 🇳🇱荷兰-09
-  - 🇭🇰香港-04
-  - 🇳🇱荷兰-10
-  - 🇫🇷法国-03
-  - 🇺🇸美国-29
-  - 🇫🇷法国-04
-  - 🇫🇷法国-05
-  - 🇵🇱波兰-01
-  - 🇳🇱荷兰-11
-  - 🇰🇷韩国-01
-  - 🇫🇷法国-06
-  - 🇳🇱荷兰-12
-  - 🇳🇱荷兰-13
-  - 🇸🇬新加坡-02
-  - 🇳🇱荷兰-14
-  - 🇫🇮芬兰-01
-  - 🇫🇷法国-07
-  - 🇳🇱荷兰-15
-  - 🇸🇰斯洛伐克-01
-  - 🇳🇱荷兰-16
-  - 🇭🇰香港-05
-  - 🇺🇸美国-30
-  - 🇫🇷法国-08
-  - 🇸🇪瑞典-01
-  - 🇳🇱荷兰-17
-  - 🇫🇮芬兰-02
-  - 🇱🇻LV-02
-  - 🇳🇱荷兰-18
-  - 🇳🇱荷兰-19
-  - 🇺🇸美国-31
-  - 🇳🇱荷兰-20
-  - 🇲🇩MD-01
-  - 🇳🇱荷兰-21
-  - 🇳🇱荷兰-22
-  - 🇳🇱荷兰-23
-  - 🇺🇸美国-32
-  - 🇳🇱荷兰-24
-  - 🇭🇰香港-06
-  - 🇩🇰丹麦-01
-  - 🇺🇸美国-33
-  - 🇺🇸美国-34
-  - 🇫🇮芬兰-03
-  - 🇳🇱荷兰-25
-  - 🇪🇪EE-01
-  - 🇸🇪瑞典-02
-  - 🇺🇸美国-35
-  - 🇧🇬BG-01
-  - 🇮🇱以色列-01
-  - 🇸🇬新加坡-03
-  - 🇬🇧英国-02
-  - 🇺🇸美国-36
-  - 🇲🇩MD-02
-  - 🇳🇱荷兰-26
-  - 🇬🇧英国-03
-  - 🇺🇸美国-37
-  - 🇺🇸美国-38
-  - 🇲🇾马来西亚-06
-  - 🇳🇱荷兰-27
-  - 🇵🇱波兰-02
   - 🇸🇬新加坡-04
-  - 🇳🇱荷兰-28
-  - 🇨🇾CY-01
-  - 🇱🇹LT-01
-  - 🇫🇮芬兰-04
-  - 🇳🇱荷兰-29
-  - 🇭🇰香港-07
-  - 🇧🇷巴西-01
-  - 🇸🇪瑞典-03
-  - 🇲🇾马来西亚-07
-  - 🇺🇸美国-39
-  - 🇮🇱以色列-02
-  - 🇨🇾CY-02
-  - 🇮🇳印度-01
-  - 🇺🇸美国-40
-  - 🇨🇾CY-03
-  - 🇪🇸西班牙-01
-  - 🇮🇳印度-02
-  - 🇱🇻LV-03
-  - 🇦🇪阿联酋-01
-  - 🇹🇭泰国-02
-  - 🇲🇩MD-03
-  - 🇭🇰香港-08
-  - 🇺🇸美国-41
-  - 🇺🇸美国-42
-  - 🇬🇧英国-04
-  - 🇺🇸美国-43
-  - 🇺🇸美国-44
-  - 🇸🇪瑞典-04
-  - 🇫🇮芬兰-05
-  - 🇺🇦乌克兰-01
-  - 🇹🇷土耳其-01
-  - 🇫🇮芬兰-06
-  - 🇱🇻LV-04
-  - 🇨🇿捷克-01
-  - 🇺🇸美国-45
-  - 🇳🇱荷兰-30
-  - 🇲🇩MD-04
-  - 🇫🇮芬兰-07
-  - 🇬🇧英国-05
-  - 🇦🇹奥地利-01
-  - 🇲🇩MD-05
-  - 🇳🇴挪威-01
-  - 🇨🇿捷克-02
-  - 🇮🇹意大利-01
-  - 🇲🇾马来西亚-08
-  - 🇲🇩MD-06
-  - 🇭🇰香港-09
-  - 🇺🇸美国-46
-  - 🇹🇷土耳其-02
-  - 🇹🇼台湾-03
-  - 🇦🇺澳大利亚-03
-  - 🇺🇸美国-47
-  - 🇺🇸美国-48
-  - 🇸🇬新加坡-05
-  - 🇺🇸美国-49
-  - 🇰🇷韩国-02
-  - 🇯🇵日本-04
-  - 🇩🇰丹麦-02
-  - 🇺🇸美国-50
-  - 🇺🇸美国-51
-  - 🇸🇬新加坡-06
-  - 🇰🇷韩国-03
-  - 🇺🇸美国-52
-  - 🇺🇸美国-53
-  - 🇺🇸美国-54
   - 🇰🇷韩国-04
-  - 🇭🇰香港-10
-  - 🇺🇸美国-55
-  - 🇨🇭瑞士-01
-  - 🇹🇷土耳其-03
-  - 🇪🇸西班牙-02
-  - 🇦🇹奥地利-02
-  - 🇰🇷韩国-05
-  - 🇺🇸美国-56
-  - 🇭🇰香港-11
-  - 🇳🇿新西兰-01
-  - 🇽🇽未知-01
-  - 🇺🇸美国-57
-  - 🇺🇸美国-58
-  - 🇺🇸美国-59
-  - 🇭🇰香港-12
-  - 🇺🇸美国-60
-  - 🇺🇸美国-61
-  - 🇺🇸美国-62
-  - 🇺🇸美国-63
-  - 🇽🇽未知-02
-  - 🇺🇸美国-64
-  - 🇺🇸美国-65
-  - 🇺🇸美国-66
-  - 🇺🇸美国-67
-  - 🇺🇸美国-68
-  - 🇽🇽未知-03
-  - 🇲🇽墨西哥-01
-  - 🇽🇽未知-04
-  - 🇺🇸美国-69
-  - 🇺🇸美国-70
-  - 🇳🇿新西兰-02
-  - 🇺🇸美国-71
+  - 🇺🇸美国-28
+  - 🇺🇸美国-29
   - 🇽🇽未知-05
   - 🇽🇽未知-06
+  - 🇳🇱荷兰-03
+  - 🇺🇸美国-30
+  - 🇺🇸美国-31
+  - 🇺🇸美国-32
+  - 🇺🇸美国-33
+  - 🇺🇸美国-34
   - 🇽🇽未知-07
-  - 🇺🇸美国-72
-  - 🇽🇽未知-08
-  - 🇺🇸美国-73
-  - 🇺🇸美国-74
-  - 🇽🇽未知-09
-  - 🇺🇸美国-75
-  - 🇺🇸美国-76
+  - 🇺🇸美国-35
+  - 🇺🇸美国-36
+  - 🇺🇸美国-37
+  - 🇱🇹LT-03
+  - 🇺🇸美国-38
+  - 🇺🇸美国-39
+  - 🇺🇸美国-40
+  - 🇯🇵日本-02
+  - 🇳🇱荷兰-04
+  - 🇺🇸美国-41
+  - 🇺🇸美国-42
+  - 🇺🇸美国-43
+  - 🇯🇵日本-03
+  - 🇯🇵日本-04
+  - 🇺🇸美国-44
   - 🇯🇵日本-05
   - 🇯🇵日本-06
-  - 🇺🇸美国-77
-  - 🇸🇨SC-01
-  - 🇺🇸美国-78
-  - 🇺🇸美国-79
-  - 🇰🇷韩国-06
-  - 🇮🇷IR-01
-  - 🇺🇸美国-80
-  - 🇺🇸美国-81
-  - 🇺🇸美国-82
-  - 🇺🇸美国-83
-  - 🇺🇸美国-84
-  - 🇺🇸美国-85
-  - 🇽🇽未知-10
-  - 🇲🇾马来西亚-09
-  - 🇺🇸美国-86
-  - 🇨🇾CY-04
-  - 🇫🇮芬兰-08
-  - 🇺🇸美国-87
-  - 🇮🇳印度-03
-  - 🇽🇽未知-11
-  - 🇺🇸美国-88
-  - 🇽🇽未知-12
-  - 🇸🇨SC-02
-  - 🇺🇸美国-89
-  - 🇺🇸美国-90
-  - 🇺🇸美国-91
+  - 🇺🇸美国-45
+  - 🇭🇰香港-02
+  - 🇹🇼台湾-01
+  - 🇮🇩印尼-01
+  - 🇯🇵日本-07
+  - 🇺🇸美国-46
+  - 🇺🇸美国-47
+  - 🇺🇸美国-48
+  - 🇲🇾马来西亚-01
+  - 🇲🇾马来西亚-02
+  - 🇭🇰香港-03
+  - 🇮🇩印尼-02
+  - 🇮🇩印尼-03
+  - 🇺🇸美国-49
+  - 🇫🇷法国-01
+  - 🇫🇷法国-02
+  - 🇨🇭瑞士-02
+  - 🇺🇸美国-50
+  - 🇺🇸美国-51
+  - 🇱🇻LV-01
+  - 🇺🇸美国-52
+  - 🇨🇭瑞士-03
+  - 🇳🇱荷兰-05
+  - 🇮🇶IQ-01
+  - 🇲🇩MD-01
+  - 🇺🇸美国-53
+  - 🇭🇰香港-04
+  - 🇭🇰香港-05
+  - 🇺🇸美国-54
+  - 🇺🇸美国-55
+  - 🇺🇸美国-56
+  - 🇺🇸美国-57
+  - 🇦🇷阿根廷-01
+  - 🇺🇸美国-58
+  - 🇲🇾马来西亚-03
+  - 🇲🇾马来西亚-04
+  - 🇭🇰香港-06
+  - 🇲🇩MD-02
+  - 🇵🇱波兰-01
+  - 🇭🇰香港-07
+  - 🇲🇩MD-03
+  - 🇲🇩MD-04
+  - 🇲🇾马来西亚-05
+  - 🇪🇪EE-01
+  - 🇺🇸美国-59
+  - 🇺🇸美国-60
+  - 🇭🇰香港-08
+  - 🇨🇭瑞士-04
+  - 🇹🇼台湾-02
+  - 🇺🇸美国-61
+  - 🇺🇸美国-62
+  - 🇮🇩印尼-04
 rule-providers:
   LocalAreaNetwork:
     type: http
