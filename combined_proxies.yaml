@@ -1,0 +1,4790 @@
+proxies:
+- name: 🇦🇪 001
+  type: ss
+  server: du.acxylm.top
+  port: 55645
+  cipher: aes-256-gcm
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+- name: 🇦🇪 002
+  type: ss
+  server: series-a2-mec.varzesh360.co
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: u17T3BvpYaaiuW2c
+- name: 🇦🇺 001
+  type: trojan
+  server: customer-45-142-215-88.stark-industries.solutions
+  port: 443
+  password: c5691b8f-d833-41e4-9295-769f3edb4cd2
+  skip-cert-verify: true
+- name: 🇦🇺 002
+  type: trojan
+  server: in01.trojanyyds.xyz
+  port: 443
+  password: 4a39dba7-463b-4c8a-a804-758282c11c62
+  skip-cert-verify: true
+  sni: in01.trojanyyds.xyz
+- name: 🇦🇺 003
+  type: trojan
+  server: 34618.kuajing.buzz
+  port: 34618
+  password: cd30052f-f1b2-35df-9773-bd586e72f67a
+  skip-cert-verify: false
+  sni: eplcgame.com
+- name: 🇦🇺 004
+  type: trojan
+  server: tw02.trojanyyds.xyz
+  port: 443
+  password: 8d1e94cd-23cf-4267-b630-c6894e6e1b4d
+  skip-cert-verify: true
+- name: 🇦🇺 005
+  type: vmess
+  server: 183.236.48.163
+  port: 58831
+  alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  tls: false
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇦🇺 006
+  type: trojan
+  server: 36.151.192.239
+  port: 36442
+  password: lNOcIAxy
+  skip-cert-verify: true
+  sni: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+- name: 🇦🇺 007
+  type: ss
+  server: au.acxylm.top
+  port: 12343
+  cipher: aes-256-gcm
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+- name: 🇦🇿 001
+  type: ss
+  server: 193.124.22.253
+  port: 33068
+  cipher: chacha20-ietf-poly1305
+  password: 3MgIhqwp4pjM8SKwixNkYZ
+- name: 🇧🇭 001
+  type: ss
+  server: series-a2-me.varzesh360.co
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: Bog0ELmMM9DSxDdQ
+- name: 🇧🇷 001
+  type: ss
+  server: br.acxylm.top
+  port: 41829
+  cipher: aes-256-gcm
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+- name: 🇨🇦 001
+  type: trojan
+  server: free.6vczxw.xyz
+  port: 41199
+  password: 40c9871b-74af-45f5-ac2c-12597587dc98
+  skip-cert-verify: true
+  sni: sg15.bluemixnet.xyz
+- name: 🇨🇦 002
+  type: vmess
+  server: 47.92.152.169
+  port: 50002
+  alterId: 64
+  cipher: none
+  skip-cert-verify: false
+  tls: false
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇨🇦 003
+  type: trojan
+  server: 20.89.130.227
+  port: 443
+  password: 9995cc0e-2e9d-4c80-8c81-4fdbb6322a3a
+  skip-cert-verify: true
+  sni: fscus.fscloud123456789.com
+- name: 🇨🇦 004
+  type: trojan
+  server: customer-45-89-55-150.stark-industries.solutions
+  port: 443
+  password: c5691b8f-d833-41e4-9295-769f3edb4cd2
+  skip-cert-verify: true
+- name: 🇨🇦 005
+  type: trojan
+  server: my01.trojanyyds.xyz
+  port: 443
+  password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce
+  skip-cert-verify: true
+- name: 🇨🇦 006
+  type: trojan
+  server: free.6vczxw.xyz
+  port: 41239
+  password: f4a08f9d-1fb0-4cd3-a8e3-b0a561f9c44b
+  skip-cert-verify: true
+  sni: us15.t8l1n9k.link
+- name: 🇨🇦 007
+  type: trojan
+  server: ar.mjt000.com
+  port: 443
+  password: 8993fa1c-342e-41fc-b01e-8719abde1324
+  skip-cert-verify: true
+  sni: ar.mjt000.com
+- name: 🇨🇦 008
+  type: vmess
+  server: 104.19.45.50
+  port: 2082
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+- name: 🇨🇦 009
+  type: vmess
+  server: 104.20.25.146
+  port: 2095
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: false
+  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+- name: 🇨🇦 010
+  type: trojan
+  server: jp1.jjzgy.live
+  port: 443
+  password: f10d81d8-ad4b-300a-825b-f54f515bd06e
+  skip-cert-verify: true
+  sni: jp1.jjzgy.live
+- name: 🇨🇦 012
+  type: ss
+  server: us07.bfyrek.top
+  port: 34468
+  cipher: aes-256-gcm
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+- name: 🇨🇦 013
+  type: ss
+  server: 103.36.90.195
+  port: 8388
+  cipher: chacha20-ietf
+  password: asd123456
+- name: 🇨🇦 014
+  type: trojan
+  server: ru.mjt000.com
+  port: 443
+  password: bc90fb72-0b2c-45b4-a8d8-c9baa4eaaef3
+  skip-cert-verify: true
+  sni: ru.mjt000.com
+- name: 🇨🇭 001
+  type: trojan
+  server: ent1.imyourdaddy.top
+  port: 20980
+  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
+  skip-cert-verify: true
+- name: 🇨🇳 001
+  type: vmess
+  server: hn.xn--wlqw1swrj04ju56d.com
+  port: 80
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: false
+  uuid: f9ddefc5-d121-486f-9e2f-0c2cd1a3decc
+- name: 🇨🇳 002
+  type: vmess
+  server: 112.132.212.19
+  port: 50004
+  alterId: 64
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇨🇳 003
+  type: vmess
+  server: 112.132.215.12
+  port: 50002
+  alterId: 64
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇨🇳 004
+  type: vmess
+  server: 114.55.132.202
+  port: 50002
+  alterId: 64
+  cipher: auto
+  skip-cert-verify: false
+  tls: false
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇨🇳 005
+  type: vmess
+  server: 120.210.205.59
+  port: 50002
+  alterId: 64
+  cipher: none
+  network: tcp
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇨🇳 006
+  type: vmess
+  server: 120.226.29.105
+  port: 8888
+  alterId: 0
+  cipher: auto
+  network: ws
+  uuid: 8645841f-23fb-47e2-9dae-33580c96b49e
+- name: 🇨🇳 007
+  type: vmess
+  server: 183.236.51.36
+  port: 59003
+  alterId: 64
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  tls: false
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇨🇳 008
+  type: vmess
+  server: 47.104.186.133
+  port: 50002
+  alterId: 64
+  cipher: auto
+  skip-cert-verify: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇨🇳 009
+  type: vmess
+  server: 47.116.173.76
+  port: 50002
+  alterId: 64
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇩🇪 001
+  type: trojan
+  server: ent1.imyourdaddy.top
+  port: 20992
+  password: 061a01f1-704b-4712-8e12-6d3fc95a127d
+  skip-cert-verify: true
+- name: 🇩🇪 002
+  type: ss
+  server: de01.acxylm.top
+  port: 27684
+  cipher: aes-256-gcm
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+- name: 🇩🇪 003
+  type: vmess
+  server: 2.189.59.2
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: true
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+- name: 🇩🇪 004
+  type: vmess
+  server: 45.149.12.79
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+- name: 🇩🇪 005
+  type: ss
+  server: de03.acxylm.top
+  port: 55504
+  cipher: aes-256-gcm
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+- name: 🇩🇪 006
+  type: ss
+  server: de02.acxylm.top
+  port: 44944
+  cipher: aes-256-gcm
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+- name: 🇫🇮 001
+  type: trojan
+  server: ent1.imyourdaddy.top
+  port: 20982
+  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
+  skip-cert-verify: true
+  sni: sale.alibaba.com
+- name: 🇫🇷 001
+  type: vmess
+  server: 2.189.59.3
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+- name: 🇫🇷 002
+  type: vmess
+  server: www.baldengineer.com
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+- name: 🇫🇷 004
+  type: vmess
+  server: tradegdt.ai
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 39cec18f-a439-427c-9a4e-aeb6fcdf6f53
+- name: 🇫🇷 006
+  type: vmess
+  server: 104.21.24.170
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: b321fd5d-e6ec-4293-a644-164e3885f52e
+- name: 🇫🇷 008
+  type: ss
+  server: fr03.acxylm.top
+  port: 61287
+  cipher: aes-256-gcm
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+- name: 🇫🇷 009
+  type: ss
+  server: fr01.acxylm.top
+  port: 20109
+  cipher: aes-256-gcm
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+- name: 🇫🇷 010
+  type: vmess
+  server: 23.162.152.177
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇫🇷 011
+  type: vmess
+  server: 2.189.59.6
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+- name: 🇬🇧 001
+  type: vmess
+  server: 16.724064.xyz
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: b7cf4466-956a-4639-b861-0cf78cbb6f8f
+- name: 🇬🇧 002
+  type: ss
+  server: series-a1.samanehha.co
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: W74XFALLLuw6m5IA
+- name: 🇬🇧 003
+  type: ss
+  server: uk.acxylm.top
+  port: 19262
+  cipher: aes-256-gcm
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+- name: 🇬🇧 004
+  type: vmess
+  server: 2.189.59.7
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+- name: 🇬🇧 005
+  type: ss
+  server: hl.acxylm.top
+  port: 48465
+  cipher: aes-256-gcm
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+- name: 🇬🇧 006
+  type: ss
+  server: hk01.acxylm.top
+  port: 55268
+  cipher: aes-256-gcm
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+- name: 🇬🇧 007
+  type: vmess
+  server: 57.128.184.127
+  port: 443
+  alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇬🇧 008
+  type: ss
+  server: hk07.bfyrek.top
+  port: 36605
+  cipher: aes-256-gcm
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+- name: 🇭🇰 001
+  type: trojan
+  server: 36.151.192.242
+  port: 14505
+  password: QwwHvrnN
+  skip-cert-verify: true
+- name: 🇭🇰 002
+  type: trojan
+  server: 36.151.192.196
+  port: 42395
+  password: QwwHvrnN
+  skip-cert-verify: true
+- name: 🇭🇰 003
+  type: vmess
+  server: 183.236.51.23
+  port: 46602
+  alterId: 64
+  cipher: none
+  network: tcp
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇭🇰 004
+  type: vmess
+  server: 183.236.51.23
+  port: 56601
+  alterId: 64
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇭🇰 005
+  type: vmess
+  server: 183.236.51.23
+  port: '53002'
+  alterId: 64
+  cipher: auto
+  network: tcp
+  tls: false
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇭🇰 006
+  type: vmess
+  server: 120.232.153.27
+  port: 58002
+  alterId: 64
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  tls: false
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇭🇰 007
+  type: ss
+  server: 58.63.250.61
+  port: 15011
+  cipher: aes-256-gcm
+  password: Z1K84W4D8G5KO54J
+- name: 🇭🇰 008
+  type: ss
+  server: 36.141.40.92
+  port: 15016
+  cipher: aes-256-gcm
+  password: MAADD8JLM8XKVW56
+- name: 🇭🇰 009
+  type: ss
+  server: 4.api-catssr.catcloud.host
+  port: 32184
+  cipher: chacha20-ietf-poly1305
+  password: bb741d28-cd11-4ce8-8799-459407bacde8
+- name: 🇭🇰 010
+  type: ss
+  server: hk03.acxylm.top
+  port: 31452
+  cipher: aes-256-gcm
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+- name: 🇭🇰 011
+  type: ss
+  server: hk04.acxylm.top
+  port: 20177
+  cipher: aes-256-gcm
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+- name: 🇭🇰 012
+  type: vmess
+  server: yd2.ainivp.com
+  port: 33416
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 9204afcd-023e-781f-1abc-c12efccd1344
+- name: 🇭🇰 013
+  type: ss
+  server: 120.232.81.50
+  port: 16088
+  cipher: aes-256-cfb
+  password: hGkQ6915tD
+- name: 🇭🇰 014
+  type: vmess
+  server: 120.232.81.14
+  port: 22300
+  alterId: 0
+  cipher: auto
+  uuid: 8cd69cef-002a-4f66-9ff6-48fbb7c2e2c7
+- name: 🇭🇰 015
+  type: vmess
+  server: hk0067.alibabaokz.com
+  port: 60066
+  alterId: 0
+  cipher: auto
+  uuid: e50e453f-04f5-4c31-b962-bff22b152410
+- name: 🇭🇰 016
+  type: ss
+  server: gy.666666222.shop
+  port: 34338
+  cipher: chacha20-ietf-poly1305
+  password: f337e72a-be9a-4ea1-8332-7cbc88f0006f
+- name: 🇭🇰 017
+  type: ss
+  server: us3.acxylm.top
+  port: 45567
+  cipher: aes-256-gcm
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+- name: 🇭🇰 018
+  type: ss
+  server: hk02.acxylm.top
+  port: 10473
+  cipher: aes-256-gcm
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+- name: 🇭🇰 019
+  type: ss
+  server: gychun.ccdox.icu
+  port: 34001
+  cipher: aes-256-gcm
+  password: 486c819c-dc4a-4981-8949-a02a6b327287
+- name: 🇮🇹 001
+  type: trojan
+  server: ent1.imyourdaddy.top
+  port: 20983
+  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
+  skip-cert-verify: true
+  sni: sale.alibaba.com
+- name: 🇯🇵 001
+  type: trojan
+  server: 43.153.175.137
+  port: 443
+  password: FLorg
+  skip-cert-verify: true
+  sni: trojan.tcorg.filegear-sg.me
+- name: 🇯🇵 003
+  type: ss
+  server: 120.232.81.50
+  port: 15084
+  cipher: aes-256-cfb
+  password: hGkQ6915tD
+- name: 🇯🇵 004
+  type: vmess
+  server: yd2.ainivp.com
+  port: 33202
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: true
+  uuid: 9204afcd-023e-781f-1abc-c12efccd1344
+- name: 🇯🇵 005
+  type: ss
+  server: 18.183.217.223
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 006
+  type: ss
+  server: jp01.acxylm.top
+  port: 19428
+  cipher: aes-256-gcm
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+- name: 🇯🇵 007
+  type: ss
+  server: gy.666666222.shop
+  port: 20002
+  cipher: chacha20-ietf-poly1305
+  password: f337e72a-be9a-4ea1-8332-7cbc88f0006f
+- name: 🇯🇵 008
+  type: ss
+  server: gy.666666222.shop
+  port: 20004
+  cipher: chacha20-ietf-poly1305
+  password: f337e72a-be9a-4ea1-8332-7cbc88f0006f
+- name: 🇯🇵 009
+  type: ss
+  server: 3.112.215.69
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 010
+  type: ss
+  server: jp02.acxylm.top
+  port: 43787
+  cipher: aes-256-gcm
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+- name: 🇯🇵 011
+  type: ss
+  server: 54.95.5.168
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 012
+  type: ss
+  server: 57.180.42.246
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 013
+  type: trojan
+  server: 36.151.192.239
+  port: 17806
+  password: QwwHvrnN
+  skip-cert-verify: true
+- name: 🇯🇵 014
+  type: ss
+  server: gy.666666222.shop
+  port: 20008
+  cipher: chacha20-ietf-poly1305
+  password: f337e72a-be9a-4ea1-8332-7cbc88f0006f
+- name: 🇯🇵 015
+  type: vmess
+  server: hk0106.alibabaokz.com
+  port: 60126
+  alterId: 0
+  cipher: auto
+  uuid: e50e453f-04f5-4c31-b962-bff22b152410
+- name: 🇯🇵 016
+  type: vmess
+  server: jp0160.alibabaokz.com
+  port: 60034
+  alterId: 0
+  cipher: auto
+  uuid: e50e453f-04f5-4c31-b962-bff22b152410
+- name: 🇰🇷 001
+  type: ss
+  server: 13.209.16.115
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 002
+  type: trojan
+  server: naiu-other.05vr9nyqg5.download
+  port: 13036
+  password: ad6e2bae-d580-4117-aa37-a8c111100740
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+- name: 🇰🇷 003
+  type: trojan
+  server: 36.151.192.198
+  port: 36900
+  password: QwwHvrnN
+  skip-cert-verify: true
+- name: 🇰🇷 004
+  type: ss
+  server: 221.139.79.57
+  port: 54345
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 005
+  type: ss
+  server: 3.35.137.32
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 006
+  type: ss
+  server: 3.39.240.246
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 007
+  type: ss
+  server: 43.202.57.197
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇰🇷 008
+  type: ss
+  server: kr01.acxylm.top
+  port: 59988
+  cipher: aes-256-gcm
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+- name: 🇲🇽 001
+  type: ss
+  server: mx.acxylm.top
+  port: 61258
+  cipher: aes-256-gcm
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+- name: 🇳🇱 001
+  type: ss
+  server: 45.87.175.188
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+- name: 🇳🇱 002
+  type: ss
+  server: 45.87.175.199
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+- name: 🇳🇱 003
+  type: ss
+  server: 194.87.82.28
+  port: 12224
+  cipher: chacha20-ietf-poly1305
+  password: 2fwufOmJ9ELfN4umzcHBfV
+- name: 🇳🇱 004
+  type: ss
+  server: id.acxylm.top
+  port: 25806
+  cipher: aes-256-gcm
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+- name: 🇵🇭 001
+  type: ss
+  server: ph.acxylm.top
+  port: 56433
+  cipher: aes-256-gcm
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+- name: 🇷🇺 002
+  type: trojan
+  server: ru0195.alibabaokz.com
+  port: 60194
+  password: 38571ca6-6692-4559-b901-0bc5826b7661
+  skip-cert-verify: true
+  sni: ru0195.alibabaokz.com
+- name: 🇸🇬 001
+  type: trojan
+  server: naiu-sg.05vr9nyqg5.download
+  port: 13028
+  password: ad6e2bae-d580-4117-aa37-a8c111100740
+  skip-cert-verify: false
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+- name: 🇸🇬 002
+  type: ss
+  server: 13.229.238.238
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 004
+  type: vmess
+  server: 183.236.51.23
+  port: 53002
+  alterId: 64
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  tls: false
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇸🇬 006
+  type: ss
+  server: sgp3.acxylm.top
+  port: 29321
+  cipher: aes-256-gcm
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+- name: 🇸🇬 007
+  type: ss
+  server: sgp5.acxylm.top
+  port: 20923
+  cipher: aes-256-gcm
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+- name: 🇸🇬 008
+  type: ss
+  server: 47.128.215.67
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 009
+  type: ss
+  server: sgp1.acxylm.top
+  port: 46417
+  cipher: aes-256-gcm
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+- name: 🇸🇬 010
+  type: ss
+  server: 52.77.209.61
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇬 011
+  type: ss
+  server: 52.77.236.51
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇹🇭 001
+  type: ss
+  server: th.acxylm.top
+  port: 50948
+  cipher: aes-256-gcm
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+- name: 🇹🇷 001
+  type: trojan
+  server: ent1.imyourdaddy.top
+  port: 20987
+  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
+  skip-cert-verify: true
+- name: 🇹🇷 002
+  type: ss
+  server: tr.acxylm.top
+  port: 55691
+  cipher: aes-256-gcm
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+- name: 🇺🇸 001
+  type: trojan
+  server: 104.18.12.229
+  port: 8443
+  password: trojan
+  skip-cert-verify: true
+  sni: mav2flyng.pages.dev
+- name: 🇺🇸 004
+  type: trojan
+  server: free.6vczxw.xyz
+  port: 41139
+  password: 7cb80b97-119b-4704-a036-5b67fceb3aac
+  skip-cert-verify: true
+  sni: jp15.bluemixnet.xyz
+- name: 🇺🇸 005
+  type: trojan
+  server: 63.141.128.254
+  port: 443
+  password: dns68
+  skip-cert-verify: true
+  sni: trojan.putata.us.kg
+- name: 🇺🇸 006
+  type: trojan
+  server: 135.84.79.80
+  port: 443
+  password: dns68
+  skip-cert-verify: true
+  sni: trojan.putata.us.kg
+- name: 🇺🇸 007
+  type: trojan
+  server: 199.68.156.68
+  port: 443
+  password: dns68
+  skip-cert-verify: true
+  sni: trojan.putata.us.kg
+- name: 🇺🇸 008
+  type: trojan
+  server: 103.168.154.7
+  port: 889
+  password: LYaOvuNXdQGTZNonhlRUKqOJcKVihzKY
+  skip-cert-verify: true
+  sni: cdn.cjhh.lol
+- name: 🇺🇸 009
+  type: trojan
+  server: 18.179.44.127
+  port: 443
+  password: e3fee3b6-fca1-3985-99dc-da7ca03260ea
+  skip-cert-verify: true
+  sni: akamai.cdn.steampipe.steamcontent.com
+- name: 🇺🇸 013
+  type: vmess
+  server: 104.26.5.145
+  port: 2082
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: false
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+- name: 🇺🇸 014
+  type: vmess
+  server: 104.19.45.11
+  port: 2095
+  alterId: 0
+  cipher: auto
+  network: ws
+  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+- name: 🇺🇸 015
+  type: vmess
+  server: 183.236.51.23
+  port: 40434
+  alterId: 64
+  cipher: auto
+  network: tcp
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇺🇸 018
+  type: trojan
+  server: ent1.imyourdaddy.top
+  port: 21005
+  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
+  skip-cert-verify: true
+  sni: alibabashop.com
+- name: 🇺🇸 019
+  type: ss
+  server: gy.666666222.shop
+  port: 20013
+  cipher: chacha20-ietf-poly1305
+  password: f337e72a-be9a-4ea1-8332-7cbc88f0006f
+- name: 🇺🇸 021
+  type: vmess
+  server: 183.236.48.143
+  port: 41490
+  alterId: 64
+  cipher: auto
+  skip-cert-verify: true
+  tls: false
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇺🇸 022
+  type: vmess
+  server: 183.236.48.143
+  port: 31878
+  alterId: 64
+  cipher: auto
+  skip-cert-verify: true
+  tls: false
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇺🇸 023
+  type: vmess
+  server: 183.240.253.23
+  port: 52482
+  alterId: 64
+  cipher: auto
+  skip-cert-verify: true
+  tls: false
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇺🇸 024
+  type: vmess
+  server: 183.240.253.20
+  port: 42055
+  alterId: 64
+  cipher: auto
+  skip-cert-verify: true
+  tls: false
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇺🇸 025
+  type: vmess
+  server: 183.240.253.20
+  port: 37614
+  alterId: 64
+  cipher: auto
+  skip-cert-verify: true
+  tls: false
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇺🇸 026
+  type: vmess
+  server: 2.189.59.4
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+- name: 🇺🇸 027
+  type: ss
+  server: zhuliu.zhenxunwudi.top
+  port: 38045
+  cipher: aes-256-gcm
+  password: 2MkHPhqUTQKK7N7D
+- name: 🇺🇸 028
+  type: vmess
+  server: 142.4.96.65
+  port: 31001
+  alterId: 64
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇺🇸 029
+  type: vmess
+  server: 172.64.80.1
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: false
+  uuid: 3fd7b958-2161-46e1-b6fc-bd6bb2165312
+- name: 🇺🇸 030
+  type: ss
+  server: us1.acxylm.top
+  port: 26800
+  cipher: aes-256-gcm
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+- name: 🇺🇸 031
+  type: vmess
+  server: 120.234.109.251
+  port: 52908
+  alterId: 64
+  cipher: auto
+  skip-cert-verify: true
+  tls: false
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇺🇸 032
+  type: vmess
+  server: 183.236.51.23
+  port: 52112
+  alterId: 64
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  tls: false
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇺🇸 033
+  type: ss
+  server: alibaba1.xn--z7x16bf6t.com
+  port: 25251
+  cipher: aes-128-gcm
+  password: 1de124fc-2e1b-47bf-a094-9e7494e87be6
+- name: 🇺🇸 034
+  type: vmess
+  server: 104.21.238.200
+  port: 8443
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  uuid: 9201ffaa-6ca3-4f57-8b1f-266a2f390e43
+- name: 🇺🇸 035
+  type: trojan
+  server: naiu-hk.05vr9nyqg5.download
+  port: 13008
+  password: ad6e2bae-d580-4117-aa37-a8c111100740
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+- name: 🇺🇸 036
+  type: ss
+  server: us5.acxylm.top
+  port: 30031
+  cipher: aes-256-gcm
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+- name: 🇺🇸 037
+  type: ss
+  server: us2.acxylm.top
+  port: 14209
+  cipher: aes-256-gcm
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+- name: 🇺🇸 038
+  type: vmess
+  server: 183.236.48.158
+  port: 45402
+  alterId: 64
+  cipher: none
+  network: tcp
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇺🇸 039
+  type: vmess
+  server: 183.240.253.23
+  port: 35601
+  alterId: 64
+  cipher: none
+  network: tcp
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇺🇸 040
+  type: vmess
+  server: 183.236.48.158
+  port: 59952
+  alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  skip-cert-verify: false
+  tls: false
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇺🇸 041
+  type: trojan
+  server: naiu-us.05vr9nyqg5.download
+  port: 13021
+  password: ad6e2bae-d580-4117-aa37-a8c111100740
+  skip-cert-verify: false
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+- name: 🇺🇸 043
+  type: ss
+  server: sgp2.acxylm.top
+  port: 48417
+  cipher: aes-256-gcm
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+- name: 🇺🇸 044
+  type: ss
+  server: 34.220.113.138
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 045
+  type: ss
+  server: 35.86.117.124
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 046
+  type: ss
+  server: 35.88.126.102
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 047
+  type: ss
+  server: 35.88.136.187
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 048
+  type: vmess
+  server: 183.240.253.26
+  port: 39041
+  alterId: 64
+  cipher: auto
+  skip-cert-verify: true
+  tls: false
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇺🇸 049
+  type: ss
+  server: 38.75.136.21
+  port: 3389
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇺🇸 050
+  type: ss
+  server: 44.242.211.17
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 051
+  type: ss
+  server: 44.243.115.246
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 052
+  type: ss
+  server: 44.244.24.140
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 053
+  type: ss
+  server: 44.244.25.243
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 054
+  type: ss
+  server: 54.191.9.106
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 055
+  type: trojan
+  server: scm.zarelayv1.com
+  port: 39874
+  password: 2baa2d43-b564-3b1f-92c7-c6fa1ff7e0a2
+  skip-cert-verify: true
+  sni: us-katt.zodport.com
+- name: 🇻🇳 001
+  type: ss
+  server: vn.acxylm.top
+  port: 40251
+  cipher: aes-256-gcm
+  password: f8017657-aa43-43e1-830a-e1b2bcdbeeef
+- name: 🇻🇳 002
+  type: trojan
+  server: 160.30.21.105
+  port: 443
+  password: 94d219c9-1afc-4d42-b090-8b3794764380
+  skip-cert-verify: true
+- name: 🇮🇪 001
+  type: ss
+  server: 3.250.25.159
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇭🇰 020
+  type: vmess
+  server: v9.heduian.link
+  port: '30809'
+  alterId: 2
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 🇭🇰 021
+  type: ss
+  server: 103.103.245.158
+  port: 443
+  cipher: aes-256-gcm
+  password: ccf426f1fe78
+- name: 🇭🇰 022
+  type: trojan
+  server: 126.116.225.149
+  port: 443
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+- name: 🇭🇰 023
+  type: trojan
+  server: 203.198.123.174
+  port: 443
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+- name: 🇯🇵 017
+  type: trojan
+  server: 160.16.231.103
+  port: 3160
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+- name: 🇯🇵 018
+  type: trojan
+  server: 153.121.51.29
+  port: 1802
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+- name: 🇸🇬 012
+  type: trojan
+  server: 160.16.130.66
+  port: 2045
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+- name: 🇰🇷 009
+  type: vmess
+  server: 45.94.68.13
+  port: 10755
+  alterId: 0
+  cipher: auto
+  skip-cert-verify: false
+  tls: false
+  uuid: a844b289-6fd7-407b-8312-d600ec2efcd4
+- name: 🇸🇬 013
+  type: trojan
+  server: 160.16.87.174
+  port: 3957
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+- name: 🇺🇸 056
+  type: trojan
+  server: 160.16.117.182
+  port: 4317
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+- name: 🇺🇸 057
+  type: trojan
+  server: 160.16.117.182
+  port: 3296
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+- name: 🇻🇳 003
+  type: ss
+  server: 103.186.154.42
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇮🇳 001
+  type: vmess
+  server: ppy-boardv2.02ijp4uos1.download
+  port: 26144
+  alterId: 0
+  cipher: auto
+  skip-cert-verify: false
+  tls: false
+  uuid: aa15b97a-24b1-3a31-824a-bc52f5a15bac
+- name: 🇭🇰 024
+  type: vmess
+  server: 47.242.186.1
+  port: '5043'
+  alterId: 0
+  cipher: auto
+  network: kcp
+  tls: false
+  uuid: 93c35277-ee3f-4ab2-9d9e-462b97a8795f
+- name: 🇯🇵 019
+  type: vmess
+  server: 54.168.151.169
+  port: '30391'
+  alterId: 0
+  cipher: auto
+  network: kcp
+  tls: false
+  uuid: c977388d-4550-4135-bbc6-0199daa76352
+- name: 🇰🇷 010
+  type: vmess
+  server: 45.94.68.13
+  port: '10755'
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  uuid: a844b289-6fd7-407b-8312-d600ec2efcd4
+- name: 🇮🇳 002
+  type: vmess
+  server: ppy-boardv2.02ijp4uos1.download
+  port: '26144'
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  uuid: aa15b97a-24b1-3a31-824a-bc52f5a15bac
+- name: 🇨🇳 011
+  type: vmess
+  server: v9.heduian.link
+  port: 30809
+  alterId: 2
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 🇨🇳 012
+  type: trojan
+  server: 221.128.195.239
+  port: 443
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+- name: 🇯🇵 022
+  type: trojan
+  server: 160.16.89.176
+  port: 3160
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+- name: 🇯🇵 024
+  type: trojan
+  server: 160.16.57.238
+  port: 449
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+- name: 🇯🇵 025
+  type: trojan
+  server: 160.16.87.174
+  port: 1700
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+- name: 🇨🇳 013
+  type: vmess
+  server: 47.242.186.1
+  port: 5043
+  alterId: 0
+  cipher: auto
+  network: kcp
+  tls: false
+  uuid: 93c35277-ee3f-4ab2-9d9e-462b97a8795f
+- name: 🇯🇵 027
+  type: vmess
+  server: 47.74.14.30
+  port: 5106
+  alterId: 0
+  cipher: auto
+  network: kcp
+  tls: false
+  uuid: 1cc84891-1657-4f71-97d0-287df565820e
+- name: 🇯🇵 031
+  type: vmess
+  server: 54.168.151.169
+  port: 30391
+  alterId: 0
+  cipher: auto
+  network: kcp
+  tls: false
+  uuid: c977388d-4550-4135-bbc6-0199daa76352
+- name: 🇯🇵 032
+  type: trojan
+  server: 160.16.231.103
+  port: 1331
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+- name: 🇯🇵 033
+  type: trojan
+  server: 160.16.117.182
+  port: 4397
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+- name: 🇯🇵 034
+  type: trojan
+  server: 202.181.103.246
+  port: 443
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+- name: 🇯🇵 035
+  type: trojan
+  server: 160.16.236.32
+  port: 443
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+- name: 🇯🇵 036
+  type: trojan
+  server: 160.16.68.250
+  port: 3160
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+- name: 🇺🇸 058
+  type: trojan
+  server: auto.wgnmdgfw.com
+  port: 16327
+  password: 90f45c05-917f-3b1b-a582-899cfe4cf7b3
+  skip-cert-verify: false
+  sni: eplcgame.com
+- name: 🇯🇵 037
+  type: trojan
+  server: 153.121.45.139
+  port: 1700
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+- name: 🇯🇵 038
+  type: trojan
+  server: 160.16.196.59
+  port: 1802
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+- name: 🇯🇵 039
+  type: trojan
+  server: 160.16.72.33
+  port: 1924
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+- name: 🇯🇵 040
+  type: trojan
+  server: 160.16.72.33
+  port: 3294
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+- name: 🇯🇵 041
+  type: trojan
+  server: 160.16.63.16
+  port: 447
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+- name: 🇯🇵 042
+  type: trojan
+  server: 153.121.73.102
+  port: 3294
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+- name: 🇯🇵 043
+  type: trojan
+  server: 153.121.73.102
+  port: 3296
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+- name: 🇧🇪 001
+  type: vmess
+  server: 57.129.24.124
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇺🇸 059
+  type: vmess
+  server: 104.17.148.22
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
+- name: 🇺🇸 060
+  type: vmess
+  server: lt.fxlcn.com
+  port: 45276
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+- name: 🇺🇸 061
+  type: vmess
+  server: cf.fovi.tk
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
+- name: 🇺🇦 001
+  type: vmess
+  server: pq-brazil1.09vpn.com
+  port: 80
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: c04c3b34-70fd-4fec-963e-c12d09f36bef
+- name: 🇺🇸 062
+  type: vmess
+  server: ye.fxlcn.com
+  port: 45246
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+- name: 🇺🇸 063
+  type: vmess
+  server: orvps2.horsenma.net
+  port: 8443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 57e595e6-ef54-4e0d-b8df-e96db9612b99
+- name: 🇺🇸 064
+  type: vmess
+  server: lt.fxlcn.com
+  port: 45271
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+- name: 🇧🇪 002
+  type: vmess
+  server: 57.129.24.125
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇩🇪 007
+  type: vmess
+  server: 94.136.185.230
+  port: 10534
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: b01c7ef9-33ec-41f6-bfbf-77ddc4d21649
+- name: 🇺🇸 065
+  type: vmess
+  server: lt.fxlcn.com
+  port: 45417
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+- name: 🇺🇸 066
+  type: vmess
+  server: lt.fxlcn.com
+  port: 45235
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+- name: 🇺🇸 067
+  type: vmess
+  server: codepen.io
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
+- name: 🇺🇸 068
+  type: vmess
+  server: lt.fxlcn.com
+  port: 45291
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+- name: 🇺🇸 069
+  type: vmess
+  server: lt.fxlcn.com
+  port: 45233
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+- name: 🇫🇷 012
+  type: vmess
+  server: 146.59.55.50
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇧🇪 003
+  type: vmess
+  server: 57.129.28.69
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇨🇦 015
+  type: vmess
+  server: 51.79.102.253
+  port: 80
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+- name: 🇧🇪 004
+  type: vmess
+  server: 57.129.25.25
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇧🇪 005
+  type: vmess
+  server: 57.129.28.65
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇺🇸 070
+  type: trojan
+  server: log.bpminecraft.com
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  sni: heihu880.pages.dev
+- name: 🇺🇸 071
+  type: trojan
+  server: 104.18.42.163
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  sni: heihu880.pages.dev
+- name: 🇺🇸 072
+  type: trojan
+  server: www.visa.com.sg
+  port: 8443
+  password: trojan
+  skip-cert-verify: true
+  sni: pangpi.pages.dev
+- name: 🇺🇸 073
+  type: trojan
+  server: www.iplocation.net
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  sni: heihu880.pages.dev
+- name: 🇺🇸 074
+  type: trojan
+  server: whatismyipaddress.com
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  sni: heihu880.pages.dev
+- name: 🇺🇸 075
+  type: trojan
+  server: 172.66.44.230
+  port: 8443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+- name: 🇺🇸 076
+  type: trojan
+  server: www.gco.gov.qa
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  sni: heihu880.pages.dev
+- name: 🇺🇸 077
+  type: trojan
+  server: dcf741e8.epeius-2gy.pages.dev
+  port: 443
+  password: auto
+  skip-cert-verify: true
+  sni: dcf741e8.epeius-2gy.pages.dev
+- name: 🇺🇸 078
+  type: trojan
+  server: www.visa.com.hk
+  port: 8443
+  password: vip
+  skip-cert-verify: true
+  sni: heihu880.pages.dev
+- name: 🇺🇸 079
+  type: trojan
+  server: www.zsu.gov.ua
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  sni: heihu880.pages.dev
+- name: 🇺🇸 080
+  type: trojan
+  server: fbi.gov
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  sni: heihu880.pages.dev
+- name: 🇺🇸 081
+  type: trojan
+  server: www.gov.se
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  sni: heihu880.pages.dev
+- name: 🇺🇸 082
+  type: trojan
+  server: www.gov.ua
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  sni: heihu880.pages.dev
+- name: 🇷🇺 003
+  type: trojan
+  server: 92.243.75.49
+  port: 2087
+  password: wb6368
+  skip-cert-verify: true
+  sni: hsdgbuys.pages.dev
+- name: 🇺🇸 083
+  type: trojan
+  server: iplocation.io
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  sni: heihu880.pages.dev
+- name: 🇩🇰 001
+  type: trojan
+  server: www.csgo.com
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  sni: heihu880.pages.dev
+- name: 🇺🇸 084
+  type: trojan
+  server: 104.25.165.81
+  port: 8443
+  password: '123456'
+  skip-cert-verify: true
+  sni: top-azx.pages.dev
+- name: 🇺🇸 085
+  type: trojan
+  server: www.ipaddress.my
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  sni: heihu880.pages.dev
+- name: 🇺🇸 086
+  type: trojan
+  server: 104.25.165.83
+  port: 8443
+  password: '123456'
+  skip-cert-verify: true
+  sni: top-azx.pages.dev
+- name: 🇺🇸 087
+  type: trojan
+  server: koma-yt.pages.dev
+  port: 8443
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+- name: 🇺🇸 088
+  type: trojan
+  server: time.is
+  port: 2087
+  password: vip
+  skip-cert-verify: true
+  sni: heihu880.pages.dev
+- name: 🇺🇸 089
+  type: trojan
+  server: 172.66.46.254
+  port: 443
+  password: auto
+  skip-cert-verify: true
+  sni: dcf741e8.epeius-2gy.pages.dev
+- name: 🇺🇸 090
+  type: trojan
+  server: ip.sb
+  port: 8443
+  password: trojan
+  skip-cert-verify: true
+  sni: fofang.pages.dev
+- name: 🇺🇸 091
+  type: trojan
+  server: www.udemy.com
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  sni: heihu880.pages.dev
+- name: 🇺🇸 092
+  type: trojan
+  server: singapore.com
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  sni: heihu880.pages.dev
+- name: 🇺🇸 093
+  type: trojan
+  server: 104.17.148.22
+  port: 443
+  password: redfree8
+  skip-cert-verify: true
+  sni: redfree8-p1.pooriashop.ir
+- name: 🇺🇸 094
+  type: trojan
+  server: www.wto.org
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  sni: heihu880.pages.dev
+- name: 🇺🇸 095
+  type: trojan
+  server: 104.21.112.1
+  port: 443
+  password: f8b7cd5e-60c4-4e95-9b7b-d561ef4eed8c
+  skip-cert-verify: true
+  sni: yellow-cloud-d53f.vavovi6084.workers.dev
+- name: 🇺🇸 096
+  type: trojan
+  server: www.ipget.net
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  sni: heihu880.pages.dev
+- name: 🇺🇸 097
+  type: trojan
+  server: 104.18.27.94
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  sni: heihu880.pages.dev
+- name: 🇺🇸 098
+  type: trojan
+  server: www.pcmag.com
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  sni: heihu880.pages.dev
+- name: 🇺🇸 099
+  type: trojan
+  server: www.udacity.com
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  sni: heihu880.pages.dev
+- name: 🇺🇸 100
+  type: trojan
+  server: japan.com
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  sni: heihu880.pages.dev
+- name: 🇺🇸 101
+  type: trojan
+  server: www.visa.com.tw
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  sni: heihu880.pages.dev
+- name: 🇺🇸 102
+  type: trojan
+  server: 104.17.148.22
+  port: 80
+  password: redfree8
+  skip-cert-verify: true
+  sni: redfree8-p1.pooriashop.ir
+- name: 🇺🇸 103
+  type: trojan
+  server: 45.82.14.144
+  port: 2025
+  password: vpn
+  skip-cert-verify: true
+  sni: dns.google.com
+- name: 🇺🇸 104
+  type: trojan
+  server: 38.207.133.204
+  port: 10002
+  password: trojan
+  skip-cert-verify: true
+  sni: qingming-b08.pages.dev
+- name: 🇺🇸 105
+  type: trojan
+  server: 104.21.18.192
+  port: 443
+  password: rXzh%3B%3FnW1GGKB(K8
+  skip-cert-verify: true
+  sni: sAiKOXpUbGm.ZhkinGkuRD13.WorkErs.dEV
+- name: 🇺🇸 106
+  type: trojan
+  server: edtunnel-dgp.pages.dev
+  port: 443
+  password: vip
+  skip-cert-verify: true
+  sni: heihu880.pages.dev
+- name: 🇺🇸 107
+  type: trojan
+  server: 198.41.208.69
+  port: 8443
+  password: '123456'
+  skip-cert-verify: true
+  sni: top-azx.pages.dev
+- name: 🇷🇺 004
+  type: trojan
+  server: 109.120.132.80
+  port: 2025
+  password: vpn
+  skip-cert-verify: true
+  sni: vkvd127.mycdn.me
+- name: 🇺🇸 108
+  type: vmess
+  server: v2ray.codefyinc.com
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+- name: 🇺🇸 109
+  type: vmess
+  server: 193.124.24.247
+  port: 6506
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: c53d41d1-7d56-43ce-9994-408780c6476a
+- name: 🇻🇳 004
+  type: vmess
+  server: vn4.viefast.net
+  port: 80
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 9e76767d-4bfa-4f04-a800-42e2f63afed2
+- name: 🇺🇸 110
+  type: vmess
+  server: s1.db-link.in
+  port: 80
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 003ef206-46b6-3701-ab77-b03debe7511f
+- name: 🇧🇪 006
+  type: vmess
+  server: fapeng.org
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇬🇧 009
+  type: vmess
+  server: 89.31.120.192
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
+- name: 🇺🇸 111
+  type: vmess
+  server: 165.140.216.141
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+- name: 🇺🇸 112
+  type: vmess
+  server: bbbbbbbbb.222769.xyz
+  port: 80
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: false
+  uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7
+- name: 🇯🇵 044
+  type: vmess
+  server: 158.101.146.3
+  port: 54516
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  uuid: 6d0b24b6-6622-44b2-8da0-ef1e67651325
+- name: 🇨🇦 016
+  type: vmess
+  server: 2606:4700:3030::6815:4001
+  port: 80
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: false
+  uuid: 681eda16-e94d-439c-9067-b55db0c0543f
+- name: 🇺🇸 113
+  type: vmess
+  server: ssssssssssssfffffffgh.2032.pp.ua
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  uuid: 4174b95d-115e-4d39-add6-1f8db95bb860
+- name: 🇺🇸 114
+  type: vmess
+  server: sssssssxxxx.2032.pp.ua
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  uuid: 4174b95d-115e-4d39-add6-1f8db95bb860
+- name: 🇺🇸 115
+  type: vmess
+  server: cgroup.node5.v.nodelist-airport.com
+  port: 6542
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: false
+  uuid: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
+- name: 🇯🇵 045
+  type: vmess
+  server: 146.56.45.242
+  port: 33333
+  alterId: 1
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇨🇭 002
+  type: vmess
+  server: 64.110.66.235
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇺🇸 116
+  type: vmess
+  server: 107.172.218.245
+  port: 8552
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇺🇸 117
+  type: vmess
+  server: 154.17.25.217
+  port: 9998
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇨🇳 015
+  type: vmess
+  server: 120.82.70.149
+  port: 36101
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇺🇸 118
+  type: vmess
+  server: 154.17.20.16
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇰🇷 011
+  type: vmess
+  server: 140.238.28.227
+  port: 8080
+  alterId: 1
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇳🇱 005
+  type: vmess
+  server: 45.130.23.35
+  port: 8080
+  alterId: 1
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇨🇳 016
+  type: vmess
+  server: 103.117.101.16
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇪🇪 001
+  type: vmess
+  server: 104.160.19.22
+  port: 8080
+  alterId: 1
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇺🇸 119
+  type: vmess
+  server: 103.136.185.166
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇺🇸 120
+  type: vmess
+  server: 154.19.185.240
+  port: 80
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇯🇵 046
+  type: vmess
+  server: 91.200.242.187
+  port: 14954
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇺🇸 121
+  type: vmess
+  server: 154.12.191.76
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇷🇺 005
+  type: vmess
+  server: 194.87.106.131
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇺🇸 122
+  type: vmess
+  server: tmp9929.kkk.al
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇺🇸 123
+  type: vmess
+  server: 89.208.245.63
+  port: 8080
+  alterId: 1
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇨🇦 017
+  type: vmess
+  server: 2607:5300:60:38c3:2630:a001:b001:1
+  port: 8080
+  alterId: 1
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇯🇵 047
+  type: vmess
+  server: 2a12:a302:1:a10c::4
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇸🇬 014
+  type: vmess
+  server: 2403:cfc0:1116:4ce4::1
+  port: 8193
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇹🇷 003
+  type: vmess
+  server: '2a05:dfc1:700:2:154::'
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇹🇼 001
+  type: vmess
+  server: '2001:b030:a42d:5dc0:9f::'
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇦🇪 003
+  type: vmess
+  server: 193.123.81.235
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇺🇸 124
+  type: vmess
+  server: 5.180.253.31
+  port: 17511
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇩🇪 008
+  type: vmess
+  server: 130.61.253.111
+  port: 8080
+  alterId: 1
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇺🇸 125
+  type: vmess
+  server: 181.214.99.228
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇨🇳 017
+  type: vmess
+  server: 104.208.85.56
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇺🇸 126
+  type: vmess
+  server: 154.3.35.27
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇨🇳 018
+  type: vmess
+  server: 156.251.176.167
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇯🇵 048
+  type: vmess
+  server: 52.197.107.193
+  port: 10241
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇺🇸 127
+  type: vmess
+  server: 138.2.24.162
+  port: 8100
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇺🇸 128
+  type: vmess
+  server: 52.253.97.125
+  port: 59929
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇺🇸 129
+  type: vmess
+  server: 20.210.122.98
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇯🇵 049
+  type: vmess
+  server: 5.226.49.4
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇫🇷 013
+  type: vmess
+  server: 141.11.139.82
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇺🇸 130
+  type: vmess
+  server: 147.78.243.36
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇺🇸 131
+  type: vmess
+  server: 45.66.218.242
+  port: 31800
+  alterId: 1
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇨🇳 019
+  type: vmess
+  server: 176.119.149.46
+  port: 8080
+  alterId: 1
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇺🇸 132
+  type: vmess
+  server: 45.66.129.15
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇦🇺 008
+  type: vmess
+  server: 123.108.70.211
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇨🇳 020
+  type: vmess
+  server: nas.ruyo.in
+  port: 1552
+  alterId: 1
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇺🇦 002
+  type: vmess
+  server: 176.126.114.248
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇦🇺 009
+  type: vmess
+  server: 129.154.201.240
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇯🇵 050
+  type: vmess
+  server: 146.56.157.76
+  port: 8080
+  alterId: 1
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇯🇵 051
+  type: vmess
+  server: 146.56.179.139
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇳🇱 006
+  type: vmess
+  server: 130.162.143.176
+  port: 8080
+  alterId: 1
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇰🇷 012
+  type: vmess
+  server: 140.238.31.168
+  port: 8080
+  alterId: 1
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇺🇸 133
+  type: vmess
+  server: 152.70.94.10
+  port: 8080
+  alterId: 1
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇸🇬 015
+  type: vmess
+  server: 23.101.27.60
+  port: 8848
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇺🇸 134
+  type: vmess
+  server: 34.81.49.231
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇨🇳 021
+  type: vmess
+  server: tw-pqshi.vm.331331.xyz
+  port: 28080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇫🇷 014
+  type: vmess
+  server: download.node1.cjy.me
+  port: 80
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇯🇵 052
+  type: vmess
+  server: bnm.skyin.net
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇺🇸 135
+  type: vmess
+  server: 20.210.126.84
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇺🇸 136
+  type: vmess
+  server: 166.88.77.31
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇺🇸 137
+  type: vmess
+  server: 149.62.46.53
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇦🇺 010
+  type: vmess
+  server: 140.83.50.52
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇯🇵 053
+  type: vmess
+  server: bst.n48.net
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇭🇰 025
+  type: vmess
+  server: 111.92.240.243
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇺🇸 138
+  type: vmess
+  server: 34.92.212.7
+  port: 10086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇦🇺 011
+  type: vmess
+  server: 43.154.53.65
+  port: 9000
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇨🇳 022
+  type: vmess
+  server: 101.33.120.19
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇯🇵 054
+  type: vmess
+  server: 99.84.128.45
+  port: 80
+  alterId: 1
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇺🇸 139
+  type: vmess
+  server: 4.216.173.159
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇺🇸 140
+  type: vmess
+  server: 20.222.39.3
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇺🇸 141
+  type: vmess
+  server: 150.230.204.219
+  port: 8080
+  alterId: 1
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇯🇵 055
+  type: vmess
+  server: 193.32.151.103
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇺🇸 142
+  type: vmess
+  server: 45.66.129.161
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇺🇸 143
+  type: vmess
+  server: 147.78.245.166
+  port: 8080
+  alterId: 1
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇸🇬 016
+  type: vmess
+  server: 18.139.108.70
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇸🇬 017
+  type: vmess
+  server: 52.221.29.32
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇸🇬 018
+  type: vmess
+  server: 18.141.185.144
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇸🇬 019
+  type: vmess
+  server: 124.156.207.12
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇨🇳 023
+  type: vmess
+  server: 8.219.53.156
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇺🇸 144
+  type: vmess
+  server: 170.64.166.132
+  port: 8080
+  alterId: 1
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇺🇸 145
+  type: vmess
+  server: 150.230.193.37
+  port: 10618
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇸🇪 001
+  type: vmess
+  server: 141.147.161.53
+  port: 8080
+  alterId: 1
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇯🇵 056
+  type: vmess
+  server: 193.32.148.12
+  port: 8080
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
+- name: 🇨🇳 024
+  type: vmess
+  server: eb362f92-svukg0-t12cnj-1ol97.hk.p5pv.com
+  port: 80
+  alterId: 2
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: false
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+- name: 🇺🇸 146
+  type: vmess
+  server: sgcft01.xqc.best
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: e9ce293d-5a2a-48f1-bb6e-32bf7ed108e6
+- name: 🇺🇸 147
+  type: vmess
+  server: jpcft01.xqc.best
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 326b11fd-f8e0-4cb9-b51d-6fd84aee81d4
+- name: 🇺🇸 148
+  type: vmess
+  server: hkcft01.xqc.best
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 3228e6e4-e6fd-4574-a6df-b8762489b682
+- name: 🇦🇺 012
+  type: vmess
+  server: 1.1.1.5
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: true
+  uuid: a91c50c3-c838-428d-a61d-ed372255bb71
+- name: 🇦🇺 013
+  type: vmess
+  server: 1.1.1.2
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: true
+  uuid: a91c50c3-c838-428d-a61d-ed372255bb71
+- name: 🇦🇺 014
+  type: vmess
+  server: 1.1.1.3
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: true
+  uuid: a91c50c3-c838-428d-a61d-ed372255bb71
+- name: 🇦🇺 015
+  type: vmess
+  server: 1.1.1.4
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: true
+  uuid: a91c50c3-c838-428d-a61d-ed372255bb71
+- name: 🇦🇺 016
+  type: vmess
+  server: 1.1.1.1
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: true
+  uuid: a91c50c3-c838-428d-a61d-ed372255bb71
+- name: 🇺🇸 149
+  type: vmess
+  server: 38.54.98.110
+  port: 2052
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  tls: true
+  uuid: 665d9b8f-153d-4907-adac-de12afd9c851
+- name: 🇺🇸 150
+  type: vmess
+  server: 160.79.104.214
+  port: 8880
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: d1b75cc3-e618-37c4-9c55-ff11b4ed493b
+- name: 🇺🇸 151
+  type: vmess
+  server: 198.71.232.211
+  port: 8880
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 7a384b65-fcc9-32b1-bff4-d2494705b7b1
+- name: 🇺🇸 152
+  type: vmess
+  server: 50.62.91.214
+  port: 8880
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: d1b75cc3-e618-37c4-9c55-ff11b4ed493b
+- name: 🇸🇮 001
+  type: vmess
+  server: 92.53.191.209
+  port: 8880
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 6f96494c-bdaf-3091-bf7b-29cfe92882b6
+- name: 🇺🇸 153
+  type: vmess
+  server: 166.62.115.215
+  port: 8880
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788
+- name: 🇨🇦 018
+  type: vmess
+  server: 205.233.181.3
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
+- name: 🇺🇸 154
+  type: vmess
+  server: 216.205.52.215
+  port: 8880
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788
+- name: 🇺🇸 155
+  type: vmess
+  server: 172.66.3.211
+  port: 80
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: bd8f4c3a-b55a-4a55-a4be-d2ead4a4c66a
+- name: 🇺🇸 156
+  type: vmess
+  server: 23.224.152.62
+  port: 31909
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: a5e99fc4-5b87-4312-aa8a-52cad1971b92
+- name: 🇺🇸 157
+  type: vmess
+  server: 45.94.68.179
+  port: 34103
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: f083427f-9d8b-4863-b4a5-fc15255547d2
+- name: 🇺🇸 158
+  type: vmess
+  server: 64.225.109.206
+  port: 2082
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 48264b45-64b8-4e9f-8a88-cef41f20c736
+- name: 🇺🇸 159
+  type: vmess
+  server: America.com
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: grpc
+  skip-cert-verify: true
+  tls: true
+  uuid: 33f6d8b0-81f8-4fce-b3df-79dc8fd6d8c5
+- name: 🇨🇳 026
+  type: vmess
+  server: us1.tiljkc.top
+  port: 46051
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 0d849bb5-8663-3958-ae0a-9918d4a95b5e
+- name: 🇨🇳 029
+  type: vmess
+  server: 183.236.51.23
+  port: 48109
+  alterId: 64
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇨🇳 031
+  type: vmess
+  server: 183.236.51.38
+  port: 49302
+  alterId: 64
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇨🇳 032
+  type: vmess
+  server: 120.232.153.123
+  port: 45402
+  alterId: 64
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇨🇳 033
+  type: vmess
+  server: 120.232.153.27
+  port: 58831
+  alterId: 64
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇨🇳 034
+  type: vmess
+  server: 120.232.153.63
+  port: 40972
+  alterId: 64
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd
+- name: 🇨🇳 035
+  type: vmess
+  server: 120.234.102.229
+  port: 52908
+  alterId: 64
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇺🇸 160
+  type: vmess
+  server: 38.147.165.185
+  port: 38692
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: decde5b9-cc9c-4622-9ee6-723378429f4e
+- name: 🇳🇱 007
+  type: vmess
+  server: 45.159.51.116
+  port: 48019
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: c06797d5-fa41-4b48-b132-d268d2acb302
+- name: 🇨🇳 036
+  type: vmess
+  server: hk1.tiljkc.top
+  port: 39041
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 0d849bb5-8663-3958-ae0a-9918d4a95b5e
+- name: 🇨🇳 037
+  type: vmess
+  server: v32.heduian.link
+  port: 30832
+  alterId: 2
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 🇨🇳 038
+  type: vmess
+  server: 183.236.51.23
+  port: 51704
+  alterId: 64
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇨🇳 039
+  type: vmess
+  server: 183.236.51.23
+  port: 54104
+  alterId: 64
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇨🇳 040
+  type: vmess
+  server: 185.207.155.123
+  port: 39949
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 0899b23d-fbd2-42b8-8e48-b057cf45e24e
+- name: 🇨🇳 041
+  type: vmess
+  server: 103.30.76.250
+  port: 16785
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 086ce045-924d-4538-82ef-debb4ae9ccb5
+- name: 🇨🇳 042
+  type: vmess
+  server: 120.198.71.214
+  port: 34493
+  alterId: 64
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇨🇳 043
+  type: vmess
+  server: 120.198.71.219
+  port: 44014
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇨🇳 044
+  type: vmess
+  server: 120.232.153.40
+  port: 31209
+  alterId: 64
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇨🇳 045
+  type: vmess
+  server: 120.198.71.219
+  port: 44614
+  alterId: 64
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇺🇸 161
+  type: vmess
+  server: 45.94.68.206
+  port: 35384
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: b3e95701-dbd0-4a2f-a701-6ec815fb5ad2
+- name: 🇨🇳 047
+  type: vmess
+  server: jp1.tiljkc.top
+  port: 38951
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 0d849bb5-8663-3958-ae0a-9918d4a95b5e
+- name: 🇨🇳 048
+  type: vmess
+  server: v24.heduian.link
+  port: 30824
+  alterId: 2
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 🇺🇸 162
+  type: vmess
+  server: 156.231.140.143
+  port: 80
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 96e128c5-a64f-4067-81f1-782907169b82
+- name: 🇨🇳 049
+  type: vmess
+  server: 183.236.48.158
+  port: 50052
+  alterId: 64
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇨🇳 051
+  type: vmess
+  server: sgp1.tiljkc.top
+  port: 34843
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 0d849bb5-8663-3958-ae0a-9918d4a95b5e
+- name: 🇨🇳 052
+  type: vmess
+  server: xctransfer1st.cokecloud.top
+  port: 12672
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 49dadd3c-f3cf-4868-bc6b-a61cb049ab1b
+- name: 🇧🇪 007
+  type: vmess
+  server: jamekk.org
+  port: 443
+  alterId: 1
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇧🇪 008
+  type: vmess
+  server: 57.129.28.63
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇺🇸 163
+  type: vmess
+  server: 104.16.0.0
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 58b78d40-aaaf-43a5-8263-d8c3a07e241e
+- name: 🇺🇸 164
+  type: vmess
+  server: 38.99.82.193
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇺🇸 165
+  type: vmess
+  server: 172.64.166.32
+  port: 2082
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+- name: 🇨🇳 053
+  type: vmess
+  server: 183.236.51.23
+  port: 48009
+  alterId: 64
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇺🇸 166
+  type: vmess
+  server: 104.16.148.244
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+- name: 🇺🇸 167
+  type: vmess
+  server: 104.16.164.228
+  port: 80
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: e6d76927-edd1-442b-92a4-fa031f522c42
+- name: 🇺🇸 168
+  type: vmess
+  server: 104.19.32.46
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+- name: 🇺🇸 169
+  type: vmess
+  server: 104.19.38.62
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+- name: 🇺🇸 170
+  type: vmess
+  server: 104.19.46.233
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+- name: 🇺🇸 171
+  type: vmess
+  server: 104.19.51.232
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+- name: 🇺🇸 172
+  type: vmess
+  server: 104.26.0.56
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+- name: 🇺🇸 173
+  type: vmess
+  server: 172.64.166.28
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+- name: 🇺🇸 174
+  type: vmess
+  server: 172.64.166.22
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+- name: 🇺🇸 175
+  type: vmess
+  server: 172.64.167.5
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+- name: 🇺🇸 176
+  type: vmess
+  server: 172.64.175.213
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+- name: 🇺🇸 177
+  type: vmess
+  server: 172.64.198.249
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+- name: 🇨🇳 054
+  type: vmess
+  server: 183.236.48.161
+  port: 31778
+  alterId: 64
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇺🇸 178
+  type: vmess
+  server: 23.227.38.3
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+- name: 🇺🇸 179
+  type: vmess
+  server: 23.227.38.5
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+- name: 🇺🇸 180
+  type: vmess
+  server: 23.227.38.6
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+- name: 🇺🇸 181
+  type: vmess
+  server: icook.tw
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+- name: 🇺🇸 182
+  type: vmess
+  server: ip.sb
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+- name: 🇺🇸 183
+  type: vmess
+  server: japan.com
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+- name: 🇺🇸 184
+  type: vmess
+  server: malaysia.com
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+- name: 🇺🇸 185
+  type: vmess
+  server: singapore.com
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+- name: 🇺🇸 186
+  type: vmess
+  server: seribus.org
+  port: 443
+  alterId: 1
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇩🇰 002
+  type: vmess
+  server: csgo.com
+  port: 2053
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 8b0a592f-1fee-4da0-add6-f8e108611164
+- name: 🇩🇰 003
+  type: vmess
+  server: fastcup.net
+  port: 2053
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 8b0a592f-1fee-4da0-add6-f8e108611164
+- name: 🇩🇰 004
+  type: vmess
+  server: pubg.ac
+  port: 2053
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 8b0a592f-1fee-4da0-add6-f8e108611164
+- name: 🇨🇳 055
+  type: vmess
+  server: v29.heduian.link
+  port: 30829
+  alterId: 2
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 🇨🇳 056
+  type: vmess
+  server: v8.heduian.link
+  port: 30808
+  alterId: 2
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 🇩🇪 009
+  type: vmess
+  server: 185.16.110.212
+  port: 8880
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: b209dfbf-6bb0-30b2-a77a-286e230466b5
+- name: 🇺🇸 187
+  type: vmess
+  server: 162.159.137.178
+  port: 80
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 88a25bf3-18af-486f-b194-d87e976c230b
+- name: 🇺🇸 188
+  type: vmess
+  server: 104.21.0.0
+  port: 80
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 0730d4e1-3c84-4e06-8b2c-22ab4f591ff6
+- name: 🇺🇸 189
+  type: vmess
+  server: test3.flha.ru
+  port: 80
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 0730d4e1-3c84-4e06-8b2c-22ab4f591ff6
+- name: 🇺🇸 190
+  type: vmess
+  server: cloudflare.182682.xyz
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 7bc6a98a-b741-40bc-ba58-8dec2a196339
+- name: 🇺🇸 191
+  type: vmess
+  server: newyork.cloudflareservervpn.sbs
+  port: 2096
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 8c111c4f-af43-43fe-bbf8-d7e075479557
+- name: 🇺🇸 192
+  type: vmess
+  server: 104.21.83.208
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+- name: 🇺🇸 193
+  type: vmess
+  server: 172.64.167.44
+  port: 2095
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+- name: 🇫🇷 015
+  type: vmess
+  server: serkat.org
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇬🇧 010
+  type: vmess
+  server: 46.250.234.32
+  port: 45317
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: b2836369-220b-4840-80c4-8cf904c735ee
+- name: 🇺🇸 194
+  type: vmess
+  server: 5.180.30.85
+  port: 18598
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: bf26f2fb-9d2a-49b6-8527-82e8aba3a9a9
+- name: 🇺🇸 195
+  type: vmess
+  server: 5.180.30.146
+  port: 27773
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: b2347239-dd15-40b3-b683-50cc2ff19ae7
+- name: 🇵🇹 001
+  type: vmess
+  server: 5.182.39.44
+  port: 444
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 7d52a409-aa5a-471f-aca5-e7621bf1b813
+- name: 🇧🇪 009
+  type: vmess
+  server: 57.128.189.143
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇧🇪 010
+  type: vmess
+  server: 57.128.189.211
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇧🇪 011
+  type: vmess
+  server: 57.128.189.222
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇧🇪 012
+  type: vmess
+  server: 57.129.24.130
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇧🇪 013
+  type: vmess
+  server: 57.129.25.20
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇧🇪 014
+  type: vmess
+  server: 57.129.25.23
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇧🇪 015
+  type: vmess
+  server: 57.129.25.26
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇧🇪 016
+  type: vmess
+  server: 57.129.28.214
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇧🇪 017
+  type: vmess
+  server: 57.129.28.215
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇧🇪 018
+  type: vmess
+  server: 57.129.28.216
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇧🇪 019
+  type: vmess
+  server: 57.129.28.213
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇧🇪 020
+  type: vmess
+  server: 57.129.28.64
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇧🇪 021
+  type: vmess
+  server: 57.129.59.195
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇧🇪 022
+  type: vmess
+  server: 57.129.59.199
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇧🇪 023
+  type: vmess
+  server: 57.129.64.157
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇧🇪 024
+  type: vmess
+  server: 57.129.64.238
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇩🇪 010
+  type: vmess
+  server: 62.146.235.193
+  port: 28011
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: cfc5a87f-3c13-4e25-b556-176cdd6b5c6a
+- name: 🇷🇴 001
+  type: vmess
+  server: 89.46.235.246
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: cfa8c2a5-5196-43cb-b54b-e391b2838835
+- name: 🇫🇷 016
+  type: vmess
+  server: 91.134.8.88
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇫🇷 017
+  type: vmess
+  server: 91.134.8.92
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇫🇷 018
+  type: vmess
+  server: 91.134.8.102
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇺🇸 196
+  type: vmess
+  server: 94.131.111.195
+  port: 444
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 8bbd9d8c-481b-49b6-8029-e4648f2ea31d
+- name: 🇿🇦 001
+  type: vmess
+  server: 102.177.189.101
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
+- name: 🇹🇼 002
+  type: vmess
+  server: 103.115.109.250
+  port: 40762
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 35ce6e3a-4ddc-472c-9e9f-a34362c194e7
+- name: 🇺🇸 197
+  type: vmess
+  server: 103.124.107.144
+  port: 29800
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: cc31ddfc-d92e-4dab-cd06-00dfb84af8ac
+- name: 🇹🇼 003
+  type: vmess
+  server: 103.159.207.84
+  port: 50832
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: c31c40eb-95fc-4937-ba45-7a21e8f5da32
+- name: 🇺🇸 198
+  type: vmess
+  server: 104.18.2.186
+  port: 80
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 44c467a9-8f0d-41a5-f00b-86569753e5b0
+- name: 🇺🇸 199
+  type: vmess
+  server: 104.19.150.10
+  port: 2095
+  alterId: 0
+  cipher: auto
+  network: httpupgrade
+  skip-cert-verify: true
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+- name: 🇺🇸 200
+  type: vmess
+  server: 104.21.16.1
+  port: 8880
+  alterId: 0
+  cipher: auto
+  network: xhttp
+  skip-cert-verify: true
+  uuid: b447c934-c80c-4239-9274-14eb7b2654c2
+- name: 🇺🇸 201
+  type: vmess
+  server: 104.21.16.100
+  port: 2053
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: eb817168-5f83-4fba-af99-881ec0e547b1
+- name: 🇩🇪 011
+  type: vmess
+  server: 141.94.155.228
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇫🇷 019
+  type: vmess
+  server: 146.59.118.250
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇺🇸 202
+  type: vmess
+  server: 15.204.103.7
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇺🇸 203
+  type: vmess
+  server: 15.204.234.200
+  port: 41100
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: c7f169a3-2e9a-4894-ba53-7b2fa6fd08b4
+- name: 🇺🇸 204
+  type: vmess
+  server: 15.204.249.0
+  port: 48160
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 5b113c12-4dd4-4bb5-9c01-cff092b559e3
+- name: 🇺🇸 205
+  type: vmess
+  server: 15.235.85.156
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇪🇸 001
+  type: vmess
+  server: 164.138.202.114
+  port: 21639
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 816c36a6-94a6-4d0c-9e55-25f1b1afa9a9
+- name: 🇸🇪 002
+  type: vmess
+  server: 185.146.173.25
+  port: 80
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: e3cb5c38-1168-46ad-aec4-62ffd3614690
+- name: 🇺🇸 206
+  type: vmess
+  server: 2.56.125.101
+  port: 38088
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 1275ea18-bc9c-4bcb-b3fd-fee70272e143
+- name: 🇺🇸 207
+  type: vmess
+  server: 209.126.84.189
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+- name: 🇺🇸 208
+  type: vmess
+  server: 23.162.200.125
+  port: 2201
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 86eab4ac-dbe2-4e2f-a490-4fccade87c35
+- name: 🇺🇸 209
+  type: vmess
+  server: 38.60.199.177
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 81fd1594-a68e-4bf2-bd46-f8f9ed453db6
+- name: 🇺🇸 210
+  type: vmess
+  server: test2.flha.ru
+  port: 80
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 15f62abf-8cc9-4598-8d57-e4df7b499a84
+- name: 🇺🇸 211
+  type: vmess
+  server: www.speedtest.net
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: b7acf44f-3c3a-430c-8ed0-fb64ccc9a13a
+- name: 🇫🇷 020
+  type: vmess
+  server: yichueng.org
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇨🇳 057
+  type: vmess
+  server: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
+  port: 80
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+- name: 🇩🇪 012
+  type: vmess
+  server: de.netwatchvpn.sbs
+  port: 44799
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: d48de346-aaea-424a-9338-0049e1f1c865
+- name: 🇺🇸 212
+  type: vmess
+  server: ea596492-e849-fedb-4940-add11fdfa131.freevpnatm.dpdns.org
+  port: 80
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 34a7da0c-a43a-49b8-a8d0-64b43100090e
+- name: 🇺🇸 213
+  type: vmess
+  server: ipw.gfdv54cvghhgfhgj-njhgj64.info
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: b7acf44f-3c3a-430c-8ed0-fb64ccc9a13a
+- name: 🇧🇪 025
+  type: vmess
+  server: kampong.org
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇧🇪 026
+  type: vmess
+  server: lammaland.org
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇺🇸 214
+  type: vmess
+  server: panel3.ipyar.org
+  port: 32017
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: c0ccdeb9-784c-4d67-b904-20dcaac9902a
+- name: 🇧🇪 027
+  type: vmess
+  server: pelang.org
+  port: 443
+  alterId: 1
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇺🇸 215
+  type: vmess
+  server: rokna.farsonline24.ir
+  port: 2096
+  alterId: 0
+  cipher: auto
+  network: httpupgrade
+  skip-cert-verify: true
+  tls: true
+  uuid: c2dd76ba-6870-49ec-b8e5-b321f87b0521
+- name: 🇺🇸 216
+  type: vmess
+  server: 169.150.208.83
+  port: 18000
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- name: 🇺🇸 217
+  type: vmess
+  server: 172.64.175.88
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+- name: 🇺🇸 218
+  type: vmess
+  server: 104.19.45.47
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+- name: 🇺🇸 219
+  type: vmess
+  server: 104.19.45.35
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+- name: 🇺🇸 220
+  type: vmess
+  server: 104.19.46.17
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+- name: 🇺🇸 221
+  type: vmess
+  server: 104.19.46.22
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+- name: 🇺🇸 222
+  type: vmess
+  server: 104.19.46.39
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+- name: 🇺🇸 223
+  type: vmess
+  server: 104.19.47.65
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+- name: 🇺🇸 224
+  type: vmess
+  server: 104.19.47.79
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+- name: 🇺🇸 225
+  type: vmess
+  server: 104.19.47.80
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+- name: 🇺🇸 226
+  type: vmess
+  server: 104.19.47.27
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+- name: 🇺🇸 227
+  type: vmess
+  server: 104.19.21.63
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+- name: 🇺🇸 228
+  type: vmess
+  server: 104.19.21.230
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+- name: 🇺🇸 229
+  type: vmess
+  server: 104.22.37.243
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+- name: 🇺🇸 230
+  type: vmess
+  server: 104.26.8.156
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+- name: 🇺🇸 231
+  type: vmess
+  server: 15.235.83.228
+  port: 443
+  alterId: 64
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇺🇸 232
+  type: vmess
+  server: freeyx.cloudflare88.eu.org
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 4f73ede7-a112-40c4-b125-c90b81b712f3
+- name: 🇬🇧 011
+  type: vmess
+  server: frankfurt.faforex.eu.org
+  port: 23451
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 4f73ede7-a112-40c4-b125-c90b81b712f3
+- name: 🇨🇳 058
+  type: vmess
+  server: haa.dashuai.cyou
+  port: 45058
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 38117bbc-49f6-48f8-b39e-f41b94841793
+- name: 🇨🇳 059
+  type: vmess
+  server: xdd.dashuai.cyou
+  port: 45059
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 38117bbc-49f6-48f8-b39e-f41b94841793
+- name: 🇨🇳 060
+  type: vmess
+  server: haa.dashuai.cyou
+  port: 45060
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 38117bbc-49f6-48f8-b39e-f41b94841793
+- name: 🇨🇳 061
+  type: vmess
+  server: xdd.dashuai.cyou
+  port: 45061
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 38117bbc-49f6-48f8-b39e-f41b94841793
+- name: 🇨🇳 062
+  type: vmess
+  server: xg.dashuai.cyou
+  port: 19901
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 38117bbc-49f6-48f8-b39e-f41b94841793
+- name: 🇺🇸 233
+  type: vmess
+  server: 104.21.238.64
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+- name: 🇺🇸 234
+  type: vmess
+  server: 104.21.238.72
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+- name: 🇺🇸 235
+  type: vmess
+  server: 104.18.114.144
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+- name: 🇺🇸 236
+  type: vmess
+  server: 104.21.238.55
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+- name: 🇺🇸 237
+  type: vmess
+  server: 104.18.114.166
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+- name: 🇺🇸 238
+  type: vmess
+  server: 104.18.114.118
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+- name: 🇺🇸 239
+  type: vmess
+  server: 104.18.114.180
+  port: 2095
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+- name: 🇺🇸 240
+  type: vmess
+  server: 104.18.114.57
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+- name: 🇺🇸 241
+  type: vmess
+  server: 104.18.114.188
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+- name: 🇺🇸 242
+  type: vmess
+  server: 104.21.238.8
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+- name: 🇺🇸 243
+  type: vmess
+  server: 199.181.197.184
+  port: 2082
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+- name: 🇺🇸 244
+  type: vmess
+  server: 104.21.238.67
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+- name: 🇺🇸 245
+  type: vmess
+  server: 104.18.114.33
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+- name: 🇺🇸 246
+  type: vmess
+  server: 104.26.0.212
+  port: 2086
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+- name: 🇺🇸 247
+  type: vmess
+  server: klo.986986.shop
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  uuid: b75c9731-408d-4aa6-8ae9-3857205113a1
+- name: 🇳🇱 008
+  type: vmess
+  server: 2606:4700:8dee::40d4:773b
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: ce6e649d-c4c1-4bd4-b708-090e5e2766c8
+- name: 🇳🇱 009
+  type: vmess
+  server: 2606:4700:8d75::35ed:134b
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: ce6e649d-c4c1-4bd4-b708-090e5e2766c8
+- name: 🇳🇱 010
+  type: vmess
+  server: 2606:4700:964f::6d24:5d42
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: ce6e649d-c4c1-4bd4-b708-090e5e2766c8
+- name: 🇫🇷 021
+  type: vmess
+  server: 2606:4700:99ef::7c67:2bc1
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: ce6e649d-c4c1-4bd4-b708-090e5e2766c8
+- name: 🇦🇺 017
+  type: vmess
+  server: 43.199.24.247
+  port: 3000
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: cc101ff1-3452-41c3-89fe-c2a5a20dc6dc
+- name: 🇷🇺 006
+  type: vmess
+  server: 46.29.166.237
+  port: 47555
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860
+- name: 🇺🇸 248
+  type: vmess
+  server: 15.235.83.227
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇺🇸 249
+  type: vmess
+  server: 172.64.175.213
+  port: 2095
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+- name: 🇺🇸 250
+  type: vmess
+  server: 104.19.21.71
+  port: 2095
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+- name: ❓ 001
+  type: vmess
+  server: 31.184.166.188
+  port: 26763
+  alterId: 64
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 89f367a9-020f-4415-b1b2-30314deaadaa
+- name: 🇧🇷 002
+  type: vmess
+  server: 188.114.99.187
+  port: 8880
+  alterId: 0
+  cipher: auto
+  network: httpupgrade
+  skip-cert-verify: true
+  uuid: 6da73f6a-e19f-4619-8f35-84e4a012f18e
+- name: 🇷🇺 007
+  type: vmess
+  server: 45.67.230.79
+  port: 11052
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 314185f7-931d-4656-922d-0857e7afd224
+- name: 🇧🇪 028
+  type: vmess
+  server: 57.129.24.131
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇨🇳 063
+  type: vmess
+  server: 112.132.215.34
+  port: 50007
+  alterId: 0
+  cipher: auto
+  network: tcp
+  skip-cert-verify: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇩🇪 013
+  type: vmess
+  server: '2001:41d0:70e:c100::'
+  port: 443
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇺🇸 251
+  type: vmess
+  server: masjide.org
+  port: 443
+  alterId: 1
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  tls: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: 🇭🇰 028
+  type: vmess
+  server: 43.247.135.86
+  port: 44601
+  alterId: 0
+  cipher: auto
+  skip-cert-verify: false
+  tls: false
+  uuid: 3bff49e6-b2e2-44ce-801f-06eab407e8bd
+- name: 🇭🇰 029
+  type: trojan
+  server: 203.198.123.86
+  port: 443
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: false
+  sni: fe2.update.microsoft.com
+- name: 🇯🇵 057
+  type: ss
+  server: cn01.efan8867801.xyz
+  port: 8766
+  cipher: rc4-md5
+  password: efanccyun
+- name: 🇯🇵 058
+  type: trojan
+  server: 153.121.39.240
+  port: 1331
+  password: 253bc477d4e43c209f2d427272968280
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+- name: 🇸🇬 022
+  type: vmess
+  server: v39.heduian.link
+  port: 30839
+  alterId: 2
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  tls: false
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 🇻🇳 005
+  type: ss
+  server: 103.186.155.28
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
