@@ -1,13 +1,13 @@
 mixed-port: 7890
-allow-lan: false
+allow-lan: true
 mode: rule
 log-level: info
-ipv6: false
+ipv6: true
 external-controller: 127.0.0.1:9090
 dns:
   enable: true
-  listen: 127.0.0.1:1053
-  ipv6: false
+  listen: 0.0.0.0:1053
+  ipv6: true
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   default-nameserver:
@@ -16,13 +16,6 @@ dns:
   nameserver:
   - https://dns.alidns.com/dns-query
   - https://doh.pub/dns-query
-  proxy-server-nameserver:
-  - https://dns.alidns.com/dns-query
-  - https://doh.pub/dns-query
-  nameserver-policy:
-    geosite:geolocation-!cn:
-    - https://1.1.1.1/dns-query#🚀 节点选择
-    - https://8.8.8.8/dns-query#🚀 节点选择
 proxies:
 - name: 🇦🇪阿联酋-01
   type: vless
@@ -59,6 +52,14 @@ proxies:
     public-key: zCeRZCK7gCGFmPlOzBaTWHVkmysMFJlPqgDTPZRjRx0
     short-id: 6ba85179e30d4fc2
   skip-cert-verify: true
+  udp: true
+- name: 🇦🇺澳大利亚-01
+  type: trojan
+  server: tight-possum.rooster465.autos
+  port: 443
+  password: PI36027154
+  skip-cert-verify: true
+  tls: true
   udp: true
 - name: 🇧🇪比利时-01
   type: vless
@@ -112,114 +113,47 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇨🇦加拿大-03
+- name: 🇨🇭瑞士-01
   type: vless
-  server: 151.101.126.151
-  port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?https://t.me/WangCai2🇨🇳
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇦加拿大-04
-  type: vless
-  server: 151.101.124.151
-  port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?https://t.me/WangCai2🇨🇳
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇦加拿大-05
-  type: vless
-  server: 151.101.137.151
-  port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?https://t.me/WangCai2🇨🇳
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇦加拿大-06
-  type: vless
-  server: 151.101.212.151
-  port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?https://t.me/WangCai2🇨🇳
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇦加拿大-07
-  type: vless
-  server: 151.101.139.151
-  port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?https://t.me/WangCai2🇨🇳
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇦加拿大-08
-  type: vless
-  server: 151.101.127.151
-  port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?https://t.me/WangCai2🇨🇳
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇩🇰丹麦-01
-  type: vless
-  server: 193.181.214.98
+  server: 83.228.228.243
   port: 2083
-  uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4
-  network: ws
-  servername: vpn47.cc.cd
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: vpn47.cc.cd
-  skip-cert-verify: true
-  udp: true
-- name: 🇪🇪EE-01
-  type: vless
-  server: ee-t2.vinnypuxtomoon.today
-  port: 2053
-  uuid: 1ee0c3d2-9c42-463f-8497-ee05f76b84e5
-  servername: ee-t2.vinnypuxtomoon.today
+  uuid: 89049f79-320b-48a0-b1cf-110165cae30c
+  servername: www.yahoo.com
   tls: true
   flow: xtls-rprx-vision
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   reality-opts:
-    public-key: RwtMzZtTCmy9WRq3_27xeGF8-1l_qPXRVG3yIFp-6Go
-    short-id: c0d1d1776fed0f6d
+    public-key: l1Ekgk-8T5rB-yolp5OIpc0XZTcd2gBeqmIR2bytKXY
+    short-id: 4e590fdc
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇱CL-01
+  type: vless
+  server: 64.176.23.205
+  port: 8080
+  uuid: 6f346289-e095-4b99-9304-416830c08e0a
+  network: ws
+  tls: false
+  ws-opts:
+    path: /t-me-V2RayyNGvpn
+    headers:
+      Host: t.codmgiftcp.com
   skip-cert-verify: true
   udp: true
 - name: 🇪🇸西班牙-01
+  type: vless
+  server: 206.251.49.44
+  port: 443
+  uuid: a2415a12-3f92-4636-9823-9828d3ceb818
+  servername: www.intel.com
+  tls: true
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: rqtY-HQaeREXyphzsfaFjavFmn-IA66s01KZxDLdwiE
+    short-id: a097e0
+  skip-cert-verify: true
+  udp: true
+- name: 🇪🇸西班牙-02
   type: vless
   server: 151.101.133.151
   port: 80
@@ -232,7 +166,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇪🇸西班牙-02
+- name: 🇪🇸西班牙-03
   type: vless
   server: 151.101.132.151
   port: 80
@@ -300,6 +234,158 @@ proxies:
   udp: true
 - name: 🇫🇷法国-02
   type: vless
+  server: it.fifapes.monster
+  port: 29148
+  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇫🇷法国-03
+  type: vless
+  server: fn.fifapes.monster
+  port: 2090
+  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇫🇷法国-04
+  type: vless
+  server: gr1.fifapes.monster
+  port: 8882
+  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇫🇷法国-05
+  type: trojan
+  server: pumped-eft.rooster465.autos
+  port: 443
+  password: PI36027154
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇫🇷法国-06
+  type: vless
+  server: 37.59.96.21
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇫🇷法国-07
+  type: vless
+  server: 51.91.250.152
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇫🇷法国-08
+  type: vless
+  server: 37.59.96.25
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: YouTube@小青科学网
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇫🇷法国-09
+  type: vless
+  server: 51.91.251.31
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: YouTube@小青科学网
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇫🇷法国-10
+  type: vless
+  server: 51.91.251.198
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: YouTube@小青科学网
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇫🇷法国-11
+  type: vless
+  server: 37.59.96.25
+  port: 443
+  uuid: 6680846a-8a57-4dfd-9a0e-63209cfc8535
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sg-amz
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇫🇷法国-12
+  type: vless
+  server: 51.91.251.31
+  port: 443
+  uuid: 6680846a-8a57-4dfd-9a0e-63209cfc8535
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sg-amz
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇫🇷法国-13
+  type: vless
+  server: 57.128.181.26
+  port: 443
+  uuid: 6680846a-8a57-4dfd-9a0e-63209cfc8535
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sg-amz
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇫🇷法国-14
+  type: vless
   server: 151.101.122.151
   port: 80
   uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
@@ -311,7 +397,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇫🇷法国-03
+- name: 🇫🇷法国-15
   type: vless
   server: 151.101.120.151
   port: 80
@@ -362,18 +448,34 @@ proxies:
   udp: true
 - name: 🇬🇧英国-05
   type: vless
-  server: belgium.cloudpath.live
+  server: 57.129.137.208
   port: 443
-  uuid: a1fbffe9-8e5a-5a0e-9333-045d32eccd59
-  servername: microsoft.com
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
   tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 9HzeVOO-_7-V3l4TCNqgO-cj32nlF3wsG8K4X3qFmFw
-    short-id: cc52201b
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
   skip-cert-verify: true
   udp: true
 - name: 🇬🇧英国-06
+  type: vless
+  server: 134.209.183.179
+  port: 2096
+  uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4
+  network: ws
+  servername: vpn47.cc.cd
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: vpn47.cc.cd
+  skip-cert-verify: true
+  udp: true
+- name: 🇬🇧英国-07
   type: vless
   server: 151.101.60.151
   port: 80
@@ -386,7 +488,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇬🇧英国-07
+- name: 🇬🇧英国-08
   type: vless
   server: 151.101.61.151
   port: 80
@@ -399,7 +501,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇬🇧英国-08
+- name: 🇬🇧英国-09
   type: vless
   server: 151.101.190.151
   port: 80
@@ -412,7 +514,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇬🇧英国-09
+- name: 🇬🇧英国-10
   type: vless
   server: 151.101.191.151
   port: 80
@@ -425,7 +527,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇬🇧英国-10
+- name: 🇬🇧英国-11
   type: vless
   server: 151.101.63.151
   port: 80
@@ -438,7 +540,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇬🇧英国-11
+- name: 🇬🇧英国-12
   type: vless
   server: 151.101.188.151
   port: 80
@@ -453,79 +555,51 @@ proxies:
   udp: true
 - name: 🇭🇰香港-01
   type: vless
-  server: vip.bcjdvip.com
-  port: 14001
-  uuid: 3e06720a-86f0-49b9-8f00-062681e3b385
-  servername: apple.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: safari
-  reality-opts:
-    public-key: Iy9qptuQLY7JphySdvf09hOBj6Ym76Sxj1rIwS4Qmnk
-    short-id: '16'
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰香港-02
-  type: vless
-  server: vip.bcjdvip.com
-  port: 14003
-  uuid: 3e06720a-86f0-49b9-8f00-062681e3b385
-  servername: apple.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: bHHdXJs2NGgY4tDUBwmoLBaKM7y_5sd49geQcdbihz0
-    short-id: '80963776'
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰香港-03
-  type: vless
-  server: vip.bcjdvip.com
-  port: 14010
-  uuid: 3e06720a-86f0-49b9-8f00-062681e3b385
-  servername: apple.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: edge
-  reality-opts:
-    public-key: PT1gw9B5majPBH2_qST-vymli9f6RlTmvGS2gPtdhF8
-    short-id: 1ebaa8ea57a71ffc
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰香港-04
-  type: trojan
-  server: jpbgp.netvigor.cc
-  port: 19128
-  password: OccIqeORGQwiNkwS
-  sni: yazhou10.dynu.net
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇭🇰香港-05
-  type: vless
-  server: media.hihidress.com
+  server: hk2-r.vortexio.cc
   port: 443
-  uuid: 27f914c5-bdcc-441a-9459-368daf552606
-  servername: www.mi.com
+  uuid: e63daf8b-d5ef-4dab-a43b-f731eb72e1f4
+  servername: www.cloudflare.com
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   reality-opts:
-    public-key: zCeRZCK7gCGFmPlOzBaTWHVkmysMFJlPqgDTPZRjRx0
-    short-id: 6ba85179e30d4fc2
+    public-key: JKljeAoIvgygSC7PzCz74fckLcRv7udl4qCUEHxrOQk
+    short-id: b2c3d4e5
   skip-cert-verify: true
   udp: true
-- name: 🇭🇰香港-06
+- name: 🇭🇰香港-02
+  type: vless
+  server: hk2-r.vortexio.cc
+  port: 8443
+  uuid: e63daf8b-d5ef-4dab-a43b-f731eb72e1f4
+  servername: www.cloudflare.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: JKljeAoIvgygSC7PzCz74fckLcRv7udl4qCUEHxrOQk
+    short-id: b2c3d4e5
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰香港-03
   type: trojan
-  server: 103.177.136.42
-  port: 47909
+  server: 103.177.136.45
+  port: 46424
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: is.01.naiun.bilibili.com
+  sni: de.01.naiun.bilibili.com
   skip-cert-verify: true
   tls: true
   udp: true
-- name: 🇭🇰香港-07
+- name: 🇭🇰香港-04
+  type: trojan
+  server: 103.177.136.42
+  port: 41943
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: az.01.naiun.bilibili.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇭🇰香港-05
   type: trojan
   server: 103.177.136.42
   port: 45619
@@ -534,16 +608,16 @@ proxies:
   skip-cert-verify: true
   tls: true
   udp: true
-- name: 🇭🇰香港-08
+- name: 🇭🇰香港-06
   type: trojan
-  server: 103.177.136.45
-  port: 48697
+  server: 103.177.136.42
+  port: 45553
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: gh.01.naiun.bilibili.com
+  sni: ch.01.naiun.bilibili.com
   skip-cert-verify: true
   tls: true
   udp: true
-- name: 🇭🇰香港-09
+- name: 🇭🇰香港-07
   type: trojan
   server: 103.177.136.45
   port: 41943
@@ -552,15 +626,32 @@ proxies:
   skip-cert-verify: true
   tls: true
   udp: true
-- name: 🇭🇰香港-10
-  type: vmess
-  server: 154.37.223.56
-  port: 13659
-  uuid: 137fcb24-2538-49ef-ce1e-329ebe5edcbe
-  alterId: 0
-  cipher: auto
-  tls: false
+- name: 🇭🇰香港-08
+  type: trojan
+  server: 103.177.136.42
+  port: 47909
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: is.01.naiun.bilibili.com
   skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇭🇰香港-09
+  type: trojan
+  server: 103.177.136.45
+  port: 45619
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: fr.01.naiun.bilibili.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇭🇰香港-10
+  type: trojan
+  server: 103.177.136.45
+  port: 48697
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: gh.01.naiun.bilibili.com
+  skip-cert-verify: true
+  tls: true
   udp: true
 - name: 🇭🇰香港-11
   type: trojan
@@ -574,13 +665,31 @@ proxies:
 - name: 🇭🇰香港-12
   type: trojan
   server: 103.177.136.42
-  port: 41943
+  port: 46424
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: az.01.naiun.bilibili.com
+  sni: de.01.naiun.bilibili.com
   skip-cert-verify: true
   tls: true
   udp: true
 - name: 🇭🇰香港-13
+  type: trojan
+  server: 103.177.136.45
+  port: 47909
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: is.01.naiun.bilibili.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇭🇰香港-14
+  type: trojan
+  server: 103.177.136.42
+  port: 48697
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: gh.01.naiun.bilibili.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇭🇰香港-15
   type: vmess
   server: 154.37.223.105
   port: 52080
@@ -590,7 +699,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇭🇰香港-14
+- name: 🇭🇰香港-16
   type: vmess
   server: 154.37.223.105
   port: 13221
@@ -600,7 +709,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇭🇰香港-15
+- name: 🇭🇰香港-17
   type: vmess
   server: 154.37.223.105
   port: 39497
@@ -610,7 +719,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇭🇰香港-16
+- name: 🇭🇰香港-18
   type: vmess
   server: 154.37.223.25
   port: 52080
@@ -620,7 +729,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇭🇰香港-17
+- name: 🇭🇰香港-19
   type: vmess
   server: 154.37.223.105
   port: 31567
@@ -630,7 +739,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇭🇰香港-18
+- name: 🇭🇰香港-20
   type: vmess
   server: 154.37.223.25
   port: 31066
@@ -640,7 +749,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇭🇰香港-19
+- name: 🇭🇰香港-21
   type: vmess
   server: 154.37.223.25
   port: 11685
@@ -650,7 +759,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇭🇰香港-20
+- name: 🇭🇰香港-22
   type: vmess
   server: 154.37.223.56
   port: 43203
@@ -660,7 +769,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇭🇰香港-21
+- name: 🇭🇰香港-23
   type: vmess
   server: 154.37.223.56
   port: 52080
@@ -670,7 +779,17 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇭🇰香港-22
+- name: 🇭🇰香港-24
+  type: vmess
+  server: 154.37.223.56
+  port: 13659
+  uuid: 137fcb24-2538-49ef-ce1e-329ebe5edcbe
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰香港-25
   type: vmess
   server: 154.37.223.105
   port: 22926
@@ -680,7 +799,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇭🇰香港-23
+- name: 🇭🇰香港-26
   type: vmess
   server: 154.37.223.25
   port: 41729
@@ -690,7 +809,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇭🇰香港-24
+- name: 🇭🇰香港-27
   type: vless
   server: 207.174.133.173
   port: 10000
@@ -698,81 +817,89 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇭🇰香港-25
-  type: trojan
-  server: 103.177.136.45
-  port: 46424
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: de.01.naiun.bilibili.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇭🇰香港-26
-  type: trojan
-  server: 103.177.136.45
-  port: 45619
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: fr.01.naiun.bilibili.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇭🇰香港-27
-  type: trojan
-  server: 103.177.136.42
-  port: 48697
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: gh.01.naiun.bilibili.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
 - name: 🇭🇰香港-28
-  type: vmess
-  server: v45.hdacd.com
-  port: 30845
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
+  type: trojan
+  server: 18.162.58.236
+  port: 5701
+  password: b8494776252056a1b62e77c4ff6a6d61
+  sni: www.nintendogames.net
   skip-cert-verify: true
+  tls: true
   udp: true
 - name: 🇭🇰香港-29
   type: trojan
-  server: 103.177.136.42
-  port: 46424
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: de.01.naiun.bilibili.com
+  server: 18.162.144.111
+  port: 29449
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
   skip-cert-verify: true
   tls: true
   udp: true
 - name: 🇭🇰香港-30
   type: trojan
-  server: 103.177.136.45
-  port: 47909
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: is.01.naiun.bilibili.com
+  server: 16.163.43.143
+  port: 29642
+  password: b8494776252056a1b62e77c4ff6a6d61
+  sni: www.nintendogames.net
   skip-cert-verify: true
   tls: true
   udp: true
 - name: 🇭🇰香港-31
   type: trojan
-  server: 103.177.136.42
-  port: 45553
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: ch.01.naiun.bilibili.com
+  server: jpbgp.netvigor.cc
+  port: 19128
+  password: OccIqeORGQwiNkwS
+  sni: yazhou10.dynu.net
   skip-cert-verify: true
   tls: true
   udp: true
 - name: 🇭🇰香港-32
+  type: trojan
+  server: 16.163.50.86
+  port: 49277
+  password: b8494776252056a1b62e77c4ff6a6d61
+  sni: www.nintendogames.net
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇭🇰香港-33
+  type: trojan
+  server: 18.166.152.128
+  port: 11035
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇭🇰香港-34
+  type: trojan
+  server: 16.163.43.143
+  port: 17005
+  password: b8494776252056a1b62e77c4ff6a6d61
+  sni: www.nintendogames.net
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇭🇰香港-35
+  type: trojan
+  server: 18.162.58.236
+  port: 2008
+  password: b8494776252056a1b62e77c4ff6a6d61
+  sni: www.nintendogames.net
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇭🇰香港-36
   type: vmess
-  server: v8.hdacd.com
-  port: 30808
+  server: v10.hdacd.com
+  port: 30807
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇭🇰香港-33
+- name: 🇭🇰香港-37
   type: trojan
   server: 103.219.194.43
   port: 443
@@ -785,7 +912,7 @@ proxies:
     headers:
       Host: tjaaa.hhllfly.kdns.fr
   udp: true
-- name: 🇭🇰香港-34
+- name: 🇭🇰香港-38
   type: trojan
   server: 209.33.166.199
   port: 443
@@ -798,7 +925,7 @@ proxies:
     headers:
       Host: tjaaa.hhllfly.kdns.fr
   udp: true
-- name: 🇭🇰香港-35
+- name: 🇭🇰香港-39
   type: trojan
   server: 209.33.160.242
   port: 443
@@ -811,7 +938,7 @@ proxies:
     headers:
       Host: tjaaa.hhllfly.kdns.fr
   udp: true
-- name: 🇭🇰香港-36
+- name: 🇭🇰香港-40
   type: trojan
   server: 23.156.153.57
   port: 443
@@ -837,6 +964,15 @@ proxies:
     public-key: zCeRZCK7gCGFmPlOzBaTWHVkmysMFJlPqgDTPZRjRx0
     short-id: 6ba85179e30d4fc2
   skip-cert-verify: true
+  udp: true
+- name: 🇮🇪爱尔兰-01
+  type: trojan
+  server: 146.70.90.195
+  port: 57452
+  password: t1k169n5zmvvwn96r9ft
+  sni: api-yandex.maps.ru
+  skip-cert-verify: true
+  tls: true
   udp: true
 - name: 🇮🇳印度-01
   type: vless
@@ -880,6 +1016,20 @@ proxies:
   udp: true
 - name: 🇮🇹意大利-01
   type: vless
+  server: it-r.vortexio.cc
+  port: 8443
+  uuid: e63daf8b-d5ef-4dab-a43b-f731eb72e1f4
+  servername: www.cloudflare.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: JKljeAoIvgygSC7PzCz74fckLcRv7udl4qCUEHxrOQk
+    short-id: b2c3d4e5
+  skip-cert-verify: true
+  udp: true
+- name: 🇮🇹意大利-02
+  type: vless
   server: 151.101.242.151
   port: 80
   uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
@@ -891,7 +1041,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇮🇹意大利-02
+- name: 🇮🇹意大利-03
   type: vless
   server: 151.101.241.151
   port: 80
@@ -905,6 +1055,34 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: 🇯🇵日本-01
+  type: vless
+  server: 116.206.92.49
+  port: 443
+  uuid: 7bcb31de-f8f1-4e93-a792-0144c05c6cfa
+  servername: www.apple.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  reality-opts:
+    public-key: gRKqowCAdlhBh9gKYv1S3kQERkqtpWmCFS-NqLBKw3s
+    short-id: 9fc3dfda8bca19c2
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵日本-02
+  type: vless
+  server: jp3-r.vortexio.cc
+  port: 8443
+  uuid: e63daf8b-d5ef-4dab-a43b-f731eb72e1f4
+  servername: www.cloudflare.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: JKljeAoIvgygSC7PzCz74fckLcRv7udl4qCUEHxrOQk
+    short-id: b2c3d4e5
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵日本-03
   type: vmess
   server: 2a02:6ea0:d32f::f8fe:349b
   port: 24202
@@ -921,30 +1099,10 @@ proxies:
   udp: true
 - name: 🇰🇷韩国-01
   type: vless
-  server: 152.67.211.233
-  port: 8899
-  uuid: ebf0f3c7-323f-431e-944f-67297178f5bb
-  servername: www.lovelive-anime.jp
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: B7eELUOn0QM6fKSrr5v_AE4JPHQIxvb9-xX3WLqnLAk
-    short-id: 11d27eb4
-  skip-cert-verify: true
-  udp: true
-- name: 🇰🇿KZ-01
-  type: vless
-  server: 185.91.126.49
-  port: 448
-  uuid: 5005e971-b6a7-4d68-9100-616358f3cdab
-  servername: www.cloudflare.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: RlXCeIykJsVU_xhJMu9zohMUQiTfi52kibVvY5Zz9k4
-    short-id: 943e6ba0e346b3a8
+  server: 43.108.23.174
+  port: 32521
+  uuid: 4ecdf2bd-3ef1-4356-8323-420ed29e8e89
+  tls: false
   skip-cert-verify: true
   udp: true
 - name: 🇱🇺LU-01
@@ -958,6 +1116,20 @@ proxies:
     path: /Telegram🇨🇳+@WangCai2
     headers:
       Host: s5.868001.xyz
+  skip-cert-verify: true
+  udp: true
+- name: 🇱🇻LV-01
+  type: vless
+  server: 188.253.18.132
+  port: 443
+  uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4
+  network: ws
+  servername: vpn47.cc.cd
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: vpn47.cc.cd
   skip-cert-verify: true
   udp: true
 - name: 🇳🇱荷兰-01
@@ -989,6 +1161,36 @@ proxies:
   udp: true
 - name: 🇳🇱荷兰-04
   type: vless
+  server: 185.203.243.56
+  port: 443
+  uuid: f421e67c-64f3-45a1-d7b4-40cf42c844f6
+  network: ws
+  servername: us2.wxgqlfx.icu
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /TG@wxgqlfx
+    headers:
+      Host: us2.wxgqlfx.icu
+  skip-cert-verify: true
+  udp: true
+- name: 🇳🇱荷兰-05
+  type: vless
+  server: 86.107.197.239
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇳🇱荷兰-06
+  type: vless
   server: 5.10.247.140
   port: 80
   uuid: f9255507-1b65-433f-bfd8-193b35e068e2
@@ -1000,7 +1202,7 @@ proxies:
       Host: s5.868001.xyz
   skip-cert-verify: true
   udp: true
-- name: 🇳🇱荷兰-05
+- name: 🇳🇱荷兰-07
   type: vless
   server: 151.101.206.151
   port: 80
@@ -1013,7 +1215,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇳🇱荷兰-06
+- name: 🇳🇱荷兰-08
   type: vless
   server: 151.101.205.151
   port: 80
@@ -1051,6 +1253,34 @@ proxies:
     path: /?https://t.me/WangCai2🇨🇳
     headers:
       Host: opu-ao6.pages.dev
+  skip-cert-verify: true
+  udp: true
+- name: 🇵🇱波兰-01
+  type: vless
+  server: 45.144.48.3
+  port: 443
+  uuid: a2415a12-3f92-4636-9823-9828d3ceb818
+  servername: www.intel.com
+  tls: true
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: hgQ3Wa09f9ectEos7QyC1LQ8bBq8lEAcAtGIDFTKin0
+    short-id: c0
+  skip-cert-verify: true
+  udp: true
+- name: 🇵🇱波兰-02
+  type: vless
+  server: 185.226.181.184
+  port: 2053
+  uuid: f421e67c-64f3-45a1-d7b4-40cf42c844f6
+  network: ws
+  servername: us2.wxgqlfx.icu
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /TG@wxgqlfx
+    headers:
+      Host: us2.wxgqlfx.icu
   skip-cert-verify: true
   udp: true
 - name: 🇷🇴罗马尼亚-01
@@ -1109,19 +1339,6 @@ proxies:
   udp: true
 - name: 🇷🇴罗马尼亚-07
   type: vless
-  server: 93.114.194.84
-  port: 448
-  uuid: bc5b801f-49a7-4db7-ac92-a2c57d42d132
-  servername: www.samsung.com
-  tls: true
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: qX6IJfWNN-SNray6xJugb8pCpgY_zjeyCfvq9IUyd3w
-    short-id: e1bdc95c1554c8eb
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇴罗马尼亚-08
-  type: vless
   server: 45.85.119.240
   port: 443
   uuid: b991b390-dd0f-4061-9150-bee0cb467bce
@@ -1136,30 +1353,16 @@ proxies:
   udp: true
 - name: 🇸🇨SC-01
   type: vless
-  server: 45.206.0.34
-  port: 8443
-  uuid: 52faee73-e0fe-4661-992d-67259257170f
-  servername: storage.yandex.net
+  server: de3-r.vortexio.cc
+  port: 443
+  uuid: e63daf8b-d5ef-4dab-a43b-f731eb72e1f4
+  servername: www.cloudflare.com
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   reality-opts:
-    public-key: dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8
-    short-id: ea10cd5686751ec5
-  skip-cert-verify: true
-  udp: true
-- name: 🇸🇨SC-02
-  type: vless
-  server: 45.206.0.53
-  port: 8443
-  uuid: 52faee73-e0fe-4661-992d-67259257170f
-  servername: storage.yandex.net
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8
-    short-id: ea10cd5686751ec5
+    public-key: JKljeAoIvgygSC7PzCz74fckLcRv7udl4qCUEHxrOQk
+    short-id: b2c3d4e5
   skip-cert-verify: true
   udp: true
 - name: 🇸🇪瑞典-01
@@ -1181,30 +1384,56 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: 🇸🇬新加坡-01
-  type: vmess
-  server: v29.hdacd.com
-  port: 30829
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
+  type: vless
+  server: 163.128.98.234
+  port: 443
+  uuid: ea09bde9-e2b9-4307-bb33-19069ed3e024
+  servername: www.apple.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  reality-opts:
+    public-key: V9_W4evy6036YsXIYwUuHuYme-HXECN9ho7RPEzang8
+    short-id: 0e746735d5c6c703
   skip-cert-verify: true
   udp: true
 - name: 🇸🇬新加坡-02
-  type: vless
-  server: 134.185.93.231
+  type: trojan
+  server: rich-mule.rooster465.autos
   port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
+  password: PI36027154
+  skip-cert-verify: true
   tls: true
+  udp: true
+- name: 🇸🇬新加坡-03
+  type: vless
+  server: 43.160.220.164
+  port: 666
+  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
+  network: ws
+  servername: 43.160.220.164
+  tls: true
+  client-fingerprint: chrome
   ws-opts:
-    path: /
+    path: /proxy
     headers:
-      Host: t1s1.rittbo.kdns.fr
+      Host: 43.160.220.164
   skip-cert-verify: true
   udp: true
 - name: 🇹🇷土耳其-01
+  type: vless
+  server: 78.135.87.247
+  port: 8443
+  uuid: d543719b-7325-44ef-a8f4-b1a6e6b44078
+  servername: www.yahoo.com
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: CmOo6N7jVYHj9MhRHT3BpxIU8ZgWLPDR3ops_Vqj_l4
+    short-id: db49335ae082
+  skip-cert-verify: true
+  udp: true
+- name: 🇹🇷土耳其-02
   type: vless
   server: 87.249.139.235
   port: 8443
@@ -1213,7 +1442,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   udp: true
-- name: 🇹🇷土耳其-02
+- name: 🇹🇷土耳其-03
   type: vless
   server: 87.249.139.247
   port: 8443
@@ -1222,7 +1451,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   udp: true
-- name: 🇹🇷土耳其-03
+- name: 🇹🇷土耳其-04
   type: vless
   server: 87.249.139.233
   port: 8443
@@ -1232,6 +1461,62 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: 🇹🇼台湾-01
+  type: vless
+  server: zzt.murphyweb.sbs
+  port: 20007
+  uuid: d44ed678-88ff-4bb4-b170-1a397a2f7ee2
+  servername: buylite.music.apple.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 1Up61_Ml2SGi89jSqF7NOe8q1t9-qRdkau0nRXhFm1o
+    short-id: 72593ecf
+  skip-cert-verify: true
+  udp: true
+- name: 🇹🇼台湾-02
+  type: vless
+  server: zzt.murphyweb.sbs
+  port: 32166
+  uuid: d44ed678-88ff-4bb4-b170-1a397a2f7ee2
+  servername: buylite.music.apple.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: OdTELUjAUKO_qr-O-uihaAZJAhA8GyIWVI6CpozVCU4
+    short-id: 6c6c7c97
+  skip-cert-verify: true
+  udp: true
+- name: 🇹🇼台湾-03
+  type: vless
+  server: zzt.murphyweb.sbs
+  port: 32432
+  uuid: d44ed678-88ff-4bb4-b170-1a397a2f7ee2
+  servername: www.yahoo.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: vkH2rX2skD6g7fQW4-wfL45M3TkXM71rAUE2sNYW_Wk
+    short-id: 7f6b8152
+  skip-cert-verify: true
+  udp: true
+- name: 🇹🇼台湾-04
+  type: vless
+  server: zzt.murphyweb.sbs
+  port: 42340
+  uuid: d44ed678-88ff-4bb4-b170-1a397a2f7ee2
+  servername: buylite.music.apple.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 1Up61_Ml2SGi89jSqF7NOe8q1t9-qRdkau0nRXhFm1o
+    short-id: 72593ecf
+  skip-cert-verify: true
+  udp: true
+- name: 🇹🇼台湾-05
   type: vless
   server: tw3.miyazono-kaori.com
   port: 443
@@ -1274,6 +1559,34 @@ proxies:
   udp: true
 - name: 🇺🇸美国-01
   type: vless
+  server: us2-r.vortexio.cc
+  port: 443
+  uuid: e63daf8b-d5ef-4dab-a43b-f731eb72e1f4
+  servername: www.cloudflare.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: JKljeAoIvgygSC7PzCz74fckLcRv7udl4qCUEHxrOQk
+    short-id: b2c3d4e5
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸美国-02
+  type: vless
+  server: us2-r.vortexio.cc
+  port: 8443
+  uuid: e63daf8b-d5ef-4dab-a43b-f731eb72e1f4
+  servername: www.cloudflare.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: JKljeAoIvgygSC7PzCz74fckLcRv7udl4qCUEHxrOQk
+    short-id: b2c3d4e5
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸美国-03
+  type: vless
   server: panel-vip.us.998521.xyz
   port: 35282
   uuid: 56000407-e282-489f-acb7-b86dafedf504
@@ -1282,7 +1595,7 @@ proxies:
   client-fingerprint: chrome
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-02
+- name: 🇺🇸美国-04
   type: vless
   server: 206.82.3.131
   port: 443
@@ -1290,7 +1603,101 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-03
+- name: 🇺🇸美国-05
+  type: trojan
+  server: pro-tortoise.rooster465.autos
+  port: 443
+  password: PI36027154
+  skip-cert-verify: true
+  tls: true
+  udp: true
+- name: 🇺🇸美国-06
+  type: vless
+  server: 104.168.146.122
+  port: 443
+  uuid: 6680846a-8a57-4dfd-9a0e-63209cfc8535
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sg-amz
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸美国-07
+  type: vless
+  server: 104.168.146.122
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸美国-08
+  type: vless
+  server: support.zoom.us
+  port: 443
+  uuid: 6680846a-8a57-4dfd-9a0e-63209cfc8535
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  ws-opts:
+    path: /sg-YouTube@小青科学网
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸美国-09
+  type: vless
+  server: support.zoom.us
+  port: 80
+  uuid: cac6ec8f-99f0-44c5-814f-2f3f65e4db74
+  network: ws
+  tls: false
+  ws-opts:
+    path: /dula
+    headers:
+      Host: speed.dulacloud.store
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸美国-10
+  type: vless
+  server: support.zoom.us
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸美国-11
+  type: vless
+  server: 45.158.127.48
+  port: 443
+  uuid: f421e67c-64f3-45a1-d7b4-40cf42c844f6
+  network: ws
+  servername: us2.wxgqlfx.icu
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /TG@wxgqlfx
+    headers:
+      Host: us2.wxgqlfx.icu
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸美国-12
   type: vless
   server: 52.222.136.195
   port: 443
@@ -1305,36 +1712,7 @@ proxies:
       Host: moon.nocturnbit.online
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-04
-  type: vless
-  server: support.zoom.us
-  port: 443
-  uuid: 6680846a-8a57-4dfd-9a0e-63209cfc8535
-  network: ws
-  servername: support.zoom.us.yxls.eu.cc
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /sg-amz
-    headers:
-      Host: support.zoom.us.yxls.eu.cc
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸美国-05
-  type: vless
-  server: support.zoom.us
-  port: 443
-  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
-  network: ws
-  servername: support.zoom.us.yxls.eu.cc
-  tls: true
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: support.zoom.us.yxls.eu.cc
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸美国-06
+- name: 🇺🇸美国-13
   type: vmess
   server: 69.84.182.49
   port: 80
@@ -1349,7 +1727,7 @@ proxies:
     headers:
       Host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.
   udp: true
-- name: 🇺🇸美国-07
+- name: 🇺🇸美国-14
   type: vless
   server: 199.232.197.131
   port: 80
@@ -1362,7 +1740,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-08
+- name: 🇺🇸美国-15
   type: vless
   server: 151.101.130.219
   port: 80
@@ -1375,7 +1753,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-09
+- name: 🇺🇸美国-16
   type: vless
   server: 151.101.0.1
   port: 80
@@ -1388,7 +1766,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-10
+- name: 🇺🇸美国-17
   type: vless
   server: 151.101.194.219
   port: 80
@@ -1402,7 +1780,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-11
+- name: 🇺🇸美国-18
   type: vless
   server: speedtest.net
   port: 80
@@ -1416,7 +1794,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-12
+- name: 🇺🇸美国-19
   type: vless
   server: 151.101.2.219
   port: 80
@@ -1429,7 +1807,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-13
+- name: 🇺🇸美国-20
   type: vless
   server: 167.82.0.1
   port: 80
@@ -1442,7 +1820,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-14
+- name: 🇺🇸美国-21
   type: trojan
   server: 68.64.178.42
   port: 443
@@ -1455,7 +1833,7 @@ proxies:
     headers:
       Host: tjaaa.hhllfly.kdns.fr
   udp: true
-- name: 🇺🇸美国-15
+- name: 🇺🇸美国-22
   type: trojan
   server: 154.64.235.208
   port: 443
@@ -1468,7 +1846,7 @@ proxies:
     headers:
       Host: tjaaa.hhllfly.kdns.fr
   udp: true
-- name: 🇺🇸美国-16
+- name: 🇺🇸美国-23
   type: vless
   server: 151.101.0.151
   port: 80
@@ -1481,7 +1859,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-17
+- name: 🇺🇸美国-24
   type: vless
   server: 151.101.3.151
   port: 80
@@ -1494,7 +1872,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-18
+- name: 🇺🇸美国-25
   type: vless
   server: 151.101.2.151
   port: 80
@@ -1507,7 +1885,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-19
+- name: 🇺🇸美国-26
   type: vless
   server: 151.101.1.151
   port: 80
@@ -1520,7 +1898,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-20
+- name: 🇺🇸美国-27
   type: vless
   server: 151.101.46.151
   port: 80
@@ -1533,7 +1911,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-21
+- name: 🇺🇸美国-28
   type: vless
   server: 151.101.170.151
   port: 80
@@ -1546,7 +1924,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-22
+- name: 🇺🇸美国-29
   type: vless
   server: 151.101.44.151
   port: 80
@@ -1559,7 +1937,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-23
+- name: 🇺🇸美国-30
   type: vless
   server: 151.101.160.151
   port: 80
@@ -1572,7 +1950,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-24
+- name: 🇺🇸美国-31
   type: vless
   server: 151.101.55.151
   port: 80
@@ -1585,7 +1963,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-25
+- name: 🇺🇸美国-32
   type: vless
   server: 151.101.17.151
   port: 80
@@ -1598,7 +1976,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-26
+- name: 🇺🇸美国-33
   type: vless
   server: 151.101.118.151
   port: 80
@@ -1611,7 +1989,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-27
+- name: 🇺🇸美国-34
   type: vless
   server: 151.101.97.151
   port: 80
@@ -1624,7 +2002,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-28
+- name: 🇺🇸美国-35
   type: vless
   server: 151.101.16.151
   port: 80
@@ -1637,7 +2015,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-29
+- name: 🇺🇸美国-36
   type: vless
   server: 151.101.19.151
   port: 80
@@ -1650,7 +2028,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-30
+- name: 🇺🇸美国-37
   type: vless
   server: 151.101.99.151
   port: 80
@@ -1663,7 +2041,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-31
+- name: 🇺🇸美国-38
   type: vless
   server: 151.101.114.151
   port: 80
@@ -1676,7 +2054,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-32
+- name: 🇺🇸美国-39
   type: vless
   server: 151.101.109.151
   port: 80
@@ -1689,7 +2067,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-33
+- name: 🇺🇸美国-40
   type: vless
   server: 151.101.70.151
   port: 80
@@ -1702,7 +2080,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-34
+- name: 🇺🇸美国-41
   type: vless
   server: 151.101.26.151
   port: 80
@@ -1715,7 +2093,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-35
+- name: 🇺🇸美国-42
   type: vless
   server: 151.101.111.151
   port: 80
@@ -1728,7 +2106,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-36
+- name: 🇺🇸美国-43
   type: vless
   server: 151.101.117.151
   port: 80
@@ -1741,7 +2119,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-37
+- name: 🇺🇸美国-44
   type: vless
   server: 151.101.162.151
   port: 80
@@ -1754,7 +2132,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-38
+- name: 🇺🇸美国-45
   type: vless
   server: 151.101.33.151
   port: 80
@@ -1767,7 +2145,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-39
+- name: 🇺🇸美国-46
   type: vless
   server: 151.101.21.151
   port: 80
@@ -1780,7 +2158,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-40
+- name: 🇺🇸美国-47
   type: vless
   server: 151.101.201.151
   port: 80
@@ -1793,7 +2171,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-41
+- name: 🇺🇸美国-48
   type: vless
   server: 151.101.115.151
   port: 80
@@ -1806,7 +2184,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-42
+- name: 🇺🇸美国-49
   type: vless
   server: 151.101.196.151
   port: 80
@@ -1819,269 +2197,9 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-43
-  type: vless
-  server: 151.101.103.151
-  port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?https://t.me/WangCai2🇨🇳
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸美国-44
-  type: vless
-  server: 151.101.199.151
-  port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?https://t.me/WangCai2🇨🇳
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸美国-45
-  type: vless
-  server: 151.101.181.151
-  port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?https://t.me/WangCai2🇨🇳
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸美国-46
-  type: vless
-  server: 151.101.198.151
-  port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?https://t.me/WangCai2🇨🇳
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸美国-47
-  type: vless
-  server: 151.101.58.151
-  port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?https://t.me/WangCai2🇨🇳
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸美国-48
-  type: vless
-  server: 151.101.42.151
-  port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?https://t.me/WangCai2🇨🇳
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸美国-49
-  type: vless
-  server: 151.101.148.151
-  port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?https://t.me/WangCai2🇨🇳
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  skip-cert-verify: true
-  udp: true
 - name: 🇺🇸美国-50
   type: vless
-  server: 151.101.149.151
-  port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?https://t.me/WangCai2🇨🇳
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸美国-51
-  type: vless
-  server: 151.101.182.151
-  port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?https://t.me/WangCai2🇨🇳
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸美国-52
-  type: vless
-  server: 151.101.161.151
-  port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?https://t.me/WangCai2🇨🇳
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸美国-53
-  type: vless
-  server: 151.101.22.151
-  port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?https://t.me/WangCai2🇨🇳
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸美国-54
-  type: vless
-  server: 151.101.153.151
-  port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?https://t.me/WangCai2🇨🇳
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸美国-55
-  type: vless
-  server: 151.101.86.151
-  port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?https://t.me/WangCai2🇨🇳
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸美国-56
-  type: vless
-  server: 151.101.13.151
-  port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?https://t.me/WangCai2🇨🇳
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸美国-57
-  type: vless
-  server: 151.101.108.151
-  port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?https://t.me/WangCai2🇨🇳
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸美国-58
-  type: vless
-  server: 151.101.12.151
-  port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?https://t.me/WangCai2🇨🇳
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸美国-59
-  type: vless
-  server: 151.101.112.151
-  port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?https://t.me/WangCai2🇨🇳
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸美国-60
-  type: vless
-  server: 151.101.25.151
-  port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?https://t.me/WangCai2🇨🇳
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸美国-61
-  type: vless
-  server: 151.101.169.151
-  port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?https://t.me/WangCai2🇨🇳
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸美国-62
-  type: vless
-  server: 151.101.15.151
-  port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?https://t.me/WangCai2🇨🇳
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸美国-63
-  type: vless
-  server: 151.101.151.151
+  server: 151.101.103.151
   port: 80
   uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
   network: ws
@@ -2103,214 +2221,633 @@ proxies:
   skip-cert-verify: true
   udp: true
 - name: 🇽🇽未知-01
-  type: trojan
-  server: bestcdn0.868863.xyz
-  port: 2087
-  password: 31acb40f-9084-4185-bc1d-6ed78448f814
-  sni: 17829106049189.682637.xyz
-  skip-cert-verify: true
+  type: vless
+  server: 104.16.75.224
+  port: 443
+  uuid: b3bd8d0e-3cbe-4241-a4f1-e3dd0a9e432c
+  network: ws
+  servername: server-ir-3.ariyuz.org
   tls: true
   ws-opts:
-    path: /ahyrtuyjykl
-    headers:
-      Host: 17829106047692.682637.xyz
+    path: /page=2
+  skip-cert-verify: true
   udp: true
 - name: 🇽🇽未知-02
-  type: trojan
-  server: bestcdn0.868863.xyz
-  port: 2096
-  password: 31acb40f-9084-4185-bc1d-6ed78448f814
-  sni: 17829106048381.682637.xyz
-  skip-cert-verify: true
+  type: vless
+  server: 104.16.75.226
+  port: 443
+  uuid: b3bd8d0e-3cbe-4241-a4f1-e3dd0a9e432c
+  network: ws
+  servername: server-ir-3.ariyuz.org
   tls: true
+  client-fingerprint: chrome
   ws-opts:
-    path: /ahyrtuyjykl
+    path: /page=2
     headers:
-      Host: 17829106049780.682637.xyz
+      Host: server-ir-3.ariyuz.org
+  skip-cert-verify: true
   udp: true
 - name: 🇽🇽未知-03
-  type: trojan
-  server: bestcdn0.868863.xyz
-  port: 8443
-  password: 31acb40f-9084-4185-bc1d-6ed78448f814
-  sni: 17829106045211.682637.xyz
-  skip-cert-verify: true
+  type: vless
+  server: 104.26.2.173
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
   tls: true
+  client-fingerprint: chrome
   ws-opts:
-    path: /ahyrtuyjykl
+    path: /sg-melbi
     headers:
-      Host: 17829106043759.682637.xyz
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
   udp: true
 - name: 🇽🇽未知-04
-  type: trojan
-  server: bestcdn0.868863.xyz
-  port: 2053
-  password: 31acb40f-9084-4185-bc1d-6ed78448f814
-  sni: 17829106045598.682637.xyz
-  skip-cert-verify: true
+  type: vless
+  server: 104.26.12.41
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
   tls: true
+  client-fingerprint: chrome
   ws-opts:
-    path: /ahyrtuyjykl
+    path: /sg-melbi
     headers:
-      Host: 17829106047517.682637.xyz
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
   udp: true
 - name: 🇽🇽未知-05
-  type: trojan
-  server: bestcdn1.express.868863.xyz
-  port: 2053
-  password: 31acb40f-9084-4185-bc1d-6ed78448f814
-  sni: 17829106043567.206352.xyz
-  skip-cert-verify: true
+  type: vless
+  server: 104.26.5.39
+  port: 443
+  uuid: 6680846a-8a57-4dfd-9a0e-63209cfc8535
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
   tls: true
+  client-fingerprint: chrome
   ws-opts:
-    path: /agraeabtegrrh
+    path: /sg-amz
     headers:
-      Host: 17829106043017.206352.xyz
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
   udp: true
 - name: 🇽🇽未知-06
-  type: trojan
-  server: bestcdn1.express.868863.xyz
-  port: 2096
-  password: 31acb40f-9084-4185-bc1d-6ed78448f814
-  sni: 17829106043221.206353.xyz
-  skip-cert-verify: true
+  type: vless
+  server: 108.162.198.108
+  port: 443
+  uuid: 6680846a-8a57-4dfd-9a0e-63209cfc8535
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
   tls: true
+  client-fingerprint: chrome
   ws-opts:
-    path: /agrbniuh
+    path: /sg-amz
     headers:
-      Host: 17829106046915.206353.xyz
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
   udp: true
 - name: 🇽🇽未知-07
-  type: trojan
-  server: bestcdn1.express.868863.xyz
-  port: 2087
-  password: 31acb40f-9084-4185-bc1d-6ed78448f814
-  sni: 17829106045562.206355.xyz
-  skip-cert-verify: true
+  type: vless
+  server: 104.16.253.69
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
   tls: true
+  client-fingerprint: chrome
   ws-opts:
-    path: /videomuaawe
+    path: /sg-melbi
     headers:
-      Host: 17829106045988.206355.xyz
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
   udp: true
 - name: 🇽🇽未知-08
-  type: trojan
-  server: bestcdn2.express.868863.xyz
-  port: 2083
-  password: 31acb40f-9084-4185-bc1d-6ed78448f814
-  sni: 17829106049554.206352.xyz
-  skip-cert-verify: true
+  type: vless
+  server: 104.17.158.173
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
   tls: true
+  client-fingerprint: chrome
   ws-opts:
-    path: /agraeabtegrrh
+    path: /sg-melbi
     headers:
-      Host: 17829106047625.206352.xyz
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
   udp: true
 - name: 🇽🇽未知-09
-  type: trojan
-  server: bestcdn2.express.868863.xyz
-  port: 2087
-  password: 31acb40f-9084-4185-bc1d-6ed78448f814
-  sni: 17829106042680.206353.xyz
-  skip-cert-verify: true
+  type: vless
+  server: 104.17.149.233
+  port: 443
+  uuid: 6680846a-8a57-4dfd-9a0e-63209cfc8535
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
   tls: true
+  client-fingerprint: chrome
   ws-opts:
-    path: /agrbniuh
+    path: /sg-YouTube@小青科学网
     headers:
-      Host: 17829106043025.206353.xyz
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
   udp: true
 - name: 🇽🇽未知-10
-  type: trojan
-  server: bestcdn2.express.868863.xyz
-  port: 2096
-  password: 31acb40f-9084-4185-bc1d-6ed78448f814
-  sni: 17829106049283.206355.xyz
-  skip-cert-verify: true
+  type: vless
+  server: 104.17.138.128
+  port: 443
+  uuid: 6680846a-8a57-4dfd-9a0e-63209cfc8535
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
   tls: true
+  client-fingerprint: chrome
   ws-opts:
-    path: /videomuaawe
+    path: /sg-YouTube@小青科学网
     headers:
-      Host: 17829106042729.206355.xyz
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
   udp: true
 - name: 🇽🇽未知-11
-  type: trojan
-  server: bestcdn3.868863.xyz
-  port: 2087
-  password: 31acb40f-9084-4185-bc1d-6ed78448f814
-  sni: 17829106047062.206352.xyz
-  skip-cert-verify: true
+  type: vless
+  server: 104.17.145.173
+  port: 443
+  uuid: 6680846a-8a57-4dfd-9a0e-63209cfc8535
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
   tls: true
+  client-fingerprint: chrome
   ws-opts:
-    path: /agraeabtegrrh
+    path: /sg-YouTube@小青科学网
     headers:
-      Host: 17829106042256.206352.xyz
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
   udp: true
 - name: 🇽🇽未知-12
-  type: trojan
-  server: bestcdn3.868863.xyz
-  port: 2083
-  password: 31acb40f-9084-4185-bc1d-6ed78448f814
-  sni: 17829106042743.206353.xyz
-  skip-cert-verify: true
+  type: vless
+  server: 104.17.131.138
+  port: 443
+  uuid: 6680846a-8a57-4dfd-9a0e-63209cfc8535
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
   tls: true
+  client-fingerprint: chrome
   ws-opts:
-    path: /agrbniuh
+    path: /sg-YouTube@小青科学网
     headers:
-      Host: 17829106042803.206353.xyz
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
   udp: true
 - name: 🇽🇽未知-13
-  type: trojan
-  server: bestcdn3.868863.xyz
-  port: 2053
-  password: 31acb40f-9084-4185-bc1d-6ed78448f814
-  sni: 17829106048073.206355.xyz
-  skip-cert-verify: true
+  type: vless
+  server: 172.66.171.48
+  port: 443
+  uuid: 6680846a-8a57-4dfd-9a0e-63209cfc8535
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
   tls: true
+  client-fingerprint: chrome
   ws-opts:
-    path: /videomuaawe
+    path: /sg-YouTube@小青科学网
     headers:
-      Host: 17829106048919.206355.xyz
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
   udp: true
 - name: 🇽🇽未知-14
-  type: trojan
-  server: bestcdn4.868863.xyz
-  port: 2096
-  password: 31acb40f-9084-4185-bc1d-6ed78448f814
-  sni: 17829106041404.206352.xyz
-  skip-cert-verify: true
+  type: vless
+  server: 104.17.223.103
+  port: 443
+  uuid: 6680846a-8a57-4dfd-9a0e-63209cfc8535
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
   tls: true
+  client-fingerprint: chrome
   ws-opts:
-    path: /agraeabtegrrh
+    path: /sg-YouTube@小青科学网
     headers:
-      Host: 17829106048370.206352.xyz
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
   udp: true
 - name: 🇽🇽未知-15
-  type: trojan
-  server: bestcdn4.868863.xyz
-  port: 8443
-  password: 31acb40f-9084-4185-bc1d-6ed78448f814
-  sni: 17829106049784.206353.xyz
-  skip-cert-verify: true
+  type: vless
+  server: 104.19.35.206
+  port: 443
+  uuid: 6680846a-8a57-4dfd-9a0e-63209cfc8535
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
   tls: true
+  client-fingerprint: chrome
   ws-opts:
-    path: /agrbniuh
+    path: /sg-YouTube@小青科学网
     headers:
-      Host: 17829106048465.206353.xyz
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
   udp: true
 - name: 🇽🇽未知-16
-  type: trojan
-  server: bestcdn4.868863.xyz
-  port: 2083
-  password: 31acb40f-9084-4185-bc1d-6ed78448f814
-  sni: 17829106046029.206355.xyz
-  skip-cert-verify: true
+  type: vless
+  server: 104.17.28.104
+  port: 443
+  uuid: 6680846a-8a57-4dfd-9a0e-63209cfc8535
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
   tls: true
+  client-fingerprint: chrome
   ws-opts:
-    path: /videomuaawe
+    path: /sg-YouTube@小青科学网
     headers:
-      Host: 17829106045400.206355.xyz
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
   udp: true
 - name: 🇽🇽未知-17
+  type: vless
+  server: 108.162.198.5
+  port: 443
+  uuid: 6680846a-8a57-4dfd-9a0e-63209cfc8535
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sg-YouTube@小青科学网
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-18
+  type: vless
+  server: 104.17.147.118
+  port: 443
+  uuid: 6680846a-8a57-4dfd-9a0e-63209cfc8535
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sg-YouTube@小青科学网
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-19
+  type: vless
+  server: 162.159.2.87
+  port: 443
+  uuid: 6680846a-8a57-4dfd-9a0e-63209cfc8535
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sg-YouTube@小青科学网
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-20
+  type: vless
+  server: 104.20.39.109
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-21
+  type: vless
+  server: 172.64.146.86
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-22
+  type: vless
+  server: 104.17.112.113
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-23
+  type: vless
+  server: 108.162.198.201
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-24
+  type: vless
+  server: 108.162.198.5
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-25
+  type: vless
+  server: 104.17.147.118
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-26
+  type: vless
+  server: 162.159.43.121
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-27
+  type: vless
+  server: 198.41.223.253
+  port: 2083
+  uuid: e4f949dd-4b1d-48e9-8e30-f90029e105a2
+  network: ws
+  servername: f.fugang.dpdns.org
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: f.fugang.dpdns.org
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-28
+  type: vless
+  server: 162.159.2.228
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-29
+  type: vless
+  server: 104.19.35.8
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-30
+  type: vless
+  server: 198.41.209.43
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-31
+  type: vless
+  server: 104.25.244.217
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-32
+  type: vless
+  server: 162.159.38.105
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-33
+  type: vless
+  server: 104.25.245.126
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-34
+  type: vless
+  server: 104.17.223.103
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-35
+  type: vless
+  server: 198.41.208.112
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-36
+  type: vless
+  server: 104.21.2.192
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-37
+  type: vless
+  server: 198.41.209.80
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-38
+  type: vless
+  server: 104.17.149.233
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-39
+  type: vless
+  server: 104.17.136.118
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-40
+  type: vless
+  server: 162.159.23.117
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-41
+  type: vless
+  server: 172.66.3.133
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-42
+  type: vless
+  server: 104.19.35.206
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  network: ws
+  servername: support.zoom.us.yxls.eu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-43
   type: vless
   server: yx.cloudflare.182682.xyz
   port: 443
@@ -2318,29 +2855,16 @@ proxies:
   network: ws
   servername: t1s1.rittbo.kdns.fr
   tls: true
+  client-fingerprint: chrome
   ws-opts:
     path: /
     headers:
       Host: t1s1.rittbo.kdns.fr
   skip-cert-verify: true
   udp: true
-- name: 🇽🇽未知-18
+- name: 🇽🇽未知-44
   type: vless
-  server: 104.20.6.134
-  port: 443
-  uuid: 2088ef0d-4d2c-43b3-874b-b6a03531c81b
-  network: ws
-  servername: r.meDiASHOPPp.sbS
-  tls: true
-  ws-opts:
-    path: /eyJqdW5rIjoiVVpPeXNodUFQMHNVcU12aCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: r.mediashoppp.sbs
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-19
-  type: vless
-  server: 172.64.41.202
+  server: cf.877774.xyz
   port: 443
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   network: ws
@@ -2353,31 +2877,138 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
   skip-cert-verify: true
   udp: true
-- name: 🇽🇽未知-20
+- name: 🇽🇽未知-45
   type: vless
-  server: 104.19.134.235
+  server: cf.130519.xyz
   port: 443
-  uuid: 72d1797c-cef8-410a-b8fd-db9104dc3cb0
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   network: ws
-  servername: amooaliii.net
+  servername: t1s1.rittbo.kdns.fr
   tls: true
   client-fingerprint: chrome
   ws-opts:
-    path: /jdhfyws
+    path: /
     headers:
-      Host: amooaliii.net
+      Host: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-46
+  type: vless
+  server: cf.090227.xyz
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  servername: t1s1.rittbo.kdns.fr
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-47
+  type: vless
+  server: cloudflare-ip.mofashi.ltd
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  servername: t1s1.rittbo.kdns.fr
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-48
+  type: vless
+  server: 104.18.44.198
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  servername: t1s1.rittbo.kdns.fr
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-49
+  type: vless
+  server: 104.16.148.8
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  servername: t1s1.rittbo.kdns.fr
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-50
+  type: vless
+  server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
+  port: 443
+  uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4
+  network: ws
+  servername: vpn47.cc.cd
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: vpn47.cc.cd
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-51
+  type: vless
+  server: 104.16.71.213
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  servername: t1s1.rittbo.kdns.fr
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
   skip-cert-verify: true
   udp: true
 proxy-groups:
 - name: 🚀 节点选择
   type: select
   proxies:
+  - 🇯🇵日本-01
+  - 🇮🇹意大利-01
+  - 🇹🇼台湾-01
+  - 🇹🇷土耳其-01
+  - 🇹🇼台湾-02
+  - 🇹🇼台湾-03
+  - 🇹🇼台湾-04
+  - 🇨🇭瑞士-01
+  - 🇸🇬新加坡-01
   - 🇭🇰香港-01
+  - 🇺🇸美国-01
+  - 🇺🇸美国-02
+  - 🇸🇨SC-01
   - 🇭🇰香港-02
+  - 🇯🇵日本-02
+  - 🇫🇷法国-01
+  - 🇪🇸西班牙-01
+  - 🇫🇷法国-02
+  - 🇫🇷法国-03
+  - 🇫🇷法国-04
+  - 🇰🇷韩国-01
   - 🇭🇰香港-03
   - 🇭🇰香港-04
   - 🇭🇰香港-05
-  - 🇫🇷法国-01
   - 🇭🇰香港-06
   - 🇭🇰香港-07
   - 🇭🇰香港-08
@@ -2385,6 +3016,8 @@ proxy-groups:
   - 🇭🇰香港-10
   - 🇭🇰香港-11
   - 🇭🇰香港-12
+  - 🇭🇰香港-13
+  - 🇭🇰香港-14
   - 🇳🇱荷兰-01
   - 🇳🇱荷兰-02
   - 🇳🇱荷兰-03
@@ -2394,19 +3027,17 @@ proxy-groups:
   - 🇷🇴罗马尼亚-04
   - 🇷🇴罗马尼亚-05
   - 🇷🇴罗马尼亚-06
-  - 🇹🇷土耳其-01
   - 🇹🇷土耳其-02
-  - 🇸🇪瑞典-01
   - 🇹🇷土耳其-03
+  - 🇸🇪瑞典-01
+  - 🇹🇷土耳其-04
   - 🇺🇦乌克兰-01
   - 🇺🇦乌克兰-02
-  - 🇹🇼台湾-01
+  - 🇹🇼台湾-05
   - 🇺🇦乌克兰-03
   - 🇬🇧英国-01
   - 🇬🇧英国-02
   - 🇬🇧英国-03
-  - 🇭🇰香港-13
-  - 🇭🇰香港-14
   - 🇭🇰香港-15
   - 🇭🇰香港-16
   - 🇭🇰香港-17
@@ -2415,41 +3046,51 @@ proxy-groups:
   - 🇭🇰香港-20
   - 🇭🇰香港-21
   - 🇭🇰香港-22
+  - 🇭🇰香港-23
+  - 🇭🇰香港-24
+  - 🇭🇰香港-25
   - 🇸🇪瑞典-02
   - 🇻🇳越南-01
   - 🇦🇪阿联酋-01
-  - 🇭🇰香港-23
+  - 🇭🇰香港-26
   - 🇮🇩印尼-01
-  - 🇺🇸美国-01
-  - 🇺🇸美国-02
+  - 🇺🇸美国-03
+  - 🇺🇸美国-04
   - 🇮🇶IQ-01
-  - 🇭🇰香港-24
+  - 🇭🇰香港-27
   - 🇦🇱AL-01
   - 🇬🇧英国-04
-  - 🇷🇴罗马尼亚-07
-  - 🇰🇿KZ-01
-  - 🇭🇰香港-25
-  - 🇭🇰香港-26
-  - 🇭🇰香港-27
-  - 🇸🇬新加坡-01
+  - 🇸🇬新加坡-02
+  - 🇺🇸美国-05
+  - 🇫🇷法国-05
+  - 🇦🇺澳大利亚-01
+  - 🇵🇱波兰-01
   - 🇭🇰香港-28
   - 🇭🇰香港-29
-  - 🇸🇨SC-01
-  - 🇪🇪EE-01
-  - 🇸🇨SC-02
   - 🇭🇰香港-30
-  - 🇰🇷韩国-01
+  - 🇮🇪爱尔兰-01
   - 🇭🇰香港-31
-  - 🇬🇧英国-05
   - 🇭🇰香港-32
+  - 🇭🇰香港-33
+  - 🇭🇰香港-34
+  - 🇭🇰香港-35
+  - 🇭🇰香港-36
   - 🇽🇽未知-01
+  - 🇳🇱荷兰-04
   - 🇽🇽未知-02
+  - 🇸🇬新加坡-03
+  - 🇫🇷法国-06
+  - 🇫🇷法国-07
+  - 🇬🇧英国-05
   - 🇽🇽未知-03
   - 🇽🇽未知-04
   - 🇽🇽未知-05
+  - 🇺🇸美国-06
+  - 🇺🇸美国-07
   - 🇽🇽未知-06
   - 🇽🇽未知-07
   - 🇽🇽未知-08
+  - 🇨🇱CL-01
   - 🇽🇽未知-09
   - 🇽🇽未知-10
   - 🇽🇽未知-11
@@ -2457,69 +3098,106 @@ proxy-groups:
   - 🇽🇽未知-13
   - 🇽🇽未知-14
   - 🇽🇽未知-15
+  - 🇫🇷法国-08
   - 🇽🇽未知-16
-  - 🇸🇬新加坡-02
-  - 🇺🇸美国-03
-  - 🇩🇰丹麦-01
-  - 🇺🇸美国-04
-  - 🇺🇸美国-05
-  - 🇯🇵日本-01
-  - 🇺🇸美国-06
-  - 🇷🇴罗马尼亚-08
-  - 🇳🇱荷兰-04
-  - 🇳🇿新西兰-01
-  - 🇱🇺LU-01
-  - 🇺🇸美国-07
+  - 🇽🇽未知-17
+  - 🇫🇷法国-09
+  - 🇽🇽未知-18
+  - 🇽🇽未知-19
+  - 🇫🇷法国-10
   - 🇺🇸美国-08
+  - 🇳🇱荷兰-05
+  - 🇫🇷法国-11
+  - 🇫🇷法国-12
+  - 🇽🇽未知-20
+  - 🇽🇽未知-21
+  - 🇽🇽未知-22
+  - 🇽🇽未知-23
+  - 🇽🇽未知-24
+  - 🇽🇽未知-25
+  - 🇽🇽未知-26
+  - 🇽🇽未知-27
+  - 🇽🇽未知-28
+  - 🇽🇽未知-29
+  - 🇽🇽未知-30
+  - 🇽🇽未知-31
+  - 🇽🇽未知-32
+  - 🇽🇽未知-33
+  - 🇽🇽未知-34
+  - 🇽🇽未知-35
+  - 🇽🇽未知-36
+  - 🇽🇽未知-37
+  - 🇽🇽未知-38
+  - 🇽🇽未知-39
+  - 🇽🇽未知-40
+  - 🇽🇽未知-41
+  - 🇽🇽未知-42
   - 🇺🇸美国-09
+  - 🇫🇷法国-13
+  - 🇬🇧英国-06
+  - 🇽🇽未知-43
+  - 🇽🇽未知-44
+  - 🇽🇽未知-45
+  - 🇽🇽未知-46
+  - 🇽🇽未知-47
+  - 🇽🇽未知-48
+  - 🇽🇽未知-49
+  - 🇽🇽未知-50
   - 🇺🇸美国-10
+  - 🇽🇽未知-51
+  - 🇱🇻LV-01
+  - 🇵🇱波兰-02
   - 🇺🇸美国-11
   - 🇺🇸美国-12
+  - 🇯🇵日本-03
   - 🇺🇸美国-13
-  - 🇽🇽未知-17
-  - 🇺🇸美国-14
-  - 🇭🇰香港-33
-  - 🇺🇸美国-15
-  - 🇮🇹意大利-01
-  - 🇧🇪比利时-01
-  - 🇫🇷法国-02
-  - 🇳🇱荷兰-05
-  - 🇧🇪比利时-02
+  - 🇷🇴罗马尼亚-07
   - 🇳🇱荷兰-06
-  - 🇬🇧英国-06
-  - 🇫🇷法国-03
-  - 🇬🇧英国-07
-  - 🇬🇧英国-08
-  - 🇬🇧英国-09
-  - 🇮🇹意大利-02
-  - 🇬🇧英国-10
-  - 🇫🇮芬兰-01
-  - 🇬🇧英国-11
-  - 🇫🇮芬兰-02
-  - 🇭🇰香港-34
-  - 🇫🇮芬兰-03
-  - 🇪🇸西班牙-01
-  - 🇪🇸西班牙-02
-  - 🇦🇪阿联酋-02
+  - 🇳🇿新西兰-01
+  - 🇱🇺LU-01
+  - 🇺🇸美国-14
+  - 🇺🇸美国-15
   - 🇺🇸美国-16
   - 🇺🇸美国-17
   - 🇺🇸美国-18
   - 🇺🇸美国-19
-  - 🇳🇴挪威-01
-  - 🇭🇰香港-35
-  - 🇮🇳印度-01
-  - 🇭🇰香港-36
   - 🇺🇸美国-20
   - 🇺🇸美国-21
-  - 🇨🇦加拿大-01
-  - 🇨🇦加拿大-02
+  - 🇭🇰香港-37
   - 🇺🇸美国-22
+  - 🇮🇹意大利-02
+  - 🇧🇪比利时-01
+  - 🇫🇷法国-14
+  - 🇳🇱荷兰-07
+  - 🇧🇪比利时-02
+  - 🇳🇱荷兰-08
+  - 🇬🇧英国-07
+  - 🇫🇷法国-15
+  - 🇬🇧英国-08
+  - 🇬🇧英国-09
+  - 🇬🇧英国-10
+  - 🇮🇹意大利-03
+  - 🇬🇧英国-11
+  - 🇫🇮芬兰-01
+  - 🇬🇧英国-12
+  - 🇫🇮芬兰-02
+  - 🇭🇰香港-38
+  - 🇫🇮芬兰-03
+  - 🇪🇸西班牙-02
+  - 🇪🇸西班牙-03
+  - 🇦🇪阿联酋-02
   - 🇺🇸美国-23
   - 🇺🇸美国-24
   - 🇺🇸美国-25
   - 🇺🇸美国-26
+  - 🇳🇴挪威-01
+  - 🇭🇰香港-39
+  - 🇮🇳印度-01
+  - 🇭🇰香港-40
   - 🇺🇸美国-27
   - 🇺🇸美国-28
+  - 🇨🇦加拿大-01
+  - 🇨🇦加拿大-02
   - 🇺🇸美国-29
   - 🇺🇸美国-30
   - 🇺🇸美国-31
@@ -2540,40 +3218,36 @@ proxy-groups:
   - 🇺🇸美国-46
   - 🇺🇸美国-47
   - 🇺🇸美国-48
-  - 🇨🇦加拿大-03
   - 🇺🇸美国-49
   - 🇺🇸美国-50
-  - 🇺🇸美国-51
-  - 🇺🇸美国-52
-  - 🇨🇦加拿大-04
-  - 🇺🇸美国-53
-  - 🇺🇸美国-54
-  - 🇺🇸美国-55
-  - 🇺🇸美国-56
-  - 🇺🇸美国-57
-  - 🇺🇸美国-58
-  - 🇺🇸美国-59
-  - 🇺🇸美国-60
-  - 🇺🇸美国-61
-  - 🇨🇦加拿大-05
-  - 🇺🇸美国-62
-  - 🇨🇦加拿大-06
-  - 🇺🇸美国-63
-  - 🇨🇦加拿大-07
-  - 🇨🇦加拿大-08
-  - 🇽🇽未知-18
-  - 🇽🇽未知-19
   - 🇮🇷IR-01
-  - 🇽🇽未知-20
 - name: ♻️ 自动选择
   type: url-test
   proxies:
+  - 🇯🇵日本-01
+  - 🇮🇹意大利-01
+  - 🇹🇼台湾-01
+  - 🇹🇷土耳其-01
+  - 🇹🇼台湾-02
+  - 🇹🇼台湾-03
+  - 🇹🇼台湾-04
+  - 🇨🇭瑞士-01
+  - 🇸🇬新加坡-01
   - 🇭🇰香港-01
+  - 🇺🇸美国-01
+  - 🇺🇸美国-02
+  - 🇸🇨SC-01
   - 🇭🇰香港-02
+  - 🇯🇵日本-02
+  - 🇫🇷法国-01
+  - 🇪🇸西班牙-01
+  - 🇫🇷法国-02
+  - 🇫🇷法国-03
+  - 🇫🇷法国-04
+  - 🇰🇷韩国-01
   - 🇭🇰香港-03
   - 🇭🇰香港-04
   - 🇭🇰香港-05
-  - 🇫🇷法国-01
   - 🇭🇰香港-06
   - 🇭🇰香港-07
   - 🇭🇰香港-08
@@ -2581,6 +3255,8 @@ proxy-groups:
   - 🇭🇰香港-10
   - 🇭🇰香港-11
   - 🇭🇰香港-12
+  - 🇭🇰香港-13
+  - 🇭🇰香港-14
   - 🇳🇱荷兰-01
   - 🇳🇱荷兰-02
   - 🇳🇱荷兰-03
@@ -2590,19 +3266,17 @@ proxy-groups:
   - 🇷🇴罗马尼亚-04
   - 🇷🇴罗马尼亚-05
   - 🇷🇴罗马尼亚-06
-  - 🇹🇷土耳其-01
   - 🇹🇷土耳其-02
-  - 🇸🇪瑞典-01
   - 🇹🇷土耳其-03
+  - 🇸🇪瑞典-01
+  - 🇹🇷土耳其-04
   - 🇺🇦乌克兰-01
   - 🇺🇦乌克兰-02
-  - 🇹🇼台湾-01
+  - 🇹🇼台湾-05
   - 🇺🇦乌克兰-03
   - 🇬🇧英国-01
   - 🇬🇧英国-02
   - 🇬🇧英国-03
-  - 🇭🇰香港-13
-  - 🇭🇰香港-14
   - 🇭🇰香港-15
   - 🇭🇰香港-16
   - 🇭🇰香港-17
@@ -2611,41 +3285,51 @@ proxy-groups:
   - 🇭🇰香港-20
   - 🇭🇰香港-21
   - 🇭🇰香港-22
+  - 🇭🇰香港-23
+  - 🇭🇰香港-24
+  - 🇭🇰香港-25
   - 🇸🇪瑞典-02
   - 🇻🇳越南-01
   - 🇦🇪阿联酋-01
-  - 🇭🇰香港-23
+  - 🇭🇰香港-26
   - 🇮🇩印尼-01
-  - 🇺🇸美国-01
-  - 🇺🇸美国-02
+  - 🇺🇸美国-03
+  - 🇺🇸美国-04
   - 🇮🇶IQ-01
-  - 🇭🇰香港-24
+  - 🇭🇰香港-27
   - 🇦🇱AL-01
   - 🇬🇧英国-04
-  - 🇷🇴罗马尼亚-07
-  - 🇰🇿KZ-01
-  - 🇭🇰香港-25
-  - 🇭🇰香港-26
-  - 🇭🇰香港-27
-  - 🇸🇬新加坡-01
+  - 🇸🇬新加坡-02
+  - 🇺🇸美国-05
+  - 🇫🇷法国-05
+  - 🇦🇺澳大利亚-01
+  - 🇵🇱波兰-01
   - 🇭🇰香港-28
   - 🇭🇰香港-29
-  - 🇸🇨SC-01
-  - 🇪🇪EE-01
-  - 🇸🇨SC-02
   - 🇭🇰香港-30
-  - 🇰🇷韩国-01
+  - 🇮🇪爱尔兰-01
   - 🇭🇰香港-31
-  - 🇬🇧英国-05
   - 🇭🇰香港-32
+  - 🇭🇰香港-33
+  - 🇭🇰香港-34
+  - 🇭🇰香港-35
+  - 🇭🇰香港-36
   - 🇽🇽未知-01
+  - 🇳🇱荷兰-04
   - 🇽🇽未知-02
+  - 🇸🇬新加坡-03
+  - 🇫🇷法国-06
+  - 🇫🇷法国-07
+  - 🇬🇧英国-05
   - 🇽🇽未知-03
   - 🇽🇽未知-04
   - 🇽🇽未知-05
+  - 🇺🇸美国-06
+  - 🇺🇸美国-07
   - 🇽🇽未知-06
   - 🇽🇽未知-07
   - 🇽🇽未知-08
+  - 🇨🇱CL-01
   - 🇽🇽未知-09
   - 🇽🇽未知-10
   - 🇽🇽未知-11
@@ -2653,69 +3337,106 @@ proxy-groups:
   - 🇽🇽未知-13
   - 🇽🇽未知-14
   - 🇽🇽未知-15
+  - 🇫🇷法国-08
   - 🇽🇽未知-16
-  - 🇸🇬新加坡-02
-  - 🇺🇸美国-03
-  - 🇩🇰丹麦-01
-  - 🇺🇸美国-04
-  - 🇺🇸美国-05
-  - 🇯🇵日本-01
-  - 🇺🇸美国-06
-  - 🇷🇴罗马尼亚-08
-  - 🇳🇱荷兰-04
-  - 🇳🇿新西兰-01
-  - 🇱🇺LU-01
-  - 🇺🇸美国-07
+  - 🇽🇽未知-17
+  - 🇫🇷法国-09
+  - 🇽🇽未知-18
+  - 🇽🇽未知-19
+  - 🇫🇷法国-10
   - 🇺🇸美国-08
+  - 🇳🇱荷兰-05
+  - 🇫🇷法国-11
+  - 🇫🇷法国-12
+  - 🇽🇽未知-20
+  - 🇽🇽未知-21
+  - 🇽🇽未知-22
+  - 🇽🇽未知-23
+  - 🇽🇽未知-24
+  - 🇽🇽未知-25
+  - 🇽🇽未知-26
+  - 🇽🇽未知-27
+  - 🇽🇽未知-28
+  - 🇽🇽未知-29
+  - 🇽🇽未知-30
+  - 🇽🇽未知-31
+  - 🇽🇽未知-32
+  - 🇽🇽未知-33
+  - 🇽🇽未知-34
+  - 🇽🇽未知-35
+  - 🇽🇽未知-36
+  - 🇽🇽未知-37
+  - 🇽🇽未知-38
+  - 🇽🇽未知-39
+  - 🇽🇽未知-40
+  - 🇽🇽未知-41
+  - 🇽🇽未知-42
   - 🇺🇸美国-09
+  - 🇫🇷法国-13
+  - 🇬🇧英国-06
+  - 🇽🇽未知-43
+  - 🇽🇽未知-44
+  - 🇽🇽未知-45
+  - 🇽🇽未知-46
+  - 🇽🇽未知-47
+  - 🇽🇽未知-48
+  - 🇽🇽未知-49
+  - 🇽🇽未知-50
   - 🇺🇸美国-10
+  - 🇽🇽未知-51
+  - 🇱🇻LV-01
+  - 🇵🇱波兰-02
   - 🇺🇸美国-11
   - 🇺🇸美国-12
+  - 🇯🇵日本-03
   - 🇺🇸美国-13
-  - 🇽🇽未知-17
-  - 🇺🇸美国-14
-  - 🇭🇰香港-33
-  - 🇺🇸美国-15
-  - 🇮🇹意大利-01
-  - 🇧🇪比利时-01
-  - 🇫🇷法国-02
-  - 🇳🇱荷兰-05
-  - 🇧🇪比利时-02
+  - 🇷🇴罗马尼亚-07
   - 🇳🇱荷兰-06
-  - 🇬🇧英国-06
-  - 🇫🇷法国-03
-  - 🇬🇧英国-07
-  - 🇬🇧英国-08
-  - 🇬🇧英国-09
-  - 🇮🇹意大利-02
-  - 🇬🇧英国-10
-  - 🇫🇮芬兰-01
-  - 🇬🇧英国-11
-  - 🇫🇮芬兰-02
-  - 🇭🇰香港-34
-  - 🇫🇮芬兰-03
-  - 🇪🇸西班牙-01
-  - 🇪🇸西班牙-02
-  - 🇦🇪阿联酋-02
+  - 🇳🇿新西兰-01
+  - 🇱🇺LU-01
+  - 🇺🇸美国-14
+  - 🇺🇸美国-15
   - 🇺🇸美国-16
   - 🇺🇸美国-17
   - 🇺🇸美国-18
   - 🇺🇸美国-19
-  - 🇳🇴挪威-01
-  - 🇭🇰香港-35
-  - 🇮🇳印度-01
-  - 🇭🇰香港-36
   - 🇺🇸美国-20
   - 🇺🇸美国-21
-  - 🇨🇦加拿大-01
-  - 🇨🇦加拿大-02
+  - 🇭🇰香港-37
   - 🇺🇸美国-22
+  - 🇮🇹意大利-02
+  - 🇧🇪比利时-01
+  - 🇫🇷法国-14
+  - 🇳🇱荷兰-07
+  - 🇧🇪比利时-02
+  - 🇳🇱荷兰-08
+  - 🇬🇧英国-07
+  - 🇫🇷法国-15
+  - 🇬🇧英国-08
+  - 🇬🇧英国-09
+  - 🇬🇧英国-10
+  - 🇮🇹意大利-03
+  - 🇬🇧英国-11
+  - 🇫🇮芬兰-01
+  - 🇬🇧英国-12
+  - 🇫🇮芬兰-02
+  - 🇭🇰香港-38
+  - 🇫🇮芬兰-03
+  - 🇪🇸西班牙-02
+  - 🇪🇸西班牙-03
+  - 🇦🇪阿联酋-02
   - 🇺🇸美国-23
   - 🇺🇸美国-24
   - 🇺🇸美国-25
   - 🇺🇸美国-26
+  - 🇳🇴挪威-01
+  - 🇭🇰香港-39
+  - 🇮🇳印度-01
+  - 🇭🇰香港-40
   - 🇺🇸美国-27
   - 🇺🇸美国-28
+  - 🇨🇦加拿大-01
+  - 🇨🇦加拿大-02
   - 🇺🇸美国-29
   - 🇺🇸美国-30
   - 🇺🇸美国-31
@@ -2736,43 +3457,39 @@ proxy-groups:
   - 🇺🇸美国-46
   - 🇺🇸美国-47
   - 🇺🇸美国-48
-  - 🇨🇦加拿大-03
   - 🇺🇸美国-49
   - 🇺🇸美国-50
-  - 🇺🇸美国-51
-  - 🇺🇸美国-52
-  - 🇨🇦加拿大-04
-  - 🇺🇸美国-53
-  - 🇺🇸美国-54
-  - 🇺🇸美国-55
-  - 🇺🇸美国-56
-  - 🇺🇸美国-57
-  - 🇺🇸美国-58
-  - 🇺🇸美国-59
-  - 🇺🇸美国-60
-  - 🇺🇸美国-61
-  - 🇨🇦加拿大-05
-  - 🇺🇸美国-62
-  - 🇨🇦加拿大-06
-  - 🇺🇸美国-63
-  - 🇨🇦加拿大-07
-  - 🇨🇦加拿大-08
-  - 🇽🇽未知-18
-  - 🇽🇽未知-19
   - 🇮🇷IR-01
-  - 🇽🇽未知-20
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
 - name: 🌍 国外媒体
   type: select
   proxies:
+  - 🇯🇵日本-01
+  - 🇮🇹意大利-01
+  - 🇹🇼台湾-01
+  - 🇹🇷土耳其-01
+  - 🇹🇼台湾-02
+  - 🇹🇼台湾-03
+  - 🇹🇼台湾-04
+  - 🇨🇭瑞士-01
+  - 🇸🇬新加坡-01
   - 🇭🇰香港-01
+  - 🇺🇸美国-01
+  - 🇺🇸美国-02
+  - 🇸🇨SC-01
   - 🇭🇰香港-02
+  - 🇯🇵日本-02
+  - 🇫🇷法国-01
+  - 🇪🇸西班牙-01
+  - 🇫🇷法国-02
+  - 🇫🇷法国-03
+  - 🇫🇷法国-04
+  - 🇰🇷韩国-01
   - 🇭🇰香港-03
   - 🇭🇰香港-04
   - 🇭🇰香港-05
-  - 🇫🇷法国-01
   - 🇭🇰香港-06
   - 🇭🇰香港-07
   - 🇭🇰香港-08
@@ -2780,6 +3497,8 @@ proxy-groups:
   - 🇭🇰香港-10
   - 🇭🇰香港-11
   - 🇭🇰香港-12
+  - 🇭🇰香港-13
+  - 🇭🇰香港-14
   - 🇳🇱荷兰-01
   - 🇳🇱荷兰-02
   - 🇳🇱荷兰-03
@@ -2789,19 +3508,17 @@ proxy-groups:
   - 🇷🇴罗马尼亚-04
   - 🇷🇴罗马尼亚-05
   - 🇷🇴罗马尼亚-06
-  - 🇹🇷土耳其-01
   - 🇹🇷土耳其-02
-  - 🇸🇪瑞典-01
   - 🇹🇷土耳其-03
+  - 🇸🇪瑞典-01
+  - 🇹🇷土耳其-04
   - 🇺🇦乌克兰-01
   - 🇺🇦乌克兰-02
-  - 🇹🇼台湾-01
+  - 🇹🇼台湾-05
   - 🇺🇦乌克兰-03
   - 🇬🇧英国-01
   - 🇬🇧英国-02
   - 🇬🇧英国-03
-  - 🇭🇰香港-13
-  - 🇭🇰香港-14
   - 🇭🇰香港-15
   - 🇭🇰香港-16
   - 🇭🇰香港-17
@@ -2810,41 +3527,51 @@ proxy-groups:
   - 🇭🇰香港-20
   - 🇭🇰香港-21
   - 🇭🇰香港-22
+  - 🇭🇰香港-23
+  - 🇭🇰香港-24
+  - 🇭🇰香港-25
   - 🇸🇪瑞典-02
   - 🇻🇳越南-01
   - 🇦🇪阿联酋-01
-  - 🇭🇰香港-23
+  - 🇭🇰香港-26
   - 🇮🇩印尼-01
-  - 🇺🇸美国-01
-  - 🇺🇸美国-02
+  - 🇺🇸美国-03
+  - 🇺🇸美国-04
   - 🇮🇶IQ-01
-  - 🇭🇰香港-24
+  - 🇭🇰香港-27
   - 🇦🇱AL-01
   - 🇬🇧英国-04
-  - 🇷🇴罗马尼亚-07
-  - 🇰🇿KZ-01
-  - 🇭🇰香港-25
-  - 🇭🇰香港-26
-  - 🇭🇰香港-27
-  - 🇸🇬新加坡-01
+  - 🇸🇬新加坡-02
+  - 🇺🇸美国-05
+  - 🇫🇷法国-05
+  - 🇦🇺澳大利亚-01
+  - 🇵🇱波兰-01
   - 🇭🇰香港-28
   - 🇭🇰香港-29
-  - 🇸🇨SC-01
-  - 🇪🇪EE-01
-  - 🇸🇨SC-02
   - 🇭🇰香港-30
-  - 🇰🇷韩国-01
+  - 🇮🇪爱尔兰-01
   - 🇭🇰香港-31
-  - 🇬🇧英国-05
   - 🇭🇰香港-32
+  - 🇭🇰香港-33
+  - 🇭🇰香港-34
+  - 🇭🇰香港-35
+  - 🇭🇰香港-36
   - 🇽🇽未知-01
+  - 🇳🇱荷兰-04
   - 🇽🇽未知-02
+  - 🇸🇬新加坡-03
+  - 🇫🇷法国-06
+  - 🇫🇷法国-07
+  - 🇬🇧英国-05
   - 🇽🇽未知-03
   - 🇽🇽未知-04
   - 🇽🇽未知-05
+  - 🇺🇸美国-06
+  - 🇺🇸美国-07
   - 🇽🇽未知-06
   - 🇽🇽未知-07
   - 🇽🇽未知-08
+  - 🇨🇱CL-01
   - 🇽🇽未知-09
   - 🇽🇽未知-10
   - 🇽🇽未知-11
@@ -2852,69 +3579,106 @@ proxy-groups:
   - 🇽🇽未知-13
   - 🇽🇽未知-14
   - 🇽🇽未知-15
+  - 🇫🇷法国-08
   - 🇽🇽未知-16
-  - 🇸🇬新加坡-02
-  - 🇺🇸美国-03
-  - 🇩🇰丹麦-01
-  - 🇺🇸美国-04
-  - 🇺🇸美国-05
-  - 🇯🇵日本-01
-  - 🇺🇸美国-06
-  - 🇷🇴罗马尼亚-08
-  - 🇳🇱荷兰-04
-  - 🇳🇿新西兰-01
-  - 🇱🇺LU-01
-  - 🇺🇸美国-07
+  - 🇽🇽未知-17
+  - 🇫🇷法国-09
+  - 🇽🇽未知-18
+  - 🇽🇽未知-19
+  - 🇫🇷法国-10
   - 🇺🇸美国-08
+  - 🇳🇱荷兰-05
+  - 🇫🇷法国-11
+  - 🇫🇷法国-12
+  - 🇽🇽未知-20
+  - 🇽🇽未知-21
+  - 🇽🇽未知-22
+  - 🇽🇽未知-23
+  - 🇽🇽未知-24
+  - 🇽🇽未知-25
+  - 🇽🇽未知-26
+  - 🇽🇽未知-27
+  - 🇽🇽未知-28
+  - 🇽🇽未知-29
+  - 🇽🇽未知-30
+  - 🇽🇽未知-31
+  - 🇽🇽未知-32
+  - 🇽🇽未知-33
+  - 🇽🇽未知-34
+  - 🇽🇽未知-35
+  - 🇽🇽未知-36
+  - 🇽🇽未知-37
+  - 🇽🇽未知-38
+  - 🇽🇽未知-39
+  - 🇽🇽未知-40
+  - 🇽🇽未知-41
+  - 🇽🇽未知-42
   - 🇺🇸美国-09
+  - 🇫🇷法国-13
+  - 🇬🇧英国-06
+  - 🇽🇽未知-43
+  - 🇽🇽未知-44
+  - 🇽🇽未知-45
+  - 🇽🇽未知-46
+  - 🇽🇽未知-47
+  - 🇽🇽未知-48
+  - 🇽🇽未知-49
+  - 🇽🇽未知-50
   - 🇺🇸美国-10
+  - 🇽🇽未知-51
+  - 🇱🇻LV-01
+  - 🇵🇱波兰-02
   - 🇺🇸美国-11
   - 🇺🇸美国-12
+  - 🇯🇵日本-03
   - 🇺🇸美国-13
-  - 🇽🇽未知-17
-  - 🇺🇸美国-14
-  - 🇭🇰香港-33
-  - 🇺🇸美国-15
-  - 🇮🇹意大利-01
-  - 🇧🇪比利时-01
-  - 🇫🇷法国-02
-  - 🇳🇱荷兰-05
-  - 🇧🇪比利时-02
+  - 🇷🇴罗马尼亚-07
   - 🇳🇱荷兰-06
-  - 🇬🇧英国-06
-  - 🇫🇷法国-03
-  - 🇬🇧英国-07
-  - 🇬🇧英国-08
-  - 🇬🇧英国-09
-  - 🇮🇹意大利-02
-  - 🇬🇧英国-10
-  - 🇫🇮芬兰-01
-  - 🇬🇧英国-11
-  - 🇫🇮芬兰-02
-  - 🇭🇰香港-34
-  - 🇫🇮芬兰-03
-  - 🇪🇸西班牙-01
-  - 🇪🇸西班牙-02
-  - 🇦🇪阿联酋-02
+  - 🇳🇿新西兰-01
+  - 🇱🇺LU-01
+  - 🇺🇸美国-14
+  - 🇺🇸美国-15
   - 🇺🇸美国-16
   - 🇺🇸美国-17
   - 🇺🇸美国-18
   - 🇺🇸美国-19
-  - 🇳🇴挪威-01
-  - 🇭🇰香港-35
-  - 🇮🇳印度-01
-  - 🇭🇰香港-36
   - 🇺🇸美国-20
   - 🇺🇸美国-21
-  - 🇨🇦加拿大-01
-  - 🇨🇦加拿大-02
+  - 🇭🇰香港-37
   - 🇺🇸美国-22
+  - 🇮🇹意大利-02
+  - 🇧🇪比利时-01
+  - 🇫🇷法国-14
+  - 🇳🇱荷兰-07
+  - 🇧🇪比利时-02
+  - 🇳🇱荷兰-08
+  - 🇬🇧英国-07
+  - 🇫🇷法国-15
+  - 🇬🇧英国-08
+  - 🇬🇧英国-09
+  - 🇬🇧英国-10
+  - 🇮🇹意大利-03
+  - 🇬🇧英国-11
+  - 🇫🇮芬兰-01
+  - 🇬🇧英国-12
+  - 🇫🇮芬兰-02
+  - 🇭🇰香港-38
+  - 🇫🇮芬兰-03
+  - 🇪🇸西班牙-02
+  - 🇪🇸西班牙-03
+  - 🇦🇪阿联酋-02
   - 🇺🇸美国-23
   - 🇺🇸美国-24
   - 🇺🇸美国-25
   - 🇺🇸美国-26
+  - 🇳🇴挪威-01
+  - 🇭🇰香港-39
+  - 🇮🇳印度-01
+  - 🇭🇰香港-40
   - 🇺🇸美国-27
   - 🇺🇸美国-28
+  - 🇨🇦加拿大-01
+  - 🇨🇦加拿大-02
   - 🇺🇸美国-29
   - 🇺🇸美国-30
   - 🇺🇸美国-31
@@ -2935,40 +3699,36 @@ proxy-groups:
   - 🇺🇸美国-46
   - 🇺🇸美国-47
   - 🇺🇸美国-48
-  - 🇨🇦加拿大-03
   - 🇺🇸美国-49
   - 🇺🇸美国-50
-  - 🇺🇸美国-51
-  - 🇺🇸美国-52
-  - 🇨🇦加拿大-04
-  - 🇺🇸美国-53
-  - 🇺🇸美国-54
-  - 🇺🇸美国-55
-  - 🇺🇸美国-56
-  - 🇺🇸美国-57
-  - 🇺🇸美国-58
-  - 🇺🇸美国-59
-  - 🇺🇸美国-60
-  - 🇺🇸美国-61
-  - 🇨🇦加拿大-05
-  - 🇺🇸美国-62
-  - 🇨🇦加拿大-06
-  - 🇺🇸美国-63
-  - 🇨🇦加拿大-07
-  - 🇨🇦加拿大-08
-  - 🇽🇽未知-18
-  - 🇽🇽未知-19
   - 🇮🇷IR-01
-  - 🇽🇽未知-20
 - name: 📲 电报信息
   type: select
   proxies:
+  - 🇯🇵日本-01
+  - 🇮🇹意大利-01
+  - 🇹🇼台湾-01
+  - 🇹🇷土耳其-01
+  - 🇹🇼台湾-02
+  - 🇹🇼台湾-03
+  - 🇹🇼台湾-04
+  - 🇨🇭瑞士-01
+  - 🇸🇬新加坡-01
   - 🇭🇰香港-01
+  - 🇺🇸美国-01
+  - 🇺🇸美国-02
+  - 🇸🇨SC-01
   - 🇭🇰香港-02
+  - 🇯🇵日本-02
+  - 🇫🇷法国-01
+  - 🇪🇸西班牙-01
+  - 🇫🇷法国-02
+  - 🇫🇷法国-03
+  - 🇫🇷法国-04
+  - 🇰🇷韩国-01
   - 🇭🇰香港-03
   - 🇭🇰香港-04
   - 🇭🇰香港-05
-  - 🇫🇷法国-01
   - 🇭🇰香港-06
   - 🇭🇰香港-07
   - 🇭🇰香港-08
@@ -2976,6 +3736,8 @@ proxy-groups:
   - 🇭🇰香港-10
   - 🇭🇰香港-11
   - 🇭🇰香港-12
+  - 🇭🇰香港-13
+  - 🇭🇰香港-14
   - 🇳🇱荷兰-01
   - 🇳🇱荷兰-02
   - 🇳🇱荷兰-03
@@ -2985,19 +3747,17 @@ proxy-groups:
   - 🇷🇴罗马尼亚-04
   - 🇷🇴罗马尼亚-05
   - 🇷🇴罗马尼亚-06
-  - 🇹🇷土耳其-01
   - 🇹🇷土耳其-02
-  - 🇸🇪瑞典-01
   - 🇹🇷土耳其-03
+  - 🇸🇪瑞典-01
+  - 🇹🇷土耳其-04
   - 🇺🇦乌克兰-01
   - 🇺🇦乌克兰-02
-  - 🇹🇼台湾-01
+  - 🇹🇼台湾-05
   - 🇺🇦乌克兰-03
   - 🇬🇧英国-01
   - 🇬🇧英国-02
   - 🇬🇧英国-03
-  - 🇭🇰香港-13
-  - 🇭🇰香港-14
   - 🇭🇰香港-15
   - 🇭🇰香港-16
   - 🇭🇰香港-17
@@ -3006,41 +3766,51 @@ proxy-groups:
   - 🇭🇰香港-20
   - 🇭🇰香港-21
   - 🇭🇰香港-22
+  - 🇭🇰香港-23
+  - 🇭🇰香港-24
+  - 🇭🇰香港-25
   - 🇸🇪瑞典-02
   - 🇻🇳越南-01
   - 🇦🇪阿联酋-01
-  - 🇭🇰香港-23
+  - 🇭🇰香港-26
   - 🇮🇩印尼-01
-  - 🇺🇸美国-01
-  - 🇺🇸美国-02
+  - 🇺🇸美国-03
+  - 🇺🇸美国-04
   - 🇮🇶IQ-01
-  - 🇭🇰香港-24
+  - 🇭🇰香港-27
   - 🇦🇱AL-01
   - 🇬🇧英国-04
-  - 🇷🇴罗马尼亚-07
-  - 🇰🇿KZ-01
-  - 🇭🇰香港-25
-  - 🇭🇰香港-26
-  - 🇭🇰香港-27
-  - 🇸🇬新加坡-01
+  - 🇸🇬新加坡-02
+  - 🇺🇸美国-05
+  - 🇫🇷法国-05
+  - 🇦🇺澳大利亚-01
+  - 🇵🇱波兰-01
   - 🇭🇰香港-28
   - 🇭🇰香港-29
-  - 🇸🇨SC-01
-  - 🇪🇪EE-01
-  - 🇸🇨SC-02
   - 🇭🇰香港-30
-  - 🇰🇷韩国-01
+  - 🇮🇪爱尔兰-01
   - 🇭🇰香港-31
-  - 🇬🇧英国-05
   - 🇭🇰香港-32
+  - 🇭🇰香港-33
+  - 🇭🇰香港-34
+  - 🇭🇰香港-35
+  - 🇭🇰香港-36
   - 🇽🇽未知-01
+  - 🇳🇱荷兰-04
   - 🇽🇽未知-02
+  - 🇸🇬新加坡-03
+  - 🇫🇷法国-06
+  - 🇫🇷法国-07
+  - 🇬🇧英国-05
   - 🇽🇽未知-03
   - 🇽🇽未知-04
   - 🇽🇽未知-05
+  - 🇺🇸美国-06
+  - 🇺🇸美国-07
   - 🇽🇽未知-06
   - 🇽🇽未知-07
   - 🇽🇽未知-08
+  - 🇨🇱CL-01
   - 🇽🇽未知-09
   - 🇽🇽未知-10
   - 🇽🇽未知-11
@@ -3048,69 +3818,106 @@ proxy-groups:
   - 🇽🇽未知-13
   - 🇽🇽未知-14
   - 🇽🇽未知-15
+  - 🇫🇷法国-08
   - 🇽🇽未知-16
-  - 🇸🇬新加坡-02
-  - 🇺🇸美国-03
-  - 🇩🇰丹麦-01
-  - 🇺🇸美国-04
-  - 🇺🇸美国-05
-  - 🇯🇵日本-01
-  - 🇺🇸美国-06
-  - 🇷🇴罗马尼亚-08
-  - 🇳🇱荷兰-04
-  - 🇳🇿新西兰-01
-  - 🇱🇺LU-01
-  - 🇺🇸美国-07
+  - 🇽🇽未知-17
+  - 🇫🇷法国-09
+  - 🇽🇽未知-18
+  - 🇽🇽未知-19
+  - 🇫🇷法国-10
   - 🇺🇸美国-08
+  - 🇳🇱荷兰-05
+  - 🇫🇷法国-11
+  - 🇫🇷法国-12
+  - 🇽🇽未知-20
+  - 🇽🇽未知-21
+  - 🇽🇽未知-22
+  - 🇽🇽未知-23
+  - 🇽🇽未知-24
+  - 🇽🇽未知-25
+  - 🇽🇽未知-26
+  - 🇽🇽未知-27
+  - 🇽🇽未知-28
+  - 🇽🇽未知-29
+  - 🇽🇽未知-30
+  - 🇽🇽未知-31
+  - 🇽🇽未知-32
+  - 🇽🇽未知-33
+  - 🇽🇽未知-34
+  - 🇽🇽未知-35
+  - 🇽🇽未知-36
+  - 🇽🇽未知-37
+  - 🇽🇽未知-38
+  - 🇽🇽未知-39
+  - 🇽🇽未知-40
+  - 🇽🇽未知-41
+  - 🇽🇽未知-42
   - 🇺🇸美国-09
+  - 🇫🇷法国-13
+  - 🇬🇧英国-06
+  - 🇽🇽未知-43
+  - 🇽🇽未知-44
+  - 🇽🇽未知-45
+  - 🇽🇽未知-46
+  - 🇽🇽未知-47
+  - 🇽🇽未知-48
+  - 🇽🇽未知-49
+  - 🇽🇽未知-50
   - 🇺🇸美国-10
+  - 🇽🇽未知-51
+  - 🇱🇻LV-01
+  - 🇵🇱波兰-02
   - 🇺🇸美国-11
   - 🇺🇸美国-12
+  - 🇯🇵日本-03
   - 🇺🇸美国-13
-  - 🇽🇽未知-17
-  - 🇺🇸美国-14
-  - 🇭🇰香港-33
-  - 🇺🇸美国-15
-  - 🇮🇹意大利-01
-  - 🇧🇪比利时-01
-  - 🇫🇷法国-02
-  - 🇳🇱荷兰-05
-  - 🇧🇪比利时-02
+  - 🇷🇴罗马尼亚-07
   - 🇳🇱荷兰-06
-  - 🇬🇧英国-06
-  - 🇫🇷法国-03
-  - 🇬🇧英国-07
-  - 🇬🇧英国-08
-  - 🇬🇧英国-09
-  - 🇮🇹意大利-02
-  - 🇬🇧英国-10
-  - 🇫🇮芬兰-01
-  - 🇬🇧英国-11
-  - 🇫🇮芬兰-02
-  - 🇭🇰香港-34
-  - 🇫🇮芬兰-03
-  - 🇪🇸西班牙-01
-  - 🇪🇸西班牙-02
-  - 🇦🇪阿联酋-02
+  - 🇳🇿新西兰-01
+  - 🇱🇺LU-01
+  - 🇺🇸美国-14
+  - 🇺🇸美国-15
   - 🇺🇸美国-16
   - 🇺🇸美国-17
   - 🇺🇸美国-18
   - 🇺🇸美国-19
-  - 🇳🇴挪威-01
-  - 🇭🇰香港-35
-  - 🇮🇳印度-01
-  - 🇭🇰香港-36
   - 🇺🇸美国-20
   - 🇺🇸美国-21
-  - 🇨🇦加拿大-01
-  - 🇨🇦加拿大-02
+  - 🇭🇰香港-37
   - 🇺🇸美国-22
+  - 🇮🇹意大利-02
+  - 🇧🇪比利时-01
+  - 🇫🇷法国-14
+  - 🇳🇱荷兰-07
+  - 🇧🇪比利时-02
+  - 🇳🇱荷兰-08
+  - 🇬🇧英国-07
+  - 🇫🇷法国-15
+  - 🇬🇧英国-08
+  - 🇬🇧英国-09
+  - 🇬🇧英国-10
+  - 🇮🇹意大利-03
+  - 🇬🇧英国-11
+  - 🇫🇮芬兰-01
+  - 🇬🇧英国-12
+  - 🇫🇮芬兰-02
+  - 🇭🇰香港-38
+  - 🇫🇮芬兰-03
+  - 🇪🇸西班牙-02
+  - 🇪🇸西班牙-03
+  - 🇦🇪阿联酋-02
   - 🇺🇸美国-23
   - 🇺🇸美国-24
   - 🇺🇸美国-25
   - 🇺🇸美国-26
+  - 🇳🇴挪威-01
+  - 🇭🇰香港-39
+  - 🇮🇳印度-01
+  - 🇭🇰香港-40
   - 🇺🇸美国-27
   - 🇺🇸美国-28
+  - 🇨🇦加拿大-01
+  - 🇨🇦加拿大-02
   - 🇺🇸美国-29
   - 🇺🇸美国-30
   - 🇺🇸美国-31
@@ -3131,40 +3938,36 @@ proxy-groups:
   - 🇺🇸美国-46
   - 🇺🇸美国-47
   - 🇺🇸美国-48
-  - 🇨🇦加拿大-03
   - 🇺🇸美国-49
   - 🇺🇸美国-50
-  - 🇺🇸美国-51
-  - 🇺🇸美国-52
-  - 🇨🇦加拿大-04
-  - 🇺🇸美国-53
-  - 🇺🇸美国-54
-  - 🇺🇸美国-55
-  - 🇺🇸美国-56
-  - 🇺🇸美国-57
-  - 🇺🇸美国-58
-  - 🇺🇸美国-59
-  - 🇺🇸美国-60
-  - 🇺🇸美国-61
-  - 🇨🇦加拿大-05
-  - 🇺🇸美国-62
-  - 🇨🇦加拿大-06
-  - 🇺🇸美国-63
-  - 🇨🇦加拿大-07
-  - 🇨🇦加拿大-08
-  - 🇽🇽未知-18
-  - 🇽🇽未知-19
   - 🇮🇷IR-01
-  - 🇽🇽未知-20
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
+  - 🇯🇵日本-01
+  - 🇮🇹意大利-01
+  - 🇹🇼台湾-01
+  - 🇹🇷土耳其-01
+  - 🇹🇼台湾-02
+  - 🇹🇼台湾-03
+  - 🇹🇼台湾-04
+  - 🇨🇭瑞士-01
+  - 🇸🇬新加坡-01
   - 🇭🇰香港-01
+  - 🇺🇸美国-01
+  - 🇺🇸美国-02
+  - 🇸🇨SC-01
   - 🇭🇰香港-02
+  - 🇯🇵日本-02
+  - 🇫🇷法国-01
+  - 🇪🇸西班牙-01
+  - 🇫🇷法国-02
+  - 🇫🇷法国-03
+  - 🇫🇷法国-04
+  - 🇰🇷韩国-01
   - 🇭🇰香港-03
   - 🇭🇰香港-04
   - 🇭🇰香港-05
-  - 🇫🇷法国-01
   - 🇭🇰香港-06
   - 🇭🇰香港-07
   - 🇭🇰香港-08
@@ -3172,6 +3975,8 @@ proxy-groups:
   - 🇭🇰香港-10
   - 🇭🇰香港-11
   - 🇭🇰香港-12
+  - 🇭🇰香港-13
+  - 🇭🇰香港-14
   - 🇳🇱荷兰-01
   - 🇳🇱荷兰-02
   - 🇳🇱荷兰-03
@@ -3181,19 +3986,17 @@ proxy-groups:
   - 🇷🇴罗马尼亚-04
   - 🇷🇴罗马尼亚-05
   - 🇷🇴罗马尼亚-06
-  - 🇹🇷土耳其-01
   - 🇹🇷土耳其-02
-  - 🇸🇪瑞典-01
   - 🇹🇷土耳其-03
+  - 🇸🇪瑞典-01
+  - 🇹🇷土耳其-04
   - 🇺🇦乌克兰-01
   - 🇺🇦乌克兰-02
-  - 🇹🇼台湾-01
+  - 🇹🇼台湾-05
   - 🇺🇦乌克兰-03
   - 🇬🇧英国-01
   - 🇬🇧英国-02
   - 🇬🇧英国-03
-  - 🇭🇰香港-13
-  - 🇭🇰香港-14
   - 🇭🇰香港-15
   - 🇭🇰香港-16
   - 🇭🇰香港-17
@@ -3202,41 +4005,51 @@ proxy-groups:
   - 🇭🇰香港-20
   - 🇭🇰香港-21
   - 🇭🇰香港-22
+  - 🇭🇰香港-23
+  - 🇭🇰香港-24
+  - 🇭🇰香港-25
   - 🇸🇪瑞典-02
   - 🇻🇳越南-01
   - 🇦🇪阿联酋-01
-  - 🇭🇰香港-23
+  - 🇭🇰香港-26
   - 🇮🇩印尼-01
-  - 🇺🇸美国-01
-  - 🇺🇸美国-02
+  - 🇺🇸美国-03
+  - 🇺🇸美国-04
   - 🇮🇶IQ-01
-  - 🇭🇰香港-24
+  - 🇭🇰香港-27
   - 🇦🇱AL-01
   - 🇬🇧英国-04
-  - 🇷🇴罗马尼亚-07
-  - 🇰🇿KZ-01
-  - 🇭🇰香港-25
-  - 🇭🇰香港-26
-  - 🇭🇰香港-27
-  - 🇸🇬新加坡-01
+  - 🇸🇬新加坡-02
+  - 🇺🇸美国-05
+  - 🇫🇷法国-05
+  - 🇦🇺澳大利亚-01
+  - 🇵🇱波兰-01
   - 🇭🇰香港-28
   - 🇭🇰香港-29
-  - 🇸🇨SC-01
-  - 🇪🇪EE-01
-  - 🇸🇨SC-02
   - 🇭🇰香港-30
-  - 🇰🇷韩国-01
+  - 🇮🇪爱尔兰-01
   - 🇭🇰香港-31
-  - 🇬🇧英国-05
   - 🇭🇰香港-32
+  - 🇭🇰香港-33
+  - 🇭🇰香港-34
+  - 🇭🇰香港-35
+  - 🇭🇰香港-36
   - 🇽🇽未知-01
+  - 🇳🇱荷兰-04
   - 🇽🇽未知-02
+  - 🇸🇬新加坡-03
+  - 🇫🇷法国-06
+  - 🇫🇷法国-07
+  - 🇬🇧英国-05
   - 🇽🇽未知-03
   - 🇽🇽未知-04
   - 🇽🇽未知-05
+  - 🇺🇸美国-06
+  - 🇺🇸美国-07
   - 🇽🇽未知-06
   - 🇽🇽未知-07
   - 🇽🇽未知-08
+  - 🇨🇱CL-01
   - 🇽🇽未知-09
   - 🇽🇽未知-10
   - 🇽🇽未知-11
@@ -3244,69 +4057,106 @@ proxy-groups:
   - 🇽🇽未知-13
   - 🇽🇽未知-14
   - 🇽🇽未知-15
+  - 🇫🇷法国-08
   - 🇽🇽未知-16
-  - 🇸🇬新加坡-02
-  - 🇺🇸美国-03
-  - 🇩🇰丹麦-01
-  - 🇺🇸美国-04
-  - 🇺🇸美国-05
-  - 🇯🇵日本-01
-  - 🇺🇸美国-06
-  - 🇷🇴罗马尼亚-08
-  - 🇳🇱荷兰-04
-  - 🇳🇿新西兰-01
-  - 🇱🇺LU-01
-  - 🇺🇸美国-07
+  - 🇽🇽未知-17
+  - 🇫🇷法国-09
+  - 🇽🇽未知-18
+  - 🇽🇽未知-19
+  - 🇫🇷法国-10
   - 🇺🇸美国-08
+  - 🇳🇱荷兰-05
+  - 🇫🇷法国-11
+  - 🇫🇷法国-12
+  - 🇽🇽未知-20
+  - 🇽🇽未知-21
+  - 🇽🇽未知-22
+  - 🇽🇽未知-23
+  - 🇽🇽未知-24
+  - 🇽🇽未知-25
+  - 🇽🇽未知-26
+  - 🇽🇽未知-27
+  - 🇽🇽未知-28
+  - 🇽🇽未知-29
+  - 🇽🇽未知-30
+  - 🇽🇽未知-31
+  - 🇽🇽未知-32
+  - 🇽🇽未知-33
+  - 🇽🇽未知-34
+  - 🇽🇽未知-35
+  - 🇽🇽未知-36
+  - 🇽🇽未知-37
+  - 🇽🇽未知-38
+  - 🇽🇽未知-39
+  - 🇽🇽未知-40
+  - 🇽🇽未知-41
+  - 🇽🇽未知-42
   - 🇺🇸美国-09
+  - 🇫🇷法国-13
+  - 🇬🇧英国-06
+  - 🇽🇽未知-43
+  - 🇽🇽未知-44
+  - 🇽🇽未知-45
+  - 🇽🇽未知-46
+  - 🇽🇽未知-47
+  - 🇽🇽未知-48
+  - 🇽🇽未知-49
+  - 🇽🇽未知-50
   - 🇺🇸美国-10
+  - 🇽🇽未知-51
+  - 🇱🇻LV-01
+  - 🇵🇱波兰-02
   - 🇺🇸美国-11
   - 🇺🇸美国-12
+  - 🇯🇵日本-03
   - 🇺🇸美国-13
-  - 🇽🇽未知-17
-  - 🇺🇸美国-14
-  - 🇭🇰香港-33
-  - 🇺🇸美国-15
-  - 🇮🇹意大利-01
-  - 🇧🇪比利时-01
-  - 🇫🇷法国-02
-  - 🇳🇱荷兰-05
-  - 🇧🇪比利时-02
+  - 🇷🇴罗马尼亚-07
   - 🇳🇱荷兰-06
-  - 🇬🇧英国-06
-  - 🇫🇷法国-03
-  - 🇬🇧英国-07
-  - 🇬🇧英国-08
-  - 🇬🇧英国-09
-  - 🇮🇹意大利-02
-  - 🇬🇧英国-10
-  - 🇫🇮芬兰-01
-  - 🇬🇧英国-11
-  - 🇫🇮芬兰-02
-  - 🇭🇰香港-34
-  - 🇫🇮芬兰-03
-  - 🇪🇸西班牙-01
-  - 🇪🇸西班牙-02
-  - 🇦🇪阿联酋-02
+  - 🇳🇿新西兰-01
+  - 🇱🇺LU-01
+  - 🇺🇸美国-14
+  - 🇺🇸美国-15
   - 🇺🇸美国-16
   - 🇺🇸美国-17
   - 🇺🇸美国-18
   - 🇺🇸美国-19
-  - 🇳🇴挪威-01
-  - 🇭🇰香港-35
-  - 🇮🇳印度-01
-  - 🇭🇰香港-36
   - 🇺🇸美国-20
   - 🇺🇸美国-21
-  - 🇨🇦加拿大-01
-  - 🇨🇦加拿大-02
+  - 🇭🇰香港-37
   - 🇺🇸美国-22
+  - 🇮🇹意大利-02
+  - 🇧🇪比利时-01
+  - 🇫🇷法国-14
+  - 🇳🇱荷兰-07
+  - 🇧🇪比利时-02
+  - 🇳🇱荷兰-08
+  - 🇬🇧英国-07
+  - 🇫🇷法国-15
+  - 🇬🇧英国-08
+  - 🇬🇧英国-09
+  - 🇬🇧英国-10
+  - 🇮🇹意大利-03
+  - 🇬🇧英国-11
+  - 🇫🇮芬兰-01
+  - 🇬🇧英国-12
+  - 🇫🇮芬兰-02
+  - 🇭🇰香港-38
+  - 🇫🇮芬兰-03
+  - 🇪🇸西班牙-02
+  - 🇪🇸西班牙-03
+  - 🇦🇪阿联酋-02
   - 🇺🇸美国-23
   - 🇺🇸美国-24
   - 🇺🇸美国-25
   - 🇺🇸美国-26
+  - 🇳🇴挪威-01
+  - 🇭🇰香港-39
+  - 🇮🇳印度-01
+  - 🇭🇰香港-40
   - 🇺🇸美国-27
   - 🇺🇸美国-28
+  - 🇨🇦加拿大-01
+  - 🇨🇦加拿大-02
   - 🇺🇸美国-29
   - 🇺🇸美国-30
   - 🇺🇸美国-31
@@ -3327,40 +4177,36 @@ proxy-groups:
   - 🇺🇸美国-46
   - 🇺🇸美国-47
   - 🇺🇸美国-48
-  - 🇨🇦加拿大-03
   - 🇺🇸美国-49
   - 🇺🇸美国-50
-  - 🇺🇸美国-51
-  - 🇺🇸美国-52
-  - 🇨🇦加拿大-04
-  - 🇺🇸美国-53
-  - 🇺🇸美国-54
-  - 🇺🇸美国-55
-  - 🇺🇸美国-56
-  - 🇺🇸美国-57
-  - 🇺🇸美国-58
-  - 🇺🇸美国-59
-  - 🇺🇸美国-60
-  - 🇺🇸美国-61
-  - 🇨🇦加拿大-05
-  - 🇺🇸美国-62
-  - 🇨🇦加拿大-06
-  - 🇺🇸美国-63
-  - 🇨🇦加拿大-07
-  - 🇨🇦加拿大-08
-  - 🇽🇽未知-18
-  - 🇽🇽未知-19
   - 🇮🇷IR-01
-  - 🇽🇽未知-20
 - name: 🍎 苹果服务
   type: select
   proxies:
+  - 🇯🇵日本-01
+  - 🇮🇹意大利-01
+  - 🇹🇼台湾-01
+  - 🇹🇷土耳其-01
+  - 🇹🇼台湾-02
+  - 🇹🇼台湾-03
+  - 🇹🇼台湾-04
+  - 🇨🇭瑞士-01
+  - 🇸🇬新加坡-01
   - 🇭🇰香港-01
+  - 🇺🇸美国-01
+  - 🇺🇸美国-02
+  - 🇸🇨SC-01
   - 🇭🇰香港-02
+  - 🇯🇵日本-02
+  - 🇫🇷法国-01
+  - 🇪🇸西班牙-01
+  - 🇫🇷法国-02
+  - 🇫🇷法国-03
+  - 🇫🇷法国-04
+  - 🇰🇷韩国-01
   - 🇭🇰香港-03
   - 🇭🇰香港-04
   - 🇭🇰香港-05
-  - 🇫🇷法国-01
   - 🇭🇰香港-06
   - 🇭🇰香港-07
   - 🇭🇰香港-08
@@ -3368,6 +4214,8 @@ proxy-groups:
   - 🇭🇰香港-10
   - 🇭🇰香港-11
   - 🇭🇰香港-12
+  - 🇭🇰香港-13
+  - 🇭🇰香港-14
   - 🇳🇱荷兰-01
   - 🇳🇱荷兰-02
   - 🇳🇱荷兰-03
@@ -3377,19 +4225,17 @@ proxy-groups:
   - 🇷🇴罗马尼亚-04
   - 🇷🇴罗马尼亚-05
   - 🇷🇴罗马尼亚-06
-  - 🇹🇷土耳其-01
   - 🇹🇷土耳其-02
-  - 🇸🇪瑞典-01
   - 🇹🇷土耳其-03
+  - 🇸🇪瑞典-01
+  - 🇹🇷土耳其-04
   - 🇺🇦乌克兰-01
   - 🇺🇦乌克兰-02
-  - 🇹🇼台湾-01
+  - 🇹🇼台湾-05
   - 🇺🇦乌克兰-03
   - 🇬🇧英国-01
   - 🇬🇧英国-02
   - 🇬🇧英国-03
-  - 🇭🇰香港-13
-  - 🇭🇰香港-14
   - 🇭🇰香港-15
   - 🇭🇰香港-16
   - 🇭🇰香港-17
@@ -3398,41 +4244,51 @@ proxy-groups:
   - 🇭🇰香港-20
   - 🇭🇰香港-21
   - 🇭🇰香港-22
+  - 🇭🇰香港-23
+  - 🇭🇰香港-24
+  - 🇭🇰香港-25
   - 🇸🇪瑞典-02
   - 🇻🇳越南-01
   - 🇦🇪阿联酋-01
-  - 🇭🇰香港-23
+  - 🇭🇰香港-26
   - 🇮🇩印尼-01
-  - 🇺🇸美国-01
-  - 🇺🇸美国-02
+  - 🇺🇸美国-03
+  - 🇺🇸美国-04
   - 🇮🇶IQ-01
-  - 🇭🇰香港-24
+  - 🇭🇰香港-27
   - 🇦🇱AL-01
   - 🇬🇧英国-04
-  - 🇷🇴罗马尼亚-07
-  - 🇰🇿KZ-01
-  - 🇭🇰香港-25
-  - 🇭🇰香港-26
-  - 🇭🇰香港-27
-  - 🇸🇬新加坡-01
+  - 🇸🇬新加坡-02
+  - 🇺🇸美国-05
+  - 🇫🇷法国-05
+  - 🇦🇺澳大利亚-01
+  - 🇵🇱波兰-01
   - 🇭🇰香港-28
   - 🇭🇰香港-29
-  - 🇸🇨SC-01
-  - 🇪🇪EE-01
-  - 🇸🇨SC-02
   - 🇭🇰香港-30
-  - 🇰🇷韩国-01
+  - 🇮🇪爱尔兰-01
   - 🇭🇰香港-31
-  - 🇬🇧英国-05
   - 🇭🇰香港-32
+  - 🇭🇰香港-33
+  - 🇭🇰香港-34
+  - 🇭🇰香港-35
+  - 🇭🇰香港-36
   - 🇽🇽未知-01
+  - 🇳🇱荷兰-04
   - 🇽🇽未知-02
+  - 🇸🇬新加坡-03
+  - 🇫🇷法国-06
+  - 🇫🇷法国-07
+  - 🇬🇧英国-05
   - 🇽🇽未知-03
   - 🇽🇽未知-04
   - 🇽🇽未知-05
+  - 🇺🇸美国-06
+  - 🇺🇸美国-07
   - 🇽🇽未知-06
   - 🇽🇽未知-07
   - 🇽🇽未知-08
+  - 🇨🇱CL-01
   - 🇽🇽未知-09
   - 🇽🇽未知-10
   - 🇽🇽未知-11
@@ -3440,69 +4296,106 @@ proxy-groups:
   - 🇽🇽未知-13
   - 🇽🇽未知-14
   - 🇽🇽未知-15
+  - 🇫🇷法国-08
   - 🇽🇽未知-16
-  - 🇸🇬新加坡-02
-  - 🇺🇸美国-03
-  - 🇩🇰丹麦-01
-  - 🇺🇸美国-04
-  - 🇺🇸美国-05
-  - 🇯🇵日本-01
-  - 🇺🇸美国-06
-  - 🇷🇴罗马尼亚-08
-  - 🇳🇱荷兰-04
-  - 🇳🇿新西兰-01
-  - 🇱🇺LU-01
-  - 🇺🇸美国-07
+  - 🇽🇽未知-17
+  - 🇫🇷法国-09
+  - 🇽🇽未知-18
+  - 🇽🇽未知-19
+  - 🇫🇷法国-10
   - 🇺🇸美国-08
+  - 🇳🇱荷兰-05
+  - 🇫🇷法国-11
+  - 🇫🇷法国-12
+  - 🇽🇽未知-20
+  - 🇽🇽未知-21
+  - 🇽🇽未知-22
+  - 🇽🇽未知-23
+  - 🇽🇽未知-24
+  - 🇽🇽未知-25
+  - 🇽🇽未知-26
+  - 🇽🇽未知-27
+  - 🇽🇽未知-28
+  - 🇽🇽未知-29
+  - 🇽🇽未知-30
+  - 🇽🇽未知-31
+  - 🇽🇽未知-32
+  - 🇽🇽未知-33
+  - 🇽🇽未知-34
+  - 🇽🇽未知-35
+  - 🇽🇽未知-36
+  - 🇽🇽未知-37
+  - 🇽🇽未知-38
+  - 🇽🇽未知-39
+  - 🇽🇽未知-40
+  - 🇽🇽未知-41
+  - 🇽🇽未知-42
   - 🇺🇸美国-09
+  - 🇫🇷法国-13
+  - 🇬🇧英国-06
+  - 🇽🇽未知-43
+  - 🇽🇽未知-44
+  - 🇽🇽未知-45
+  - 🇽🇽未知-46
+  - 🇽🇽未知-47
+  - 🇽🇽未知-48
+  - 🇽🇽未知-49
+  - 🇽🇽未知-50
   - 🇺🇸美国-10
+  - 🇽🇽未知-51
+  - 🇱🇻LV-01
+  - 🇵🇱波兰-02
   - 🇺🇸美国-11
   - 🇺🇸美国-12
+  - 🇯🇵日本-03
   - 🇺🇸美国-13
-  - 🇽🇽未知-17
-  - 🇺🇸美国-14
-  - 🇭🇰香港-33
-  - 🇺🇸美国-15
-  - 🇮🇹意大利-01
-  - 🇧🇪比利时-01
-  - 🇫🇷法国-02
-  - 🇳🇱荷兰-05
-  - 🇧🇪比利时-02
+  - 🇷🇴罗马尼亚-07
   - 🇳🇱荷兰-06
-  - 🇬🇧英国-06
-  - 🇫🇷法国-03
-  - 🇬🇧英国-07
-  - 🇬🇧英国-08
-  - 🇬🇧英国-09
-  - 🇮🇹意大利-02
-  - 🇬🇧英国-10
-  - 🇫🇮芬兰-01
-  - 🇬🇧英国-11
-  - 🇫🇮芬兰-02
-  - 🇭🇰香港-34
-  - 🇫🇮芬兰-03
-  - 🇪🇸西班牙-01
-  - 🇪🇸西班牙-02
-  - 🇦🇪阿联酋-02
+  - 🇳🇿新西兰-01
+  - 🇱🇺LU-01
+  - 🇺🇸美国-14
+  - 🇺🇸美国-15
   - 🇺🇸美国-16
   - 🇺🇸美国-17
   - 🇺🇸美国-18
   - 🇺🇸美国-19
-  - 🇳🇴挪威-01
-  - 🇭🇰香港-35
-  - 🇮🇳印度-01
-  - 🇭🇰香港-36
   - 🇺🇸美国-20
   - 🇺🇸美国-21
-  - 🇨🇦加拿大-01
-  - 🇨🇦加拿大-02
+  - 🇭🇰香港-37
   - 🇺🇸美国-22
+  - 🇮🇹意大利-02
+  - 🇧🇪比利时-01
+  - 🇫🇷法国-14
+  - 🇳🇱荷兰-07
+  - 🇧🇪比利时-02
+  - 🇳🇱荷兰-08
+  - 🇬🇧英国-07
+  - 🇫🇷法国-15
+  - 🇬🇧英国-08
+  - 🇬🇧英国-09
+  - 🇬🇧英国-10
+  - 🇮🇹意大利-03
+  - 🇬🇧英国-11
+  - 🇫🇮芬兰-01
+  - 🇬🇧英国-12
+  - 🇫🇮芬兰-02
+  - 🇭🇰香港-38
+  - 🇫🇮芬兰-03
+  - 🇪🇸西班牙-02
+  - 🇪🇸西班牙-03
+  - 🇦🇪阿联酋-02
   - 🇺🇸美国-23
   - 🇺🇸美国-24
   - 🇺🇸美国-25
   - 🇺🇸美国-26
+  - 🇳🇴挪威-01
+  - 🇭🇰香港-39
+  - 🇮🇳印度-01
+  - 🇭🇰香港-40
   - 🇺🇸美国-27
   - 🇺🇸美国-28
+  - 🇨🇦加拿大-01
+  - 🇨🇦加拿大-02
   - 🇺🇸美国-29
   - 🇺🇸美国-30
   - 🇺🇸美国-31
@@ -3523,31 +4416,9 @@ proxy-groups:
   - 🇺🇸美国-46
   - 🇺🇸美国-47
   - 🇺🇸美国-48
-  - 🇨🇦加拿大-03
   - 🇺🇸美国-49
   - 🇺🇸美国-50
-  - 🇺🇸美国-51
-  - 🇺🇸美国-52
-  - 🇨🇦加拿大-04
-  - 🇺🇸美国-53
-  - 🇺🇸美国-54
-  - 🇺🇸美国-55
-  - 🇺🇸美国-56
-  - 🇺🇸美国-57
-  - 🇺🇸美国-58
-  - 🇺🇸美国-59
-  - 🇺🇸美国-60
-  - 🇺🇸美国-61
-  - 🇨🇦加拿大-05
-  - 🇺🇸美国-62
-  - 🇨🇦加拿大-06
-  - 🇺🇸美国-63
-  - 🇨🇦加拿大-07
-  - 🇨🇦加拿大-08
-  - 🇽🇽未知-18
-  - 🇽🇽未知-19
   - 🇮🇷IR-01
-  - 🇽🇽未知-20
 - name: 🎯 全球直连
   type: select
   proxies: []
@@ -3560,12 +4431,30 @@ proxy-groups:
 - name: 🐟 漏网之鱼
   type: select
   proxies:
+  - 🇯🇵日本-01
+  - 🇮🇹意大利-01
+  - 🇹🇼台湾-01
+  - 🇹🇷土耳其-01
+  - 🇹🇼台湾-02
+  - 🇹🇼台湾-03
+  - 🇹🇼台湾-04
+  - 🇨🇭瑞士-01
+  - 🇸🇬新加坡-01
   - 🇭🇰香港-01
+  - 🇺🇸美国-01
+  - 🇺🇸美国-02
+  - 🇸🇨SC-01
   - 🇭🇰香港-02
+  - 🇯🇵日本-02
+  - 🇫🇷法国-01
+  - 🇪🇸西班牙-01
+  - 🇫🇷法国-02
+  - 🇫🇷法国-03
+  - 🇫🇷法国-04
+  - 🇰🇷韩国-01
   - 🇭🇰香港-03
   - 🇭🇰香港-04
   - 🇭🇰香港-05
-  - 🇫🇷法国-01
   - 🇭🇰香港-06
   - 🇭🇰香港-07
   - 🇭🇰香港-08
@@ -3573,6 +4462,8 @@ proxy-groups:
   - 🇭🇰香港-10
   - 🇭🇰香港-11
   - 🇭🇰香港-12
+  - 🇭🇰香港-13
+  - 🇭🇰香港-14
   - 🇳🇱荷兰-01
   - 🇳🇱荷兰-02
   - 🇳🇱荷兰-03
@@ -3582,19 +4473,17 @@ proxy-groups:
   - 🇷🇴罗马尼亚-04
   - 🇷🇴罗马尼亚-05
   - 🇷🇴罗马尼亚-06
-  - 🇹🇷土耳其-01
   - 🇹🇷土耳其-02
-  - 🇸🇪瑞典-01
   - 🇹🇷土耳其-03
+  - 🇸🇪瑞典-01
+  - 🇹🇷土耳其-04
   - 🇺🇦乌克兰-01
   - 🇺🇦乌克兰-02
-  - 🇹🇼台湾-01
+  - 🇹🇼台湾-05
   - 🇺🇦乌克兰-03
   - 🇬🇧英国-01
   - 🇬🇧英国-02
   - 🇬🇧英国-03
-  - 🇭🇰香港-13
-  - 🇭🇰香港-14
   - 🇭🇰香港-15
   - 🇭🇰香港-16
   - 🇭🇰香港-17
@@ -3603,41 +4492,51 @@ proxy-groups:
   - 🇭🇰香港-20
   - 🇭🇰香港-21
   - 🇭🇰香港-22
+  - 🇭🇰香港-23
+  - 🇭🇰香港-24
+  - 🇭🇰香港-25
   - 🇸🇪瑞典-02
   - 🇻🇳越南-01
   - 🇦🇪阿联酋-01
-  - 🇭🇰香港-23
+  - 🇭🇰香港-26
   - 🇮🇩印尼-01
-  - 🇺🇸美国-01
-  - 🇺🇸美国-02
+  - 🇺🇸美国-03
+  - 🇺🇸美国-04
   - 🇮🇶IQ-01
-  - 🇭🇰香港-24
+  - 🇭🇰香港-27
   - 🇦🇱AL-01
   - 🇬🇧英国-04
-  - 🇷🇴罗马尼亚-07
-  - 🇰🇿KZ-01
-  - 🇭🇰香港-25
-  - 🇭🇰香港-26
-  - 🇭🇰香港-27
-  - 🇸🇬新加坡-01
+  - 🇸🇬新加坡-02
+  - 🇺🇸美国-05
+  - 🇫🇷法国-05
+  - 🇦🇺澳大利亚-01
+  - 🇵🇱波兰-01
   - 🇭🇰香港-28
   - 🇭🇰香港-29
-  - 🇸🇨SC-01
-  - 🇪🇪EE-01
-  - 🇸🇨SC-02
   - 🇭🇰香港-30
-  - 🇰🇷韩国-01
+  - 🇮🇪爱尔兰-01
   - 🇭🇰香港-31
-  - 🇬🇧英国-05
   - 🇭🇰香港-32
+  - 🇭🇰香港-33
+  - 🇭🇰香港-34
+  - 🇭🇰香港-35
+  - 🇭🇰香港-36
   - 🇽🇽未知-01
+  - 🇳🇱荷兰-04
   - 🇽🇽未知-02
+  - 🇸🇬新加坡-03
+  - 🇫🇷法国-06
+  - 🇫🇷法国-07
+  - 🇬🇧英国-05
   - 🇽🇽未知-03
   - 🇽🇽未知-04
   - 🇽🇽未知-05
+  - 🇺🇸美国-06
+  - 🇺🇸美国-07
   - 🇽🇽未知-06
   - 🇽🇽未知-07
   - 🇽🇽未知-08
+  - 🇨🇱CL-01
   - 🇽🇽未知-09
   - 🇽🇽未知-10
   - 🇽🇽未知-11
@@ -3645,69 +4544,106 @@ proxy-groups:
   - 🇽🇽未知-13
   - 🇽🇽未知-14
   - 🇽🇽未知-15
+  - 🇫🇷法国-08
   - 🇽🇽未知-16
-  - 🇸🇬新加坡-02
-  - 🇺🇸美国-03
-  - 🇩🇰丹麦-01
-  - 🇺🇸美国-04
-  - 🇺🇸美国-05
-  - 🇯🇵日本-01
-  - 🇺🇸美国-06
-  - 🇷🇴罗马尼亚-08
-  - 🇳🇱荷兰-04
-  - 🇳🇿新西兰-01
-  - 🇱🇺LU-01
-  - 🇺🇸美国-07
+  - 🇽🇽未知-17
+  - 🇫🇷法国-09
+  - 🇽🇽未知-18
+  - 🇽🇽未知-19
+  - 🇫🇷法国-10
   - 🇺🇸美国-08
+  - 🇳🇱荷兰-05
+  - 🇫🇷法国-11
+  - 🇫🇷法国-12
+  - 🇽🇽未知-20
+  - 🇽🇽未知-21
+  - 🇽🇽未知-22
+  - 🇽🇽未知-23
+  - 🇽🇽未知-24
+  - 🇽🇽未知-25
+  - 🇽🇽未知-26
+  - 🇽🇽未知-27
+  - 🇽🇽未知-28
+  - 🇽🇽未知-29
+  - 🇽🇽未知-30
+  - 🇽🇽未知-31
+  - 🇽🇽未知-32
+  - 🇽🇽未知-33
+  - 🇽🇽未知-34
+  - 🇽🇽未知-35
+  - 🇽🇽未知-36
+  - 🇽🇽未知-37
+  - 🇽🇽未知-38
+  - 🇽🇽未知-39
+  - 🇽🇽未知-40
+  - 🇽🇽未知-41
+  - 🇽🇽未知-42
   - 🇺🇸美国-09
+  - 🇫🇷法国-13
+  - 🇬🇧英国-06
+  - 🇽🇽未知-43
+  - 🇽🇽未知-44
+  - 🇽🇽未知-45
+  - 🇽🇽未知-46
+  - 🇽🇽未知-47
+  - 🇽🇽未知-48
+  - 🇽🇽未知-49
+  - 🇽🇽未知-50
   - 🇺🇸美国-10
+  - 🇽🇽未知-51
+  - 🇱🇻LV-01
+  - 🇵🇱波兰-02
   - 🇺🇸美国-11
   - 🇺🇸美国-12
+  - 🇯🇵日本-03
   - 🇺🇸美国-13
-  - 🇽🇽未知-17
-  - 🇺🇸美国-14
-  - 🇭🇰香港-33
-  - 🇺🇸美国-15
-  - 🇮🇹意大利-01
-  - 🇧🇪比利时-01
-  - 🇫🇷法国-02
-  - 🇳🇱荷兰-05
-  - 🇧🇪比利时-02
+  - 🇷🇴罗马尼亚-07
   - 🇳🇱荷兰-06
-  - 🇬🇧英国-06
-  - 🇫🇷法国-03
-  - 🇬🇧英国-07
-  - 🇬🇧英国-08
-  - 🇬🇧英国-09
-  - 🇮🇹意大利-02
-  - 🇬🇧英国-10
-  - 🇫🇮芬兰-01
-  - 🇬🇧英国-11
-  - 🇫🇮芬兰-02
-  - 🇭🇰香港-34
-  - 🇫🇮芬兰-03
-  - 🇪🇸西班牙-01
-  - 🇪🇸西班牙-02
-  - 🇦🇪阿联酋-02
+  - 🇳🇿新西兰-01
+  - 🇱🇺LU-01
+  - 🇺🇸美国-14
+  - 🇺🇸美国-15
   - 🇺🇸美国-16
   - 🇺🇸美国-17
   - 🇺🇸美国-18
   - 🇺🇸美国-19
-  - 🇳🇴挪威-01
-  - 🇭🇰香港-35
-  - 🇮🇳印度-01
-  - 🇭🇰香港-36
   - 🇺🇸美国-20
   - 🇺🇸美国-21
-  - 🇨🇦加拿大-01
-  - 🇨🇦加拿大-02
+  - 🇭🇰香港-37
   - 🇺🇸美国-22
+  - 🇮🇹意大利-02
+  - 🇧🇪比利时-01
+  - 🇫🇷法国-14
+  - 🇳🇱荷兰-07
+  - 🇧🇪比利时-02
+  - 🇳🇱荷兰-08
+  - 🇬🇧英国-07
+  - 🇫🇷法国-15
+  - 🇬🇧英国-08
+  - 🇬🇧英国-09
+  - 🇬🇧英国-10
+  - 🇮🇹意大利-03
+  - 🇬🇧英国-11
+  - 🇫🇮芬兰-01
+  - 🇬🇧英国-12
+  - 🇫🇮芬兰-02
+  - 🇭🇰香港-38
+  - 🇫🇮芬兰-03
+  - 🇪🇸西班牙-02
+  - 🇪🇸西班牙-03
+  - 🇦🇪阿联酋-02
   - 🇺🇸美国-23
   - 🇺🇸美国-24
   - 🇺🇸美国-25
   - 🇺🇸美国-26
+  - 🇳🇴挪威-01
+  - 🇭🇰香港-39
+  - 🇮🇳印度-01
+  - 🇭🇰香港-40
   - 🇺🇸美国-27
   - 🇺🇸美国-28
+  - 🇨🇦加拿大-01
+  - 🇨🇦加拿大-02
   - 🇺🇸美国-29
   - 🇺🇸美国-30
   - 🇺🇸美国-31
@@ -3728,31 +4664,9 @@ proxy-groups:
   - 🇺🇸美国-46
   - 🇺🇸美国-47
   - 🇺🇸美国-48
-  - 🇨🇦加拿大-03
   - 🇺🇸美国-49
   - 🇺🇸美国-50
-  - 🇺🇸美国-51
-  - 🇺🇸美国-52
-  - 🇨🇦加拿大-04
-  - 🇺🇸美国-53
-  - 🇺🇸美国-54
-  - 🇺🇸美国-55
-  - 🇺🇸美国-56
-  - 🇺🇸美国-57
-  - 🇺🇸美国-58
-  - 🇺🇸美国-59
-  - 🇺🇸美国-60
-  - 🇺🇸美国-61
-  - 🇨🇦加拿大-05
-  - 🇺🇸美国-62
-  - 🇨🇦加拿大-06
-  - 🇺🇸美国-63
-  - 🇨🇦加拿大-07
-  - 🇨🇦加拿大-08
-  - 🇽🇽未知-18
-  - 🇽🇽未知-19
   - 🇮🇷IR-01
-  - 🇽🇽未知-20
 rule-providers:
   LocalAreaNetwork:
     type: http
