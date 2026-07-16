@@ -39,6 +39,14 @@ proxies:
       Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
   skip-cert-verify: true
   udp: true
+- name: 🇫🇷法国-01
+  type: vless
+  server: gr1.fifapes.monster
+  port: 8882
+  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+  tls: false
+  skip-cert-verify: true
+  udp: true
 - name: 🇬🇧英国-01
   type: vless
   server: 91.193.58.216
@@ -524,14 +532,6 @@ proxies:
     path: /@Marisa_kristi
     headers:
       Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-  skip-cert-verify: true
-  udp: true
-- name: 🇱🇻LV-01
-  type: vless
-  server: gr1.fifapes.monster
-  port: 8882
-  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
-  tls: false
   skip-cert-verify: true
   udp: true
 - name: 🇳🇱荷兰-01
@@ -6225,21 +6225,6 @@ proxies:
       Host: misty-wood-62b4.263-93e.workers.dev
   skip-cert-verify: true
   udp: true
-- name: 🇽🇽未知-293
-  type: vless
-  server: b.ilovezhenjiu.top
-  port: 443
-  uuid: b20f9e42-d12b-4a1a-89ae-9e9db61760b2
-  network: ws
-  servername: b.iloveacupuncture.top
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /gzmmws
-    headers:
-      Host: b.iloveacupuncture.top
-  skip-cert-verify: true
-  udp: true
 - name: 🇿🇦南非-01
   type: vless
   server: 102.177.176.30
@@ -6258,7 +6243,7 @@ proxy-groups:
   type: select
   proxies:
   - 🇸🇪瑞典-01
-  - 🇱🇻LV-01
+  - 🇫🇷法国-01
   - 🇯🇵日本-01
   - 🇭🇰香港-01
   - 🇺🇸美国-01
@@ -6610,7 +6595,6 @@ proxy-groups:
   - 🇽🇽未知-291
   - 🇽🇽未知-292
   - 🇸🇬新加坡-03
-  - 🇽🇽未知-293
   - 🇺🇸美国-14
   - 🇺🇸美国-15
   - 🇺🇸美国-16
@@ -6691,7 +6675,7 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇸🇪瑞典-01
-  - 🇱🇻LV-01
+  - 🇫🇷法国-01
   - 🇯🇵日本-01
   - 🇭🇰香港-01
   - 🇺🇸美国-01
@@ -7043,7 +7027,6 @@ proxy-groups:
   - 🇽🇽未知-291
   - 🇽🇽未知-292
   - 🇸🇬新加坡-03
-  - 🇽🇽未知-293
   - 🇺🇸美国-14
   - 🇺🇸美国-15
   - 🇺🇸美国-16
@@ -7127,7 +7110,7 @@ proxy-groups:
   type: select
   proxies:
   - 🇸🇪瑞典-01
-  - 🇱🇻LV-01
+  - 🇫🇷法国-01
   - 🇯🇵日本-01
   - 🇭🇰香港-01
   - 🇺🇸美国-01
@@ -7479,7 +7462,6 @@ proxy-groups:
   - 🇽🇽未知-291
   - 🇽🇽未知-292
   - 🇸🇬新加坡-03
-  - 🇽🇽未知-293
   - 🇺🇸美国-14
   - 🇺🇸美国-15
   - 🇺🇸美国-16
@@ -7560,7 +7542,7 @@ proxy-groups:
   type: select
   proxies:
   - 🇸🇪瑞典-01
-  - 🇱🇻LV-01
+  - 🇫🇷法国-01
   - 🇯🇵日本-01
   - 🇭🇰香港-01
   - 🇺🇸美国-01
@@ -7912,7 +7894,6 @@ proxy-groups:
   - 🇽🇽未知-291
   - 🇽🇽未知-292
   - 🇸🇬新加坡-03
-  - 🇽🇽未知-293
   - 🇺🇸美国-14
   - 🇺🇸美国-15
   - 🇺🇸美国-16
@@ -7993,7 +7974,7 @@ proxy-groups:
   type: select
   proxies:
   - 🇸🇪瑞典-01
-  - 🇱🇻LV-01
+  - 🇫🇷法国-01
   - 🇯🇵日本-01
   - 🇭🇰香港-01
   - 🇺🇸美国-01
@@ -8345,7 +8326,6 @@ proxy-groups:
   - 🇽🇽未知-291
   - 🇽🇽未知-292
   - 🇸🇬新加坡-03
-  - 🇽🇽未知-293
   - 🇺🇸美国-14
   - 🇺🇸美国-15
   - 🇺🇸美国-16
@@ -8426,7 +8406,7 @@ proxy-groups:
   type: select
   proxies:
   - 🇸🇪瑞典-01
-  - 🇱🇻LV-01
+  - 🇫🇷法国-01
   - 🇯🇵日本-01
   - 🇭🇰香港-01
   - 🇺🇸美国-01
@@ -8778,7 +8758,6 @@ proxy-groups:
   - 🇽🇽未知-291
   - 🇽🇽未知-292
   - 🇸🇬新加坡-03
-  - 🇽🇽未知-293
   - 🇺🇸美国-14
   - 🇺🇸美国-15
   - 🇺🇸美国-16
@@ -8868,7 +8847,7 @@ proxy-groups:
   type: select
   proxies:
   - 🇸🇪瑞典-01
-  - 🇱🇻LV-01
+  - 🇫🇷法国-01
   - 🇯🇵日本-01
   - 🇭🇰香港-01
   - 🇺🇸美国-01
@@ -9220,7 +9199,6 @@ proxy-groups:
   - 🇽🇽未知-291
   - 🇽🇽未知-292
   - 🇸🇬新加坡-03
-  - 🇽🇽未知-293
   - 🇺🇸美国-14
   - 🇺🇸美国-15
   - 🇺🇸美国-16
