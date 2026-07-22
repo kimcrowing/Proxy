@@ -24,97 +24,7 @@ dns:
     - https://1.1.1.1/dns-query#🚀 节点选择
     - https://8.8.8.8/dns-query#🚀 节点选择
 proxies:
-- name: 🇦🇹奥地利-01
-  type: vless
-  server: 77.110.110.214
-  port: 6443
-  uuid: 29a77cbc-bd97-4b8c-af20-c3c6341da10f
-  network: ws
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: true
-  udp: true
-- name: 🇪🇪EE-01
-  type: vless
-  server: 138.124.100.13
-  port: 443
-  uuid: 9ca88322-38bd-4ed7-aac9-8e10ae779699
-  servername: estonia.milas.click
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: DoZSKLwNQjogQMlE7oEEuB8TqpNa-umXzG-2Q6dTTEY
-    short-id: 4fa44664f6a566d3
-  skip-cert-verify: true
-  udp: true
-- name: 🇪🇪EE-02
-  type: trojan
-  server: 153.56.171.118
-  port: 3001
-  password: d0d98c51-c542-447e-959f-d8cf6a6b7a9c
-  sni: avargon.site
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇪🇸西班牙-01
-  type: vless
-  server: es01.tunnely.ru
-  port: 443
-  uuid: 31649657-6c78-4c2c-b25b-5cd574b082b5
-  servername: es01.tunnely.ru
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  reality-opts:
-    public-key: pPGE5Uacj1AGAB_WLOXB_UUnVBOmuJGH0vTSfmRBKzM
-    short-id: 2e40144ddc07e8e1
-  skip-cert-verify: true
-  udp: true
-- name: 🇪🇸西班牙-02
-  type: vless
-  server: isp05.myxasecure.space
-  port: 443
-  uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
-  servername: isp05.myxasecure.space
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  reality-opts:
-    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
-    short-id: d67ec5a8fc40ebea
-  skip-cert-verify: true
-  udp: true
-- name: 🇫🇮芬兰-01
-  type: vless
-  server: 84.22.150.39
-  port: 7443
-  uuid: 9d5cbb90-876b-448d-9874-27ab35bae6e7
-  network: ws
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: true
-  udp: true
 - name: 🇫🇷法国-01
-  type: trojan
-  server: correct-pony.rooster465.autos
-  port: 443
-  password: IQ68037294
-  sni: correct-pony.rooster465.autos
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇫🇷法国-02
   type: vmess
   server: 2001:bc8:32d7:225::3
   port: 55009
@@ -127,54 +37,58 @@ proxies:
   ws-opts:
     path: /0zNW56sF
   udp: true
-- name: 🇬🇧英国-01
-  type: vless
-  server: 82.109.242.198
-  port: 2553
-  uuid: d8b42cd5-a149-4356-9e61-000000000000
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇬🇧英国-02
-  type: vless
-  server: 57.129.130.10
-  port: 52014
-  uuid: 395bab7e-302a-42b4-bac7-8acb7d36fdf3
-  network: ws
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: true
-  udp: true
-- name: 🇬🇷希腊-01
-  type: vless
-  server: 91.186.217.158
-  port: 444
-  uuid: 59c2945e-0041-4c56-94a2-fbf956324788
-  network: ws
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: true
-  udp: true
 - name: 🇭🇰香港-01
+  type: vless
+  server: pl-1.124515.xyz
+  port: 443
+  uuid: 56b812e4-2d96-4ce5-b365-6c801663a37a
+  servername: pl-1.124515.xyz
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: dxsu1yp4dcpuhq32vLIX6fZ3A7uWs_5OzNIlUmLBSzQ
+    short-id: c7c005c49b11d17c
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰香港-02
+  type: vless
+  server: ipl2.lliinn.com
+  port: 63090
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  servername: bilibili-vn.biliimg.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  reality-opts:
+    public-key: dyEHdjgb6uB286_LVJdXIACwS50gdCr3fbhkAtC4_DY
+    short-id: f34493016ca111db
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰香港-03
+  type: vless
+  server: apibgp.ianai.it.com
+  port: 34641
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  servername: iosapps.itunes.apple.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  reality-opts:
+    public-key: wP6GcwZEkfpPp5aa4DELqaqWt2YnKC1t0XZ_v7j_WEo
+    short-id: 3b2fca002539d549
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰香港-04
   type: trojan
-  server: 18.167.109.142
-  port: 17005
+  server: 95.40.51.248
+  port: 49277
   password: b490740312aedb5f9f6b84c7aebd08c0
   sni: www.nintendogames.net
   skip-cert-verify: true
   tls: true
   udp: true
-- name: 🇭🇰香港-02
+- name: 🇭🇰香港-05
   type: trojan
   server: 18.166.225.126
   port: 11993
@@ -183,39 +97,12 @@ proxies:
   skip-cert-verify: true
   tls: true
   udp: true
-- name: 🇭🇰香港-03
-  type: trojan
-  server: 18.167.109.142
-  port: 13118
-  password: b490740312aedb5f9f6b84c7aebd08c0
-  sni: www.nintendogames.net
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇭🇰香港-04
+- name: 🇭🇰香港-06
   type: trojan
   server: 43.198.15.160
   port: 11035
   password: BxceQaOe
   sni: t.me/ripaojiedian
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇭🇰香港-05
-  type: trojan
-  server: 43.199.146.29
-  port: 9149
-  password: BxceQaOe
-  sni: t.me/ripaojiedian
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇭🇰香港-06
-  type: trojan
-  server: 95.40.51.248
-  port: 6357
-  password: b490740312aedb5f9f6b84c7aebd08c0
-  sni: www.nintendogames.net
   skip-cert-verify: true
   tls: true
   udp: true
@@ -228,102 +115,26 @@ proxies:
   skip-cert-verify: true
   tls: true
   udp: true
-- name: 🇭🇰香港-08
-  type: vmess
-  server: 47.76.127.88
-  port: 5566
-  uuid: 44712929-c2b7-4fa4-93bd-9de332a78c8c
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰香港-09
-  type: trojan
-  server: 95.40.51.248
-  port: 49277
-  password: b490740312aedb5f9f6b84c7aebd08c0
-  sni: www.nintendogames.net
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇭🇰香港-10
-  type: trojan
-  server: 18.162.245.180
-  port: 6357
-  password: b490740312aedb5f9f6b84c7aebd08c0
-  sni: www.nintendogames.net
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇭🇰香港-11
-  type: vmess
-  server: 47.244.120.197
-  port: 44867
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki?ed=2048
-  udp: true
-- name: 🇭🇰香港-12
-  type: vmess
-  server: n1747624274.4u9ma.icu
-  port: 443
-  uuid: d8daf507-a4ac-4eea-8399-8f0cd071eb52
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  udp: true
-- name: 🇭🇰香港-13
-  type: vmess
-  server: 47.244.120.197
-  port: 36703
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki?ed=2048
-  udp: true
-- name: 🇭🇰香港-14
-  type: vmess
-  server: n1747624260.4u9ma.icu
-  port: 443
-  uuid: eee8cb72-7eab-4034-a308-ed06cb07e003
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  udp: true
-- name: 🇮🇹意大利-01
+- name: 🇮🇪爱尔兰-01
   type: vless
-  server: 31.77.201.85
+  server: ire02.myxasecure.space
   port: 443
-  uuid: 16ad976d-b5df-4b4e-87b6-87cc64ac0a8b
-  servername: ag-03.rita-cloud.com
+  uuid: c04bf2df-2b7f-44da-a893-3792d3910fd8
+  servername: ire02.myxasecure.space
   tls: true
   flow: xtls-rprx-vision
-  client-fingerprint: chrome
+  client-fingerprint: qq
   reality-opts:
-    public-key: yLDI5Qjzn4AHlXVDEXNVcLKAdr_dFeJ3p4eAScGkQjA
-    short-id: 0b0aa9caed9d011e
+    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
+    short-id: d67ec5a8fc40ebea
   skip-cert-verify: true
   udp: true
 - name: 🇯🇵日本-01
   type: trojan
-  server: 154.31.114.10
-  port: 443
-  password: an70aOaIjcCF43gOlSB6eKER53Z38DYDx8l9RCSCpYTwXS3pueyAqyFZx2zDNA
-  sni: 154.31.114.10
+  server: 35.77.80.32
+  port: 40138
+  password: b490740312aedb5f9f6b84c7aebd08c0
+  sni: www.nintendogames.net
   skip-cert-verify: true
   tls: true
   udp: true
@@ -345,202 +156,19 @@ proxies:
   skip-cert-verify: true
   tls: true
   udp: true
-- name: 🇯🇵日本-04
-  type: trojan
-  server: new-antelope.rooster465.autos
-  port: 443
-  password: IQ68037294
-  sni: new-antelope.rooster465.autos
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇯🇵日本-05
-  type: trojan
-  server: 35.77.80.32
-  port: 40138
-  password: b490740312aedb5f9f6b84c7aebd08c0
-  sni: www.nintendogames.net
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇯🇵日本-06
-  type: vless
-  server: 151.241.129.98
-  port: 7228
-  uuid: 4de76f87-f523-46d4-b579-965ade6fe873
-  network: ws
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: true
-  udp: true
-- name: 🇯🇵日本-07
-  type: vless
-  server: 54.248.196.211
-  port: 4443
-  uuid: 8e8b798b-3300-475a-be70-8d09e20b1f82
-  network: ws
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: true
-  udp: true
-- name: 🇯🇵日本-08
-  type: vless
-  server: 54.178.110.17
-  port: 4443
-  uuid: ca4f25f2-e3ff-47ed-ba35-ce0d02b6333d
-  network: ws
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: true
-  udp: true
-- name: 🇯🇵日本-09
-  type: vless
-  server: 45.76.222.52
-  port: 8443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇯🇵日本-10
-  type: vless
-  server: 43.165.183.74
-  port: 2443
-  uuid: 5c53add3-e092-4b29-b0c0-fb4f784115d1
-  network: ws
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: true
-  udp: true
-- name: 🇯🇵日本-11
-  type: vless
-  server: 66.245.220.81
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇯🇵日本-12
-  type: vless
-  server: 149.28.18.65
-  port: 8443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇰🇷韩国-01
-  type: trojan
-  server: premium-weevil.rooster465.autos
-  port: 443
-  password: IQ68037294
-  sni: premium-weevil.rooster465.autos
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇰🇷韩国-02
-  type: vless
-  server: 211.104.99.209
-  port: 11019
-  uuid: cca6ecec-5305-49d0-8adf-3b40aaaa50d6
-  network: ws
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: true
-  udp: true
-- name: 🇰🇷韩国-03
-  type: vless
-  server: 183.107.137.157
-  port: 36389
-  uuid: 7185500c-8b9a-49d2-8cbb-765542a49a52
-  network: ws
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: true
-  udp: true
-- name: 🇰🇷韩国-04
-  type: vless
-  server: 125.140.184.250
-  port: 32751
-  uuid: 14c6d6b8-68a6-4119-8ff5-bef121458df1
-  network: ws
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: true
-  udp: true
-- name: 🇰🇷韩国-05
-  type: vless
-  server: 221.158.168.29
-  port: 30021
-  uuid: 56d9b40d-4cba-4788-b885-2cdbbaa54fe0
-  network: ws
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: true
-  udp: true
 - name: 🇱🇻LV-01
   type: vless
   server: fn.fifapes.monster
   port: 2090
+  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+  servername: /?
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇱🇻LV-02
+  type: vless
+  server: gr1.fifapes.monster
+  port: 8882
   uuid: eab915bc-d2df-73d1-47d0-6eb240497055
   tls: false
   skip-cert-verify: true
@@ -553,305 +181,23 @@ proxies:
   sni: space.byu.id.yxls.eu.cc
   skip-cert-verify: true
   tls: true
-  udp: true
-- name: 🇳🇱荷兰-02
-  type: vless
-  server: 109.120.150.185
-  port: 11261
-  uuid: ba1c2531-79de-4c99-9d7d-137360b16a83
-  network: ws
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  tls: true
-  client-fingerprint: chrome
   ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: true
-  udp: true
-- name: 🇳🇱荷兰-03
-  type: vless
-  server: 79.137.195.150
-  port: 444
-  uuid: d7afaf84-4951-432a-a72b-be5e46684e24
-  network: ws
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: true
-  udp: true
-- name: 🇳🇱荷兰-04
-  type: vless
-  server: 77.110.103.49
-  port: 8444
-  uuid: 8ce93aad-eb19-4876-857b-fd0628b3c1ed
-  network: ws
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: true
-  udp: true
-- name: 🇳🇱荷兰-05
-  type: vless
-  server: 77.221.154.42
-  port: 3443
-  uuid: 069805e0-d7fd-4e00-a7c9-bbb3aac8feb2
-  network: ws
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: true
-  udp: true
-- name: 🇵🇱波兰-01
-  type: trojan
-  server: dear-ferret.rooster465.autos
-  port: 443
-  password: IQ68037294
-  sni: dear-ferret.rooster465.autos
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇸🇨SC-01
-  type: trojan
-  server: 154.90.62.70
-  port: 56127
-  password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
-  sni: 154.90.62.70
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇸🇬新加坡-01
-  type: trojan
-  server: 92.243.75.49
-  port: 2087
-  password: wb6368
-  sni: hsdgbuys.pages.dev
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇸🇬新加坡-02
-  type: trojan
-  server: glowing-deer.rooster465.autos
-  port: 443
-  password: IQ68037294
-  sni: glowing-deer.rooster465.autos
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇸🇬新加坡-03
-  type: trojan
-  server: proud-escargot.rooster465.autos
-  port: 443
-  password: IQ68037294
-  sni: proud-escargot.rooster465.autos
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇸🇬新加坡-04
-  type: trojan
-  server: helpful-possum.rooster465.autos
-  port: 443
-  password: IQ68037294
-  sni: helpful-possum.rooster465.autos
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇸🇬新加坡-05
-  type: trojan
-  server: pleased-sawfly.rooster465.autos
-  port: 443
-  password: IQ68037294
-  sni: pleased-sawfly.rooster465.autos
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇸🇬新加坡-06
-  type: trojan
-  server: prepared-turkey.rooster465.autos
-  port: 443
-  password: IQ68037294
-  sni: prepared-turkey.rooster465.autos
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇸🇬新加坡-07
-  type: trojan
-  server: humane-hawk.rooster465.autos
-  port: 443
-  password: IQ68037294
-  sni: humane-hawk.rooster465.autos
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇸🇬新加坡-08
-  type: trojan
-  server: endless-kiwi.rooster465.autos
-  port: 443
-  password: IQ68037294
-  sni: endless-kiwi.rooster465.autos
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇸🇬新加坡-09
-  type: trojan
-  server: apt-midge.rooster465.autos
-  port: 443
-  password: IQ68037294
-  sni: apt-midge.rooster465.autos
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇸🇬新加坡-10
-  type: trojan
-  server: still-mastodon.rooster465.autos
-  port: 443
-  password: IQ68037294
-  sni: still-mastodon.rooster465.autos
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇸🇬新加坡-11
-  type: trojan
-  server: 27.50.48.49
-  port: 443
-  password: humanity
-  sni: www.calmloud.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇸🇬新加坡-12
-  type: trojan
-  server: sterling-vervet.rooster465.autos
-  port: 443
-  password: IQ68037294
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇸🇬新加坡-13
-  type: trojan
-  server: casual-stallion.rooster465.autos
-  port: 443
-  password: IQ68037294
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇸🇬新加坡-14
-  type: trojan
-  server: full-mackerel.rooster465.autos
-  port: 443
-  password: IQ68037294
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇸🇬新加坡-15
-  type: vless
-  server: 54.151.150.190
-  port: 30348
-  uuid: f8d551b2-a708-4f32-a7ba-8c1bf01921cd
-  network: ws
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: true
-  udp: true
-- name: 🇸🇬新加坡-16
-  type: vless
-  server: 54.254.145.25
-  port: 6768
-  uuid: cca8aeef-2beb-4579-8611-5a6f44273de3
-  network: ws
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: true
-  udp: true
-- name: 🇸🇬新加坡-17
-  type: vless
-  server: 159.138.85.179
-  port: 10428
-  uuid: d08e9640-42e3-4483-ac60-303c03ff79f6
-  network: ws
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: true
-  udp: true
-- name: 🇸🇬新加坡-18
-  type: vless
-  server: 13.212.82.58
-  port: 2000
-  uuid: e60ff37f-1a8d-40fb-9083-38e9767eb8ed
-  network: ws
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: true
+    path: /in-pdr
   udp: true
 - name: 🇺🇸美国-01
-  type: trojan
-  server: 199.232.22.39
+  type: vless
+  server: 2.26.148.70
   port: 443
-  password: MiTiVPN
-  sni: default.ssl.fastly.com
-  skip-cert-verify: true
+  uuid: a34b5e88-cf0d-4c01-8199-2d1002d3c787
+  servername: www.wikihow.com
   tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: HKpd1sbrhBds8SJSL0d22MAq_QyTR6EP6y5b5DYol3U
+  skip-cert-verify: true
   udp: true
 - name: 🇺🇸美国-02
-  type: trojan
-  server: optimal-dane.rooster465.autos
-  port: 443
-  password: IQ68037294
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇺🇸美国-03
-  type: vmess
-  server: guanwang.awsno.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸美国-04
-  type: trojan
-  server: 163.245.196.68
-  port: 49361
-  password: 0ebb269c9f2d4e8e46b0cd4105a55134
-  sni: 163.245.196.68.sslip.io
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇺🇸美国-05
   type: vless
   server: 31-76-252-48.sslip.io
   port: 443
@@ -866,846 +212,7 @@ proxies:
       Host: 31-76-252-48.sslip.io
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸美国-06
-  type: vless
-  server: 199.232.22.39
-  port: 443
-  uuid: cbcf2255-6d66-4039-b7d6-c10d6ffc99e7
-  network: ws
-  servername: ssl.fastly.com
-  tls: true
-  ws-opts:
-    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed
-    headers:
-      Host: pan1.global.ssl.fastly.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸美国-07
-  type: vless
-  server: 199.232.222.178
-  port: 443
-  uuid: cbcf2255-6d66-4039-b7d6-c10d6ffc99e7
-  network: ws
-  servername: ssl.fastly.com
-  tls: true
-  client-fingerprint: firefox
-  ws-opts:
-    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed
-    headers:
-      Host: pan1.global.ssl.fastly.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸美国-08
-  type: vless
-  server: 199.232.29.204
-  port: 443
-  uuid: cbcf2255-6d66-4039-b7d6-c10d6ffc99e7
-  network: ws
-  servername: ssl.fastly.com
-  tls: true
-  client-fingerprint: firefox
-  ws-opts:
-    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed
-    headers:
-      Host: pan1.global.ssl.fastly.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸美国-09
-  type: vless
-  server: 199.232.249.110
-  port: 443
-  uuid: 891710f4-45f3-41b1-99a6-6f1510f83c10
-  network: ws
-  servername: ssl.fastly.com
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed
-    headers:
-      Host: pan21.global.ssl.fastly.net
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸美国-10
-  type: vless
-  server: 103.133.1.160
-  port: 80
-  uuid: eaf76557-2219-4799-8171-d7020adfefd0
-  network: ws
-  tls: false
-  ws-opts:
-    path: /ws
-    headers:
-      Host: soft-shadow-1e33.xicav73335.workers.dev
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸美国-11
-  type: vless
-  server: 2.26.91.98
-  port: 1443
-  uuid: d4c6b1ad-9ec4-4273-854a-f0bbf0448ab6
-  network: ws
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: true
-  udp: true
-- name: 🇻🇳越南-01
-  type: vmess
-  server: 103.166.184.134
-  port: 27467
-  uuid: 93637105-bcea-4a68-b089-1bb6091f0b16
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
 - name: 🇽🇽未知-01
-  type: trojan
-  server: sgsgoo.cloudflare.182682.xyz
-  port: 443
-  password: 97189864-f96d-4a60-ab28-8bffe4f53207
-  sni: light.bpsg2026.top
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇽🇽未知-02
-  type: trojan
-  server: cdn2.bpcdn.cc
-  port: 443
-  password: 97189864-f96d-4a60-ab28-8bffe4f53207
-  sni: light.bpsg2026.top
-  skip-cert-verify: true
-  tls: true
-  udp: true
-- name: 🇽🇽未知-03
-  type: vless
-  server: 162.159.42.182
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-04
-  type: vless
-  server: 162.159.48.245
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-05
-  type: vless
-  server: 172.64.53.65
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-06
-  type: vless
-  server: 172.64.53.27
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-07
-  type: vless
-  server: 172.64.42.44
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-08
-  type: vless
-  server: 162.159.46.24
-  port: 8443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-09
-  type: vless
-  server: 162.159.1.170
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-10
-  type: vless
-  server: 108.162.198.43
-  port: 8443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-11
-  type: vless
-  server: 172.64.145.2
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-12
-  type: vless
-  server: 172.64.53.34
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-13
-  type: vless
-  server: 104.18.35.13
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-14
-  type: vless
-  server: 172.64.52.134
-  port: 8443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-15
-  type: vless
-  server: cf.877774.xyz
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-16
-  type: vless
-  server: 172.64.151.158
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-17
-  type: vless
-  server: 172.64.40.49
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-18
-  type: vless
-  server: 172.64.52.152
-  port: 8443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-19
-  type: vless
-  server: 162.159.24.39
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-20
-  type: vless
-  server: 162.159.46.226
-  port: 8443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-21
-  type: vless
-  server: 162.159.32.29
-  port: 8443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-22
-  type: trojan
-  server: 172.64.152.23
-  port: 443
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-  udp: true
-- name: 🇽🇽未知-23
-  type: vless
-  server: ad-010.vector9nmb3.info
-  port: 8443
-  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
-  network: ws
-  servername: ad-010.vector9nmb3.info
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: ad-010.vector9nmb3.info
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-24
-  type: trojan
-  server: 104.16.71.213
-  port: 443
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-  udp: true
-- name: 🇽🇽未知-25
-  type: trojan
-  server: 104.18.152.143
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-  udp: true
-- name: 🇽🇽未知-26
-  type: trojan
-  server: 104.16.174.117
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-  udp: true
-- name: 🇽🇽未知-27
-  type: trojan
-  server: 104.18.12.149
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-  udp: true
-- name: 🇽🇽未知-28
-  type: trojan
-  server: www.ignitelimit.com
-  port: 443
-  password: humanity
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /assignment
-  udp: true
-- name: 🇽🇽未知-29
-  type: trojan
-  server: 104.18.152.225
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-  udp: true
-- name: 🇽🇽未知-30
-  type: trojan
-  server: www.gossipglove.com
-  port: 443
-  password: humanity
-  sni: www.gossipglove.com
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /assignment
-  udp: true
-- name: 🇽🇽未知-31
-  type: trojan
-  server: 104.16.174.36
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-  udp: true
-- name: 🇽🇽未知-32
-  type: trojan
-  server: 104.17.177.143
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-  udp: true
-- name: 🇽🇽未知-33
-  type: trojan
-  server: join-telegram-channel.tirexnet.kdns.fr
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-  udp: true
-- name: 🇽🇽未知-34
-  type: trojan
-  server: www.multiplydose.com
-  port: 443
-  password: humanity
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /assignment
-  udp: true
-- name: 🇽🇽未知-35
-  type: trojan
-  server: 172.66.44.211
-  port: 443
-  password: humanity
-  sni: www.multiplydose.com
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.multiplydose.com
-  udp: true
-- name: 🇽🇽未知-36
-  type: trojan
-  server: 104.19.230.21
-  port: 443
-  password: humanity
-  sni: www.multiplydose.com
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.multiplydose.com
-  udp: true
-- name: 🇽🇽未知-37
-  type: trojan
-  server: 104.19.208.184
-  port: 443
-  password: humanity
-  sni: www.multiplydose.com
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: //assignment
-    headers:
-      Host: www.multiplydose.com
-  udp: true
-- name: 🇽🇽未知-38
-  type: trojan
-  server: 104.17.121.71
-  port: 443
-  password: humanity
-  sni: www.multiplydose.com
-  skip-cert-verify: true
-  tls: true
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.multiplydose.com
-  udp: true
-- name: 🇽🇽未知-39
-  type: vless
-  server: cf.090227.xyz
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-40
-  type: vless
-  server: 162.159.1.37
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-41
-  type: vless
-  server: 162.159.14.252
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=512
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-42
-  type: vless
-  server: 162.159.41.198
-  port: 8443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-43
-  type: vless
-  server: 162.159.21.235
-  port: 8443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-44
-  type: vless
-  server: 162.159.36.166
-  port: 8443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-45
-  type: vless
-  server: 162.159.5.231
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-46
-  type: vless
-  server: 162.159.34.23
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-47
-  type: vless
-  server: 162.159.16.154
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-48
-  type: vless
-  server: 104.18.44.198
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-49
-  type: vless
-  server: 162.159.4.221
-  port: 8443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-50
-  type: vless
-  server: 104.16.148.8
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-51
-  type: vless
-  server: 104.16.253.227
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-52
-  type: vless
-  server: 172.64.52.240
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-53
-  type: vless
-  server: 172.64.41.202
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-54
   type: vless
   server: 172.64.52.18
   port: 443
@@ -1720,9 +227,9 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
   skip-cert-verify: true
   udp: true
-- name: 🇽🇽未知-55
+- name: 🇽🇽未知-02
   type: vless
-  server: 172.64.145.186
+  server: 172.64.53.27
   port: 443
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   network: ws
@@ -1735,9 +242,9 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
   skip-cert-verify: true
   udp: true
-- name: 🇽🇽未知-56
+- name: 🇽🇽未知-03
   type: vless
-  server: 162.159.45.15
+  server: 162.159.34.23
   port: 443
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   network: ws
@@ -1750,24 +257,9 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
   skip-cert-verify: true
   udp: true
-- name: 🇽🇽未知-57
+- name: 🇽🇽未知-04
   type: vless
-  server: 162.159.45.201
-  port: 2083
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-58
-  type: vless
-  server: 162.159.44.180
+  server: 172.64.40.49
   port: 443
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   network: ws
@@ -1780,10 +272,10 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
   skip-cert-verify: true
   udp: true
-- name: 🇽🇽未知-59
+- name: 🇽🇽未知-05
   type: vless
-  server: 162.159.44.172
-  port: 2083
+  server: 162.159.41.198
+  port: 8443
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   network: ws
   servername: t1s1.rittbo.kdns.fr
@@ -1795,9 +287,9 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
   skip-cert-verify: true
   udp: true
-- name: 🇽🇽未知-60
+- name: 🇽🇽未知-06
   type: vless
-  server: 162.159.32.239
+  server: 162.159.24.39
   port: 443
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   network: ws
@@ -1810,37 +302,7 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
   skip-cert-verify: true
   udp: true
-- name: 🇽🇽未知-61
-  type: vless
-  server: 162.159.38.101
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-62
-  type: vless
-  server: 162.159.21.206
-  port: 2083
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-63
+- name: 🇽🇽未知-07
   type: vless
   server: 162.159.45.218
   port: 443
@@ -1855,9 +317,9 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
   skip-cert-verify: true
   udp: true
-- name: 🇽🇽未知-64
+- name: 🇽🇽未知-08
   type: vless
-  server: 162.159.42.163
+  server: 172.64.145.2
   port: 443
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   network: ws
@@ -1870,39 +332,9 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
   skip-cert-verify: true
   udp: true
-- name: 🇽🇽未知-65
+- name: 🇽🇽未知-09
   type: vless
-  server: 162.159.3.48
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-66
-  type: vless
-  server: 162.159.3.141
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-67
-  type: vless
-  server: 162.159.4.2
+  server: 162.159.4.221
   port: 8443
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   network: ws
@@ -1915,9 +347,39 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
   skip-cert-verify: true
   udp: true
-- name: 🇽🇽未知-68
+- name: 🇽🇽未知-10
   type: vless
-  server: 162.159.13.196
+  server: 162.159.1.170
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  servername: t1s1.rittbo.kdns.fr
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-11
+  type: vless
+  server: 104.18.35.13
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  servername: t1s1.rittbo.kdns.fr
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-12
+  type: vless
+  server: 172.64.52.152
   port: 8443
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   network: ws
@@ -1930,9 +392,9 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
   skip-cert-verify: true
   udp: true
-- name: 🇽🇽未知-69
+- name: 🇽🇽未知-13
   type: vless
-  server: 162.159.60.167
+  server: 172.64.53.65
   port: 443
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   network: ws
@@ -1945,9 +407,9 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
   skip-cert-verify: true
   udp: true
-- name: 🇽🇽未知-70
+- name: 🇽🇽未知-14
   type: vless
-  server: 172.64.153.159
+  server: 162.159.44.180
   port: 443
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   network: ws
@@ -1960,7 +422,7 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
   skip-cert-verify: true
   udp: true
-- name: 🇽🇽未知-71
+- name: 🇽🇽未知-15
   type: vless
   server: 172.64.35.206
   port: 443
@@ -1975,7 +437,232 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
   skip-cert-verify: true
   udp: true
-- name: 🇽🇽未知-72
+- name: 🇽🇽未知-16
+  type: vless
+  server: 162.159.4.2
+  port: 8443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  servername: t1s1.rittbo.kdns.fr
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-17
+  type: vless
+  server: 162.159.45.15
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  servername: t1s1.rittbo.kdns.fr
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-18
+  type: vless
+  server: 172.64.53.34
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  servername: t1s1.rittbo.kdns.fr
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-19
+  type: vless
+  server: 108.162.198.43
+  port: 8443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  servername: t1s1.rittbo.kdns.fr
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-20
+  type: vless
+  server: 172.64.151.158
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  servername: t1s1.rittbo.kdns.fr
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-21
+  type: vless
+  server: 162.159.45.201
+  port: 2083
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  servername: t1s1.rittbo.kdns.fr
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-22
+  type: vless
+  server: 162.159.1.37
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  servername: t1s1.rittbo.kdns.fr
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-23
+  type: vless
+  server: 172.64.52.240
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  servername: t1s1.rittbo.kdns.fr
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-24
+  type: vless
+  server: cf.877774.xyz
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  servername: t1s1.rittbo.kdns.fr
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-25
+  type: vless
+  server: 172.64.52.134
+  port: 8443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  servername: t1s1.rittbo.kdns.fr
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-26
+  type: vless
+  server: 172.64.145.186
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  servername: t1s1.rittbo.kdns.fr
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-27
+  type: vless
+  server: 162.159.60.167
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  servername: t1s1.rittbo.kdns.fr
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-28
+  type: vless
+  server: 162.159.46.24
+  port: 8443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  servername: t1s1.rittbo.kdns.fr
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-29
+  type: vless
+  server: 172.64.42.44
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  servername: t1s1.rittbo.kdns.fr
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-30
+  type: vless
+  server: 162.159.46.226
+  port: 8443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  servername: t1s1.rittbo.kdns.fr
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-31
   type: vless
   server: 198.41.223.238
   port: 443
@@ -1990,9 +677,426 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
   skip-cert-verify: true
   udp: true
-- name: 🇽🇽未知-73
+- name: 🇽🇽未知-32
   type: vless
-  server: 172.64.150.246
+  server: 162.159.42.182
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  servername: t1s1.rittbo.kdns.fr
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-33
+  type: vless
+  server: 162.159.38.101
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  servername: t1s1.rittbo.kdns.fr
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-34
+  type: trojan
+  server: 172.64.152.23
+  port: 443
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+  udp: true
+- name: 🇽🇽未知-35
+  type: trojan
+  server: www.ignitelimit.com
+  port: 443
+  password: humanity
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /assignment
+  udp: true
+- name: 🇽🇽未知-36
+  type: trojan
+  server: 104.19.208.184
+  port: 443
+  password: humanity
+  sni: www.multiplydose.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: //assignment
+    headers:
+      Host: www.multiplydose.com
+  udp: true
+- name: 🇽🇽未知-37
+  type: trojan
+  server: 104.17.177.143
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+  udp: true
+- name: 🇽🇽未知-38
+  type: trojan
+  server: 104.18.12.149
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+  udp: true
+- name: 🇽🇽未知-39
+  type: trojan
+  server: 104.16.71.213
+  port: 443
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+  udp: true
+- name: 🇽🇽未知-40
+  type: trojan
+  server: 104.16.174.117
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+  udp: true
+- name: 🇽🇽未知-41
+  type: trojan
+  server: 104.16.174.36
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+  udp: true
+- name: 🇽🇽未知-42
+  type: trojan
+  server: 104.18.152.225
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+  udp: true
+- name: 🇽🇽未知-43
+  type: trojan
+  server: join-telegram-channel.tirexnet.kdns.fr
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+  udp: true
+- name: 🇽🇽未知-44
+  type: trojan
+  server: 104.17.121.71
+  port: 443
+  password: humanity
+  sni: www.multiplydose.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.multiplydose.com
+  udp: true
+- name: 🇽🇽未知-45
+  type: trojan
+  server: 172.66.44.211
+  port: 443
+  password: humanity
+  sni: www.multiplydose.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.multiplydose.com
+  udp: true
+- name: 🇽🇽未知-46
+  type: trojan
+  server: 104.18.152.143
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+  udp: true
+- name: 🇽🇽未知-47
+  type: trojan
+  server: 104.19.174.68
+  port: 443
+  password: c2cc86b4-4481-4807-ac9e-24e2d7041248
+  sni: px8r9i1b4k.bpusfaster2.top
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /images
+    headers:
+      Host: px8r9i1b4k.bpusfaster2.top
+  udp: true
+- name: 🇽🇽未知-48
+  type: trojan
+  server: 5344gt5.cloudflare.182682.xyz
+  port: 443
+  password: c2cc86b4-4481-4807-ac9e-24e2d7041248
+  sni: ttt1.ttttlefjljl.xyz
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /images
+    headers:
+      Host: ttt1.ttttlefjljl.xyz
+  udp: true
+- name: 🇽🇽未知-49
+  type: trojan
+  server: 666.cloudflare.182682.xyz
+  port: 443
+  password: c2cc86b4-4481-4807-ac9e-24e2d7041248
+  sni: ehofhoe.bpuk2026.top
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /images
+    headers:
+      Host: ehofhoe.bpuk2026.top
+  udp: true
+- name: 🇽🇽未知-50
+  type: trojan
+  server: cdn2.bpcdn.cc
+  port: 443
+  password: c2cc86b4-4481-4807-ac9e-24e2d7041248
+  sni: jpefoaweho04.jptimecsgo.xyz
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /images
+    headers:
+      Host: jpefoaweho04.jptimecsgo.xyz
+  udp: true
+- name: 🇽🇽未知-51
+  type: trojan
+  server: digitalocean.com
+  port: 443
+  password: c2cc86b4-4481-4807-ac9e-24e2d7041248
+  sni: ttt1.ttttlefjljl.xyz
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /images
+    headers:
+      Host: ttt1.ttttlefjljl.xyz
+  udp: true
+- name: 🇽🇽未知-52
+  type: trojan
+  server: hkkk498.cloudflare.182682.xyz
+  port: 443
+  password: c2cc86b4-4481-4807-ac9e-24e2d7041248
+  sni: 9l3ysxf7rj3nz549.tkgogocsgo.top
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /images
+    headers:
+      Host: 9l3ysxf7rj3nz549.tkgogocsgo.top
+  udp: true
+- name: 🇽🇽未知-53
+  type: trojan
+  server: jjyeye.cloudflare.182682.xyz
+  port: 443
+  password: c2cc86b4-4481-4807-ac9e-24e2d7041248
+  sni: jpefoaweho04.jptimecsgo.xyz
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /images
+    headers:
+      Host: jpefoaweho04.jptimecsgo.xyz
+  udp: true
+- name: 🇽🇽未知-54
+  type: trojan
+  server: mmefi.cloudflare.182682.xyz
+  port: 443
+  password: c2cc86b4-4481-4807-ac9e-24e2d7041248
+  sni: gogoyy.bpmalai2026.top
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /images
+    headers:
+      Host: gogoyy.bpmalai2026.top
+  udp: true
+- name: 🇽🇽未知-55
+  type: trojan
+  server: sgsgoo.cloudflare.182682.xyz
+  port: 443
+  password: c2cc86b4-4481-4807-ac9e-24e2d7041248
+  sni: light.bpsg2026.top
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /images
+    headers:
+      Host: light.bpsg2026.top
+  udp: true
+- name: 🇽🇽未知-56
+  type: trojan
+  server: tt45y3.cloudflare.182682.xyz
+  port: 443
+  password: c2cc86b4-4481-4807-ac9e-24e2d7041248
+  sni: tuerqitt.bper2026.top
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /images
+    headers:
+      Host: tuerqitt.bper2026.top
+  udp: true
+- name: 🇽🇽未知-57
+  type: trojan
+  server: tw3011h8r.cloudflare.182682.xyz
+  port: 443
+  password: c2cc86b4-4481-4807-ac9e-24e2d7041248
+  sni: kfb9frqf0v.bpis2026.top
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /images
+    headers:
+      Host: kfb9frqf0v.bpis2026.top
+  udp: true
+- name: 🇽🇽未知-58
+  type: trojan
+  server: uubest.cloudflare.182682.xyz
+  port: 443
+  password: c2cc86b4-4481-4807-ac9e-24e2d7041248
+  sni: px8r9i1b4k.bpusfaster2.top
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /images
+    headers:
+      Host: px8r9i1b4k.bpusfaster2.top
+  udp: true
+- name: 🇽🇽未知-59
+  type: trojan
+  server: uugt5.cloudflare.182682.xyz
+  port: 443
+  password: c2cc86b4-4481-4807-ac9e-24e2d7041248
+  sni: ttt1.ttttlefjljl.xyz
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /images
+    headers:
+      Host: ttt1.ttttlefjljl.xyz
+  udp: true
+- name: 🇽🇽未知-60
+  type: trojan
+  server: visa.com.sg
+  port: 443
+  password: c2cc86b4-4481-4807-ac9e-24e2d7041248
+  sni: px8r9i1b4k.bpusfaster2.top
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /images
+    headers:
+      Host: px8r9i1b4k.bpusfaster2.top
+  udp: true
+- name: 🇽🇽未知-61
+  type: trojan
+  server: 104.19.229.21
+  port: 443
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: //assignment
+    headers:
+      Host: www.calmlunch.com
+  udp: true
+- name: 🇽🇽未知-62
+  type: vless
+  server: 162.159.152.48
+  port: 443
+  uuid: c416332e-2bde-4806-ac02-8f021c6e8f68
+  network: ws
+  servername: bbc.zjxc.de5.net
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: bbc.zjxc.de5.net
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-63
+  type: vless
+  server: cdn.9889888.xyz
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  servername: t1s1.rittbo.kdns.fr
+  tls: true
+  ws-opts:
+    path: /
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-64
+  type: vless
+  server: 162.159.11.57
   port: 2083
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   network: ws
@@ -2005,10 +1109,136 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
   skip-cert-verify: true
   udp: true
+- name: 🇽🇽未知-65
+  type: vless
+  server: 108.162.196.3
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  servername: t1s1.rittbo.kdns.fr
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-66
+  type: vless
+  server: 172.64.40.79
+  port: 2083
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  servername: t1s1.rittbo.kdns.fr
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-67
+  type: vless
+  server: 162.159.38.25
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  servername: t1s1.rittbo.kdns.fr
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-68
+  type: vless
+  server: 162.159.48.245
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  servername: t1s1.rittbo.kdns.fr
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-69
+  type: vless
+  server: 162.159.32.29
+  port: 8443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  servername: t1s1.rittbo.kdns.fr
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-70
+  type: vless
+  server: 162.159.42.163
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  servername: t1s1.rittbo.kdns.fr
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-71
+  type: vless
+  server: 172.64.41.202
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  servername: t1s1.rittbo.kdns.fr
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+  skip-cert-verify: true
+  udp: true
+- name: 🇽🇽未知-72
+  type: trojan
+  server: www.gossipglove.com
+  port: 443
+  password: humanity
+  sni: www.gossipglove.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /assignment
+  udp: true
+- name: 🇽🇽未知-73
+  type: trojan
+  server: 141.101.90.101
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
+  udp: true
 - name: 🇽🇽未知-74
   type: vless
-  server: 172.64.35.37
-  port: 8443
+  server: 108.162.196.3
+  port: 2083
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   network: ws
   servername: t1s1.rittbo.kdns.fr
@@ -2022,15 +1252,17 @@ proxies:
   udp: true
 - name: 🇽🇽未知-75
   type: vless
-  server: skk.moe
-  port: 8880
-  uuid: 0787cfdb-9930-4abb-8419-c1b96c3ef628
+  server: ad-010.vector9nmb3.info
+  port: 8443
+  uuid: 9047efd2-5aa4-4c9c-a58f-a5791b06c79e
   network: ws
-  tls: false
+  servername: ad-010.vector9nmb3.info
+  tls: true
+  client-fingerprint: chrome
   ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
+    path: /
     headers:
-      Host: red-snowflake-c399.12-ee1.workers.dev
+      Host: ad-010.vector9nmb3.info
   skip-cert-verify: true
   udp: true
 - name: 🇽🇽未知-76
@@ -2048,85 +1280,26 @@ proxies:
       Host: ad-020.cloud25075.info
   skip-cert-verify: true
   udp: true
-- name: 🇽🇽未知-77
-  type: vless
-  server: 188.114.97.1
-  port: 2052
-  uuid: 335035e6-65f1-4a51-a8a7-10fb0a89b8e7
-  network: ws
-  tls: false
-  ws-opts:
-    path: /eyJqdW5rIjoiU1V4Ykp5S1h3aSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==?ed=2560
-    headers:
-      Host: shrill-lake-231c.jachhitachi69.workers.dev
-  skip-cert-verify: true
-  udp: true
-- name: 🇽🇽未知-78
-  type: vless
-  server: 104.18.37.237
-  port: 8443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  servername: t1s1.rittbo.kdns.fr
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  udp: true
 proxy-groups:
 - name: 🚀 节点选择
   type: select
   proxies:
-  - 🇻🇳越南-01
   - 🇭🇰香港-01
+  - 🇮🇪爱尔兰-01
+  - 🇱🇻LV-01
   - 🇭🇰香港-02
-  - 🇯🇵日本-01
-  - 🇺🇸美国-01
-  - 🇸🇬新加坡-01
   - 🇭🇰香港-03
+  - 🇱🇻LV-02
+  - 🇺🇸美国-01
   - 🇭🇰香港-04
+  - 🇭🇰香港-05
+  - 🇭🇰香港-06
+  - 🇯🇵日本-01
   - 🇯🇵日本-02
+  - 🇭🇰香港-07
   - 🇯🇵日本-03
-  - 🇯🇵日本-04
-  - 🇸🇬新加坡-02
-  - 🇸🇬新加坡-03
-  - 🇸🇬新加坡-04
-  - 🇳🇱荷兰-01
   - 🇽🇽未知-01
   - 🇽🇽未知-02
-  - 🇸🇬新加坡-05
-  - 🇸🇬新加坡-06
-  - 🇸🇬新加坡-07
-  - 🇸🇬新加坡-08
-  - 🇸🇬新加坡-09
-  - 🇸🇬新加坡-10
-  - 🇭🇰香港-05
-  - 🇰🇷韩国-01
-  - 🇸🇨SC-01
-  - 🇫🇷法国-01
-  - 🇸🇬新加坡-11
-  - 🇪🇪EE-01
-  - 🇵🇱波兰-01
-  - 🇮🇹意大利-01
-  - 🇪🇸西班牙-01
-  - 🇪🇸西班牙-02
-  - 🇱🇻LV-01
-  - 🇪🇪EE-02
-  - 🇯🇵日本-05
-  - 🇭🇰香港-06
-  - 🇭🇰香港-07
-  - 🇸🇬新加坡-12
-  - 🇭🇰香港-08
-  - 🇬🇧英国-01
-  - 🇸🇬新加坡-13
-  - 🇸🇬新加坡-14
-  - 🇺🇸美国-02
-  - 🇭🇰香港-09
-  - 🇺🇸美国-03
-  - 🇭🇰香港-10
-  - 🇺🇸美国-04
   - 🇽🇽未知-03
   - 🇽🇽未知-04
   - 🇽🇽未知-05
@@ -2146,8 +1319,6 @@ proxy-groups:
   - 🇽🇽未知-19
   - 🇽🇽未知-20
   - 🇽🇽未知-21
-  - 🇫🇷法国-02
-  - 🇺🇸美国-05
   - 🇽🇽未知-22
   - 🇽🇽未知-23
   - 🇽🇽未知-24
@@ -2188,6 +1359,7 @@ proxy-groups:
   - 🇽🇽未知-59
   - 🇽🇽未知-60
   - 🇽🇽未知-61
+  - 🇫🇷法国-01
   - 🇽🇽未知-62
   - 🇽🇽未知-63
   - 🇽🇽未知-64
@@ -2197,98 +1369,33 @@ proxy-groups:
   - 🇽🇽未知-68
   - 🇽🇽未知-69
   - 🇽🇽未知-70
+  - 🇳🇱荷兰-01
   - 🇽🇽未知-71
   - 🇽🇽未知-72
   - 🇽🇽未知-73
   - 🇽🇽未知-74
+  - 🇺🇸美国-02
   - 🇽🇽未知-75
   - 🇽🇽未知-76
-  - 🇺🇸美国-06
-  - 🇺🇸美国-07
-  - 🇺🇸美国-08
-  - 🇺🇸美国-09
-  - 🇺🇸美国-10
-  - 🇯🇵日本-06
-  - 🇯🇵日本-07
-  - 🇯🇵日本-08
-  - 🇯🇵日本-09
-  - 🇯🇵日本-10
-  - 🇯🇵日本-11
-  - 🇯🇵日本-12
-  - 🇳🇱荷兰-02
-  - 🇳🇱荷兰-03
-  - 🇳🇱荷兰-04
-  - 🇳🇱荷兰-05
-  - 🇸🇬新加坡-15
-  - 🇸🇬新加坡-16
-  - 🇸🇬新加坡-17
-  - 🇸🇬新加坡-18
-  - 🇰🇷韩国-02
-  - 🇰🇷韩国-03
-  - 🇰🇷韩国-04
-  - 🇰🇷韩国-05
-  - 🇬🇧英国-02
-  - 🇦🇹奥地利-01
-  - 🇬🇷希腊-01
-  - 🇺🇸美国-11
-  - 🇫🇮芬兰-01
-  - 🇽🇽未知-77
-  - 🇭🇰香港-11
-  - 🇭🇰香港-12
-  - 🇽🇽未知-78
-  - 🇭🇰香港-13
-  - 🇭🇰香港-14
 - name: ♻️ 自动选择
   type: url-test
   proxies:
-  - 🇻🇳越南-01
   - 🇭🇰香港-01
+  - 🇮🇪爱尔兰-01
+  - 🇱🇻LV-01
   - 🇭🇰香港-02
-  - 🇯🇵日本-01
-  - 🇺🇸美国-01
-  - 🇸🇬新加坡-01
   - 🇭🇰香港-03
+  - 🇱🇻LV-02
+  - 🇺🇸美国-01
   - 🇭🇰香港-04
+  - 🇭🇰香港-05
+  - 🇭🇰香港-06
+  - 🇯🇵日本-01
   - 🇯🇵日本-02
+  - 🇭🇰香港-07
   - 🇯🇵日本-03
-  - 🇯🇵日本-04
-  - 🇸🇬新加坡-02
-  - 🇸🇬新加坡-03
-  - 🇸🇬新加坡-04
-  - 🇳🇱荷兰-01
   - 🇽🇽未知-01
   - 🇽🇽未知-02
-  - 🇸🇬新加坡-05
-  - 🇸🇬新加坡-06
-  - 🇸🇬新加坡-07
-  - 🇸🇬新加坡-08
-  - 🇸🇬新加坡-09
-  - 🇸🇬新加坡-10
-  - 🇭🇰香港-05
-  - 🇰🇷韩国-01
-  - 🇸🇨SC-01
-  - 🇫🇷法国-01
-  - 🇸🇬新加坡-11
-  - 🇪🇪EE-01
-  - 🇵🇱波兰-01
-  - 🇮🇹意大利-01
-  - 🇪🇸西班牙-01
-  - 🇪🇸西班牙-02
-  - 🇱🇻LV-01
-  - 🇪🇪EE-02
-  - 🇯🇵日本-05
-  - 🇭🇰香港-06
-  - 🇭🇰香港-07
-  - 🇸🇬新加坡-12
-  - 🇭🇰香港-08
-  - 🇬🇧英国-01
-  - 🇸🇬新加坡-13
-  - 🇸🇬新加坡-14
-  - 🇺🇸美国-02
-  - 🇭🇰香港-09
-  - 🇺🇸美国-03
-  - 🇭🇰香港-10
-  - 🇺🇸美国-04
   - 🇽🇽未知-03
   - 🇽🇽未知-04
   - 🇽🇽未知-05
@@ -2308,8 +1415,6 @@ proxy-groups:
   - 🇽🇽未知-19
   - 🇽🇽未知-20
   - 🇽🇽未知-21
-  - 🇫🇷法国-02
-  - 🇺🇸美国-05
   - 🇽🇽未知-22
   - 🇽🇽未知-23
   - 🇽🇽未知-24
@@ -2350,6 +1455,7 @@ proxy-groups:
   - 🇽🇽未知-59
   - 🇽🇽未知-60
   - 🇽🇽未知-61
+  - 🇫🇷法国-01
   - 🇽🇽未知-62
   - 🇽🇽未知-63
   - 🇽🇽未知-64
@@ -2359,101 +1465,36 @@ proxy-groups:
   - 🇽🇽未知-68
   - 🇽🇽未知-69
   - 🇽🇽未知-70
+  - 🇳🇱荷兰-01
   - 🇽🇽未知-71
   - 🇽🇽未知-72
   - 🇽🇽未知-73
   - 🇽🇽未知-74
+  - 🇺🇸美国-02
   - 🇽🇽未知-75
   - 🇽🇽未知-76
-  - 🇺🇸美国-06
-  - 🇺🇸美国-07
-  - 🇺🇸美国-08
-  - 🇺🇸美国-09
-  - 🇺🇸美国-10
-  - 🇯🇵日本-06
-  - 🇯🇵日本-07
-  - 🇯🇵日本-08
-  - 🇯🇵日本-09
-  - 🇯🇵日本-10
-  - 🇯🇵日本-11
-  - 🇯🇵日本-12
-  - 🇳🇱荷兰-02
-  - 🇳🇱荷兰-03
-  - 🇳🇱荷兰-04
-  - 🇳🇱荷兰-05
-  - 🇸🇬新加坡-15
-  - 🇸🇬新加坡-16
-  - 🇸🇬新加坡-17
-  - 🇸🇬新加坡-18
-  - 🇰🇷韩国-02
-  - 🇰🇷韩国-03
-  - 🇰🇷韩国-04
-  - 🇰🇷韩国-05
-  - 🇬🇧英国-02
-  - 🇦🇹奥地利-01
-  - 🇬🇷希腊-01
-  - 🇺🇸美国-11
-  - 🇫🇮芬兰-01
-  - 🇽🇽未知-77
-  - 🇭🇰香港-11
-  - 🇭🇰香港-12
-  - 🇽🇽未知-78
-  - 🇭🇰香港-13
-  - 🇭🇰香港-14
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
 - name: 🌍 国外媒体
   type: select
   proxies:
-  - 🇻🇳越南-01
   - 🇭🇰香港-01
+  - 🇮🇪爱尔兰-01
+  - 🇱🇻LV-01
   - 🇭🇰香港-02
-  - 🇯🇵日本-01
-  - 🇺🇸美国-01
-  - 🇸🇬新加坡-01
   - 🇭🇰香港-03
+  - 🇱🇻LV-02
+  - 🇺🇸美国-01
   - 🇭🇰香港-04
+  - 🇭🇰香港-05
+  - 🇭🇰香港-06
+  - 🇯🇵日本-01
   - 🇯🇵日本-02
+  - 🇭🇰香港-07
   - 🇯🇵日本-03
-  - 🇯🇵日本-04
-  - 🇸🇬新加坡-02
-  - 🇸🇬新加坡-03
-  - 🇸🇬新加坡-04
-  - 🇳🇱荷兰-01
   - 🇽🇽未知-01
   - 🇽🇽未知-02
-  - 🇸🇬新加坡-05
-  - 🇸🇬新加坡-06
-  - 🇸🇬新加坡-07
-  - 🇸🇬新加坡-08
-  - 🇸🇬新加坡-09
-  - 🇸🇬新加坡-10
-  - 🇭🇰香港-05
-  - 🇰🇷韩国-01
-  - 🇸🇨SC-01
-  - 🇫🇷法国-01
-  - 🇸🇬新加坡-11
-  - 🇪🇪EE-01
-  - 🇵🇱波兰-01
-  - 🇮🇹意大利-01
-  - 🇪🇸西班牙-01
-  - 🇪🇸西班牙-02
-  - 🇱🇻LV-01
-  - 🇪🇪EE-02
-  - 🇯🇵日本-05
-  - 🇭🇰香港-06
-  - 🇭🇰香港-07
-  - 🇸🇬新加坡-12
-  - 🇭🇰香港-08
-  - 🇬🇧英国-01
-  - 🇸🇬新加坡-13
-  - 🇸🇬新加坡-14
-  - 🇺🇸美国-02
-  - 🇭🇰香港-09
-  - 🇺🇸美国-03
-  - 🇭🇰香港-10
-  - 🇺🇸美国-04
   - 🇽🇽未知-03
   - 🇽🇽未知-04
   - 🇽🇽未知-05
@@ -2473,8 +1514,6 @@ proxy-groups:
   - 🇽🇽未知-19
   - 🇽🇽未知-20
   - 🇽🇽未知-21
-  - 🇫🇷法国-02
-  - 🇺🇸美国-05
   - 🇽🇽未知-22
   - 🇽🇽未知-23
   - 🇽🇽未知-24
@@ -2515,6 +1554,7 @@ proxy-groups:
   - 🇽🇽未知-59
   - 🇽🇽未知-60
   - 🇽🇽未知-61
+  - 🇫🇷法国-01
   - 🇽🇽未知-62
   - 🇽🇽未知-63
   - 🇽🇽未知-64
@@ -2524,98 +1564,33 @@ proxy-groups:
   - 🇽🇽未知-68
   - 🇽🇽未知-69
   - 🇽🇽未知-70
+  - 🇳🇱荷兰-01
   - 🇽🇽未知-71
   - 🇽🇽未知-72
   - 🇽🇽未知-73
   - 🇽🇽未知-74
+  - 🇺🇸美国-02
   - 🇽🇽未知-75
   - 🇽🇽未知-76
-  - 🇺🇸美国-06
-  - 🇺🇸美国-07
-  - 🇺🇸美国-08
-  - 🇺🇸美国-09
-  - 🇺🇸美国-10
-  - 🇯🇵日本-06
-  - 🇯🇵日本-07
-  - 🇯🇵日本-08
-  - 🇯🇵日本-09
-  - 🇯🇵日本-10
-  - 🇯🇵日本-11
-  - 🇯🇵日本-12
-  - 🇳🇱荷兰-02
-  - 🇳🇱荷兰-03
-  - 🇳🇱荷兰-04
-  - 🇳🇱荷兰-05
-  - 🇸🇬新加坡-15
-  - 🇸🇬新加坡-16
-  - 🇸🇬新加坡-17
-  - 🇸🇬新加坡-18
-  - 🇰🇷韩国-02
-  - 🇰🇷韩国-03
-  - 🇰🇷韩国-04
-  - 🇰🇷韩国-05
-  - 🇬🇧英国-02
-  - 🇦🇹奥地利-01
-  - 🇬🇷希腊-01
-  - 🇺🇸美国-11
-  - 🇫🇮芬兰-01
-  - 🇽🇽未知-77
-  - 🇭🇰香港-11
-  - 🇭🇰香港-12
-  - 🇽🇽未知-78
-  - 🇭🇰香港-13
-  - 🇭🇰香港-14
 - name: 📲 电报信息
   type: select
   proxies:
-  - 🇻🇳越南-01
   - 🇭🇰香港-01
+  - 🇮🇪爱尔兰-01
+  - 🇱🇻LV-01
   - 🇭🇰香港-02
-  - 🇯🇵日本-01
-  - 🇺🇸美国-01
-  - 🇸🇬新加坡-01
   - 🇭🇰香港-03
+  - 🇱🇻LV-02
+  - 🇺🇸美国-01
   - 🇭🇰香港-04
+  - 🇭🇰香港-05
+  - 🇭🇰香港-06
+  - 🇯🇵日本-01
   - 🇯🇵日本-02
+  - 🇭🇰香港-07
   - 🇯🇵日本-03
-  - 🇯🇵日本-04
-  - 🇸🇬新加坡-02
-  - 🇸🇬新加坡-03
-  - 🇸🇬新加坡-04
-  - 🇳🇱荷兰-01
   - 🇽🇽未知-01
   - 🇽🇽未知-02
-  - 🇸🇬新加坡-05
-  - 🇸🇬新加坡-06
-  - 🇸🇬新加坡-07
-  - 🇸🇬新加坡-08
-  - 🇸🇬新加坡-09
-  - 🇸🇬新加坡-10
-  - 🇭🇰香港-05
-  - 🇰🇷韩国-01
-  - 🇸🇨SC-01
-  - 🇫🇷法国-01
-  - 🇸🇬新加坡-11
-  - 🇪🇪EE-01
-  - 🇵🇱波兰-01
-  - 🇮🇹意大利-01
-  - 🇪🇸西班牙-01
-  - 🇪🇸西班牙-02
-  - 🇱🇻LV-01
-  - 🇪🇪EE-02
-  - 🇯🇵日本-05
-  - 🇭🇰香港-06
-  - 🇭🇰香港-07
-  - 🇸🇬新加坡-12
-  - 🇭🇰香港-08
-  - 🇬🇧英国-01
-  - 🇸🇬新加坡-13
-  - 🇸🇬新加坡-14
-  - 🇺🇸美国-02
-  - 🇭🇰香港-09
-  - 🇺🇸美国-03
-  - 🇭🇰香港-10
-  - 🇺🇸美国-04
   - 🇽🇽未知-03
   - 🇽🇽未知-04
   - 🇽🇽未知-05
@@ -2635,8 +1610,6 @@ proxy-groups:
   - 🇽🇽未知-19
   - 🇽🇽未知-20
   - 🇽🇽未知-21
-  - 🇫🇷法国-02
-  - 🇺🇸美国-05
   - 🇽🇽未知-22
   - 🇽🇽未知-23
   - 🇽🇽未知-24
@@ -2677,6 +1650,7 @@ proxy-groups:
   - 🇽🇽未知-59
   - 🇽🇽未知-60
   - 🇽🇽未知-61
+  - 🇫🇷法国-01
   - 🇽🇽未知-62
   - 🇽🇽未知-63
   - 🇽🇽未知-64
@@ -2686,98 +1660,33 @@ proxy-groups:
   - 🇽🇽未知-68
   - 🇽🇽未知-69
   - 🇽🇽未知-70
+  - 🇳🇱荷兰-01
   - 🇽🇽未知-71
   - 🇽🇽未知-72
   - 🇽🇽未知-73
   - 🇽🇽未知-74
+  - 🇺🇸美国-02
   - 🇽🇽未知-75
   - 🇽🇽未知-76
-  - 🇺🇸美国-06
-  - 🇺🇸美国-07
-  - 🇺🇸美国-08
-  - 🇺🇸美国-09
-  - 🇺🇸美国-10
-  - 🇯🇵日本-06
-  - 🇯🇵日本-07
-  - 🇯🇵日本-08
-  - 🇯🇵日本-09
-  - 🇯🇵日本-10
-  - 🇯🇵日本-11
-  - 🇯🇵日本-12
-  - 🇳🇱荷兰-02
-  - 🇳🇱荷兰-03
-  - 🇳🇱荷兰-04
-  - 🇳🇱荷兰-05
-  - 🇸🇬新加坡-15
-  - 🇸🇬新加坡-16
-  - 🇸🇬新加坡-17
-  - 🇸🇬新加坡-18
-  - 🇰🇷韩国-02
-  - 🇰🇷韩国-03
-  - 🇰🇷韩国-04
-  - 🇰🇷韩国-05
-  - 🇬🇧英国-02
-  - 🇦🇹奥地利-01
-  - 🇬🇷希腊-01
-  - 🇺🇸美国-11
-  - 🇫🇮芬兰-01
-  - 🇽🇽未知-77
-  - 🇭🇰香港-11
-  - 🇭🇰香港-12
-  - 🇽🇽未知-78
-  - 🇭🇰香港-13
-  - 🇭🇰香港-14
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
-  - 🇻🇳越南-01
   - 🇭🇰香港-01
+  - 🇮🇪爱尔兰-01
+  - 🇱🇻LV-01
   - 🇭🇰香港-02
-  - 🇯🇵日本-01
-  - 🇺🇸美国-01
-  - 🇸🇬新加坡-01
   - 🇭🇰香港-03
+  - 🇱🇻LV-02
+  - 🇺🇸美国-01
   - 🇭🇰香港-04
+  - 🇭🇰香港-05
+  - 🇭🇰香港-06
+  - 🇯🇵日本-01
   - 🇯🇵日本-02
+  - 🇭🇰香港-07
   - 🇯🇵日本-03
-  - 🇯🇵日本-04
-  - 🇸🇬新加坡-02
-  - 🇸🇬新加坡-03
-  - 🇸🇬新加坡-04
-  - 🇳🇱荷兰-01
   - 🇽🇽未知-01
   - 🇽🇽未知-02
-  - 🇸🇬新加坡-05
-  - 🇸🇬新加坡-06
-  - 🇸🇬新加坡-07
-  - 🇸🇬新加坡-08
-  - 🇸🇬新加坡-09
-  - 🇸🇬新加坡-10
-  - 🇭🇰香港-05
-  - 🇰🇷韩国-01
-  - 🇸🇨SC-01
-  - 🇫🇷法国-01
-  - 🇸🇬新加坡-11
-  - 🇪🇪EE-01
-  - 🇵🇱波兰-01
-  - 🇮🇹意大利-01
-  - 🇪🇸西班牙-01
-  - 🇪🇸西班牙-02
-  - 🇱🇻LV-01
-  - 🇪🇪EE-02
-  - 🇯🇵日本-05
-  - 🇭🇰香港-06
-  - 🇭🇰香港-07
-  - 🇸🇬新加坡-12
-  - 🇭🇰香港-08
-  - 🇬🇧英国-01
-  - 🇸🇬新加坡-13
-  - 🇸🇬新加坡-14
-  - 🇺🇸美国-02
-  - 🇭🇰香港-09
-  - 🇺🇸美国-03
-  - 🇭🇰香港-10
-  - 🇺🇸美国-04
   - 🇽🇽未知-03
   - 🇽🇽未知-04
   - 🇽🇽未知-05
@@ -2797,8 +1706,6 @@ proxy-groups:
   - 🇽🇽未知-19
   - 🇽🇽未知-20
   - 🇽🇽未知-21
-  - 🇫🇷法国-02
-  - 🇺🇸美国-05
   - 🇽🇽未知-22
   - 🇽🇽未知-23
   - 🇽🇽未知-24
@@ -2839,6 +1746,7 @@ proxy-groups:
   - 🇽🇽未知-59
   - 🇽🇽未知-60
   - 🇽🇽未知-61
+  - 🇫🇷法国-01
   - 🇽🇽未知-62
   - 🇽🇽未知-63
   - 🇽🇽未知-64
@@ -2848,98 +1756,33 @@ proxy-groups:
   - 🇽🇽未知-68
   - 🇽🇽未知-69
   - 🇽🇽未知-70
+  - 🇳🇱荷兰-01
   - 🇽🇽未知-71
   - 🇽🇽未知-72
   - 🇽🇽未知-73
   - 🇽🇽未知-74
+  - 🇺🇸美国-02
   - 🇽🇽未知-75
   - 🇽🇽未知-76
-  - 🇺🇸美国-06
-  - 🇺🇸美国-07
-  - 🇺🇸美国-08
-  - 🇺🇸美国-09
-  - 🇺🇸美国-10
-  - 🇯🇵日本-06
-  - 🇯🇵日本-07
-  - 🇯🇵日本-08
-  - 🇯🇵日本-09
-  - 🇯🇵日本-10
-  - 🇯🇵日本-11
-  - 🇯🇵日本-12
-  - 🇳🇱荷兰-02
-  - 🇳🇱荷兰-03
-  - 🇳🇱荷兰-04
-  - 🇳🇱荷兰-05
-  - 🇸🇬新加坡-15
-  - 🇸🇬新加坡-16
-  - 🇸🇬新加坡-17
-  - 🇸🇬新加坡-18
-  - 🇰🇷韩国-02
-  - 🇰🇷韩国-03
-  - 🇰🇷韩国-04
-  - 🇰🇷韩国-05
-  - 🇬🇧英国-02
-  - 🇦🇹奥地利-01
-  - 🇬🇷希腊-01
-  - 🇺🇸美国-11
-  - 🇫🇮芬兰-01
-  - 🇽🇽未知-77
-  - 🇭🇰香港-11
-  - 🇭🇰香港-12
-  - 🇽🇽未知-78
-  - 🇭🇰香港-13
-  - 🇭🇰香港-14
 - name: 🍎 苹果服务
   type: select
   proxies:
-  - 🇻🇳越南-01
   - 🇭🇰香港-01
+  - 🇮🇪爱尔兰-01
+  - 🇱🇻LV-01
   - 🇭🇰香港-02
-  - 🇯🇵日本-01
-  - 🇺🇸美国-01
-  - 🇸🇬新加坡-01
   - 🇭🇰香港-03
+  - 🇱🇻LV-02
+  - 🇺🇸美国-01
   - 🇭🇰香港-04
+  - 🇭🇰香港-05
+  - 🇭🇰香港-06
+  - 🇯🇵日本-01
   - 🇯🇵日本-02
+  - 🇭🇰香港-07
   - 🇯🇵日本-03
-  - 🇯🇵日本-04
-  - 🇸🇬新加坡-02
-  - 🇸🇬新加坡-03
-  - 🇸🇬新加坡-04
-  - 🇳🇱荷兰-01
   - 🇽🇽未知-01
   - 🇽🇽未知-02
-  - 🇸🇬新加坡-05
-  - 🇸🇬新加坡-06
-  - 🇸🇬新加坡-07
-  - 🇸🇬新加坡-08
-  - 🇸🇬新加坡-09
-  - 🇸🇬新加坡-10
-  - 🇭🇰香港-05
-  - 🇰🇷韩国-01
-  - 🇸🇨SC-01
-  - 🇫🇷法国-01
-  - 🇸🇬新加坡-11
-  - 🇪🇪EE-01
-  - 🇵🇱波兰-01
-  - 🇮🇹意大利-01
-  - 🇪🇸西班牙-01
-  - 🇪🇸西班牙-02
-  - 🇱🇻LV-01
-  - 🇪🇪EE-02
-  - 🇯🇵日本-05
-  - 🇭🇰香港-06
-  - 🇭🇰香港-07
-  - 🇸🇬新加坡-12
-  - 🇭🇰香港-08
-  - 🇬🇧英国-01
-  - 🇸🇬新加坡-13
-  - 🇸🇬新加坡-14
-  - 🇺🇸美国-02
-  - 🇭🇰香港-09
-  - 🇺🇸美国-03
-  - 🇭🇰香港-10
-  - 🇺🇸美国-04
   - 🇽🇽未知-03
   - 🇽🇽未知-04
   - 🇽🇽未知-05
@@ -2959,8 +1802,6 @@ proxy-groups:
   - 🇽🇽未知-19
   - 🇽🇽未知-20
   - 🇽🇽未知-21
-  - 🇫🇷法国-02
-  - 🇺🇸美国-05
   - 🇽🇽未知-22
   - 🇽🇽未知-23
   - 🇽🇽未知-24
@@ -3001,6 +1842,7 @@ proxy-groups:
   - 🇽🇽未知-59
   - 🇽🇽未知-60
   - 🇽🇽未知-61
+  - 🇫🇷法国-01
   - 🇽🇽未知-62
   - 🇽🇽未知-63
   - 🇽🇽未知-64
@@ -3010,47 +1852,14 @@ proxy-groups:
   - 🇽🇽未知-68
   - 🇽🇽未知-69
   - 🇽🇽未知-70
+  - 🇳🇱荷兰-01
   - 🇽🇽未知-71
   - 🇽🇽未知-72
   - 🇽🇽未知-73
   - 🇽🇽未知-74
+  - 🇺🇸美国-02
   - 🇽🇽未知-75
   - 🇽🇽未知-76
-  - 🇺🇸美国-06
-  - 🇺🇸美国-07
-  - 🇺🇸美国-08
-  - 🇺🇸美国-09
-  - 🇺🇸美国-10
-  - 🇯🇵日本-06
-  - 🇯🇵日本-07
-  - 🇯🇵日本-08
-  - 🇯🇵日本-09
-  - 🇯🇵日本-10
-  - 🇯🇵日本-11
-  - 🇯🇵日本-12
-  - 🇳🇱荷兰-02
-  - 🇳🇱荷兰-03
-  - 🇳🇱荷兰-04
-  - 🇳🇱荷兰-05
-  - 🇸🇬新加坡-15
-  - 🇸🇬新加坡-16
-  - 🇸🇬新加坡-17
-  - 🇸🇬新加坡-18
-  - 🇰🇷韩国-02
-  - 🇰🇷韩国-03
-  - 🇰🇷韩国-04
-  - 🇰🇷韩国-05
-  - 🇬🇧英国-02
-  - 🇦🇹奥地利-01
-  - 🇬🇷希腊-01
-  - 🇺🇸美国-11
-  - 🇫🇮芬兰-01
-  - 🇽🇽未知-77
-  - 🇭🇰香港-11
-  - 🇭🇰香港-12
-  - 🇽🇽未知-78
-  - 🇭🇰香港-13
-  - 🇭🇰香港-14
 - name: 🎯 全球直连
   type: select
   proxies: []
@@ -3063,54 +1872,22 @@ proxy-groups:
 - name: 🐟 漏网之鱼
   type: select
   proxies:
-  - 🇻🇳越南-01
   - 🇭🇰香港-01
+  - 🇮🇪爱尔兰-01
+  - 🇱🇻LV-01
   - 🇭🇰香港-02
-  - 🇯🇵日本-01
-  - 🇺🇸美国-01
-  - 🇸🇬新加坡-01
   - 🇭🇰香港-03
+  - 🇱🇻LV-02
+  - 🇺🇸美国-01
   - 🇭🇰香港-04
+  - 🇭🇰香港-05
+  - 🇭🇰香港-06
+  - 🇯🇵日本-01
   - 🇯🇵日本-02
+  - 🇭🇰香港-07
   - 🇯🇵日本-03
-  - 🇯🇵日本-04
-  - 🇸🇬新加坡-02
-  - 🇸🇬新加坡-03
-  - 🇸🇬新加坡-04
-  - 🇳🇱荷兰-01
   - 🇽🇽未知-01
   - 🇽🇽未知-02
-  - 🇸🇬新加坡-05
-  - 🇸🇬新加坡-06
-  - 🇸🇬新加坡-07
-  - 🇸🇬新加坡-08
-  - 🇸🇬新加坡-09
-  - 🇸🇬新加坡-10
-  - 🇭🇰香港-05
-  - 🇰🇷韩国-01
-  - 🇸🇨SC-01
-  - 🇫🇷法国-01
-  - 🇸🇬新加坡-11
-  - 🇪🇪EE-01
-  - 🇵🇱波兰-01
-  - 🇮🇹意大利-01
-  - 🇪🇸西班牙-01
-  - 🇪🇸西班牙-02
-  - 🇱🇻LV-01
-  - 🇪🇪EE-02
-  - 🇯🇵日本-05
-  - 🇭🇰香港-06
-  - 🇭🇰香港-07
-  - 🇸🇬新加坡-12
-  - 🇭🇰香港-08
-  - 🇬🇧英国-01
-  - 🇸🇬新加坡-13
-  - 🇸🇬新加坡-14
-  - 🇺🇸美国-02
-  - 🇭🇰香港-09
-  - 🇺🇸美国-03
-  - 🇭🇰香港-10
-  - 🇺🇸美国-04
   - 🇽🇽未知-03
   - 🇽🇽未知-04
   - 🇽🇽未知-05
@@ -3130,8 +1907,6 @@ proxy-groups:
   - 🇽🇽未知-19
   - 🇽🇽未知-20
   - 🇽🇽未知-21
-  - 🇫🇷法国-02
-  - 🇺🇸美国-05
   - 🇽🇽未知-22
   - 🇽🇽未知-23
   - 🇽🇽未知-24
@@ -3172,6 +1947,7 @@ proxy-groups:
   - 🇽🇽未知-59
   - 🇽🇽未知-60
   - 🇽🇽未知-61
+  - 🇫🇷法国-01
   - 🇽🇽未知-62
   - 🇽🇽未知-63
   - 🇽🇽未知-64
@@ -3181,47 +1957,14 @@ proxy-groups:
   - 🇽🇽未知-68
   - 🇽🇽未知-69
   - 🇽🇽未知-70
+  - 🇳🇱荷兰-01
   - 🇽🇽未知-71
   - 🇽🇽未知-72
   - 🇽🇽未知-73
   - 🇽🇽未知-74
+  - 🇺🇸美国-02
   - 🇽🇽未知-75
   - 🇽🇽未知-76
-  - 🇺🇸美国-06
-  - 🇺🇸美国-07
-  - 🇺🇸美国-08
-  - 🇺🇸美国-09
-  - 🇺🇸美国-10
-  - 🇯🇵日本-06
-  - 🇯🇵日本-07
-  - 🇯🇵日本-08
-  - 🇯🇵日本-09
-  - 🇯🇵日本-10
-  - 🇯🇵日本-11
-  - 🇯🇵日本-12
-  - 🇳🇱荷兰-02
-  - 🇳🇱荷兰-03
-  - 🇳🇱荷兰-04
-  - 🇳🇱荷兰-05
-  - 🇸🇬新加坡-15
-  - 🇸🇬新加坡-16
-  - 🇸🇬新加坡-17
-  - 🇸🇬新加坡-18
-  - 🇰🇷韩国-02
-  - 🇰🇷韩国-03
-  - 🇰🇷韩国-04
-  - 🇰🇷韩国-05
-  - 🇬🇧英国-02
-  - 🇦🇹奥地利-01
-  - 🇬🇷希腊-01
-  - 🇺🇸美国-11
-  - 🇫🇮芬兰-01
-  - 🇽🇽未知-77
-  - 🇭🇰香港-11
-  - 🇭🇰香港-12
-  - 🇽🇽未知-78
-  - 🇭🇰香港-13
-  - 🇭🇰香港-14
 rule-providers:
   LocalAreaNetwork:
     type: http
