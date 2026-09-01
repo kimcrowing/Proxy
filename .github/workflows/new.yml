@@ -1,0 +1,60 @@
+name: Merge and Process Clash Subscriptions
+
+on:
+  schedule:
+    - cron: '15 22 * * *'          # 每天 UTC 08:30 执行（北京时间 16:30）
+  workflow_dispatch:              # 支持手动触发
+
+jobs:
+  merge-and-commit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write             # 允许推送代码
+
+    steps:
+      # 1. 检出仓库代码
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # 2. 下载 GeoLite2-Country.mmdb（从 P3TERX 仓库直接获取最新版）
+      - name: Download GeoLite2-Country Database
+        run: |
+          curl -L -o GeoLite2-Country.mmdb "https://git.io/GeoLite2-Country.mmdb"
+          # 备用完整链接（如果短链接失效）：
+          # curl -L -o GeoLite2-Country.mmdb "https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-Country.mmdb"
+          ls -lh GeoLite2-Country.mmdb   # 验证文件大小（通常 ~2-3MB）
+          file GeoLite2-Country.mmdb     # 确认是 MaxMind DB 格式
+
+      # 3. 设置 Python 环境
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # 4. 安装依赖（包括 geoip2）
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests pyyaml geoip2 maxminddb  # maxminddb 是 geoip2 的依赖
+
+      # 5. 执行合并脚本
+      - name: Run Clash merge script
+        run: python merge_clash.py
+
+      # 6. 配置 git
+      - name: Configure git user
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+
+      # 7. 添加、提交、推送（包括新 mmdb，如果变化）
+      - name: Commit and push merged file
+        run: |
+          git add merged-clash.yaml GeoLite2-Country.mmdb
+          git diff --staged --quiet && echo "No changes to commit" && exit 0
+          git commit -m "chore: auto update merged-clash.yaml and GeoLite2 DB $(date '+%Y-%m-%d %H:%M UTC')"
+          git push origin HEAD:master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
